@@ -176,9 +176,52 @@ def nominatim(via, numero):
     return geo
 
 
-def fallback_norm(calle):
-    m = re.match(r"^(.*?),\s*(\d+\s?[A-Za-z]?)$", calle)
-    return {"via": m.group(1) if m else calle, "numero": m.group(2).replace(" ", "") if m else None}
+TIPOS_VIA = {"AV.": "Avenida", "AVDA.": "Avenida", "PS.": "Paseo", "PZA.": "Plaza", "PL.": "Plaza", "CM.": "Camino",
+             "CTRA.": "Carretera", "GTA.": "Glorieta", "RDA.": "Ronda", "TRAV.": "Travesía", "PJE.": "Pasaje",
+             "C/": "Calle", "CL.": "Calle", "CJ.": "Callejón"}
+HONORIFICOS = {"DR.": "Doctor", "DRA.": "Doctora", "STA.": "Santa", "STO.": "Santo", "GRAL.": "General"}
+MINUSCULAS = {"De", "Del", "La", "Las", "Los", "El", "Y"}
+
+
+def norm_local(calle, motivo=""):
+    """Normalización sin IA: 'BLANCO CORDERO (DR.), 11' -> Calle Doctor Blanco Cordero, nº 11."""
+    nombre, _, resto = calle.strip().partition(",")
+    nombre, resto = nombre.strip(), resto.strip()
+    num = resto.replace(" ", "") if re.fullmatch(r"\d+\s?[A-Za-z]?", resto) else None  # rangos o texto: sin número
+    if not num:
+        mm = re.search(r"\bn\.?\s?[ºo°]\.?\s*(\d+)", motivo, re.I)
+        num = mm.group(1) if mm else None
+    tipo, hon = "Calle", ""
+    for par in re.findall(r"\(([^)]*)\)", nombre):
+        p = par.strip().upper()
+        nombre = nombre.replace(f"({par})", "").strip()
+        if p in TIPOS_VIA:
+            tipo = TIPOS_VIA[p]
+        elif p in HONORIFICOS:
+            hon = HONORIFICOS[p]
+    palabras = [w if w not in MINUSCULAS else w.lower() for w in nombre.title().split()]
+    return {"via": " ".join(x for x in [tipo, hon, " ".join(palabras)] if x), "numero": num}
+
+
+class CuotaAgotada(Exception):
+    pass
+
+
+def llamar_gemini(cli, prompt):
+    """Una sola petición por lote. Si la cuota diaria se agota (429) no reintenta: cada intento gasta cuota."""
+    for intento in (1, 2):
+        try:
+            return cli.models.generate_content(
+                model=MODELO, contents=prompt,
+                config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0))
+        except Exception as e:
+            t = str(e)
+            if "429" in t or "RESOURCE_EXHAUSTED" in t:
+                raise CuotaAgotada(t[:120])
+            print(f"Gemini falló (intento {intento}/2): {t[:120]}")
+            if intento == 2:
+                raise
+            time.sleep(20)
 
 
 def geocodificar(items):
@@ -186,43 +229,10 @@ def geocodificar(items):
     if not ay:
         return
     cache = cargar_cache()
-    textos = {}
     for i in ay:
         i["_raw"] = f'{i["_calle"]}|{i["_tramo"]}|{i["detalle"][:160]}'
-        textos[i["_raw"]] = (i["_calle"], i["_tramo"], i["detalle"][:160])
 
-    # 1) Gemini solo normaliza el texto (tipo de vía, nombre, número). No devuelve coordenadas.
-    pend = [r for r in textos if r not in cache["norm"]]
-    key = os.environ.get("GEMINI_API_KEY")
-    if pend and key:
-        cli = genai.Client(api_key=key)
-        for k in range(0, len(pend), 20):
-            lote = pend[k:k + 20]
-            prompt = ("Normaliza direcciones de incidencias viarias de Zaragoza (España) para geocodificarlas. "
-                      "NO devuelvas coordenadas. Para cada línea devuelve un objeto "
-                      "{\"i\": n, \"via\": nombre completo de la vía con su tipo en español (por ejemplo "
-                      "'Calle Doctor Blanco Cordero' o 'Avenida de Navarra'), \"numero\": número de portal como texto "
-                      "si el texto indica uno concreto (en calle, tramo o motivo, por ejemplo 'n.º 8' o ', 11'), "
-                      "o null si no hay número, es un rango o afecta a toda la calle}. "
-                      "Expande las abreviaturas del callejero ((DR.)=Doctor, (AV.)=Avenida, (PS.)=Paseo, "
-                      "(PZA.)=Plaza, (C/)=Calle...) y coloca el tipo delante. Usa solo lo que dice el texto; no inventes. "
-                      "Responde SOLO con una lista JSON.\n"
-                      + "\n".join(f"{n}| calle: {textos[r][0]} | tramo: {textos[r][1]} | motivo: {textos[r][2]}"
-                                  for n, r in enumerate(lote)))
-            try:
-                resp = reintentar(lambda: cli.models.generate_content(
-                    model=MODELO, contents=prompt,
-                    config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0)))
-                for o in json.loads(resp.text):
-                    cache["norm"][lote[int(o["i"])]] = {"via": o.get("via"), "numero": o.get("numero")}
-            except Exception as e:
-                print(f"Normalización fallida para un lote: {e}")
-
-    # 2) Nominatim (OpenStreetMap) localiza la calle y el portal; si el portal no existe, cae a la calle.
-    for i in ay:
-        n = cache["norm"].get(i["_raw"]) or fallback_norm(i["_calle"])
-        via = n.get("via") or i["_calle"]
-        num = str(n["numero"]).strip() if n.get("numero") else None
+    def aplicar(i, via, num):
         gk = f"{via}|{num or ''}"
         geo = cache["geo"].get(gk)
         if not geo:
@@ -233,10 +243,49 @@ def geocodificar(items):
                 geo = None
             if geo:
                 cache["geo"][gk] = geo
-        if geo:
-            i["lat"], i["lon"], i["precision"] = geo["lat"], geo["lon"], geo["precision"]
-            if geo["precision"] == "calle" and geo.get("trazado"):
-                i["trazado"] = geo["trazado"]
+        if not geo:
+            return False
+        i["lat"], i["lon"], i["precision"] = geo["lat"], geo["lon"], geo["precision"]
+        if geo["precision"] == "calle" and geo.get("trazado"):
+            i["trazado"] = geo["trazado"]
+        return True
+
+    # 1) Normalización local (sin IA) + Nominatim
+    fallidos = []
+    for i in ay:
+        n = cache["norm"].get(i["_raw"]) or norm_local(i["_calle"], i["detalle"])
+        if not aplicar(i, n["via"], n["numero"]):
+            fallidos.append(i)
+
+    # 2) Gemini solo para direcciones que no se han podido localizar, en pocas peticiones
+    textos = {i["_raw"]: (i["_calle"], i["_tramo"], i["detalle"][:160]) for i in fallidos if i["_raw"] not in cache["norm"]}
+    pend = list(textos)
+    key = os.environ.get("GEMINI_API_KEY")
+    if pend and key:
+        cli = genai.Client(api_key=key)
+        try:
+            for k in range(0, len(pend), 40):
+                lote = pend[k:k + 40]
+                prompt = ("Normaliza direcciones de incidencias viarias de Zaragoza (España) para geocodificarlas. "
+                          "NO devuelvas coordenadas. Para cada línea devuelve {\"i\": n, \"via\": nombre completo de la vía con "
+                          "su tipo en español (por ejemplo 'Calle Doctor Blanco Cordero'), \"numero\": número de portal como "
+                          "texto si el texto indica uno concreto, o null si no hay número, es un rango o afecta a toda la calle}. "
+                          "Expande las abreviaturas del callejero ((DR.)=Doctor, (AV.)=Avenida, (PS.)=Paseo...) y coloca el tipo "
+                          "delante. Usa solo lo que dice el texto; no inventes. Responde SOLO con una lista JSON.\n"
+                          + "\n".join(f"{n}| calle: {textos[r][0]} | tramo: {textos[r][1]} | motivo: {textos[r][2]}"
+                                      for n, r in enumerate(lote)))
+                resp = llamar_gemini(cli, prompt)
+                for o in json.loads(resp.text):
+                    cache["norm"][lote[int(o["i"])]] = {"via": o.get("via"), "numero": o.get("numero")}
+        except CuotaAgotada as e:
+            print(f"Cuota de Gemini agotada; se reintentará en la próxima ejecución. {e}")
+        except Exception as e:
+            print(f"Normalización con Gemini fallida: {e}")
+    for i in fallidos:
+        n = cache["norm"].get(i["_raw"])
+        if n and n.get("via"):
+            aplicar(i, n["via"], str(n["numero"]).strip() if n.get("numero") else None)
+
     os.makedirs("data", exist_ok=True)
     json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
 
