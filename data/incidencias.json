@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-21T23:40+02:00",
+ "actualizado": "2026-10-21T23:51+02:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -10,7 +10,7 @@
    "n": 7
   }
  },
- "sin_ubicar": 0,
+ "sin_ubicar": 1,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -21,9 +21,49 @@
    "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
    "inicio": "2025-07-09",
    "fin": "2026-10-31",
-   "lat": 41.654099292637575,
-   "lon": -0.8666523740068138,
-   "aprox": false
+   "lat": 41.6522307,
+   "lon": -0.8679222,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.651969,
+      -0.867813
+     ],
+     [
+      41.652484,
+      -0.867552
+     ],
+     [
+      41.652514,
+      -0.867785
+     ],
+     [
+      41.652028,
+      -0.86802
+     ],
+     [
+      41.651803,
+      -0.868131
+     ],
+     [
+      41.651729,
+      -0.868167
+     ],
+     [
+      41.65153,
+      -0.868266
+     ],
+     [
+      41.651272,
+      -0.868388
+     ],
+     [
+      41.651216,
+      -0.868415
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-27864",
@@ -34,9 +74,9 @@
    "detalle": "Continuando la instalación de balizas luminosas en los pasos de peatones de la Avenida",
    "inicio": "2026-11-19",
    "fin": "2026-11-22",
-   "lat": 41.65355836127876,
-   "lon": -0.9110600614967324,
-   "aprox": false
+   "lat": 41.6517123,
+   "lon": -0.91243,
+   "precision": "portal"
   },
   {
    "id": "zgz-28004",
@@ -47,9 +87,9 @@
    "detalle": "Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
    "inicio": "2026-02-02",
    "fin": "2026-12-31",
-   "lat": 41.64897068554932,
-   "lon": -0.8933592867548815,
-   "aprox": false
+   "lat": 41.647136,
+   "lon": -0.8946807,
+   "precision": "portal"
   },
   {
    "id": "zgz-28052",
@@ -60,9 +100,9 @@
    "detalle": "Dentro del Proyecto de Urbanización G-19-1 entorno de la estación del Portillo.",
    "inicio": "2026-02-04",
    "fin": "2027-01-31",
-   "lat": 41.65438494166318,
-   "lon": -0.8918813839238154,
-   "aprox": false
+   "lat": 41.652523,
+   "lon": -0.893301,
+   "precision": "portal"
   },
   {
    "id": "zgz-29395",
@@ -73,9 +113,9 @@
    "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
    "inicio": "2026-05-25",
    "fin": "2027-02-26",
-   "lat": 41.65276685810298,
-   "lon": -0.8761650791454159,
-   "aprox": false
+   "lat": 41.650931,
+   "lon": -0.8775906,
+   "precision": "portal"
   },
   {
    "id": "zgz-28867",
@@ -86,9 +126,9 @@
    "detalle": "Como inicio de las obras del proyecto de renovación del Parque Tío Jorge.",
    "inicio": "2026-04-13",
    "fin": "2027-02-28",
-   "lat": 41.66113297117048,
-   "lon": -0.8743581789826574,
-   "aprox": false
+   "lat": 41.6592754,
+   "lon": -0.8757241,
+   "precision": "portal"
   },
   {
    "id": "zgz-29040",
@@ -99,9 +139,9 @@
    "detalle": "Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
    "inicio": "2026-04-29",
    "fin": "2026-12-12",
-   "lat": 41.65470940998454,
-   "lon": -0.9260251968558116,
-   "aprox": false
+   "lat": 41.652847,
+   "lon": -0.927444,
+   "precision": "portal"
   },
   {
    "id": "zgz-29675",
@@ -112,9 +152,9 @@
    "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027).",
    "inicio": "2026-06-16",
    "fin": "2027-01-31",
-   "lat": 41.648013519108595,
-   "lon": -0.8957306849145188,
-   "aprox": false
+   "lat": 41.6461554,
+   "lon": -0.8970815,
+   "precision": "portal"
   },
   {
    "id": "zgz-29691",
@@ -127,7 +167,7 @@
    "fin": "2026-12-05",
    "lat": 41.660856970744895,
    "lon": -0.8603194362593231,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-29864",
@@ -138,9 +178,129 @@
    "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1) en el estacionamiento situado entre el CDM Siglo XXI y el IES Miguel Molinos",
    "inicio": "2026-06-27",
    "fin": "2026-11-16",
-   "lat": 41.67423287979509,
-   "lon": -0.8986165878224152,
-   "aprox": false
+   "lat": 41.6689117,
+   "lon": -0.8964733,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.671301,
+      -0.897762
+     ],
+     [
+      41.671214,
+      -0.897641
+     ],
+     [
+      41.671133,
+      -0.897535
+     ],
+     [
+      41.671083,
+      -0.897474
+     ],
+     [
+      41.671054,
+      -0.897447
+     ],
+     [
+      41.67104,
+      -0.897435
+     ],
+     [
+      41.670887,
+      -0.897292
+     ],
+     [
+      41.670758,
+      -0.8972
+     ],
+     [
+      41.670653,
+      -0.897137
+     ],
+     [
+      41.670545,
+      -0.897086
+     ],
+     [
+      41.670387,
+      -0.897026
+     ],
+     [
+      41.670243,
+      -0.896971
+     ],
+     [
+      41.67015,
+      -0.896937
+     ],
+     [
+      41.669338,
+      -0.896633
+     ],
+     [
+      41.668746,
+      -0.896411
+     ],
+     [
+      41.668441,
+      -0.896281
+     ],
+     [
+      41.668208,
+      -0.896169
+     ],
+     [
+      41.668004,
+      -0.896051
+     ],
+     [
+      41.667931,
+      -0.896009
+     ],
+     [
+      41.6678,
+      -0.895913
+     ],
+     [
+      41.66773,
+      -0.895861
+     ],
+     [
+      41.667489,
+      -0.89566
+     ],
+     [
+      41.667211,
+      -0.895387
+     ],
+     [
+      41.667029,
+      -0.895188
+     ],
+     [
+      41.66697,
+      -0.895123
+     ],
+     [
+      41.666909,
+      -0.895064
+     ],
+     [
+      41.666847,
+      -0.895004
+     ],
+     [
+      41.666756,
+      -0.894928
+     ],
+     [
+      41.666682,
+      -0.894884
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-29394",
@@ -151,9 +311,9 @@
    "detalle": "Continuando con las obras para su renovación integral.",
    "inicio": "2026-05-25",
    "fin": "2027-02-18",
-   "lat": 41.64103069265965,
-   "lon": -0.8971331655620097,
-   "aprox": false
+   "lat": 41.5590102,
+   "lon": -0.9607057,
+   "precision": "calle"
   },
   {
    "id": "zgz-30111",
@@ -164,9 +324,9 @@
    "detalle": "Continuando con las obras de la Avenida Valencia (fecha de finalización prevista enero de 2027) y para realizar la conexión de la tubería de abastecimiento",
    "inicio": "2026-07-16",
    "fin": "2026-12-01",
-   "lat": 41.64829724093569,
-   "lon": -0.8961594953597996,
-   "aprox": false
+   "lat": 41.6464415,
+   "lon": -0.8975153,
+   "precision": "portal"
   },
   {
    "id": "zgz-29137",
@@ -177,9 +337,9 @@
    "detalle": "Continuando con las obras del Río Huerva lote 1 y para trasladar las casetas de obra actualmente ubicadas en Bruno Solano.",
    "inicio": "2026-05-06",
    "fin": "2026-12-31",
-   "lat": 41.64127860385307,
-   "lon": -0.8917444824619936,
-   "aprox": false
+   "lat": 41.639417,
+   "lon": -0.893164,
+   "precision": "portal"
   },
   {
    "id": "zgz-30074",
@@ -190,9 +350,9 @@
    "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo)",
    "inicio": "2026-07-16",
    "fin": "2026-11-16",
-   "lat": 41.65667653971782,
-   "lon": -0.896868716223769,
-   "aprox": false
+   "lat": 41.6548205,
+   "lon": -0.8982344,
+   "precision": "portal"
   },
   {
    "id": "zgz-29796",
@@ -203,9 +363,9 @@
    "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027)",
    "inicio": "2026-06-24",
    "fin": "2026-11-02",
-   "lat": 41.64890236067759,
-   "lon": -0.8935281843394586,
-   "aprox": false
+   "lat": 41.6470183,
+   "lon": -0.8949306,
+   "precision": "portal"
   },
   {
    "id": "zgz-31274",
@@ -216,9 +376,9 @@
    "detalle": "Para la ampliación de aceras en la calle Consejo del Ciento",
    "inicio": "2026-10-19",
    "fin": "2026-10-24",
-   "lat": 41.62824854767359,
-   "lon": -0.873033694127698,
-   "aprox": false
+   "lat": 41.6263884,
+   "lon": -0.8743934,
+   "precision": "portal"
   },
   {
    "id": "zgz-30394",
@@ -229,9 +389,9 @@
    "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo) y para ejecutar las aceras y la futura entrada de garajes",
    "inicio": "2026-08-07",
    "fin": "2026-10-31",
-   "lat": 41.65638501926275,
-   "lon": -0.8964368598495094,
-   "aprox": false
+   "lat": 41.6545169,
+   "lon": -0.897816,
+   "precision": "portal"
   },
   {
    "id": "zgz-30568",
@@ -242,9 +402,9 @@
    "detalle": "Continuando con la canalización eléctrica",
    "inicio": "2026-08-24",
    "fin": "2026-10-28",
-   "lat": 41.66946050015758,
-   "lon": -0.8613413236048492,
-   "aprox": false
+   "lat": 41.667599,
+   "lon": -0.862763,
+   "precision": "portal"
   },
   {
    "id": "zgz-31303",
@@ -257,7 +417,7 @@
    "fin": "2026-10-21",
    "lat": 41.65898615262628,
    "lon": -0.919161315148752,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31309",
@@ -268,9 +428,49 @@
    "detalle": "Para reparar toma de C/ Fuentes de Ebro",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.65078151591448,
-   "lon": -0.9013359986990102,
-   "aprox": false
+   "lat": 41.6483088,
+   "lon": -0.9052522,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.648773,
+      -0.90347
+     ],
+     [
+      41.648752,
+      -0.90355
+     ],
+     [
+      41.648629,
+      -0.904025
+     ],
+     [
+      41.648098,
+      -0.90606
+     ],
+     [
+      41.648082,
+      -0.906124
+     ],
+     [
+      41.64808,
+      -0.906146
+     ],
+     [
+      41.648083,
+      -0.906176
+     ],
+     [
+      41.648106,
+      -0.906289
+     ],
+     [
+      41.648255,
+      -0.907048
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31334",
@@ -281,9 +481,9 @@
    "detalle": "Direcci&oacute;n: SAN PEDRO ARBUES, 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.65279857508093,
-   "lon": -0.8944914652336267,
-   "aprox": false
+   "lat": 41.6509629,
+   "lon": -0.8958499,
+   "precision": "portal"
   },
   {
    "id": "zgz-31335",
@@ -294,9 +494,9 @@
    "detalle": "Direcci&oacute;n: ORUS  JOAQUIN, 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.65248572299068,
-   "lon": -0.8943212878196718,
-   "aprox": false
+   "lat": 41.65062,
+   "lon": -0.8956927,
+   "precision": "portal"
   },
   {
    "id": "zgz-30876",
@@ -307,9 +507,9 @@
    "detalle": "Continuando con las obras para su renovación integral",
    "inicio": "2026-09-16",
    "fin": "2027-02-18",
-   "lat": 41.64294289012367,
-   "lon": -0.8953587887555314,
-   "aprox": false
+   "lat": 41.5590102,
+   "lon": -0.9607057,
+   "precision": "calle"
   },
   {
    "id": "zgz-30666",
@@ -320,9 +520,9 @@
    "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
    "inicio": "2026-09-01",
    "fin": "2026-11-20",
-   "lat": 41.662843303280646,
-   "lon": -0.9410238164735799,
-   "aprox": false
+   "lat": 41.6609828,
+   "lon": -0.9423819,
+   "precision": "portal"
   },
   {
    "id": "zgz-30562",
@@ -335,7 +535,7 @@
    "fin": "2026-10-21",
    "lat": 41.65496472983181,
    "lon": -0.89180014281996,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-30805",
@@ -346,9 +546,9 @@
    "detalle": "Para las obras de la reforma integral de la vía (plazo de ejecución, 12 meses)",
    "inicio": "2026-09-14",
    "fin": "2027-08-31",
-   "lat": 41.644535996198705,
-   "lon": -0.8635434445893071,
-   "aprox": false
+   "lat": 41.6426708,
+   "lon": -0.8649101,
+   "precision": "portal"
   },
   {
    "id": "zgz-31314",
@@ -359,9 +559,9 @@
    "detalle": "Para reparar una llave de paso a la altura del no 12",
    "inicio": "2026-10-22",
    "fin": "2026-10-27",
-   "lat": 41.721275384800535,
-   "lon": -1.0291241844371686,
-   "aprox": false
+   "lat": 41.719411,
+   "lon": -1.03054,
+   "precision": "portal"
   },
   {
    "id": "zgz-31336",
@@ -372,9 +572,9 @@
    "detalle": "Direcci&oacute;n: ASTURIAS, 5  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.651615729127016,
-   "lon": -0.8944017497694567,
-   "aprox": false
+   "lat": 41.6497626,
+   "lon": -0.8957923,
+   "precision": "portal"
   },
   {
    "id": "zgz-31288",
@@ -385,9 +585,9 @@
    "detalle": "Para realizar un cruce de calzada en la canalización eléctrica que está discurriendo por la Calle Francisco Izquierdo Molins",
    "inicio": "2026-10-20",
    "fin": "2026-10-23",
-   "lat": 41.629880601105235,
-   "lon": -0.8754864283493784,
-   "aprox": false
+   "lat": 41.62802,
+   "lon": -0.8768467,
+   "precision": "portal"
   },
   {
    "id": "zgz-31320",
@@ -400,7 +600,7 @@
    "fin": "2026-10-22",
    "lat": 41.662375961805004,
    "lon": -0.943669376187108,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31289",
@@ -413,7 +613,7 @@
    "fin": "2026-10-21",
    "lat": 41.67005259378712,
    "lon": -0.8341125493308106,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31304",
@@ -424,9 +624,9 @@
    "detalle": "Para sustituir tubería general",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.66013892791997,
-   "lon": -0.9189493228871253,
-   "aprox": false
+   "lat": 41.6582715,
+   "lon": -0.9203372,
+   "precision": "portal"
   },
   {
    "id": "zgz-31308",
@@ -437,9 +637,9 @@
    "detalle": "Para reparar toma de C/ Fuentes de Ebro",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.64935010112018,
-   "lon": -0.9041478145051167,
-   "aprox": false
+   "lat": 41.6474927,
+   "lon": -0.9055165,
+   "precision": "portal"
   },
   {
    "id": "zgz-31312",
@@ -450,9 +650,285 @@
    "detalle": "Para sustituir desagüe",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.69743628530675,
-   "lon": -0.8159310127545859,
-   "aprox": false
+   "lat": 41.7072944,
+   "lon": -0.8140161,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.693522,
+      -0.821268
+     ],
+     [
+      41.69386,
+      -0.820676
+     ],
+     [
+      41.693883,
+      -0.820634
+     ],
+     [
+      41.694056,
+      -0.820326
+     ],
+     [
+      41.694328,
+      -0.819966
+     ],
+     [
+      41.694674,
+      -0.819508
+     ],
+     [
+      41.694723,
+      -0.819429
+     ],
+     [
+      41.694795,
+      -0.819283
+     ],
+     [
+      41.694872,
+      -0.819125
+     ],
+     [
+      41.695153,
+      -0.818537
+     ],
+     [
+      41.695805,
+      -0.817172
+     ],
+     [
+      41.696038,
+      -0.816683
+     ],
+     [
+      41.696099,
+      -0.816578
+     ],
+     [
+      41.696172,
+      -0.816495
+     ],
+     [
+      41.696252,
+      -0.81643
+     ],
+     [
+      41.696321,
+      -0.816391
+     ],
+     [
+      41.696392,
+      -0.816362
+     ],
+     [
+      41.696515,
+      -0.816329
+     ],
+     [
+      41.697386,
+      -0.816174
+     ],
+     [
+      41.697732,
+      -0.816109
+     ],
+     [
+      41.697853,
+      -0.816076
+     ],
+     [
+      41.698044,
+      -0.816011
+     ],
+     [
+      41.698173,
+      -0.815952
+     ],
+     [
+      41.698296,
+      -0.81589
+     ],
+     [
+      41.698508,
+      -0.815772
+     ],
+     [
+      41.699321,
+      -0.815321
+     ],
+     [
+      41.699728,
+      -0.815204
+     ],
+     [
+      41.70187,
+      -0.815187
+     ],
+     [
+      41.702587,
+      -0.815058
+     ],
+     [
+      41.703682,
+      -0.814802
+     ],
+     [
+      41.706365,
+      -0.814234
+     ],
+     [
+      41.706933,
+      -0.814118
+     ],
+     [
+      41.707446,
+      -0.813973
+     ],
+     [
+      41.707971,
+      -0.813759
+     ],
+     [
+      41.708784,
+      -0.813439
+     ],
+     [
+      41.710799,
+      -0.812662
+     ],
+     [
+      41.711255,
+      -0.812466
+     ],
+     [
+      41.712373,
+      -0.811921
+     ],
+     [
+      41.713444,
+      -0.811419
+     ],
+     [
+      41.713873,
+      -0.811267
+     ],
+     [
+      41.714565,
+      -0.811044
+     ],
+     [
+      41.714868,
+      -0.810965
+     ],
+     [
+      41.715021,
+      -0.810929
+     ],
+     [
+      41.715129,
+      -0.810909
+     ],
+     [
+      41.715229,
+      -0.810904
+     ],
+     [
+      41.715779,
+      -0.810885
+     ],
+     [
+      41.71593,
+      -0.810841
+     ],
+     [
+      41.716616,
+      -0.810506
+     ],
+     [
+      41.716958,
+      -0.810339
+     ],
+     [
+      41.717334,
+      -0.810208
+     ],
+     [
+      41.717844,
+      -0.810111
+     ],
+     [
+      41.718151,
+      -0.810116
+     ],
+     [
+      41.718783,
+      -0.81011
+     ],
+     [
+      41.719583,
+      -0.81016
+     ],
+     [
+      41.71981,
+      -0.810191
+     ],
+     [
+      41.720663,
+      -0.810307
+     ],
+     [
+      41.721037,
+      -0.810372
+     ],
+     [
+      41.721383,
+      -0.810433
+     ],
+     [
+      41.72169,
+      -0.810487
+     ],
+     [
+      41.721965,
+      -0.810535
+     ],
+     [
+      41.722203,
+      -0.810576
+     ],
+     [
+      41.722423,
+      -0.810615
+     ],
+     [
+      41.722627,
+      -0.81065
+     ],
+     [
+      41.722834,
+      -0.810682
+     ],
+     [
+      41.723039,
+      -0.810708
+     ],
+     [
+      41.723136,
+      -0.810718
+     ],
+     [
+      41.723294,
+      -0.810725
+     ],
+     [
+      41.723482,
+      -0.81072
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31290",
@@ -465,7 +941,7 @@
    "fin": "2026-10-23",
    "lat": 41.653003628828635,
    "lon": -0.8532620861397318,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31287",
@@ -476,9 +952,21 @@
    "detalle": "Para realizar la inspección de los tirantes del puente",
    "inicio": "2026-10-20",
    "fin": "2026-10-21",
-   "lat": 41.66747033512293,
-   "lon": -0.9070764510384955,
-   "aprox": false
+   "lat": 41.6654088,
+   "lon": -0.9082356,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.663995,
+      -0.907554
+     ],
+     [
+      41.666823,
+      -0.908918
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-30833",
@@ -489,9 +977,9 @@
    "detalle": "Para ampliar la acera de los pares y mejorar la accesibilidad",
    "inicio": "2026-09-14",
    "fin": "2026-10-23",
-   "lat": 41.653470800691025,
-   "lon": -0.9196516185210767,
-   "aprox": false
+   "lat": 41.6516112,
+   "lon": -0.9210092,
+   "precision": "portal"
   },
   {
    "id": "zgz-31244",
@@ -502,9 +990,9 @@
    "detalle": "Continuando con las obras de urbanización del Área de Intervención F-56-2",
    "inicio": "2026-10-19",
    "fin": "2026-10-30",
-   "lat": 41.66291392156002,
-   "lon": -0.9412554127602609,
-   "aprox": false
+   "lat": 41.6610555,
+   "lon": -0.9426162,
+   "precision": "portal"
   },
   {
    "id": "zgz-31340",
@@ -517,7 +1005,7 @@
    "fin": "2026-10-30",
    "lat": 41.65904882966236,
    "lon": -0.9180025043841148,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31246",
@@ -528,9 +1016,9 @@
    "detalle": "Para ejecutar una acometida de vertido",
    "inicio": "2026-10-19",
    "fin": "2026-10-30",
-   "lat": 41.64269943910584,
-   "lon": -0.8715042518991292,
-   "aprox": false
+   "lat": 41.640841,
+   "lon": -0.872868,
+   "precision": "portal"
   },
   {
    "id": "zgz-31248",
@@ -541,9 +1029,29 @@
    "detalle": "Para inspeccionar con videocámara los pozos del colector (Saica)",
    "inicio": "2026-10-21",
    "fin": "2026-10-23",
-   "lat": 41.660572759908725,
-   "lon": -0.8718522010660468,
-   "aprox": false
+   "lat": 41.6655672,
+   "lon": -0.8692627,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.665773,
+      -0.869123
+     ],
+     [
+      41.665734,
+      -0.869162
+     ],
+     [
+      41.665704,
+      -0.86918
+     ],
+     [
+      41.665354,
+      -0.869392
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31341",
@@ -556,7 +1064,7 @@
    "fin": "2026-10-21",
    "lat": 41.669978247110635,
    "lon": -0.8341723390249616,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-30596",
@@ -569,7 +1077,7 @@
    "fin": "2026-11-13",
    "lat": 41.59058298271834,
    "lon": -0.8114409456643209,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31326",
@@ -580,9 +1088,9 @@
    "detalle": "Direcci&oacute;n: LORENTE  JUAN JOSE, 1  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.64859180828453,
-   "lon": -0.8936358093808636,
-   "aprox": false
+   "lat": 41.6467227,
+   "lon": -0.8950031,
+   "precision": "portal"
   },
   {
    "id": "zgz-31328",
@@ -593,9 +1101,9 @@
    "detalle": "Direcci&oacute;n: ORDESA  VALLE DE, 4  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.630191320717266,
-   "lon": -0.8859997152682858,
-   "aprox": false
+   "lat": 41.6283385,
+   "lon": -0.8873629,
+   "precision": "portal"
   },
   {
    "id": "zgz-31332",
@@ -606,9 +1114,49 @@
    "detalle": "Direcci&oacute;n: AMERICA  AVENIDA DE, 11  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo:  Entre n.º 68 y Ronda Hispanidad  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.63350056163054,
-   "lon": -0.8839140635313678,
-   "aprox": false
+   "lat": 41.624586,
+   "lon": -0.8876292,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.624459,
+      -0.887898
+     ],
+     [
+      41.624491,
+      -0.887819
+     ],
+     [
+      41.624523,
+      -0.887747
+     ],
+     [
+      41.624555,
+      -0.887681
+     ],
+     [
+      41.624606,
+      -0.887597
+     ],
+     [
+      41.62465,
+      -0.887532
+     ],
+     [
+      41.624683,
+      -0.887492
+     ],
+     [
+      41.624721,
+      -0.88745
+     ],
+     [
+      41.624774,
+      -0.887399
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31333",
@@ -619,9 +1167,57 @@
    "detalle": "Direcci&oacute;n: ESCORIAZA Y FABRO  M., 3  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo:  Entre los n.º 45 y 59 inclusive  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.64974491562635,
-   "lon": -0.8927421713512147,
-   "aprox": false
+   "lat": 41.6544356,
+   "lon": -0.8990107,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.654652,
+      -0.899929
+     ],
+     [
+      41.654629,
+      -0.899793
+     ],
+     [
+      41.654641,
+      -0.899736
+     ],
+     [
+      41.654646,
+      -0.899686
+     ],
+     [
+      41.654642,
+      -0.899638
+     ],
+     [
+      41.654631,
+      -0.899585
+     ],
+     [
+      41.654598,
+      -0.899486
+     ],
+     [
+      41.654502,
+      -0.899206
+     ],
+     [
+      41.654456,
+      -0.899073
+     ],
+     [
+      41.654184,
+      -0.898262
+     ],
+     [
+      41.654131,
+      -0.898105
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31337",
@@ -632,9 +1228,9 @@
    "detalle": "Direcci&oacute;n: MONCAYO, 8  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: Entre C/ San Pedro Arbués y C/ Escoriaza y Fabro  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.651772839623824,
-   "lon": -0.894000830667808,
-   "aprox": false
+   "lat": 41.6499255,
+   "lon": -0.8954156,
+   "precision": "portal"
   },
   {
    "id": "zgz-31114",
@@ -645,9 +1241,9 @@
    "detalle": "Para la ejecución de orejetas y un paso de peatones",
    "inicio": "2026-10-02",
    "fin": "2026-11-16",
-   "lat": 41.6293187686535,
-   "lon": -0.8724973207001823,
-   "aprox": false
+   "lat": 41.6274587,
+   "lon": -0.873865,
+   "precision": "portal"
   },
   {
    "id": "zgz-30915",
@@ -660,7 +1256,7 @@
    "fin": "2026-10-23",
    "lat": 41.690934200984806,
    "lon": -0.889283577703254,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31307",
@@ -671,9 +1267,9 @@
    "detalle": "Para reparar toma de C/ Fuentes de Ebro",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.6497623122814,
-   "lon": -0.9038556189372899,
-   "aprox": false
+   "lat": 41.6478906,
+   "lon": -0.9052224,
+   "precision": "portal"
   },
   {
    "id": "zgz-31247",
@@ -684,9 +1280,9 @@
    "detalle": "Para recrecer la acera, en la parada de Bus junto al n.o 20",
    "inicio": "2026-10-19",
    "fin": "2026-10-30",
-   "lat": 41.628247346190896,
-   "lon": -0.9114075956206455,
-   "aprox": false
+   "lat": 41.626386,
+   "lon": -0.912826,
+   "precision": "portal"
   },
   {
    "id": "zgz-31272",
@@ -699,7 +1295,7 @@
    "fin": "2026-10-23",
    "lat": 41.647276454528196,
    "lon": -0.8905455101952756,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31273",
@@ -710,9 +1306,41 @@
    "detalle": "Para la ejecución de cruce de calzada de canalización eléctrica, a la altura del n.o 8",
    "inicio": "2026-10-20",
    "fin": "2026-10-23",
-   "lat": 41.647991453355765,
-   "lon": -0.8634336781420535,
-   "aprox": false
+   "lat": 41.6457335,
+   "lon": -0.8601396,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.645634,
+      -0.859129
+     ],
+     [
+      41.645646,
+      -0.859238
+     ],
+     [
+      41.645716,
+      -0.859959
+     ],
+     [
+      41.645755,
+      -0.860353
+     ],
+     [
+      41.645783,
+      -0.860652
+     ],
+     [
+      41.645793,
+      -0.860762
+     ],
+     [
+      41.645831,
+      -0.86115
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31302",
@@ -723,9 +1351,9 @@
    "detalle": "Para sustituir tubería general",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.65771620102868,
-   "lon": -0.9191892412602662,
-   "aprox": false
+   "lat": 41.655893,
+   "lon": -0.9205234,
+   "precision": "portal"
   },
   {
    "id": "zgz-31306",
@@ -736,9 +1364,9 @@
    "detalle": "Para reparar toma de C/ Fuentes de Ebro",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.6495401536161,
-   "lon": -0.903699393374716,
-   "aprox": false
+   "lat": 41.6477755,
+   "lon": -0.9050863,
+   "precision": "portal"
   },
   {
    "id": "zgz-30944",
@@ -751,7 +1379,7 @@
    "fin": "2026-10-31",
    "lat": 41.67283493889929,
    "lon": -0.8596966767022661,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31167",
@@ -762,9 +1390,9 @@
    "detalle": "Dentro de las obras del Río Huerva (Lote 1) y continuando con la renovación de la tubería de abastecimiento que cruza la calzada a la altura de Carrera del Sábado",
    "inicio": "2026-09-11",
    "fin": "2026-10-23",
-   "lat": 41.64239957486903,
-   "lon": -0.8869261144487789,
-   "aprox": false
+   "lat": 41.640538,
+   "lon": -0.888346,
+   "precision": "portal"
   },
   {
    "id": "zgz-31321",
@@ -777,7 +1405,7 @@
    "fin": "2026-10-22",
    "lat": 41.666401912432406,
    "lon": -0.9414888566133328,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31315",
@@ -790,7 +1418,7 @@
    "fin": "2026-10-30",
    "lat": 41.69014437469493,
    "lon": -0.8273019454973861,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31319",
@@ -803,7 +1431,7 @@
    "fin": "2026-10-22",
    "lat": 41.662585473550564,
    "lon": -0.9430214635532594,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31322",
@@ -814,9 +1442,9 @@
    "detalle": "Direcci&oacute;n: AEROPUERTO  CARRETERA, 275  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.665987577887975,
-   "lon": -0.9673358902867025,
-   "aprox": false
+   "lat": 41.6623262,
+   "lon": -0.9675442,
+   "precision": "portal"
   },
   {
    "id": "zgz-31323",
@@ -827,9 +1455,9 @@
    "detalle": "Direcci&oacute;n: ARAGON (FUEROS DE), 16  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.64853367591646,
-   "lon": -0.893196413159558,
-   "aprox": false
+   "lat": 41.6466891,
+   "lon": -0.8946011,
+   "precision": "portal"
   },
   {
    "id": "zgz-31324",
@@ -840,9 +1468,9 @@
    "detalle": "Direcci&oacute;n: VALENCIA  AVENIDA DE, 9  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.64897068554932,
-   "lon": -0.8933592867548815,
-   "aprox": false
+   "lat": 41.6471108,
+   "lon": -0.8947199,
+   "precision": "portal"
   },
   {
    "id": "zgz-31327",
@@ -853,9 +1481,9 @@
    "detalle": "Direcci&oacute;n: BENASQUE  VALLE DE, 1  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.63023157562829,
-   "lon": -0.8862246843553278,
-   "aprox": false
+   "lat": 41.6283785,
+   "lon": -0.8875879,
+   "precision": "portal"
   },
   {
    "id": "zgz-31329",
@@ -866,9 +1494,9 @@
    "detalle": "Direcci&oacute;n: SALLENT DE GALLEGO, 7  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.630152048871,
-   "lon": -0.8857743541952885,
-   "aprox": false
+   "lat": 41.6282995,
+   "lon": -0.8871379,
+   "precision": "portal"
   },
   {
    "id": "zgz-31330",
@@ -879,9 +1507,9 @@
    "detalle": "Direcci&oacute;n: PANTICOSA  VILLA DE, 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.630115821509975,
-   "lon": -0.885548053556573,
-   "aprox": false
+   "lat": 41.6282613,
+   "lon": -0.8869127,
+   "precision": "portal"
   },
   {
    "id": "zgz-31331",
@@ -892,9 +1520,9 @@
    "detalle": "Direcci&oacute;n: TORLA  VILLA DE, 13  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.63007895259181,
-   "lon": -0.8853211739269781,
-   "aprox": false
+   "lat": 41.6282216,
+   "lon": -0.8866866,
+   "precision": "portal"
   },
   {
    "id": "zgz-31338",
@@ -905,9 +1533,9 @@
    "detalle": "Direcci&oacute;n: ARTIEDA, 5  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: Entre los n.º 1 y 5 inclusive  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.65402924650179,
-   "lon": -0.9186593552832135,
-   "aprox": false
+   "lat": 41.652167,
+   "lon": -0.920078,
+   "precision": "portal"
   },
   {
    "id": "zgz-31003",
@@ -918,22 +1546,9 @@
    "detalle": "Continuando con la rehabilitación del grupo de viviendas Aloy Salas y para realizar una canalización eléctrica entre las calles López Abadía y Félix Rodriguez de la Fuente",
    "inicio": "2026-09-25",
    "fin": "2026-11-27",
-   "lat": 41.654099292637575,
-   "lon": -0.8666523740068138,
-   "aprox": false
-  },
-  {
-   "id": "zgz-31144",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ENMEDIO           PÑF, 2",
-   "via": "",
-   "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
-   "inicio": "2026-10-05",
-   "fin": "2026-11-15",
-   "lat": 41.74786,
-   "lon": -0.79275,
-   "aprox": true
+   "lat": 41.652238,
+   "lon": -0.868073,
+   "precision": "portal"
   },
   {
    "id": "zgz-31148",
@@ -944,9 +1559,9 @@
    "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
    "inicio": "2026-10-09",
    "fin": "2026-11-30",
-   "lat": 41.65217053544231,
-   "lon": -0.8878220648380007,
-   "aprox": false
+   "lat": 41.650317,
+   "lon": -0.8892003,
+   "precision": "portal"
   },
   {
    "id": "zgz-31234",
@@ -959,7 +1574,7 @@
    "fin": "2026-11-06",
    "lat": 41.656832846812705,
    "lon": -0.7887810252750279,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31235",
@@ -970,9 +1585,9 @@
    "detalle": "Continuando con las obras de la Avenida Valencia y para realizar la conexión de servicios",
    "inicio": "2026-10-21",
    "fin": "2026-11-23",
-   "lat": 41.64859180828453,
-   "lon": -0.8936358093808636,
-   "aprox": false
+   "lat": 41.6467227,
+   "lon": -0.8950031,
+   "precision": "portal"
   },
   {
    "id": "zgz-31305",
@@ -983,9 +1598,9 @@
    "detalle": "Para empalmar tuberías generales",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.65526354126377,
-   "lon": -0.8812624499612625,
-   "aprox": false
+   "lat": 41.653407,
+   "lon": -0.882609,
+   "precision": "portal"
   },
   {
    "id": "zgz-31313",
@@ -998,7 +1613,7 @@
    "fin": "2026-10-21",
    "lat": 41.697288028312954,
    "lon": -0.815541996480374,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31245",
@@ -1009,9 +1624,9 @@
    "detalle": "Para reparar la tubería de vertido para el Centro Cívico Delicias",
    "inicio": "2026-10-19",
    "fin": "2026-10-30",
-   "lat": 41.657970637137986,
-   "lon": -0.9054299635606741,
-   "aprox": false
+   "lat": 41.6559962,
+   "lon": -0.9068401,
+   "precision": "calle"
   },
   {
    "id": "zgz-31310",
@@ -1022,9 +1637,9 @@
    "detalle": "Para reparar toma de C/ Fuentes de Ebro.",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.64999041522697,
-   "lon": -0.9056861947792814,
-   "aprox": false
+   "lat": 41.6481556,
+   "lon": -0.9070074,
+   "precision": "portal"
   },
   {
    "id": "zgz-31311",
@@ -1035,9 +1650,9 @@
    "detalle": "Para reparar toma de C/ Fuentes de Ebro.",
    "inicio": "2026-10-21",
    "fin": "2026-10-21",
-   "lat": 41.650928635048814,
-   "lon": -0.8989187421505365,
-   "aprox": false
+   "lat": 41.6490576,
+   "lon": -0.9002816,
+   "precision": "portal"
   },
   {
    "id": "zgz-31271",
@@ -1050,7 +1665,7 @@
    "fin": "2026-10-30",
    "lat": 41.66291392156002,
    "lon": -0.9412554127602609,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "zgz-31325",
@@ -1061,9 +1676,9 @@
    "detalle": "Direcci&oacute;n: BURRIEL (ALCALDE), 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.648423074467665,
-   "lon": -0.8944442754765892,
-   "aprox": false
+   "lat": 41.6465622,
+   "lon": -0.8958098,
+   "precision": "portal"
   },
   {
    "id": "zgz-31339",
@@ -1074,9 +1689,9 @@
    "detalle": "Direcci&oacute;n: HISPANIDAD  VIA, 9  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: ENTRE LOS N.º 97 Y 103 INCLUSIVE  Observaciones: Desde las 10 hasta las 18 horas",
    "inicio": "2026-10-22",
    "fin": "2026-10-22",
-   "lat": 41.63467565909572,
-   "lon": -0.9058253226870914,
-   "aprox": false
+   "lat": 41.6471116,
+   "lon": -0.9169874,
+   "precision": "portal"
   },
   {
    "id": "zgz-31093",
@@ -1087,9 +1702,9 @@
    "detalle": "Continuando con las obras de la Avenida",
    "inicio": "2026-10-01",
    "fin": "2026-12-31",
-   "lat": 41.64897068554932,
-   "lon": -0.8933592867548815,
-   "aprox": false
+   "lat": 41.6471108,
+   "lon": -0.8947199,
+   "precision": "portal"
   },
   {
    "id": "zgz-31208",
@@ -1102,7 +1717,7 @@
    "fin": "2026-10-21",
    "lat": 41.6613798221084,
    "lon": -0.9099280389702402,
-   "aprox": false
+   "precision": "aprox"
   },
   {
    "id": "dgt-29254748",
@@ -1115,7 +1730,7 @@
    "fin": "2026-10-22",
    "lat": 41.65587,
    "lon": -0.95558417,
-   "aprox": false
+   "precision": "exacta"
   },
   {
    "id": "dgt-29258498",
@@ -1128,33 +1743,7 @@
    "fin": "2026-10-30",
    "lat": 41.683613,
    "lon": -0.96780777,
-   "aprox": false
-  },
-  {
-   "id": "dgt-29268920",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 317.4–320.1",
-   "detalle": "",
-   "inicio": "2026-10-21",
-   "fin": null,
-   "lat": 41.681126,
-   "lon": -0.90646666,
-   "aprox": false
-  },
-  {
-   "id": "dgt-29269051",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 244.0–244.4",
-   "detalle": "",
-   "inicio": "2026-10-21",
-   "fin": null,
-   "lat": 41.67805,
-   "lon": -0.9327321,
-   "aprox": false
+   "precision": "exacta"
   },
   {
    "id": "dgt-29268922",
@@ -1167,7 +1756,7 @@
    "fin": null,
    "lat": 41.67941,
    "lon": -0.93714744,
-   "aprox": false
+   "precision": "exacta"
   },
   {
    "id": "dgt-29268921",
@@ -1180,7 +1769,33 @@
    "fin": null,
    "lat": 41.681126,
    "lon": -0.90646666,
-   "aprox": false
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29268920",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.4–320.1",
+   "detalle": "",
+   "inicio": "2026-10-21",
+   "fin": null,
+   "lat": 41.681126,
+   "lon": -0.90646666,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29269051",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-68",
+   "via": "pk 244.0–244.4",
+   "detalle": "",
+   "inicio": "2026-10-21",
+   "fin": null,
+   "lat": 41.67805,
+   "lon": -0.9327321,
+   "precision": "exacta"
   },
   {
    "id": "dgt-29269884",
@@ -1193,7 +1808,7 @@
    "fin": null,
    "lat": 41.67891,
    "lon": -0.85480946,
-   "aprox": false
+   "precision": "exacta"
   }
  ]
 }
