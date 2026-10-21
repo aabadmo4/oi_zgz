@@ -1,0 +1,61 @@
+name: Actualizar datos y publicar
+
+on:
+  schedule:
+    - cron: '30 4 * * *'   # 06:30 España (verano) / 05:30 (invierno)
+    - cron: '0 12 * * *'   # 14:00 / 13:00
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests lxml pyproj google-genai
+
+      - name: Generar datos
+        id: gen
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/actualizar_datos.py
+
+      - name: Guardar datos nuevos (solo si todo fue bien)
+        if: steps.gen.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "Datos actualizados" && git push)
+
+      - name: Aviso si falló
+        if: steps.gen.outcome == 'failure'
+        run: echo "::warning::No se obtuvieron datos válidos; se publica la última versión buena."
+
+      - name: Preparar sitio
+        run: |
+          mkdir _site
+          cp -r index.html CNAME ads.txt data _site/
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
