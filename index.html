@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<!-- AdSense: sustituye ca-pub-267266429964 aquí y en ADS.client (más abajo) -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-267266429964" crossorigin="anonymous"></script>
+<!-- AdSense: el ID de editor también está en ADS.client (más abajo) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2672664299641705" crossorigin="anonymous"></script>
 <style>
 :root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0}
 @media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8}}
@@ -49,39 +49,38 @@ input[type=search]{flex:1}
 .pin.dash{outline:2px dashed #1d2024;outline-offset:2px}
 footer{font-size:12px;color:var(--mute);padding:6px 16px;background:var(--panel);border-top:1px solid var(--line)}
 @media(max-width:760px){
- body{height:auto;min-height:100%}
- main{display:flex;flex-direction:column}
- #mapa{order:-1;height:40vh;min-height:0}
- aside{border-right:0;border-top:1px solid var(--line)}
- #lista{overflow:visible}
- .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+body{height:auto;min-height:100%}
+main{display:flex;flex-direction:column}
+#mapa{order:-1;height:40vh;min-height:0}
+aside{border-right:0;border-top:1px solid var(--line)}
+#lista{overflow:visible}
+.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 }
 </style>
 </head>
 <body>
 <header><h1>Obras e Incidencias ZARAGOZA</h1><span id="estado">Cargando…</span></header>
 <main>
- <aside>
-  <div id="adTop"></div>
-  <div class="filtros">
-   <div class="chips" id="chips" role="group" aria-label="Filtros"></div>
-   <div class="fila">
-    <input type="search" id="q" placeholder="Buscar calle o motivo" aria-label="Buscar">
-    <select id="fuente" aria-label="Fuente"><option value="">Todas</option><option>Ayuntamiento</option><option>DGT</option></select>
-   </div>
-  </div>
-  <div id="cuenta"></div>
-  <ul id="lista"></ul>
- </aside>
- <div id="mapa" role="region" aria-label="Mapa de incidencias"></div>
+<aside>
+<div id="adTop"></div>
+<div class="filtros">
+<div class="chips" id="chips" role="group" aria-label="Filtros"></div>
+<div class="fila">
+<input type="search" id="q" placeholder="Buscar calle o motivo" aria-label="Buscar">
+<select id="fuente" aria-label="Fuente"><option value="">Todas</option><option>Ayuntamiento</option><option>DGT</option></select>
+</div>
+</div>
+<div id="cuenta"></div>
+<ul id="lista"></ul>
+</aside>
+<div id="mapa" role="region" aria-label="Mapa de incidencias"></div>
 </main>
 <footer>Datos: Ayuntamiento de Zaragoza y DGT (NAP). Direcciones localizadas con OpenStreetMap; el marcador con borde discontinuo indica toda la calle o ubicación orientativa. Información orientativa; consulta siempre la señalización.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-// ---- Publicidad: crea las unidades en AdSense y pega aquí sus IDs ----
-const ADS={client:'ca-pub-XXXXXXXXXXXXXXXX',banner:'0000000001',feed:'0000000002',layout:'-XXXXXXXXXXXX'};
+// ---- Publicidad: IDs de AdSense ----
+const ADS={client:'ca-pub-2672664299641705',banner:'3859322059',feed:'9306430712',layout:'-fb+5w+4e-db+86'};
 const PAG=8,MAS=10,PRIMER_ANUNCIO=5,CADA=12,MAX_ANUNCIOS=4;
-
 const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚗','#e9d27a'],Otros:['⚠️','#c9ced3']};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=id=>document.getElementById(id);
@@ -89,63 +88,56 @@ const map=L.map('mapa').setView([41.6488,-0.8891],12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
 const capa=L.layerGroup().addTo(map);
 let datos=[],marcas=new Map(),activos=new Set(Object.keys(TIPOS)),visSolo=false,filtrados=[],limite=PAG;
-
 function crearAd(t){const d=document.createElement('div');d.className='ad';
- d.innerHTML=`<small>Publicidad</small><ins class="adsbygoogle" style="display:block" data-ad-client="${ADS.client}" data-ad-slot="${ADS[t]}" ${t==='feed'?`data-ad-format="fluid" data-ad-layout-key="${ADS.layout}"`:'data-ad-format="auto" data-full-width-responsive="true"'}></ins>`;return d}
+d.innerHTML=`<small>Publicidad</small><ins class="adsbygoogle" style="display:block" data-ad-client="${ADS.client}" data-ad-slot="${ADS[t]}" ${t==='feed'?`data-ad-format="fluid" data-ad-layout-key="${ADS.layout}"`:'data-ad-format="auto" data-full-width-responsive="true"'}></ins>`;return d}
 function pushAd(d){if(d.dataset.p)return;d.dataset.p=1;try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}}
 const anunciosLista=[]; // se crean una sola vez y se reutilizan: filtrar no genera peticiones de anuncio nuevas
 function anuncioLista(k){if(!anunciosLista[k]){const li=document.createElement('li');li.className='ad-li';li.appendChild(crearAd('feed'));anunciosLista[k]=li}return anunciosLista[k]}
-
 function fechas(i){return i.fin?`Hasta ${i.fin}`:i.inicio?`Desde ${i.inicio}`:''}
 function aviso(i){return i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa':i.precision==='aprox'?'Ubicación aproximada':''}
 function icono(t,p){const [e,c]=TIPOS[t]||TIPOS.Otros;return L.divIcon({className:'',html:`<div class="pin${p==='calle'||p==='aprox'?' dash':''}" style="background:${c}">${e}</div>`,iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})}
 function popup(i){return `<strong>${esc(i.titulo)}</strong><br>${esc(i.tipo)} · ${esc(i.fuente)}${i.via?`<br>${esc(i.via)}`:''}${i.detalle?`<br>${esc(i.detalle)}`:''}${fechas(i)?`<br>${fechas(i)}`:''}${aviso(i)?`<br><em>${aviso(i)}</em>`:''}`}
-
 function pintar(){
-  limite=PAG;
-  const q=$('q').value.trim().toLowerCase(),f=$('fuente').value,b=map.getBounds();
-  filtrados=datos.filter(i=>activos.has(i.tipo)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
-  capa.clearLayers();marcas.clear();
-  filtrados.forEach(i=>{
-    const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:i.titulo}).bindPopup(popup(i));
-    capa.addLayer(m);
-    if(i.trazado)capa.addLayer(L.polyline(i.trazado,{color:(TIPOS[i.tipo]||TIPOS.Otros)[1],weight:6,opacity:.85}));
-    marcas.set(i.id,m);
-  });
-  lista();
+limite=PAG;
+const q=$('q').value.trim().toLowerCase(),f=$('fuente').value,b=map.getBounds();
+filtrados=datos.filter(i=>activos.has(i.tipo)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
+capa.clearLayers();marcas.clear();
+filtrados.forEach(i=>{
+const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:i.titulo}).bindPopup(popup(i));
+capa.addLayer(m);
+if(i.trazado)capa.addLayer(L.polyline(i.trazado,{color:(TIPOS[i.tipo]||TIPOS.Otros)[1],weight:6,opacity:.85}));
+marcas.set(i.id,m);
+});
+lista();
 }
-
 function lista(){
-  const ul=$('lista');ul.innerHTML='';
-  filtrados.slice(0,limite).forEach((i,n)=>{
-    const li=document.createElement('li'),[e,c]=TIPOS[i.tipo]||TIPOS.Otros;
-    li.innerHTML=`<button type="button" class="it"><span class="ico" style="background:${c}">${e}</span><span><div class="t">${esc(i.titulo)}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
-    li.firstChild.onclick=()=>{map.setView([i.lat,i.lon],16);marcas.get(i.id)?.openPopup();if(innerWidth<=760)scrollTo({top:0,behavior:'smooth'})};
-    ul.appendChild(li);
-    const pos=n+1,k=pos===PRIMER_ANUNCIO?0:(pos>PRIMER_ANUNCIO&&(pos-PRIMER_ANUNCIO)%CADA===0?(pos-PRIMER_ANUNCIO)/CADA:-1);
-    if(k>=0&&k<MAX_ANUNCIOS){const a=anuncioLista(k);ul.appendChild(a);pushAd(a.firstChild)}
-  });
-  const resto=filtrados.length-limite;
-  if(resto>0){const li=document.createElement('li');li.className='mas';li.innerHTML=`<button type="button">Mostrar más (${resto})</button>`;li.firstChild.onclick=()=>{limite+=MAS;lista()};ul.appendChild(li)}
-  $('cuenta').textContent=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.';
+const ul=$('lista');ul.innerHTML='';
+filtrados.slice(0,limite).forEach((i,n)=>{
+const li=document.createElement('li'),[e,c]=TIPOS[i.tipo]||TIPOS.Otros;
+li.innerHTML=`<button type="button" class="it"><span class="ico" style="background:${c}">${e}</span><span><div class="t">${esc(i.titulo)}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
+li.firstChild.onclick=()=>{map.setView([i.lat,i.lon],16);marcas.get(i.id)?.openPopup();if(innerWidth<=760)scrollTo({top:0,behavior:'smooth'})};
+ul.appendChild(li);
+const pos=n+1,k=pos===PRIMER_ANUNCIO?0:(pos>PRIMER_ANUNCIO&&(pos-PRIMER_ANUNCIO)%CADA===0?(pos-PRIMER_ANUNCIO)/CADA:-1);
+if(k>=0&&k<MAX_ANUNCIOS){const a=anuncioLista(k);ul.appendChild(a);pushAd(a.firstChild)}
+});
+const resto=filtrados.length-limite;
+if(resto>0){const li=document.createElement('li');li.className='mas';li.innerHTML=`<button type="button">Mostrar más (${resto})</button>`;li.firstChild.onclick=()=>{limite+=MAS;lista()};ul.appendChild(li)}
+$('cuenta').textContent=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.';
 }
-
 $('chips').innerHTML=Object.entries(TIPOS).map(([t,[e]])=>`<button type="button" class="chip" aria-pressed="true" data-t="${t}">${e} ${t}</button>`).join('')+'<button type="button" class="chip" id="vis" aria-pressed="false">📍 Solo mapa visible</button>';
 $('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;
-  if(b.id==='vis'){visSolo=!visSolo;b.setAttribute('aria-pressed',visSolo)}
-  else{const t=b.dataset.t,on=!activos.has(t);on?activos.add(t):activos.delete(t);b.setAttribute('aria-pressed',on)}
-  pintar()};
+if(b.id==='vis'){visSolo=!visSolo;b.setAttribute('aria-pressed',visSolo)}
+else{const t=b.dataset.t,on=!activos.has(t);on?activos.add(t):activos.delete(t);b.setAttribute('aria-pressed',on)}
+pintar()};
 ['q','fuente'].forEach(id=>$(id).addEventListener('input',pintar));
 map.on('moveend',()=>{if(visSolo)pintar()});
-
 const adArriba=crearAd('banner');$('adTop').appendChild(adArriba);pushAd(adArriba);
-
 fetch('data/incidencias.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
-  datos=d.incidencias||[];
-  const f=new Date(d.actualizado);
-  $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
-  pintar();
-  if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
+datos=d.incidencias||[];
+const f=new Date(d.actualizado);
+$('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
+pintar();
+if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
 }).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
 </script>
 </body>
