@@ -10,7 +10,7 @@ from google.genai import types
 
 MODELO = "gemini-3.6-flash"
 LAT_MIN, LAT_MAX, LON_MIN, LON_MAX = 41.55, 41.76, -1.08, -0.78  # Zaragoza y entorno (rondas, A-2, Z-40...)
-SALIDA, CACHE = "data/incidencias.json", "data/geocache.json"
+SALIDA, CACHE = "data/incidencias.json", "data/geocache_v2.json"
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 XSI = "{http://www.w3.org/2001/XMLSchema-instance}type"
 
@@ -92,8 +92,9 @@ def fetch_ayuntamiento():
             "titulo": str(calle).strip(), "via": str(tramo).strip(),
             "detalle": re.sub(r"<[^>]+>", " ", str(motivo)).strip(),
             "inicio": dia(it.get("inicio")), "fin": dia(it.get("fin")),
-            "lat": c[0] if c else None, "lon": c[1] if c else None, "aprox": False,
-            "_consulta": f"{calle}, {tramo}, Zaragoza, España".replace(", ,", ","),
+            "lat": c[0] if c else None, "lon": c[1] if c else None,
+            "precision": "aprox" if c else None,
+            "_calle": str(calle).strip(), "_tramo": str(tramo).strip(),
         })
     return out
 
@@ -128,44 +129,116 @@ def fetch_dgt():
             "detalle": " ".join(coment)[:300],
             "inicio": dia((xp(rec, './/*[local-name()="overallStartTime"]/text()') or [None])[0]),
             "fin": dia((xp(rec, './/*[local-name()="overallEndTime"]/text()') or [None])[0]),
-            "lat": float(lats[0]), "lon": float(lons[0]), "aprox": False,
+            "lat": float(lats[0]), "lon": float(lons[0]), "precision": "exacta",
         })
     return out
 
 
-# ---------- Geocodificación con Gemini (solo lo que no trae coordenadas) ----------
-def geocodificar(items):
-    pend = [i for i in items if i["lat"] is None]
-    if not pend:
-        return
+# ---------- Ubicación por dirección: Gemini normaliza el texto, Nominatim (OSM) da las coordenadas ----------
+NOMINATIM = "https://nominatim.openstreetmap.org/search"
+UA_NOM = {"User-Agent": "obraseincidenciaszaragoza.es/1.0 (https://github.com/aabadmo4/oi_zgz)"}
+
+
+def cargar_cache():
     try:
-        cache = json.load(open(CACHE, encoding="utf-8"))
+        c = json.load(open(CACHE, encoding="utf-8"))
     except Exception:
-        cache = {}
-    nuevas = sorted({i["_consulta"] for i in pend if i["_consulta"] not in cache})
+        c = {}
+    c.setdefault("norm", {})
+    c.setdefault("geo", {})
+    return c
+
+
+def nominatim(via, numero):
+    """Busca calle (y portal si hay número) dentro de Zaragoza. Respeta 1 petición/segundo."""
+    params = {"format": "jsonv2", "limit": 1, "countrycodes": "es", "city": "Zaragoza",
+              "street": f"{numero or ''} {via}".strip(),
+              "viewbox": f"{LON_MIN},{LAT_MAX},{LON_MAX},{LAT_MIN}", "bounded": 1,
+              "polygon_geojson": 0 if numero else 1}
+    r = reintentar(lambda: requests.get(NOMINATIM, params=params, headers=UA_NOM, timeout=30))
+    time.sleep(1.1)
+    r.raise_for_status()
+    res = r.json()
+    if not res or not en_zgz(res[0]["lat"], res[0]["lon"]):
+        return None
+    o = res[0]
+    geo = {"lat": float(o["lat"]), "lon": float(o["lon"]),
+           "precision": "portal" if numero and o.get("category") != "highway" else "calle"}
+    g = o.get("geojson") or {}
+    if g.get("type") == "LineString":
+        lineas = [g["coordinates"]]
+    elif g.get("type") == "MultiLineString":
+        lineas = g["coordinates"]
+    else:
+        lineas = []
+    if lineas:
+        geo["trazado"] = [[[round(y, 6), round(x, 6)] for x, y in l[::max(1, len(l) // 40)]] for l in lineas]
+    return geo
+
+
+def fallback_norm(calle):
+    m = re.match(r"^(.*?),\s*(\d+\s?[A-Za-z]?)$", calle)
+    return {"via": m.group(1) if m else calle, "numero": m.group(2).replace(" ", "") if m else None}
+
+
+def geocodificar(items):
+    ay = [i for i in items if i["fuente"] == "Ayuntamiento"]
+    if not ay:
+        return
+    cache = cargar_cache()
+    textos = {}
+    for i in ay:
+        i["_raw"] = f'{i["_calle"]}|{i["_tramo"]}|{i["detalle"][:160]}'
+        textos[i["_raw"]] = (i["_calle"], i["_tramo"], i["detalle"][:160])
+
+    # 1) Gemini solo normaliza el texto (tipo de vía, nombre, número). No devuelve coordenadas.
+    pend = [r for r in textos if r not in cache["norm"]]
     key = os.environ.get("GEMINI_API_KEY")
-    if nuevas and key:
+    if pend and key:
         cli = genai.Client(api_key=key)
-        for k in range(0, len(nuevas), 25):
-            lote = nuevas[k:k + 25]
-            prompt = ("Eres un geocodificador para Zaragoza (España). Para cada dirección devuelve el punto central "
-                      "del tramo en WGS84. Responde SOLO con una lista JSON de objetos {\"i\": número, \"lat\": número|null, "
-                      "\"lon\": número|null}. Si no estás razonablemente seguro, usa null; no inventes.\n"
-                      + "\n".join(f"{n}: {q}" for n, q in enumerate(lote)))
+        for k in range(0, len(pend), 20):
+            lote = pend[k:k + 20]
+            prompt = ("Normaliza direcciones de incidencias viarias de Zaragoza (España) para geocodificarlas. "
+                      "NO devuelvas coordenadas. Para cada línea devuelve un objeto "
+                      "{\"i\": n, \"via\": nombre completo de la vía con su tipo en español (por ejemplo "
+                      "'Calle Doctor Blanco Cordero' o 'Avenida de Navarra'), \"numero\": número de portal como texto "
+                      "si el texto indica uno concreto (en calle, tramo o motivo, por ejemplo 'n.º 8' o ', 11'), "
+                      "o null si no hay número, es un rango o afecta a toda la calle}. "
+                      "Expande las abreviaturas del callejero ((DR.)=Doctor, (AV.)=Avenida, (PS.)=Paseo, "
+                      "(PZA.)=Plaza, (C/)=Calle...) y coloca el tipo delante. Usa solo lo que dice el texto; no inventes. "
+                      "Responde SOLO con una lista JSON.\n"
+                      + "\n".join(f"{n}| calle: {textos[r][0]} | tramo: {textos[r][1]} | motivo: {textos[r][2]}"
+                                  for n, r in enumerate(lote)))
             try:
-                r = reintentar(lambda: cli.models.generate_content(
+                resp = reintentar(lambda: cli.models.generate_content(
                     model=MODELO, contents=prompt,
                     config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0)))
-                for o in json.loads(r.text):
-                    if en_zgz(o.get("lat"), o.get("lon")):
-                        cache[lote[int(o["i"])]] = [float(o["lat"]), float(o["lon"])]
+                for o in json.loads(resp.text):
+                    cache["norm"][lote[int(o["i"])]] = {"via": o.get("via"), "numero": o.get("numero")}
             except Exception as e:
-                print(f"Geocodificación fallida para un lote: {e}")
-        json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    for i in pend:
-        if i["_consulta"] in cache:
-            i["lat"], i["lon"] = cache[i["_consulta"]]
-            i["aprox"] = True
+                print(f"Normalización fallida para un lote: {e}")
+
+    # 2) Nominatim (OpenStreetMap) localiza la calle y el portal; si el portal no existe, cae a la calle.
+    for i in ay:
+        n = cache["norm"].get(i["_raw"]) or fallback_norm(i["_calle"])
+        via = n.get("via") or i["_calle"]
+        num = str(n["numero"]).strip() if n.get("numero") else None
+        gk = f"{via}|{num or ''}"
+        geo = cache["geo"].get(gk)
+        if not geo:
+            try:
+                geo = nominatim(via, num) or (nominatim(via, None) if num else None)
+            except Exception as e:
+                print(f"Nominatim falló para {gk}: {e}")
+                geo = None
+            if geo:
+                cache["geo"][gk] = geo
+        if geo:
+            i["lat"], i["lon"], i["precision"] = geo["lat"], geo["lon"], geo["precision"]
+            if geo["precision"] == "calle" and geo.get("trazado"):
+                i["trazado"] = geo["trazado"]
+    os.makedirs("data", exist_ok=True)
+    json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
 
 
 def main():
@@ -180,7 +253,8 @@ def main():
             fuentes[nombre] = {"ok": False, "n": 0}
     geocodificar(items)
     for i in items:
-        i.pop("_consulta", None)
+        for k in ("_calle", "_tramo", "_raw"):
+            i.pop(k, None)
     con_coords = [i for i in items if i["lat"] is not None]
     if not con_coords:
         print("Sin incidencias con coordenadas: no se actualiza.")
