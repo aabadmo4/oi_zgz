@@ -47,6 +47,8 @@ input[type=search]{flex:1}
 #mapa{min-height:300px}
 .pin{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:16px;border:2px solid #1d2024;box-shadow:0 1px 4px #0006}
 .pin.dash{outline:2px dashed #1d2024;outline-offset:2px}
+footer a{color:inherit}
+footer nav{margin:2px 0}
 footer{font-size:12px;color:var(--mute);padding:6px 16px;background:var(--panel);border-top:1px solid var(--line)}
 @media(max-width:760px){
 body{height:auto;min-height:100%}
@@ -75,7 +77,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 </aside>
 <div id="mapa" role="region" aria-label="Mapa de incidencias"></div>
 </main>
-<footer>Datos: Ayuntamiento de Zaragoza y DGT (NAP). Direcciones localizadas con OpenStreetMap; el marcador con borde discontinuo indica toda la calle o ubicación orientativa. Información orientativa; consulta siempre la señalización.</footer>
+<footer><div>Información orientativa; consulta siempre la señalización. Direcciones localizadas con OpenStreetMap; el marcador con borde discontinuo indica toda la calle o ubicación orientativa.</div><nav aria-label="Información legal"><a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Adán Nahir Abad Mora · TechECS_EU</div></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 // ---- Publicidad: IDs de AdSense ----
