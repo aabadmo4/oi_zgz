@@ -53,10 +53,12 @@ jobs:
       - name: Preparar sitio
         run: |
           mkdir _site
-          cp -r index.html CNAME ads.txt data _site/
+          cp -r *.html CNAME ads.txt robots.txt sitemap.xml data _site/
           touch _site/.nojekyll
+          
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
       - id: deploy
         uses: actions/deploy-pages@v4
+        
