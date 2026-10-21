@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obras e Incidencias ZARAGOZA</title>
+<meta name="description" content="Mapa y listado de obras, cortes y incidencias de tráfico en las calles y rondas de Zaragoza. Datos del Ayuntamiento y la DGT.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<!-- AdSense: sustituye ca-pub-XXXXXXXXXXXXXXXX por tu ID de editor -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0}
+@media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
+header{background:var(--sign);color:#1d2024;padding:10px 16px;border-bottom:6px solid transparent;border-image:repeating-linear-gradient(135deg,#1d2024 0 14px,var(--sign) 14px 28px) 6;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+h1{font:800 clamp(22px,4vw,34px)/1 "Barlow Condensed",sans-serif;margin:0;letter-spacing:.01em}
+#estado{font-size:14px;font-weight:500}
+main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(320px,400px) 1fr}
+aside{display:flex;flex-direction:column;min-height:0;background:var(--panel);border-right:1px solid var(--line)}
+.filtros{padding:12px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+input[type=search],select{width:100%;font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:14px;padding:5px 10px;border:1.5px solid var(--line);border-radius:99px;background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--asfalto);color:#fff;border-color:var(--asfalto)}
+label.vis{font-size:14px;color:var(--mute);display:flex;gap:6px;align-items:center}
+#cuenta{font-size:14px;color:var(--mute);padding:8px 12px 0}
+#lista{list-style:none;margin:0;padding:6px 8px 12px;overflow:auto;flex:1}
+#lista li{border-bottom:1px solid var(--line)}
+#lista button{all:unset;display:grid;grid-template-columns:34px 1fr;gap:10px;width:100%;box-sizing:border-box;padding:10px 6px;cursor:pointer}
+#lista button:hover{background:var(--bg)}
+#lista button:focus-visible,.chip:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+.ico{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:17px;border:2px solid #1d2024}
+.t{font-weight:600;line-height:1.2}
+.s{font-size:14px;color:var(--mute);line-height:1.3;margin-top:2px}
+.f{font-size:13px;color:var(--mute);margin-top:3px}
+#mapa{min-height:300px}
+.pin{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:16px;border:2px solid #1d2024;box-shadow:0 1px 4px #0006}
+.ad{margin:8px 12px;min-height:90px;text-align:center;font-size:12px;color:var(--mute)}
+footer{font-size:12px;color:var(--mute);padding:6px 16px;background:var(--panel);border-top:1px solid var(--line)}
+@media(max-width:760px){
+ body{height:auto;min-height:100%}
+ main{display:flex;flex-direction:column}
+ #mapa{order:-1;height:45vh;min-height:0}
+ aside{border-right:0;border-top:1px solid var(--line)}#lista{overflow:visible}
+}
+</style>
+</head>
+<body>
+<header><h1>Obras e Incidencias ZARAGOZA</h1><span id="estado">Cargando…</span></header>
+<main>
+ <aside>
+  <div class="filtros">
+   <input type="search" id="q" placeholder="Buscar calle, ronda o motivo" aria-label="Buscar">
+   <div class="chips" id="chips" role="group" aria-label="Tipo de incidencia"></div>
+   <select id="fuente" aria-label="Fuente"><option value="">Todas las fuentes</option><option>Ayuntamiento</option><option>DGT</option></select>
+   <label class="vis"><input type="checkbox" id="vis"> Solo lo visible en el mapa</label>
+  </div>
+  <div id="cuenta"></div>
+  <ul id="lista"></ul>
+  <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+ </aside>
+ <div id="mapa" role="region" aria-label="Mapa de incidencias"></div>
+</main>
+<footer>Datos: Ayuntamiento de Zaragoza y DGT (NAP). Algunas ubicaciones se calculan de forma aproximada con IA y se marcan como tal. Información orientativa; consulta siempre la señalización.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚗','#e9d27a'],Otros:['⚠️','#c9ced3']};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=id=>document.getElementById(id);
+const map=L.map('mapa').setView([41.6488,-0.8891],12);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
+const capa=L.layerGroup().addTo(map);
+let datos=[],marcas=new Map(),activos=new Set(Object.keys(TIPOS));
+
+function fechas(i){return i.fin?`Hasta ${i.fin}`:i.inicio?`Desde ${i.inicio}`:''}
+function icono(t){const [e,c]=TIPOS[t]||TIPOS.Otros;return L.divIcon({className:'',html:`<div class="pin" style="background:${c}">${e}</div>`,iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})}
+function popup(i){return `<strong>${esc(i.titulo)}</strong><br>${esc(i.tipo)} · ${esc(i.fuente)}${i.via?`<br>${esc(i.via)}`:''}${i.detalle?`<br>${esc(i.detalle)}`:''}${fechas(i)?`<br>${fechas(i)}`:''}${i.aprox?'<br><em>Ubicación aproximada</em>':''}`}
+
+function pintar(){
+  const q=$('q').value.trim().toLowerCase(),f=$('fuente').value,solo=$('vis').checked,b=map.getBounds();
+  const r=datos.filter(i=>activos.has(i.tipo)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!solo||b.contains([i.lat,i.lon])));
+  capa.clearLayers();marcas.clear();
+  const ul=$('lista');ul.innerHTML='';
+  r.forEach(i=>{
+    const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo),title:i.titulo}).bindPopup(popup(i));
+    capa.addLayer(m);marcas.set(i.id,m);
+    const li=document.createElement('li'),[e,c]=TIPOS[i.tipo]||TIPOS.Otros;
+    li.innerHTML=`<button type="button"><span class="ico" style="background:${c}">${e}</span><span><div class="t">${esc(i.titulo)}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${i.aprox?' · ubicación aproximada':''}</div></span></button>`;
+    li.firstChild.onclick=()=>{map.setView([i.lat,i.lon],16);m.openPopup();if(innerWidth<=760)scrollTo({top:0,behavior:'smooth'})};
+    ul.appendChild(li);
+  });
+  $('cuenta').textContent=r.length?`${r.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.';
+}
+
+$('chips').innerHTML=Object.entries(TIPOS).map(([t,[e]])=>`<button type="button" class="chip" aria-pressed="true" data-t="${t}">${e} ${t}</button>`).join('');
+$('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;const t=b.dataset.t,on=!activos.has(t);on?activos.add(t):activos.delete(t);b.setAttribute('aria-pressed',on);pintar()};
+['q','fuente','vis'].forEach(id=>$(id).addEventListener('input',pintar));
+map.on('moveend',()=>{if($('vis').checked)pintar()});
+
+fetch('data/incidencias.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+  datos=d.incidencias||[];
+  const f=new Date(d.actualizado);
+  $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
+  pintar();
+  if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
+}).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
+try{(adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}
+</script>
+</body>
+</html>
