@@ -10,3 +10,7 @@ permissions:
 jobs:
   enforce-commit-standards:
     uses: TechECS/org-ci-workflows/.github/workflows/conventional-commits-enforcement.yml@main
+    # El repo es de otro propietario (aabadmo4 -> TechECS): "secrets: inherit"
+    # no funciona entre propietarios distintos, hay que pasarlo explícitamente.
+    secrets:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
