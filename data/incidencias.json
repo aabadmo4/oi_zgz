@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-22T11:36+02:00",
+ "actualizado": "2026-10-22T18:42+02:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 74
+   "n": 81
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 7
   }
  },
  "sin_ubicar": 1,
@@ -407,6 +407,51 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31362",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "TORRES QUEVEDO  L., 8",
+   "via": "",
+   "detalle": "Para reparar una acometida de vertido a la altura del no 32",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-29",
+   "lat": 41.6542572,
+   "lon": -0.9069917,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.655199,
+      -0.907018
+     ],
+     [
+      41.654718,
+      -0.907128
+     ],
+     [
+      41.65467,
+      -0.907139
+     ],
+     [
+      41.653862,
+      -0.906851
+     ],
+     [
+      41.653812,
+      -0.906833
+     ],
+     [
+      41.65339,
+      -0.90667
+     ],
+     [
+      41.653338,
+      -0.90665
+     ]
+    ]
+   ]
+  },
+  {
    "id": "zgz-31334",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -433,6 +478,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31361",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SAN JOSE  AVENIDA DE, 77",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido a la altura del no 79",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-29",
+   "lat": 41.64297316495672,
+   "lon": -0.8719623064281903,
+   "precision": "aprox"
+  },
+  {
    "id": "zgz-30876",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -446,6 +504,32 @@
    "precision": "calle"
   },
   {
+   "id": "zgz-31359",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VILLAHERMOSA(DUQUESA), 15",
+   "via": "",
+   "detalle": "Para renovar un sumidero ubicado a la altura del paso de peatones ubicado en el no 15",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.6486183,
+   "lon": -0.900686,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31364",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PAZ, 3",
+   "via": "",
+   "detalle": "Para reparar el vertido a la altura del no 3",
+   "inicio": "2026-10-26",
+   "fin": "2026-11-06",
+   "lat": 41.642639,
+   "lon": -0.8853781,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -457,6 +541,72 @@
    "lat": 41.6609828,
    "lon": -0.9423819,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31360",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "TERUEL  PASEO, 10",
+   "via": "",
+   "detalle": "Para reparar las tapas de dos registros ubicados a la altura del paso de peatones junto a Hernán Cortés",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.65055338654423,
+   "lon": -0.8888101188707861,
+   "precision": "aprox"
+  },
+  {
+   "id": "zgz-31363",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "LUCES DE LA CIUDAD, 37",
+   "via": "",
+   "detalle": "Para ejecutar una canalización eléctrica",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-30",
+   "lat": 41.6210623,
+   "lon": -0.9181333,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.620371,
+      -0.916963
+     ],
+     [
+      41.620422,
+      -0.917048
+     ],
+     [
+      41.620957,
+      -0.917955
+     ],
+     [
+      41.621016,
+      -0.918056
+     ],
+     [
+      41.62106,
+      -0.91813
+     ],
+     [
+      41.621175,
+      -0.918326
+     ],
+     [
+      41.621693,
+      -0.919204
+     ],
+     [
+      41.621713,
+      -0.919238
+     ],
+     [
+      41.621752,
+      -0.919304
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-30805",
@@ -633,6 +783,19 @@
    "lat": 41.638797,
    "lon": -0.933829,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31341",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "BODEGON  EL       SIS, 9",
+   "via": "",
+   "detalle": "Para asfaltar tras realizar una toma de agua a la altura del no 9",
+   "inicio": "2026-10-23",
+   "fin": "2026-10-23",
+   "lat": 41.669978247110635,
+   "lon": -0.8341723390249616,
+   "precision": "aprox"
   },
   {
    "id": "zgz-31354",
@@ -1239,107 +1402,81 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29273079",
+   "id": "dgt-29300396",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 20.18–20.5",
+   "titulo": "A-2",
+   "via": "pk 313.63",
    "detalle": "",
    "inicio": "2026-10-22",
    "fin": null,
-   "lat": 41.624924,
-   "lon": -0.8490524,
+   "lat": 41.647095,
+   "lon": -0.9656658,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29274292",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 269.0",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.555477,
-   "lon": -0.98261076,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29274293",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 269.0",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.555477,
-   "lon": -0.98261076,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29278136",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 13.9–14.6",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.666748,
-   "lon": -0.83740765,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29282739",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 298.69",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.73785,
-   "lon": -0.8459694,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29283326",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 301.228",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.758514,
-   "lon": -0.834588,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29283594",
+   "id": "dgt-29300236",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 254.57",
+   "via": "pk 233.218",
    "detalle": "",
    "inicio": "2026-10-22",
    "fin": null,
-   "lat": 41.72164,
-   "lon": -1.03942,
+   "lat": 41.6258,
+   "lon": -0.8485,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29283609",
+   "id": "dgt-29300507",
    "fuente": "DGT",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 306.7–308.8",
+   "via": "pk 319.41",
    "detalle": "",
    "inicio": "2026-10-22",
    "fin": null,
-   "lat": 41.61753,
-   "lon": -1.0348768,
+   "lat": 41.68165,
+   "lon": -0.91444,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29300625",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.222",
+   "detalle": "",
+   "inicio": "2026-10-22",
+   "fin": null,
+   "lat": 41.704723,
+   "lon": -1.0066167,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29300755",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 295.648",
+   "detalle": "",
+   "inicio": "2026-10-22",
+   "fin": null,
+   "lat": 41.71108,
+   "lon": -0.84884,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29300778",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "AP-68",
+   "via": "pk 283.669",
+   "detalle": "",
+   "inicio": "2026-10-22",
+   "fin": null,
+   "lat": 41.731144,
+   "lon": -1.0292467,
    "precision": "exacta"
   }
  ]
