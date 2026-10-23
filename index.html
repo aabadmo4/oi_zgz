@@ -3,8 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Obras e Incidencias ZARAGOZA</title>
-<meta name="description" content="Mapa y listado de obras, cortes y incidencias de tráfico en las calles y rondas de Zaragoza. Datos del Ayuntamiento y la DGT.">
+<title>Obras e incidencias en Zaragoza hoy: cortes de tráfico y mapa</title>
+<meta name="description" content="Obras, cortes de tráfico, accidentes y retenciones en Zaragoza, en un mapa y un listado actualizados. Datos del Ayuntamiento de Zaragoza y la DGT. Consulta tu calle antes de salir.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://incidenciaszaragoza.es/">
+<meta name="theme-color" content="#ffc400">
+<meta name="author" content="Adán Nahir Abad Mora">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Obras e Incidencias Zaragoza">
+<meta property="og:title" content="Obras e incidencias en Zaragoza hoy: cortes de tráfico y mapa">
+<meta property="og:description" content="Mapa y listado de obras, cortes, accidentes y retenciones en Zaragoza. Datos del Ayuntamiento y la DGT.">
+<meta property="og:url" content="https://incidenciaszaragoza.es/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Obras e incidencias en Zaragoza hoy: cortes de tráfico y mapa">
+<meta name="twitter:description" content="Mapa y listado de obras, cortes, accidentes y retenciones en Zaragoza. Datos del Ayuntamiento y la DGT.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://incidenciaszaragoza.es/#web","url":"https://incidenciaszaragoza.es/","name":"Obras e Incidencias Zaragoza","inLanguage":"es-ES","description":"Mapa y listado de obras, cortes de tráfico y otras incidencias en Zaragoza."},
+{"@type":"WebApplication","@id":"https://incidenciaszaragoza.es/#app","url":"https://incidenciaszaragoza.es/","name":"Mapa de obras e incidencias de tráfico en Zaragoza","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"es-ES","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"areaServed":{"@type":"City","name":"Zaragoza","containedInPlace":{"@type":"AdministrativeArea","name":"Aragón, España"}},"author":{"@type":"Person","name":"Adán Nahir Abad Mora"},"isBasedOn":["https://www.zaragoza.es/","https://www.dgt.es/"]}
+]}
+</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,12 +34,12 @@
 :root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0}
 @media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8}}
 *{box-sizing:border-box}
-html,body{height:100%;margin:0}
+html,body{min-height:100%;margin:0}
 body{font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
 header{background:var(--sign);color:#1d2024;padding:8px 14px;border-bottom:6px solid transparent;border-image:repeating-linear-gradient(135deg,#1d2024 0 14px,var(--sign) 14px 28px) 6;display:flex;align-items:baseline;gap:4px 14px;flex-wrap:wrap}
 h1{font:800 clamp(20px,5vw,32px)/1.05 "Barlow Condensed",sans-serif;margin:0;letter-spacing:.01em}
 #estado{font-size:13px;font-weight:500}
-main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(320px,400px) 1fr}
+main{flex:none;height:calc(100svh - 64px);min-height:460px;display:grid;grid-template-columns:minmax(320px,400px) 1fr}
 aside{display:flex;flex-direction:column;min-height:0;background:var(--panel);border-right:1px solid var(--line)}
 .filtros{padding:10px 12px;border-bottom:1px solid var(--line);display:grid;gap:8px}
 .fila{display:flex;gap:8px}
@@ -47,12 +66,18 @@ input[type=search]{flex:1}
 #mapa{min-height:300px}
 .pin{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:16px;border:2px solid #1d2024;box-shadow:0 1px 4px #0006}
 .pin.dash{outline:2px dashed #1d2024;outline-offset:2px}
+.info{max-width:860px;width:100%;margin:0 auto;padding:28px 16px 12px;line-height:1.55}
+.info h2{font:800 clamp(22px,4vw,28px)/1.15 "Barlow Condensed",sans-serif;margin:0 0 10px}
+.info h3{font:600 18px/1.25 Barlow,sans-serif;margin:22px 0 6px}
+.info p{margin:0 0 10px}
+.info ul{margin:0 0 10px;padding-left:20px}
+.info li{margin:3px 0}
+.info a{color:inherit}
+#resumen{font-weight:600}
+footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel);border-top:1px solid var(--line)}
 footer a{color:inherit}
-footer nav{margin:2px 0}
-footer{font-size:12px;color:var(--mute);padding:6px 16px;background:var(--panel);border-top:1px solid var(--line)}
 @media(max-width:760px){
-body{height:auto;min-height:100%}
-main{display:flex;flex-direction:column}
+main{display:flex;flex-direction:column;height:auto;min-height:0}
 #mapa{order:-1;height:40vh;min-height:0}
 aside{border-right:0;border-top:1px solid var(--line)}
 #lista{overflow:visible}
@@ -77,7 +102,33 @@ aside{border-right:0;border-top:1px solid var(--line)}
 </aside>
 <div id="mapa" role="region" aria-label="Mapa de incidencias"></div>
 </main>
-<footer><div>Información orientativa; consulta siempre la señalización. Direcciones localizadas con OpenStreetMap; el marcador con borde discontinuo indica toda la calle o ubicación orientativa.</div><nav aria-label="Información legal"><a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Adán Nahir Abad Mora · TechECS_EU</div></footer>
+<section class="info" aria-labelledby="info-t">
+<h2 id="info-t">Obras e incidencias de tráfico en Zaragoza</h2>
+<p id="resumen">Consulta en el mapa y en el listado de arriba las obras, cortes y demás incidencias que afectan hoy a las calles de Zaragoza.</p>
+<p>Esta web reúne en un solo sitio las <strong>obras en Zaragoza</strong>, los <strong>cortes de tráfico</strong>, los <strong>accidentes</strong> y las <strong>retenciones</strong> que publican el Ayuntamiento de Zaragoza y la Dirección General de Tráfico (DGT). Cada incidencia se sitúa en el mapa y se muestra con su calle, el motivo y, cuando está disponible, las fechas de inicio y fin, para que puedas planificar tu ruta antes de salir de casa, ya vayas en coche, moto, bicicleta, autobús o a pie.</p>
+
+<h3>Qué tipos de incidencias encontrarás</h3>
+<ul>
+<li><strong>Cortes:</strong> calles o tramos cerrados al tráfico, total o parcialmente.</li>
+<li><strong>Obras:</strong> trabajos en la vía pública, asfaltado, canalizaciones, tranvía y otras actuaciones con afección al tráfico.</li>
+<li><strong>Accidentes:</strong> siniestros que alteran la circulación en calles, rondas y accesos a la ciudad.</li>
+<li><strong>Retenciones:</strong> tramos con tráfico denso o lento.</li>
+<li><strong>Otros:</strong> eventos, desvíos y cualquier otra situación que pueda afectar a tu desplazamiento.</li>
+</ul>
+
+<h3>Cómo usar el mapa y el listado</h3>
+<p>Filtra por tipo de incidencia, elige la fuente (Ayuntamiento o DGT) o escribe el nombre de tu calle en el buscador. Si activas «Solo mapa visible», el listado mostrará únicamente lo que aparece en la zona del mapa que estás viendo. Al pulsar una incidencia, el mapa se centra en ella y abre su ficha. Un marcador con borde discontinuo indica que la incidencia afecta a toda la calle o que su ubicación es orientativa.</p>
+
+<h3>Zonas y vías habituales</h3>
+<p>Es frecuente encontrar avisos en el centro (Paseo de la Independencia, Paseo de Sagasta, Plaza de España, Coso), en grandes avenidas como Avenida de Madrid, Avenida de Navarra, Avenida de Cataluña o Avenida de Valencia, y en las rondas y accesos: Ronda de la Hispanidad, Ronda Norte, Z-30, A-2 y AP-68. Usa el buscador para comprobar rápidamente cualquier otra calle o barrio.</p>
+
+<h3>Preguntas frecuentes</h3>
+<p><strong>¿De dónde salen los datos?</strong> De los avisos oficiales del Ayuntamiento de Zaragoza y de la DGT. Las direcciones se localizan en el mapa con OpenStreetMap.</p>
+<p><strong>¿Con qué frecuencia se actualiza?</strong> La información se renueva periódicamente. La fecha y hora de la última actualización aparecen en la cabecera de la página.</p>
+<p><strong>¿Es una fuente oficial?</strong> No. Es un servicio independiente y gratuito que reorganiza datos públicos. La información es orientativa: obedece siempre la señalización y las indicaciones de la Policía Local y de tráfico.</p>
+<p><strong>¿Puedo ver las incidencias desde el móvil?</strong> Sí, la página se adapta a móviles y tabletas, y no necesitas instalar nada.</p>
+</section>
+<footer><nav aria-label="Información legal"><a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 // ---- Publicidad: IDs de AdSense ----
@@ -139,6 +190,8 @@ datos=d.incidencias||[];
 const f=new Date(d.actualizado);
 $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
 pintar();
+(()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${t.toLowerCase()}`).join(', ');
+if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} incidencias activas en Zaragoza${p?': '+p:''}.`})();
 if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
 }).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
 </script>
