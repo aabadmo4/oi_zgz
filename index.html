@@ -6,7 +6,7 @@
 <title>Obras e incidencias en Zaragoza hoy: cortes de tráfico y mapa</title>
 <meta name="description" content="Obras, cortes de tráfico, accidentes y retenciones en Zaragoza, en un mapa y un listado actualizados. Datos del Ayuntamiento de Zaragoza y la DGT. Consulta tu calle antes de salir.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-<link rel="canonical" href="https://incidenciaszaragoza.es/">
+<link rel="canonical" href="https://obraseincidenciaszaragoza.es/">
 <meta name="theme-color" content="#ffc400">
 <meta name="author" content="Adán Nahir Abad Mora">
 <meta property="og:type" content="website">
@@ -14,14 +14,14 @@
 <meta property="og:site_name" content="Obras e Incidencias Zaragoza">
 <meta property="og:title" content="Obras e incidencias en Zaragoza hoy: cortes de tráfico y mapa">
 <meta property="og:description" content="Mapa y listado de obras, cortes, accidentes y retenciones en Zaragoza. Datos del Ayuntamiento y la DGT.">
-<meta property="og:url" content="https://incidenciaszaragoza.es/">
+<meta property="og:url" content="https://obraseincidenciaszaragoza.es/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Obras e incidencias en Zaragoza hoy: cortes de tráfico y mapa">
 <meta name="twitter:description" content="Mapa y listado de obras, cortes, accidentes y retenciones en Zaragoza. Datos del Ayuntamiento y la DGT.">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://incidenciaszaragoza.es/#web","url":"https://incidenciaszaragoza.es/","name":"Obras e Incidencias Zaragoza","inLanguage":"es-ES","description":"Mapa y listado de obras, cortes de tráfico y otras incidencias en Zaragoza."},
-{"@type":"WebApplication","@id":"https://incidenciaszaragoza.es/#app","url":"https://incidenciaszaragoza.es/","name":"Mapa de obras e incidencias de tráfico en Zaragoza","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"es-ES","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"areaServed":{"@type":"City","name":"Zaragoza","containedInPlace":{"@type":"AdministrativeArea","name":"Aragón, España"}},"author":{"@type":"Person","name":"Adán Nahir Abad Mora"},"isBasedOn":["https://www.zaragoza.es/","https://www.dgt.es/"]}
+{"@type":"WebSite","@id":"https://obraseincidenciaszaragoza.es/#web","url":"https://obraseincidenciaszaragoza.es/","name":"Obras e Incidencias Zaragoza","inLanguage":"es-ES","description":"Mapa y listado de obras, cortes de tráfico y otras incidencias en Zaragoza."},
+{"@type":"WebApplication","@id":"https://obraseincidenciaszaragoza.es/#app","url":"https://obraseincidenciaszaragoza.es/","name":"Mapa de obras e incidencias de tráfico en Zaragoza","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"es-ES","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"areaServed":{"@type":"City","name":"Zaragoza","containedInPlace":{"@type":"AdministrativeArea","name":"Aragón, España"}},"author":{"@type":"Person","name":"Adán Nahir Abad Mora"},"isBasedOn":["https://www.zaragoza.es/","https://www.dgt.es/"]}
 ]}
 </script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
@@ -73,6 +73,7 @@ input[type=search]{flex:1}
 .info ul{margin:0 0 10px;padding-left:20px}
 .info li{margin:3px 0}
 .info a{color:inherit}
+.info ul.vias{display:flex;flex-wrap:wrap;gap:6px 8px;list-style:none;padding:0}.info ul.vias a{display:inline-block;padding:4px 10px;border:1.5px solid var(--line);border-radius:99px;text-decoration:none}
 #resumen{font-weight:600}
 footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel);border-top:1px solid var(--line)}
 footer a{color:inherit}
@@ -123,13 +124,18 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <h3>Zonas y vías habituales</h3>
 <p>Es frecuente encontrar avisos en el centro (Paseo de la Independencia, Paseo de Sagasta, Plaza de España, Coso), en grandes avenidas como Avenida de Madrid, Avenida de Navarra, Avenida de Cataluña o Avenida de Valencia, y en las rondas y accesos: Ronda de la Hispanidad, Ronda Norte, Z-30, A-2 y AP-68. Usa el buscador para comprobar rápidamente cualquier otra calle o barrio.</p>
 
+<h3>Consulta por vía</h3>
+<!--VIAS-->
+<p>También puedes ver las incidencias de cada vía por separado: <a href="/vias/avenida-de-valencia.html">Avenida de Valencia</a>, <a href="/vias/avenida-de-madrid.html">Avenida de Madrid</a>, <a href="/vias/coso.html">Coso</a>, <a href="/vias/ronda-de-la-hispanidad.html">Ronda de la Hispanidad</a>, <a href="/vias/z-30.html">Z-30</a>, <a href="/vias/a-2.html">A-2</a> y <a href="/vias/">todas las vías</a>.</p>
+<!--/VIAS-->
+
 <h3>Preguntas frecuentes</h3>
 <p><strong>¿De dónde salen los datos?</strong> De los avisos oficiales del Ayuntamiento de Zaragoza y de la DGT. Las direcciones se localizan en el mapa con OpenStreetMap.</p>
 <p><strong>¿Con qué frecuencia se actualiza?</strong> La información se renueva periódicamente. La fecha y hora de la última actualización aparecen en la cabecera de la página.</p>
 <p><strong>¿Es una fuente oficial?</strong> No. Es un servicio independiente y gratuito que reorganiza datos públicos. La información es orientativa: obedece siempre la señalización y las indicaciones de la Policía Local y de tráfico.</p>
 <p><strong>¿Puedo ver las incidencias desde el móvil?</strong> Sí, la página se adapta a móviles y tabletas, y no necesitas instalar nada.</p>
 </section>
-<footer><nav aria-label="Información legal"><a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Adán Nahir Abad Mora · TechECS_EU</div></footer>
+<footer><nav aria-label="Información legal"><a href="/vias/">Vías</a> · <a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Adán Nahir Abad Mora · TechECS_EU</div></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 // ---- Publicidad: IDs de AdSense ----
