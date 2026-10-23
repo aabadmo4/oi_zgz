@@ -171,6 +171,7 @@ Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 
 El repositorio no incluye todavía un archivo de licencia. Sin él, por defecto nadie tiene permiso para reutilizar el código. Elige una (por ejemplo MIT o AGPL-3.0) y añade `LICENSE`.
 
+
 ## Contacto
 
 Adán Nahir Abad Mora · TechECS_EU · techecs.eu@gmail.com
