@@ -1,0 +1,22 @@
+[
+ {"slug":"paseo-de-la-independencia","nombre":"Paseo de la Independencia","tipo":"Paseos y plazas","patrones":["independencia"],"texto":"Eje comercial y de tráfico del centro de Zaragoza, entre la plaza de España y la plaza de Paraíso."},
+ {"slug":"paseo-de-sagasta","nombre":"Paseo de Sagasta","tipo":"Paseos y plazas","patrones":["sagasta"],"texto":"Paseo del centro que conecta la plaza de los Sitios con el entorno de Gran Vía y el Camino de las Torres."},
+ {"slug":"plaza-de-espana","nombre":"Plaza de España","tipo":"Paseos y plazas","patrones":["espana plaza","plaza de espana","plaza espana"],"texto":"Nudo central de tráfico y transporte público entre el Coso, el Paseo de la Independencia y el Paseo de la Constitución."},
+ {"slug":"coso","nombre":"Coso","tipo":"Paseos y plazas","patrones":["\\bcoso\\b"],"texto":"Antigua ronda del casco histórico, eje de paso entre la plaza de España y el Paseo de la Independencia."},
+ {"slug":"paseo-de-teruel","nombre":"Paseo de Teruel","tipo":"Paseos y plazas","patrones":["teruel paseo","paseo de teruel"],"texto":"Paseo del entorno del parque Grande José Antonio Labordeta, de acceso al centro desde el sur."},
+ {"slug":"paseo-de-maria-agustin","nombre":"Paseo de María Agustín","tipo":"Paseos y plazas","patrones":["agustin paseo maria","paseo maria agustin"],"texto":"Paseo que bordea el entorno del Parque Grande y enlaza con Gran Vía y el Camino de las Torres."},
+ {"slug":"paseo-de-la-constitucion","nombre":"Paseo de la Constitución","tipo":"Paseos y plazas","patrones":["constitucion paseo","paseo de la constitucion"],"texto":"Paseo del centro entre la plaza de España y la zona de la Romareda."},
+ {"slug":"gran-via","nombre":"Gran Vía","tipo":"Avenidas","patrones":["gran via"],"texto":"Avenida del centro que une la plaza de los Sitios con el entorno del Parque Grande."},
+ {"slug":"avenida-de-madrid","nombre":"Avenida de Madrid","tipo":"Avenidas","patrones":["madrid avenida","avenida de madrid"],"texto":"Gran avenida de entrada y salida hacia el oeste y la A-2."},
+ {"slug":"avenida-de-navarra","nombre":"Avenida de Navarra","tipo":"Avenidas","patrones":["navarra avenida","avenida de navarra"],"texto":"Avenida del norte de la ciudad con conexión a la Ronda Norte y a las salidas hacia Navarra y Huesca."},
+ {"slug":"avenida-de-cataluna","nombre":"Avenida de Cataluña","tipo":"Avenidas","patrones":["cataluna avenida","avenida de cataluna"],"texto":"Avenida de entrada y salida hacia el este, con conexión a la A-2 hacia Barcelona."},
+ {"slug":"avenida-de-valencia","nombre":"Avenida de Valencia","tipo":"Avenidas","patrones":["valencia avenida","avenida de valencia"],"texto":"Avenida del sur de la ciudad que enlaza el centro con la salida hacia Valencia y Teruel."},
+ {"slug":"avenida-de-san-jose","nombre":"Avenida de San José","tipo":"Avenidas","patrones":["san jose avenida","avenida de san jose"],"texto":"Avenida de los barrios de San José y Delicias, de uso muy intenso."},
+ {"slug":"avenida-pablo-gargallo","nombre":"Avenida Pablo Gargallo","tipo":"Avenidas","patrones":["gargallo"],"texto":"Avenida del entorno de Delicias y la estación intermodal."},
+ {"slug":"ronda-de-la-hispanidad","nombre":"Ronda de la Hispanidad","tipo":"Rondas y carreteras","patrones":["hispanidad"],"texto":"Ronda de circunvalación interior (Z-30) que rodea el centro de la ciudad."},
+ {"slug":"ronda-norte","nombre":"Ronda Norte","tipo":"Rondas y carreteras","patrones":["ronda norte","norte ronda"],"texto":"Ronda del norte de Zaragoza, de conexión entre barrios y accesos exteriores."},
+ {"slug":"z-30","nombre":"Z-30","tipo":"Rondas y carreteras","patrones":["\\bz-?30\\b"],"texto":"Ronda de circunvalación de Zaragoza."},
+ {"slug":"z-40","nombre":"Z-40","tipo":"Rondas y carreteras","patrones":["\\bz-?40\\b"],"texto":"Cuarto cinturón de Zaragoza, ronda exterior de alta capacidad."},
+ {"slug":"a-2","nombre":"A-2","tipo":"Rondas y carreteras","patrones":["\\ba-?2\\b"],"texto":"Autovía del Nordeste, principal eje de entrada y salida de Zaragoza hacia Madrid y Barcelona."},
+ {"slug":"ap-68","nombre":"AP-68","tipo":"Rondas y carreteras","patrones":["\\bap-?68\\b"],"texto":"Autopista del Ebro, eje hacia el País Vasco y La Rioja."}
+]
