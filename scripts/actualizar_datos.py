@@ -1,7 +1,7 @@
 """Descarga incidencias del Ayuntamiento de Zaragoza y de la DGT (zona de Zaragoza),
 obtiene coordenadas (propias de la fuente o, si faltan, vía Gemini) y escribe
 data/incidencias.json. Sale con código 1 si no hay datos válidos."""
-import os, re, sys, json, time, datetime
+import os, re, sys, json, time, datetime, html
 from zoneinfo import ZoneInfo
 import requests
 from lxml import etree
@@ -69,6 +69,19 @@ def coords_geometria(item):
     return (y, x) if en_zgz(y, x) else None
 
 
+def limpiar_texto(t):
+    """Quita etiquetas HTML, decodifica entidades (&oacute; -> ó) y compacta espacios.
+    Si el texto viene como ficha 'Dirección: ... Tipo: ... Observaciones: ...', lo resume."""
+    t = re.sub(r"<[^>]+>", " ", str(t or ""))
+    t = html.unescape(html.unescape(t))
+    t = re.sub(r"\s+", " ", t).strip()
+    m = re.search(r"Tipo:\s*(.+?)\s+Inicio:.*?Observaciones:\s*(.*)$", t, re.I)
+    if m:
+        tipo, obs = m.group(1).strip(), m.group(2).strip()
+        t = f"{tipo}. {obs}" if obs else tipo
+    return t
+
+
 def fetch_ayuntamiento():
     url = "https://www.zaragoza.es/sede/servicio/via-publica/incidencia.json"
     def get():
@@ -88,13 +101,13 @@ def fetch_ayuntamiento():
         c = coords_geometria(it)
         out.append({
             "id": f"zgz-{it.get('id', n)}", "fuente": "Ayuntamiento",
-            "tipo": tipo_desde_texto(f"{tipo} {motivo}"),
-            "titulo": str(calle).strip(), "via": str(tramo).strip(),
-            "detalle": re.sub(r"<[^>]+>", " ", str(motivo)).strip(),
+            "tipo": tipo_desde_texto(f"{tipo} {limpiar_texto(motivo)}"),
+            "titulo": limpiar_texto(calle), "via": limpiar_texto(tramo),
+            "detalle": limpiar_texto(motivo),
             "inicio": dia(it.get("inicio")), "fin": dia(it.get("fin")),
             "lat": c[0] if c else None, "lon": c[1] if c else None,
             "precision": "aprox" if c else None,
-            "_calle": str(calle).strip(), "_tramo": str(tramo).strip(),
+            "_calle": limpiar_texto(calle), "_tramo": limpiar_texto(tramo),
         })
     return out
 
