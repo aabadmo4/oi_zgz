@@ -38,6 +38,15 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/actualizar_datos.py
 
+      - name: Preparar sitio
+        run: |
+          mkdir _site
+          cp -r *.html CNAME ads.txt robots.txt sitemap.xml data _site/
+          touch _site/.nojekyll
+
+      - name: Generar páginas de vías, sitemap y robots
+        run: python scripts/generar_paginas.py _site
+
       - name: Guardar datos nuevos (solo si todo fue bien)
         if: steps.gen.outcome == 'success'
         run: |
@@ -50,12 +59,6 @@ jobs:
         if: steps.gen.outcome == 'failure'
         run: echo "::warning::No se obtuvieron datos válidos; se publica la última versión buena."
 
-      - name: Preparar sitio
-        run: |
-          mkdir _site
-          cp -r *.html CNAME ads.txt robots.txt sitemap.xml data _site/
-          touch _site/.nojekyll
-          
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
