@@ -134,6 +134,7 @@ ul.lista{list-style:none;margin:0;padding:0}.lista li{background:var(--panel);bo
 .t{font-weight:600}.s{font-size:14px;color:var(--mute)}
 .enlaces{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.enlaces a{display:inline-block;padding:6px 12px;border:1.5px solid var(--line);border-radius:99px;color:inherit;text-decoration:none}
 .enlaces a:hover,a:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+.ad{margin:16px 0;text-align:center}.ad small{display:block;font-size:11px;color:var(--mute);text-align:left;margin-bottom:2px}.ad:has(ins[data-ad-status=unfilled]){display:none}
 .pin{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:16px;border:2px solid #1d2024;box-shadow:0 1px 4px #0006}
 footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel);border-top:1px solid var(--line)}footer a{color:inherit}"""
 
@@ -171,6 +172,18 @@ def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="",
 </body>
 </html>
 """
+
+
+ADS = {"client": "ca-pub-2672664299641705", "banner": "3859322059", "feed": "9306430712", "layout": "-fb+5w+4e-db+86"}
+
+
+def anuncio(tipo):
+    """Bloque de AdSense con los mismos IDs que usa la portada. 'banner' = display responsive; 'feed' = fluido."""
+    fmt = (f'data-ad-format="fluid" data-ad-layout-key="{ADS["layout"]}"' if tipo == "feed"
+           else 'data-ad-format="auto" data-full-width-responsive="true"')
+    return (f'<div class="ad"><small>Publicidad</small><ins class="adsbygoogle" style="display:block" '
+            f'data-ad-client="{ADS["client"]}" data-ad-slot="{ADS[tipo]}" {fmt}></ins>'
+            '<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>')
 
 
 def ld_json(obj):
@@ -231,8 +244,9 @@ map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
 <h1>Obras e incidencias en {esc(nombre)}</h1>
 <p class="resumen">{esc(res)}</p>
 {texto}
+{anuncio("banner") if tiene else ""}
 {mapa}
-{'<h2>Incidencias activas</h2><ul class="lista">' + items + '</ul>' if tiene else '<p>Vuelve más tarde: la información se actualiza varias veces al día. Mientras tanto puedes consultar <a href="/">todas las incidencias de Zaragoza</a>.</p>'}
+{'<h2>Incidencias activas</h2><ul class="lista">' + items + '</ul>' + anuncio("feed") if tiene else '<p>Vuelve más tarde: la información se actualiza varias veces al día. Mientras tanto puedes consultar <a href="/">todas las incidencias de Zaragoza</a>.</p>'}
 <p class="mute">Actualizado: {esc(fecha_hora(actualizado))}. Datos del Ayuntamiento de Zaragoza y la DGT; información orientativa.</p>
 {rel}
 <p><a href="/">← Ver mapa completo de Zaragoza</a></p>"""
