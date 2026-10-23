@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-22T18:42+02:00",
+ "actualizado": "2026-10-23T11:31+02:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 81
+   "n": 60
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 3
   }
  },
  "sin_ubicar": 1,
@@ -452,32 +452,6 @@
    ]
   },
   {
-   "id": "zgz-31334",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SAN PEDRO ARBUES, 10",
-   "via": "",
-   "detalle": "Direcci&oacute;n: SAN PEDRO ARBUES, 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6509629,
-   "lon": -0.8958499,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31335",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ORUS  JOAQUIN, 10",
-   "via": "",
-   "detalle": "Direcci&oacute;n: ORUS  JOAQUIN, 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.65062,
-   "lon": -0.8956927,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31361",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -635,19 +609,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31336",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ASTURIAS, 5",
-   "via": "",
-   "detalle": "Direcci&oacute;n: ASTURIAS, 5  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6497626,
-   "lon": -0.8957923,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31288",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -659,19 +620,6 @@
    "lat": 41.62802,
    "lon": -0.8768467,
    "precision": "portal"
-  },
-  {
-   "id": "zgz-31320",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "VALLES VERDES (Venta del Olivar), 12",
-   "via": "",
-   "detalle": "Direcci&oacute;n: VALLES VERDES (Venta del Olivar), 12  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.662375961805004,
-   "lon": -0.943669376187108,
-   "precision": "aprox"
   },
   {
    "id": "zgz-31290",
@@ -863,119 +811,6 @@
    "precision": "aprox"
   },
   {
-   "id": "zgz-31326",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "LORENTE  JUAN JOSE, 1",
-   "via": "",
-   "detalle": "Direcci&oacute;n: LORENTE  JUAN JOSE, 1  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6467227,
-   "lon": -0.8950031,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31328",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ORDESA  VALLE DE, 4",
-   "via": "",
-   "detalle": "Direcci&oacute;n: ORDESA  VALLE DE, 4  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6283385,
-   "lon": -0.8873629,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31332",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "AMERICA  AVENIDA DE, 11",
-   "via": "Entre n.º 68 y Ronda Hispanidad",
-   "detalle": "Direcci&oacute;n: AMERICA  AVENIDA DE, 11  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo:  Entre n.º 68 y Ronda Hispanidad  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.63350056163054,
-   "lon": -0.8839140635313678,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31333",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ESCORIAZA Y FABRO  M., 3",
-   "via": "Entre los n.º 45 y 59 inclusive",
-   "detalle": "Direcci&oacute;n: ESCORIAZA Y FABRO  M., 3  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo:  Entre los n.º 45 y 59 inclusive  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6544356,
-   "lon": -0.8990107,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.654652,
-      -0.899929
-     ],
-     [
-      41.654629,
-      -0.899793
-     ],
-     [
-      41.654641,
-      -0.899736
-     ],
-     [
-      41.654646,
-      -0.899686
-     ],
-     [
-      41.654642,
-      -0.899638
-     ],
-     [
-      41.654631,
-      -0.899585
-     ],
-     [
-      41.654598,
-      -0.899486
-     ],
-     [
-      41.654502,
-      -0.899206
-     ],
-     [
-      41.654456,
-      -0.899073
-     ],
-     [
-      41.654184,
-      -0.898262
-     ],
-     [
-      41.654131,
-      -0.898105
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "zgz-31337",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "MONCAYO, 8",
-   "via": "Entre C/ San Pedro Arbués y C/ Escoriaza y Fabro",
-   "detalle": "Direcci&oacute;n: MONCAYO, 8  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: Entre C/ San Pedro Arbués y C/ Escoriaza y Fabro  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.720598,
-   "lon": -1.02643,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31114",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1129,19 +964,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31321",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "VALLES VERDES  UR VNO, 0",
-   "via": "",
-   "detalle": "Direcci&oacute;n: VALLES VERDES  UR VNO, 0  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.666401912432406,
-   "lon": -0.9414888566133328,
-   "precision": "aprox"
-  },
-  {
    "id": "zgz-31315",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1153,123 +975,6 @@
    "lat": 41.69014437469493,
    "lon": -0.8273019454973861,
    "precision": "aprox"
-  },
-  {
-   "id": "zgz-31319",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "PALMERAS LAS      MRL, 43",
-   "via": "Entre C/ Vistabella y n.º 49 inclusive",
-   "detalle": "Direcci&oacute;n: PALMERAS LAS      MRL, 43  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: Entre C/ Vistabella y n.º 49 inclusive  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.662585473550564,
-   "lon": -0.9430214635532594,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31322",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "AEROPUERTO  CARRETERA, 275",
-   "via": "",
-   "detalle": "Direcci&oacute;n: AEROPUERTO  CARRETERA, 275  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.665987577887975,
-   "lon": -0.9673358902867025,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31323",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ARAGON (FUEROS DE), 16",
-   "via": "",
-   "detalle": "Direcci&oacute;n: ARAGON (FUEROS DE), 16  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.639286,
-   "lon": -0.906595,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31324",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "VALENCIA  AVENIDA DE, 9",
-   "via": "",
-   "detalle": "Direcci&oacute;n: VALENCIA  AVENIDA DE, 9  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.64897068554932,
-   "lon": -0.8933592867548815,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31327",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "BENASQUE  VALLE DE, 1",
-   "via": "",
-   "detalle": "Direcci&oacute;n: BENASQUE  VALLE DE, 1  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6283785,
-   "lon": -0.8875879,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31329",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SALLENT DE GALLEGO, 7",
-   "via": "",
-   "detalle": "Direcci&oacute;n: SALLENT DE GALLEGO, 7  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6282995,
-   "lon": -0.8871379,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31330",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "PANTICOSA  VILLA DE, 10",
-   "via": "",
-   "detalle": "Direcci&oacute;n: PANTICOSA  VILLA DE, 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6282613,
-   "lon": -0.8869127,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31331",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "TORLA  VILLA DE, 13",
-   "via": "",
-   "detalle": "Direcci&oacute;n: TORLA  VILLA DE, 13  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6282216,
-   "lon": -0.8866866,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31338",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ARTIEDA, 5",
-   "via": "Entre los n.º 1 y 5 inclusive",
-   "detalle": "Direcci&oacute;n: ARTIEDA, 5  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: Entre los n.º 1 y 5 inclusive  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.652167,
-   "lon": -0.920078,
-   "precision": "portal"
   },
   {
    "id": "zgz-31003",
@@ -1350,32 +1055,6 @@
    "precision": "aprox"
   },
   {
-   "id": "zgz-31325",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "BURRIEL (ALCALDE), 10",
-   "via": "",
-   "detalle": "Direcci&oacute;n: BURRIEL (ALCALDE), 10  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Observaciones: Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.6423506,
-   "lon": -0.8748484,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31339",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "HISPANIDAD  VIA, 9",
-   "via": "ENTRE LOS N.º 97 Y 103 INCLUSIVE",
-   "detalle": "Direcci&oacute;n: HISPANIDAD  VIA, 9  Tipo: Cortes de Agua  Inicio: 2026-10-22  Finalizaci&oacute;n: 2026-10-22  Tramo: ENTRE LOS N.º 97 Y 103 INCLUSIVE  Observaciones: Desde las 10 hasta las 18 horas",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-22",
-   "lat": 41.63467565909572,
-   "lon": -0.9058253226870914,
-   "precision": "aprox"
-  },
-  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1402,81 +1081,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29300396",
+   "id": "dgt-29311003",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 313.63",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.647095,
-   "lon": -0.9656658,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29300236",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 233.218",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.6258,
-   "lon": -0.8485,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29300507",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 319.41",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.68165,
-   "lon": -0.91444,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29300625",
-   "fuente": "DGT",
-   "tipo": "Otros",
+   "tipo": "Corte",
    "titulo": "N-232",
-   "via": "pk 251.222",
+   "via": "pk 245.8–246.0",
    "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.704723,
-   "lon": -1.0066167,
+   "inicio": "2026-10-23",
+   "fin": "2026-10-23",
+   "lat": 41.676315,
+   "lon": -0.9573392,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29300755",
+   "id": "dgt-29312824",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 295.648",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 28.0–29.5",
    "detalle": "",
-   "inicio": "2026-10-22",
+   "inicio": "2026-10-23",
    "fin": null,
-   "lat": 41.71108,
-   "lon": -0.84884,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29300778",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "AP-68",
-   "via": "pk 283.669",
-   "detalle": "",
-   "inicio": "2026-10-22",
-   "fin": null,
-   "lat": 41.731144,
-   "lon": -1.0292467,
+   "lat": 41.61918,
+   "lon": -0.9473172,
    "precision": "exacta"
   }
  ]
