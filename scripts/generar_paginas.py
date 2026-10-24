@@ -16,6 +16,8 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS, PRINCIPALES, CONOCIDAS = RAIZ / "data/incidencias.json", RAIZ / "config/vias_principales.json", RAIZ / "data/vias_conocidas.json"
 NOMBRES = RAIZ / "config/nombres_vias.json"
+HISTORIAL = RAIZ / "data/historial_vias.json"
+DIAS_HISTORIAL = 30  # cuánto tiempo se muestran las incidencias ya finalizadas en la página de la vía
 UMBRAL_DIAS = 60  # duración mínima (inicio→fin) para crear página propia de una calle no principal
 TIPOS = {"Corte": ("⛔", "#ff6b5e"), "Obras": ("🚧", "#ffc400"), "Accidente": ("💥", "#ff9a3c"),
          "Retención": ("🚗", "#e9d27a"), "Otros": ("⚠️", "#c9ced3")}
@@ -120,6 +122,44 @@ def clasificar(incs, principales, nombres=None):
     return out
 
 
+def actualizar_historial(vias, hist, hoy):
+    """Guarda cada incidencia vista por vía y descarta las que llevan más de DIAS_HISTORIAL sin verse."""
+    for sl, v in vias.items():
+        h = hist.setdefault(sl, {})
+        for i in v["incidencias"]:
+            h[i["id"]] = {k: i.get(k) for k in ("id", "tipo", "fuente", "titulo", "via", "detalle", "inicio", "fin")} | {"visto": hoy}
+    lim = (datetime.date.fromisoformat(hoy) - datetime.timedelta(days=DIAS_HISTORIAL)).isoformat()
+    for sl in list(hist):
+        hist[sl] = {k: r for k, r in hist[sl].items() if r.get("visto", "") >= lim}
+        if not hist[sl]:
+            del hist[sl]
+    return hist
+
+
+def recientes(hist_via, activas):
+    ids = {i["id"] for i in activas}
+    return sorted((r for k, r in hist_via.items() if k not in ids), key=lambda r: r.get("visto", ""), reverse=True)
+
+
+def bloque_portada(vias, limite=15):
+    """Lista HTML (sin JavaScript) con las incidencias actuales más relevantes, enlazadas a su página de vía."""
+    orden = {"Corte": 0, "Accidente": 1, "Obras": 2, "Retención": 3, "Otros": 4}
+    filas = []
+    for sl, v in vias.items():
+        enlazable = v["principal"] or any(es_larga(i) for i in v["incidencias"])
+        for i in v["incidencias"]:
+            filas.append((orden.get(i["tipo"], 9), 0 if enlazable else 1, i, sl if enlazable else None, v["nombre"]))
+    filas.sort(key=lambda f: (f[0], f[1]))
+    out = ""
+    for _, _, i, sl, nom in filas[:limite]:
+        e, _c = TIPOS.get(i["tipo"], TIPOS["Otros"])
+        t = esc(titulo_ficha(i, nom))
+        t = f'<a href="/vias/{esc(sl)}.html">{t}</a>' if sl else t
+        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i))] if x)
+        out += f"<li><span aria-hidden=\"true\">{e}</span> <strong>{t}</strong><br><span class=\"mute\">{linea}</span></li>"
+    return f'<ul class="inc">{out}</ul>' if out else "<p>Ahora mismo no hay incidencias activas registradas.</p>"
+
+
 CSS = """:root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0}
 @media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8}}
 *{box-sizing:border-box}body{margin:0;font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
@@ -200,14 +240,14 @@ def resumen(nombre, incs):
     return f"Ahora mismo hay {len(incs)} {'incidencia activa' if len(incs) == 1 else 'incidencias activas'} en {nombre}: {p}."
 
 
-def pagina_via(sl, v, d, BASE, hermanas, actualizado):
+def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=()):
     nombre, incs = v["nombre"], v["incidencias"]
     canon = f"{BASE}/vias/{sl}.html"
     titulo = f"Obras e incidencias en {nombre}, Zaragoza hoy"
     res = resumen(nombre, incs)
     desc = f"{res} Cortes, obras, accidentes y retenciones en {nombre} (Zaragoza) con datos del Ayuntamiento y la DGT."
     tiene = bool(incs)
-    robots = "index,follow" if (v["principal"] or any(es_larga(i) for i in incs)) else "noindex,follow"
+    robots = "index,follow" if ((v["principal"] and (incs or rec)) or any(es_larga(i) for i in incs)) else "noindex,follow"
     texto = f"<p>{esc(d['texto'])}</p>" if d.get("texto") else ""
     items = ""
     for i in incs:
@@ -238,6 +278,11 @@ m.bindPopup(Object.assign(document.createElement('strong'),{{textContent:p.n}}))
 if(p.tz)g.addLayer(L.polyline(p.tz,{{color:c,weight:6,opacity:.85}}))}});
 map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
 </script>"""
+    if rec:
+        fil = "".join(f'<li><div class="t">{esc(r["titulo"])}</div><div class="s">{esc(r["tipo"])} · {esc(r["fuente"])}' + (f' · {esc(cuando(r))}' if cuando(r) else "") + f' · visto por última vez el {esc(fecha(r["visto"]))}</div></li>' for r in rec[:10])
+        recientes_html = f'<h2>Incidencias recientes en {esc(nombre)}</h2><p class="mute">Avisos de los últimos {DIAS_HISTORIAL} días que ya no figuran como activos.</p><ul class="lista">{fil}</ul>'
+    else:
+        recientes_html = ""
     rel = "".join(f'<li><a href="/vias/{esc(s)}.html">{esc(n)}</a></li>' for s, n in hermanas if s != sl)
     rel = f'<h2>Otras vías principales</h2><ul class="enlaces">{rel}</ul>' if rel else ""
     cuerpo = f"""<nav class="mig" aria-label="Migas de pan"><a href="/">Inicio</a> › <a href="/vias/">Vías</a> › {esc(nombre)}</nav>
@@ -247,6 +292,7 @@ map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
 {anuncio("banner") if tiene else ""}
 {mapa}
 {'<h2>Incidencias activas</h2><ul class="lista">' + items + '</ul>' + anuncio("feed") if tiene else '<p>Vuelve más tarde: la información se actualiza varias veces al día. Mientras tanto puedes consultar <a href="/">todas las incidencias de Zaragoza</a>.</p>'}
+{recientes_html}
 <p class="mute">Actualizado: {esc(fecha_hora(actualizado))}. Datos del Ayuntamiento de Zaragoza y la DGT; información orientativa.</p>
 {rel}
 <p><a href="/">← Ver mapa completo de Zaragoza</a></p>"""
@@ -304,16 +350,26 @@ def main():
 
     act = d.get("actualizado", "")
     lastmod = act[:10] if act else None
+    hoy = lastmod or datetime.date.today().isoformat()
+    try:
+        hist = json.loads(HISTORIAL.read_text(encoding="utf-8"))
+    except Exception:
+        hist = {}
+    hist = actualizar_historial(vias, hist, hoy)
+    HISTORIAL.write_text(json.dumps(hist, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     hermanas = [(v["slug"], v["nombre"]) for v in principales]
     carpeta = salida / "vias"
     carpeta.mkdir(parents=True, exist_ok=True)
     for s, v in vias.items():
-        (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act), encoding="utf-8")
+        (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act, recientes(hist.get(s, {}), v["incidencias"])), encoding="utf-8")
     (carpeta / "index.html").write_text(pagina_indice(vias, desc_p, BASE, act), encoding="utf-8")
 
-    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8"), ("/avisolegal.html", "monthly", "0.3"), ("/privacidad.html", "monthly", "0.3")]
-    urls += [(f"/vias/{s}.html", "daily", "0.7" if v["principal"] else "0.5") for s, v in vias.items() if v["principal"] or any(es_larga(i) for i in v["incidencias"])]
+    def indexable(s, v):
+        return any(es_larga(i) for i in v["incidencias"]) or (v["principal"] and (v["incidencias"] or hist.get(s)))
+    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8")]
+    urls += [(f"/vias/{s}.html", "daily", "0.7" if v["principal"] else "0.5") for s, v in vias.items() if indexable(s, v)]
     lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
+    # Aviso legal y privacidad llevan noindex: no van al sitemap.
     (salida / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{BASE}{u}</loc>{lm}<changefreq>{c}</changefreq><priority>{p}</priority></url>\n" for u, c, p in urls)
         + "</urlset>\n", encoding="utf-8")
@@ -327,6 +383,11 @@ def main():
                  + ("<p>Obras de larga duración en otras calles:</p>" + enl(largas) if largas else "")
                  + '<p><a href="/vias/">Ver todas las vías</a></p>')
         h2 = re.sub(r"<!--VIAS-->.*?<!--/VIAS-->", lambda m: "<!--VIAS-->" + nuevo + "<!--/VIAS-->", h, flags=re.S)
+        h2 = re.sub(r"<!--INC-->.*?<!--/INC-->", lambda m: "<!--INC-->" + bloque_portada(vias) + "<!--/INC-->", h2, flags=re.S)
+        todas = d.get("incidencias", [])
+        h2 = re.sub(r'(<p id="resumen">).*?(</p>)', lambda m: m.group(1) + esc(resumen("Zaragoza", todas)) + m.group(2), h2, count=1, flags=re.S)
+        if act:
+            h2 = h2.replace('<span id="estado">Cargando…</span>', f'<span id="estado">Actualizado {esc(fecha_hora(act))}</span>', 1)
         portada.write_text(h2, encoding="utf-8")
     # robots.txt generado con el dominio del CNAME. No se bloquean las páginas noindex: Google debe poder
     # rastrearlas para ver la etiqueta noindex y retirarlas del índice.
