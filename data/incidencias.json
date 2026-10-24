@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T20:56+02:00",
+ "actualizado": "2026-10-24T23:47+02:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -968,68 +968,55 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29358493",
+   "id": "dgt-29365525",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 23.0–24.0",
+   "via": "pk 14.5–14.597",
    "detalle": "",
    "inicio": "2026-10-24",
    "fin": null,
-   "lat": 41.61006,
-   "lon": -0.87491894,
+   "lat": 41.666866,
+   "lon": -0.837641,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29361834",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 318.6–318.646",
-   "detalle": "",
-   "inicio": "2026-10-24",
-   "fin": null,
-   "lat": 41.67898,
-   "lon": -0.9234684,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29363066",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "VS-A-2-C",
-   "via": "pk 321.35–321.36",
-   "detalle": "",
-   "inicio": "2026-10-24",
-   "fin": null,
-   "lat": 41.67967,
-   "lon": -0.89243,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29363753",
+   "id": "dgt-29365915",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 321.794",
+   "titulo": "Z-40",
+   "via": "pk 28.639",
    "detalle": "",
    "inicio": "2026-10-24",
    "fin": null,
-   "lat": 41.679607,
-   "lon": -0.887468,
+   "lat": 41.61684,
+   "lon": -0.937409,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29363754",
+   "id": "dgt-29366148",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 300.319",
+   "titulo": "Z-40",
+   "via": "pk 31.539",
    "detalle": "",
    "inicio": "2026-10-24",
    "fin": null,
-   "lat": 41.75143,
-   "lon": -0.83881,
+   "lat": 41.62197,
+   "lon": -0.97004,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29366152",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 32.567",
+   "detalle": "",
+   "inicio": "2026-10-24",
+   "fin": null,
+   "lat": 41.63043,
+   "lon": -0.97412,
    "precision": "exacta"
   }
  ]
