@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-10-23T18:22+02:00",
+ "actualizado": "2026-10-24T11:02+02:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 65
+   "n": 50
   },
   "dgt": {
    "ok": true,
@@ -648,19 +648,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31288",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SAN VIATOR, 10",
-   "via": "",
-   "detalle": "Para realizar un cruce de calzada en la canalización eléctrica que está discurriendo por la Calle Francisco Izquierdo Molins",
-   "inicio": "2026-10-20",
-   "fin": "2026-10-23",
-   "lat": 41.62802,
-   "lon": -0.8768467,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31381",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -672,32 +659,6 @@
    "lat": 41.5746519,
    "lon": -1.0743814,
    "precision": "calle"
-  },
-  {
-   "id": "zgz-31290",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "GIMENEZ ABAD MANUEL, 0",
-   "via": "",
-   "detalle": "Para realizar la inspección de los tirantes del puente",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-23",
-   "lat": 41.6511575,
-   "lon": -0.8545454,
-   "precision": "calle"
-  },
-  {
-   "id": "zgz-30833",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "NOBEL ALFREDO, 3",
-   "via": "",
-   "detalle": "Para ampliar la acera de los pares y mejorar la accesibilidad",
-   "inicio": "2026-09-14",
-   "fin": "2026-10-23",
-   "lat": 41.6516112,
-   "lon": -0.9210092,
-   "precision": "portal"
   },
   {
    "id": "zgz-31244",
@@ -739,117 +700,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31248",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SANGUESA CASTAÑOSA M, 1",
-   "via": "",
-   "detalle": "Para inspeccionar con videocámara los pozos del colector (Saica)",
-   "inicio": "2026-10-21",
-   "fin": "2026-10-23",
-   "lat": 41.6655672,
-   "lon": -0.8692627,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.665773,
-      -0.869123
-     ],
-     [
-      41.665734,
-      -0.869162
-     ],
-     [
-      41.665704,
-      -0.86918
-     ],
-     [
-      41.665354,
-      -0.869392
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "zgz-31357",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "BOYERO, 25",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.638797,
-   "lon": -0.933829,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31341",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "BODEGON EL SIS, 9",
-   "via": "",
-   "detalle": "Para asfaltar tras realizar una toma de agua a la altura del no 9",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.669978247110635,
-   "lon": -0.8341723390249616,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31354",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ARTIGAS MIGUEL, 15",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.652292,
-   "lon": -0.926222,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31355",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ARTIGAS MIGUEL, 15",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.652292,
-   "lon": -0.926222,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31352",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "PATERNO (OBISPO), 13",
-   "via": "Desde C/ Miguel Artigas hasta C/ San Eloy",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.652346,
-   "lon": -0.925853,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31353",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SAN ELOY, 20",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.652307,
-   "lon": -0.927076,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30596",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -876,39 +726,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-30915",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "FLORES LAS JSL, 0",
-   "via": "",
-   "detalle": "Para sustituir el colector de saneamiento",
-   "inicio": "2026-09-21",
-   "fin": "2026-10-23",
-   "lat": 41.622225,
-   "lon": -0.9467853,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.622736,
-      -0.946213
-     ],
-     [
-      41.622088,
-      -0.946939
-     ],
-     [
-      41.621816,
-      -0.947243
-     ],
-     [
-      41.621742,
-      -0.947378
-     ]
-    ]
-   ]
-  },
-  {
    "id": "zgz-31247",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -920,32 +737,6 @@
    "lat": 41.626386,
    "lon": -0.912826,
    "precision": "portal"
-  },
-  {
-   "id": "zgz-31358",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "PLEYADES LAS, 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.639172,
-   "lon": -0.93452,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31272",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "MARCIAL MARCO(POETA), 8",
-   "via": "",
-   "detalle": "Para la reparación de sumidero",
-   "inicio": "2026-10-19",
-   "fin": "2026-10-23",
-   "lat": 41.647276454528196,
-   "lon": -0.8905455101952756,
-   "precision": "aprox"
   },
   {
    "id": "zgz-31273",
@@ -997,19 +788,6 @@
    ]
   },
   {
-   "id": "zgz-31356",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SAN BENITO, 14",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-23",
-   "lat": 41.652259,
-   "lon": -0.926599,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30944",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1021,19 +799,6 @@
    "lat": 41.67283493889929,
    "lon": -0.8596966767022661,
    "precision": "aprox"
-  },
-  {
-   "id": "zgz-31167",
-   "fuente": "Ayuntamiento",
-   "tipo": "Obras",
-   "titulo": "BONET JUAN PABLO, 16",
-   "via": "",
-   "detalle": "Dentro de las obras del Río Huerva (Lote 1) y continuando con la renovación de la tubería de abastecimiento que cruza la calzada a la altura de Carrera del Sábado",
-   "inicio": "2026-09-11",
-   "fin": "2026-10-23",
-   "lat": 41.640538,
-   "lon": -0.888346,
-   "precision": "portal"
   },
   {
    "id": "zgz-31315",
@@ -1203,29 +968,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29334986",
+   "id": "dgt-29348493",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 23.0–24.0",
+   "via": "pk 22.633",
    "detalle": "",
-   "inicio": "2026-10-23",
+   "inicio": "2026-10-24",
    "fin": null,
-   "lat": 41.61006,
-   "lon": -0.87491894,
+   "lat": 41.61268,
+   "lon": -0.872,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29335182",
+   "id": "dgt-29348890",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "VS-A-2-C",
-   "via": "pk 316.238",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 247.983",
    "detalle": "",
-   "inicio": "2026-10-23",
+   "inicio": "2026-10-24",
    "fin": null,
-   "lat": 41.662838,
-   "lon": -0.94142,
+   "lat": 41.69318,
+   "lon": -0.97794,
    "precision": "exacta"
   }
  ]
