@@ -230,13 +230,22 @@ def ld_json(obj):
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False).replace("</", "<\\/") + "</script>"
 
 
+NOMBRE_TIPO = {"Corte": ("corte", "cortes"), "Obras": ("obra", "obras"), "Accidente": ("accidente", "accidentes"),
+               "Retención": ("retención", "retenciones"), "Otros": ("otra incidencia", "otras incidencias")}
+
+
+def n_tipo(t, n):
+    s_, p_ = NOMBRE_TIPO.get(t, (t.lower(), t.lower()))
+    return f"{n} {s_ if n == 1 else p_}"
+
+
 def resumen(nombre, incs):
     if not incs:
         return f"Ahora mismo no hay incidencias activas registradas en {nombre}."
     c = {}
     for i in incs:
         c[i["tipo"]] = c.get(i["tipo"], 0) + 1
-    p = ", ".join(f"{n} {t.lower()}" for t, n in sorted(c.items(), key=lambda x: -x[1]))
+    p = ", ".join(n_tipo(t, n) for t, n in sorted(c.items(), key=lambda x: -x[1]))
     return f"Ahora mismo hay {len(incs)} {'incidencia activa' if len(incs) == 1 else 'incidencias activas'} en {nombre}: {p}."
 
 
