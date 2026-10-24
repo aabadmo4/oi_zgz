@@ -207,7 +207,7 @@ def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="",
 <main>
 {cuerpo}
 </main>
-<footer><nav aria-label="Información legal"><a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Adán Nahir Abad Mora · TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
+<footer><nav aria-label="Información legal"><a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
 {scripts}
 </body>
 </html>
