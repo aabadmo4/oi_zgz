@@ -73,6 +73,7 @@ input[type=search]{flex:1}
 .info ul{margin:0 0 10px;padding-left:20px}
 .info li{margin:3px 0}
 .info a{color:inherit}
+.info ul.inc{list-style:none;padding:0}.info ul.inc li{padding:6px 0;border-bottom:1px solid var(--line)}.info .mute{font-size:14px;color:var(--mute)}
 .info ul.vias{display:flex;flex-wrap:wrap;gap:6px 8px;list-style:none;padding:0}.info ul.vias a{display:inline-block;padding:4px 10px;border:1.5px solid var(--line);border-radius:99px;text-decoration:none}
 #resumen{font-weight:600}
 footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel);border-top:1px solid var(--line)}
@@ -88,7 +89,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
-<header><h1>Obras e Incidencias ZARAGOZA</h1><span id="estado">Cargando…</span></header>
+<header><h1>Obras e incidencias en Zaragoza hoy</h1><span id="estado">Cargando…</span></header>
 <main>
 <aside>
 <div id="adTop"></div>
@@ -123,6 +124,9 @@ aside{border-right:0;border-top:1px solid var(--line)}
 
 <h3>Zonas y vías habituales</h3>
 <p>Es frecuente encontrar avisos en el centro (Paseo de la Independencia, Paseo de Sagasta, Plaza de España, Coso), en grandes avenidas como Avenida de Madrid, Avenida de Navarra, Avenida de Cataluña o Avenida de Valencia, y en las rondas y accesos: Ronda de la Hispanidad, Ronda Norte, Z-30, A-2 y AP-68. Usa el buscador para comprobar rápidamente cualquier otra calle o barrio.</p>
+
+<h3>Incidencias actuales en Zaragoza</h3>
+<!--INC--><!--/INC-->
 
 <h3>Consulta por vía</h3>
 <!--VIAS-->
@@ -197,8 +201,8 @@ datos=d.incidencias||[];
 const f=new Date(d.actualizado);
 $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
 pintar();
-(()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${t.toLowerCase()}`).join(', ');
-if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} incidencias activas en Zaragoza${p?': '+p:''}.`})();
+(()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const NT={Corte:['corte','cortes'],Obras:['obra','obras'],Accidente:['accidente','accidentes'],'Retención':['retención','retenciones'],Otros:['otra incidencia','otras incidencias']};const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${(NT[t]||[t.toLowerCase(),t.toLowerCase()])[n===1?0:1]}`).join(', ');
+if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} ${datos.length===1?'incidencia activa':'incidencias activas'} en Zaragoza${p?': '+p:''}.`})();
 if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
 }).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
 </script>
