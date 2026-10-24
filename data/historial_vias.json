@@ -1,0 +1,398 @@
+{
+ "a-2": {
+  "dgt-29361834": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29361834",
+   "inicio": "2026-10-24",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 318.6–318.646",
+   "visto": "2026-10-24"
+  },
+  "dgt-29363066": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29363066",
+   "inicio": "2026-10-24",
+   "tipo": "Corte",
+   "titulo": "VS-A-2-C",
+   "via": "pk 321.35–321.36",
+   "visto": "2026-10-24"
+  },
+  "dgt-29363753": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29363753",
+   "inicio": "2026-10-24",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 321.794",
+   "visto": "2026-10-24"
+  }
+ },
+ "avenida-de-madrid": {
+  "zgz-27864": {
+   "detalle": "Continuando la instalación de balizas luminosas en los pasos de peatones de la Avenida",
+   "fin": "2026-11-22",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-27864",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "MADRID AVENIDA DE, 154",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "avenida-de-san-jose": {
+  "zgz-31361": {
+   "detalle": "Para realizar una nueva acometida de vertido a la altura del no 79",
+   "fin": "2026-10-29",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31361",
+   "inicio": "2026-10-26",
+   "tipo": "Otros",
+   "titulo": "SAN JOSE AVENIDA DE, 77",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "avenida-de-valencia": {
+  "zgz-28004": {
+   "detalle": "Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
+   "fin": "2026-12-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-28004",
+   "inicio": "2026-02-02",
+   "tipo": "Corte",
+   "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-29675": {
+   "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027).",
+   "fin": "2027-01-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29675",
+   "inicio": "2026-06-16",
+   "tipo": "Otros",
+   "titulo": "VALENCIA AVENIDA DE, 41",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-29796": {
+   "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027)",
+   "fin": "2026-11-02",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29796",
+   "inicio": "2026-06-24",
+   "tipo": "Corte",
+   "titulo": "VALENCIA AVENIDA DE, 11",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-31093": {
+   "detalle": "Continuando con las obras de la Avenida",
+   "fin": "2026-12-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31093",
+   "inicio": "2026-10-01",
+   "tipo": "Corte",
+   "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-agustin-de-quinto": {
+  "zgz-29137": {
+   "detalle": "Continuando con las obras del Río Huerva lote 1 y para trasladar las casetas de obra actualmente ubicadas en Bruno Solano.",
+   "fin": "2026-12-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29137",
+   "inicio": "2026-05-06",
+   "tipo": "Corte",
+   "titulo": "QUINTO AGUSTIN DE, 7",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-desiderio-escosura": {
+  "zgz-30111": {
+   "detalle": "Continuando con las obras de la Avenida Valencia (fecha de finalización prevista enero de 2027) y para realizar la conexión de la tubería de abastecimiento",
+   "fin": "2026-12-01",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30111",
+   "inicio": "2026-07-16",
+   "tipo": "Obras",
+   "titulo": "ESCOSURA DESIDERIO, 2",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-doctor-blanco-cordero": {
+  "zgz-25688": {
+   "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
+   "fin": "2026-10-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-25688",
+   "inicio": "2025-07-09",
+   "tipo": "Corte",
+   "titulo": "BLANCO CORDERO (DR.), 11",
+   "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía.",
+   "visto": "2026-10-24"
+  },
+  "zgz-31003": {
+   "detalle": "Continuando con la rehabilitación del grupo de viviendas Aloy Salas y para realizar una canalización eléctrica entre las calles López Abadía y Félix Rodriguez de la Fuente",
+   "fin": "2026-11-27",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31003",
+   "inicio": "2026-09-25",
+   "tipo": "Otros",
+   "titulo": "BLANCO CORDERO (DR.), 11",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-doctor-iranzo": {
+  "zgz-30805": {
+   "detalle": "Para las obras de la reforma integral de la vía (plazo de ejecución, 12 meses)",
+   "fin": "2027-08-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30805",
+   "inicio": "2026-09-14",
+   "tipo": "Corte",
+   "titulo": "IRANZO (DOCTOR), 13",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-jaime-ferran": {
+  "zgz-30568": {
+   "detalle": "Continuando con la canalización eléctrica",
+   "fin": "2026-10-28",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30568",
+   "inicio": "2026-08-24",
+   "tipo": "Otros",
+   "titulo": "FERRAN JAIME, 9",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-jeronimo-cancer": {
+  "zgz-29040": {
+   "detalle": "Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
+   "fin": "2026-12-12",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29040",
+   "inicio": "2026-04-29",
+   "tipo": "Corte",
+   "titulo": "CANCER JERONIMO, 8",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-jose-anselmo-clave": {
+  "zgz-28052": {
+   "detalle": "Dentro del Proyecto de Urbanización G-19-1 entorno de la estación del Portillo.",
+   "fin": "2027-01-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-28052",
+   "inicio": "2026-02-04",
+   "tipo": "Otros",
+   "titulo": "CLAVE JOSE ANSELMO, 11",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-jose-atares": {
+  "zgz-29864": {
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1) en el estacionamiento situado entre el CDM Siglo XXI y el IES Miguel Molinos",
+   "fin": "2026-11-16",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29864",
+   "inicio": "2026-06-27",
+   "tipo": "Corte",
+   "titulo": "JOSÉ ATARÉS, 105",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-marques-de-la-cadena": {
+  "zgz-29691": {
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 2) en el estacionamiento situado entre los números 66 y 68.",
+   "fin": "2026-12-05",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29691",
+   "inicio": "2026-06-15",
+   "tipo": "Otros",
+   "titulo": "CADENA(MARQUES DE LA), 7",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-pedro-cerbuna": {
+  "zgz-29394": {
+   "detalle": "Continuando con las obras para su renovación integral.",
+   "fin": "2027-02-18",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29394",
+   "inicio": "2026-05-25",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 39",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-30876": {
+   "detalle": "Continuando con las obras para su renovación integral",
+   "fin": "2027-02-18",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30876",
+   "inicio": "2026-09-16",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 5",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-sadaba": {
+  "zgz-30074": {
+   "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo)",
+   "fin": "2026-11-16",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30074",
+   "inicio": "2026-07-16",
+   "tipo": "Otros",
+   "titulo": "SADABA, 5",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-30394": {
+   "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo) y para ejecutar las aceras y la futura entrada de garajes",
+   "fin": "2026-10-31",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30394",
+   "inicio": "2026-08-07",
+   "tipo": "Corte",
+   "titulo": "SADABA, 1",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "calle-sixto-celorrio": {
+  "zgz-28867": {
+   "detalle": "Como inicio de las obras del proyecto de renovación del Parque Tío Jorge.",
+   "fin": "2027-02-28",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-28867",
+   "inicio": "2026-04-13",
+   "tipo": "Obras",
+   "titulo": "CELORRIO SIXTO, 11",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "carretera-albardin": {
+  "zgz-30596": {
+   "detalle": "Para realizar una cámara en la ya finalizada red de abastecimiento para el Centro de Datos de Amazon",
+   "fin": "2026-11-13",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30596",
+   "inicio": "2026-08-22",
+   "tipo": "Otros",
+   "titulo": "ALBARDIN CRT, 6",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "coso": {
+  "zgz-29395": {
+   "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
+   "fin": "2027-02-26",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29395",
+   "inicio": "2026-05-25",
+   "tipo": "Corte",
+   "titulo": "COSO, 94",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "paseo-de-maria-agustin": {
+  "zgz-31148": {
+   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "fin": "2026-11-30",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31148",
+   "inicio": "2026-10-09",
+   "tipo": "Obras",
+   "titulo": "AGUSTIN PASEO MARIA, 13",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "paseo-de-teruel": {
+  "zgz-31360": {
+   "detalle": "Para reparar las tapas de dos registros ubicados a la altura del paso de peatones junto a Hernán Cortés",
+   "fin": "2026-10-26",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31360",
+   "inicio": "2026-10-26",
+   "tipo": "Otros",
+   "titulo": "TERUEL PASEO, 10",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "vistabella-mrl": {
+  "zgz-30666": {
+   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "fin": "2026-11-20",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30666",
+   "inicio": "2026-09-01",
+   "tipo": "Otros",
+   "titulo": "VISTABELLA MRL, 47",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-31244": {
+   "detalle": "Continuando con las obras de urbanización del Área de Intervención F-56-2",
+   "fin": "2026-10-30",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31244",
+   "inicio": "2026-10-19",
+   "tipo": "Corte",
+   "titulo": "VISTABELLA MRL, 53",
+   "via": "",
+   "visto": "2026-10-24"
+  },
+  "zgz-31271": {
+   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "fin": "2026-10-30",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31271",
+   "inicio": "2026-10-18",
+   "tipo": "Corte",
+   "titulo": "VISTABELLA MRL, 53",
+   "via": "",
+   "visto": "2026-10-24"
+  }
+ },
+ "z-40": {
+  "dgt-29358493": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29358493",
+   "inicio": "2026-10-24",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0",
+   "visto": "2026-10-24"
+  }
+ }
+}
