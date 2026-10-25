@@ -174,7 +174,7 @@ ul.lista{list-style:none;margin:0;padding:0}.lista li{background:var(--panel);bo
 .t{font-weight:600}.s{font-size:14px;color:var(--mute)}
 .enlaces{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.enlaces a{display:inline-block;padding:6px 12px;border:1.5px solid var(--line);border-radius:99px;color:inherit;text-decoration:none}
 .enlaces a:hover,a:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
-.ad{margin:16px 0;text-align:center}.ad small{display:block;font-size:11px;color:var(--mute);text-align:left;margin-bottom:2px}.ad:has(ins[data-ad-status=unfilled]){display:none}
+.ad{margin:0;height:0;overflow:hidden;text-align:center}.ad:has(ins[data-ad-status=filled]){margin:16px 0;height:auto;overflow:visible}.ad small{display:block;font-size:11px;color:var(--mute);text-align:left;margin-bottom:2px}.ad:has(ins[data-ad-status=unfilled]){display:none}
 .pin{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:16px;border:2px solid #1d2024;box-shadow:0 1px 4px #0006}
 footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel);border-top:1px solid var(--line)}footer a{color:inherit}"""
 
