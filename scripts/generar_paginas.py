@@ -182,9 +182,29 @@ footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel
 GA_HEAD = '''<script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']});
+try{if(localStorage.getItem('oi_analytics_consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
 gtag('js',new Date());gtag('config','G-3H1BK6HXLL');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H1BK6HXLL"></script>
+<script>
+/* BANNER PROVISIONAL (solo Analytics). Borrar este bloque cuando el mensaje de consentimiento de AdSense funcione. */
+(function(){var K='oi_analytics_consent',b=null;
+function get(){try{return localStorage.getItem(K)}catch(e){return null}}
+function set(v){try{localStorage.setItem(K,v)}catch(e){}}
+function close(){if(b&&b.parentNode)b.parentNode.removeChild(b);b=null}
+function choose(v){set(v);gtag('consent','update',{analytics_storage:v});if(v==='granted')gtag('event','page_view');close()}
+function open(){if(b)return;b=document.createElement('div');b.id='oi-cb';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookies de estadísticas');
+b.innerHTML='<p>Usamos Google Analytics para medir de forma estadística el uso de la web. Solo se activa si aceptas. <a href="/privacidad.html">Más información</a></p><div><button type="button" data-v="denied">Rechazar</button><button type="button" data-v="granted">Aceptar</button></div>';
+b.addEventListener('click',function(e){var v=e.target&&e.target.getAttribute&&e.target.getAttribute('data-v');if(v)choose(v)});
+document.body.appendChild(b)}
+function init(){var s=document.createElement('style');
+s.textContent='#oi-cb{position:fixed;left:0;right:0;bottom:0;z-index:99999;box-sizing:border-box;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:#202328;color:#f1f1f1;border-top:3px solid #ffc400;font:14px/1.4 system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}#oi-cb p{margin:0;flex:1 1 260px}#oi-cb a{color:#ffc400}#oi-cb div{display:flex;gap:8px}#oi-cb button{font:inherit;font-weight:600;min-height:44px;padding:9px 18px;border:2px solid #ffc400;border-radius:6px;background:transparent;color:#ffc400;cursor:pointer}';
+document.head.appendChild(s);
+var n=document.querySelector('footer nav');
+if(n){var a=document.createElement('a');a.href='#';a.textContent='Preferencias de cookies';a.addEventListener('click',function(e){e.preventDefault();open()});n.appendChild(document.createTextNode(' \u00b7 '));n.appendChild(a)}
+if(get()===null)open()}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
+</script>
 '''
 
 
