@@ -41,6 +41,15 @@ def base_url():
         return "https://obraseincidenciaszaragoza.es"
 
 
+def og_imagen():
+    """Etiquetas de imagen para compartir (Facebook, X, WhatsApp...). El JPG está en la raíz del repo."""
+    u = base_url() + "/obraseincidenciaszaragoza.jpg"
+    return (f'<meta property="og:image" content="{u}"><meta property="og:image:type" content="image/jpeg">'
+            f'<meta property="og:image:width" content="1424"><meta property="og:image:height" content="752">'
+            f'<meta property="og:image:alt" content="Mapa de obras e incidencias en Zaragoza">'
+            f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{u}">')
+
+
 def fecha(s):
     try:
         a, m, d = str(s).split("-")
@@ -222,7 +231,7 @@ def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="",
 <meta property="og:type" content="website"><meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Obras e Incidencias Zaragoza">
 <meta property="og:title" content="{esc(titulo)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{esc(canon)}">
-<meta name="twitter:card" content="summary">
+{og_imagen()}
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
