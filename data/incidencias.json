@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T15:31+01:00",
+ "actualizado": "2026-10-25T20:12+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -1181,6 +1181,97 @@
    "fin": "2026-10-30",
    "lat": 41.683613,
    "lon": -0.96780777,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381871",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.6",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.671906,
+   "lon": -0.93157655,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381738",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.5",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.671192,
+   "lon": -0.93229735,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381534",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.5",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.671192,
+   "lon": -0.93229735,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381806",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.6",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.671906,
+   "lon": -0.93157655,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381807",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-68",
+   "via": "pk 243.3–243.4",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.673206,
+   "lon": -0.9264551,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381808",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-68",
+   "via": "pk 243.3",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.673206,
+   "lon": -0.9264551,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381682",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.7",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.67261,
+   "lon": -0.93084824,
    "precision": "exacta"
   }
  ]

@@ -32,6 +32,61 @@
    "titulo": "VS-A-2-C",
    "via": "pk 321.794",
    "visto": "2026-10-24"
+  },
+  "dgt-29381534": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29381534",
+   "inicio": "2026-10-25",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.5",
+   "visto": "2026-10-25"
+  },
+  "dgt-29381682": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29381682",
+   "inicio": "2026-10-25",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.7",
+   "visto": "2026-10-25"
+  },
+  "dgt-29381738": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29381738",
+   "inicio": "2026-10-25",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.5",
+   "visto": "2026-10-25"
+  },
+  "dgt-29381806": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29381806",
+   "inicio": "2026-10-25",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.6",
+   "visto": "2026-10-25"
+  },
+  "dgt-29381871": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29381871",
+   "inicio": "2026-10-25",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.6",
+   "visto": "2026-10-25"
   }
  },
  "avenida-de-madrid": {
