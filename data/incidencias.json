@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T10:19+01:00",
+ "actualizado": "2026-10-25T15:31+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -1181,19 +1181,6 @@
    "fin": "2026-10-30",
    "lat": 41.683613,
    "lon": -0.96780777,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29369772",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 250.701",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.697926,
-   "lon": -1.0051117,
    "precision": "exacta"
   }
  ]
