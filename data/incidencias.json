@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-24T23:47+02:00",
+ "actualizado": "2026-10-25T10:19+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 50
+   "n": 58
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -368,19 +368,6 @@
    "precision": "calle"
   },
   {
-   "id": "zgz-31274",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ROMERO FRANCISCO, 5",
-   "via": "",
-   "detalle": "Para la ampliación de aceras en la calle Consejo del Ciento",
-   "inicio": "2026-10-19",
-   "fin": "2026-10-24",
-   "lat": 41.6263884,
-   "lon": -0.8743934,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30394",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -450,6 +437,19 @@
      ]
     ]
    ]
+  },
+  {
+   "id": "zgz-31393",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "LUCAS GALLEGO PEDRO, 7",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.646079,
+   "lon": -0.9033921,
+   "precision": "portal"
   },
   {
    "id": "zgz-31361",
@@ -659,6 +659,45 @@
    "lat": 41.5746519,
    "lon": -1.0743814,
    "precision": "calle"
+  },
+  {
+   "id": "zgz-31385",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PINETA VALLE DE, 1",
+   "via": "Desde el n.º 1 hasta el n.º 7, ambos inclusive,",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.666901,
+   "lon": -0.874949,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31388",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CASCAJARES (CARDENAL), 5",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 12 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.655125,
+   "lon": -0.925304,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31389",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SAN PABLO, 9",
+   "via": "Desde Avda. Cesar Augusto hasta C/ Mariano Cerezo",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.655529,
+   "lon": -0.884467,
+   "precision": "portal"
   },
   {
    "id": "zgz-31244",
@@ -929,6 +968,32 @@
    ]
   },
   {
+   "id": "zgz-31386",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "MAYANDIA (GENERAL), 4",
+   "via": "Desde C/ José María Escrivá de Balaguer hasta C/ General Mayandía (Afectando al Cuartel de la Policía Nacional)",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.65224,
+   "lon": -0.892432,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31390",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SAN BLAS, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.6559264,
+   "lon": -0.8839481,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31271",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -942,6 +1007,144 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31391",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SERVET MIGUEL, 9",
+   "via": "Desde Avda. Compromiso de Caspe hasta C/ Monasterio de Samos",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.6478916,
+   "lon": -0.8746238,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31392",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "LOPEZ DE LUNA PEDRO, 9",
+   "via": "Desde C/ Lucas Gallego hasta C/ Duquesa Villahermosa",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.6459609,
+   "lon": -0.9029456,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.647671,
+      -0.903922
+     ],
+     [
+      41.64758,
+      -0.90387
+     ],
+     [
+      41.647424,
+      -0.903781
+     ],
+     [
+      41.647228,
+      -0.90367
+     ],
+     [
+      41.647069,
+      -0.903578
+     ],
+     [
+      41.646966,
+      -0.90352
+     ],
+     [
+      41.646934,
+      -0.903501
+     ],
+     [
+      41.646776,
+      -0.903411
+     ],
+     [
+      41.646664,
+      -0.903347
+     ],
+     [
+      41.646481,
+      -0.903242
+     ],
+     [
+      41.64631,
+      -0.903145
+     ],
+     [
+      41.646258,
+      -0.903115
+     ],
+     [
+      41.646204,
+      -0.903085
+     ],
+     [
+      41.645908,
+      -0.902916
+     ],
+     [
+      41.645801,
+      -0.902854
+     ],
+     [
+      41.645623,
+      -0.902753
+     ],
+     [
+      41.645428,
+      -0.902641
+     ],
+     [
+      41.645048,
+      -0.902424
+     ],
+     [
+      41.644823,
+      -0.902296
+     ],
+     [
+      41.644493,
+      -0.902107
+     ],
+     [
+      41.64447,
+      -0.902094
+     ],
+     [
+      41.644432,
+      -0.902072
+     ],
+     [
+      41.64441,
+      -0.90206
+     ],
+     [
+      41.64439,
+      -0.902028
+     ],
+     [
+      41.644373,
+      -0.901966
+     ],
+     [
+      41.644368,
+      -0.90195
+     ],
+     [
+      41.644351,
+      -0.901887
+     ]
+    ]
+   ]
+  },
+  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -952,6 +1155,19 @@
    "fin": "2026-12-31",
    "lat": 41.647136,
    "lon": -0.8946807,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31387",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SAN FELICES (MARQUES), 9",
+   "via": "Desde C/ Martín el Humano hasta Cº Cardenal Cascajares",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 12 horas",
+   "inicio": "2026-10-26",
+   "fin": "2026-10-26",
+   "lat": 41.654168,
+   "lon": -0.92484,
    "precision": "portal"
   },
   {
@@ -968,55 +1184,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29365525",
+   "id": "dgt-29369772",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.5–14.597",
+   "titulo": "A-68",
+   "via": "pk 250.701",
    "detalle": "",
-   "inicio": "2026-10-24",
+   "inicio": "2026-10-25",
    "fin": null,
-   "lat": 41.666866,
-   "lon": -0.837641,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29365915",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 28.639",
-   "detalle": "",
-   "inicio": "2026-10-24",
-   "fin": null,
-   "lat": 41.61684,
-   "lon": -0.937409,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29366148",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 31.539",
-   "detalle": "",
-   "inicio": "2026-10-24",
-   "fin": null,
-   "lat": 41.62197,
-   "lon": -0.97004,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29366152",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 32.567",
-   "detalle": "",
-   "inicio": "2026-10-24",
-   "fin": null,
-   "lat": 41.63043,
-   "lon": -0.97412,
+   "lat": 41.697926,
+   "lon": -1.0051117,
    "precision": "exacta"
   }
  ]
