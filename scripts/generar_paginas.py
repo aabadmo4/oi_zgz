@@ -179,12 +179,21 @@ ul.lista{list-style:none;margin:0;padding:0}.lista li{background:var(--panel);bo
 footer{font-size:13px;color:var(--mute);padding:14px 16px;background:var(--panel);border-top:1px solid var(--line)}footer a{color:inherit}"""
 
 
+GA_HEAD = '''<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']});
+gtag('js',new Date());gtag('config','G-3H1BK6HXLL');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H1BK6HXLL"></script>
+'''
+
+
 def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="", ld="", scripts=""):
     return f"""<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+{GA_HEAD}<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(titulo)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="{robots}">
