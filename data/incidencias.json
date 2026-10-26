@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26T21:44+01:00",
+ "actualizado": "2026-10-27T00:17+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -10,7 +10,7 @@
    "n": 10
   }
  },
- "sin_ubicar": 0,
+ "sin_ubicar": 2,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -368,6 +368,19 @@
    "precision": "calle"
   },
   {
+   "id": "zgz-31418",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "BELGICA, 11",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.650873,
+   "lon": -0.9057753,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-30394",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -439,19 +452,6 @@
    ]
   },
   {
-   "id": "zgz-31393",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "LUCAS GALLEGO PEDRO, 7",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.646079,
-   "lon": -0.9033921,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31361",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -491,19 +491,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31359",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "VILLAHERMOSA(DUQUESA), 15",
-   "via": "",
-   "detalle": "Para renovar un sumidero ubicado a la altura del paso de peatones ubicado en el no 15",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.6486183,
-   "lon": -0.900686,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31364",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -527,19 +514,6 @@
    "fin": "2026-11-20",
    "lat": 41.6609828,
    "lon": -0.9423819,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31360",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "TERUEL PASEO, 10",
-   "via": "",
-   "detalle": "Para reparar las tapas de dos registros ubicados a la altura del paso de peatones junto a Hernán Cortés",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.6486836,
-   "lon": -0.8901822,
    "precision": "portal"
   },
   {
@@ -596,6 +570,32 @@
    ]
   },
   {
+   "id": "zgz-31414",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SAN VICENTE PAUL, 1",
+   "via": "Números impares, entre C/ Coso y C/ San Lorenzo",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.718756,
+   "lon": -1.025204,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31415",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SOLER PEDRO JOAQUIN, 4",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.6513525,
+   "lon": -0.877548,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31380",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -607,6 +607,19 @@
    "lat": 41.6311318,
    "lon": -0.8866026,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31421",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ROTELLAR MANUEL, 0",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas.",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.6755281,
+   "lon": -0.8755677,
+   "precision": "calle"
   },
   {
    "id": "zgz-31382",
@@ -711,45 +724,6 @@
    "lat": 41.5746519,
    "lon": -1.0743814,
    "precision": "calle"
-  },
-  {
-   "id": "zgz-31385",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "PINETA VALLE DE, 1",
-   "via": "Desde el n.º 1 hasta el n.º 7, ambos inclusive,",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.666901,
-   "lon": -0.874949,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31388",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "CASCAJARES (CARDENAL), 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 12 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.655125,
-   "lon": -0.925304,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31389",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SAN PABLO, 9",
-   "via": "Desde Avda. Cesar Augusto hasta C/ Mariano Cerezo",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.655529,
-   "lon": -0.884467,
-   "precision": "portal"
   },
   {
    "id": "zgz-31244",
@@ -892,6 +866,19 @@
    "precision": "aprox"
   },
   {
+   "id": "zgz-31400",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PARAISO PL.BASILIO, 4",
+   "via": "",
+   "detalle": "Para montar el árbol de Navidad",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-30",
+   "lat": 41.6475119,
+   "lon": -0.8867122,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31315",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -903,6 +890,19 @@
    "lat": 41.6883191,
    "lon": -0.8286754,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31419",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ALLENDE SALVADOR AV., 16",
+   "via": "Números pares, desde C/ Manuel Rotellar hasta el n.º 78",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas.",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.6765099,
+   "lon": -0.8759883,
+   "precision": "calle"
   },
   {
    "id": "zgz-31003",
@@ -942,6 +942,32 @@
    "lat": 41.650317,
    "lon": -0.8892003,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31416",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "COSO, 11",
+   "via": "Números impares, desde C/ Pedro J. Soler hasta C/ San Vicente de Paúl",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.653407,
+   "lon": -0.882609,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31417",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CENIA LA SIS, 11",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.6684094168435,
+   "lon": -0.831155153859144,
+   "precision": "aprox"
   },
   {
    "id": "zgz-31234",
@@ -1007,6 +1033,19 @@
    ]
   },
   {
+   "id": "zgz-31401",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "COSO, 11",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica",
+   "inicio": "2026-10-28",
+   "fin": "2026-11-04",
+   "lat": 41.653407,
+   "lon": -0.882609,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31245",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1057,32 +1096,6 @@
    ]
   },
   {
-   "id": "zgz-31386",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "MAYANDIA (GENERAL), 4",
-   "via": "Desde C/ José María Escrivá de Balaguer hasta C/ General Mayandía (Afectando al Cuartel de la Policía Nacional)",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.65224,
-   "lon": -0.892432,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31390",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SAN BLAS, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.6559264,
-   "lon": -0.8839481,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31271",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1096,144 +1109,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31391",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SERVET MIGUEL, 9",
-   "via": "Desde Avda. Compromiso de Caspe hasta C/ Monasterio de Samos",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.6478916,
-   "lon": -0.8746238,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31392",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "LOPEZ DE LUNA PEDRO, 9",
-   "via": "Desde C/ Lucas Gallego hasta C/ Duquesa Villahermosa",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.6459609,
-   "lon": -0.9029456,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.647671,
-      -0.903922
-     ],
-     [
-      41.64758,
-      -0.90387
-     ],
-     [
-      41.647424,
-      -0.903781
-     ],
-     [
-      41.647228,
-      -0.90367
-     ],
-     [
-      41.647069,
-      -0.903578
-     ],
-     [
-      41.646966,
-      -0.90352
-     ],
-     [
-      41.646934,
-      -0.903501
-     ],
-     [
-      41.646776,
-      -0.903411
-     ],
-     [
-      41.646664,
-      -0.903347
-     ],
-     [
-      41.646481,
-      -0.903242
-     ],
-     [
-      41.64631,
-      -0.903145
-     ],
-     [
-      41.646258,
-      -0.903115
-     ],
-     [
-      41.646204,
-      -0.903085
-     ],
-     [
-      41.645908,
-      -0.902916
-     ],
-     [
-      41.645801,
-      -0.902854
-     ],
-     [
-      41.645623,
-      -0.902753
-     ],
-     [
-      41.645428,
-      -0.902641
-     ],
-     [
-      41.645048,
-      -0.902424
-     ],
-     [
-      41.644823,
-      -0.902296
-     ],
-     [
-      41.644493,
-      -0.902107
-     ],
-     [
-      41.64447,
-      -0.902094
-     ],
-     [
-      41.644432,
-      -0.902072
-     ],
-     [
-      41.64441,
-      -0.90206
-     ],
-     [
-      41.64439,
-      -0.902028
-     ],
-     [
-      41.644373,
-      -0.901966
-     ],
-     [
-      41.644368,
-      -0.90195
-     ],
-     [
-      41.644351,
-      -0.901887
-     ]
-    ]
-   ]
-  },
-  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1244,19 +1119,6 @@
    "fin": "2026-12-31",
    "lat": 41.647136,
    "lon": -0.8946807,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31387",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SAN FELICES (MARQUES), 9",
-   "via": "Desde C/ Martín el Humano hasta Cº Cardenal Cascajares",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 12 horas",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-26",
-   "lat": 41.654168,
-   "lon": -0.92484,
    "precision": "portal"
   },
   {
@@ -1273,16 +1135,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29418064",
+   "id": "dgt-29421262",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 325.0–325.7",
+   "titulo": "Z-40",
+   "via": "pk 26.6–27.5",
    "detalle": "",
    "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.676365,
-   "lon": -0.8394799,
+   "lat": 41.60862,
+   "lon": -0.91572154,
    "precision": "exacta"
   },
   {
@@ -1299,16 +1161,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29418063",
+   "id": "dgt-29418064",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 324.6–325.0",
+   "via": "pk 324.6–325.7",
    "detalle": "",
    "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.677723,
-   "lon": -0.8476534,
+   "lat": 41.676365,
+   "lon": -0.8394799,
    "precision": "exacta"
   },
   {
@@ -1329,64 +1191,64 @@
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-68",
-   "via": "pk 243.77–245.59",
+   "via": "pk 243.77–246.37",
    "detalle": "",
    "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.68459,
-   "lon": -0.9496205,
+   "lat": 41.688534,
+   "lon": -0.9587421,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29418860",
+   "id": "dgt-29420574",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 244.68–244.8",
-   "detalle": "",
-   "inicio": "2026-10-26",
-   "fin": null,
-   "lat": 41.681175,
-   "lon": -0.94129556,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29419479",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 276.07",
-   "detalle": "",
-   "inicio": "2026-10-26",
-   "fin": null,
-   "lat": 41.605904,
-   "lon": -0.935956,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29419762",
-   "fuente": "DGT",
-   "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 320.877",
+   "via": "pk 309.3–312.0",
    "detalle": "",
    "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.67996,
-   "lon": -0.89714,
+   "lat": 41.633717,
+   "lon": -0.975728,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29419785",
+   "id": "dgt-29420740",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 482.758",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 310.75–312.0",
    "detalle": "",
    "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.55402,
-   "lon": -0.97602,
+   "lat": 41.633717,
+   "lon": -0.975728,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29420699",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 313.3–320.0",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.681263,
+   "lon": -0.90766805,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29420711",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 313.66–320.0",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.681263,
+   "lon": -0.90766805,
    "precision": "exacta"
   }
  ]
