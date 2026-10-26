@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-10-25T22:59+01:00",
+ "actualizado": "2026-10-26T05:15+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 58
+   "n": 62
   },
   "dgt": {
    "ok": true,
@@ -478,6 +478,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31394",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "MARTINEZ RUIZ JOSE, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.650639,
+   "lon": -0.862056,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31359",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -635,6 +648,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31396",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "VIRGEN LA MNT, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.69014437469493,
+   "lon": -0.8273019454973861,
+   "precision": "aprox"
+  },
+  {
    "id": "zgz-31314",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -646,6 +672,32 @@
    "lat": 41.719411,
    "lon": -1.03054,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31395",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "IRANZO (DOCTOR), 6",
+   "via": "Desde C/ Escultor Benlliure hasta C/ José Martínez Ruiz (Azorín)",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.641509,
+   "lon": -0.864984,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31397",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "AMERICA AVENIDA DE, 11",
+   "via": "Desde C/ Oviedo hasta C/ Hermanos Gimeno Vizarra",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.633453,
+   "lon": -0.8849711,
+   "precision": "calle"
   },
   {
    "id": "zgz-31381",
@@ -1184,42 +1236,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29381534",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 317.0–317.5",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.671192,
-   "lon": -0.93229735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29381682",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 317.7",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.67261,
-   "lon": -0.93084824,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29381808",
+   "id": "dgt-29381806",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 243.3",
+   "titulo": "A-2",
+   "via": "pk 317.6",
    "detalle": "",
    "inicio": "2026-10-25",
    "fin": null,
-   "lat": 41.673206,
-   "lon": -0.9264551,
+   "lat": 41.671906,
+   "lon": -0.93157655,
    "precision": "exacta"
   },
   {
@@ -1236,16 +1262,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29381806",
+   "id": "dgt-29381808",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 317.6",
+   "titulo": "A-68",
+   "via": "pk 243.3",
    "detalle": "",
    "inicio": "2026-10-25",
    "fin": null,
-   "lat": 41.671906,
-   "lon": -0.93157655,
+   "lat": 41.673206,
+   "lon": -0.9264551,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381682",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.7",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.67261,
+   "lon": -0.93084824,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29381534",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.0–317.5",
+   "detalle": "",
+   "inicio": "2026-10-25",
+   "fin": null,
+   "lat": 41.671192,
+   "lon": -0.93229735,
    "precision": "exacta"
   },
   {
