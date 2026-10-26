@@ -40,7 +40,7 @@ jobs:
       - name: Preparar sitio
         run: |
           mkdir _site
-          cp -r *.html *.jpg CNAME ads.txt robots.txt sitemap.xml data _site/
+          cp -r *.html *.jpg *.png *.ico CNAME ads.txt robots.txt sitemap.xml data _site/
           touch _site/.nojekyll
 
       - name: Generar páginas de vías, sitemap y robots
