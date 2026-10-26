@@ -79,7 +79,12 @@ input[type=search],select{font:inherit;padding:8px 10px;border:1px solid var(--l
 input[type=search]{flex:1}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{flex:none;font:inherit;font-size:14px;padding:5px 10px;border:1.5px solid var(--line);border-radius:99px;background:transparent;color:var(--ink);cursor:pointer}
-.chip[aria-pressed=true]{background:var(--asfalto);color:#fff;border-color:var(--asfalto)}
+.chip:disabled{opacity:.45;cursor:default}
+.chip small{font-size:12px;opacity:.7;margin-left:2px}
+.chip[aria-pressed=true]{background:var(--sign);color:#1d2024;border-color:#1d2024;font-weight:600}
+.chip[aria-pressed=true] small{opacity:.8}
+.vis{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer;width:fit-content}
+.vis input{width:18px;height:18px;margin:0;accent-color:var(--asfalto)}
 #cuenta{font-size:14px;color:var(--mute);padding:8px 12px 0}
 #lista{list-style:none;margin:0;padding:6px 8px 12px;overflow:auto;flex:1}
 #lista>li{border-bottom:1px solid var(--line)}
@@ -129,11 +134,12 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <aside>
 <div id="adTop"></div>
 <div class="filtros">
-<div class="chips" id="chips" role="group" aria-label="Filtros"></div>
+<div class="chips" id="chips" role="group" aria-label="Tipo de incidencia"></div>
 <div class="fila">
 <input type="search" id="q" placeholder="Buscar calle o motivo" aria-label="Buscar">
-<select id="fuente" aria-label="Fuente"><option value="">Todas</option><option>Ayuntamiento</option><option>DGT</option></select>
+<select id="fuente" aria-label="Fuente"><option value="">Todas las fuentes</option><option>Ayuntamiento</option><option>DGT</option></select>
 </div>
+<label class="vis"><input type="checkbox" id="vis"> 📍 Solo lo que se ve en el mapa</label>
 </div>
 <div id="cuenta"></div>
 <ul id="lista"></ul>
@@ -155,7 +161,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 </ul>
 
 <h3>Cómo usar el mapa y el listado</h3>
-<p>Filtra por tipo de incidencia, elige la fuente (Ayuntamiento o DGT) o escribe el nombre de tu calle en el buscador. Si activas «Solo mapa visible», el listado mostrará únicamente lo que aparece en la zona del mapa que estás viendo. Al pulsar una incidencia, el mapa se centra en ella y abre su ficha. Un marcador con borde discontinuo indica que la incidencia afecta a toda la calle o que su ubicación es orientativa.</p>
+<p>Filtra por tipo de incidencia, elige la fuente (Ayuntamiento o DGT) o escribe el nombre de tu calle en el buscador. Si marcas «Solo lo que se ve en el mapa», el listado mostrará únicamente lo que aparece en la zona del mapa que estás viendo. Al pulsar una incidencia, el mapa se centra en ella y abre su ficha. Un marcador con borde discontinuo indica que la incidencia afecta a toda la calle o que su ubicación es orientativa.</p>
 
 <h3>Zonas y vías habituales</h3>
 <p>Es frecuente encontrar avisos en el centro (Paseo de la Independencia, Paseo de Sagasta, Plaza de España, Coso), en grandes avenidas como Avenida de Madrid, Avenida de Navarra, Avenida de Cataluña o Avenida de Valencia, y en las rondas y accesos: Ronda de la Hispanidad, Ronda Norte, Z-30, A-2 y AP-68. Usa el buscador para comprobar rápidamente cualquier otra calle o barrio.</p>
@@ -186,7 +192,7 @@ const $=id=>document.getElementById(id);
 const map=L.map('mapa').setView([41.6488,-0.8891],12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
 const capa=L.layerGroup().addTo(map);
-let datos=[],marcas=new Map(),activos=new Set(Object.keys(TIPOS)),visSolo=false,filtrados=[],limite=PAG;
+let datos=[],marcas=new Map(),tipoSel='',visSolo=false,filtrados=[],limite=PAG;
 function crearAd(t){const d=document.createElement('div');d.className='ad';
 d.innerHTML=`<small>Publicidad</small><ins class="adsbygoogle" style="display:block" data-ad-client="${ADS.client}" data-ad-slot="${ADS[t]}" ${t==='feed'?`data-ad-format="fluid" data-ad-layout-key="${ADS.layout}"`:'data-ad-format="auto" data-full-width-responsive="true"'}></ins>`;return d}
 function pushAd(d){if(d.dataset.p)return;d.dataset.p=1;try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}}
@@ -199,7 +205,7 @@ function popup(i){return `<strong>${esc(i.titulo)}</strong><br>${esc(i.tipo)} ·
 function pintar(){
 limite=PAG;
 const q=$('q').value.trim().toLowerCase(),f=$('fuente').value,b=map.getBounds();
-filtrados=datos.filter(i=>activos.has(i.tipo)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
+filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
 capa.clearLayers();marcas.clear();
 filtrados.forEach(i=>{
 const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:i.titulo}).bindPopup(popup(i));
@@ -223,16 +229,17 @@ const resto=filtrados.length-limite;
 if(resto>0){const li=document.createElement('li');li.className='mas';li.innerHTML=`<button type="button">Mostrar más (${resto})</button>`;li.firstChild.onclick=()=>{limite+=MAS;lista()};ul.appendChild(li)}
 $('cuenta').textContent=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.';
 }
-$('chips').innerHTML=Object.entries(TIPOS).map(([t,[e]])=>`<button type="button" class="chip" aria-pressed="true" data-t="${t}">${e} ${t}</button>`).join('')+'<button type="button" class="chip" id="vis" aria-pressed="false">📍 Solo mapa visible</button>';
-$('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;
-if(b.id==='vis'){visSolo=!visSolo;b.setAttribute('aria-pressed',visSolo)}
-else{const t=b.dataset.t,on=!activos.has(t);on?activos.add(t):activos.delete(t);b.setAttribute('aria-pressed',on)}
-pintar()};
+function chips(){const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);
+const b=(t,txt,n)=>`<button type="button" class="chip" aria-pressed="${tipoSel===t}" data-t="${t}"${n===0&&tipoSel!==t?' disabled':''}>${tipoSel===t?'✓ ':''}${txt}<small>${n}</small></button>`;
+$('chips').innerHTML=b('','Todas',datos.length)+Object.entries(TIPOS).map(([t,[e]])=>b(t,`${e} ${t}`,c[t]||0)).join('')}
+$('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;tipoSel=b.dataset.t===tipoSel?'':b.dataset.t;chips();pintar()};
+$('vis').onchange=e=>{visSolo=e.target.checked;pintar()};
+chips();
 ['q','fuente'].forEach(id=>$(id).addEventListener('input',pintar));
 map.on('moveend',()=>{if(visSolo)pintar()});
 const adArriba=crearAd('banner');$('adTop').appendChild(adArriba);pushAd(adArriba);
 fetch('data/incidencias.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
-datos=d.incidencias||[];
+datos=d.incidencias||[];chips();
 const f=new Date(d.actualizado);
 $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
 pintar();
