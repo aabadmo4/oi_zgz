@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-26T06:33+01:00",
+ "actualizado": "2026-10-26T11:25+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 62
+   "n": 63
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -970,6 +970,43 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31398",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "GOMEZ AVELLANEDA G., 29",
+   "via": "",
+   "detalle": "Para reparar la barandilla en la parada de tranvía \"Margarita Xirgu\"",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-28",
+   "lat": 41.6681244,
+   "lon": -0.8890327,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.668574,
+      -0.889537
+     ],
+     [
+      41.668163,
+      -0.889076
+     ],
+     [
+      41.668064,
+      -0.888964
+     ],
+     [
+      41.667692,
+      -0.888548
+     ],
+     [
+      41.667674,
+      -0.888529
+     ]
+    ]
+   ]
+  },
+  {
    "id": "zgz-31245",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1236,29 +1273,94 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29386477",
+   "id": "dgt-29388721",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 242.799",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 276.0–277.6",
    "detalle": "",
    "inicio": "2026-10-26",
-   "fin": null,
-   "lat": 41.66051,
-   "lon": -0.92523,
+   "fin": "2026-10-26",
+   "lat": 41.605247,
+   "lon": -0.9360877,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29386679",
+   "id": "dgt-29396257",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 323.476",
+   "titulo": "A-2",
+   "via": "pk 311.447",
    "detalle": "",
    "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.67957,
-   "lon": -0.86775,
+   "lat": 41.63231,
+   "lon": -0.982045,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29397122",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 488.971",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.60085,
+   "lon": -0.9364,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29397254",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 324.182",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.67928,
+   "lon": -0.85742,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29397734",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 254.0",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.716835,
+   "lon": -1.0364343,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29397737",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.576",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.67192,
+   "lon": -0.93123,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29398440",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 488.688",
+   "detalle": "",
+   "inicio": "2026-10-26",
+   "fin": null,
+   "lat": 41.59852,
+   "lon": -0.93737,
    "precision": "exacta"
   }
  ]
