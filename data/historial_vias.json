@@ -219,6 +219,50 @@
    "titulo": "VS-A-2-C",
    "via": "pk 315.091",
    "visto": "2026-10-26"
+  },
+  "dgt-29418063": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29418063",
+   "inicio": "2026-10-26",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 324.6–325.0",
+   "visto": "2026-10-26"
+  },
+  "dgt-29418064": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29418064",
+   "inicio": "2026-10-26",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 325.0–325.7",
+   "visto": "2026-10-26"
+  },
+  "dgt-29418065": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29418065",
+   "inicio": "2026-10-26",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 325.0–325.7",
+   "visto": "2026-10-26"
+  },
+  "dgt-29419762": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29419762",
+   "inicio": "2026-10-26",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.877",
+   "visto": "2026-10-26"
   }
  },
  "avenida-de-madrid": {
