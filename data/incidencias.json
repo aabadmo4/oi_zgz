@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26T05:15+01:00",
+ "actualizado": "2026-10-26T06:33+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 8
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1236,94 +1236,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29381806",
+   "id": "dgt-29386477",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 317.6",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 242.799",
    "detalle": "",
-   "inicio": "2026-10-25",
+   "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.671906,
-   "lon": -0.93157655,
+   "lat": 41.66051,
+   "lon": -0.92523,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29381807",
+   "id": "dgt-29386679",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 243.3–243.4",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 323.476",
    "detalle": "",
-   "inicio": "2026-10-25",
+   "inicio": "2026-10-26",
    "fin": null,
-   "lat": 41.673206,
-   "lon": -0.9264551,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29381808",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 243.3",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.673206,
-   "lon": -0.9264551,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29381682",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 317.7",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.67261,
-   "lon": -0.93084824,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29381534",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 317.0–317.5",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.671192,
-   "lon": -0.93229735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29381738",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 317.0–317.5",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.671192,
-   "lon": -0.93229735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29384170",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 243.19–244.1",
-   "detalle": "",
-   "inicio": "2026-10-25",
-   "fin": null,
-   "lat": 41.67843,
-   "lon": -0.9338125,
+   "lat": 41.67957,
+   "lon": -0.86775,
    "precision": "exacta"
   }
  ]
