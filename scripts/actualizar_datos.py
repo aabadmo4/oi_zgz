@@ -196,6 +196,34 @@ HONORIFICOS = {"DR.": "Doctor", "DRA.": "Doctora", "STA.": "Santa", "STO.": "San
 MINUSCULAS = {"De", "Del", "La", "Las", "Los", "El", "Y"}
 
 
+def numero_titulo(calle):
+    """Número de portal que da el propio Ayuntamiento en el título ('JOSÉ ATARÉS, 105' -> '105'). 0 = sin número."""
+    m = re.search(r",\s*(\d+)\s?([A-Za-z]?)\s*$", str(calle or "").strip())
+    return f"{int(m.group(1))}{m.group(2)}" if m and int(m.group(1)) > 0 else None
+
+
+# El motivo describe un tramo de calle (y no un punto): se conserva la línea de la calle.
+TRAMO = re.compile(r"\btramo\b|\bentre\s+(?:el\s+|los\s+)?(?:n\.?\s?[ºo°]|n[úu]meros?|calles?\b)"
+                   r"|\bentre\s+(?:la|las)\s+(?:calles?|plazas?|avenidas?)\b|\bentre\s+(?:la\s+)?(?:calle|plaza|avenida|paseo|c/)", re.I)
+
+
+# El motivo habla de una actuación amplia (varias calles, urbanización, cortes de agua): se mantiene "calle entera".
+AMPLIO = re.compile(r"integral|urbanizaci|cortes? de agua|toda la (?:calle|avenida)|\bcalles\b", re.I)
+
+
+def texto_inc(i):
+    return f'{i["detalle"]} {i["_tramo"]}'
+
+
+def num_efectivo(i, n):
+    """Número a geocodificar. Si el motivo describe un punto, manda el del título del Ayuntamiento (aunque Gemini
+    lo hubiera dejado en null por confundirlo con un rango); si describe un tramo, se respeta lo ya resuelto."""
+    previo = str(n["numero"]).strip() if n.get("numero") else None
+    if TRAMO.search(texto_inc(i)):
+        return previo
+    return numero_titulo(i["_calle"]) or previo
+
+
 def norm_local(calle, motivo=""):
     """Normalización sin IA: 'BLANCO CORDERO (DR.), 11' -> Calle Doctor Blanco Cordero, nº 11."""
     nombre, _, resto = calle.strip().partition(",")
@@ -259,6 +287,10 @@ def geocodificar(items):
         if not geo:
             return False
         i["lat"], i["lon"], i["precision"] = geo["lat"], geo["lon"], geo["precision"]
+        if geo["precision"] == "calle" and num and re.match(r"0*[1-9]", num) and not TRAMO.search(texto_inc(i)) and not AMPLIO.search(texto_inc(i)):
+            i["precision"] = "aprox"  # hay número pero OSM no tiene el portal: punto aproximado, no calle entera
+            i.pop("trazado", None)
+            return True
         if geo["precision"] == "calle" and geo.get("trazado"):
             i["trazado"] = geo["trazado"]
         return True
@@ -267,7 +299,7 @@ def geocodificar(items):
     fallidos = []
     for i in ay:
         n = cache["norm"].get(i["_raw"]) or norm_local(i["_calle"], i["detalle"])
-        if not aplicar(i, n["via"], n["numero"]):
+        if not aplicar(i, n["via"], num_efectivo(i, n)):
             fallidos.append(i)
 
     # 2) Gemini solo para direcciones que no se han podido localizar, en pocas peticiones
@@ -297,7 +329,7 @@ def geocodificar(items):
     for i in fallidos:
         n = cache["norm"].get(i["_raw"])
         if n and n.get("via"):
-            aplicar(i, n["via"], str(n["numero"]).strip() if n.get("numero") else None)
+            aplicar(i, n["via"], num_efectivo(i, n))
 
     os.makedirs("data", exist_ok=True)
     json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
@@ -320,6 +352,13 @@ def main():
     con_coords = [i for i in items if i["lat"] is not None]
     if not con_coords:
         print("Sin incidencias con coordenadas: no se actualiza.")
+        sys.exit(1)
+    try:
+        previas = len(json.load(open(SALIDA, encoding="utf-8")).get("incidencias", []))
+    except Exception:
+        previas = 0
+    if previas >= 20 and len(con_coords) < previas * 0.5:
+        print(f"Caída sospechosa ({previas} -> {len(con_coords)} incidencias): no se actualiza.")
         sys.exit(1)
     os.makedirs("data", exist_ok=True)
     salida = {"actualizado": datetime.datetime.now(ZoneInfo("Europe/Madrid")).isoformat(timespec="minutes"),
