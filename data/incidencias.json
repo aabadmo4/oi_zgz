@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27T21:52+01:00",
+ "actualizado": "2026-10-27T22:40+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 12
   }
  },
  "sin_ubicar": 2,
@@ -1232,11 +1232,24 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29456858",
+   "id": "dgt-29427136",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 24.3–25.1",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-28",
+   "lat": 41.605404,
+   "lon": -0.8982163,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29457844",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 304.0–304.4",
+   "via": "pk 301.6–304.0",
    "detalle": "",
    "inicio": "2026-10-27",
    "fin": null,
@@ -1284,11 +1297,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29457844",
+   "id": "dgt-29456858",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 301.6–304.0",
+   "via": "pk 304.0–304.4",
    "detalle": "",
    "inicio": "2026-10-27",
    "fin": null,
@@ -1310,16 +1323,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29458459",
+   "id": "dgt-29459047",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 21.4",
+   "titulo": "N-2",
+   "via": "pk 312.871",
    "detalle": "",
    "inicio": "2026-10-27",
    "fin": null,
-   "lat": 41.62066,
-   "lon": -0.8621806,
+   "lat": 41.63646,
+   "lon": -0.966063,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29459171",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 305.485",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.618847,
+   "lon": -1.049222,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29459241",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 25.1–25.3",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.60575,
+   "lon": -0.9005584,
    "precision": "exacta"
   }
  ]
