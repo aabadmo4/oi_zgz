@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-27T05:55+01:00",
+ "actualizado": "2026-10-27T11:00+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 63
+   "n": 67
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 11
   }
  },
  "sin_ubicar": 2,
@@ -687,6 +687,32 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31423",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ECHEGARAY Y CABALLERO, 28",
+   "via": "A la altura del nº 28",
+   "detalle": "Para sustituir la tapa de registro de telecomunicaciones",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-29",
+   "lat": 41.660088368100325,
+   "lon": -0.8853718894121428,
+   "precision": "aprox"
+  },
+  {
+   "id": "zgz-31425",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CLAVE JOSE ANSELMO, 5",
+   "via": "",
+   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "inicio": "2026-10-28",
+   "fin": "2026-12-28",
+   "lat": 41.6505703,
+   "lon": -0.8937197,
+   "precision": "calle"
+  },
+  {
    "id": "zgz-31395",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -765,6 +791,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31422",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "EDISON TOMAS A, 9",
+   "via": "A la altura del nº 9, el 28 de octubre",
+   "detalle": "Para sustituir la tapa de registro de telecomunicaciones",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.665278,
+   "lon": -0.86392,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-30596",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -776,6 +815,51 @@
    "lat": 41.5886597,
    "lon": -0.8127982,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31424",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "REBOLLEDO RODRIGO DE, 30",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica y para realizar una cata",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-30",
+   "lat": 41.6457335,
+   "lon": -0.8601396,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.645634,
+      -0.859129
+     ],
+     [
+      41.645646,
+      -0.859238
+     ],
+     [
+      41.645716,
+      -0.859959
+     ],
+     [
+      41.645755,
+      -0.860353
+     ],
+     [
+      41.645783,
+      -0.860652
+     ],
+     [
+      41.645793,
+      -0.860762
+     ],
+     [
+      41.645831,
+      -0.86115
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31114",
@@ -1132,6 +1216,136 @@
    "fin": "2026-10-30",
    "lat": 41.683613,
    "lon": -0.96780777,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29422992",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 247.15–247.2",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-30",
+   "lat": 41.683273,
+   "lon": -0.9674077,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29424251",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 276.0–277.6",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.605247,
+   "lon": -0.9360877,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29425922",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 25.14",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.60528,
+   "lon": -0.898746,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29427482",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 26.0–26.5",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.607113,
+   "lon": -0.908747,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29427442",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 23.5–24.3",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-27",
+   "lat": 41.6053,
+   "lon": -0.8887467,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29430805",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.0–33.0",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.634296,
+   "lon": -0.9748568,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29431659",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 304.4",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.61521,
+   "lon": -1.0609411,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29432719",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.225",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.70478,
+   "lon": -1.00662,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29432935",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 30.064",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.618847,
+   "lon": -0.954092,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29433082",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 246.347",
+   "detalle": "",
+   "inicio": "2026-10-27",
+   "fin": null,
+   "lat": 41.67846,
+   "lon": -0.96044,
    "precision": "exacta"
   }
  ]

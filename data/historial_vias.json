@@ -307,6 +307,17 @@
    "titulo": "A-2",
    "via": "pk 310.75–312.0",
    "visto": "2026-10-27"
+  },
+  "dgt-29431659": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29431659",
+   "inicio": "2026-10-27",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 304.4",
+   "visto": "2026-10-27"
   }
  },
  "avenida-de-madrid": {
@@ -490,6 +501,17 @@
    "inicio": "2026-02-04",
    "tipo": "Otros",
    "titulo": "CLAVE JOSE ANSELMO, 11",
+   "via": "",
+   "visto": "2026-10-27"
+  },
+  "zgz-31425": {
+   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "fin": "2026-12-28",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31425",
+   "inicio": "2026-10-28",
+   "tipo": "Corte",
+   "titulo": "CLAVE JOSE ANSELMO, 5",
    "via": "",
    "visto": "2026-10-27"
   }
@@ -810,6 +832,61 @@
    "tipo": "Corte",
    "titulo": "Z-40",
    "via": "pk 26.6–27.5",
+   "visto": "2026-10-27"
+  },
+  "dgt-29425922": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29425922",
+   "inicio": "2026-10-27",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 25.14",
+   "visto": "2026-10-27"
+  },
+  "dgt-29427442": {
+   "detalle": "",
+   "fin": "2026-10-27",
+   "fuente": "DGT",
+   "id": "dgt-29427442",
+   "inicio": "2026-10-27",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 23.5–24.3",
+   "visto": "2026-10-27"
+  },
+  "dgt-29427482": {
+   "detalle": "",
+   "fin": "2026-10-27",
+   "fuente": "DGT",
+   "id": "dgt-29427482",
+   "inicio": "2026-10-27",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 26.0–26.5",
+   "visto": "2026-10-27"
+  },
+  "dgt-29430805": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29430805",
+   "inicio": "2026-10-27",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.0–33.0",
+   "visto": "2026-10-27"
+  },
+  "dgt-29432935": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29432935",
+   "inicio": "2026-10-27",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 30.064",
    "visto": "2026-10-27"
   }
  }
