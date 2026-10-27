@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27T16:59+01:00",
+ "actualizado": "2026-10-27T19:27+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 3
   }
  },
  "sin_ubicar": 2,
@@ -1242,45 +1242,6 @@
    "fin": "2026-10-27",
    "lat": 41.605247,
    "lon": -0.9360877,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29448931",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 510.068",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.73666,
-   "lon": -0.84628,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29449653",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 320.628",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.680225,
-   "lon": -0.900142,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29449586",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 507.943",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.719,
-   "lon": -0.85581,
    "precision": "exacta"
   }
  ]
