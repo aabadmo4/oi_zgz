@@ -439,6 +439,39 @@
    "titulo": "A-2",
    "via": "pk 319.099",
    "visto": "2026-10-28"
+  },
+  "dgt-29493746": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29493746",
+   "inicio": "2026-10-28",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 301.6–304.0",
+   "visto": "2026-10-28"
+  },
+  "dgt-29494188": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29494188",
+   "inicio": "2026-10-28",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 304.4–304.8",
+   "visto": "2026-10-28"
+  },
+  "dgt-29494189": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29494189",
+   "inicio": "2026-10-28",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 304.0–304.4",
+   "visto": "2026-10-28"
   }
  },
  "avenida-de-madrid": {
@@ -1107,6 +1140,17 @@
    "tipo": "Corte",
    "titulo": "Z-40",
    "via": "pk 22.5",
+   "visto": "2026-10-28"
+  },
+  "dgt-29494142": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29494142",
+   "inicio": "2026-10-28",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 23.201",
    "visto": "2026-10-28"
   }
  }
