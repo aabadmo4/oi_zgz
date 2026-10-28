@@ -568,7 +568,7 @@
  "calle-jaime-ferran": {
   "zgz-30568": {
    "detalle": "Continuando con la canalización eléctrica",
-   "fin": "2026-10-28",
+   "fin": "2026-11-27",
    "fuente": "Ayuntamiento",
    "id": "zgz-30568",
    "inicio": "2026-08-24",
@@ -801,7 +801,7 @@
   },
   "zgz-31271": {
    "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
-   "fin": "2026-10-30",
+   "fin": "2026-11-20",
    "fuente": "Ayuntamiento",
    "id": "zgz-31271",
    "inicio": "2026-10-18",
@@ -1041,6 +1041,28 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 20.18–20.5",
+   "visto": "2026-10-28"
+  },
+  "dgt-29480207": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29480207",
+   "inicio": "2026-10-28",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 15.245",
+   "visto": "2026-10-28"
+  },
+  "dgt-29480594": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29480594",
+   "inicio": "2026-10-28",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.455",
    "visto": "2026-10-28"
   }
  }

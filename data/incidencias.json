@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-28T06:55+01:00",
+ "actualizado": "2026-10-28T14:21+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 70
+   "n": 71
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 7
   }
  },
  "sin_ubicar": 2,
@@ -401,7 +401,7 @@
    "via": "",
    "detalle": "Continuando con la canalización eléctrica",
    "inicio": "2026-08-24",
-   "fin": "2026-10-28",
+   "fin": "2026-11-27",
    "lat": 41.667599,
    "lon": -0.862763,
    "precision": "portal"
@@ -897,6 +897,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31451",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CUARTA AVENIDA, 46",
+   "via": "",
+   "detalle": "Para la reconstrucción de orejetas en el paso de peatones a la altura del nº 46",
+   "inicio": "2026-10-28",
+   "fin": "2026-11-20",
+   "lat": 41.624682,
+   "lon": -0.8782324,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31247",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1293,7 +1306,7 @@
    "via": "",
    "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
    "inicio": "2026-10-18",
-   "fin": "2026-10-30",
+   "fin": "2026-11-20",
    "lat": 41.6610555,
    "lon": -0.9426162,
    "precision": "portal"
@@ -1325,19 +1338,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29258498",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 247.15–247.2",
-   "detalle": "",
-   "inicio": "2026-10-21",
-   "fin": "2026-10-30",
-   "lat": 41.683613,
-   "lon": -0.96780777,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29422992",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1351,16 +1351,81 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29461369",
+   "id": "dgt-29463037",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 269.0–275.2",
+   "detalle": "",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-28",
+   "lat": 41.555668,
+   "lon": -0.98264647,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29480207",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 20.18–20.5",
+   "via": "pk 15.245",
    "detalle": "",
    "inicio": "2026-10-28",
    "fin": null,
-   "lat": 41.624924,
-   "lon": -0.8490524,
+   "lat": 41.66098,
+   "lon": -0.839793,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29480558",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 485.61",
+   "detalle": "",
+   "inicio": "2026-10-28",
+   "fin": null,
+   "lat": 41.57629,
+   "lon": -0.95837,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29480594",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.455",
+   "detalle": "",
+   "inicio": "2026-10-28",
+   "fin": null,
+   "lat": 41.607166,
+   "lon": -0.879003,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29480625",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 249.372",
+   "detalle": "",
+   "inicio": "2026-10-28",
+   "fin": null,
+   "lat": 41.69495,
+   "lon": -0.98919,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29481042",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 232.0–233.25",
+   "detalle": "",
+   "inicio": "2026-10-28",
+   "fin": null,
+   "lat": 41.625713,
+   "lon": -0.84891886,
    "precision": "exacta"
   }
  ]
