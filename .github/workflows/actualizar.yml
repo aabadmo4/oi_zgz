@@ -2,7 +2,7 @@ name: Actualizar datos y publicar
 
 on:
   schedule:
-    - cron: '30 4,7,10,13,16,19 * * *'   # cada 3 h, aprox. 06:30–21:30 (hora de España)
+    - cron: '30 */2 * * *'   # cada 2 h, día y noche
   push:
     branches: [main]
   workflow_dispatch:
