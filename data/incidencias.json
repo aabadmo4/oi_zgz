@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-27T23:03+01:00",
+ "actualizado": "2026-10-28T06:55+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 67
+   "n": 70
   },
   "dgt": {
    "ok": true,
-   "n": 10
+   "n": 3
   }
  },
  "sin_ubicar": 2,
@@ -478,19 +478,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31394",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "MARTINEZ RUIZ JOSE, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-27",
-   "lat": 41.650639,
-   "lon": -0.862056,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31364",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -596,19 +583,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31380",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "GARCES JULIAN (FRAY), 14",
-   "via": "",
-   "detalle": "Para la reparación de sumidero situado en la la bajada del cementerio a la altura del puesto de venta de flores \"CRISTINA\"",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-27",
-   "lat": 41.6311318,
-   "lon": -0.8866026,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31421",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -661,32 +635,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31396",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "VIRGEN LA MNT, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-27",
-   "lat": 41.69014437469493,
-   "lon": -0.8273019454973861,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31314",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ANDALUCIA CST, 5",
-   "via": "",
-   "detalle": "Para reparar una llave de paso a la altura del no 12",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-27",
-   "lat": 41.719411,
-   "lon": -1.03054,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31423",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -713,30 +661,41 @@
    "precision": "calle"
   },
   {
-   "id": "zgz-31395",
+   "id": "zgz-31440",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
-   "titulo": "IRANZO (DOCTOR), 6",
-   "via": "Desde C/ Escultor Benlliure hasta C/ José Martínez Ruiz (Azorín)",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-27",
-   "lat": 41.641509,
-   "lon": -0.864984,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31397",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "AMERICA AVENIDA DE, 11",
-   "via": "Desde C/ Oviedo hasta C/ Hermanos Gimeno Vizarra",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-27",
-   "lat": 41.633453,
-   "lon": -0.8849711,
-   "precision": "calle"
+   "titulo": "MOLINO DE LAS ARMAS, 1",
+   "via": "Números pares, entre C/ Marqués de la Cadena y C/ Pascuala Perié",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 16 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.66102,
+   "lon": -0.8632682,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.66074,
+      -0.863924
+     ],
+     [
+      41.660759,
+      -0.863878
+     ],
+     [
+      41.660778,
+      -0.863835
+     ],
+     [
+      41.661258,
+      -0.862711
+     ],
+     [
+      41.6613,
+      -0.862613
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-31381",
@@ -817,6 +776,56 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31436",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ESCORIAZA Y FABRO M., 36",
+   "via": "Entre C/ Moncayo y C/ Pedro Arbués",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.6485249,
+   "lon": -0.8940953,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.64872,
+      -0.894153
+     ],
+     [
+      41.648626,
+      -0.894121
+     ],
+     [
+      41.648599,
+      -0.894115
+     ],
+     [
+      41.64845,
+      -0.894076
+     ],
+     [
+      41.648329,
+      -0.894041
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "zgz-31438",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "MONCAYO, 8",
+   "via": "Números pares, entre C/ Escoriaza y Fabro y C/ Asturias",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.720598,
+   "lon": -1.02643,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31424",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -862,6 +871,19 @@
    ]
   },
   {
+   "id": "zgz-31434",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ORUS JOAQUIN, 10",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.65062,
+   "lon": -0.8956927,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31114",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -885,6 +907,32 @@
    "fin": "2026-10-30",
    "lat": 41.626386,
    "lon": -0.912826,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31426",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CESAR AUGUSTO AVDA, 11",
+   "via": "",
+   "detalle": "Para analizar el deterioro prematuro del pavimento",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.6511617,
+   "lon": -0.8860997,
+   "precision": "calle"
+  },
+  {
+   "id": "zgz-31433",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CABALDOS CAMINO DE, 68",
+   "via": "Entre C/ José Galiay y Cº del Junco",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.639801,
+   "lon": -0.869092,
    "precision": "portal"
   },
   {
@@ -932,6 +980,64 @@
      [
       41.646131,
       -0.864172
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "zgz-31435",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "SAN PEDRO ARBUES, 10",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.6509629,
+   "lon": -0.8958499,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31437",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ASTURIAS",
+   "via": "Entre C/ Pedro Arbués y C/ Moncayo",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.6494332,
+   "lon": -0.8957492,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.649926,
+      -0.895636
+     ],
+     [
+      41.649853,
+      -0.895653
+     ],
+     [
+      41.649632,
+      -0.895706
+     ],
+     [
+      41.649403,
+      -0.895756
+     ],
+     [
+      41.649347,
+      -0.895768
+     ],
+     [
+      41.649025,
+      -0.895839
+     ],
+     [
+      41.648947,
+      -0.89588
      ]
     ]
    ]
@@ -1206,6 +1312,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31439",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CRISTO REY SGR, 37",
+   "via": "Entre C/ Tello Valdivieso y C/ Manuel Sever",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.6923912,
+   "lon": -0.8651962,
+   "precision": "portal"
+  },
+  {
    "id": "dgt-29258498",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1232,107 +1351,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29427136",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 24.3–25.1",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-28",
-   "lat": 41.605404,
-   "lon": -0.8982163,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29456879",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 244.5–246.15",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.687023,
-   "lon": -0.95610344,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29459171",
+   "id": "dgt-29461369",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 305.485",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.618847,
-   "lon": -1.049222,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29459241",
-   "fuente": "DGT",
-   "tipo": "Corte",
    "titulo": "Z-40",
-   "via": "pk 25.1–25.3",
+   "via": "pk 20.18–20.5",
    "detalle": "",
-   "inicio": "2026-10-27",
+   "inicio": "2026-10-28",
    "fin": null,
-   "lat": 41.60575,
-   "lon": -0.9005584,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29456858",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 304.0–304.4",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.613277,
-   "lon": -1.0648627,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29456859",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 304.0–304.4",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.613277,
-   "lon": -1.0648627,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29457844",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 301.6–304.0",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.613277,
-   "lon": -1.0648627,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29456702",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 304.4–304.8",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": null,
-   "lat": 41.61521,
-   "lon": -1.0609411,
+   "lat": 41.624924,
+   "lon": -0.8490524,
    "precision": "exacta"
   }
  ]
