@@ -167,6 +167,10 @@ BARRIOS = {"ALF": "Alfocea", "CRT": "Cartuja Baja", "CSB": "Casablanca", "CST": 
            "JSL": "Juslibol", "MRL": "Miralbueno", "MNT": "Montañana", "MNZ": "Monzalbarba", "MVR": "Movera",
            "PÑF": "Peñaflor", "SJN": "San Juan de Mozarrifar", "SIS": "Santa Isabel", "TRC": "Torrecilla de Valmadrid",
            "VNO": "Venta del Olivar", "VLM": "Villamayor de Gállego", "VLR": "Villarrapa", "SGR": "San Gregorio"}
+# Centros aproximados (tomados de ubicaciones ya verificadas) para no depender de que Nominatim encuentre el barrio.
+CENTROS_BARRIO = {"PÑF": (41.7479, -0.7927), "MRL": (41.6610, -0.9425), "MNT": (41.6883, -0.8287),
+                  "SGR": (41.6924, -0.8652), "CRT": (41.5887, -0.8128), "CST": (41.7206, -1.0264), "MNZ": (41.7034, -0.9679)}
+CAJA_ANCHA = (41.45, 41.85, -1.15, -0.65)  # barrios rurales: Peñaflor, Villamayor, Casetas... pueden quedar fuera de la caja urbana
 RADIO_BARRIO_KM = 3.5  # una calle de un barrio rural debe estar a menos de esto de su centro
 
 
@@ -183,17 +187,28 @@ def separar_barrio(calle):
     return calle, None
 
 
+ALIAS_ZONA = {c: sin_acentos(n).replace("villamayor de gallego", "villamayor") for c, n in BARRIOS.items()}
+ALIAS_ZONA["CSB"] = "casablanca"
+
+
 def km(a, b):
     dy, dx = (a[0] - b[0]) * 111.2, (a[1] - b[1]) * 111.2 * math.cos(math.radians(a[0]))
     return math.hypot(dx, dy)
 
 
-def _buscar(params):
+def _buscar(params, ancha=False):
     base = {"format": "jsonv2", "limit": 10, "countrycodes": "es", "addressdetails": 1}
     r = reintentar(lambda: requests.get(NOMINATIM, params={**base, **params}, headers=UA_NOM, timeout=30))
     time.sleep(1.1)
     r.raise_for_status()
-    return [o for o in r.json() if en_zgz(o["lat"], o["lon"])]
+    a, b, c, d = CAJA_ANCHA if ancha else (LAT_MIN, LAT_MAX, LON_MIN, LON_MAX)
+    return [o for o in r.json() if a <= float(o["lat"]) <= b and c <= float(o["lon"]) <= d]
+
+
+def zona_coincide(o, cod):
+    a = o.get("address") or {}
+    zonas = [sin_acentos(a.get(k, "")) for k in ("suburb", "village", "hamlet", "town", "city_district", "neighbourhood", "quarter", "municipality")]
+    return any(z and ALIAS_ZONA[cod] in z for z in zonas)
 
 
 def en_barrio_rural(o):
@@ -205,24 +220,34 @@ def en_barrio_rural(o):
 
 
 def centro_barrio(cod, cache_geo):
-    """Coordenadas aproximadas del barrio rural (se buscan una vez y se cachean)."""
+    """Centro aproximado del barrio: semilla fija, o búsqueda en Nominatim (cacheada) con varias variantes del nombre."""
+    if cod in CENTROS_BARRIO:
+        return {"lat": CENTROS_BARRIO[cod][0], "lon": CENTROS_BARRIO[cod][1]}
     k = f"v3:barrio|{cod}"
-    if k not in cache_geo:
-        res = _buscar({"q": f"{BARRIOS[cod]}, Zaragoza", "limit": 5})
-        res = [o for o in res if o.get("category") in ("place", "boundary") or o.get("addresstype") in
-               ("village", "suburb", "hamlet", "town", "city_district", "neighbourhood", "quarter")]
-        cache_geo[k] = {"lat": float(res[0]["lat"]), "lon": float(res[0]["lon"])} if res else None
+    if not cache_geo.get(k):
+        cache_geo[k] = None
+        for q in (f"{BARRIOS[cod]}, Zaragoza", BARRIOS[cod]):
+            res = _buscar({"q": q, "limit": 5}, ancha=True)
+            res = sorted(res, key=lambda o: o.get("category") != "place")  # primero los 'place' (pueblo/barrio)
+            if res:
+                cache_geo[k] = {"lat": float(res[0]["lat"]), "lon": float(res[0]["lon"])}
+                break
     return cache_geo[k]
 
 
 def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
     """Busca calle (y portal si hay número). Sin código de barrio descarta resultados de barrios rurales
-    (la 'Calle Moncayo' de Casetas no es la del CP 50010); con código solo acepta resultados cerca de ese barrio."""
-    centro = centro_barrio(barrio, cache_geo) if barrio else None
-    if barrio and not centro:
-        return None
+    (la 'Calle Moncayo' de Casetas no es la del CP 50010); con código solo acepta resultados del barrio
+    (por su zona en la dirección o por cercanía a su centro)."""
+    try:
+        centro = centro_barrio(barrio, cache_geo) if barrio else None
+    except Exception as e:
+        print(f"  no se pudo situar el barrio {barrio}: {e}")
+        centro = None
+    ref_c = (centro["lat"], centro["lon"]) if centro else None
     nombre = re.sub(r"^(Calle|Avenida|Paseo|Plaza|Camino|Carretera|Glorieta|Ronda|Travesía|Pasaje|Callejón)\s+", "", via)
-    viewbox = {"viewbox": f"{LON_MIN},{LAT_MAX},{LON_MAX},{LAT_MIN}", "bounded": 1}
+    caja = CAJA_ANCHA if barrio else (LAT_MIN, LAT_MAX, LON_MIN, LON_MAX)
+    viewbox = {"viewbox": f"{caja[2]},{caja[1]},{caja[3]},{caja[0]}", "bounded": 1}
     intentos = []
     if barrio:  # texto libre con el barrio; primero con el tipo de vía, luego solo el nombre
         for v in dict.fromkeys([via, nombre]):
@@ -230,14 +255,14 @@ def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
     else:
         intentos.append({"city": "Zaragoza", "street": f"{numero or ''} {via}".strip(), **viewbox})
     for params in intentos:
-        res = _buscar({**params, "polygon_geojson": 0 if numero else 1})
+        res = _buscar({**params, "polygon_geojson": 0 if numero else 1}, ancha=bool(barrio))
         if barrio:
-            res = [o for o in res if km(centro and (centro["lat"], centro["lon"]), (float(o["lat"]), float(o["lon"]))) <= RADIO_BARRIO_KM]
+            res = [o for o in res if zona_coincide(o, barrio)
+                   or (ref_c and km(ref_c, (float(o["lat"]), float(o["lon"]))) <= RADIO_BARRIO_KM)]
         else:
-            urbanos = [o for o in res if not en_barrio_rural(o)]
-            res = urbanos  # si solo hay resultados rurales, mejor no ubicar que ubicar mal
+            res = [o for o in res if not en_barrio_rural(o)]  # si solo hay rurales, mejor no ubicar que ubicar mal
         if res:
-            ref = (centro["lat"], centro["lon"]) if centro else ancla
+            ref = ref_c or ancla
             if ref:
                 res.sort(key=lambda o: km(ref, (float(o["lat"]), float(o["lon"]))))
             o = res[0]
@@ -393,6 +418,9 @@ def main():
     for i in items:
         for k in ("_calle", "_tramo", "_raw", "_calle_sb", "_barrio"):
             i.pop(k, None)
+    for i in items:
+        if i["lat"] is None:
+            print(f"SIN UBICAR: {i['titulo']} | {i['detalle'][:70]}")
     con_coords = [i for i in items if i["lat"] is not None]
     if not con_coords:
         print("Sin incidencias con coordenadas: no se actualiza.")
