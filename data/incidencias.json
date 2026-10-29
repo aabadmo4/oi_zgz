@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T21:47+01:00",
+ "actualizado": "2026-10-29T22:10+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -547,7 +547,7 @@
   {
    "id": "zgz-31440",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "MOLINO DE LAS ARMAS, 1",
    "via": "Números pares, entre C/ Marqués de la Cadena y C/ Pascuala Perié",
    "detalle": "Cortes de Agua. Desde las 10 hasta las 16 horas.",
@@ -648,7 +648,7 @@
   {
    "id": "zgz-31436",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "ESCORIAZA Y FABRO M., 36",
    "via": "Entre C/ Moncayo y C/ Pedro Arbués",
    "detalle": "",
@@ -709,7 +709,7 @@
   {
    "id": "zgz-31438",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "MONCAYO, 8",
    "via": "Números pares, entre C/ Escoriaza y Fabro y C/ Asturias",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -771,7 +771,7 @@
   {
    "id": "zgz-31434",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "ORUS JOAQUIN, 10",
    "via": "",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -797,7 +797,7 @@
   {
    "id": "zgz-31456",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "AMERICA AVENIDA DE, 68",
    "via": "",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -849,7 +849,7 @@
   {
    "id": "zgz-31433",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "CABALDOS CAMINO DE, 68",
    "via": "Entre C/ José Galiay y Cº del Junco",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -862,7 +862,7 @@
   {
    "id": "zgz-31435",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "SAN PEDRO ARBUES, 10",
    "via": "",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -875,7 +875,7 @@
   {
    "id": "zgz-31437",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "ASTURIAS",
    "via": "Entre C/ Pedro Arbués y C/ Moncayo",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -1168,7 +1168,7 @@
   {
    "id": "zgz-31453",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "VIVA ESPAÑA, 10",
    "via": "Entre C/ Huerva y C/ Carrera del Sábado",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -1181,7 +1181,7 @@
   {
    "id": "zgz-31454",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "ITALIA, 16",
    "via": "Números impares, entre C/ Pablo Sarasate y C/ Tenor Gayarre",
    "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
@@ -1194,7 +1194,7 @@
   {
    "id": "zgz-31455",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "C/ AMBROSIO DEL RUSTE",
    "via": "",
    "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
@@ -1249,7 +1249,7 @@
   {
    "id": "zgz-31439",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Suministro",
    "titulo": "CRISTO REY SGR, 37",
    "via": "Entre C/ Tello Valdivieso y C/ Manuel Sever",
    "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
@@ -1271,6 +1271,19 @@
    "fin": null,
    "lat": 41.68351,
    "lon": -0.96796757,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29501819",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 323.5–325.8",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-30",
+   "lat": 41.676174,
+   "lon": -0.8383114,
    "precision": "exacta"
   },
   {
