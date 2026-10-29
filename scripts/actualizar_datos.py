@@ -1,7 +1,7 @@
 """Descarga incidencias del Ayuntamiento de Zaragoza y de la DGT (zona de Zaragoza),
 obtiene coordenadas (propias de la fuente o, si faltan, vía Gemini) y escribe
 data/incidencias.json. Sale con código 1 si no hay datos válidos."""
-import os, re, sys, json, time, datetime, html
+import os, re, sys, json, time, datetime, html, math, unicodedata
 from zoneinfo import ZoneInfo
 import requests
 from lxml import etree
@@ -162,31 +162,93 @@ def cargar_cache():
     return c
 
 
-def nominatim(via, numero):
-    """Busca calle (y portal si hay número) dentro de Zaragoza. Respeta 1 petición/segundo."""
-    params = {"format": "jsonv2", "limit": 1, "countrycodes": "es", "city": "Zaragoza",
-              "street": f"{numero or ''} {via}".strip(),
-              "viewbox": f"{LON_MIN},{LAT_MAX},{LON_MAX},{LAT_MIN}", "bounded": 1,
-              "polygon_geojson": 0 if numero else 1}
-    r = reintentar(lambda: requests.get(NOMINATIM, params=params, headers=UA_NOM, timeout=30))
+# Códigos de barrios rurales de Zaragoza (los que el Ayuntamiento añade al final del nombre de calle: "ENMEDIO PÑF").
+BARRIOS = {"ALF": "Alfocea", "CRT": "Cartuja Baja", "CSB": "Casablanca", "CST": "Casetas", "GRP": "Garrapinillos",
+           "JSL": "Juslibol", "MRL": "Miralbueno", "MNT": "Montañana", "MNZ": "Monzalbarba", "MVR": "Movera",
+           "PÑF": "Peñaflor", "SJN": "San Juan de Mozarrifar", "SIS": "Santa Isabel", "TRC": "Torrecilla de Valmadrid",
+           "VNO": "Venta del Olivar", "VLM": "Villamayor de Gállego", "VLR": "Villarrapa", "SGR": "San Gregorio"}
+RADIO_BARRIO_KM = 3.5  # una calle de un barrio rural debe estar a menos de esto de su centro
+
+
+def sin_acentos(t):
+    return "".join(c for c in unicodedata.normalize("NFD", str(t).lower()) if unicodedata.category(c) != "Mn")
+
+
+def separar_barrio(calle):
+    """'ENMEDIO           PÑF, 2' -> ('ENMEDIO, 2', 'PÑF'). Solo si el último token del nombre es un código de barrio."""
+    nombre, coma, resto = calle.partition(",")
+    toks = nombre.split()
+    if len(toks) >= 2 and toks[-1].upper() in BARRIOS:
+        return " ".join(toks[:-1]) + coma + resto, toks[-1].upper()
+    return calle, None
+
+
+def km(a, b):
+    dy, dx = (a[0] - b[0]) * 111.2, (a[1] - b[1]) * 111.2 * math.cos(math.radians(a[0]))
+    return math.hypot(dx, dy)
+
+
+def _buscar(params):
+    base = {"format": "jsonv2", "limit": 10, "countrycodes": "es", "addressdetails": 1}
+    r = reintentar(lambda: requests.get(NOMINATIM, params={**base, **params}, headers=UA_NOM, timeout=30))
     time.sleep(1.1)
     r.raise_for_status()
-    res = r.json()
-    if not res or not en_zgz(res[0]["lat"], res[0]["lon"]):
+    return [o for o in r.json() if en_zgz(o["lat"], o["lon"])]
+
+
+def en_barrio_rural(o):
+    """True si la dirección del resultado (campos de zona de Nominatim, no el nombre de la calle) es un barrio rural."""
+    a = o.get("address") or {}
+    zonas = [sin_acentos(a.get(k, "")) for k in ("suburb", "village", "hamlet", "town", "city_district", "neighbourhood", "quarter", "municipality")]
+    nombres = [sin_acentos(n) for n in BARRIOS.values()] + ["villamayor"]
+    return any(z and any(z == n or z.startswith(n) for n in nombres) for z in zonas)
+
+
+def centro_barrio(cod, cache_geo):
+    """Coordenadas aproximadas del barrio rural (se buscan una vez y se cachean)."""
+    k = f"v3:barrio|{cod}"
+    if k not in cache_geo:
+        res = _buscar({"q": f"{BARRIOS[cod]}, Zaragoza", "limit": 5})
+        res = [o for o in res if o.get("category") in ("place", "boundary") or o.get("addresstype") in
+               ("village", "suburb", "hamlet", "town", "city_district", "neighbourhood", "quarter")]
+        cache_geo[k] = {"lat": float(res[0]["lat"]), "lon": float(res[0]["lon"])} if res else None
+    return cache_geo[k]
+
+
+def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
+    """Busca calle (y portal si hay número). Sin código de barrio descarta resultados de barrios rurales
+    (la 'Calle Moncayo' de Casetas no es la del CP 50010); con código solo acepta resultados cerca de ese barrio."""
+    centro = centro_barrio(barrio, cache_geo) if barrio else None
+    if barrio and not centro:
         return None
-    o = res[0]
-    geo = {"lat": float(o["lat"]), "lon": float(o["lon"]),
-           "precision": "portal" if numero and o.get("category") != "highway" else "calle"}
-    g = o.get("geojson") or {}
-    if g.get("type") == "LineString":
-        lineas = [g["coordinates"]]
-    elif g.get("type") == "MultiLineString":
-        lineas = g["coordinates"]
+    nombre = re.sub(r"^(Calle|Avenida|Paseo|Plaza|Camino|Carretera|Glorieta|Ronda|Travesía|Pasaje|Callejón)\s+", "", via)
+    viewbox = {"viewbox": f"{LON_MIN},{LAT_MAX},{LON_MAX},{LAT_MIN}", "bounded": 1}
+    intentos = []
+    if barrio:  # texto libre con el barrio; primero con el tipo de vía, luego solo el nombre
+        for v in dict.fromkeys([via, nombre]):
+            intentos.append({"q": f"{(numero + ' ') if numero else ''}{v}, {BARRIOS[barrio]}, Zaragoza", **viewbox})
     else:
-        lineas = []
-    if lineas:
-        geo["trazado"] = [[[round(y, 6), round(x, 6)] for x, y in l[::max(1, len(l) // 40)]] for l in lineas]
-    return geo
+        intentos.append({"city": "Zaragoza", "street": f"{numero or ''} {via}".strip(), **viewbox})
+    for params in intentos:
+        res = _buscar({**params, "polygon_geojson": 0 if numero else 1})
+        if barrio:
+            res = [o for o in res if km(centro and (centro["lat"], centro["lon"]), (float(o["lat"]), float(o["lon"]))) <= RADIO_BARRIO_KM]
+        else:
+            urbanos = [o for o in res if not en_barrio_rural(o)]
+            res = urbanos  # si solo hay resultados rurales, mejor no ubicar que ubicar mal
+        if res:
+            ref = (centro["lat"], centro["lon"]) if centro else ancla
+            if ref:
+                res.sort(key=lambda o: km(ref, (float(o["lat"]), float(o["lon"]))))
+            o = res[0]
+            geo = {"lat": float(o["lat"]), "lon": float(o["lon"]),
+                   "precision": "portal" if numero and o.get("category") != "highway" else "calle"}
+            g = o.get("geojson") or {}
+            lineas = [g["coordinates"]] if g.get("type") == "LineString" else (g["coordinates"] if g.get("type") == "MultiLineString" else [])
+            if lineas:
+                geo["trazado"] = [[[round(y, 6), round(x, 6)] for x, y in l[::max(1, len(l) // 40)]] for l in lineas]
+            return geo
+    return None
 
 
 TIPOS_VIA = {"AV.": "Avenida", "AVDA.": "Avenida", "PS.": "Paseo", "PZA.": "Plaza", "PL.": "Plaza", "CM.": "Camino",
@@ -244,19 +306,32 @@ def geocodificar(items):
     cache = cargar_cache()
     for i in ay:
         i["_raw"] = f'{i["_calle"]}|{i["_tramo"]}|{i["detalle"][:160]}'
+        i["_calle_sb"], i["_barrio"] = separar_barrio(i["_calle"])
+        if i["_barrio"]:
+            i["barrio"] = BARRIOS[i["_barrio"]]
 
     def aplicar(i, via, num):
-        gk = f"{via}|{num or ''}"
+        bar = i.get("_barrio")
+        gk = f"v3:{via}|{num or ''}|{bar or ''}"
         geo = cache["geo"].get(gk)
         if not geo:
+            ancla = (i["lat"], i["lon"]) if i.get("lat") is not None else None  # geometría oficial, si la hay
             try:
-                geo = nominatim(via, num) or (nominatim(via, None) if num else None)
+                geo = nominatim(via, num, bar, ancla, cache["geo"]) or (nominatim(via, None, bar, ancla, cache["geo"]) if num else None)
             except Exception as e:
                 print(f"Nominatim falló para {gk}: {e}")
                 geo = None
             if geo:
                 cache["geo"][gk] = geo
         if not geo:
+            if bar and i.get("lat") is None:  # último recurso: centro del barrio, marcado como aproximado
+                try:
+                    c = centro_barrio(bar, cache["geo"])
+                except Exception:
+                    c = None
+                if c:
+                    i["lat"], i["lon"], i["precision"] = c["lat"], c["lon"], "aprox"
+                    return True
             return False
         i["lat"], i["lon"], i["precision"] = geo["lat"], geo["lon"], geo["precision"]
         if geo["precision"] == "calle" and geo.get("trazado"):
@@ -266,7 +341,7 @@ def geocodificar(items):
     # 1) Normalización local (sin IA) + Nominatim
     fallidos = []
     for i in ay:
-        n = cache["norm"].get(i["_raw"]) or norm_local(i["_calle"], i["detalle"])
+        n = cache["norm"].get(i["_raw"]) or norm_local(i["_calle_sb"], i["detalle"])
         if not aplicar(i, n["via"], n["numero"]):
             fallidos.append(i)
 
@@ -299,6 +374,7 @@ def geocodificar(items):
         if n and n.get("via"):
             aplicar(i, n["via"], str(n["numero"]).strip() if n.get("numero") else None)
 
+    cache["geo"] = {k: v for k, v in cache["geo"].items() if k.startswith("v3:")}  # descarta entradas antiguas (podían estar mal ubicadas)
     os.makedirs("data", exist_ok=True)
     json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
 
@@ -315,7 +391,7 @@ def main():
             fuentes[nombre] = {"ok": False, "n": 0}
     geocodificar(items)
     for i in items:
-        for k in ("_calle", "_tramo", "_raw"):
+        for k in ("_calle", "_tramo", "_raw", "_calle_sb", "_barrio"):
             i.pop(k, None)
     con_coords = [i for i in items if i["lat"] is not None]
     if not con_coords:
