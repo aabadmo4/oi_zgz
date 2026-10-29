@@ -33,6 +33,7 @@ Zona cubierta (Zaragoza y entorno: rondas, A-2, Z-40…): latitud 41.55 a 41.76,
 ### Geolocalización de direcciones (Ayuntamiento)
 
 1. **Normalización local** sin IA: `norm_local()` convierte textos como `BLANCO CORDERO (DR.), 11` en `Calle Doctor Blanco Cordero`, número `11`.
+1b. **Barrios rurales**: si el nombre acaba en un código (`PÑF`, `MRL`, `MNT`, `SGR`…, tabla `BARRIOS`) se separa y la búsqueda se limita a 3,5 km del centro de ese barrio. Sin código se descartan los resultados que caigan en un barrio rural (p. ej. `MONCAYO, 8` es la calle del CP 50010, no la de Casetas).
 2. **Nominatim (OpenStreetMap)** devuelve las coordenadas, respetando 1 petición por segundo. Si no encuentra el portal, busca solo la calle y guarda su trazado.
 3. **Gemini**, solo para las direcciones que no se han podido localizar: normaliza el texto de la dirección en lotes de 40. **No genera coordenadas.**
 4. Los resultados se guardan en caché (`data/geocache_v2.json`) para no repetir peticiones.
