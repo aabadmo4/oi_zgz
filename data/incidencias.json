@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T19:33+01:00",
+ "actualizado": "2026-10-29T19:58+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 7
   }
  },
  "sin_ubicar": 1,
@@ -1280,19 +1280,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29523299",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 323.47",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.679512,
-   "lon": -0.8659965,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29523300",
    "fuente": "DGT",
    "tipo": "Accidente",
@@ -1303,6 +1290,19 @@
    "fin": null,
    "lat": 41.679913,
    "lon": -0.8956473,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29523299",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 323.47",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.679512,
+   "lon": -0.8659965,
    "precision": "exacta"
   },
   {
@@ -1319,19 +1319,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29523907",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 23.0–24.0",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.61006,
-   "lon": -0.87491894,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29525342",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1342,19 +1329,6 @@
    "fin": null,
    "lat": 41.671192,
    "lon": -0.93229735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29526018",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 230.303",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.60582,
-   "lon": -0.82876,
    "precision": "exacta"
   },
   {
