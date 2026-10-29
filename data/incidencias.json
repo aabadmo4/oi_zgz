@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T21:11+01:00",
+ "actualizado": "2026-10-29T21:28+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -10,7 +10,7 @@
    "n": 2
   }
  },
- "sin_ubicar": 3,
+ "sin_ubicar": 0,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -308,6 +308,20 @@
    "precision": "calle"
   },
   {
+   "id": "zgz-31399",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "GALLEGO RIO PÑF, 11",
+   "via": "",
+   "detalle": "Continuando con canalización eléctrica",
+   "inicio": "2026-10-28",
+   "fin": "2026-10-30",
+   "lat": 41.760916,
+   "lon": -0.7987939,
+   "precision": "portal",
+   "barrio": "Peñaflor"
+  },
+  {
    "id": "zgz-30394",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -476,6 +490,20 @@
      ]
     ]
    ]
+  },
+  {
+   "id": "zgz-31382",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ENMEDIO PÑF, 2",
+   "via": "",
+   "detalle": "Continuando con la renovación del colector de saneamiento entre la Plaza de España y la Calle del Paso",
+   "inicio": "2026-10-27",
+   "fin": "2026-10-30",
+   "lat": 41.7615458,
+   "lon": -0.7982642,
+   "precision": "portal",
+   "barrio": "Peñaflor"
   },
   {
    "id": "zgz-30805",
@@ -941,6 +969,20 @@
    "lat": 41.652238,
    "lon": -0.868073,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31144",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ENMEDIO PÑF, 2",
+   "via": "",
+   "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
+   "inicio": "2026-10-05",
+   "fin": "2026-11-27",
+   "lat": 41.7615458,
+   "lon": -0.7982642,
+   "precision": "portal",
+   "barrio": "Peñaflor"
   },
   {
    "id": "zgz-31148",
