@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-29T06:50+01:00",
+ "actualizado": "2026-10-29T12:42+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 64
+   "n": 66
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 5
   }
  },
  "sin_ubicar": 1,
@@ -459,7 +459,7 @@
    "via": "",
    "detalle": "Para realizar una nueva acometida de vertido a la altura del no 79",
    "inicio": "2026-10-26",
-   "fin": "2026-10-29",
+   "fin": "2026-10-30",
    "lat": 41.6411114,
    "lon": -0.8733212,
    "precision": "portal"
@@ -644,6 +644,19 @@
      ]
     ]
    ]
+  },
+  {
+   "id": "zgz-31466",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VIRGEN LA MNT, 54",
+   "via": "A la altura del nº 54",
+   "detalle": "Para demoler una cámara de agua",
+   "inicio": "2026-10-22",
+   "fin": "2026-11-06",
+   "lat": 41.69014437469493,
+   "lon": -0.8273019454973861,
+   "precision": "aprox"
   },
   {
    "id": "zgz-31244",
@@ -949,7 +962,7 @@
    "via": "",
    "detalle": "Para ejecutar los pilares de las marquesinas donde se instalarán las placas fotovoltaicas (Planta solar lote 3) entre la Calle Pedro Lázaro y la Avenida de la Jota",
    "inicio": "2026-09-19",
-   "fin": "2026-10-31",
+   "fin": "2026-11-18",
    "lat": 41.67283493889929,
    "lon": -0.8596966767022661,
    "precision": "aprox"
@@ -1001,7 +1014,7 @@
    "via": "",
    "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
    "inicio": "2026-10-05",
-   "fin": "2026-11-15",
+   "fin": "2026-11-27",
    "lat": 41.703396,
    "lon": -0.967935,
    "precision": "portal"
@@ -1165,7 +1178,7 @@
    "tipo": "Corte",
    "titulo": "ITALIA, 16",
    "via": "Números impares, entre C/ Pablo Sarasate y C/ Tenor Gayarre",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas.",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
    "inicio": "2026-10-30",
    "fin": "2026-10-30",
    "lat": 41.6518761,
@@ -1202,6 +1215,19 @@
    ]
   },
   {
+   "id": "zgz-31465",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "GUERRERO MARIA, 13",
+   "via": "Frente al nº 22-24",
+   "detalle": "Continuando con la reparación de la fuga de agua que comenzó con carácter de urgencia.",
+   "inicio": "2026-10-28",
+   "fin": "2026-11-13",
+   "lat": 41.64351,
+   "lon": -0.9099002,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1228,55 +1254,68 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29422992",
+   "id": "dgt-29504294",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
-   "via": "pk 247.15–247.2",
-   "detalle": "",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-30",
-   "lat": 41.683273,
-   "lon": -0.9674077,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29499722",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 250.646",
+   "via": "pk 247.2",
    "detalle": "",
    "inicio": "2026-10-29",
    "fin": null,
-   "lat": 41.69764,
-   "lon": -1.00456,
+   "lat": 41.68351,
+   "lon": -0.96796757,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29499803",
+   "id": "dgt-29481937",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 326.0–326.1",
+   "titulo": "N-330",
+   "via": "pk 503.0–505.0",
    "detalle": "",
    "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.67556,
-   "lon": -0.8347657,
+   "fin": "2026-10-29",
+   "lat": 41.68181,
+   "lon": -0.87642306,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29499804",
+   "id": "dgt-29481905",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 293.0–294.9",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.690823,
+   "lon": -0.8338281,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29501275",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 269.0–272.3",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": "2026-10-29",
+   "lat": 41.555668,
+   "lon": -0.98264647,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29510530",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 326.0–326.1",
+   "via": "pk 324.402",
    "detalle": "",
    "inicio": "2026-10-29",
    "fin": null,
-   "lat": 41.67556,
-   "lon": -0.8347657,
+   "lat": 41.679153,
+   "lon": -0.854734,
    "precision": "exacta"
   }
  ]

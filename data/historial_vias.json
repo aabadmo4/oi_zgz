@@ -560,6 +560,17 @@
    "titulo": "A-2",
    "via": "pk 326.0–326.1",
    "visto": "2026-10-29"
+  },
+  "dgt-29510530": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29510530",
+   "inicio": "2026-10-29",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 324.402",
+   "visto": "2026-10-29"
   }
  },
  "avenida-de-madrid": {
@@ -578,7 +589,7 @@
  "avenida-de-san-jose": {
   "zgz-31361": {
    "detalle": "Para realizar una nueva acometida de vertido a la altura del no 79",
-   "fin": "2026-10-29",
+   "fin": "2026-10-30",
    "fuente": "Ayuntamiento",
    "id": "zgz-31361",
    "inicio": "2026-10-26",
@@ -630,6 +641,19 @@
    "inicio": "2026-10-01",
    "tipo": "Corte",
    "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "",
+   "visto": "2026-10-29"
+  }
+ },
+ "caballero-fco-alcalde": {
+  "zgz-30944": {
+   "detalle": "Para ejecutar los pilares de las marquesinas donde se instalarán las placas fotovoltaicas (Planta solar lote 3) entre la Calle Pedro Lázaro y la Avenida de la Jota",
+   "fin": "2026-11-18",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-30944",
+   "inicio": "2026-09-19",
+   "tipo": "Otros",
+   "titulo": "CABALLERO FCO(ALCALDE, 52",
    "via": "",
    "visto": "2026-10-29"
   }
