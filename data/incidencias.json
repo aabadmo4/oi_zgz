@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T19:58+01:00",
+ "actualizado": "2026-10-29T21:11+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,10 +7,10 @@
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 2
   }
  },
- "sin_ubicar": 1,
+ "sin_ubicar": 3,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -100,8 +100,8 @@
    "detalle": "Dentro del Proyecto de Urbanización G-19-1 entorno de la estación del Portillo.",
    "inicio": "2026-02-04",
    "fin": "2027-01-31",
-   "lat": 41.6489657,
-   "lon": -0.8936735,
+   "lat": 41.6528206,
+   "lon": -0.8935064,
    "precision": "calle"
   },
   {
@@ -113,9 +113,9 @@
    "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
    "inicio": "2026-05-25",
    "fin": "2027-02-26",
-   "lat": 41.650931,
-   "lon": -0.8775906,
-   "precision": "portal"
+   "lat": 41.6513595,
+   "lon": -0.874242,
+   "precision": "calle"
   },
   {
    "id": "zgz-28867",
@@ -178,126 +178,66 @@
    "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1) en el estacionamiento situado entre el CDM Siglo XXI y el IES Miguel Molinos",
    "inicio": "2026-06-27",
    "fin": "2026-11-16",
-   "lat": 41.6689117,
-   "lon": -0.8964733,
+   "lat": 41.6737583,
+   "lon": -0.8978557,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.671301,
-      -0.897762
+      41.672158,
+      -0.89698
      ],
      [
-      41.671214,
-      -0.897641
+      41.672227,
+      -0.897042
      ],
      [
-      41.671133,
-      -0.897535
+      41.672302,
+      -0.897105
      ],
      [
-      41.671083,
-      -0.897474
+      41.672434,
+      -0.897207
      ],
      [
-      41.671054,
-      -0.897447
+      41.672467,
+      -0.897232
      ],
      [
-      41.67104,
-      -0.897435
+      41.672872,
+      -0.897472
      ],
      [
-      41.670887,
-      -0.897292
+      41.672929,
+      -0.897502
      ],
      [
-      41.670758,
-      -0.8972
+      41.672958,
+      -0.897517
      ],
      [
-      41.670653,
-      -0.897137
+      41.673231,
+      -0.897661
      ],
      [
-      41.670545,
-      -0.897086
+      41.673625,
+      -0.897822
      ],
      [
-      41.670387,
-      -0.897026
+      41.673896,
+      -0.897891
      ],
      [
-      41.670243,
-      -0.896971
+      41.673978,
+      -0.897909
      ],
      [
-      41.67015,
-      -0.896937
+      41.675444,
+      -0.898264
      ],
      [
-      41.669338,
-      -0.896633
-     ],
-     [
-      41.668746,
-      -0.896411
-     ],
-     [
-      41.668441,
-      -0.896281
-     ],
-     [
-      41.668208,
-      -0.896169
-     ],
-     [
-      41.668004,
-      -0.896051
-     ],
-     [
-      41.667931,
-      -0.896009
-     ],
-     [
-      41.6678,
-      -0.895913
-     ],
-     [
-      41.66773,
-      -0.895861
-     ],
-     [
-      41.667489,
-      -0.89566
-     ],
-     [
-      41.667211,
-      -0.895387
-     ],
-     [
-      41.667029,
-      -0.895188
-     ],
-     [
-      41.66697,
-      -0.895123
-     ],
-     [
-      41.666909,
-      -0.895064
-     ],
-     [
-      41.666847,
-      -0.895004
-     ],
-     [
-      41.666756,
-      -0.894928
-     ],
-     [
-      41.666682,
-      -0.894884
+      41.675547,
+      -0.898281
      ]
     ]
    ]
@@ -363,8 +303,8 @@
    "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027)",
    "inicio": "2026-06-24",
    "fin": "2026-11-02",
-   "lat": 41.6473071,
-   "lon": -0.894496,
+   "lat": 41.6476369,
+   "lon": -0.893725,
    "precision": "calle"
   },
   {
@@ -402,38 +342,18 @@
    "detalle": "Para reparar una acometida de vertido a la altura del no 32",
    "inicio": "2026-10-26",
    "fin": "2026-10-29",
-   "lat": 41.6542572,
-   "lon": -0.9069917,
+   "lat": 41.65536,
+   "lon": -0.9069804,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.655199,
-      -0.907018
+      41.655379,
+      -0.906976
      ],
      [
-      41.654718,
-      -0.907128
-     ],
-     [
-      41.65467,
-      -0.907139
-     ],
-     [
-      41.653862,
-      -0.906851
-     ],
-     [
-      41.653812,
-      -0.906833
-     ],
-     [
-      41.65339,
-      -0.90667
-     ],
-     [
-      41.653338,
-      -0.90665
+      41.655341,
+      -0.906985
      ]
     ]
    ]
@@ -473,8 +393,8 @@
    "detalle": "Continuando con las obras para su renovación integral",
    "inicio": "2026-09-16",
    "fin": "2027-02-18",
-   "lat": 41.6410367,
-   "lon": -0.8967345,
+   "lat": 41.6410979,
+   "lon": -0.8966768,
    "precision": "portal"
   },
   {
@@ -501,7 +421,8 @@
    "fin": "2026-11-20",
    "lat": 41.6609828,
    "lon": -0.9423819,
-   "precision": "portal"
+   "precision": "portal",
+   "barrio": "Miralbueno"
   },
   {
    "id": "zgz-31363",
@@ -557,19 +478,6 @@
    ]
   },
   {
-   "id": "zgz-31382",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ENMEDIO PÑF, 2",
-   "via": "",
-   "detalle": "Continuando con la renovación del colector de saneamiento entre la Plaza de España y la Calle del Paso",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-30",
-   "lat": 41.703396,
-   "lon": -0.967935,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30805",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -604,8 +512,8 @@
    "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
    "inicio": "2026-10-28",
    "fin": "2026-12-28",
-   "lat": 41.6505703,
-   "lon": -0.8937197,
+   "lat": 41.6528206,
+   "lon": -0.8935064,
    "precision": "calle"
   },
   {
@@ -617,30 +525,26 @@
    "detalle": "Cortes de Agua. Desde las 10 hasta las 16 horas.",
    "inicio": "2026-10-29",
    "fin": "2026-10-29",
-   "lat": 41.66102,
-   "lon": -0.8632682,
+   "lat": 41.6617614,
+   "lon": -0.8614586,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.66074,
-      -0.863924
+      41.661656,
+      -0.861758
      ],
      [
-      41.660759,
-      -0.863878
+      41.66167,
+      -0.861676
      ],
      [
-      41.660778,
-      -0.863835
+      41.661853,
+      -0.861241
      ],
      [
-      41.661258,
-      -0.862711
-     ],
-     [
-      41.6613,
-      -0.862613
+      41.661905,
+      -0.861176
      ]
     ]
    ]
@@ -656,7 +560,8 @@
    "fin": "2026-11-06",
    "lat": 41.69014437469493,
    "lon": -0.8273019454973861,
-   "precision": "aprox"
+   "precision": "aprox",
+   "barrio": "Montañana"
   },
   {
    "id": "zgz-31244",
@@ -669,7 +574,8 @@
    "fin": "2026-10-30",
    "lat": 41.6610555,
    "lon": -0.9426162,
-   "precision": "portal"
+   "precision": "portal",
+   "barrio": "Miralbueno"
   },
   {
    "id": "zgz-31340",
@@ -708,7 +614,8 @@
    "fin": "2026-11-13",
    "lat": 41.5886597,
    "lon": -0.8127982,
-   "precision": "portal"
+   "precision": "portal",
+   "barrio": "Cartuja Baja"
   },
   {
    "id": "zgz-31436",
@@ -719,30 +626,54 @@
    "detalle": "",
    "inicio": "2026-10-29",
    "fin": "2026-10-29",
-   "lat": 41.6485249,
-   "lon": -0.8940953,
+   "lat": 41.6544356,
+   "lon": -0.8990107,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.64872,
-      -0.894153
+      41.654652,
+      -0.899929
      ],
      [
-      41.648626,
-      -0.894121
+      41.654629,
+      -0.899793
      ],
      [
-      41.648599,
-      -0.894115
+      41.654641,
+      -0.899736
      ],
      [
-      41.64845,
-      -0.894076
+      41.654646,
+      -0.899686
      ],
      [
-      41.648329,
-      -0.894041
+      41.654642,
+      -0.899638
+     ],
+     [
+      41.654631,
+      -0.899585
+     ],
+     [
+      41.654598,
+      -0.899486
+     ],
+     [
+      41.654502,
+      -0.899206
+     ],
+     [
+      41.654456,
+      -0.899073
+     ],
+     [
+      41.654184,
+      -0.898262
+     ],
+     [
+      41.654131,
+      -0.898105
      ]
     ]
    ]
@@ -756,8 +687,8 @@
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
    "inicio": "2026-10-29",
    "fin": "2026-10-29",
-   "lat": 41.720598,
-   "lon": -1.02643,
+   "lat": 41.6499255,
+   "lon": -0.8954156,
    "precision": "portal"
   },
   {
@@ -769,38 +700,42 @@
    "detalle": "Continuando con la canalización eléctrica y para realizar una cata",
    "inicio": "2026-10-28",
    "fin": "2026-10-30",
-   "lat": 41.6457335,
-   "lon": -0.8601396,
+   "lat": 41.6459811,
+   "lon": -0.8626608,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.645634,
-      -0.859129
-     ],
-     [
-      41.645646,
-      -0.859238
-     ],
-     [
-      41.645716,
-      -0.859959
-     ],
-     [
-      41.645755,
-      -0.860353
-     ],
-     [
-      41.645783,
-      -0.860652
-     ],
-     [
-      41.645793,
-      -0.860762
-     ],
-     [
       41.645831,
       -0.86115
+     ],
+     [
+      41.645872,
+      -0.861536
+     ],
+     [
+      41.645901,
+      -0.861835
+     ],
+     [
+      41.64591,
+      -0.861949
+     ],
+     [
+      41.645919,
+      -0.862046
+     ],
+     [
+      41.646021,
+      -0.863055
+     ],
+     [
+      41.64612,
+      -0.864067
+     ],
+     [
+      41.646131,
+      -0.864172
      ]
     ]
    ]
@@ -866,9 +801,9 @@
    "detalle": "Para recrecer la acera, en la parada de Bus junto al n.o 20",
    "inicio": "2026-10-19",
    "fin": "2026-10-30",
-   "lat": 41.626386,
-   "lon": -0.912826,
-   "precision": "portal"
+   "lat": 41.628247346190896,
+   "lon": -0.9114075956206455,
+   "precision": "aprox"
   },
   {
    "id": "zgz-31426",
@@ -879,8 +814,8 @@
    "detalle": "Para analizar el deterioro prematuro del pavimento",
    "inicio": "2026-10-29",
    "fin": "2026-10-29",
-   "lat": 41.6511617,
-   "lon": -0.8860997,
+   "lat": 41.6519156,
+   "lon": -0.8853399,
    "precision": "calle"
   },
   {
@@ -905,9 +840,9 @@
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
    "inicio": "2026-10-29",
    "fin": "2026-10-29",
-   "lat": 41.6509629,
-   "lon": -0.8958499,
-   "precision": "portal"
+   "lat": 41.6510688,
+   "lon": -0.8958517,
+   "precision": "calle"
   },
   {
    "id": "zgz-31437",
@@ -991,7 +926,8 @@
    "fin": "2026-10-30",
    "lat": 41.6883191,
    "lon": -0.8286754,
-   "precision": "portal"
+   "precision": "portal",
+   "barrio": "Montañana"
   },
   {
    "id": "zgz-31003",
@@ -1004,19 +940,6 @@
    "fin": "2026-11-27",
    "lat": 41.652238,
    "lon": -0.868073,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31144",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ENMEDIO PÑF, 2",
-   "via": "",
-   "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
-   "inicio": "2026-10-05",
-   "fin": "2026-11-27",
-   "lat": 41.703396,
-   "lon": -0.967935,
    "precision": "portal"
   },
   {
@@ -1093,30 +1016,26 @@
    "detalle": "Para la reparación de avería en el n.o 46",
    "inicio": "2026-10-26",
    "fin": "2026-11-20",
-   "lat": 41.66102,
-   "lon": -0.8632682,
+   "lat": 41.6617614,
+   "lon": -0.8614586,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.66074,
-      -0.863924
+      41.661656,
+      -0.861758
      ],
      [
-      41.660759,
-      -0.863878
+      41.66167,
+      -0.861676
      ],
      [
-      41.660778,
-      -0.863835
+      41.661853,
+      -0.861241
      ],
      [
-      41.661258,
-      -0.862711
-     ],
-     [
-      41.6613,
-      -0.862613
+      41.661905,
+      -0.861176
      ]
     ]
    ]
@@ -1132,7 +1051,8 @@
    "fin": "2026-11-20",
    "lat": 41.6610555,
    "lon": -0.9426162,
-   "precision": "portal"
+   "precision": "portal",
+   "barrio": "Miralbueno"
   },
   {
    "id": "zgz-31452",
@@ -1143,18 +1063,62 @@
    "detalle": "Para la reparación del pavimento del carril bici en la intersección con el lado de los números impares de Valle de Broto",
    "inicio": "2026-10-30",
    "fin": "2026-10-30",
-   "lat": 41.6647437,
-   "lon": -0.8852508,
+   "lat": 41.6699646,
+   "lon": -0.8905715,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.664904,
-      -0.885431
+      41.670677,
+      -0.890711
      ],
      [
-      41.664583,
-      -0.88507
+      41.670557,
+      -0.890705
+     ],
+     [
+      41.670498,
+      -0.890701
+     ],
+     [
+      41.670401,
+      -0.890691
+     ],
+     [
+      41.670221,
+      -0.890648
+     ],
+     [
+      41.670118,
+      -0.890621
+     ],
+     [
+      41.670099,
+      -0.890615
+     ],
+     [
+      41.669992,
+      -0.890581
+     ],
+     [
+      41.669875,
+      -0.89054
+     ],
+     [
+      41.66971,
+      -0.890467
+     ],
+     [
+      41.669536,
+      -0.890382
+     ],
+     [
+      41.669414,
+      -0.890306
+     ],
+     [
+      41.669314,
+      -0.890244
      ]
     ]
    ]
@@ -1251,7 +1215,8 @@
    "fin": "2026-10-29",
    "lat": 41.6923912,
    "lon": -0.8651962,
-   "precision": "portal"
+   "precision": "portal",
+   "barrio": "San Gregorio"
   },
   {
    "id": "dgt-29504294",
@@ -1267,58 +1232,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29501275",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 269.0–272.3",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.555668,
-   "lon": -0.98264647,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29523300",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 321.0–323.47",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.679913,
-   "lon": -0.8956473,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29523299",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 323.47",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.679512,
-   "lon": -0.8659965,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29523341",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 322.8",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.679707,
-   "lon": -0.8740552,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29525342",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1329,19 +1242,6 @@
    "fin": null,
    "lat": 41.671192,
    "lon": -0.93229735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29527450",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 286.182",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": null,
-   "lat": 41.720634,
-   "lon": -1.002885,
    "precision": "exacta"
   }
  ]
