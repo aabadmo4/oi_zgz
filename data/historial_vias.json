@@ -538,6 +538,28 @@
    "titulo": "A-2",
    "via": "pk 328.4–330.4",
    "visto": "2026-10-29"
+  },
+  "dgt-29499803": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29499803",
+   "inicio": "2026-10-29",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 326.0–326.1",
+   "visto": "2026-10-29"
+  },
+  "dgt-29499804": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29499804",
+   "inicio": "2026-10-29",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 326.0–326.1",
+   "visto": "2026-10-29"
   }
  },
  "avenida-de-madrid": {
