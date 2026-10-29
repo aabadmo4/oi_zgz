@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]   # en main lo ejecuta CD antes de desplegar
+  workflow_call:              # reutilizable: lo llama cd.yml
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    name: Validar código y datos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests lxml pyproj google-genai
+
+      - name: Sintaxis de los scripts
+        run: python -m py_compile scripts/actualizar_datos.py scripts/generar_paginas.py
+
+      - name: JSON válido (config y data)
+        run: |
+          for f in config/*.json data/*.json; do
+            python -m json.tool "$f" > /dev/null || { echo "::error file=$f::JSON inválido"; exit 1; }
+          done
+
+      - name: Tests de geocodificación
+        run: python -m unittest discover -s tests -v
+
+      - name: El sitio se genera
+        run: |
+          mkdir _site
+          cp -r *.html *.jpg *.png *.ico CNAME ads.txt robots.txt sitemap.xml data _site/
+          python scripts/generar_paginas.py _site
+          test -f _site/index.html && test -f _site/sitemap.xml

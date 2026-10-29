@@ -1,0 +1,93 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 * * * *'   # actualización horaria de datos y publicación
+  workflow_dispatch:
+
+concurrency:
+  group: cd
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  # 1) Al hacer push: se valida antes de desplegar
+  ci:
+    name: CI previo
+    if: github.event_name == 'push'
+    uses: ./.github/workflows/ci.yml
+
+  # 2) Cada hora / a mano: obtener datos de las APIs y guardarlos en el repo
+  datos:
+    name: Actualizar datos (APIs)
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests lxml pyproj google-genai
+
+      - name: Obtener incidencias
+        id: gen
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/actualizar_datos.py
+
+      - name: Actualizar vías conocidas e historial
+        if: steps.gen.outcome == 'success'
+        run: python scripts/generar_paginas.py "$RUNNER_TEMP/site"
+
+      - name: Guardar datos nuevos (solo si todo fue bien)
+        if: steps.gen.outcome == 'success'
+        run: |
+          git config user.name "TechDEV: OI_ZGZ Data Bot "
+          git config user.email "oi_zgz.dev@techecs.net"
+          git add data
+          git diff --cached --quiet || (git commit -m "chore(data): actualizar incidencias" && git push)
+
+      - name: Aviso si falló
+        if: steps.gen.outcome == 'failure'
+        run: echo "::warning::No se obtuvieron datos válidos; se publica la última versión buena."
+
+  # 3) Publicar en GitHub Pages
+  desplegar:
+    name: Desplegar en Pages
+    needs: [ci, datos]
+    # se ejecuta aunque uno de los dos se haya saltado; no si el CI falló o se canceló
+    if: ${{ !cancelled() && needs.ci.result != 'failure' && needs.ci.result != 'cancelled' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # incluye el commit de datos que acaba de hacer el job anterior
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar sitio
+        run: |
+          mkdir _site
+          cp -r *.html *.jpg *.png *.ico CNAME ads.txt robots.txt sitemap.xml data _site/
+          touch _site/.nojekyll
+      - name: Generar páginas de vías, sitemap y robots
+        run: python scripts/generar_paginas.py _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
