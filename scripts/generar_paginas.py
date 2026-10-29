@@ -20,7 +20,7 @@ HISTORIAL = RAIZ / "data/historial_vias.json"
 DIAS_HISTORIAL = 30  # cuánto tiempo se muestran las incidencias ya finalizadas en la página de la vía
 UMBRAL_DIAS = 60  # duración mínima (inicio→fin) para crear página propia de una calle no principal
 TIPOS = {"Corte": ("⛔", "#ff6b5e"), "Obras": ("🚧", "#ffc400"), "Accidente": ("💥", "#ff9a3c"),
-         "Retención": ("🚗", "#e9d27a"), "Otros": ("⚠️", "#c9ced3")}
+         "Retención": ("🚗", "#e9d27a"), "Suministro": ("💧", "#5ec8f2"), "Otros": ("⚠️", "#c9ced3")}
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 esc = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 
@@ -152,7 +152,7 @@ def recientes(hist_via, activas):
 
 def bloque_portada(vias, limite=15):
     """Lista HTML (sin JavaScript) con las incidencias actuales más relevantes, enlazadas a su página de vía."""
-    orden = {"Corte": 0, "Accidente": 1, "Obras": 2, "Retención": 3, "Otros": 4}
+    orden = {"Corte": 0, "Accidente": 1, "Obras": 2, "Retención": 3, "Suministro": 4, "Otros": 5}
     filas = []
     for sl, v in vias.items():
         enlazable = v["principal"] or any(es_larga(i) for i in v["incidencias"])
@@ -269,7 +269,7 @@ def ld_json(obj):
 
 
 NOMBRE_TIPO = {"Corte": ("corte", "cortes"), "Obras": ("obra", "obras"), "Accidente": ("accidente", "accidentes"),
-               "Retención": ("retención", "retenciones"), "Otros": ("otra incidencia", "otras incidencias")}
+               "Retención": ("retención", "retenciones"), "Suministro": ("corte de suministro", "cortes de suministro"), "Otros": ("otra incidencia", "otras incidencias")}
 
 
 def n_tipo(t, n):

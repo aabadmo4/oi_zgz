@@ -31,6 +31,8 @@ def en_zgz(lat, lon):
 def tipo_desde_texto(txt):
     t = txt.lower()
     if "accident" in t: return "Accidente"
+    # Interrupción de un servicio (agua, luz, gas): no es un corte de tráfico
+    if re.search(r"cortes?\s+(de|del)\s+(agua|luz|gas|electricidad|suministro)", t): return "Suministro"
     if "corte" in t or "closure" in t or "cerrad" in t: return "Corte"
     if "obra" in t or "works" in t or "maintenance" in t or "mantenimiento" in t: return "Obras"
     if "retenci" in t or "congestion" in t or "atasco" in t: return "Retención"
