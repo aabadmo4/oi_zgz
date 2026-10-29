@@ -49,8 +49,8 @@ jobs:
       - name: Guardar datos nuevos (solo si todo fue bien)
         if: steps.gen.outcome == 'success'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "TechDEV: OI_ZGZ Data Bot "
+          git config user.email "oi_zgz.dev@techecs.net"
           git add data
           git diff --cached --quiet || (git commit -m "chore(data): actualizar incidencias" && git push)
 
