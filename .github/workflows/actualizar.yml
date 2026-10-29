@@ -1,4 +1,4 @@
-name: Actualizar datos y publicar
+name: Data - Update and publish
 
 on:
   schedule:
