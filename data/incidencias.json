@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-29T14:03+01:00",
+ "actualizado": "2026-10-29T19:33+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 9
   }
  },
  "sin_ubicar": 1,
@@ -1280,16 +1280,94 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29515072",
+   "id": "dgt-29523299",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 32.556",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 323.47",
    "detalle": "",
    "inicio": "2026-10-29",
    "fin": null,
-   "lat": 41.630238,
-   "lon": -0.974579,
+   "lat": 41.679512,
+   "lon": -0.8659965,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29523300",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 321.0–323.47",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.679913,
+   "lon": -0.8956473,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29523341",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 322.8",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.679707,
+   "lon": -0.8740552,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29523907",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.61006,
+   "lon": -0.87491894,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29525342",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 316.8–317.5",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.671192,
+   "lon": -0.93229735,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29526018",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 230.303",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.60582,
+   "lon": -0.82876,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29527450",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 286.182",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.720634,
+   "lon": -1.002885,
    "precision": "exacta"
   }
  ]

@@ -571,6 +571,63 @@
    "titulo": "A-2",
    "via": "pk 324.402",
    "visto": "2026-10-29"
+  },
+  "dgt-29523299": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29523299",
+   "inicio": "2026-10-29",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 323.47",
+   "visto": "2026-10-29"
+  },
+  "dgt-29523300": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29523300",
+   "inicio": "2026-10-29",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 321.0–323.47",
+   "visto": "2026-10-29"
+  },
+  "dgt-29523341": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29523341",
+   "inicio": "2026-10-29",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 322.8",
+   "visto": "2026-10-29"
+  },
+  "dgt-29525342": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29525342",
+   "inicio": "2026-10-29",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 316.8–317.5",
+   "visto": "2026-10-29"
+  }
+ },
+ "ap-68": {
+  "dgt-29527450": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29527450",
+   "inicio": "2026-10-29",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 286.182",
+   "visto": "2026-10-29"
   }
  },
  "avenida-de-madrid": {
@@ -1285,6 +1342,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 32.556",
+   "visto": "2026-10-29"
+  },
+  "dgt-29523907": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29523907",
+   "inicio": "2026-10-29",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0",
    "visto": "2026-10-29"
   }
  }
