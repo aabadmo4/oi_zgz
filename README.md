@@ -29,7 +29,9 @@ Zona cubierta (Zaragoza y entorno: rondas, A-2, Z-40…): latitud 41.55 a 41.76,
 
 ### Tipos de incidencia
 
-`tipo_desde_texto()` clasifica cada registro por palabras clave: `Accidente`, `Corte`, `Obras`, `Retención` u `Otros`.
+`tipo_desde_texto()` clasifica cada registro por palabras clave: `Accidente`, `Corte`, `Suministro`, `Obras`, `Retención` u `Otros`.
+
+`Suministro` (💧) agrupa las interrupciones programadas de agua, luz o gas (`Cortes de Agua. Desde las 8 hasta las 18 horas`). Afectan a los edificios de una calle, no al tráfico, y por eso no cuentan como `Corte`. Los cortes de calle (`se corta en el tramo…`, obras de colectores…) siguen siendo `Corte`.
 
 ### Geolocalización de direcciones (Ayuntamiento)
 
@@ -98,7 +100,7 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 │   ├── actualizar_datos.py        # Descarga, clasifica, geolocaliza y escribe el JSON
 │   └── generar_paginas.py         # Páginas por vía, sitemap y robots.txt
 ├── tests/
-│   └── test_geocodificacion.py    # Tests sin red de la geolocalización
+│   └── test_geocodificacion.py    # Tests sin red: geolocalización y tipos
 ├── data/
 │   ├── incidencias.json           # Salida que consume la web (generada)
 │   ├── geocache_v2.json           # Caché de geolocalización (generada)
@@ -181,11 +183,11 @@ python scripts/generar_paginas.py _site
 
 Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 
-- 🏷️ **Mejorar la clasificación** de tipos (`tipo_desde_texto`) con ejemplos reales que queden como `Otros`.
+- 🏷️ **Mejorar la clasificación** de tipos (`tipo_desde_texto`) con ejemplos reales que queden como `Otros` o mal clasificados (como los cortes de agua, que antes salían como `Corte`).
 - 🔤 **Ampliar la normalización de direcciones** (`TIPOS_VIA`, `HONORIFICOS`) con abreviaturas del callejero que fallen.
 - 📍 **Reducir las incidencias `sin_ubicar`** o las de precisión `aprox`, y completar `CENTROS_BARRIO` con los barrios rurales que falten.
 - 📡 **Añadir fuentes** (tranvía, autobús, eventos, otras administraciones).
-- 🧪 **Ampliar los tests** (`tests/`): ahora cubren la geolocalización; faltan la clasificación de tipos y la normalización de direcciones.
+- 🧪 **Ampliar los tests** (`tests/`): ahora cubren la geolocalización y la distinción entre `Corte` y `Suministro`; faltan `limpiar_texto` y la normalización de direcciones.
 - ♿ **Accesibilidad y rendimiento** de la web.
 - 🔎 **SEO y contenidos** de la página.
 
