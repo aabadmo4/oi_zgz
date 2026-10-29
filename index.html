@@ -154,6 +154,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <h3>Qué tipos de incidencias encontrarás</h3>
 <ul>
 <li><strong>Cortes:</strong> calles o tramos cerrados al tráfico, total o parcialmente.</li>
+<li><strong>Suministro:</strong> cortes programados de agua, luz o gas que afectan a edificios de una calle, sin que la calle tenga por qué estar cerrada.</li>
 <li><strong>Obras:</strong> trabajos en la vía pública, asfaltado, canalizaciones, tranvía y otras actuaciones con afección al tráfico.</li>
 <li><strong>Accidentes:</strong> siniestros que alteran la circulación en calles, rondas y accesos a la ciudad.</li>
 <li><strong>Retenciones:</strong> tramos con tráfico denso o lento.</li>
@@ -186,7 +187,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 // ---- Publicidad: IDs de AdSense ----
 const ADS={client:'ca-pub-2672664299641705',banner:'3859322059',feed:'9306430712',layout:'-fb+5w+4e-db+86'};
 const PAG=8,MAS=10,PRIMER_ANUNCIO=5,CADA=12,MAX_ANUNCIOS=4;
-const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚗','#e9d27a'],Otros:['⚠️','#c9ced3']};
+const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚗','#e9d27a'],Suministro:['💧','#5ec8f2'],Otros:['⚠️','#c9ced3']};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=id=>document.getElementById(id);
 const map=L.map('mapa').setView([41.6488,-0.8891],12);
@@ -243,7 +244,7 @@ datos=d.incidencias||[];chips();
 const f=new Date(d.actualizado);
 $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
 pintar();
-(()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const NT={Corte:['corte','cortes'],Obras:['obra','obras'],Accidente:['accidente','accidentes'],'Retención':['retención','retenciones'],Otros:['otra incidencia','otras incidencias']};const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${(NT[t]||[t.toLowerCase(),t.toLowerCase()])[n===1?0:1]}`).join(', ');
+(()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const NT={Corte:['corte','cortes'],Obras:['obra','obras'],Accidente:['accidente','accidentes'],'Retención':['retención','retenciones'],Suministro:['corte de suministro','cortes de suministro'],Otros:['otra incidencia','otras incidencias']};const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${(NT[t]||[t.toLowerCase(),t.toLowerCase()])[n===1?0:1]}`).join(', ');
 if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} ${datos.length===1?'incidencia activa':'incidencias activas'} en Zaragoza${p?': '+p:''}.`})();
 if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
 }).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
