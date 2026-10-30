@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-30T23:01+01:00",
+ "actualizado": "2026-10-31T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 56
+   "n": 38
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -308,20 +308,6 @@
    "precision": "calle"
   },
   {
-   "id": "zgz-31399",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "GALLEGO RIO PÑF, 11",
-   "via": "",
-   "detalle": "Continuando con canalización eléctrica",
-   "inicio": "2026-10-28",
-   "fin": "2026-10-30",
-   "lat": 41.760916,
-   "lon": -0.7987939,
-   "precision": "portal",
-   "barrio": "Peñaflor"
-  },
-  {
    "id": "zgz-30394",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -345,32 +331,6 @@
    "fin": "2026-11-27",
    "lat": 41.667599,
    "lon": -0.862763,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31427",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ECHEGARAY Y CABALLERO, 8",
-   "via": "A la altura de la Calle Salduba de 00:00 a 05:00horas. A la altura del nº 118 de de 01:30 a 05:00 horas.",
-   "detalle": "Para la instalación de sensores en los pozos de saneamiento:",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.66055988985814,
-   "lon": -0.8890517365683995,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31361",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SAN JOSE AVENIDA DE, 77",
-   "via": "",
-   "detalle": "Para realizar una nueva acometida de vertido a la altura del no 79",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-30",
-   "lat": 41.6411114,
-   "lon": -0.8733212,
    "precision": "portal"
   },
   {
@@ -427,73 +387,6 @@
    "barrio": "Miralbueno"
   },
   {
-   "id": "zgz-31363",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "LUCES DE LA CIUDAD, 37",
-   "via": "",
-   "detalle": "Para ejecutar una canalización eléctrica",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-30",
-   "lat": 41.6210623,
-   "lon": -0.9181333,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.620371,
-      -0.916963
-     ],
-     [
-      41.620422,
-      -0.917048
-     ],
-     [
-      41.620957,
-      -0.917955
-     ],
-     [
-      41.621016,
-      -0.918056
-     ],
-     [
-      41.62106,
-      -0.91813
-     ],
-     [
-      41.621175,
-      -0.918326
-     ],
-     [
-      41.621693,
-      -0.919204
-     ],
-     [
-      41.621713,
-      -0.919238
-     ],
-     [
-      41.621752,
-      -0.919304
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "zgz-31382",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ENMEDIO PÑF, 2",
-   "via": "",
-   "detalle": "Continuando con la renovación del colector de saneamiento entre la Plaza de España y la Calle del Paso",
-   "inicio": "2026-10-27",
-   "fin": "2026-10-30",
-   "lat": 41.7615458,
-   "lon": -0.7982642,
-   "precision": "portal",
-   "barrio": "Peñaflor"
-  },
-  {
    "id": "zgz-30805",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -534,46 +427,6 @@
    "barrio": "Montañana"
   },
   {
-   "id": "zgz-31244",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "VISTABELLA MRL, 53",
-   "via": "",
-   "detalle": "Continuando con las obras de urbanización del Área de Intervención F-56-2",
-   "inicio": "2026-10-19",
-   "fin": "2026-10-30",
-   "lat": 41.6610555,
-   "lon": -0.9426162,
-   "precision": "portal",
-   "barrio": "Miralbueno"
-  },
-  {
-   "id": "zgz-31340",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "BUÑUEL LUIS(CINEASTA), 5",
-   "via": "",
-   "detalle": "Continuando con la sustitución de la tubería de abastecimiento",
-   "inicio": "2026-10-23",
-   "fin": "2026-10-30",
-   "lat": 41.65904882966236,
-   "lon": -0.9180025043841148,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31246",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "CASTELAR EMILIO, 11",
-   "via": "",
-   "detalle": "Para ejecutar una acometida de vertido",
-   "inicio": "2026-10-19",
-   "fin": "2026-10-30",
-   "lat": 41.640841,
-   "lon": -0.872868,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30596",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -586,55 +439,6 @@
    "lon": -0.8127982,
    "precision": "portal",
    "barrio": "Cartuja Baja"
-  },
-  {
-   "id": "zgz-31424",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "REBOLLEDO RODRIGO DE, 30",
-   "via": "",
-   "detalle": "Continuando con la canalización eléctrica y para realizar una cata",
-   "inicio": "2026-10-28",
-   "fin": "2026-10-30",
-   "lat": 41.6459811,
-   "lon": -0.8626608,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.645831,
-      -0.86115
-     ],
-     [
-      41.645872,
-      -0.861536
-     ],
-     [
-      41.645901,
-      -0.861835
-     ],
-     [
-      41.64591,
-      -0.861949
-     ],
-     [
-      41.645919,
-      -0.862046
-     ],
-     [
-      41.646021,
-      -0.863055
-     ],
-     [
-      41.64612,
-      -0.864067
-     ],
-     [
-      41.646131,
-      -0.864172
-     ]
-    ]
-   ]
   },
   {
    "id": "zgz-31114",
@@ -650,19 +454,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31456",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "AMERICA AVENIDA DE, 68",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.63056325087527,
-   "lon": -0.8849502446646814,
-   "precision": "aprox"
-  },
-  {
    "id": "zgz-31451",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -676,19 +467,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31247",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ARGUALAS, 16",
-   "via": "",
-   "detalle": "Para recrecer la acera, en la parada de Bus junto al n.o 20",
-   "inicio": "2026-10-19",
-   "fin": "2026-10-30",
-   "lat": 41.628247346190896,
-   "lon": -0.9114075956206455,
-   "precision": "aprox"
-  },
-  {
    "id": "zgz-30944",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -700,33 +478,6 @@
    "lat": 41.67283493889929,
    "lon": -0.8596966767022661,
    "precision": "aprox"
-  },
-  {
-   "id": "zgz-31400",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "PARAISO PL.BASILIO, 4",
-   "via": "",
-   "detalle": "Para montar el árbol de Navidad",
-   "inicio": "2026-10-28",
-   "fin": "2026-10-30",
-   "lat": 41.6475119,
-   "lon": -0.8867122,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31315",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "VIRGEN LA MNT, 9",
-   "via": "",
-   "detalle": "Para demoler una cámara de agua a la altura del no 54",
-   "inicio": "2026-10-22",
-   "fin": "2026-10-30",
-   "lat": 41.6883191,
-   "lon": -0.8286754,
-   "precision": "portal",
-   "barrio": "Montañana"
   },
   {
    "id": "zgz-31003",
@@ -808,19 +559,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31245",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ALFAMEN, 0",
-   "via": "",
-   "detalle": "Para reparar la tubería de vertido para el Centro Cívico Delicias",
-   "inicio": "2026-10-19",
-   "fin": "2026-10-30",
-   "lat": 41.656729,
-   "lon": -0.906789,
-   "precision": "calle"
-  },
-  {
    "id": "zgz-31384",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -868,130 +606,6 @@
    "barrio": "Miralbueno"
   },
   {
-   "id": "zgz-31452",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "GOMEZ AVELLANEDA G., 35",
-   "via": "",
-   "detalle": "Para la reparación del pavimento del carril bici en la intersección con el lado de los números impares de Valle de Broto",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.6699646,
-   "lon": -0.8905715,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.670677,
-      -0.890711
-     ],
-     [
-      41.670557,
-      -0.890705
-     ],
-     [
-      41.670498,
-      -0.890701
-     ],
-     [
-      41.670401,
-      -0.890691
-     ],
-     [
-      41.670221,
-      -0.890648
-     ],
-     [
-      41.670118,
-      -0.890621
-     ],
-     [
-      41.670099,
-      -0.890615
-     ],
-     [
-      41.669992,
-      -0.890581
-     ],
-     [
-      41.669875,
-      -0.89054
-     ],
-     [
-      41.66971,
-      -0.890467
-     ],
-     [
-      41.669536,
-      -0.890382
-     ],
-     [
-      41.669414,
-      -0.890306
-     ],
-     [
-      41.669314,
-      -0.890244
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "zgz-31453",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "VIVA ESPAÑA, 10",
-   "via": "Entre C/ Huerva y C/ Carrera del Sábado",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.63925,
-   "lon": -0.889755,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31454",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ITALIA, 16",
-   "via": "Números impares, entre C/ Pablo Sarasate y C/ Tenor Gayarre",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.6518761,
-   "lon": -0.9005578,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31455",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "C/ AMBROSIO DEL RUSTE",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.6619016,
-   "lon": -0.8584513,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.661793,
-      -0.858876
-     ],
-     [
-      41.661853,
-      -0.858679
-     ],
-     [
-      41.661993,
-      -0.858022
-     ]
-    ]
-   ]
-  },
-  {
    "id": "zgz-31465",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1018,29 +632,42 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29570806",
+   "id": "dgt-29572485",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 249.433",
+   "titulo": "A-2",
+   "via": "pk 319.169",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.695248,
-   "lon": -0.9897817,
+   "lat": 41.68118,
+   "lon": -0.91716,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29571755",
+   "id": "dgt-29572541",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 244.374",
+   "titulo": "A-23",
+   "via": "pk 299.282",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.67931,
-   "lon": -0.93687,
+   "lat": 41.74285,
+   "lon": -0.84327,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29572542",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 506.792",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.70994,
+   "lon": -0.86196,
    "precision": "exacta"
   }
  ]
