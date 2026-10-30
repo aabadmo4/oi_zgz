@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T10:02+01:00",
+ "actualizado": "2026-10-30T11:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -20,7 +20,7 @@
    "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía.",
    "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
    "inicio": "2025-07-09",
-   "fin": "2026-10-31",
+   "fin": "2027-02-26",
    "lat": 41.6522307,
    "lon": -0.8679222,
    "precision": "calle",
@@ -1044,16 +1044,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29536101",
+   "id": "dgt-29541922",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 502.2–503.5",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 316.606",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.6737,
-   "lon": -0.88049,
+   "lat": 41.66567,
+   "lon": -0.93854,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29542217",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 510.139",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.737324,
+   "lon": -0.846056,
    "precision": "exacta"
   }
  ]

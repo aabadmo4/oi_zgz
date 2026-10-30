@@ -692,6 +692,17 @@
    "titulo": "A-2",
    "via": "pk 312.472",
    "visto": "2026-10-30"
+  },
+  "dgt-29541922": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29541922",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 316.606",
+   "visto": "2026-10-30"
   }
  },
  "ap-68": {
@@ -821,7 +832,7 @@
  "calle-doctor-blanco-cordero": {
   "zgz-25688": {
    "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
-   "fin": "2026-10-31",
+   "fin": "2027-02-26",
    "fuente": "Ayuntamiento",
    "id": "zgz-25688",
    "inicio": "2025-07-09",
