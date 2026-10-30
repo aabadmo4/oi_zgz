@@ -1,4 +1,9 @@
 name: CD
+run-name: >-
+  CD · ${{ github.event_name == 'workflow_dispatch'
+  && (inputs.origen == 'cron-externo' && '⏱ cron externo' || '🖐 manual')
+  || github.event_name == 'schedule' && '🕐 cron GitHub'
+  || '⬆ push' }}
 
 on:
   push:
@@ -6,6 +11,11 @@ on:
   schedule:
     - cron: '17 * * * *'   # actualización horaria de datos y publicación
   workflow_dispatch:
+    inputs:
+      origen:
+        description: 'Quién lanza el workflow (cron-externo o manual)'
+        required: false
+        default: 'manual'
 
 concurrency:
   group: cd
