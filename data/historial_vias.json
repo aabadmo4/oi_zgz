@@ -703,6 +703,28 @@
    "titulo": "VS-A-2-D",
    "via": "pk 316.606",
    "visto": "2026-10-30"
+  },
+  "dgt-29548661": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29548661",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 310.861",
+   "visto": "2026-10-30"
+  },
+  "dgt-29551618": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29551618",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 323.529",
+   "visto": "2026-10-30"
   }
  },
  "ap-68": {

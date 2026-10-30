@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T13:01+01:00",
+ "actualizado": "2026-10-30T14:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1018,55 +1018,68 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29534540",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 502.2–503.5",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.67361,
-   "lon": -0.88065,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29534567",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 294.5–294.9",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.70333,
-   "lon": -0.8397351,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29547594",
+   "id": "dgt-29548661",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "ZP-2105",
-   "via": "pk 2.811",
+   "titulo": "A-2",
+   "via": "pk 310.861",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.58514,
-   "lon": -0.82882,
+   "lat": 41.63048,
+   "lon": -0.988679,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29547609",
+   "id": "dgt-29550322",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-2a",
-   "via": "pk 326.336",
+   "titulo": "A-68",
+   "via": "pk 230.053",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.66965,
-   "lon": -0.83954,
+   "lat": 41.60439,
+   "lon": -0.82701,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29550684",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 229.908",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.60335,
+   "lon": -0.82581,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29551057",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 234.194",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.63131,
+   "lon": -0.85877,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29551618",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 323.529",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.679573,
+   "lon": -0.867098,
    "precision": "exacta"
   }
  ]
