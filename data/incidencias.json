@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T06:27+01:00",
+ "actualizado": "2026-10-30T07:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 0
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -1016,6 +1016,19 @@
    "lat": 41.647136,
    "lon": -0.8946807,
    "precision": "portal"
+  },
+  {
+   "id": "dgt-29533225",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.624924,
+   "lon": -0.8490524,
+   "precision": "exacta"
   }
  ]
 }
