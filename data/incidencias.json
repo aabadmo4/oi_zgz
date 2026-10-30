@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T18:01+01:00",
+ "actualizado": "2026-10-30T19:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -1031,16 +1031,94 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29562004",
+   "id": "dgt-29563731",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.693",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.666073,
-   "lon": -0.838109,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29563903",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 328.754",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.665527,
+   "lon": -0.8061,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29564022",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.224",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.70484,
+   "lon": -1.0065733,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29564864",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.0",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.68006,
+   "lon": -0.88447994,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29564887",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 505.903",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.702717,
+   "lon": -0.865822,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29564944",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.177",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.6801,
+   "lon": -0.882503,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29565340",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-2",
+   "via": "pk 328.503",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.6613,
+   "lon": -0.82018,
    "precision": "exacta"
   }
  ]

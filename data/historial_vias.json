@@ -769,6 +769,50 @@
    "titulo": "A-2",
    "via": "pk 324.419",
    "visto": "2026-10-30"
+  },
+  "dgt-29563731": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29563731",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6",
+   "visto": "2026-10-30"
+  },
+  "dgt-29563903": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29563903",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 328.754",
+   "visto": "2026-10-30"
+  },
+  "dgt-29564864": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29564864",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.0",
+   "visto": "2026-10-30"
+  },
+  "dgt-29564944": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29564944",
+   "inicio": "2026-10-30",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.177",
+   "visto": "2026-10-30"
   }
  },
  "ap-68": {
