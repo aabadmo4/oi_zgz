@@ -145,9 +145,24 @@ def actualizar_historial(vias, hist, hoy):
     return hist
 
 
+def es_carretera(sl):
+    """A-2, AP-68, Z-30, Z-40, N-232, carretera-albardin...: en ellas no se muestra historial (son avisos puntuales de la DGT)."""
+    return bool(re.match(r"^(a|ap|z|n|ca|ma|h)-\d", sl)) or sl.startswith("carretera-")
+
+
 def recientes(hist_via, activas):
+    """Incidencias ya no activas, sin repetidas: se descartan las de tipo 'Otros' (puntos sueltos de la DGT)
+    y las que coinciden en título, tipo, tramo y fechas con otra más reciente o con una activa."""
     ids = {i["id"] for i in activas}
-    return sorted((r for k, r in hist_via.items() if k not in ids), key=lambda r: r.get("visto", ""), reverse=True)
+    clave = lambda r: (r.get("titulo"), r.get("tipo"), r.get("via"), r.get("detalle"), r.get("inicio"))
+    vistas = {clave(i) for i in activas}
+    out = []
+    for r in sorted((r for k, r in hist_via.items() if k not in ids and r.get("tipo") != "Otros"),
+                    key=lambda r: r.get("visto", ""), reverse=True):
+        if clave(r) not in vistas:
+            vistas.add(clave(r))
+            out.append(r)
+    return out
 
 
 def bloque_portada(vias, limite=15):
@@ -322,7 +337,7 @@ if(p.tz)g.addLayer(L.polyline(p.tz,{{color:c,weight:6,opacity:.85}}))}});
 map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
 </script>"""
     if rec:
-        fil = "".join(f'<li><div class="t">{esc(r["titulo"])}</div><div class="s">{esc(r["tipo"])} · {esc(r["fuente"])}' + (f' · {esc(cuando(r))}' if cuando(r) else "") + f' · visto por última vez el {esc(fecha(r["visto"]))}</div></li>' for r in rec[:10])
+        fil = "".join(f'<li><div class="t">{esc(r["titulo"])}{(" · " + esc(r["via"])) if r.get("via") else ""}</div><div class="s">{esc(r["tipo"])} · {esc(r["fuente"])}' + (f' · {esc(cuando(r))}' if cuando(r) else "") + f' · visto por última vez el {esc(fecha(r["visto"]))}</div></li>' for r in rec[:5])
         recientes_html = f'<h2>Incidencias recientes en {esc(nombre)}</h2><p class="mute">Avisos de los últimos {DIAS_HISTORIAL} días que ya no figuran como activos.</p><ul class="lista">{fil}</ul>'
     else:
         recientes_html = ""
@@ -404,7 +419,7 @@ def main():
     carpeta = salida / "vias"
     carpeta.mkdir(parents=True, exist_ok=True)
     for s, v in vias.items():
-        (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act, recientes(hist.get(s, {}), v["incidencias"])), encoding="utf-8")
+        (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act, () if es_carretera(s) else recientes(hist.get(s, {}), v["incidencias"])), encoding="utf-8")
     (carpeta / "index.html").write_text(pagina_indice(vias, desc_p, BASE, act), encoding="utf-8")
 
     def indexable(s, v):
