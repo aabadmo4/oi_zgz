@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T12:01+01:00",
+ "actualizado": "2026-10-30T13:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -1018,19 +1018,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29534567",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 294.5–294.9",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.70333,
-   "lon": -0.8397351,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29534540",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1044,55 +1031,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29543944",
+   "id": "dgt-29534567",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.247",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 294.5–294.9",
    "detalle": "",
    "inicio": "2026-10-30",
-   "fin": null,
-   "lat": 41.70493,
-   "lon": -1.0068166,
+   "fin": "2026-10-30",
+   "lat": 41.70333,
+   "lon": -0.8397351,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29544196",
+   "id": "dgt-29547594",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 29.191",
+   "titulo": "ZP-2105",
+   "via": "pk 2.811",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.61857,
-   "lon": -0.94373,
+   "lat": 41.58514,
+   "lon": -0.82882,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29544541",
+   "id": "dgt-29547609",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 25.806",
+   "titulo": "N-2a",
+   "via": "pk 326.336",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.60685,
-   "lon": -0.90642,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29544929",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 15.783",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": null,
-   "lat": 41.6562,
-   "lon": -0.8411854,
+   "lat": 41.66965,
+   "lon": -0.83954,
    "precision": "exacta"
   }
  ]
