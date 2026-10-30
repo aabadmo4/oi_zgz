@@ -245,7 +245,7 @@ def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="",
 <main>
 {cuerpo}
 </main>
-<footer><nav aria-label="Información legal"><a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a> · <a href="https://github.com/aabadmo4/oi_zgz" target="_blank" rel="noopener">Código abierto en GitHub</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
+<footer><nav aria-label="Información legal"><a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a> · <a href="/acerca.html">Acerca de</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
 {scripts}
 </body>
 </html>
@@ -256,12 +256,8 @@ ADS = {"client": "ca-pub-2672664299641705", "banner": "3859322059", "feed": "930
 
 
 def anuncio(tipo):
-    """Bloque de AdSense con los mismos IDs que usa la portada. 'banner' = display responsive; 'feed' = fluido."""
-    fmt = (f'data-ad-format="fluid" data-ad-layout-key="{ADS["layout"]}"' if tipo == "feed"
-           else 'data-ad-format="auto" data-full-width-responsive="true"')
-    return (f'<div class="ad"><small>Publicidad</small><ins class="adsbygoogle" style="display:block" '
-            f'data-ad-client="{ADS["client"]}" data-ad-slot="{ADS[tipo]}" {fmt}></ins>'
-            '<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>')
+    """Anuncios desactivados en las páginas de vías (AdSense pendiente de aprobación). Solo hay anuncios en la portada."""
+    return ""
 
 
 def ld_json(obj):
@@ -413,7 +409,7 @@ def main():
 
     def indexable(s, v):
         return any(es_larga(i) for i in v["incidencias"]) or (v["principal"] and (v["incidencias"] or hist.get(s)))
-    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8")]
+    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8"), ("/acerca.html", "monthly", "0.4")]
     urls += [(f"/vias/{s}.html", "daily", "0.7" if v["principal"] else "0.5") for s, v in vias.items() if indexable(s, v)]
     lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
     # Aviso legal y privacidad llevan noindex: no van al sitemap.
