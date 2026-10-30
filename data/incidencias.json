@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T08:09+01:00",
+ "actualizado": "2026-10-30T09:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1018,29 +1018,42 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29533953",
+   "id": "dgt-29536101",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 322.0–322.6",
+   "tipo": "Corte",
+   "titulo": "N-330",
+   "via": "pk 502.2–503.5",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.67964,
-   "lon": -0.8836497,
+   "lat": 41.6737,
+   "lon": -0.88049,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29535043",
+   "id": "dgt-29536841",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 312.472",
+   "titulo": "A-120",
+   "via": "pk 2.432",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.638214,
-   "lon": -0.97360176,
+   "lat": 41.63895,
+   "lon": -0.99258,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29534540",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-330",
+   "via": "pk 502.2–503.5",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": "2026-10-30",
+   "lat": 41.67361,
+   "lon": -0.88065,
    "precision": "exacta"
   }
  ]
