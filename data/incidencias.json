@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T11:01+01:00",
+ "actualizado": "2026-10-30T12:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1018,19 +1018,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29534540",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 502.2–503.5",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": "2026-10-30",
-   "lat": 41.67361,
-   "lon": -0.88065,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29534567",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1044,29 +1031,68 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29541922",
+   "id": "dgt-29534540",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-D",
-   "via": "pk 316.606",
+   "tipo": "Corte",
+   "titulo": "N-330",
+   "via": "pk 502.2–503.5",
    "detalle": "",
    "inicio": "2026-10-30",
-   "fin": null,
-   "lat": 41.66567,
-   "lon": -0.93854,
+   "fin": "2026-10-30",
+   "lat": 41.67361,
+   "lon": -0.88065,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29542217",
+   "id": "dgt-29543944",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 510.139",
+   "titulo": "N-232",
+   "via": "pk 251.247",
    "detalle": "",
    "inicio": "2026-10-30",
    "fin": null,
-   "lat": 41.737324,
-   "lon": -0.846056,
+   "lat": 41.70493,
+   "lon": -1.0068166,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29544196",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 29.191",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.61857,
+   "lon": -0.94373,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29544541",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 25.806",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.60685,
+   "lon": -0.90642,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29544929",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 15.783",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.6562,
+   "lon": -0.8411854,
    "precision": "exacta"
   }
  ]
