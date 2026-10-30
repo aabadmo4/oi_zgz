@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T09:01+01:00",
+ "actualizado": "2026-10-30T10:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1018,32 +1018,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29536101",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 502.2–503.5",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": null,
-   "lat": 41.6737,
-   "lon": -0.88049,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29536841",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 2.432",
-   "detalle": "",
-   "inicio": "2026-10-30",
-   "fin": null,
-   "lat": 41.63895,
-   "lon": -0.99258,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29534540",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1054,6 +1028,32 @@
    "fin": "2026-10-30",
    "lat": 41.67361,
    "lon": -0.88065,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29534567",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 294.5–294.9",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": "2026-10-30",
+   "lat": 41.70333,
+   "lon": -0.8397351,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29536101",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-330",
+   "via": "pk 502.2–503.5",
+   "detalle": "",
+   "inicio": "2026-10-30",
+   "fin": null,
+   "lat": 41.6737,
+   "lon": -0.88049,
    "precision": "exacta"
   }
  ]
