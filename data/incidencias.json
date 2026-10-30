@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-29T22:10+01:00",
+ "actualizado": "2026-10-30T02:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 66
+   "n": 56
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -348,31 +348,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31362",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "TORRES QUEVEDO L., 8",
-   "via": "",
-   "detalle": "Para reparar una acometida de vertido a la altura del no 32",
-   "inicio": "2026-10-26",
-   "fin": "2026-10-29",
-   "lat": 41.65536,
-   "lon": -0.9069804,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.655379,
-      -0.906976
-     ],
-     [
-      41.655341,
-      -0.906985
-     ]
-    ]
-   ]
-  },
-  {
    "id": "zgz-31427",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -409,6 +384,19 @@
    "fin": "2027-02-18",
    "lat": 41.6410979,
    "lon": -0.8966768,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31467",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "FERNANDO CATOLICO PS, 9",
+   "via": "A la altura del nº 9 (junto a la traza del tranvía)",
+   "detalle": "Para sustituir la tapa de registro de telecomunicaciones",
+   "inicio": "2026-10-31",
+   "fin": "2026-10-31",
+   "lat": 41.643368,
+   "lon": -0.8923708,
    "precision": "portal"
   },
   {
@@ -519,19 +507,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31423",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ECHEGARAY Y CABALLERO, 28",
-   "via": "A la altura del nº 28",
-   "detalle": "Para sustituir la tapa de registro de telecomunicaciones",
-   "inicio": "2026-10-28",
-   "fin": "2026-10-29",
-   "lat": 41.660088368100325,
-   "lon": -0.8853718894121428,
-   "precision": "aprox"
-  },
-  {
    "id": "zgz-31425",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -543,39 +518,6 @@
    "lat": 41.6528206,
    "lon": -0.8935064,
    "precision": "calle"
-  },
-  {
-   "id": "zgz-31440",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "MOLINO DE LAS ARMAS, 1",
-   "via": "Números pares, entre C/ Marqués de la Cadena y C/ Pascuala Perié",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 16 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6617614,
-   "lon": -0.8614586,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.661656,
-      -0.861758
-     ],
-     [
-      41.66167,
-      -0.861676
-     ],
-     [
-      41.661853,
-      -0.861241
-     ],
-     [
-      41.661905,
-      -0.861176
-     ]
-    ]
-   ]
   },
   {
    "id": "zgz-31466",
@@ -646,80 +588,6 @@
    "barrio": "Cartuja Baja"
   },
   {
-   "id": "zgz-31436",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ESCORIAZA Y FABRO M., 36",
-   "via": "Entre C/ Moncayo y C/ Pedro Arbués",
-   "detalle": "",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6544356,
-   "lon": -0.8990107,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.654652,
-      -0.899929
-     ],
-     [
-      41.654629,
-      -0.899793
-     ],
-     [
-      41.654641,
-      -0.899736
-     ],
-     [
-      41.654646,
-      -0.899686
-     ],
-     [
-      41.654642,
-      -0.899638
-     ],
-     [
-      41.654631,
-      -0.899585
-     ],
-     [
-      41.654598,
-      -0.899486
-     ],
-     [
-      41.654502,
-      -0.899206
-     ],
-     [
-      41.654456,
-      -0.899073
-     ],
-     [
-      41.654184,
-      -0.898262
-     ],
-     [
-      41.654131,
-      -0.898105
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "zgz-31438",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "MONCAYO, 8",
-   "via": "Números pares, entre C/ Escoriaza y Fabro y C/ Asturias",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6499255,
-   "lon": -0.8954156,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31424",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -767,19 +635,6 @@
      ]
     ]
    ]
-  },
-  {
-   "id": "zgz-31434",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ORUS JOAQUIN, 10",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.65062,
-   "lon": -0.8956927,
-   "precision": "portal"
   },
   {
    "id": "zgz-31114",
@@ -832,90 +687,6 @@
    "lat": 41.628247346190896,
    "lon": -0.9114075956206455,
    "precision": "aprox"
-  },
-  {
-   "id": "zgz-31426",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CESAR AUGUSTO AVDA, 11",
-   "via": "",
-   "detalle": "Para analizar el deterioro prematuro del pavimento",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6519156,
-   "lon": -0.8853399,
-   "precision": "calle"
-  },
-  {
-   "id": "zgz-31433",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CABALDOS CAMINO DE, 68",
-   "via": "Entre C/ José Galiay y Cº del Junco",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.639801,
-   "lon": -0.869092,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31435",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAN PEDRO ARBUES, 10",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6510688,
-   "lon": -0.8958517,
-   "precision": "calle"
-  },
-  {
-   "id": "zgz-31437",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ASTURIAS",
-   "via": "Entre C/ Pedro Arbués y C/ Moncayo",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6494332,
-   "lon": -0.8957492,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.649926,
-      -0.895636
-     ],
-     [
-      41.649853,
-      -0.895653
-     ],
-     [
-      41.649632,
-      -0.895706
-     ],
-     [
-      41.649403,
-      -0.895756
-     ],
-     [
-      41.649347,
-      -0.895768
-     ],
-     [
-      41.649025,
-      -0.895839
-     ],
-     [
-      41.648947,
-      -0.89588
-     ]
-    ]
-   ]
   },
   {
    "id": "zgz-30944",
@@ -1247,20 +1018,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31439",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CRISTO REY SGR, 37",
-   "via": "Entre C/ Tello Valdivieso y C/ Manuel Sever",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-10-29",
-   "fin": "2026-10-29",
-   "lat": 41.6923912,
-   "lon": -0.8651962,
-   "precision": "portal",
-   "barrio": "San Gregorio"
-  },
-  {
    "id": "dgt-29504294",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1274,13 +1031,13 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29501819",
+   "id": "dgt-29501854",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
    "via": "pk 323.5–325.8",
    "detalle": "",
-   "inicio": "2026-10-29",
+   "inicio": "2026-10-30",
    "fin": "2026-10-30",
    "lat": 41.676174,
    "lon": -0.8383114,
@@ -1291,12 +1048,38 @@
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 316.8–317.5",
+   "via": "pk 317.2–317.5",
    "detalle": "",
-   "inicio": "2026-10-29",
+   "inicio": "2026-10-30",
    "fin": null,
    "lat": 41.671192,
    "lon": -0.93229735,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29531748",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 316.8–317.2",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.669067,
+   "lon": -0.93447834,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29531749",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 316.8–317.2",
+   "detalle": "",
+   "inicio": "2026-10-29",
+   "fin": null,
+   "lat": 41.669067,
+   "lon": -0.93447834,
    "precision": "exacta"
   }
  ]
