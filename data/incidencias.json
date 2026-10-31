@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T17:01+01:00",
+ "actualizado": "2026-10-31T18:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -632,58 +632,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29588512",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 325.821",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.676113,
-   "lon": -0.838075,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29589014",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 23.632",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.606804,
-   "lon": -0.8810444,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29589051",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 291.957",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.68174,
-   "lon": -0.8341,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29589152",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 245.863",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.68568,
-   "lon": -0.95251,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29589176",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -694,6 +642,32 @@
    "fin": null,
    "lat": 41.61006,
    "lon": -0.87491894,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29590503",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "CHE-0101",
+   "via": "pk 2.505",
+   "detalle": "",
+   "inicio": "2026-10-31",
+   "fin": null,
+   "lat": 41.64128,
+   "lon": -0.94979,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29590579",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 233.2",
+   "detalle": "",
+   "inicio": "2026-10-31",
+   "fin": null,
+   "lat": 41.625732,
+   "lon": -0.84826994,
    "precision": "exacta"
   }
  ]
