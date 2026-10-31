@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T09:01+01:00",
+ "actualizado": "2026-10-31T10:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -632,16 +632,16 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29575768",
+   "id": "dgt-29577717",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 242.966",
+   "titulo": "A-68",
+   "via": "pk 232.872",
    "detalle": "",
    "inicio": "2026-10-31",
    "fin": null,
-   "lat": 41.66098,
-   "lon": -0.92713,
+   "lat": 41.62305,
+   "lon": -0.84624,
    "precision": "exacta"
   }
  ]
