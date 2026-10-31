@@ -1904,6 +1904,17 @@
    "titulo": "Z-40",
    "via": "pk 20.515",
    "visto": "2026-10-31"
+  },
+  "dgt-29593193": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29593193",
+   "inicio": "2026-10-31",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 18.229",
+   "visto": "2026-10-31"
   }
  }
 }
