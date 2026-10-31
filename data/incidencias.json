@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-10-31T23:01+01:00",
+ "actualizado": "2026-11-01T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 38
+   "n": 37
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 0
   }
  },
  "sin_ubicar": 0,
@@ -308,19 +308,6 @@
    "precision": "calle"
   },
   {
-   "id": "zgz-30394",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "SADABA, 1",
-   "via": "",
-   "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo) y para ejecutar las aceras y la futura entrada de garajes",
-   "inicio": "2026-08-07",
-   "fin": "2026-10-31",
-   "lat": 41.6545169,
-   "lon": -0.897816,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -344,19 +331,6 @@
    "fin": "2027-02-18",
    "lat": 41.6410979,
    "lon": -0.8966768,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31467",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "FERNANDO CATOLICO PS, 9",
-   "via": "A la altura del nº 9 (junto a la traza del tranvía)",
-   "detalle": "Para sustituir la tapa de registro de telecomunicaciones",
-   "inicio": "2026-10-31",
-   "fin": "2026-10-31",
-   "lat": 41.643368,
-   "lon": -0.8923708,
    "precision": "portal"
   },
   {
@@ -559,6 +533,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31473",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "INDEPENDENCIA PS, 6",
+   "via": "",
+   "detalle": "Para la instalación de la iluminación navideña, del 2 de noviembre (a las 23:00 horas) al 4 de noviembre (a las 05:00 horas).",
+   "inicio": "2026-11-02",
+   "fin": "2026-11-04",
+   "lat": 41.6515458,
+   "lon": -0.881975,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31384",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -630,32 +617,6 @@
    "lat": 41.647136,
    "lon": -0.8946807,
    "precision": "portal"
-  },
-  {
-   "id": "dgt-29595800",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 508.97",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.72751,
-   "lon": -0.85148,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29596064",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 510.217",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.73808,
-   "lon": -0.84585,
-   "precision": "exacta"
   }
  ]
 }
