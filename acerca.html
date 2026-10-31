@@ -23,8 +23,7 @@ document.body.appendChild(b)}
 function init(){var s=document.createElement('style');
 s.textContent='#oi-cb{position:fixed;left:0;right:0;bottom:0;z-index:99999;box-sizing:border-box;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:#202328;color:#f1f1f1;border-top:3px solid #ffc400;font:14px/1.4 system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}#oi-cb p{margin:0;flex:1 1 260px}#oi-cb a{color:#ffc400}#oi-cb div{display:flex;gap:8px}#oi-cb button{font:inherit;font-weight:600;min-height:44px;padding:9px 18px;border:2px solid #ffc400;border-radius:6px;background:transparent;color:#ffc400;cursor:pointer}';
 document.head.appendChild(s);
-var n=document.querySelector('footer nav');
-if(n){var a=document.createElement('a');a.href='#';a.textContent='Preferencias de cookies';a.addEventListener('click',function(e){e.preventDefault();open()});n.appendChild(document.createTextNode(' \u00b7 '));n.appendChild(a)}
+var p=document.getElementById('oi-cookie-prefs');if(p)p.addEventListener('click',function(e){e.preventDefault();open()});
 if(get()===null)open()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
 </script>
@@ -95,6 +94,6 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 28px}
 <p>La web puede mostrar publicidad de Google AdSense, que también ayuda a cubrir gastos. Puedes consultar cómo se tratan tus datos en la <a href="privacidad.html">política de privacidad y cookies</a>.</p>
 </article>
 </main>
-<footer class="mute"><nav aria-label="Información legal"><a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU</div></footer>
+<footer class="mute"><nav aria-label="Información legal"><a href="cortes-de-agua-zaragoza.html">Cortes de agua</a> · <a href="acerca.html">Acerca de</a> · <a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU</div></footer>
 </body>
 </html>

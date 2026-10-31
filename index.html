@@ -23,8 +23,7 @@ document.body.appendChild(b)}
 function init(){var s=document.createElement('style');
 s.textContent='#oi-cb{position:fixed;left:0;right:0;bottom:0;z-index:99999;box-sizing:border-box;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:#202328;color:#f1f1f1;border-top:3px solid #ffc400;font:14px/1.4 system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}#oi-cb p{margin:0;flex:1 1 260px}#oi-cb a{color:#ffc400}#oi-cb div{display:flex;gap:8px}#oi-cb button{font:inherit;font-weight:600;min-height:44px;padding:9px 18px;border:2px solid #ffc400;border-radius:6px;background:transparent;color:#ffc400;cursor:pointer}';
 document.head.appendChild(s);
-var n=document.querySelector('footer nav');
-if(n){var a=document.createElement('a');a.href='#';a.textContent='Preferencias de cookies';a.addEventListener('click',function(e){e.preventDefault();open()});n.appendChild(document.createTextNode(' \u00b7 '));n.appendChild(a)}
+var p=document.getElementById('oi-cookie-prefs');if(p)p.addEventListener('click',function(e){e.preventDefault();open()});
 if(get()===null)open()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
 </script>
@@ -170,6 +169,9 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <h3>Incidencias actuales en Zaragoza</h3>
 <!--INC--><!--/INC-->
 
+<h3>Cortes de agua en Zaragoza</h3>
+<!--AGUA--><p><a href="/cortes-de-agua-zaragoza.html">Consulta los cortes de agua programados en Zaragoza, con mapa y horarios →</a></p><!--/AGUA-->
+
 <h3>Consulta por vía</h3>
 <!--VIAS-->
 <p>También puedes ver las incidencias de cada vía por separado: <a href="/vias/avenida-de-valencia.html">Avenida de Valencia</a>, <a href="/vias/avenida-de-madrid.html">Avenida de Madrid</a>, <a href="/vias/coso.html">Coso</a>, <a href="/vias/ronda-de-la-hispanidad.html">Ronda de la Hispanidad</a>, <a href="/vias/z-30.html">Z-30</a>, <a href="/vias/a-2.html">A-2</a> y <a href="/vias/">todas las vías</a>.</p>
@@ -181,7 +183,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <p><strong>¿Es una fuente oficial?</strong> No. Es un servicio independiente y gratuito que reorganiza datos públicos. La información es orientativa: obedece siempre la señalización y las indicaciones de la Policía Local y de tráfico.</p>
 <p><strong>¿Puedo ver las incidencias desde el móvil?</strong> Sí, la página se adapta a móviles y tabletas, y no necesitas instalar nada.</p>
 </section>
-<footer><nav aria-label="Información legal"><a href="/vias/">Vías</a> · <a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a> · <a href="acerca.html">Acerca de</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU</div></footer>
+<footer><nav aria-label="Información legal"><a href="/vias/">Vías</a> · <a href="cortes-de-agua-zaragoza.html">Cortes de agua</a> · <a href="acerca.html">Acerca de</a> · <a href="avisolegal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad y cookies</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU</div></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 // ---- Publicidad: IDs de AdSense ----
