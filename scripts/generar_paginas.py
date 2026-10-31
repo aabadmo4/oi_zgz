@@ -270,7 +270,16 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 '''
 
 
-def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="", ld="", scripts=""):
+def pie_html(primero=("Incidencias", "/vias/")):
+    """Pie común a todas las páginas: primer enlace configurable (Incidencias → /vias/, o Mapa → / en el listado de vías)."""
+    items = [(primero[1], primero[0]), ("/cortes-de-agua-zaragoza.html", "Cortes de agua"), ("/acerca.html", "Acerca de"),
+             ("/avisolegal.html", "Aviso legal"), ("/privacidad.html", "Privacidad y cookies")]
+    nav = " · ".join(f'<a href="{h}">{t}</a>' for h, t in items)
+    return (f'<footer><nav aria-label="Información legal">{nav}</nav>'
+            '<div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>')
+
+
+def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="", ld="", scripts="", footer_primero=("Incidencias", "/vias/")):
     return f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -298,7 +307,7 @@ def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="",
 <main>
 {cuerpo}
 </main>
-<footer><nav aria-label="Información legal"><a href="/cortes-de-agua-zaragoza.html">Cortes de agua</a> · <a href="/acerca.html">Acerca de</a> · <a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
+{pie_html(footer_primero)}
 {scripts}
 </body>
 </html>
@@ -507,7 +516,7 @@ def pagina_indice(vias, desc_p, BASE, actualizado):
     cuerpo = (f'<nav class="mig" aria-label="Migas de pan"><a href="/">Inicio</a> › Vías</nav><h1>{esc(titulo)}</h1>'
               f'<p>Elige una vía para ver sus incidencias actuales. Entre paréntesis, las incidencias activas.</p>{sec}'
               f'<p class="mute">Actualizado: {esc(fecha_hora(actualizado))}.</p><p><a href="/">← Ver mapa completo de Zaragoza</a></p>')
-    return plantilla(titulo, desc, canon, cuerpo)
+    return plantilla(titulo, desc, canon, cuerpo, footer_primero=("Mapa", "/"))
 
 
 def main():
