@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T22:37+01:00",
+ "actualizado": "2026-10-31T23:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -632,19 +632,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29595768",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 243.332",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.66338,
-   "lon": -0.93043,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29595800",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -658,42 +645,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29595842",
+   "id": "dgt-29596064",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 258.247",
+   "titulo": "N-330",
+   "via": "pk 510.217",
    "detalle": "",
    "inicio": "2026-10-31",
    "fin": null,
-   "lat": 41.73891,
-   "lon": -1.07691,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29595887",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 253.661",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.71437,
-   "lon": -1.03381,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29595909",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 250.914",
-   "detalle": "",
-   "inicio": "2026-10-31",
-   "fin": null,
-   "lat": 41.69891,
-   "lon": -1.00731,
+   "lat": 41.73808,
+   "lon": -0.84585,
    "precision": "exacta"
   }
  ]
