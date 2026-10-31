@@ -165,6 +165,43 @@ def recientes(hist_via, activas):
     return out
 
 
+TIPOS_VIA = "AVENIDA|PASEO|PLAZA|CAMINO|CARRETERA|CALLE|RONDA|VIA|TRAVESIA|CUESTA|PARQUE|GLORIETA"
+
+
+def es_agua(i):
+    return i.get("tipo") == "Suministro" and "agua" in fold(i.get("detalle", "") + " " + i.get("titulo", ""))
+
+
+def nombre_corte(i, nombres=None):
+    """'AMERICA AVENIDA DE, 68' -> 'Avenida de America'; 'C/ AMBROSIO DEL RUSTE' -> 'Calle Ambrosio del Ruste'; 'ITALIA, 16' -> 'Calle Italia'."""
+    raw = re.sub(r"^(C/|CL\.?)\s*", "", str(i["titulo"]).split(",")[0].strip().upper())
+    m = re.match(rf"^(.*?)\s+({TIPOS_VIA})\s+(DE LA|DEL|DE LOS|DE LAS|DE)$", raw)
+    if m:
+        raw = f"{m.group(2)} {m.group(3)} {m.group(1)}"
+    elif not re.match(rf"^({TIPOS_VIA})\b", raw):
+        raw = f"CALLE {raw}"
+    n = nombre_calle(raw)
+    return (nombres or {}).get(slug(n), n)
+
+
+def bloque_agua(incs, nombres=None, limite=6):
+    """Resumen (HTML sin JavaScript) de los cortes de agua programados, con enlace a la página completa."""
+    avisos = sorted((i for i in incs if es_agua(i)), key=lambda i: (i.get("inicio") or "", nombre_corte(i, nombres)))
+    out = ""
+    for i in avisos[:limite]:
+        linea = " · ".join(x for x in [esc(i.get("via", "")), esc(i.get("detalle", "")), esc(cuando(i))] if x)
+        out += f'<li><span aria-hidden="true">💧</span> <strong>{esc(titulo_ficha(i, nombre_corte(i, nombres)))}</strong><br><span class="mute">{linea}</span></li>'
+    n = len(avisos)
+    if n:
+        cab = f"<p>Hay {n} {'aviso' if n == 1 else 'avisos'} de cortes de agua programados en Zaragoza.</p>"
+        mas = f"Ver los {n} cortes de agua, con mapa y horarios" if n > limite else "Ver los cortes de agua con mapa y horarios"
+        cuerpo = cab + f'<ul class="inc">{out}</ul>'
+    else:
+        mas = "Consultar los cortes de agua programados"
+        cuerpo = "<p>Ahora mismo no hay cortes de agua programados en Zaragoza.</p>"
+    return cuerpo + f'<p><a href="/cortes-de-agua-zaragoza.html">{mas} →</a></p>'
+
+
 def bloque_portada(vias, limite=15):
     """Lista HTML (sin JavaScript) con las incidencias actuales más relevantes, enlazadas a su página de vía."""
     orden = {"Corte": 0, "Accidente": 1, "Obras": 2, "Retención": 3, "Suministro": 4, "Otros": 5}
@@ -172,6 +209,8 @@ def bloque_portada(vias, limite=15):
     for sl, v in vias.items():
         enlazable = v["principal"] or any(es_larga(i) for i in v["incidencias"])
         for i in v["incidencias"]:
+            if es_agua(i):
+                continue
             filas.append((orden.get(i["tipo"], 9), 0 if enlazable else 1, i, sl if enlazable else None, v["nombre"]))
     filas.sort(key=lambda f: (f[0], f[1]))
     out = ""
@@ -224,8 +263,7 @@ document.body.appendChild(b)}
 function init(){var s=document.createElement('style');
 s.textContent='#oi-cb{position:fixed;left:0;right:0;bottom:0;z-index:99999;box-sizing:border-box;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:#202328;color:#f1f1f1;border-top:3px solid #ffc400;font:14px/1.4 system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}#oi-cb p{margin:0;flex:1 1 260px}#oi-cb a{color:#ffc400}#oi-cb div{display:flex;gap:8px}#oi-cb button{font:inherit;font-weight:600;min-height:44px;padding:9px 18px;border:2px solid #ffc400;border-radius:6px;background:transparent;color:#ffc400;cursor:pointer}';
 document.head.appendChild(s);
-var n=document.querySelector('footer nav');
-if(n){var a=document.createElement('a');a.href='#';a.textContent='Preferencias de cookies';a.addEventListener('click',function(e){e.preventDefault();open()});n.appendChild(document.createTextNode(' \u00b7 '));n.appendChild(a)}
+var p=document.getElementById('oi-cookie-prefs');if(p)p.addEventListener('click',function(e){e.preventDefault();open()});
 if(get()===null)open()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
 </script>
@@ -260,7 +298,7 @@ def plantilla(titulo, desc, canon, cuerpo, robots="index,follow", extra_head="",
 <main>
 {cuerpo}
 </main>
-<footer><nav aria-label="Información legal"><a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a> · <a href="/acerca.html">Acerca de</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
+<footer><nav aria-label="Información legal"><a href="/cortes-de-agua-zaragoza.html">Cortes de agua</a> · <a href="/acerca.html">Acerca de</a> · <a href="/avisolegal.html">Aviso legal</a> · <a href="/privacidad.html">Privacidad y cookies</a></nav><div>© 2026 Obras e Incidencias Zaragoza - TechECS_EU. Información orientativa, no oficial: obedece siempre la señalización.</div></footer>
 {scripts}
 </body>
 </html>
@@ -363,6 +401,95 @@ map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
     return plantilla(titulo, desc, canon, cuerpo, robots, extra, ld, scripts)
 
 
+def pagina_cortes_agua(incs, BASE, actualizado, hoy, nombres=None):
+    """Página 'Cortes de agua en Zaragoza hoy' con los avisos de tipo Suministro (agua), agrupados por día."""
+    nombres = nombres or {}
+    canon = f"{BASE}/cortes-de-agua-zaragoza.html"
+    avisos = [i for i in incs if es_agua(i)]
+
+    def nom(i):
+        return nombre_corte(i, nombres)
+
+    def dia(i):
+        return i.get("inicio") or hoy
+    hoy_l = sorted((i for i in avisos if dia(i) <= hoy), key=lambda i: (nom(i), i["titulo"]))
+    prox = sorted((i for i in avisos if dia(i) > hoy), key=lambda i: (dia(i), nom(i)))
+    f_hoy = fecha(hoy)
+
+    def li(i):
+        e, c = TIPOS["Suministro"]
+        aviso = {"calle": "Toda la calle o sin número exacto: ubicación orientativa", "aprox": "Ubicación aproximada"}.get(i.get("precision"), "")
+        return (f'<li><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
+                f'<div class="t">{esc(titulo_ficha(i, nom(i)))}</div>'
+                + (f'<div class="s">{esc(i["via"])}</div>' if i.get("via") else "")
+                + (f'<div class="s"><strong>{esc(i["detalle"])}</strong></div>' if i.get("detalle") else "")
+                + (f'<div class="s">{esc(aviso)}</div>' if aviso else "") + "</div></li>")
+
+    n = len(avisos)
+    if n:
+        res = (f"Hoy, {f_hoy}, hay {len(hoy_l)} {'aviso' if len(hoy_l) == 1 else 'avisos'} de cortes de agua programados en Zaragoza"
+               + (f" y {len(prox)} {'previsto' if len(prox) == 1 else 'previstos'} para los próximos días." if prox else "."))
+    else:
+        res = f"A {f_hoy} no hay cortes de agua programados en Zaragoza según los avisos del Ayuntamiento."
+    titulo = "Cortes de agua en Zaragoza hoy: calles y horarios"
+    desc = f"{res} Calles afectadas, tramos y horarios, actualizado cada hora con los avisos del Ayuntamiento de Zaragoza."
+
+    bloques = ""
+    if hoy_l:
+        bloques += f'<h2>Cortes de agua hoy, {esc(f_hoy)}</h2><ul class="lista">{"".join(li(i) for i in hoy_l)}</ul>'
+    for d_ in sorted({dia(i) for i in prox}):
+        bloques += f'<h2>{esc(fecha(d_).capitalize())}</h2><ul class="lista">{"".join(li(i) for i in prox if dia(i) == d_)}</ul>'
+    if not n:
+        bloques = ('<p>Ahora mismo no hay cortes de agua programados. Los avisos se publican con antelación, así que vuelve a '
+                   'consultar esta página: se actualiza cada hora. Mientras tanto puedes ver <a href="/">todas las obras e incidencias de Zaragoza</a>.</p>')
+
+    extra = scripts = mapa = ""
+    if n:
+        pts = [{"lat": i["lat"], "lon": i["lon"], "n": titulo_ficha(i, nom(i)) + (" · " + i["detalle"] if i.get("detalle") else ""), "tz": i.get("trazado")} for i in avisos]
+        datos = json.dumps(pts, ensure_ascii=False).replace("</", "<\\/")
+        c = TIPOS["Suministro"][1]
+        extra = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
+        mapa = '<div id="mapa" role="region" aria-label="Mapa de cortes de agua en Zaragoza"></div>'
+        scripts = f"""<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const PTS={datos};
+const map=L.map('mapa');
+L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{maxZoom:19,attribution:'© OpenStreetMap'}}).addTo(map);
+const g=L.featureGroup().addTo(map);
+PTS.forEach(p=>{{const m=L.marker([p.lat,p.lon],{{title:p.n,icon:L.divIcon({{className:'',html:'<div class="pin" style="background:{c}">💧</div>',iconSize:[30,30],iconAnchor:[15,15]}})}});
+m.bindPopup(Object.assign(document.createElement('strong'),{{textContent:p.n}}));g.addLayer(m);
+if(p.tz)g.addLayer(L.polyline(p.tz,{{color:'{c}',weight:6,opacity:.85}}))}});
+map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
+</script>"""
+
+    cuerpo = f"""<nav class="mig" aria-label="Migas de pan"><a href="/">Inicio</a> › Cortes de agua</nav>
+<h1>Cortes de agua en Zaragoza hoy</h1>
+<p class="resumen">{esc(res)}</p>
+<p>Esta página reúne los cortes de agua programados que publica el Ayuntamiento de Zaragoza: calle, tramo afectado y horario. Son interrupciones planificadas por obras o trabajos en la red, que afectan al suministro de los edificios indicados, no al tráfico.</p>
+{mapa}
+{bloques}
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cómo sé si mi calle está afectada?</h3>
+<p>Busca tu calle en las listas de arriba. Cuando el aviso indica «números impares», «pares» o un tramo entre dos calles, solo afecta a esos portales. Si el aviso no trae número exacto, la ubicación en el mapa es orientativa.</p>
+<h3>¿Con cuánta antelación se avisa?</h3>
+<p>Depende de cada obra: los avisos aparecen aquí en cuanto el Ayuntamiento los publica y la página se actualiza cada hora.</p>
+<h3>¿Qué hago si hay una avería o un corte que no figura aquí?</h3>
+<p>Esta web no es una fuente oficial y no recoge averías imprevistas. Consulta la <a href="https://www.zaragoza.es" target="_blank" rel="noopener">web del Ayuntamiento de Zaragoza</a> o contacta con tu administración de fincas.</p>
+<p class="mute">Actualizado: {esc(fecha_hora(actualizado))}. Datos del Ayuntamiento de Zaragoza; información orientativa.</p>
+<p><a href="/">← Ver mapa completo de Zaragoza</a></p>"""
+    ld = ld_json({"@context": "https://schema.org", "@graph": [
+        {"@type": "WebPage", "@id": canon, "url": canon, "name": titulo, "inLanguage": "es-ES", "description": desc},
+        {"@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": "¿Cómo sé si mi calle está afectada por un corte de agua en Zaragoza?",
+             "acceptedAnswer": {"@type": "Answer", "text": "Busca tu calle en la lista de avisos. Si el aviso indica números pares, impares o un tramo, solo afecta a esos portales."}},
+            {"@type": "Question", "name": "¿Qué hago si hay una avería que no figura en la lista?",
+             "acceptedAnswer": {"@type": "Answer", "text": "Esta web solo recoge cortes programados publicados por el Ayuntamiento. Consulta la web del Ayuntamiento de Zaragoza o a tu administración de fincas."}}]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": BASE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Cortes de agua", "item": canon}]}]})
+    return plantilla(titulo, desc, canon, cuerpo, "index,follow", extra, ld, scripts)
+
+
 def pagina_indice(vias, desc_p, BASE, actualizado):
     canon = f"{BASE}/vias/"
     def lista(items):
@@ -421,10 +548,11 @@ def main():
     for s, v in vias.items():
         (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act, () if es_carretera(s) else recientes(hist.get(s, {}), v["incidencias"])), encoding="utf-8")
     (carpeta / "index.html").write_text(pagina_indice(vias, desc_p, BASE, act), encoding="utf-8")
+    (salida / "cortes-de-agua-zaragoza.html").write_text(pagina_cortes_agua(d.get("incidencias", []), BASE, act, hoy, nombres), encoding="utf-8")
 
     def indexable(s, v):
         return any(es_larga(i) for i in v["incidencias"]) or (v["principal"] and (v["incidencias"] or hist.get(s)))
-    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8"), ("/acerca.html", "monthly", "0.4")]
+    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8"), ("/acerca.html", "monthly", "0.4"), ("/cortes-de-agua-zaragoza.html", "hourly", "0.8")]
     urls += [(f"/vias/{s}.html", "daily", "0.7" if v["principal"] else "0.5") for s, v in vias.items() if indexable(s, v)]
     lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
     # Aviso legal y privacidad llevan noindex: no van al sitemap.
@@ -443,6 +571,7 @@ def main():
         h2 = re.sub(r"<!--VIAS-->.*?<!--/VIAS-->", lambda m: "<!--VIAS-->" + nuevo + "<!--/VIAS-->", h, flags=re.S)
         h2 = re.sub(r"<!--INC-->.*?<!--/INC-->", lambda m: "<!--INC-->" + bloque_portada(vias) + "<!--/INC-->", h2, flags=re.S)
         todas = d.get("incidencias", [])
+        h2 = re.sub(r"<!--AGUA-->.*?<!--/AGUA-->", lambda m: "<!--AGUA-->" + bloque_agua(todas, nombres) + "<!--/AGUA-->", h2, flags=re.S)
         h2 = re.sub(r'(<p id="resumen">).*?(</p>)', lambda m: m.group(1) + esc(resumen("Zaragoza", todas)) + m.group(2), h2, count=1, flags=re.S)
         if act:
             h2 = h2.replace('<span id="estado">Cargando…</span>', f'<span id="estado">Actualizado {esc(fecha_hora(act))}</span>', 1)
