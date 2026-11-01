@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T09:01+01:00",
+ "actualizado": "2026-11-01T10:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -619,29 +619,16 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29599289",
+   "id": "dgt-29600555",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 272.344",
+   "titulo": "A-68",
+   "via": "pk 234.38",
    "detalle": "",
    "inicio": "2026-11-01",
    "fin": null,
-   "lat": 41.57814,
-   "lon": -0.959537,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29599687",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 272.119",
-   "detalle": "",
-   "inicio": "2026-11-01",
-   "fin": null,
-   "lat": 41.57627,
-   "lon": -0.96048,
+   "lat": 41.63306,
+   "lon": -0.86053,
    "precision": "exacta"
   }
  ]
