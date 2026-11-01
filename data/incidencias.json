@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T01:01+01:00",
+ "actualizado": "2026-11-01T02:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -619,16 +619,16 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29597090",
+   "id": "dgt-29597507",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 299.102",
+   "titulo": "A-68",
+   "via": "pk 252.527",
    "detalle": "",
    "inicio": "2026-11-01",
    "fin": null,
-   "lat": 41.74139,
-   "lon": -0.8441,
+   "lat": 41.70781,
+   "lon": -1.02294,
    "precision": "exacta"
   }
  ]
