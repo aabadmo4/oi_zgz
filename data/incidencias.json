@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T12:01+01:00",
+ "actualizado": "2026-11-01T13:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -619,16 +619,16 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29602527",
+   "id": "dgt-29603421",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 507.474",
+   "titulo": "Z-40",
+   "via": "pk 18.394",
    "detalle": "",
    "inicio": "2026-11-01",
    "fin": null,
-   "lat": 41.71538,
-   "lon": -0.85857,
+   "lat": 41.635166,
+   "lon": -0.833392,
    "precision": "exacta"
   }
  ]

@@ -1950,6 +1950,17 @@
    "titulo": "Z-40",
    "via": "pk 19.158",
    "visto": "2026-11-01"
+  },
+  "dgt-29603421": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29603421",
+   "inicio": "2026-11-01",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 18.394",
+   "visto": "2026-11-01"
   }
  }
 }
