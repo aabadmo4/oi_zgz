@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T22:01+01:00",
+ "actualizado": "2026-11-01T23:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -629,6 +629,19 @@
    "fin": null,
    "lat": 41.72574,
    "lon": -1.019489,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29615635",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 24.584",
+   "detalle": "",
+   "inicio": "2026-11-01",
+   "fin": null,
+   "lat": 41.604958,
+   "lon": -0.892095,
    "precision": "exacta"
   }
  ]

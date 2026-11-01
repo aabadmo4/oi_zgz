@@ -2016,6 +2016,17 @@
    "titulo": "Z-40",
    "via": "pk 31.282",
    "visto": "2026-11-01"
+  },
+  "dgt-29615635": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29615635",
+   "inicio": "2026-11-01",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 24.584",
+   "visto": "2026-11-01"
   }
  }
 }
