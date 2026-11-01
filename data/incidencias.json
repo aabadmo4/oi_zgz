@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-01T23:01+01:00",
+ "actualizado": "2026-11-02T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 37
+   "n": 46
   },
   "dgt": {
    "ok": true,
@@ -321,6 +321,52 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31472",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "LASALA MANUEL, 6",
+   "via": "",
+   "detalle": "Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
+   "inicio": "2026-11-03",
+   "fin": "2026-12-23",
+   "lat": 41.640176,
+   "lon": -0.89081,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31491",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "GASCON Y MARIN JOSE, 1",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-03",
+   "lat": 41.64495,
+   "lon": -0.8632475,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.645334,
+      -0.86318
+     ],
+     [
+      41.645208,
+      -0.863202
+     ],
+     [
+      41.644632,
+      -0.863304
+     ],
+     [
+      41.644565,
+      -0.863314
+     ]
+    ]
+   ]
+  },
+  {
    "id": "zgz-30876",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -331,6 +377,32 @@
    "fin": "2027-02-18",
    "lat": 41.6410979,
    "lon": -0.8966768,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31468",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CASANOVA JOSE (FRAY), 5",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-06",
+   "lat": 41.655763,
+   "lon": -0.904432,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31471",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "BRETON TOMAS(MAESTRO), 9",
+   "via": "",
+   "detalle": "Continuando con las obras de la Avenida Valencia y para continuar la renovación de servicios",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-26",
+   "lat": 41.6438817,
+   "lon": -0.8946502,
    "precision": "portal"
   },
   {
@@ -374,6 +446,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31475",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CELORRIO SIXTO, 14",
+   "via": "A la altura de Valle de Zuriza",
+   "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como primera fase para renovar un ramal de saneamiento que cruza la vía",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-13",
+   "lat": 41.6586713,
+   "lon": -0.8751198,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31425",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -399,6 +484,32 @@
    "lon": -0.8273019454973861,
    "precision": "aprox",
    "barrio": "Montañana"
+  },
+  {
+   "id": "zgz-31470",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MADRID AVENIDA DE, 9",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica y como primera fase",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-06",
+   "lat": 41.6559199,
+   "lon": -0.8945208,
+   "precision": "calle"
+  },
+  {
+   "id": "zgz-31490",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SCHWEITZER ALBERT, 2",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas.",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-03",
+   "lat": 41.6427804,
+   "lon": -0.8823128,
+   "precision": "calle"
   },
   {
    "id": "zgz-30596",
@@ -439,6 +550,43 @@
    "lat": 41.624682,
    "lon": -0.8782324,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31474",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "HISPANIDAD RONDA, 10",
+   "via": "Puentes sobre la A2 y sobre el ferrocarril (sobre Calle Escatrón)",
+   "detalle": "Para reparar las juntas de dilatación",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-06",
+   "lat": 41.6306746,
+   "lon": -0.9017236,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.630182,
+      -0.900771
+     ],
+     [
+      41.630686,
+      -0.901745
+     ],
+     [
+      41.630812,
+      -0.902001
+     ],
+     [
+      41.631022,
+      -0.902435
+     ],
+     [
+      41.631143,
+      -0.902688
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-30944",
@@ -546,6 +694,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31476",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PUERTA DE SANCHO AV., 9",
+   "via": "A la altura del nº 9, del 3 al 20 de noviembre",
+   "detalle": "Para recrecer la parada del bus",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-20",
+   "lat": 41.660166,
+   "lon": -0.9023833,
+   "precision": "calle"
+  },
+  {
    "id": "zgz-31384",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -619,19 +780,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29615457",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 284.672",
-   "detalle": "",
-   "inicio": "2026-11-01",
-   "fin": null,
-   "lat": 41.72574,
-   "lon": -1.019489,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29615635",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -642,6 +790,19 @@
    "fin": null,
    "lat": 41.604958,
    "lon": -0.892095,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29616139",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 294.948",
+   "detalle": "",
+   "inicio": "2026-11-01",
+   "fin": null,
+   "lat": 41.70651,
+   "lon": -0.842989,
    "precision": "exacta"
   }
  ]
