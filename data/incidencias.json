@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T17:01+01:00",
+ "actualizado": "2026-11-02T18:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -780,19 +780,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29636406",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 243.343",
-   "detalle": "",
-   "inicio": "2026-11-02",
-   "fin": null,
-   "lat": 41.66345,
-   "lon": -0.93053,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29636643",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -806,42 +793,55 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29637017",
+   "id": "dgt-29638810",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 319.36",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.317",
    "detalle": "",
    "inicio": "2026-11-02",
    "fin": null,
-   "lat": 41.68157,
-   "lon": -0.91490626,
+   "lat": 41.67015,
+   "lon": -0.93314,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29637226",
+   "id": "dgt-29639386",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 489.046",
+   "titulo": "ZP-2101",
+   "via": "pk 0.934",
    "detalle": "",
    "inicio": "2026-11-02",
    "fin": null,
-   "lat": 41.60123,
-   "lon": -0.9357383,
+   "lat": 41.65666,
+   "lon": -0.83694,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29637261",
+   "id": "dgt-29639406",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.93",
+   "titulo": "ZP-2101",
+   "via": "pk 0.371",
    "detalle": "",
    "inicio": "2026-11-02",
    "fin": null,
-   "lat": 41.70966,
-   "lon": -1.01252,
+   "lat": 41.66181,
+   "lon": -0.83589,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29639527",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 233.293",
+   "detalle": "",
+   "inicio": "2026-11-02",
+   "fin": null,
+   "lat": 41.62597,
+   "lon": -0.849323,
    "precision": "exacta"
   }
  ]
