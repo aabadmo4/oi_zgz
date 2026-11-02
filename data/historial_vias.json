@@ -1044,6 +1044,28 @@
    "titulo": "A-2",
    "via": "pk 319.25–319.29",
    "visto": "2026-11-02"
+  },
+  "dgt-29645651": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29645651",
+   "inicio": "2026-11-02",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 318.02–318.03",
+   "visto": "2026-11-02"
+  },
+  "dgt-29646345": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29646345",
+   "inicio": "2026-11-02",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 317.4–319.0",
+   "visto": "2026-11-02"
   }
  },
  "ap-68": {
