@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T14:01+01:00",
+ "actualizado": "2026-11-02T15:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 0
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -778,6 +778,19 @@
    "lat": 41.647136,
    "lon": -0.8946807,
    "precision": "portal"
+  },
+  {
+   "id": "dgt-29632186",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 277.123",
+   "detalle": "",
+   "inicio": "2026-11-02",
+   "fin": null,
+   "lat": 41.61469,
+   "lon": -0.93124,
+   "precision": "exacta"
   }
  ]
 }
