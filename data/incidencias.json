@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T00:02+01:00",
+ "actualizado": "2026-11-03T00:33+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -975,6 +975,19 @@
    "fin": null,
    "lat": 41.6809,
    "lon": -0.919059,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29647671",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 311.174",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.6315,
+   "lon": -0.98512,
    "precision": "exacta"
   }
  ]
