@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T09:01+01:00",
+ "actualizado": "2026-11-02T10:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -790,6 +790,19 @@
    "fin": null,
    "lat": 41.677723,
    "lon": -0.8476531,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29620605",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-2",
+   "via": "pk 313.107",
+   "detalle": "",
+   "inicio": "2026-11-02",
+   "fin": null,
+   "lat": 41.63705,
+   "lon": -0.964041,
    "precision": "exacta"
   }
  ]
