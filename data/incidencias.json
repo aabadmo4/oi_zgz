@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T22:01+01:00",
+ "actualizado": "2026-11-02T23:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -780,32 +780,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29645651",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 318.02–318.03",
-   "detalle": "",
-   "inicio": "2026-11-02",
-   "fin": null,
-   "lat": 41.67497,
-   "lon": -0.9284329,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29646331",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 272.771",
-   "detalle": "",
-   "inicio": "2026-11-02",
-   "fin": null,
-   "lat": 41.5815,
-   "lon": -0.95691,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29646345",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -816,6 +790,19 @@
    "fin": null,
    "lat": 41.6809,
    "lon": -0.919059,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29646575",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 243.36",
+   "detalle": "",
+   "inicio": "2026-11-02",
+   "fin": null,
+   "lat": 41.66352,
+   "lon": -0.93072,
    "precision": "exacta"
   }
  ]
