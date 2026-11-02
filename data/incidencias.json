@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T12:01+01:00",
+ "actualizado": "2026-11-02T13:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -780,16 +780,29 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29625168",
+   "id": "dgt-29627934",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 503.38",
+   "titulo": "VS-A-2-C",
+   "via": "pk 315.994",
    "detalle": "",
    "inicio": "2026-11-02",
    "fin": null,
-   "lat": 41.68414,
-   "lon": -0.87461,
+   "lat": 41.66165,
+   "lon": -0.94384,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29628165",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.803",
+   "detalle": "",
+   "inicio": "2026-11-02",
+   "fin": null,
+   "lat": 41.67959,
+   "lon": -0.86198,
    "precision": "exacta"
   }
  ]
