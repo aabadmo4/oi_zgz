@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T10:01+01:00",
+ "actualizado": "2026-11-02T11:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -780,29 +780,16 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29619136",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 325.0",
-   "detalle": "",
-   "inicio": "2026-11-02",
-   "fin": null,
-   "lat": 41.677723,
-   "lon": -0.8476531,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29620605",
+   "id": "dgt-29623469",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-2",
-   "via": "pk 313.107",
+   "titulo": "Z-40",
+   "via": "pk 30.707",
    "detalle": "",
    "inicio": "2026-11-02",
    "fin": null,
-   "lat": 41.63705,
-   "lon": -0.964041,
+   "lat": 41.61864,
+   "lon": -0.96176,
    "precision": "exacta"
   }
  ]
