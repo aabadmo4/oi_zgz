@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T16:02+01:00",
+ "actualizado": "2026-11-03T16:10+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1233,16 +1233,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29671781",
+   "id": "dgt-29672293",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 256.117",
+   "titulo": "N-330",
+   "via": "pk 504.612",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.73067,
-   "lon": -1.053701,
+   "lat": 41.69186,
+   "lon": -0.87061,
    "precision": "exacta"
   }
  ]
