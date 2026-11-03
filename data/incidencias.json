@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T15:02+01:00",
+ "actualizado": "2026-11-03T16:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1207,81 +1207,42 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29652262",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 15.0–18.0",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-03",
-   "lat": 41.663124,
-   "lon": -0.83910537,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29667204",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 309.41–309.46",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.626125,
-   "lon": -1.0052228,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29668992",
+   "id": "dgt-29670675",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "VS-A-2-C",
-   "via": "pk 316.928",
+   "via": "pk 322.24",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.66735,
-   "lon": -0.93591,
+   "lat": 41.679634,
+   "lon": -0.8823151,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29669001",
+   "id": "dgt-29671482",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 322.0–322.6",
+   "titulo": "N-330",
+   "via": "pk 507.89",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.67964,
-   "lon": -0.8836497,
+   "lat": 41.71877,
+   "lon": -0.85654,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29669192",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 248.995",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.69746,
-   "lon": -0.9883,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29669521",
+   "id": "dgt-29671781",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 247.133",
+   "via": "pk 256.117",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.69061,
-   "lon": -0.96855,
+   "lat": 41.73067,
+   "lon": -1.053701,
    "precision": "exacta"
   }
  ]
