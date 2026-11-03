@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T18:02+01:00",
+ "actualizado": "2026-11-03T19:03+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -1220,81 +1220,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29674878",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 317.844",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.673916,
-   "lon": -0.929407,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29675163",
+   "id": "dgt-29677755",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 23.0–24.0",
+   "via": "pk 23.5–24.0",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.61006,
-   "lon": -0.87491894,
+   "lat": 41.607624,
+   "lon": -0.87977684,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29675231",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 24.0",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.606094,
-   "lon": -0.88540155,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29675776",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 490.718",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.61306,
-   "lon": -0.92289,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29676813",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 486.622",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.58415,
-   "lon": -0.95251,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29676832",
+   "id": "dgt-29677957",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 250.843",
+   "via": "pk 246.202",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.698593,
-   "lon": -1.006565,
+   "lat": 41.68678,
+   "lon": -0.956204,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29679045",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.225",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.704815,
+   "lon": -1.0066067,
    "precision": "exacta"
   }
  ]

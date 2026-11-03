@@ -2535,6 +2535,17 @@
    "titulo": "Z-40",
    "via": "pk 24.0",
    "visto": "2026-11-03"
+  },
+  "dgt-29677755": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29677755",
+   "inicio": "2026-11-03",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.5–24.0",
+   "visto": "2026-11-03"
   }
  }
 }
