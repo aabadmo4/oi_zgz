@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T13:03+01:00",
+ "actualizado": "2026-11-03T14:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -1220,19 +1220,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29650828",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 502.2–504.0",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-03",
-   "lat": 41.67361,
-   "lon": -0.88065,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29652262",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1246,42 +1233,81 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29661115",
+   "id": "dgt-29666404",
    "fuente": "DGT",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 26.489",
+   "via": "pk 16.498",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.60834,
-   "lon": -0.914438,
+   "lat": 41.65049,
+   "lon": -0.83769,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29662023",
+   "id": "dgt-29666612",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "ZP-2101",
+   "via": "pk 2.124",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.65022,
+   "lon": -0.8250402,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29666882",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.115",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.68008,
+   "lon": -0.8832,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29666913",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "VS-A-2-C",
-   "via": "pk 315.103",
+   "via": "pk 317.195",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.65737,
-   "lon": -0.952766,
+   "lat": 41.669228,
+   "lon": -0.933962,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29663557",
+   "id": "dgt-29667006",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 13.977",
+   "titulo": "VS-A-2-D",
+   "via": "pk 321.641",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.67265,
-   "lon": -0.83566,
+   "lat": 41.68012,
+   "lon": -0.88848,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29667012",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-2",
+   "via": "pk 327.63",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.66473,
+   "lon": -0.82891,
    "precision": "exacta"
   }
  ]
