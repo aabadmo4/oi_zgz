@@ -1143,6 +1143,17 @@
    "titulo": "A-2",
    "via": "pk 324.241",
    "visto": "2026-11-03"
+  },
+  "dgt-29656896": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29656896",
+   "inicio": "2026-11-03",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 315.189",
+   "visto": "2026-11-03"
   }
  },
  "ap-68": {
@@ -2336,6 +2347,17 @@
    "tipo": "Obras",
    "titulo": "Z-40",
    "via": "pk 23.6–25.4",
+   "visto": "2026-11-03"
+  },
+  "dgt-29655812": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29655812",
+   "inicio": "2026-11-03",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 15.57",
    "visto": "2026-11-03"
   }
  }
