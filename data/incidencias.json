@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T07:49+01:00",
+ "actualizado": "2026-11-03T08:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1069,6 +1069,32 @@
    "fin": null,
    "lat": 41.665405,
    "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29650773",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.664104,
+   "lon": -0.9398144,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29650812",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.0–321.0",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.679913,
+   "lon": -0.89564735,
    "precision": "exacta"
   }
  ]
