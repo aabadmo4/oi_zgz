@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-03T11:01+01:00",
+ "actualizado": "2026-11-03T12:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 60
+   "n": 63
   },
   "dgt": {
    "ok": true,
@@ -752,6 +752,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31504",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PORTER PEDRO, 5",
+   "via": "",
+   "detalle": "Para renovar una rejilla de sumidero ubicada en la rígola angular a Marqués de San Felices",
+   "inicio": "2026-11-04",
+   "fin": "2026-11-04",
+   "lat": 41.652817,
+   "lon": -0.926797,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31497",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -826,6 +839,141 @@
    "lat": 41.67283493889929,
    "lon": -0.8596966767022661,
    "precision": "aprox"
+  },
+  {
+   "id": "zgz-31505",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SANGUESA CASTAÑOSA M, 1",
+   "via": "",
+   "detalle": "Continuando con la revisión y limpieza de los pozos del colector (Saica)",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-06",
+   "lat": 41.6609057,
+   "lon": -0.8721647,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.662745,
+      -0.870985
+     ],
+     [
+      41.662658,
+      -0.871051
+     ],
+     [
+      41.662631,
+      -0.87107
+     ],
+     [
+      41.662293,
+      -0.871314
+     ],
+     [
+      41.662127,
+      -0.871426
+     ],
+     [
+      41.662103,
+      -0.871443
+     ],
+     [
+      41.662075,
+      -0.871461
+     ],
+     [
+      41.662013,
+      -0.871498
+     ],
+     [
+      41.661381,
+      -0.871883
+     ],
+     [
+      41.661343,
+      -0.871905
+     ],
+     [
+      41.661261,
+      -0.871953
+     ],
+     [
+      41.66119,
+      -0.871994
+     ],
+     [
+      41.660812,
+      -0.872221
+     ],
+     [
+      41.660121,
+      -0.872627
+     ],
+     [
+      41.660048,
+      -0.87267
+     ],
+     [
+      41.659757,
+      -0.872841
+     ],
+     [
+      41.659667,
+      -0.872887
+     ],
+     [
+      41.659626,
+      -0.872899
+     ],
+     [
+      41.659591,
+      -0.872909
+     ],
+     [
+      41.659519,
+      -0.872908
+     ],
+     [
+      41.659354,
+      -0.872856
+     ],
+     [
+      41.65928,
+      -0.872832
+     ],
+     [
+      41.659184,
+      -0.872816
+     ],
+     [
+      41.659116,
+      -0.872817
+     ],
+     [
+      41.659038,
+      -0.87283
+     ],
+     [
+      41.658935,
+      -0.872858
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "zgz-31506",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ALFOCEA CAMINO DE MNZ, 4",
+   "via": "",
+   "detalle": "Para reparar una toma de agua a la altura de la Calle Castelar",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-13",
+   "lat": 41.702037,
+   "lon": -0.9654,
+   "precision": "portal",
+   "barrio": "Monzalbarba"
   },
   {
    "id": "zgz-31492",
@@ -1033,19 +1181,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29650811",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 295.3–295.6",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-03",
-   "lat": 41.710793,
-   "lon": -0.8482665,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29650828",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1059,16 +1194,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29650950",
+   "id": "dgt-29650811",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-23",
-   "via": "pk 270.6–271.5",
+   "via": "pk 295.3–295.6",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": "2026-11-03",
-   "lat": 41.57092,
-   "lon": -0.96253073,
+   "lat": 41.710793,
+   "lon": -0.8482665,
    "precision": "exacta"
   },
   {
@@ -1098,55 +1233,68 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29658197",
+   "id": "dgt-29660465",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 252.303",
+   "titulo": "A-68",
+   "via": "pk 233.843",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.71138,
-   "lon": -1.01631,
+   "lat": 41.62938,
+   "lon": -0.85498,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29658453",
+   "id": "dgt-29660551",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 489.037",
+   "titulo": "A-2",
+   "via": "pk 330.283",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.60134,
-   "lon": -0.936,
+   "lat": 41.660843,
+   "lon": -0.788865,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29658811",
+   "id": "dgt-29661115",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "CHE-0101",
-   "via": "pk 0.129",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 26.489",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.63504,
-   "lon": -0.9237,
+   "lat": 41.60834,
+   "lon": -0.914438,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29659089",
+   "id": "dgt-29661114",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 244.594",
+   "titulo": "Z-40",
+   "via": "pk 26.165",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.66925,
-   "lon": -0.94331,
+   "lat": 41.60747,
+   "lon": -0.910675,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29661173",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "ZP-2101",
+   "via": "pk 0.021",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.66485,
+   "lon": -0.83726,
    "precision": "exacta"
   }
  ]
