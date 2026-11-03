@@ -1099,6 +1099,17 @@
    "titulo": "A-2",
    "via": "pk 308.12",
    "visto": "2026-11-03"
+  },
+  "dgt-29649550": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29649550",
+   "inicio": "2026-11-03",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6",
+   "visto": "2026-11-03"
   }
  },
  "ap-68": {
@@ -2248,6 +2259,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 20.18–20.5",
+   "visto": "2026-11-03"
+  },
+  "dgt-29650360": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29650360",
+   "inicio": "2026-11-03",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2",
    "visto": "2026-11-03"
   }
  }
