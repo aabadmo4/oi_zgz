@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-03T12:02+01:00",
+ "actualizado": "2026-11-03T13:03+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 63
+   "n": 65
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1003,6 +1003,19 @@
    "barrio": "Juslibol"
   },
   {
+   "id": "zgz-31507",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "TABOADA EDUARDO JES., 11",
+   "via": "",
+   "detalle": "Para renovar la tubería de abastecimiento",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-20",
+   "lat": 41.6521319,
+   "lon": -0.8673024,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31003",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1040,6 +1053,19 @@
    "fin": "2026-11-30",
    "lat": 41.650317,
    "lon": -0.8892003,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31508",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ISABEL CATOLICA PS., 5",
+   "via": "",
+   "detalle": "Para reparar la marquesina (montaje de cristal) de la parada del tranvía \"Romareda\"",
+   "inicio": "2026-11-06",
+   "fin": "2026-11-06",
+   "lat": 41.6329453,
+   "lon": -0.903917,
    "precision": "portal"
   },
   {
@@ -1181,19 +1207,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29650828",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 502.2–504.0",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-03",
-   "lat": 41.67361,
-   "lon": -0.88065,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29650811",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1204,6 +1217,19 @@
    "fin": "2026-11-03",
    "lat": 41.710793,
    "lon": -0.8482665,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29650828",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-330",
+   "via": "pk 502.2–504.0",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-03",
+   "lat": 41.67361,
+   "lon": -0.88065,
    "precision": "exacta"
   },
   {
@@ -1220,45 +1246,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29656939",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 503.2",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.68317,
-   "lon": -0.8754717,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29660465",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 233.843",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.62938,
-   "lon": -0.85498,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29660551",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 330.283",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.660843,
-   "lon": -0.788865,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29661115",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1272,29 +1259,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29661114",
+   "id": "dgt-29662023",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 26.165",
+   "titulo": "VS-A-2-C",
+   "via": "pk 315.103",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.60747,
-   "lon": -0.910675,
+   "lat": 41.65737,
+   "lon": -0.952766,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29661173",
+   "id": "dgt-29663557",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "ZP-2101",
-   "via": "pk 0.021",
+   "titulo": "Z-40",
+   "via": "pk 13.977",
    "detalle": "",
    "inicio": "2026-11-03",
    "fin": null,
-   "lat": 41.66485,
-   "lon": -0.83726,
+   "lat": 41.67265,
+   "lon": -0.83566,
    "precision": "exacta"
   }
  ]
