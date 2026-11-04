@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-04T10:15+01:00",
+ "actualizado": "2026-11-04T12:03+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 69
+   "n": 73
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -427,6 +427,64 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31534",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SAN JOSE AVENIDA DE, 5",
+   "via": "",
+   "detalle": "Para la instalación de adornos navideños en el tramo entre las Avenidas del Tenor Fleta y de Cesareo Alierta",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-09",
+   "lat": 41.6433033,
+   "lon": -0.8728946,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.642498,
+      -0.873084
+     ],
+     [
+      41.643198,
+      -0.872919
+     ],
+     [
+      41.643244,
+      -0.872908
+     ],
+     [
+      41.643322,
+      -0.87289
+     ],
+     [
+      41.643594,
+      -0.872828
+     ],
+     [
+      41.643639,
+      -0.872818
+     ],
+     [
+      41.64411,
+      -0.872711
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "zgz-31535",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ECHEGARAY Y CABALLERO, 8",
+   "via": "A la altura del no 2",
+   "detalle": "Para la instalación de sensores en los pozos de saneamiento",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-06",
+   "lat": 41.6587453,
+   "lon": -0.891495,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -439,6 +497,64 @@
    "lon": -0.9423819,
    "precision": "portal",
    "barrio": "Miralbueno"
+  },
+  {
+   "id": "zgz-31537",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "FATAS CABEZA G SIS, 26",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-19",
+   "lat": 41.671292,
+   "lon": -0.8334488,
+   "precision": "calle",
+   "barrio": "Santa Isabel",
+   "trazado": [
+    [
+     [
+      41.671721,
+      -0.834428
+     ],
+     [
+      41.671482,
+      -0.833876
+     ],
+     [
+      41.671434,
+      -0.833768
+     ],
+     [
+      41.671396,
+      -0.833682
+     ],
+     [
+      41.671278,
+      -0.833417
+     ],
+     [
+      41.671134,
+      -0.833094
+     ],
+     [
+      41.670948,
+      -0.832668
+     ],
+     [
+      41.670917,
+      -0.832599
+     ],
+     [
+      41.670878,
+      -0.832502
+     ],
+     [
+      41.670865,
+      -0.832469
+     ]
+    ]
+   ]
   },
   {
    "id": "zgz-30805",
@@ -878,6 +994,19 @@
    ]
   },
   {
+   "id": "zgz-31536",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 5",
+   "via": "",
+   "detalle": "Continuando con las obras para su renovación integral",
+   "inicio": "2026-11-06",
+   "fin": "2027-01-29",
+   "lat": 41.6410979,
+   "lon": -0.8966768,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-30944",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1152,7 +1281,7 @@
    "via": "",
    "detalle": "Para realizar una canalización eléctrica",
    "inicio": "2026-10-28",
-   "fin": "2026-11-04",
+   "fin": "2026-11-06",
    "lat": 41.653407,
    "lon": -0.882609,
    "precision": "portal"
@@ -1257,6 +1386,19 @@
    "precision": "portal"
   },
   {
+   "id": "dgt-29686754",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-330",
+   "via": "pk 502.2–503.0",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": "2026-11-04",
+   "lat": 41.67361,
+   "lon": -0.88065,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29687227",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1267,6 +1409,19 @@
    "fin": null,
    "lat": 41.677517,
    "lon": -0.9333826,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29687856",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 270.0–270.8",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": "2026-11-04",
+   "lat": 41.55959,
+   "lon": -0.9723878,
    "precision": "exacta"
   },
   {
@@ -1296,42 +1451,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29690716",
+   "id": "dgt-29697666",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.75–15.2",
+   "titulo": "N-330",
+   "via": "pk 504.395",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
-   "lat": 41.665405,
-   "lon": -0.83814114,
+   "lat": 41.68997,
+   "lon": -0.87062,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29692312",
+   "id": "dgt-29698061",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-123",
-   "via": "pk 3.725",
+   "titulo": "VS-A-2-C",
+   "via": "pk 325.736",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
-   "lat": 41.695065,
-   "lon": -0.818896,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29694074",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 15.779",
-   "detalle": "",
-   "inicio": "2026-11-04",
-   "fin": null,
-   "lat": 41.65624,
-   "lon": -0.84118,
+   "lat": 41.67607,
+   "lon": -0.83881,
    "precision": "exacta"
   }
  ]

@@ -1363,6 +1363,17 @@
    "titulo": "A-2",
    "via": "pk 328.485",
    "visto": "2026-11-04"
+  },
+  "dgt-29698061": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29698061",
+   "inicio": "2026-11-04",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 325.736",
+   "visto": "2026-11-04"
   }
  },
  "ap-68": {
@@ -1424,6 +1435,17 @@
    "titulo": "SAN JOSE AVENIDA DE, 77",
    "via": "",
    "visto": "2026-10-30"
+  },
+  "zgz-31534": {
+   "detalle": "Para la instalación de adornos navideños en el tramo entre las Avenidas del Tenor Fleta y de Cesareo Alierta",
+   "fin": "2026-11-09",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31534",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "SAN JOSE AVENIDA DE, 5",
+   "via": "",
+   "visto": "2026-11-04"
   }
  },
  "avenida-de-valencia": {
@@ -1668,6 +1690,17 @@
    "titulo": "CERBUNA PEDRO, 5",
    "via": "",
    "visto": "2026-11-04"
+  },
+  "zgz-31536": {
+   "detalle": "Continuando con las obras para su renovación integral",
+   "fin": "2027-01-29",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31536",
+   "inicio": "2026-11-06",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 5",
+   "via": "",
+   "visto": "2026-11-04"
   }
  },
  "calle-sadaba": {
@@ -1745,7 +1778,7 @@
   },
   "zgz-31401": {
    "detalle": "Para realizar una canalización eléctrica",
-   "fin": "2026-11-04",
+   "fin": "2026-11-06",
    "fuente": "Ayuntamiento",
    "id": "zgz-31401",
    "inicio": "2026-10-28",
