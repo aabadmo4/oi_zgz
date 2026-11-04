@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T12:03+01:00",
+ "actualizado": "2026-11-04T13:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -1399,29 +1399,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29687227",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 244.02",
-   "detalle": "",
-   "inicio": "2026-11-04",
-   "fin": null,
-   "lat": 41.677517,
-   "lon": -0.9333826,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29687856",
+   "id": "dgt-29689484",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 270.0–270.8",
+   "titulo": "Z-40",
+   "via": "pk 15.0–18.0",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": "2026-11-04",
-   "lat": 41.55959,
-   "lon": -0.9723878,
+   "lat": 41.663124,
+   "lon": -0.83910537,
    "precision": "exacta"
   },
   {
@@ -1438,42 +1425,81 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29689484",
+   "id": "dgt-29699188",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 15.0–18.0",
+   "titulo": "N-330",
+   "via": "pk 489.9–490.7",
    "detalle": "",
    "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.663124,
-   "lon": -0.83910537,
+   "fin": null,
+   "lat": 41.61308,
+   "lon": -0.9231361,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29697666",
+   "id": "dgt-29699676",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "N-330",
-   "via": "pk 504.395",
+   "via": "pk 487.95",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
-   "lat": 41.68997,
-   "lon": -0.87062,
+   "lat": 41.59349,
+   "lon": -0.94264,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29698061",
+   "id": "dgt-29700246",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 325.736",
+   "titulo": "A-2",
+   "via": "pk 323.555",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
-   "lat": 41.67607,
-   "lon": -0.83881,
+   "lat": 41.67906,
+   "lon": -0.86498,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29700331",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.78",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.60681,
+   "lon": -0.8829,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29700643",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 487.401",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.58943,
+   "lon": -0.94649,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29701139",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-2a",
+   "via": "pk 326.332",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.66996,
+   "lon": -0.83947,
    "precision": "exacta"
   }
  ]
