@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T01:01+01:00",
+ "actualizado": "2026-11-04T02:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1257,19 +1257,6 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29681615",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 325.0–326.2",
-   "detalle": "",
-   "inicio": "2026-11-03",
-   "fin": null,
-   "lat": 41.675365,
-   "lon": -0.83354545,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29681245",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1280,6 +1267,19 @@
    "fin": null,
    "lat": 41.677723,
    "lon": -0.8476534,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29681615",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 325.0–326.2",
+   "detalle": "",
+   "inicio": "2026-11-03",
+   "fin": null,
+   "lat": 41.675365,
+   "lon": -0.83354545,
    "precision": "exacta"
   },
   {
@@ -1296,7 +1296,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29684088",
+   "id": "dgt-29684089",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
@@ -1309,7 +1309,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29684089",
+   "id": "dgt-29684088",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
