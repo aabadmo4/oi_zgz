@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-04T23:01+01:00",
+ "actualizado": "2026-11-05T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 73
+   "n": 62
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -308,34 +308,6 @@
    "precision": "calle"
   },
   {
-   "id": "zgz-31501",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CANTO D LA AURORA MNZ, 0",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.7024696804634,
-   "lon": -0.9629030856407311,
-   "precision": "aprox",
-   "barrio": "Monzalbarba"
-  },
-  {
-   "id": "zgz-31503",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ALFOCEA JSL, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.695187,
-   "lon": -0.903744,
-   "precision": "portal",
-   "barrio": "Juslibol"
-  },
-  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -349,6 +321,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31547",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "BURRIEL (ALCALDE), 2",
+   "via": "Entre Avda. Valencia y C/ Juan José Lorente",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 12 horas",
+   "inicio": "2026-11-06",
+   "fin": "2026-11-06",
+   "lat": 41.6462507,
+   "lon": -0.8955777,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31472",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -359,19 +344,6 @@
    "fin": "2026-12-23",
    "lat": 41.640176,
    "lon": -0.89081,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31496",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "GISTAIN VALLE DE, 22",
-   "via": "N.º 20, 22, 24, 26, 28 y 30",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.6650603,
-   "lon": -0.8725795,
    "precision": "portal"
   },
   {
@@ -557,6 +529,19 @@
    ]
   },
   {
+   "id": "zgz-31548",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "NAVARRA D.BLANCA DE, 6",
+   "via": "Entre C/ Pablo Sarasate y Avda. Madrid",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-06",
+   "fin": "2026-11-06",
+   "lat": 41.6541249,
+   "lon": -0.9000507,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-30805",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -731,113 +716,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31493",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "URREA, 14",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.650663,
-   "lon": -0.878149,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31495",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAN ANTONIO M CLARET, 10",
-   "via": "Números pares, desde el n.º 6 hasta C/ Pamplona Escudero",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.64474,
-   "lon": -0.8951098,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.646204,
-      -0.893699
-     ],
-     [
-      41.646186,
-      -0.893726
-     ],
-     [
-      41.646145,
-      -0.8938
-     ],
-     [
-      41.646133,
-      -0.893816
-     ],
-     [
-      41.645032,
-      -0.894842
-     ],
-     [
-      41.644974,
-      -0.894896
-     ],
-     [
-      41.644925,
-      -0.89494
-     ],
-     [
-      41.644441,
-      -0.895383
-     ],
-     [
-      41.644375,
-      -0.895441
-     ],
-     [
-      41.644321,
-      -0.895491
-     ],
-     [
-      41.644297,
-      -0.895513
-     ],
-     [
-      41.643775,
-      -0.896005
-     ],
-     [
-      41.643728,
-      -0.896049
-     ],
-     [
-      41.643339,
-      -0.896436
-     ],
-     [
-      41.643309,
-      -0.896467
-     ],
-     [
-      41.643262,
-      -0.896513
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "zgz-31502",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "MOSÉN FÉLIX MARCO (Monzalbarba), 1",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.69943176754189,
-   "lon": -0.962545942800127,
-   "precision": "aprox"
-  },
-  {
    "id": "zgz-30596",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -850,32 +728,6 @@
    "lon": -0.8127982,
    "precision": "portal",
    "barrio": "Cartuja Baja"
-  },
-  {
-   "id": "zgz-31498",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAGRADA (NTRA.SRA)MNZ, 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.70424821313769,
-   "lon": -0.9648353611830195,
-   "precision": "aprox"
-  },
-  {
-   "id": "zgz-31499",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAGRADA (PS.N.SRA)MNZ, 1",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.703783974974755,
-   "lon": -0.9641517454501993,
-   "precision": "aprox"
   },
   {
    "id": "zgz-31114",
@@ -891,32 +743,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31494",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SANTA CATALINA, 1",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.6510458,
-   "lon": -0.8785854,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31504",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "PORTER PEDRO, 5",
-   "via": "",
-   "detalle": "Para renovar una rejilla de sumidero ubicada en la rígola angular a Marqués de San Felices",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.652817,
-   "lon": -0.926797,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31528",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -929,19 +755,6 @@
    "lon": -0.831489,
    "precision": "portal",
    "barrio": "Santa Isabel"
-  },
-  {
-   "id": "zgz-31497",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "GUARA SIERRA DE, 14",
-   "via": "N.º 14, 16, 18 y n.º 9",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.665436,
-   "lon": -0.8733747,
-   "precision": "portal"
   },
   {
    "id": "zgz-31451",
@@ -1155,33 +968,6 @@
    "barrio": "Monzalbarba"
   },
   {
-   "id": "zgz-31492",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "COSO, 14",
-   "via": "Números pares, entre C/ Juan Porcell y C/ Rufas",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.6537306,
-   "lon": -0.8837195,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31500",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ALFOCEA JSL, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-04",
-   "lat": 41.695187,
-   "lon": -0.903744,
-   "precision": "portal",
-   "barrio": "Juslibol"
-  },
-  {
    "id": "zgz-31507",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1287,19 +1073,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31473",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "INDEPENDENCIA PS, 6",
-   "via": "",
-   "detalle": "Para la instalación de la iluminación navideña, del 2 de noviembre (a las 23:00 horas) al 4 de noviembre (a las 05:00 horas).",
-   "inicio": "2026-11-02",
-   "fin": "2026-11-04",
-   "lat": 41.6515458,
-   "lon": -0.881975,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31476",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1311,6 +1084,19 @@
    "lat": 41.660166,
    "lon": -0.9023833,
    "precision": "calle"
+  },
+  {
+   "id": "zgz-31549",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SARASATE PABLO, 20",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-06",
+   "fin": "2026-11-06",
+   "lat": 41.6538256,
+   "lon": -0.8995948,
+   "precision": "portal"
   },
   {
    "id": "zgz-31384",
@@ -1399,11 +1185,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29718202",
+   "id": "dgt-29718203",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 322.2–323.2",
+   "via": "pk 322.6–323.2",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
@@ -1412,11 +1198,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29718203",
+   "id": "dgt-29718202",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 322.6–323.2",
+   "via": "pk 322.2–323.2",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
@@ -1451,16 +1237,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29720607",
+   "id": "dgt-29721039",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 290.971",
+   "titulo": "Z-40",
+   "via": "pk 18.782",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
-   "lat": 41.69135,
-   "lon": -0.96438,
+   "lat": 41.632732,
+   "lon": -0.83688,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29721147",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 233.115",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.62484,
+   "lon": -0.84816,
    "precision": "exacta"
   }
  ]
