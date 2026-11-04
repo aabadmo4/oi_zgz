@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T22:02+01:00",
+ "actualizado": "2026-11-04T23:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1435,6 +1435,32 @@
    "fin": null,
    "lat": 41.67556,
    "lon": -0.8347657,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29719964",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 313.0–318.0",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.64207,
+   "lon": -0.97051597,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29720607",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 290.971",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.69135,
+   "lon": -0.96438,
    "precision": "exacta"
   }
  ]
