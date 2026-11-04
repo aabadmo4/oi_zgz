@@ -1418,6 +1418,28 @@
    "titulo": "A-2",
    "via": "pk 320.594",
    "visto": "2026-11-04"
+  },
+  "dgt-29713629": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29713629",
+   "inicio": "2026-11-04",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 321.113",
+   "visto": "2026-11-04"
+  },
+  "dgt-29713898": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29713898",
+   "inicio": "2026-11-04",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 318.502",
+   "visto": "2026-11-04"
   }
  },
  "ap-68": {
