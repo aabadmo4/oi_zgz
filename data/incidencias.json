@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T10:01+01:00",
+ "actualizado": "2026-11-04T10:15+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1270,45 +1270,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29690716",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.75–15.2",
-   "detalle": "",
-   "inicio": "2026-11-04",
-   "fin": null,
-   "lat": 41.665405,
-   "lon": -0.83814114,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29691361",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 328.485",
-   "detalle": "",
-   "inicio": "2026-11-04",
-   "fin": null,
-   "lat": 41.66644,
-   "lon": -0.809116,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29692312",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-123",
-   "via": "pk 3.725",
-   "detalle": "",
-   "inicio": "2026-11-04",
-   "fin": null,
-   "lat": 41.695065,
-   "lon": -0.818896,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29691059",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1332,6 +1293,45 @@
    "fin": "2026-11-04",
    "lat": 41.663124,
    "lon": -0.83910537,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29690716",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29692312",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-123",
+   "via": "pk 3.725",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.695065,
+   "lon": -0.818896,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29694074",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 15.779",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.65624,
+   "lon": -0.84118,
    "precision": "exacta"
   }
  ]
