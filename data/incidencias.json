@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-04T14:01+01:00",
+ "actualizado": "2026-11-04T15:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1399,16 +1399,55 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29702099",
+   "id": "dgt-29704470",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 507.5–507.8",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 246.05",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
-   "lat": 41.717987,
-   "lon": -0.85677356,
+   "lat": 41.67698,
+   "lon": -0.95757,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29705832",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 24.648",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.60472,
+   "lon": -0.89287,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29705944",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.486",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.67917,
+   "lon": -0.86581,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29706010",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "CHE-103",
+   "via": "pk 0.403",
+   "detalle": "",
+   "inicio": "2026-11-04",
+   "fin": null,
+   "lat": 41.620613,
+   "lon": -0.869156,
    "precision": "exacta"
   }
  ]
