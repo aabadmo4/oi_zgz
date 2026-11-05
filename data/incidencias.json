@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05T00:41+01:00",
+ "actualizado": "2026-11-05T01:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1185,11 +1185,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29718203",
+   "id": "dgt-29718202",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 322.6–323.2",
+   "via": "pk 322.2–323.2",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
@@ -1198,11 +1198,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29718202",
+   "id": "dgt-29718203",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 322.2–323.2",
+   "via": "pk 322.6–323.2",
    "detalle": "",
    "inicio": "2026-11-04",
    "fin": null,
