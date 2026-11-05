@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05T07:01+01:00",
+ "actualizado": "2026-11-05T07:48+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -1208,6 +1208,84 @@
    "fin": null,
    "lat": 41.611458,
    "lon": -0.923631,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724000",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724063",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.062",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.67999,
+   "lon": -0.883784,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724375",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 27.0",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.61008,
+   "lon": -0.9201143,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724433",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.317",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.67008,
+   "lon": -0.933063,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724556",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724663",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 246.102",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.6771,
+   "lon": -0.95816,
    "precision": "exacta"
   }
  ]

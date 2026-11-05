@@ -1495,6 +1495,39 @@
    "titulo": "A-2",
    "via": "pk 313.0–318.0",
    "visto": "2026-11-05"
+  },
+  "dgt-29724000": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29724000",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6",
+   "visto": "2026-11-05"
+  },
+  "dgt-29724063": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29724063",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.062",
+   "visto": "2026-11-05"
+  },
+  "dgt-29724433": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29724433",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.317",
+   "visto": "2026-11-05"
   }
  },
  "ap-68": {
@@ -3007,6 +3040,28 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 27.338",
+   "visto": "2026-11-05"
+  },
+  "dgt-29724375": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29724375",
+   "inicio": "2026-11-05",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 27.0",
+   "visto": "2026-11-05"
+  },
+  "dgt-29724556": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29724556",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2",
    "visto": "2026-11-05"
   }
  }
