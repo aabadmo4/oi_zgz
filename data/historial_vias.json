@@ -1539,6 +1539,39 @@
    "titulo": "A-2",
    "via": "pk 316.5–318.2",
    "visto": "2026-11-05"
+  },
+  "dgt-29726972": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29726972",
+   "inicio": "2026-11-05",
+   "tipo": "Corte",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.4–317.6",
+   "visto": "2026-11-05"
+  },
+  "dgt-29727070": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29727070",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 316.0–317.4",
+   "visto": "2026-11-05"
+  },
+  "dgt-29728244": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29728244",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.378",
+   "visto": "2026-11-05"
   }
  },
  "ap-68": {
@@ -1574,6 +1607,17 @@
    "titulo": "AP-68",
    "via": "pk 290.971",
    "visto": "2026-11-04"
+  },
+  "dgt-29728000": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29728000",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 284.908",
+   "visto": "2026-11-05"
   }
  },
  "avenida-de-madrid": {
@@ -3073,6 +3117,28 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 14.75–15.2",
+   "visto": "2026-11-05"
+  },
+  "dgt-29726559": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29726559",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2",
+   "visto": "2026-11-05"
+  },
+  "dgt-29727709": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29727709",
+   "inicio": "2026-11-05",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 26.193",
    "visto": "2026-11-05"
   }
  }
