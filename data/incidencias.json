@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05T09:01+01:00",
+ "actualizado": "2026-11-05T10:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 10
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -1198,32 +1198,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29726559",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.75–15.2",
-   "detalle": "",
-   "inicio": "2026-11-05",
-   "fin": null,
-   "lat": 41.665405,
-   "lon": -0.83814114,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29727070",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 316.0–317.4",
-   "detalle": "",
-   "inicio": "2026-11-05",
-   "fin": null,
-   "lat": 41.670723,
-   "lon": -0.9325283,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29726972",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1234,58 +1208,6 @@
    "fin": null,
    "lat": 41.672173,
    "lon": -0.9311509,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29727485",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-123",
-   "via": "pk 0.115",
-   "detalle": "",
-   "inicio": "2026-11-05",
-   "fin": null,
-   "lat": 41.67056,
-   "lon": -0.8383,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29727709",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 26.193",
-   "detalle": "",
-   "inicio": "2026-11-05",
-   "fin": null,
-   "lat": 41.60773,
-   "lon": -0.9108987,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29727846",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 234.362",
-   "detalle": "",
-   "inicio": "2026-11-05",
-   "fin": null,
-   "lat": 41.63279,
-   "lon": -0.86014,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29728000",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 284.908",
-   "detalle": "",
-   "inicio": "2026-11-05",
-   "fin": null,
-   "lat": 41.72497,
-   "lon": -1.01694,
    "precision": "exacta"
   },
   {
