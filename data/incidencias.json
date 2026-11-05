@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05T10:01+01:00",
+ "actualizado": "2026-11-05T11:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -1211,16 +1211,55 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29728244",
+   "id": "dgt-29731351",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 317.378",
+   "titulo": "A-2",
+   "via": "pk 316.262",
    "detalle": "",
    "inicio": "2026-11-05",
    "fin": null,
-   "lat": 41.670525,
-   "lon": -0.932646,
+   "lat": 41.66265,
+   "lon": -0.941995,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29732368",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 26.0",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.6073,
+   "lon": -0.9086548,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29732369",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 25.0–26.0",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.6073,
+   "lon": -0.9086548,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29733575",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 291.396",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.677402,
+   "lon": -0.834913,
    "precision": "exacta"
   }
  ]
