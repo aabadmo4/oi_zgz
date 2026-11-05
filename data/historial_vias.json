@@ -1653,6 +1653,17 @@
    "titulo": "MADRID AVENIDA DE, 9",
    "via": "",
    "visto": "2026-11-05"
+  },
+  "zgz-31562": {
+   "detalle": "Continuando con la canalización eléctrica y como segunda fase",
+   "fin": "2026-11-13",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31562",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "MADRID AVENIDA DE, 9",
+   "via": "",
+   "visto": "2026-11-05"
   }
  },
  "avenida-de-san-jose": {
@@ -2083,7 +2094,7 @@
  "ronda-de-la-hispanidad": {
   "zgz-31474": {
    "detalle": "Para reparar las juntas de dilatación",
-   "fin": "2026-11-06",
+   "fin": "2026-11-13",
    "fuente": "Ayuntamiento",
    "id": "zgz-31474",
    "inicio": "2026-11-03",
@@ -3172,6 +3183,17 @@
    "tipo": "Accidente",
    "titulo": "Z-40",
    "via": "pk 25.0–26.0",
+   "visto": "2026-11-05"
+  },
+  "dgt-29738558": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29738558",
+   "inicio": "2026-11-05",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 14.7–15.7",
    "visto": "2026-11-05"
   }
  }

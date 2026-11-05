@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-05T12:01+01:00",
+ "actualizado": "2026-11-05T13:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 62
+   "n": 68
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -611,6 +611,19 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31557",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CASANOVA JOSE (FRAY), 5",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-13",
+   "lat": 41.655763,
+   "lon": -0.904432,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31475",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -777,7 +790,7 @@
    "via": "Puentes sobre la A2 y sobre el ferrocarril (sobre Calle Escatrón)",
    "detalle": "Para reparar las juntas de dilatación",
    "inicio": "2026-11-03",
-   "fin": "2026-11-06",
+   "fin": "2026-11-13",
    "lat": 41.6306746,
    "lon": -0.9017236,
    "precision": "calle",
@@ -1021,6 +1034,33 @@
    "precision": "portal"
   },
   {
+   "id": "zgz-31559",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ZUMALACARREGUI TOMAS, 13",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica en el no 30",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.643402,
+   "lon": -0.887814,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31560",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "GALLEGO RIO PÑF, 11",
+   "via": "",
+   "detalle": "Continuando con el Proyecto de urbanización F-71-7",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.760916,
+   "lon": -0.7987939,
+   "precision": "portal",
+   "barrio": "Peñaflor"
+  },
+  {
    "id": "zgz-31508",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1041,7 +1081,7 @@
    "via": "",
    "detalle": "Para la reparación de vertido entre las parcelas 76 (Chatarras Ostariz Frago) y 76A (Mármoles y granitos Marpa)",
    "inicio": "2026-10-19",
-   "fin": "2026-11-06",
+   "fin": "2026-12-04",
    "lat": 41.656832846812705,
    "lon": -0.7887810252750279,
    "precision": "aprox"
@@ -1058,6 +1098,46 @@
    "lat": 41.6467227,
    "lon": -0.8950031,
    "precision": "portal"
+  },
+  {
+   "id": "zgz-31561",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PILON CN. EL MRL, 19",
+   "via": "",
+   "detalle": "Para renovar el sumidero corrido ubicado entre el Anillo Verde y la Calle Íñigo Manuel Marín Sancho",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.658573,
+   "lon": -0.925555,
+   "precision": "portal",
+   "barrio": "Miralbueno"
+  },
+  {
+   "id": "zgz-31563",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "EDISON TOMAS A, 8",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido a la altura del no 8",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-13",
+   "lat": 41.665154,
+   "lon": -0.862768,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31562",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MADRID AVENIDA DE, 9",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica y como segunda fase",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.6559199,
+   "lon": -0.8945208,
+   "precision": "calle"
   },
   {
    "id": "zgz-31401",
@@ -1185,6 +1265,32 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-29724473",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 247.0–247.3",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-09",
+   "lat": 41.68427,
+   "lon": -0.9686375,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29724472",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 247.0–247.3",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-09",
+   "lat": 41.68427,
+   "lon": -0.9686375,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29726505",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1198,29 +1304,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29726972",
+   "id": "dgt-29738264",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "VS-A-2-C",
-   "via": "pk 317.4–317.6",
+   "tipo": "Otros",
+   "titulo": "A-123",
+   "via": "pk 2.367",
    "detalle": "",
    "inicio": "2026-11-05",
    "fin": null,
-   "lat": 41.672173,
-   "lon": -0.9311509,
+   "lat": 41.68633,
+   "lon": -0.82911,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29732368",
+   "id": "dgt-29738558",
    "fuente": "DGT",
-   "tipo": "Accidente",
+   "tipo": "Corte",
    "titulo": "Z-40",
-   "via": "pk 26.0",
+   "via": "pk 14.7–15.7",
    "detalle": "",
    "inicio": "2026-11-05",
    "fin": null,
-   "lat": 41.6073,
-   "lon": -0.9086548,
+   "lat": 41.665848,
+   "lon": -0.83787864,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29738571",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.223",
+   "detalle": "",
+   "inicio": "2026-11-05",
+   "fin": null,
+   "lat": 41.704773,
+   "lon": -1.0065984,
    "precision": "exacta"
   }
  ]
