@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06T11:54+01:00",
+ "actualizado": "2026-11-06T12:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1156,7 +1156,7 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29724473",
+   "id": "dgt-29724472",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
@@ -1169,7 +1169,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29724472",
+   "id": "dgt-29724473",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
