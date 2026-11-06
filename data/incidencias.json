@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-06T23:01+01:00",
+ "actualizado": "2026-11-07T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 67
+   "n": 55
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -295,19 +295,6 @@
    "precision": "portal"
   },
   {
-   "id": "zgz-31477",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "COGULLADA CARRETERA, 11",
-   "via": "",
-   "detalle": "Para reparar las juntas de dilatación del puente sobre el ferrocarril (próximo al punto limpio de Cogullada)",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-06",
-   "lat": 41.6726555,
-   "lon": -0.8584696,
-   "precision": "calle"
-  },
-  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -318,19 +305,6 @@
    "fin": "2026-11-27",
    "lat": 41.667599,
    "lon": -0.862763,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31547",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "BURRIEL (ALCALDE), 2",
-   "via": "Entre Avda. Valencia y C/ Juan José Lorente",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 12 horas",
-   "inicio": "2026-11-06",
-   "fin": "2026-11-06",
-   "lat": 41.6462507,
-   "lon": -0.8955777,
    "precision": "portal"
   },
   {
@@ -357,19 +331,6 @@
    "fin": "2027-02-18",
    "lat": 41.6410979,
    "lon": -0.8966768,
-   "precision": "portal"
-  },
-  {
-   "id": "zgz-31468",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CASANOVA JOSE (FRAY), 5",
-   "via": "",
-   "detalle": "Para realizar una canalización eléctrica",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-06",
-   "lat": 41.655763,
-   "lon": -0.904432,
    "precision": "portal"
   },
   {
@@ -444,19 +405,6 @@
    ]
   },
   {
-   "id": "zgz-31535",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ECHEGARAY Y CABALLERO, 8",
-   "via": "A la altura del no 2",
-   "detalle": "Para la instalación de sensores en los pozos de saneamiento",
-   "inicio": "2026-11-05",
-   "fin": "2026-11-06",
-   "lat": 41.6587453,
-   "lon": -0.891495,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -527,19 +475,6 @@
      ]
     ]
    ]
-  },
-  {
-   "id": "zgz-31548",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "NAVARRA D.BLANCA DE, 6",
-   "via": "Entre C/ Pablo Sarasate y Avda. Madrid",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-06",
-   "fin": "2026-11-06",
-   "lat": 41.6541249,
-   "lon": -0.9000507,
-   "precision": "portal"
   },
   {
    "id": "zgz-30805",
@@ -618,46 +553,6 @@
    "lat": 41.6611986,
    "lon": -0.8794143,
    "precision": "portal"
-  },
-  {
-   "id": "zgz-31466",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "VIRGEN LA MNT, 54",
-   "via": "A la altura del nº 54",
-   "detalle": "Para demoler una cámara de agua",
-   "inicio": "2026-10-22",
-   "fin": "2026-11-06",
-   "lat": 41.69014437469493,
-   "lon": -0.8273019454973861,
-   "precision": "aprox",
-   "barrio": "Montañana"
-  },
-  {
-   "id": "zgz-31470",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "MADRID AVENIDA DE, 9",
-   "via": "",
-   "detalle": "Para realizar una canalización eléctrica y como primera fase",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-06",
-   "lat": 41.6559199,
-   "lon": -0.8945208,
-   "precision": "calle"
-  },
-  {
-   "id": "zgz-31478",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CABALLERO FCO(ALCALDE, 52",
-   "via": "",
-   "detalle": "Para reparar las juntas de dilatación del puente sobre el ferrocarril (sobre Calle Benjamin Franklin)",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-06",
-   "lat": 41.67283493889929,
-   "lon": -0.8596966767022661,
-   "precision": "aprox"
   },
   {
    "id": "zgz-31479",
@@ -789,127 +684,6 @@
    "precision": "aprox"
   },
   {
-   "id": "zgz-31505",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SANGUESA CASTAÑOSA M, 1",
-   "via": "",
-   "detalle": "Continuando con la revisión y limpieza de los pozos del colector (Saica)",
-   "inicio": "2026-11-05",
-   "fin": "2026-11-06",
-   "lat": 41.6609057,
-   "lon": -0.8721647,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.662745,
-      -0.870985
-     ],
-     [
-      41.662658,
-      -0.871051
-     ],
-     [
-      41.662631,
-      -0.87107
-     ],
-     [
-      41.662293,
-      -0.871314
-     ],
-     [
-      41.662127,
-      -0.871426
-     ],
-     [
-      41.662103,
-      -0.871443
-     ],
-     [
-      41.662075,
-      -0.871461
-     ],
-     [
-      41.662013,
-      -0.871498
-     ],
-     [
-      41.661381,
-      -0.871883
-     ],
-     [
-      41.661343,
-      -0.871905
-     ],
-     [
-      41.661261,
-      -0.871953
-     ],
-     [
-      41.66119,
-      -0.871994
-     ],
-     [
-      41.660812,
-      -0.872221
-     ],
-     [
-      41.660121,
-      -0.872627
-     ],
-     [
-      41.660048,
-      -0.87267
-     ],
-     [
-      41.659757,
-      -0.872841
-     ],
-     [
-      41.659667,
-      -0.872887
-     ],
-     [
-      41.659626,
-      -0.872899
-     ],
-     [
-      41.659591,
-      -0.872909
-     ],
-     [
-      41.659519,
-      -0.872908
-     ],
-     [
-      41.659354,
-      -0.872856
-     ],
-     [
-      41.65928,
-      -0.872832
-     ],
-     [
-      41.659184,
-      -0.872816
-     ],
-     [
-      41.659116,
-      -0.872817
-     ],
-     [
-      41.659038,
-      -0.87283
-     ],
-     [
-      41.658935,
-      -0.872858
-     ]
-    ]
-   ]
-  },
-  {
    "id": "zgz-31506",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1004,19 +778,6 @@
    "barrio": "Peñaflor"
   },
   {
-   "id": "zgz-31508",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ISABEL CATOLICA PS., 5",
-   "via": "",
-   "detalle": "Para reparar la marquesina (montaje de cristal) de la parada del tranvía \"Romareda\"",
-   "inicio": "2026-11-06",
-   "fin": "2026-11-06",
-   "lat": 41.6329453,
-   "lon": -0.903917,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31234",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1083,19 +844,6 @@
    "precision": "calle"
   },
   {
-   "id": "zgz-31401",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "COSO, 11",
-   "via": "",
-   "detalle": "Para realizar una canalización eléctrica",
-   "inicio": "2026-10-28",
-   "fin": "2026-11-06",
-   "lat": 41.653407,
-   "lon": -0.882609,
-   "precision": "portal"
-  },
-  {
    "id": "zgz-31476",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1107,19 +855,6 @@
    "lat": 41.660166,
    "lon": -0.9023833,
    "precision": "calle"
-  },
-  {
-   "id": "zgz-31549",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SARASATE PABLO, 20",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-06",
-   "fin": "2026-11-06",
-   "lat": 41.6538256,
-   "lon": -0.8995948,
-   "precision": "portal"
   },
   {
    "id": "zgz-31384",
@@ -1283,6 +1018,32 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-29799122",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 274.461",
+   "detalle": "",
+   "inicio": "2026-11-06",
+   "fin": null,
+   "lat": 41.592907,
+   "lon": -0.944069,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29799362",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 302.5",
+   "detalle": "",
+   "inicio": "2026-11-06",
+   "fin": null,
+   "lat": 41.603924,
+   "lon": -1.0768703,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29798766",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1293,19 +1054,6 @@
    "fin": null,
    "lat": 41.59306,
    "lon": -0.943915,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29798608",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 312.703",
-   "detalle": "",
-   "inicio": "2026-11-06",
-   "fin": null,
-   "lat": 41.639313,
-   "lon": -0.97143,
    "precision": "exacta"
   }
  ]
