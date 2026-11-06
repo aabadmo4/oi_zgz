@@ -1,5 +1,10 @@
 # 🚧 Obras e Incidencias Zaragoza
 
+[![CI](https://github.com/aabadmo4/oi_zgz/actions/workflows/ci.yml/badge.svg)](https://github.com/aabadmo4/oi_zgz/actions/workflows/ci.yml)
+[![CD](https://github.com/aabadmo4/oi_zgz/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/aabadmo4/oi_zgz/actions/workflows/cd.yml)
+[![Licencia: AGPL v3](https://img.shields.io/github/license/aabadmo4/oi_zgz)](LICENSE)
+[![Datos actualizados](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fobraseincidenciaszaragoza.es%2Fdata%2Fincidencias.json&query=%24.actualizado&label=datos)](https://obraseincidenciaszaragoza.es/data/incidencias.json)
+
 Mapa y listado de **obras, cortes de tráfico, accidentes y retenciones en Zaragoza**, construido a partir de datos públicos del Ayuntamiento de Zaragoza y de la DGT.
 
 🌐 **Web:** https://obraseincidenciaszaragoza.es

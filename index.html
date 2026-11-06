@@ -315,7 +315,7 @@ pintar();
 (()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const NT={Corte:['corte','cortes'],Obras:['obra','obras'],Accidente:['accidente','accidentes'],'Retención':['retención','retenciones'],Suministro:['corte de suministro','cortes de suministro'],Otros:['otra incidencia','otras incidencias']};const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${(NT[t]||[t.toLowerCase(),t.toLowerCase()])[n===1?0:1]}`).join(', ');
 if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} ${datos.length===1?'incidencia activa':'incidencias activas'} en Zaragoza${p?': '+p:''}.`})();
 if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
-const h=decodeURIComponent(location.hash.slice(1)),hi=h&&datos.find(x=>x.id===h);if(hi&&marcas.has(h)){map.setView([hi.lat,hi.lon],16,{animate:false});marcas.get(h).openPopup()}
+const abrirHash=an=>{const h=decodeURIComponent(location.hash.slice(1)),hi=h&&datos.find(x=>x.id===h);if(hi&&marcas.has(h)){map.setView([hi.lat,hi.lon],16,{animate:an});marcas.get(h).openPopup()}};abrirHash(false);addEventListener('hashchange',()=>abrirHash(true));
 }).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
 </script>
 </body>
