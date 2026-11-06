@@ -1814,6 +1814,28 @@
    "titulo": "A-2",
    "via": "pk 320.0–321.0",
    "visto": "2026-11-06"
+  },
+  "dgt-29764484": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29764484",
+   "inicio": "2026-11-06",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 307.084",
+   "visto": "2026-11-06"
+  },
+  "dgt-29765925": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29765925",
+   "inicio": "2026-11-06",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 324.48",
+   "visto": "2026-11-06"
   }
  },
  "ap-68": {
@@ -3524,6 +3546,17 @@
    "tipo": "Corte",
    "titulo": "Z-40",
    "via": "pk 13.9–14.6",
+   "visto": "2026-11-06"
+  },
+  "dgt-29765655": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29765655",
+   "inicio": "2026-11-06",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.24",
    "visto": "2026-11-06"
   }
  }
