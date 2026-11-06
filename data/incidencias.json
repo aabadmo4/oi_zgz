@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06T18:58+01:00",
+ "actualizado": "2026-11-06T19:03+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1322,19 +1322,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29791674",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 233.526",
-   "detalle": "",
-   "inicio": "2026-11-06",
-   "fin": null,
-   "lat": 41.62734,
-   "lon": -0.85175,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29792205",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1361,16 +1348,29 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29792969",
+   "id": "dgt-29793099",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 227.174",
+   "titulo": "A-2",
+   "via": "pk 318.771",
    "detalle": "",
    "inicio": "2026-11-06",
    "fin": null,
-   "lat": 41.592598,
-   "lon": -0.79514,
+   "lat": 41.680126,
+   "lon": -0.9220119,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29793110",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "VS-A-2-C",
+   "via": "pk 316.817",
+   "detalle": "",
+   "inicio": "2026-11-06",
+   "fin": null,
+   "lat": 41.6666,
+   "lon": -0.936744,
    "precision": "exacta"
   }
  ]
