@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06T03:01+01:00",
+ "actualizado": "2026-11-06T03:28+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 8
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -1244,19 +1244,6 @@
    "fin": null,
    "lat": 41.75179,
    "lon": -0.838294,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29760580",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 502.66",
-   "detalle": "",
-   "inicio": "2026-11-06",
-   "fin": null,
-   "lat": 41.6785,
-   "lon": -0.87838,
    "precision": "exacta"
   }
  ]
