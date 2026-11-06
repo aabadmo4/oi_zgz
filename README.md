@@ -1,7 +1,6 @@
 # 🚧 Obras e Incidencias Zaragoza
 
-[![CI](https://github.com/aabadmo4/oi_zgz/actions/workflows/ci.yml/badge.svg)](https://github.com/aabadmo4/oi_zgz/actions/workflows/ci.yml)
-[![CD](https://github.com/aabadmo4/oi_zgz/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/aabadmo4/oi_zgz/actions/workflows/cd.yml)
+[![Tests y despliegue](https://img.shields.io/github/actions/workflow/status/aabadmo4/oi_zgz/cd.yml?branch=main&event=push&label=tests%20y%20despliegue)](https://github.com/aabadmo4/oi_zgz/actions/workflows/cd.yml)
 [![Licencia: AGPL v3](https://img.shields.io/github/license/aabadmo4/oi_zgz)](LICENSE)
 [![Datos actualizados](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fobraseincidenciaszaragoza.es%2Fdata%2Fincidencias.json&query=%24.actualizado&label=datos)](https://obraseincidenciaszaragoza.es/data/incidencias.json)
 
@@ -105,7 +104,11 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 │   ├── actualizar_datos.py        # Descarga, clasifica, geolocaliza y escribe el JSON
 │   └── generar_paginas.py         # Páginas por vía, sitemap y robots.txt
 ├── tests/
-│   └── test_geocodificacion.py    # Tests sin red: geolocalización y tipos
+│   ├── test_geocodificacion.py    # Geolocalización de direcciones y barrios rurales
+│   ├── test_clasificacion.py      # Tipos: Corte, Suministro, Obras, Accidente...
+│   ├── test_texto.py              # limpiar_texto, fechas, caja de Zaragoza, norm_local, UTM
+│   ├── test_datos.py              # Contrato de data/incidencias.json y tipos de la web
+│   └── test_paginas.py            # Utilidades de generar_paginas.py
 ├── data/
 │   ├── incidencias.json           # Salida que consume la web (generada)
 │   ├── geocache_v2.json           # Caché de geolocalización (generada)
@@ -172,7 +175,7 @@ python scripts/actualizar_datos.py
 
 Si no se obtiene ninguna incidencia con coordenadas, el script termina con código 1 y no modifica el JSON. Nominatim limita a 1 petición por segundo, así que la primera ejecución sin caché puede tardar.
 
-**Tests** (no necesitan red):
+**Tests** (no necesitan red ni `GEMINI_API_KEY`; `google-genai` es opcional para ejecutarlos y `pyproj` solo para el test de UTM, que se omite si no está):
 
 ```bash
 python -m unittest discover -s tests -v
@@ -192,7 +195,7 @@ Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 - 🔤 **Ampliar la normalización de direcciones** (`TIPOS_VIA`, `HONORIFICOS`) con abreviaturas del callejero que fallen.
 - 📍 **Reducir las incidencias `sin_ubicar`** o las de precisión `aprox`, y completar `CENTROS_BARRIO` con los barrios rurales que falten.
 - 📡 **Añadir fuentes** (tranvía, autobús, eventos, otras administraciones).
-- 🧪 **Ampliar los tests** (`tests/`): ahora cubren la geolocalización y la distinción entre `Corte` y `Suministro`; faltan `limpiar_texto` y la normalización de direcciones.
+- 🧪 **Ampliar los tests** (`tests/`): ahora cubren geolocalización, clasificación de tipos, limpieza de texto, normalización de calles, el formato de `incidencias.json` y utilidades de las páginas de vías; falta probar `fetch_dgt` y `fetch_ayuntamiento` con respuestas de ejemplo guardadas.
 - ♿ **Accesibilidad y rendimiento** de la web.
 - 🔎 **SEO y contenidos** de la página.
 
