@@ -125,6 +125,41 @@ aside{border-right:0;border-top:1px solid var(--line)}
 #lista{overflow:visible}
 .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 }
+/* ---- Ficha emergente (popup) ---- */
+#mapa{--oi-max:380px}
+.leaflet-popup-content-wrapper{background:var(--panel);color:var(--ink);border-radius:14px;padding:0;overflow:hidden;box-shadow:0 6px 24px #0006}
+.leaflet-popup-content{margin:0!important;width:min(320px,calc(100vw - 64px))!important;font:400 15px/1.4 Barlow,system-ui,sans-serif}
+.leaflet-popup-tip{background:var(--panel)}
+.leaflet-container a.leaflet-popup-close-button{top:6px;right:6px;width:36px;height:36px;font:400 26px/34px system-ui,sans-serif;color:var(--mute);border-radius:50%}
+.leaflet-container a.leaflet-popup-close-button:hover{background:var(--bg);color:var(--ink)}
+.oi{display:flex;flex-direction:column;max-height:var(--oi-max);border-top:6px solid var(--c)}
+.oi-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px 44px 0 14px}
+.oi-tipo{background:var(--c);color:#1d2024;border:1.5px solid #1d2024;border-radius:99px;padding:1px 10px 1px 8px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.oi-src{border:1px solid var(--line);color:var(--mute);border-radius:99px;padding:1px 9px;font-size:13px}
+.oi-h{margin:6px 0 0;padding:0 14px;font:800 23px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.01em}
+.oi-h small{display:inline-block;vertical-align:2px;margin-left:6px;padding:1px 8px;border-radius:6px;background:var(--bg);font:600 14px/1.4 Barlow,sans-serif;color:var(--mute)}
+.oi-sc{overflow:auto;overscroll-behavior:contain;min-height:0;padding:4px 14px 10px}
+.oi-l{display:block;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mute)}
+.oi-via{margin:8px 0 0;padding:6px 10px;border-left:4px solid var(--c);border-radius:0 8px 8px 0;background:var(--bg)}
+.oi-d{margin:8px 0 0}
+.oi-f{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.oi-st{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 8px}
+.oi-pill{padding:1px 10px;border-radius:99px;font-size:13px;font-weight:700;background:var(--ink);color:var(--panel)}
+.oi-pill.k-fut{background:#1a73e822;color:var(--ink);box-shadow:inset 0 0 0 1.5px #1a73e8}
+.oi-pill.k-hoy{background:#1e8e3e26;color:var(--ink);box-shadow:inset 0 0 0 1.5px #1e8e3e}
+.oi-pill.k-fin,.oi-pill.k-nd{background:var(--bg);color:var(--mute);box-shadow:inset 0 0 0 1.5px var(--line)}
+.oi-rest{font-size:14px;font-weight:600}
+.oi-bar{height:6px;margin:8px 0 6px;border-radius:99px;background:var(--line);overflow:hidden}
+.oi-bar i{display:block;height:100%;background:var(--c);border-right:2px solid #1d2024}
+.oi-fe{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:14px;font-weight:500}
+.oi-fe span:last-child{text-align:right}
+.oi-fe small{display:block;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mute)}
+.oi-pr{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:13px;color:var(--mute);line-height:1.3}
+.oi-pr i{flex:none;width:14px;height:14px;margin-top:1px;border:2px dashed var(--mute);border-radius:50%}
+.oi-ac{display:flex;gap:8px;padding:10px 14px 12px;border-top:1px solid var(--line)}
+.leaflet-container a.oi-b,.oi-b{flex:1;min-height:42px;display:grid;place-items:center;padding:0 8px;font:600 14px Barlow,system-ui,sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--ink);border-radius:8px;text-decoration:none;cursor:pointer}
+.leaflet-container a.oi-b.p{background:var(--sign);color:#1d2024;border-color:#1d2024}
+.oi-b:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
 </style>
 </head>
 <body>
@@ -204,14 +239,45 @@ function anuncioLista(k){if(!anunciosLista[k]){const li=document.createElement('
 function fechas(i){return i.fin?`Hasta ${i.fin}`:i.inicio?`Desde ${i.inicio}`:''}
 function aviso(i){return i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa':i.precision==='aprox'?'Ubicación aproximada':''}
 function icono(t,p){const [e,c]=TIPOS[t]||TIPOS.Otros;return L.divIcon({className:'',html:`<div class="pin${p==='calle'||p==='aprox'?' dash':''}" style="background:${c}">${e}</div>`,iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})}
-function popup(i){return `<strong>${esc(i.titulo)}</strong><br>${esc(i.tipo)} · ${esc(i.fuente)}${i.via?`<br>${esc(i.via)}`:''}${i.detalle?`<br>${esc(i.detalle)}`:''}${fechas(i)?`<br>${fechas(i)}`:''}${aviso(i)?`<br><em>${aviso(i)}</em>`:''}`}
+const MIN_=/^(De|Del|La|Las|Los|El|Y|En)$/;
+function calle(t){const m=String(t||'').match(/^(.*?),\s*(\d+)\s*$/);let n=m?m[2]:'',x=(m?m[1]:String(t||'')).replace(/\(/g,' (').replace(/\s+/g,' ').trim(),pre='';
+const r=x.match(/^(.+?)\s+(AVENIDA DE|CARRETERA|CRT)$/i);if(r){pre=/^av/i.test(r[2])?'Avenida de':'Carretera';x=r[1]}
+x=x.toLowerCase().replace(/(^|[\s(.\-])(\p{L})/gu,(_,a,b)=>a+b.toUpperCase()).replace(/\b(Ii|Iii|Iv|Vi|Vii|Viii|Ix)\b/g,v=>v.toUpperCase()).split(' ').map((w,k)=>k&&MIN_.test(w)?w.toLowerCase():w).join(' ');
+return{nom:(pre?pre+' ':'')+x,num:n==='0'?'':n}}
+const dUTC=s=>{const [y,m,d]=String(s).split('-').map(Number);return Date.UTC(y,m-1,d)};
+const fCorta=s=>new Date(dUTC(s)).toLocaleDateString('es-ES',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+const dias=n=>n===1?'1 día':n+' días';
+function estado(i){const h=new Date(),hoy=Date.UTC(h.getFullYear(),h.getMonth(),h.getDate()),a=i.inicio&&dUTC(i.inicio),b=i.fin&&dUTC(i.fin),D=864e5;
+if(a&&a>hoy){const n=Math.round((a-hoy)/D);return{k:'k-fut',t:'Próxima',r:n===1?'Empieza mañana':'Empieza en '+dias(n)}}
+if(b&&b<hoy)return{k:'k-fin',t:'Finalizada',r:'Terminó hace '+dias(Math.round((hoy-b)/D))};
+if(a&&b&&a===b)return{k:'k-hoy',t:'Solo hoy',r:''};
+if(b===hoy)return{k:'k-hoy',t:'Termina hoy',r:'',p:100};
+if(!b)return{k:'k-nd',t:a?'En curso':'Activa',r:'Sin fecha de fin'};
+const n=Math.round((b-hoy)/D);return{k:'',t:'En curso',r:n===1?'Termina mañana':'Quedan '+dias(n),p:a?Math.max(4,Math.min(100,(hoy-a)/(b-a)*100)):0}}
+function popup(i){const [e,c]=TIPOS[i.tipo]||TIPOS.Otros,{nom,num}=calle(i.titulo),st=estado(i),pk=/^pk\b/i.test(i.via||''),
+nota=i.precision==='calle'?'Afecta a toda la calle o no tiene número exacto: la ubicación es orientativa.':i.precision==='aprox'?'Ubicación aproximada.':'';
+return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tipo">${e} ${esc(i.tipo)}</span><span class="oi-src">${esc(i.fuente)}</span></div>
+<h3 class="oi-h">${esc(nom)}${num?`<small>nº ${esc(num)}</small>`:''}</h3>
+<div class="oi-sc">${i.via?`<div class="oi-via"><span class="oi-l">${pk?'Punto kilométrico':'Tramo'}</span>${esc(pk?i.via.replace(/^pk\s*/i,''):i.via)}</div>`:''}${i.detalle?`<p class="oi-d">${esc(i.detalle)}</p>`:''}
+<div class="oi-f"><div class="oi-st"><span class="oi-pill ${st.k}">${st.t}</span>${st.r?`<span class="oi-rest">${st.r}</span>`:''}</div>${st.p?`<div class="oi-bar" aria-hidden="true"><i style="width:${st.p.toFixed(0)}%"></i></div>`:''}
+${i.inicio||i.fin?`<div class="oi-fe"><span><small>Inicio</small>${i.inicio?fCorta(i.inicio):'—'}</span><span><small>Fin</small>${i.fin?fCorta(i.fin):'Sin determinar'}</span></div>`:''}</div>
+${nota?`<div class="oi-pr"><i aria-hidden="true"></i><span>${nota}</span></div>`:''}</div>
+<div class="oi-ac"><a class="oi-b p" href="https://www.google.com/maps/search/?api=1&query=${i.lat},${i.lon}" target="_blank" rel="noopener">📍 Abrir en Maps</a><button type="button" class="oi-b oi-sh" data-id="${esc(i.id)}">🔗 Compartir</button></div></div>`}
+function ajustaPopup(){$('mapa').style.setProperty('--oi-max',Math.max(220,map.getSize().y-70)+'px')}
+ajustaPopup();map.on('resize',ajustaPopup);
+map.on('popupopen',e=>{const b=e.popup.getElement()?.querySelector('.oi-sh');if(!b)return;const i=datos.find(x=>x.id===b.dataset.id);if(!i)return;
+try{history.replaceState(null,'','#'+i.id)}catch(_){}
+b.onclick=async()=>{const url=location.origin+'/#'+i.id,tit=`${calle(i.titulo).nom} · ${i.tipo}`;
+if(navigator.share){try{await navigator.share({title:tit,text:i.detalle||tit,url})}catch(_){}return}
+const t=b.textContent;try{await navigator.clipboard.writeText(url);b.textContent='✓ Enlace copiado'}catch(_){b.textContent='No se pudo copiar'}setTimeout(()=>b.textContent=t,2000)}});
+map.on('popupclose',()=>{try{history.replaceState(null,'',location.pathname+location.search)}catch(_){}});
 function pintar(){
 limite=PAG;
 const q=$('q').value.trim().toLowerCase(),f=$('fuente').value,b=map.getBounds();
 filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
 capa.clearLayers();marcas.clear();
 filtrados.forEach(i=>{
-const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:i.titulo}).bindPopup(popup(i));
+const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:i.titulo}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
 capa.addLayer(m);
 if(i.trazado)capa.addLayer(L.polyline(i.trazado,{color:(TIPOS[i.tipo]||TIPOS.Otros)[1],weight:6,opacity:.85}));
 marcas.set(i.id,m);
@@ -249,6 +315,7 @@ pintar();
 (()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const NT={Corte:['corte','cortes'],Obras:['obra','obras'],Accidente:['accidente','accidentes'],'Retención':['retención','retenciones'],Suministro:['corte de suministro','cortes de suministro'],Otros:['otra incidencia','otras incidencias']};const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${(NT[t]||[t.toLowerCase(),t.toLowerCase()])[n===1?0:1]}`).join(', ');
 if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} ${datos.length===1?'incidencia activa':'incidencias activas'} en Zaragoza${p?': '+p:''}.`})();
 if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
+const h=decodeURIComponent(location.hash.slice(1)),hi=h&&datos.find(x=>x.id===h);if(hi&&marcas.has(h)){map.setView([hi.lat,hi.lon],16,{animate:false});marcas.get(h).openPopup()}
 }).catch(()=>{$('estado').textContent='No se pudieron cargar los datos. Vuelve a intentarlo en unos minutos.'});
 </script>
 </body>
