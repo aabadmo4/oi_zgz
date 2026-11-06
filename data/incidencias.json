@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-06T13:01+01:00",
+ "actualizado": "2026-11-06T14:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 62
+   "n": 67
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -393,7 +393,7 @@
    "via": "",
    "detalle": "Para reparar el vertido a la altura del no 3",
    "inicio": "2026-10-26",
-   "fin": "2026-11-06",
+   "fin": "2026-11-11",
    "lat": 41.642639,
    "lon": -0.8853781,
    "precision": "portal"
@@ -594,6 +594,32 @@
    "precision": "calle"
   },
   {
+   "id": "zgz-31567",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "JOSÉ ATARÉS, 105",
+   "via": "",
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1)",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-20",
+   "lat": 41.67423287979509,
+   "lon": -0.8986165878224152,
+   "precision": "aprox"
+  },
+  {
+   "id": "zgz-31568",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PALENCIA, 8",
+   "via": "",
+   "detalle": "Para instalar una planta solar fotovoltaica (lote 4)",
+   "inicio": "2026-11-12",
+   "fin": "2026-12-18",
+   "lat": 41.6611986,
+   "lon": -0.8794143,
+   "precision": "portal"
+  },
+  {
    "id": "zgz-31466",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -684,6 +710,19 @@
    "fin": "2026-11-20",
    "lat": 41.624682,
    "lon": -0.8782324,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31566",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ORENSE, 8",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido en el n.o 8",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-12",
+   "lat": 41.6274038,
+   "lon": -0.8861138,
    "precision": "portal"
   },
   {
@@ -1025,7 +1064,7 @@
    "via": "",
    "detalle": "Para realizar una nueva acometida de vertido a la altura del no 8",
    "inicio": "2026-11-10",
-   "fin": "2026-11-13",
+   "fin": "2026-11-24",
    "lat": 41.665154,
    "lon": -0.862768,
    "precision": "portal"
@@ -1156,7 +1195,69 @@
    "precision": "portal"
   },
   {
-   "id": "dgt-29724473",
+   "id": "zgz-31564",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "EDISON TOMAS A, 9",
+   "via": "",
+   "detalle": "Para sustituir la tapa de una arqueta de telecomunicaciones a la altura del n.o 9",
+   "inicio": "2026-11-07",
+   "fin": "2026-11-07",
+   "lat": 41.665278,
+   "lon": -0.86392,
+   "precision": "portal"
+  },
+  {
+   "id": "zgz-31565",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "REBOLLEDO RODRIGO DE, 4",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-07",
+   "fin": "2026-11-13",
+   "lat": 41.6459811,
+   "lon": -0.8626608,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.645831,
+      -0.86115
+     ],
+     [
+      41.645872,
+      -0.861536
+     ],
+     [
+      41.645901,
+      -0.861835
+     ],
+     [
+      41.64591,
+      -0.861949
+     ],
+     [
+      41.645919,
+      -0.862046
+     ],
+     [
+      41.646021,
+      -0.863055
+     ],
+     [
+      41.64612,
+      -0.864067
+     ],
+     [
+      41.646131,
+      -0.864172
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dgt-29724472",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
@@ -1169,7 +1270,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29724472",
+   "id": "dgt-29724473",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
@@ -1208,16 +1309,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29776591",
+   "id": "dgt-29780063",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 504.868",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 322.32",
    "detalle": "",
    "inicio": "2026-11-06",
    "fin": null,
-   "lat": 41.69397,
-   "lon": -0.86997,
+   "lat": 41.679764,
+   "lon": -0.87992704,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29780249",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.226",
+   "detalle": "",
+   "inicio": "2026-11-06",
+   "fin": null,
+   "lat": 41.68011,
+   "lon": -0.881959,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29780282",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 294.755",
+   "detalle": "",
+   "inicio": "2026-11-06",
+   "fin": null,
+   "lat": 41.705257,
+   "lon": -0.8413775,
    "precision": "exacta"
   }
  ]

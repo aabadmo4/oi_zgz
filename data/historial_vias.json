@@ -1836,6 +1836,28 @@
    "titulo": "A-2",
    "via": "pk 324.48",
    "visto": "2026-11-06"
+  },
+  "dgt-29780063": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29780063",
+   "inicio": "2026-11-06",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 322.32",
+   "visto": "2026-11-06"
+  },
+  "dgt-29780249": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29780249",
+   "inicio": "2026-11-06",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.226",
+   "visto": "2026-11-06"
   }
  },
  "ap-68": {
@@ -2144,6 +2166,17 @@
    "fuente": "Ayuntamiento",
    "id": "zgz-29864",
    "inicio": "2026-06-27",
+   "tipo": "Corte",
+   "titulo": "JOSÉ ATARÉS, 105",
+   "via": "",
+   "visto": "2026-11-06"
+  },
+  "zgz-31567": {
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1)",
+   "fin": "2026-11-20",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31567",
+   "inicio": "2026-11-09",
    "tipo": "Corte",
    "titulo": "JOSÉ ATARÉS, 105",
    "via": "",
