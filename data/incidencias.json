@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-06T11:01+01:00",
+ "actualizado": "2026-11-06T11:54+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1182,19 +1182,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29765254",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 25.8–26.2",
-   "detalle": "",
-   "inicio": "2026-11-06",
-   "fin": "2026-11-06",
-   "lat": 41.607788,
-   "lon": -0.9109774,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29765294",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1208,68 +1195,42 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29769429",
+   "id": "dgt-29765254",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-330",
-   "via": "pk 503.0–510.0",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 25.8–26.2",
    "detalle": "",
    "inicio": "2026-11-06",
-   "fin": null,
-   "lat": 41.736008,
-   "lon": -0.84646004,
+   "fin": "2026-11-06",
+   "lat": 41.607788,
+   "lon": -0.9109774,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29770976",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 487.403",
-   "detalle": "",
-   "inicio": "2026-11-06",
-   "fin": null,
-   "lat": 41.58944,
-   "lon": -0.94646,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29771012",
+   "id": "dgt-29773395",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 233.262",
+   "via": "pk 251.536",
    "detalle": "",
    "inicio": "2026-11-06",
    "fin": null,
-   "lat": 41.62588,
-   "lon": -0.84894,
+   "lat": 41.702297,
+   "lon": -1.0135151,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29771168",
+   "id": "dgt-29773402",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 5.636",
+   "titulo": "A-68",
+   "via": "pk 250.255",
    "detalle": "",
    "inicio": "2026-11-06",
    "fin": null,
-   "lat": 41.620182,
-   "lon": -0.971012,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29771256",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 502.927",
-   "detalle": "",
-   "inicio": "2026-11-06",
-   "fin": null,
-   "lat": 41.68112,
-   "lon": -0.876988,
+   "lat": 41.69687,
+   "lon": -1.00011,
    "precision": "exacta"
   }
  ]
