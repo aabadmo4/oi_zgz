@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T12:01+01:00",
+ "actualizado": "2026-11-07T13:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1043,19 +1043,6 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29804562",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.0–22.0",
-   "detalle": "",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.61761,
-   "lon": -0.8678242,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29805076",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1069,68 +1056,55 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29805572",
+   "id": "dgt-29808033",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 18.803",
-   "detalle": "",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.632652,
-   "lon": -0.837113,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29806385",
-   "fuente": "DGT",
-   "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 326.514–326.52",
+   "via": "pk 323.986",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.674725,
-   "lon": -0.8296458,
+   "lat": 41.67941,
+   "lon": -0.859797,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29806561",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 323.773",
-   "detalle": "",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.67958,
-   "lon": -0.86406,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29806731",
+   "id": "dgt-29808191",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 26.88",
+   "via": "pk 15.756",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.60968,
-   "lon": -0.91877,
+   "lat": 41.65647,
+   "lon": -0.84097,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29806836",
+   "id": "dgt-29808201",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 248.507",
+   "titulo": "A-2",
+   "via": "pk 320.617",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.69026,
-   "lon": -0.98087,
+   "lat": 41.68037,
+   "lon": -0.90026,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29808256",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 291.898",
+   "detalle": "",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.68127,
+   "lon": -0.83416,
    "precision": "exacta"
   }
  ]
