@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T14:01+01:00",
+ "actualizado": "2026-11-07T15:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1043,17 +1043,45 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29805076",
+   "id": "dgt-29811762",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "via": "pk 20.067 · sentido creciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.61006,
-   "lon": -0.87491894,
+   "lat": 41.62582,
+   "lon": -0.84793,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29811790",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 276.702 · sentido decreciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.61171,
+   "lon": -0.93417,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29811999",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 27.702 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.61211,
+   "lon": -0.92798,
    "precision": "exacta"
   }
  ]
