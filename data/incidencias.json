@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T07:01+01:00",
+ "actualizado": "2026-11-07T07:39+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -63,7 +63,8 @@
       -0.868415
      ]
     ]
-   ]
+   ],
+   "nombre": "Calle Doctor Blanco Cordero"
   },
   {
    "id": "zgz-27864",
@@ -76,7 +77,8 @@
    "fin": "2026-11-22",
    "lat": 41.6517123,
    "lon": -0.91243,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Avenida De, 154 Madrid"
   },
   {
    "id": "zgz-28004",
@@ -89,7 +91,8 @@
    "fin": "2026-12-31",
    "lat": 41.647136,
    "lon": -0.8946807,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
   },
   {
    "id": "zgz-28052",
@@ -102,7 +105,8 @@
    "fin": "2027-01-31",
    "lat": 41.6528206,
    "lon": -0.8935064,
-   "precision": "calle"
+   "precision": "calle",
+   "nombre": "Calle José Anselmo Clavé"
   },
   {
    "id": "zgz-29395",
@@ -113,9 +117,10 @@
    "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
    "inicio": "2026-05-25",
    "fin": "2027-02-26",
-   "lat": 41.6513595,
-   "lon": -0.874242,
-   "precision": "calle"
+   "lat": 41.650979,
+   "lon": -0.8772879,
+   "precision": "calle",
+   "nombre": "Calle Coso, 94"
   },
   {
    "id": "zgz-28867",
@@ -128,7 +133,8 @@
    "fin": "2027-02-28",
    "lat": 41.6592754,
    "lon": -0.8757241,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Sixto Celorrio"
   },
   {
    "id": "zgz-29040",
@@ -141,7 +147,8 @@
    "fin": "2026-12-12",
    "lat": 41.652847,
    "lon": -0.927444,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Jerónimo Cáncer"
   },
   {
    "id": "zgz-29675",
@@ -154,7 +161,8 @@
    "fin": "2027-01-31",
    "lat": 41.6461554,
    "lon": -0.8970815,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Avenida De, 41 Valencia"
   },
   {
    "id": "zgz-29691",
@@ -167,7 +175,8 @@
    "fin": "2026-12-05",
    "lat": 41.660856970744895,
    "lon": -0.8603194362593231,
-   "precision": "aprox"
+   "precision": "aprox",
+   "nombre": "Calle Marqués de la Cadena"
   },
   {
    "id": "zgz-29864",
@@ -240,7 +249,8 @@
       -0.898281
      ]
     ]
-   ]
+   ],
+   "nombre": "Calle José Atarés"
   },
   {
    "id": "zgz-29394",
@@ -253,7 +263,8 @@
    "fin": "2027-02-18",
    "lat": 41.6391707,
    "lon": -0.8984925,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Pedro Cerbuna"
   },
   {
    "id": "zgz-30111",
@@ -266,7 +277,8 @@
    "fin": "2026-12-01",
    "lat": 41.6464415,
    "lon": -0.8975153,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Desiderio Escosura"
   },
   {
    "id": "zgz-29137",
@@ -279,7 +291,8 @@
    "fin": "2026-12-31",
    "lat": 41.639417,
    "lon": -0.893164,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Agustín de Quinto"
   },
   {
    "id": "zgz-30074",
@@ -292,7 +305,8 @@
    "fin": "2026-11-16",
    "lat": 41.6548205,
    "lon": -0.8982344,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Sádaba"
   },
   {
    "id": "zgz-30568",
@@ -305,7 +319,8 @@
    "fin": "2026-11-27",
    "lat": 41.667599,
    "lon": -0.862763,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Jaime Ferrán"
   },
   {
    "id": "zgz-31472",
@@ -318,7 +333,8 @@
    "fin": "2026-12-23",
    "lat": 41.640176,
    "lon": -0.89081,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle de Manuel Lasala"
   },
   {
    "id": "zgz-30876",
@@ -331,7 +347,8 @@
    "fin": "2027-02-18",
    "lat": 41.6410979,
    "lon": -0.8966768,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Pedro Cerbuna"
   },
   {
    "id": "zgz-31471",
@@ -344,7 +361,8 @@
    "fin": "2026-11-26",
    "lat": 41.6438817,
    "lon": -0.8946502,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Maestro Tomás Bretón"
   },
   {
    "id": "zgz-31364",
@@ -357,7 +375,8 @@
    "fin": "2026-11-11",
    "lat": 41.642639,
    "lon": -0.8853781,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle de la Paz"
   },
   {
    "id": "zgz-31534",
@@ -368,41 +387,38 @@
    "detalle": "Para la instalación de adornos navideños en el tramo entre las Avenidas del Tenor Fleta y de Cesareo Alierta",
    "inicio": "2026-11-05",
    "fin": "2026-11-09",
-   "lat": 41.6433033,
-   "lon": -0.8728946,
+   "lat": 41.6406801,
+   "lon": -0.8736009,
    "precision": "calle",
    "trazado": [
     [
      [
-      41.642498,
-      -0.873084
+      41.640785,
+      -0.873526
      ],
      [
-      41.643198,
-      -0.872919
+      41.640729,
+      -0.873564
      ],
      [
-      41.643244,
-      -0.872908
+      41.640688,
+      -0.873595
      ],
      [
-      41.643322,
-      -0.87289
+      41.640658,
+      -0.873618
      ],
      [
-      41.643594,
-      -0.872828
+      41.640616,
+      -0.873657
      ],
      [
-      41.643639,
-      -0.872818
-     ],
-     [
-      41.64411,
-      -0.872711
+      41.640589,
+      -0.873691
      ]
     ]
-   ]
+   ],
+   "nombre": "Avenida de San José"
   },
   {
    "id": "zgz-30666",
@@ -416,7 +432,8 @@
    "lat": 41.6609828,
    "lon": -0.9423819,
    "precision": "portal",
-   "barrio": "Miralbueno"
+   "barrio": "Miralbueno",
+   "nombre": "Calle Vistabella, 47"
   },
   {
    "id": "zgz-31537",
@@ -474,7 +491,8 @@
       -0.832469
      ]
     ]
-   ]
+   ],
+   "nombre": "Calle Fatas Cabeza G, 26"
   },
   {
    "id": "zgz-30805",
@@ -487,7 +505,8 @@
    "fin": "2027-08-31",
    "lat": 41.6426708,
    "lon": -0.8649101,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Doctor Iranzo"
   },
   {
    "id": "zgz-31557",
@@ -500,7 +519,8 @@
    "fin": "2026-11-13",
    "lat": 41.655763,
    "lon": -0.904432,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle de Fray José Casanova"
   },
   {
    "id": "zgz-31475",
@@ -513,7 +533,8 @@
    "fin": "2026-11-13",
    "lat": 41.6586713,
    "lon": -0.8751198,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Sixto Celorrio"
   },
   {
    "id": "zgz-31425",
@@ -526,7 +547,8 @@
    "fin": "2026-12-28",
    "lat": 41.6528206,
    "lon": -0.8935064,
-   "precision": "calle"
+   "precision": "calle",
+   "nombre": "Calle José Anselmo Clavé"
   },
   {
    "id": "zgz-31567",
@@ -539,7 +561,8 @@
    "fin": "2026-11-20",
    "lat": 41.67423287979509,
    "lon": -0.8986165878224152,
-   "precision": "aprox"
+   "precision": "aprox",
+   "nombre": "Calle José Atarés"
   },
   {
    "id": "zgz-31568",
@@ -552,7 +575,8 @@
    "fin": "2026-12-18",
    "lat": 41.6611986,
    "lon": -0.8794143,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Palencia"
   },
   {
    "id": "zgz-31479",
@@ -565,7 +589,8 @@
    "fin": "2026-11-09",
    "lat": 41.646664,
    "lon": -0.863372,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Leopoldo Romeo"
   },
   {
    "id": "zgz-30596",
@@ -579,7 +604,8 @@
    "lat": 41.5886597,
    "lon": -0.8127982,
    "precision": "portal",
-   "barrio": "Cartuja Baja"
+   "barrio": "Cartuja Baja",
+   "nombre": "Calle Albardín"
   },
   {
    "id": "zgz-31114",
@@ -592,7 +618,8 @@
    "fin": "2026-11-16",
    "lat": 41.6274587,
    "lon": -0.873865,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Consejo de Ciento, 11"
   },
   {
    "id": "zgz-31451",
@@ -605,7 +632,8 @@
    "fin": "2026-11-20",
    "lat": 41.624682,
    "lon": -0.8782324,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Cuarta Avenida, 46"
   },
   {
    "id": "zgz-31566",
@@ -618,7 +646,8 @@
    "fin": "2026-11-12",
    "lat": 41.6274038,
    "lon": -0.8861138,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Orense"
   },
   {
    "id": "zgz-31474",
@@ -655,7 +684,8 @@
       -0.902688
      ]
     ]
-   ]
+   ],
+   "nombre": "Ronda de la Hispanidad"
   },
   {
    "id": "zgz-31536",
@@ -668,7 +698,8 @@
    "fin": "2027-01-29",
    "lat": 41.6410979,
    "lon": -0.8966768,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Pedro Cerbuna"
   },
   {
    "id": "zgz-30944",
@@ -681,7 +712,8 @@
    "fin": "2026-11-18",
    "lat": 41.67283493889929,
    "lon": -0.8596966767022661,
-   "precision": "aprox"
+   "precision": "aprox",
+   "nombre": "Calle Alcalde Francisco Caballero"
   },
   {
    "id": "zgz-31506",
@@ -695,7 +727,8 @@
    "lat": 41.702037,
    "lon": -0.9654,
    "precision": "portal",
-   "barrio": "Monzalbarba"
+   "barrio": "Monzalbarba",
+   "nombre": "Camino de Alfocea"
   },
   {
    "id": "zgz-31507",
@@ -708,7 +741,8 @@
    "fin": "2026-11-20",
    "lat": 41.6521319,
    "lon": -0.8673024,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Taboada Eduardo Jes., 11"
   },
   {
    "id": "zgz-31003",
@@ -721,7 +755,8 @@
    "fin": "2026-11-27",
    "lat": 41.652238,
    "lon": -0.868073,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Doctor Blanco Cordero"
   },
   {
    "id": "zgz-31144",
@@ -735,7 +770,8 @@
    "lat": 41.7615458,
    "lon": -0.7982642,
    "precision": "portal",
-   "barrio": "Peñaflor"
+   "barrio": "Peñaflor",
+   "nombre": "Calle de Enmedio"
   },
   {
    "id": "zgz-31148",
@@ -748,7 +784,8 @@
    "fin": "2026-11-30",
    "lat": 41.650317,
    "lon": -0.8892003,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Paseo de María Agustín"
   },
   {
    "id": "zgz-31559",
@@ -761,7 +798,8 @@
    "fin": "2026-11-13",
    "lat": 41.643402,
    "lon": -0.887814,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Tomás Zumalacárregui"
   },
   {
    "id": "zgz-31560",
@@ -775,7 +813,8 @@
    "lat": 41.760916,
    "lon": -0.7987939,
    "precision": "portal",
-   "barrio": "Peñaflor"
+   "barrio": "Peñaflor",
+   "nombre": "Calle Gallego Rio, 11"
   },
   {
    "id": "zgz-31234",
@@ -788,7 +827,8 @@
    "fin": "2026-12-04",
    "lat": 41.656832846812705,
    "lon": -0.7887810252750279,
-   "precision": "aprox"
+   "precision": "aprox",
+   "nombre": "Calle D (Malpica II)"
   },
   {
    "id": "zgz-31235",
@@ -801,7 +841,8 @@
    "fin": "2026-11-23",
    "lat": 41.6467227,
    "lon": -0.8950031,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Juan José Lorente"
   },
   {
    "id": "zgz-31561",
@@ -815,7 +856,8 @@
    "lat": 41.658573,
    "lon": -0.925555,
    "precision": "portal",
-   "barrio": "Miralbueno"
+   "barrio": "Miralbueno",
+   "nombre": "Camino del Pilón"
   },
   {
    "id": "zgz-31563",
@@ -828,7 +870,8 @@
    "fin": "2026-11-24",
    "lat": 41.665154,
    "lon": -0.862768,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle de Tomás A. Edison"
   },
   {
    "id": "zgz-31562",
@@ -841,7 +884,8 @@
    "fin": "2026-11-13",
    "lat": 41.6559199,
    "lon": -0.8945208,
-   "precision": "calle"
+   "precision": "calle",
+   "nombre": "Avenida de Madrid"
   },
   {
    "id": "zgz-31476",
@@ -854,7 +898,8 @@
    "fin": "2026-11-20",
    "lat": 41.660166,
    "lon": -0.9023833,
-   "precision": "calle"
+   "precision": "calle",
+   "nombre": "Calle Puerta de Sancho Av., 9"
   },
   {
    "id": "zgz-31384",
@@ -887,7 +932,8 @@
       -0.861176
      ]
     ]
-   ]
+   ],
+   "nombre": "Calle Molino de las Armas, 46"
   },
   {
    "id": "zgz-31271",
@@ -901,7 +947,8 @@
    "lat": 41.6610555,
    "lon": -0.9426162,
    "precision": "portal",
-   "barrio": "Miralbueno"
+   "barrio": "Miralbueno",
+   "nombre": "Calle Vistabella, 53"
   },
   {
    "id": "zgz-31465",
@@ -914,7 +961,8 @@
    "fin": "2026-11-13",
    "lat": 41.64351,
    "lon": -0.9099002,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle Guerrero Maria, 13"
   },
   {
    "id": "zgz-31093",
@@ -927,7 +975,8 @@
    "fin": "2026-12-31",
    "lat": 41.647136,
    "lon": -0.8946807,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
   },
   {
    "id": "zgz-31564",
@@ -940,7 +989,8 @@
    "fin": "2026-11-07",
    "lat": 41.665278,
    "lon": -0.86392,
-   "precision": "portal"
+   "precision": "portal",
+   "nombre": "Calle de Tomás A. Edison"
   },
   {
    "id": "zgz-31565",
@@ -989,10 +1039,11 @@
       -0.864172
      ]
     ]
-   ]
+   ],
+   "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29724472",
+   "id": "dgt-29724473",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
@@ -1005,7 +1056,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29724473",
+   "id": "dgt-29724472",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "N-232",
