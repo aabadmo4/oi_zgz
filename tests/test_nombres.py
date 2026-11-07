@@ -34,6 +34,13 @@ REGLAS = [
     ("JOS\u00c9 ATAR\u00c9S", "Calle Jos\u00e9 Atar\u00e9s"),  # ya viene en orden natural
     ("COSO", "Calle Coso"),
     ("N-232", "N-232"),
+    # Con el portal pegado (así llega del Ayuntamiento): no debe alterar ni duplicarse en el nombre
+    ("VALENCIA AVENIDA DE, 41", "Avenida de Valencia"),
+    ("MADRID AVENIDA DE, 154", "Avenida de Madrid"),
+    ("VISTABELLA, 47", "Calle Vistabella"),
+    ("PUERTA DE SANCHO AV., 9", "Avenida Puerta de Sancho"),
+    ("COSO, 94", "Calle Coso"),
+    ("GUERRERO MARIA, 13", "Calle Mar\u00eda Guerrero"),
 ]
 
 
