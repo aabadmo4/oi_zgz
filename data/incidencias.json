@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T00:10+01:00",
+ "actualizado": "2026-11-07T01:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1041,6 +1041,19 @@
    "fin": null,
    "lat": 41.603924,
    "lon": -1.0768703,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29800005",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 243.345",
+   "detalle": "",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.66341,
+   "lon": -0.93057,
    "precision": "exacta"
   }
  ]
