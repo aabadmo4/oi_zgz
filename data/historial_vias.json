@@ -4022,6 +4022,17 @@
    "titulo": "Z-40",
    "via": "pk 27.702 · sentido decreciente · orientación este",
    "visto": "2026-11-07"
+  },
+  "dgt-29814130": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29814130",
+   "inicio": "2026-11-07",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-07"
   }
  }
 }
