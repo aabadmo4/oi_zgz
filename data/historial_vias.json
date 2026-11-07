@@ -3868,6 +3868,28 @@
    "titulo": "Z-40",
    "via": "pk 24.0–25.0",
    "visto": "2026-11-06"
+  },
+  "dgt-29804562": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29804562",
+   "inicio": "2026-11-07",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.0–22.0",
+   "visto": "2026-11-07"
+  },
+  "dgt-29805076": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29805076",
+   "inicio": "2026-11-07",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0",
+   "visto": "2026-11-07"
   }
  }
 }

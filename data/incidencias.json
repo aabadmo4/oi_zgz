@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T10:01+01:00",
+ "actualizado": "2026-11-07T11:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1043,29 +1043,29 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29803721",
+   "id": "dgt-29804562",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.419",
+   "titulo": "Z-40",
+   "via": "pk 14.0–22.0",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.706135,
-   "lon": -1.0083534,
+   "lat": 41.61761,
+   "lon": -0.8678242,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29803831",
+   "id": "dgt-29805076",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 234.313",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.632584,
-   "lon": -0.859576,
+   "lat": 41.61006,
+   "lon": -0.87491894,
    "precision": "exacta"
   }
  ]
