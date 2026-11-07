@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T17:27+01:00",
+ "actualizado": "2026-11-07T18:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -1054,34 +1054,6 @@
    "fin": null,
    "lat": 41.61006,
    "lon": -0.87491894,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29815610",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 323.882 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.67989,
-   "lon": -0.86104,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29815627",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-D",
-   "via": "pk 321.977 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.68007,
-   "lon": -0.88474,
    "precision": "exacta"
   }
  ]
