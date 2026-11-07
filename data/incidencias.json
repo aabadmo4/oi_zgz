@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T15:01+01:00",
+ "actualizado": "2026-11-07T16:12+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -78,7 +78,7 @@
    "lat": 41.6517123,
    "lon": -0.91243,
    "precision": "portal",
-   "nombre": "Avenida De, 154 Madrid"
+   "nombre": "Avenida de Madrid"
   },
   {
    "id": "zgz-28004",
@@ -120,7 +120,7 @@
    "lat": 41.650979,
    "lon": -0.8772879,
    "precision": "calle",
-   "nombre": "Calle Coso, 94"
+   "nombre": "Calle del Coso"
   },
   {
    "id": "zgz-28867",
@@ -162,7 +162,7 @@
    "lat": 41.6461554,
    "lon": -0.8970815,
    "precision": "portal",
-   "nombre": "Avenida De, 41 Valencia"
+   "nombre": "Avenida de Valencia"
   },
   {
    "id": "zgz-29691",
@@ -433,7 +433,7 @@
    "lon": -0.9423819,
    "precision": "portal",
    "barrio": "Miralbueno",
-   "nombre": "Calle Vistabella, 47"
+   "nombre": "Calle de Vistabella"
   },
   {
    "id": "zgz-31537",
@@ -492,7 +492,7 @@
      ]
     ]
    ],
-   "nombre": "Calle Fatas Cabeza G, 26"
+   "nombre": "Calle Guillermo Fatás Cabeza"
   },
   {
    "id": "zgz-30805",
@@ -619,7 +619,7 @@
    "lat": 41.6274587,
    "lon": -0.873865,
    "precision": "portal",
-   "nombre": "Calle Consejo de Ciento, 11"
+   "nombre": "Calle Consejo de Ciento"
   },
   {
    "id": "zgz-31451",
@@ -633,7 +633,7 @@
    "lat": 41.624682,
    "lon": -0.8782324,
    "precision": "portal",
-   "nombre": "Calle Cuarta Avenida, 46"
+   "nombre": "Cuarta Avenida"
   },
   {
    "id": "zgz-31566",
@@ -742,7 +742,7 @@
    "lat": 41.6521319,
    "lon": -0.8673024,
    "precision": "portal",
-   "nombre": "Calle Taboada Eduardo Jes., 11"
+   "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
    "id": "zgz-31003",
@@ -814,7 +814,7 @@
    "lon": -0.7987939,
    "precision": "portal",
    "barrio": "Peñaflor",
-   "nombre": "Calle Gallego Rio, 11"
+   "nombre": "Calle del Río Gállego"
   },
   {
    "id": "zgz-31234",
@@ -899,7 +899,7 @@
    "lat": 41.660166,
    "lon": -0.9023833,
    "precision": "calle",
-   "nombre": "Calle Puerta de Sancho Av., 9"
+   "nombre": "Avenida de Puerta Sancho"
   },
   {
    "id": "zgz-31384",
@@ -933,7 +933,7 @@
      ]
     ]
    ],
-   "nombre": "Calle Molino de las Armas, 46"
+   "nombre": "Calle del Molino de las Armas"
   },
   {
    "id": "zgz-31271",
@@ -948,7 +948,7 @@
    "lon": -0.9426162,
    "precision": "portal",
    "barrio": "Miralbueno",
-   "nombre": "Calle Vistabella, 53"
+   "nombre": "Calle de Vistabella"
   },
   {
    "id": "zgz-31465",
@@ -962,7 +962,7 @@
    "lat": 41.64351,
    "lon": -0.9099002,
    "precision": "portal",
-   "nombre": "Calle Guerrero Maria, 13"
+   "nombre": "Calle de María Guerrero"
   },
   {
    "id": "zgz-31093",
@@ -1043,45 +1043,87 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29811762",
+   "id": "dgt-29813156",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 20.067 · sentido creciente · orientación suroeste",
+   "titulo": "ZP-2105",
+   "via": "pk 3.256 · sentido creciente · orientación sur",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.62582,
-   "lon": -0.84793,
+   "lat": 41.58165,
+   "lon": -0.82651,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29811790",
+   "id": "dgt-29813487",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 276.702 · sentido decreciente · orientación sur",
+   "titulo": "N-2",
+   "via": "pk 330.543 · sentido creciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.61171,
-   "lon": -0.93417,
+   "lat": 41.65479,
+   "lon": -0.79846,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29811999",
+   "id": "dgt-29813648",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 27.702 · sentido decreciente · orientación este",
+   "titulo": "A-68",
+   "via": "pk 246.959 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.61211,
-   "lon": -0.92798,
+   "lat": 41.69073,
+   "lon": -0.96633,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29813674",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 245.364 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.68354,
+   "lon": -0.94728,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29813808",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 323.175 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.67992,
+   "lon": -0.87138,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29813842",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 507.859 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.71847,
+   "lon": -0.8565,
    "precision": "exacta"
   }
  ]
