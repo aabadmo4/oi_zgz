@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T21:54+01:00",
+ "actualizado": "2026-11-07T22:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -1054,62 +1054,6 @@
    "fin": null,
    "lat": 41.61302,
    "lon": -0.87217,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29820905",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 242.989 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.66136,
-   "lon": -0.92715,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29820993",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 502.78 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.67963,
-   "lon": -0.87796,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29820997",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 253.848 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.71579,
-   "lon": -1.03518,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29821015",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 254.765 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.72326,
-   "lon": -1.0406,
    "precision": "exacta"
   },
   {
