@@ -125,41 +125,43 @@ aside{border-right:0;border-top:1px solid var(--line)}
 #lista{overflow:visible}
 .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 }
-/* ---- Ficha emergente (popup) ---- */
+/* ---- Ficha emergente (popup), compacta ---- */
 #mapa{--oi-max:380px}
 .leaflet-popup-content-wrapper{background:var(--panel);color:var(--ink);border-radius:14px;padding:0;overflow:hidden;box-shadow:0 6px 24px #0006}
-.leaflet-popup-content{margin:0!important;width:min(320px,calc(100vw - 64px))!important;font:400 15px/1.4 Barlow,system-ui,sans-serif}
+.leaflet-popup-content{margin:0!important;width:min(300px,calc(100vw - 64px))!important;font:400 14px/1.35 Barlow,system-ui,sans-serif}
 .leaflet-popup-tip{background:var(--panel)}
-.leaflet-container a.leaflet-popup-close-button{top:6px;right:6px;width:36px;height:36px;font:400 26px/34px system-ui,sans-serif;color:var(--mute);border-radius:50%}
+.leaflet-container a.leaflet-popup-close-button{top:4px;right:4px;width:34px;height:34px;font:400 24px/32px system-ui,sans-serif;color:var(--mute);border-radius:50%}
 .leaflet-container a.leaflet-popup-close-button:hover{background:var(--bg);color:var(--ink)}
-.oi{display:flex;flex-direction:column;max-height:var(--oi-max);border-top:6px solid var(--c)}
-.oi-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px 44px 0 14px}
-.oi-tipo{background:var(--c);color:#1d2024;border:1.5px solid #1d2024;border-radius:99px;padding:1px 10px 1px 8px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
-.oi-src{border:1px solid var(--line);color:var(--mute);border-radius:99px;padding:1px 9px;font-size:13px}
-.oi-h{margin:6px 0 0;padding:0 14px;font:800 23px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.01em}
-.oi-h small{display:inline-block;vertical-align:2px;margin-left:6px;padding:1px 8px;border-radius:6px;background:var(--bg);font:600 14px/1.4 Barlow,sans-serif;color:var(--mute)}
-.oi-sc{overflow:auto;overscroll-behavior:contain;min-height:0;padding:4px 14px 10px}
-.oi-l{display:block;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mute)}
-.oi-via{margin:8px 0 0;padding:6px 10px;border-left:4px solid var(--c);border-radius:0 8px 8px 0;background:var(--bg)}
-.oi-d{margin:8px 0 0}
-.oi-f{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
-.oi-st{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 8px}
-.oi-pill{padding:1px 10px;border-radius:99px;font-size:13px;font-weight:700;background:var(--ink);color:var(--panel)}
+.oi{display:flex;flex-direction:column;max-height:var(--oi-max);border-top:5px solid var(--c)}
+.oi>*{flex:none}
+.oi>.oi-sc{flex:0 1 auto;min-height:0}
+.oi-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:8px 40px 0 12px}
+.oi-tipo{background:var(--c);color:#1d2024;border:1.5px solid #1d2024;border-radius:99px;padding:0 9px 0 7px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.oi-src{border:1px solid var(--line);color:var(--mute);border-radius:99px;padding:0 8px;font-size:12px}
+.oi-h{margin:4px 0 0;padding:0 12px;font:800 20px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.01em}
+.oi-h small{display:inline-block;vertical-align:2px;margin-left:5px;padding:0 7px;border-radius:6px;background:var(--bg);font:600 13px/1.5 Barlow,sans-serif;color:var(--mute)}
+.oi-sc{overflow:auto;overscroll-behavior:contain;padding:2px 12px 8px}
+.oi-via{margin:6px 0 0;padding:4px 8px;border-left:3px solid var(--c);border-radius:0 8px 8px 0;background:var(--bg);font-size:13px}
+.oi-via b{margin-right:6px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.oi-d{margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.oi-d.open{display:block}
+.oi-mas{display:none;min-height:28px;padding:0;border:0;background:none;color:var(--ink);font:600 13px Barlow,system-ui,sans-serif;text-decoration:underline;cursor:pointer}
+.oi-f{margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+.oi-st{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2px 8px}
+.oi-pill{padding:0 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--ink);color:var(--panel)}
 .oi-pill.k-fut{background:#1a73e822;color:var(--ink);box-shadow:inset 0 0 0 1.5px #1a73e8}
 .oi-pill.k-hoy{background:#1e8e3e26;color:var(--ink);box-shadow:inset 0 0 0 1.5px #1e8e3e}
 .oi-pill.k-fin,.oi-pill.k-nd{background:var(--bg);color:var(--mute);box-shadow:inset 0 0 0 1.5px var(--line)}
-.oi-rest{font-size:14px;font-weight:600}
-.oi-bar{height:6px;margin:8px 0 6px;border-radius:99px;background:var(--line);overflow:hidden}
+.oi-rest{font-size:13px;font-weight:600}
+.oi-bar{height:5px;margin:6px 0 3px;border-radius:99px;background:var(--line);overflow:hidden}
 .oi-bar i{display:block;height:100%;background:var(--c);border-right:2px solid #1d2024}
-.oi-fe{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:14px;font-weight:500}
-.oi-fe span:last-child{text-align:right}
-.oi-fe small{display:block;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--mute)}
-.oi-pr{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:13px;color:var(--mute);line-height:1.3}
-.oi-pr i{flex:none;width:14px;height:14px;margin-top:1px;border:2px dashed var(--mute);border-radius:50%}
-.oi-ac{display:flex;gap:8px;padding:10px 14px 12px;border-top:1px solid var(--line)}
-.leaflet-container a.oi-b,.oi-b{flex:1;min-height:42px;display:grid;place-items:center;padding:0 8px;font:600 14px Barlow,system-ui,sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--ink);border-radius:8px;text-decoration:none;cursor:pointer}
+.oi-fe{display:flex;justify-content:space-between;gap:8px;font-size:12px;font-weight:500;color:var(--mute)}
+.oi-pr{display:flex;gap:7px;align-items:flex-start;margin-top:6px;font-size:12px;color:var(--mute);line-height:1.25}
+.oi-pr i{flex:none;width:12px;height:12px;margin-top:1px;border:2px dashed var(--mute);border-radius:50%}
+.oi-ac{display:flex;gap:8px;padding:8px 12px 10px;border-top:1px solid var(--line)}
+.leaflet-container a.oi-b,.oi-b{flex:1;min-height:38px;display:grid;place-items:center;padding:0 8px;font:600 14px Barlow,system-ui,sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--ink);border-radius:8px;text-decoration:none;cursor:pointer}
 .leaflet-container a.oi-b.p{background:var(--sign);color:#1d2024;border-color:#1d2024}
-.oi-b:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+.oi-b:focus-visible,.oi-mas:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
 </style>
 </head>
 <body>
@@ -245,7 +247,7 @@ const r=x.match(/^(.+?)\s+(AVENIDA DE|CARRETERA|CRT)$/i);if(r){pre=/^av/i.test(r
 x=x.toLowerCase().replace(/(^|[\s(.\-])(\p{L})/gu,(_,a,b)=>a+b.toUpperCase()).replace(/\b(Ii|Iii|Iv|Vi|Vii|Viii|Ix)\b/g,v=>v.toUpperCase()).split(' ').map((w,k)=>k&&MIN_.test(w)?w.toLowerCase():w).join(' ');
 return{nom:(pre?pre+' ':'')+x,num:n==='0'?'':n}}
 const dUTC=s=>{const [y,m,d]=String(s).split('-').map(Number);return Date.UTC(y,m-1,d)};
-const fCorta=s=>new Date(dUTC(s)).toLocaleDateString('es-ES',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+const fCorta=(s,sinAnio)=>new Date(dUTC(s)).toLocaleDateString('es-ES',{day:'numeric',month:'short',...(sinAnio?{}:{year:'numeric'}),timeZone:'UTC'});
 const dias=n=>n===1?'1 día':n+' días';
 function estado(i){const h=new Date(),hoy=Date.UTC(h.getFullYear(),h.getMonth(),h.getDate()),a=i.inicio&&dUTC(i.inicio),b=i.fin&&dUTC(i.fin),D=864e5;
 if(a&&a>hoy){const n=Math.round((a-hoy)/D);return{k:'k-fut',t:'Próxima',r:n===1?'Empieza mañana':'Empieza en '+dias(n)}}
@@ -254,30 +256,41 @@ if(a&&b&&a===b)return{k:'k-hoy',t:'Solo hoy',r:''};
 if(b===hoy)return{k:'k-hoy',t:'Termina hoy',r:'',p:100};
 if(!b)return{k:'k-nd',t:a?'En curso':'Activa',r:'Sin fecha de fin'};
 const n=Math.round((b-hoy)/D);return{k:'',t:'En curso',r:n===1?'Termina mañana':'Quedan '+dias(n),p:a?Math.max(4,Math.min(100,(hoy-a)/(b-a)*100)):0}}
-function popup(i){const [e,c]=TIPOS[i.tipo]||TIPOS.Otros,{nom,num}=calle(i.titulo),st=estado(i),pk=/^pk\b/i.test(i.via||''),
-nota=i.precision==='calle'?'Afecta a toda la calle o no tiene número exacto: la ubicación es orientativa.':i.precision==='aprox'?'Ubicación aproximada.':'';
-return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tipo">${e} ${esc(i.tipo)}</span><span class="oi-src">${esc(i.fuente)}</span></div>
+function popup(i){const [e,c]=TIPOS[i.tipo]||TIPOS.Otros,{nom:nom0,num}=calle(i.titulo),nom=i.nombre||nom0,st=estado(i),pk=/^pk\b/i.test(i.via||''),
+nota=i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa.':i.precision==='aprox'?'Ubicación aproximada.':'',
+anio=new Date().getFullYear(),dosFechas=i.inicio&&i.fin;
+return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tipo">${e} ${esc(i.tipo)}</span><span class="oi-src">${esc(i.fuente)}${i.barrio?' · '+esc(i.barrio):''}</span></div>
 <h3 class="oi-h">${esc(nom)}${num?`<small>nº ${esc(num)}</small>`:''}</h3>
-<div class="oi-sc">${i.via?`<div class="oi-via"><span class="oi-l">${pk?'Punto kilométrico':'Tramo'}</span>${esc(pk?i.via.replace(/^pk\s*/i,''):i.via)}</div>`:''}${i.detalle?`<p class="oi-d">${esc(i.detalle)}</p>`:''}
+<div class="oi-sc">${i.via?`<div class="oi-via"><b>${pk?'Punto km':'Tramo'}</b>${esc(pk?i.via.replace(/^pk\s*/i,''):i.via)}</div>`:''}${i.detalle?`<p class="oi-d">${esc(i.detalle)}</p><button type="button" class="oi-mas">Ver más</button>`:''}
 <div class="oi-f"><div class="oi-st"><span class="oi-pill ${st.k}">${st.t}</span>${st.r?`<span class="oi-rest">${st.r}</span>`:''}</div>${st.p?`<div class="oi-bar" aria-hidden="true"><i style="width:${st.p.toFixed(0)}%"></i></div>`:''}
-${i.inicio||i.fin?`<div class="oi-fe"><span><small>Inicio</small>${i.inicio?fCorta(i.inicio):'—'}</span><span><small>Fin</small>${i.fin?fCorta(i.fin):'Sin determinar'}</span></div>`:''}</div>
+${dosFechas?`<div class="oi-fe"><span>${fCorta(i.inicio,i.inicio.slice(0,4)==String(anio))}</span><span>${fCorta(i.fin)}</span></div>`:i.fin?`<div class="oi-fe"><span>Hasta ${fCorta(i.fin)}</span></div>`:i.inicio?`<div class="oi-fe"><span>Desde ${fCorta(i.inicio)}</span></div>`:''}</div>
 ${nota?`<div class="oi-pr"><i aria-hidden="true"></i><span>${nota}</span></div>`:''}</div>
 <div class="oi-ac"><a class="oi-b p" href="https://www.google.com/maps/search/?api=1&query=${i.lat},${i.lon}" target="_blank" rel="noopener">📍 Abrir en Maps</a><button type="button" class="oi-b oi-sh" data-id="${esc(i.id)}">🔗 Compartir</button></div></div>`}
+const GANCHO={Corte:'🚫 Mira si te afecta y qué más está cortado hoy en Zaragoza 👇',Obras:'🚧 ¿Pasas por aquí? Mira las obras de hoy en el mapa 👇',Accidente:'🚨 Consulta cómo está en el mapa en tiempo real 👇','Retención':'🚗 Mira el estado del tráfico en el mapa 👇',Suministro:'💧 Comprueba en el mapa si te afecta 👇',Otros:'📍 Mira cómo afecta y qué más hay hoy en Zaragoza 👇'};
+function textoCompartir(i){const [e]=TIPOS[i.tipo]||TIPOS.Otros,c=calle(i.titulo),nom=(i.nombre||c.nom)+(c.num?', '+c.num:'')+(i.barrio?` (${i.barrio})`:''),st=estado(i);
+let d=String(i.detalle||'').replace(/\s+/g,' ').trim();if(d.length>150)d=d.slice(0,150).replace(/\s+\S*$/,'')+'…';
+const quedan=/^(Quedan|Termina)/.test(st.r)?` (${st.r.charAt(0).toLowerCase()+st.r.slice(1)})`:'';
+const cuando=st.t==='Solo hoy'?'📅 Solo hoy':!i.fin?'':st.k==='k-fin'?`📅 Terminó el ${fCorta(i.fin)}`:st.k==='k-fut'&&i.inicio?`📅 Del ${fCorta(i.inicio,true)} al ${fCorta(i.fin)}`:`📅 Hasta el ${fCorta(i.fin)}${quedan}`;
+return[`${e} ${i.tipo==='Otros'?'Incidencia':i.tipo} · ${nom}`,d,cuando].filter(Boolean).join('\n')+'\n\n'+(GANCHO[i.tipo]||GANCHO.Otros)}
+const nombreVis=i=>{const c=calle(i.titulo);return(i.nombre||c.nom)+(c.num?', '+c.num:'')};
+const plano=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function ajustaPopup(){$('mapa').style.setProperty('--oi-max',Math.max(220,map.getSize().y-70)+'px')}
 ajustaPopup();map.on('resize',ajustaPopup);
-map.on('popupopen',e=>{const b=e.popup.getElement()?.querySelector('.oi-sh');if(!b)return;const i=datos.find(x=>x.id===b.dataset.id);if(!i)return;
+map.on('popupopen',e=>{const el=e.popup.getElement(),b=el?.querySelector('.oi-sh');if(!b)return;const i=datos.find(x=>x.id===b.dataset.id);if(!i)return;
 try{history.replaceState(null,'','#'+i.id)}catch(_){}
-b.onclick=async()=>{const url=location.origin+'/#'+i.id,tit=`${calle(i.titulo).nom} · ${i.tipo}`;
-if(navigator.share){try{await navigator.share({title:tit,text:i.detalle||tit,url})}catch(_){}return}
-const t=b.textContent;try{await navigator.clipboard.writeText(url);b.textContent='✓ Enlace copiado'}catch(_){b.textContent='No se pudo copiar'}setTimeout(()=>b.textContent=t,2000)}});
+const d=el.querySelector('.oi-d'),m=el.querySelector('.oi-mas');
+if(d&&m&&d.scrollHeight>d.clientHeight+1){m.style.display='block';m.onclick=()=>{d.classList.add('open');m.style.display='none';e.popup.update()}}
+b.onclick=async()=>{const url=location.origin+'/#'+i.id,text=textoCompartir(i);
+if(navigator.share){try{await navigator.share({title:'Obras e Incidencias Zaragoza',text,url})}catch(_){}return}
+const t=b.textContent;try{await navigator.clipboard.writeText(text+'\n'+url);b.textContent='✓ Mensaje copiado'}catch(_){b.textContent='No se pudo copiar'}setTimeout(()=>b.textContent=t,2000)}});
 map.on('popupclose',()=>{try{history.replaceState(null,'',location.pathname+location.search)}catch(_){}});
 function pintar(){
 limite=PAG;
-const q=$('q').value.trim().toLowerCase(),f=$('fuente').value,b=map.getBounds();
-filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&(!f||i.fuente===f)&&(!q||`${i.titulo} ${i.via} ${i.detalle}`.toLowerCase().includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
+const q=plano($('q').value.trim()),f=$('fuente').value,b=map.getBounds();
+filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&(!f||i.fuente===f)&&(!q||plano(`${i.titulo} ${i.nombre||''} ${i.via||''} ${i.detalle||''}`).includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
 capa.clearLayers();marcas.clear();
 filtrados.forEach(i=>{
-const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:i.titulo}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
+const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision),title:nombreVis(i)}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
 capa.addLayer(m);
 if(i.trazado)capa.addLayer(L.polyline(i.trazado,{color:(TIPOS[i.tipo]||TIPOS.Otros)[1],weight:6,opacity:.85}));
 marcas.set(i.id,m);
@@ -288,7 +301,7 @@ function lista(){
 const ul=$('lista');ul.innerHTML='';
 filtrados.slice(0,limite).forEach((i,n)=>{
 const li=document.createElement('li'),[e,c]=TIPOS[i.tipo]||TIPOS.Otros;
-li.innerHTML=`<button type="button" class="it"><span class="ico" style="background:${c}">${e}</span><span><div class="t">${esc(i.titulo)}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
+li.innerHTML=`<button type="button" class="it"><span class="ico" style="background:${c}">${e}</span><span><div class="t">${esc(nombreVis(i))}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
 li.firstChild.onclick=()=>{map.setView([i.lat,i.lon],16);marcas.get(i.id)?.openPopup();if(innerWidth<=760)scrollTo({top:0,behavior:'smooth'})};
 ul.appendChild(li);
 const pos=n+1,k=pos===PRIMER_ANUNCIO?0:(pos>PRIMER_ANUNCIO&&(pos-PRIMER_ANUNCIO)%CADA===0?(pos-PRIMER_ANUNCIO)/CADA:-1);

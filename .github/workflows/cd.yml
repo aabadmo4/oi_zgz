@@ -52,12 +52,18 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/actualizar_datos.py
 
-      - name: Actualizar vías conocidas e historial
+      - name: Validar los datos nuevos (formato y valores)
+        id: val
         if: steps.gen.outcome == 'success'
+        continue-on-error: true
+        run: python -m unittest discover -s tests -p "test_datos.py" -v
+
+      - name: Actualizar vías conocidas e historial
+        if: steps.gen.outcome == 'success' && steps.val.outcome == 'success'
         run: python scripts/generar_paginas.py "$RUNNER_TEMP/site"
 
       - name: Guardar datos nuevos (solo si todo fue bien)
-        if: steps.gen.outcome == 'success'
+        if: steps.gen.outcome == 'success' && steps.val.outcome == 'success'
         run: |
           git config user.name "TechDEV: OI_ZGZ Data Bot "
           git config user.email "oi_zgz.dev@techecs.net"
@@ -65,8 +71,8 @@ jobs:
           git diff --cached --quiet || (git commit -m "chore(data): actualizar incidencias" && git push)
 
       - name: Aviso si falló
-        if: steps.gen.outcome == 'failure'
-        run: echo "::warning::No se obtuvieron datos válidos; se publica la última versión buena."
+        if: steps.gen.outcome == 'failure' || steps.val.outcome == 'failure'
+        run: echo "::warning::Datos no obtenidos o con formato inesperado (ver pasos anteriores); no se guardan y se publica la última versión buena."
 
   # 3) Publicar en GitHub Pages
   desplegar:

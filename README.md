@@ -99,7 +99,8 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 ├── CNAME                          # Dominio personalizado en GitHub Pages
 ├── config/
 │   ├── vias_principales.json      # Vías con página propia fija
-│   └── nombres_vias.json          # Correcciones de nombres de vías
+│   ├── nombres_vias.json          # Correcciones de nombres de vías (también para las páginas de /vias/)
+│   └── nombres_visibles.json      # Correcciones solo del nombre mostrado en el mapa (no cambia URLs)
 ├── scripts/
 │   ├── actualizar_datos.py        # Descarga, clasifica, geolocaliza y escribe el JSON
 │   └── generar_paginas.py         # Páginas por vía, sitemap y robots.txt
@@ -107,6 +108,7 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 │   ├── test_geocodificacion.py    # Geolocalización de direcciones y barrios rurales
 │   ├── test_clasificacion.py      # Tipos: Corte, Suministro, Obras, Accidente...
 │   ├── test_texto.py              # limpiar_texto, fechas, caja de Zaragoza, norm_local, UTM
+│   ├── test_nombres.py            # Nombre legible de la calle: reglas, OSM y prioridades
 │   ├── test_datos.py              # Contrato de data/incidencias.json y tipos de la web
 │   └── test_paginas.py            # Utilidades de generar_paginas.py
 ├── data/

@@ -29,7 +29,7 @@ jobs:
             python -m json.tool "$f" > /dev/null || { echo "::error file=$f::JSON inválido"; exit 1; }
           done
 
-      - name: Tests de geocodificación
+      - name: Tests
         run: python -m unittest discover -s tests -v
 
       - name: El sitio se genera
