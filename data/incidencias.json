@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T05:01+01:00",
+ "actualizado": "2026-11-07T06:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1018,16 +1018,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29800820",
+   "id": "dgt-29801341",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "VS-A-2-C",
-   "via": "pk 317.65",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 305.932",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.672523,
-   "lon": -0.9307844,
+   "lat": 41.6181,
+   "lon": -1.044,
    "precision": "exacta"
   }
  ]
