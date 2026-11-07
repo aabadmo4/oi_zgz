@@ -262,7 +262,9 @@ def _expandir(t):
 
 def nombre_por_reglas(calle):
     """Reordena el nombre de callejero (apellido primero, tipo de vía donde caiga). Es el último recurso: sin tildes en apellidos."""
-    s = re.sub(r"\s+", " ", str(calle or "").replace("(", " (")).strip()
+    # El portal (", 41") no forma parte del nombre: si se queda, las reglas lo tratan como una palabra más
+    # ("VALENCIA AVENIDA DE, 41" -> "Avenida De, 41 Valencia") y además se duplica con el "nº" de la ficha.
+    s = re.sub(r"\s+", " ", str(calle or "").split(",")[0].replace("(", " (")).strip()
     if re.match(r"^[A-Z]{1,3}-\d", s):
         return s
     titulo, entre_tipo = [], None
