@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T21:01+01:00",
+ "actualizado": "2026-11-07T21:54+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1043,59 +1043,87 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29819702",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 318.58–319.05 · sentido creciente · orientación noreste",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.681026,
-   "lon": -0.9184718,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29819701",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 319.05 · sentido creciente · orientación este",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.68102,
-   "lon": -0.91850454,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29820297",
+   "id": "dgt-29820867",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-2",
-   "via": "pk 329.022 · sentido creciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 22.611 · sentido creciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.659855,
-   "lon": -0.814538,
+   "lat": 41.61302,
+   "lon": -0.87217,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29820372",
+   "id": "dgt-29820905",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 319.177 · sentido creciente · orientación este",
+   "titulo": "N-232",
+   "via": "pk 242.989 · sentido creciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.68118,
-   "lon": -0.91706,
+   "lat": 41.66136,
+   "lon": -0.92715,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29820993",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 502.78 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.67963,
+   "lon": -0.87796,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29820997",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 253.848 · sentido creciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.71579,
+   "lon": -1.03518,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29821015",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 254.765 · sentido creciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.72326,
+   "lon": -1.0406,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29821066",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 300.365 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.7518,
+   "lon": -0.8386,
    "precision": "exacta"
   }
  ]
