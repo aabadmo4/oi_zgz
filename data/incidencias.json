@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T19:01+01:00",
+ "actualizado": "2026-11-07T20:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1057,45 +1057,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29817212",
+   "id": "dgt-29819196",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 227.339 · sentido creciente · orientación oeste",
+   "titulo": "Z-40",
+   "via": "pk 14.504 · sentido decreciente · orientación norte",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.59358,
-   "lon": -0.79664,
+   "lat": 41.66761,
+   "lon": -0.83685,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29817258",
+   "id": "dgt-29819227",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 22.849 · sentido creciente · orientación suroeste",
+   "titulo": "N-330",
+   "via": "pk 488.736 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.61126,
-   "lon": -0.873889,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29817591",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "Z-40",
-   "via": "pk 21.51–22.85 · sentido decreciente · orientación noreste",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.620308,
-   "lon": -0.8633932,
+   "lat": 41.599197,
+   "lon": -0.93806595,
    "precision": "exacta"
   }
  ]
