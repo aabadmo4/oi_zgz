@@ -120,6 +120,33 @@ def fetch_ayuntamiento():
 # ---------- DGT (DATEX II) ----------
 SENTIDOS = {"POSITIVE": "sentido creciente", "NEGATIVE": "sentido decreciente", "BOTH": "ambos sentidos"}
 
+# Causa DATEX II (<cause><causeType> + <detailedCauseType>): primero el detalle, luego el tipo general.
+CAUSAS = {
+    # detailedCauseType
+    "vehiclestuck": "Vehículo detenido", "brokendownvehicle": "Vehículo averiado",
+    "abandonedvehicle": "Vehículo abandonado", "vehicleonfire": "Vehículo en llamas",
+    "vehiclecarryingdangerousmaterials": "Vehículo con mercancías peligrosas",
+    "objectontheroad": "Objeto en la calzada", "animalpresence": "Animales en la vía",
+    # causeType
+    "vehicleobstruction": "Vehículo detenido", "accident": "Accidente",
+    "abnormaltraffic": "Tráfico lento", "obstruction": "Obstáculo en la vía",
+    "roadmaintenance": "Obras en la vía", "poorroadinfrastructure": "Mal estado de la vía",
+    "environmentalobstruction": "Obstáculo en la vía", "animalpresenceobstruction": "Animales en la vía",
+}
+ORIENTACIONES = {"northbound": "norte", "southbound": "sur", "eastbound": "este", "westbound": "oeste",
+                 "northeastbound": "noreste", "northwestbound": "noroeste",
+                 "southeastbound": "sureste", "southwestbound": "suroeste"}
+
+
+def causa_dgt(rec, xp):
+    """Devuelve (texto en español, códigos sin traducir) a partir de <cause> del situationRecord."""
+    det = xp(rec, './/*[local-name()="detailedCauseType"]//text()')
+    gen = xp(rec, './/*[local-name()="cause"]/*[local-name()="causeType"]/text()')
+    for c in det + gen:
+        if c.lower() in CAUSAS:
+            return CAUSAS[c.lower()], []
+    return "", det + gen
+
 
 def fetch_dgt():
     url = "https://nap.dgt.es/datex2/v3/dgt/SituationPublication/datex2_v37.xml"
@@ -135,16 +162,21 @@ def fetch_dgt():
             continue
         via = (xp(rec, './/*[local-name()="roadName"]/text()') or xp(rec, './/*[local-name()="roadNumber"]/text()') or ["Carretera"])[0]
         pks = sorted(set(xp(rec, './/*[local-name()="kilometerPoint"]/text()')))
-        sent = [SENTIDOS[v.upper()] for v in xp(rec, './/*[local-name()="tpegDirection"]/text()') if v.upper() in SENTIDOS]
+        dirs = xp(rec, './/*[local-name()="tpegDirectionRoad"]/text()') + xp(rec, './/*[local-name()="tpegDirection"]/text()')
+        sent = [SENTIDOS[v.upper()] for v in dirs if v.upper() in SENTIDOS]
+        orient = [ORIENTACIONES[v.lower()] for v in dirs if v.lower() in ORIENTACIONES]
         coment = xp(rec, './/*[local-name()="generalPublicComment"]//*[local-name()="value"]/text()')
+        causa, raros = causa_dgt(rec, xp)
+        if raros: print("DGT causa sin traducir:", rec.get("id"), raros)
         extra = []
         if pks: extra.append("pk " + (pks[0] if len(pks) == 1 else f"{pks[0]}–{pks[-1]}"))
         if sent: extra.append(sent[0])
+        if orient: extra.append("orientación " + orient[0])
         crudo = (rec.get(XSI) or "") + " " + " ".join(xp(rec, './/text()'))
         out.append({
             "id": f"dgt-{rec.get('id', len(out))}", "fuente": "DGT",
             "tipo": tipo_desde_texto(crudo), "titulo": via, "via": " · ".join(extra),
-            "detalle": " ".join(coment)[:300],
+            "detalle": (" ".join(coment) or causa)[:300], "causa": causa or None,
             "inicio": dia((xp(rec, './/*[local-name()="overallStartTime"]/text()') or [None])[0]),
             "fin": dia((xp(rec, './/*[local-name()="overallEndTime"]/text()') or [None])[0]),
             "lat": float(lats[0]), "lon": float(lons[0]), "precision": "exacta",
