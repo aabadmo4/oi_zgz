@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-07T23:01+01:00",
+ "actualizado": "2026-11-08T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 55
+   "n": 60
   },
   "dgt": {
    "ok": true,
@@ -309,6 +309,48 @@
    "nombre": "Calle Sádaba"
   },
   {
+   "id": "zgz-31572",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SARTRE JEAN PAUL, 10",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.6788425,
+   "lon": -0.8738506,
+   "precision": "calle",
+   "nombre": "Calle Jean Paul Sartre"
+  },
+  {
+   "id": "zgz-31573",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ROMEO LEOPOLDO, 9",
+   "via": "Entre C/ Doctor Iranzo y c/ Obispo Laplana",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.646664,
+   "lon": -0.863372,
+   "precision": "portal",
+   "nombre": "Calle Leopoldo Romeo"
+  },
+  {
+   "id": "zgz-31574",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "IRANZO (DOCTOR), 13",
+   "via": ", Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.6426708,
+   "lon": -0.8649101,
+   "precision": "portal",
+   "nombre": "Calle Doctor Iranzo"
+  },
+  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -577,6 +619,34 @@
    "lon": -0.8794143,
    "precision": "portal",
    "nombre": "Calle Palencia"
+  },
+  {
+   "id": "zgz-31569",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "LASTANOSA, 8",
+   "via": "Entre C/Rioja y C/ Julián Ribera,",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.6531941,
+   "lon": -0.9080364,
+   "precision": "portal",
+   "nombre": "Calle de Lastanosa"
+  },
+  {
+   "id": "zgz-31571",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ASIA CONTINENTE, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.680435721221826,
+   "lon": -0.872491134778652,
+   "precision": "aprox",
+   "nombre": "Calle Asia Continente"
   },
   {
    "id": "zgz-31479",
@@ -888,6 +958,20 @@
    "nombre": "Avenida de Madrid"
   },
   {
+   "id": "zgz-31570",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "OCEANIA CONTINENTE, 13",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.68026848132065,
+   "lon": -0.8733623598035997,
+   "precision": "aprox",
+   "nombre": "Calle Oceania Continente"
+  },
+  {
    "id": "zgz-31476",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -977,20 +1061,6 @@
    "lon": -0.8946807,
    "precision": "portal",
    "nombre": "Avenida de Valencia"
-  },
-  {
-   "id": "zgz-31564",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "EDISON TOMAS A, 9",
-   "via": "",
-   "detalle": "Para sustituir la tapa de una arqueta de telecomunicaciones a la altura del n.o 9",
-   "inicio": "2026-11-07",
-   "fin": "2026-11-07",
-   "lat": 41.665278,
-   "lon": -0.86392,
-   "precision": "portal",
-   "nombre": "Calle de Tomás A. Edison"
   },
   {
    "id": "zgz-31565",
