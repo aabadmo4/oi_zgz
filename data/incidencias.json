@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T03:49+01:00",
+ "actualizado": "2026-11-07T04:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -1028,6 +1028,19 @@
    "fin": null,
    "lat": 41.672523,
    "lon": -0.9307844,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29800949",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-2",
+   "via": "pk 313.072",
+   "detalle": "",
+   "inicio": "2026-11-07",
+   "fin": null,
+   "lat": 41.63684,
+   "lon": -0.96434,
    "precision": "exacta"
   }
  ]
