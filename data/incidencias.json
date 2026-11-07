@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T13:01+01:00",
+ "actualizado": "2026-11-07T13:31+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -1047,8 +1047,9 @@
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 23.0–24.0",
-   "detalle": "",
+   "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
    "inicio": "2026-11-07",
    "fin": null,
    "lat": 41.61006,
@@ -1060,8 +1061,9 @@
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 323.986",
-   "detalle": "",
+   "via": "pk 323.986 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
    "lat": 41.67941,
@@ -1069,42 +1071,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29808191",
+   "id": "dgt-29809204",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 15.756",
-   "detalle": "",
+   "via": "pk 24.309 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.65647,
-   "lon": -0.84097,
+   "lat": 41.6053,
+   "lon": -0.88886,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29808201",
+   "id": "dgt-29809778",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 320.617",
-   "detalle": "",
+   "titulo": "N-330",
+   "via": "pk 506.632 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.68037,
-   "lon": -0.90026,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29808256",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 291.898",
-   "detalle": "",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.68127,
-   "lon": -0.83416,
+   "lat": 41.70848,
+   "lon": -0.86252,
    "precision": "exacta"
   }
  ]
