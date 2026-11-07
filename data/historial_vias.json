@@ -2100,6 +2100,39 @@
    "titulo": "VS-A-2-D",
    "via": "pk 321.977 · sentido creciente · orientación este",
    "visto": "2026-11-07"
+  },
+  "dgt-29819701": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29819701",
+   "inicio": "2026-11-07",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 319.05 · sentido creciente · orientación este",
+   "visto": "2026-11-07"
+  },
+  "dgt-29819702": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29819702",
+   "inicio": "2026-11-07",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 318.58–319.05 · sentido creciente · orientación noreste",
+   "visto": "2026-11-07"
+  },
+  "dgt-29820372": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29820372",
+   "inicio": "2026-11-07",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 319.177 · sentido creciente · orientación este",
+   "visto": "2026-11-07"
   }
  },
  "ap-68": {
