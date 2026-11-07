@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07T03:01+01:00",
+ "actualizado": "2026-11-07T03:49+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1018,29 +1018,16 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29800591",
+   "id": "dgt-29800820",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 274.469",
+   "tipo": "Corte",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.65",
    "detalle": "",
    "inicio": "2026-11-07",
    "fin": null,
-   "lat": 41.59296,
-   "lon": -0.944,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29800711",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 233.828",
-   "detalle": "",
-   "inicio": "2026-11-07",
-   "fin": null,
-   "lat": 41.62928,
-   "lon": -0.85482,
+   "lat": 41.672523,
+   "lon": -0.9307844,
    "precision": "exacta"
   }
  ]
