@@ -58,8 +58,42 @@ def fecha(s):
         return ""
 
 
-def cuando(i):
-    return f"Hasta el {fecha(i['fin'])}" if i.get("fin") and fecha(i["fin"]) else (f"Desde el {fecha(i['inicio'])}" if i.get("inicio") and fecha(i["inicio"]) else "")
+def _d(s):
+    try:
+        return datetime.date.fromisoformat(str(s))
+    except Exception:
+        return None
+
+
+def _rango(a, b):
+    """'Del 9 de noviembre al 12 de diciembre de 2026' (sin repetir el año si es el mismo)."""
+    da, db = _d(a), _d(b)
+    if da and db and da.year == db.year:
+        return f"Del {da.day} de {MESES[da.month - 1]} al {fecha(b)}"
+    return f"Del {fecha(a)} al {fecha(b)}"
+
+
+def cuando(i, hoy=None):
+    """Fechas de la incidencia. Con `hoy` (ISO) añade el estado, igual que la web dinámica: Próxima / En curso /
+    Termina hoy / Solo hoy / Finalizada, junto con las fechas de inicio y fin."""
+    ini, fin = _d(i.get("inicio")), _d(i.get("fin"))
+    ref = _d(hoy)
+    if not ref:  # sin fecha de referencia: comportamiento clásico
+        return f"Hasta el {fecha(i['fin'])}" if fin else (f"Desde el {fecha(i['inicio'])}" if ini else "")
+    if ini and ini > ref:
+        n = (ini - ref).days
+        r = "Empieza mañana" if n == 1 else f"Empieza en {n} días"
+        f = _rango(i["inicio"], i["fin"]) if fin and fin != ini else fecha(i["inicio"])
+        return f"Próxima · {r} · {f}"
+    if fin and fin < ref:
+        return f"Finalizada · Hasta el {fecha(i['fin'])}"
+    if ini and fin and ini == fin:
+        return "Solo hoy"
+    if fin and fin == ref:
+        return "Termina hoy"
+    if not fin:
+        return f"En curso · Desde el {fecha(i['inicio'])}" if ini else "Activa"
+    return f"En curso · {_rango(i['inicio'], i['fin'])}" if ini else f"En curso · Hasta el {fecha(i['fin'])}"
 
 
 def fecha_hora(iso):
@@ -186,12 +220,12 @@ def nombre_corte(i, nombres=None):
     return (nombres or {}).get(slug(n), n)
 
 
-def bloque_agua(incs, nombres=None, limite=6):
+def bloque_agua(incs, nombres=None, limite=6, hoy=None):
     """Resumen (HTML sin JavaScript) de los cortes de agua programados, con enlace a la página completa."""
     avisos = sorted((i for i in incs if es_agua(i)), key=lambda i: (i.get("inicio") or "", nombre_corte(i, nombres)))
     out = ""
     for i in avisos[:limite]:
-        linea = " · ".join(x for x in [esc(i.get("via", "")), esc(i.get("detalle", "")), esc(cuando(i))] if x)
+        linea = " · ".join(x for x in [esc(i.get("via", "")), esc(i.get("detalle", "")), esc(cuando(i, hoy))] if x)
         out += f'<li><span aria-hidden="true">💧</span> <strong>{esc(titulo_ficha(i, nombre_corte(i, nombres)))}</strong><br><span class="mute">{linea}</span></li>'
     n = len(avisos)
     if n:
@@ -204,7 +238,7 @@ def bloque_agua(incs, nombres=None, limite=6):
     return cuerpo + f'<p><a href="/cortes-de-agua-zaragoza.html">{mas} →</a></p>'
 
 
-def bloque_portada(vias, limite=15):
+def bloque_portada(vias, limite=15, hoy=None):
     """Lista HTML (sin JavaScript) con las incidencias actuales más relevantes, enlazadas a su página de vía."""
     orden = {"Corte": 0, "Accidente": 1, "Obras": 2, "Retención": 3, "Suministro": 4, "Otros": 5}
     filas = []
@@ -220,7 +254,7 @@ def bloque_portada(vias, limite=15):
         e, _c = TIPOS.get(i["tipo"], TIPOS["Otros"])
         t = esc(titulo_ficha(i, nom))
         t = f'<a href="/vias/{esc(sl)}.html">{t}</a>' if sl else t
-        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i))] if x)
+        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i, hoy))] if x)
         out += f"<li><span aria-hidden=\"true\">{e}</span> <strong>{t}</strong><br><span class=\"mute\">{linea}</span></li>"
     return f'<ul class="inc">{out}</ul>' if out else "<p>Ahora mismo no hay incidencias activas registradas.</p>"
 
@@ -347,7 +381,7 @@ def resumen(nombre, incs):
     return f"Ahora mismo hay {len(incs)} {'incidencia activa' if len(incs) == 1 else 'incidencias activas'} en {nombre}: {p}."
 
 
-def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=()):
+def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=(), hoy=None):
     nombre, incs = v["nombre"], v["incidencias"]
     canon = f"{BASE}/vias/{sl}.html"
     titulo = f"Obras e incidencias en {nombre}, Zaragoza hoy"
@@ -360,7 +394,7 @@ def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=()):
     for i in incs:
         e, c = TIPOS.get(i["tipo"], TIPOS["Otros"])
         aviso = {"calle": "Toda la calle o sin número exacto: ubicación orientativa", "aprox": "Ubicación aproximada"}.get(i.get("precision"), "")
-        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i)), esc(dur_texto(i)), esc(aviso)] if x)
+        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i, hoy)), esc(dur_texto(i)), esc(aviso)] if x)
         items += (f'<li><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
                   f'<div class="t">{esc(titulo_ficha(i, nombre))}</div>'
                   + (f'<div class="s">{esc(i["via"])}</div>' if i.get("via") else "")
@@ -434,6 +468,7 @@ def pagina_cortes_agua(incs, BASE, actualizado, hoy, nombres=None):
                 f'<div class="t">{esc(titulo_ficha(i, nom(i)))}</div>'
                 + (f'<div class="s">{esc(i["via"])}</div>' if i.get("via") else "")
                 + (f'<div class="s"><strong>{esc(i["detalle"])}</strong></div>' if i.get("detalle") else "")
+                + (f'<div class="s">{esc(cuando(i, hoy))}</div>' if cuando(i, hoy) else "")
                 + (f'<div class="s">{esc(aviso)}</div>' if aviso else "") + "</div></li>")
 
     n = len(avisos)
@@ -557,7 +592,7 @@ def main():
     carpeta = salida / "vias"
     carpeta.mkdir(parents=True, exist_ok=True)
     for s, v in vias.items():
-        (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act, () if es_carretera(s) else recientes(hist.get(s, {}), v["incidencias"])), encoding="utf-8")
+        (carpeta / f"{s}.html").write_text(pagina_via(s, v, desc_p.get(s, {}), BASE, hermanas, act, () if es_carretera(s) else recientes(hist.get(s, {}), v["incidencias"]), hoy), encoding="utf-8")
     (carpeta / "index.html").write_text(pagina_indice(vias, desc_p, BASE, act), encoding="utf-8")
     (salida / "cortes-de-agua-zaragoza.html").write_text(pagina_cortes_agua(d.get("incidencias", []), BASE, act, hoy, nombres), encoding="utf-8")
 
@@ -580,9 +615,9 @@ def main():
                  + ("<p>Obras de larga duración en otras calles:</p>" + enl(largas) if largas else "")
                  + '<p><a href="/vias/">Ver todas las vías</a></p>')
         h2 = re.sub(r"<!--VIAS-->.*?<!--/VIAS-->", lambda m: "<!--VIAS-->" + nuevo + "<!--/VIAS-->", h, flags=re.S)
-        h2 = re.sub(r"<!--INC-->.*?<!--/INC-->", lambda m: "<!--INC-->" + bloque_portada(vias) + "<!--/INC-->", h2, flags=re.S)
+        h2 = re.sub(r"<!--INC-->.*?<!--/INC-->", lambda m: "<!--INC-->" + bloque_portada(vias, hoy=hoy) + "<!--/INC-->", h2, flags=re.S)
         todas = d.get("incidencias", [])
-        h2 = re.sub(r"<!--AGUA-->.*?<!--/AGUA-->", lambda m: "<!--AGUA-->" + bloque_agua(todas, nombres) + "<!--/AGUA-->", h2, flags=re.S)
+        h2 = re.sub(r"<!--AGUA-->.*?<!--/AGUA-->", lambda m: "<!--AGUA-->" + bloque_agua(todas, nombres, hoy=hoy) + "<!--/AGUA-->", h2, flags=re.S)
         h2 = re.sub(r'(<p id="resumen">).*?(</p>)', lambda m: m.group(1) + esc(resumen("Zaragoza", todas)) + m.group(2), h2, count=1, flags=re.S)
         if act:
             h2 = h2.replace('<span id="estado">Cargando…</span>', f'<span id="estado">Actualizado {esc(fecha_hora(act))}</span>', 1)
