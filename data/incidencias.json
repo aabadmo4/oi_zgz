@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T17:01+01:00",
+ "actualizado": "2026-11-08T18:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 3
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -1113,45 +1113,31 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29834059",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 27.38 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.61127,
-   "lon": -0.92436,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29834972",
    "fuente": "DGT",
    "tipo": "Accidente",
    "titulo": "A-68",
-   "via": "pk 257.6–257.8 · sentido creciente · orientación oeste",
+   "via": "pk 257.7–258.136 · sentido creciente · orientación oeste",
    "detalle": "Accidente",
    "causa": "Accidente",
    "inicio": "2026-11-08",
    "fin": null,
-   "lat": 41.73721,
-   "lon": -1.0720276,
+   "lat": 41.73862,
+   "lon": -1.075601,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29835060",
+   "id": "dgt-29836742",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 258.136 · sentido creciente · orientación oeste",
+   "titulo": "A-23",
+   "via": "pk 300.54 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-08",
    "fin": null,
-   "lat": 41.738743,
-   "lon": -1.075553,
+   "lat": 41.75324,
+   "lon": -0.8378,
    "precision": "exacta"
   }
  ]
