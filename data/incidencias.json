@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T18:01+01:00",
+ "actualizado": "2026-11-08T19:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1127,17 +1127,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29836742",
+   "id": "dgt-29837834",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 300.54 · sentido decreciente · orientación suroeste",
+   "titulo": "N-232",
+   "via": "pk 242.89 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-08",
    "fin": null,
-   "lat": 41.75324,
-   "lon": -0.8378,
+   "lat": 41.66094,
+   "lon": -0.92614,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29837956",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 257.427 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-08",
+   "fin": null,
+   "lat": 41.73646,
+   "lon": -1.06768,
    "precision": "exacta"
   }
  ]
