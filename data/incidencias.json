@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-08T23:01+01:00",
+ "actualizado": "2026-11-09T00:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 60
+   "n": 66
   },
   "dgt": {
    "ok": true,
@@ -351,6 +351,34 @@
    "nombre": "Calle Doctor Iranzo"
   },
   {
+   "id": "zgz-31575",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "GARGALLO PABLO AV., 1",
+   "via": "Entre Avda. De Francia y Jardines de Lisboa",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-10",
+   "lat": 41.6595787,
+   "lon": -0.8940742,
+   "precision": "calle",
+   "nombre": "Avenida de Pablo Gargallo"
+  },
+  {
+   "id": "zgz-31579",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "GERICO AGUSTIN(MOSEN), 5",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-10",
+   "lat": 41.635529,
+   "lon": -0.874606,
+   "precision": "portal",
+   "nombre": "Calle Mosén Agustín Gericó Nadal"
+  },
+  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -377,6 +405,34 @@
    "lon": -0.89081,
    "precision": "portal",
    "nombre": "Calle de Manuel Lasala"
+  },
+  {
+   "id": "zgz-31577",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "FRANCO Y LOPEZ, 3",
+   "via": "Entre C/ Duquesa Villahermosa y C/ Lucas Gallego",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-10",
+   "lat": 41.645251,
+   "lon": -0.9002359,
+   "precision": "portal",
+   "nombre": "Calle de Franco y López"
+  },
+  {
+   "id": "zgz-31580",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "BONET JUAN PABLO, 16",
+   "via": "Entre C/ Dr. Lozano Monzón y C/ Vasconia",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-10",
+   "lat": 41.640538,
+   "lon": -0.888346,
+   "precision": "portal",
+   "nombre": "Calle de Juan Pablo Bonet"
   },
   {
    "id": "zgz-30876",
@@ -718,6 +774,20 @@
    "lon": -0.8861138,
    "precision": "portal",
    "nombre": "Calle Orense"
+  },
+  {
+   "id": "zgz-31578",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "VILLAHERMOSA(DUQUESA), 33",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-10",
+   "lat": 41.6480453,
+   "lon": -0.9021383,
+   "precision": "portal",
+   "nombre": "Calle de la Duquesa de Villahermosa"
   },
   {
    "id": "zgz-31474",
@@ -1111,6 +1181,20 @@
     ]
    ],
    "nombre": "Calle Rodrigo Rebolledo"
+  },
+  {
+   "id": "zgz-31576",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "LISBOA JARDINES DE, 2",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-10",
+   "lat": 41.6634862271148,
+   "lon": -0.9034605911873267,
+   "precision": "aprox",
+   "nombre": "Jardines de Lisboa"
   }
  ]
 }
