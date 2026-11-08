@@ -17,6 +17,14 @@ class TestPaginas(unittest.TestCase):
         self.assertEqual(g.titulo_ficha({"fuente": "Ayuntamiento", "titulo": "COSO, 0"}, "Coso"), "Coso")
         self.assertEqual(g.titulo_ficha({"fuente": "DGT", "titulo": "Z-40"}, "x"), "Z-40")
 
+    def test_nombre_corte_usa_nombre_corregido(self):
+        # El corte de agua debe mostrar el mismo nombre que la lista general (campo "nombre" de incidencias.json)
+        i = {"titulo": "OCEANIA CONTINENTE, 13", "nombre": "Calle de Oceanía"}
+        self.assertEqual(g.nombre_corte(i), "Calle de Oceanía")
+        self.assertEqual(g.titulo_ficha({**i, "fuente": "Ayuntamiento"}, g.nombre_corte(i)), "Calle de Oceanía, 13")
+        # Sin "nombre" se mantiene el comportamiento anterior
+        self.assertEqual(g.nombre_corte({"titulo": "ITALIA, 16"}), "Calle Italia")
+
     def test_duracion_y_obras_largas(self):
         larga = {"fuente": "Ayuntamiento", "inicio": "2026-01-01", "fin": "2026-12-31"}
         corta = {"fuente": "Ayuntamiento", "inicio": "2026-11-01", "fin": "2026-11-05"}
