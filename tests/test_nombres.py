@@ -33,6 +33,8 @@ REGLAS = [
     ("ECHEGARAY Y CABALLERO", "Calle Echegaray y Caballero"),
     ("JOS\u00c9 ATAR\u00c9S", "Calle Jos\u00e9 Atar\u00e9s"),  # ya viene en orden natural
     ("COSO", "Calle Coso"),
+    ("ASIA CONTINENTE", "Calle Asia"),
+    ("OCEANIA CONTINENTE", "Calle Oceania"),
     ("N-232", "N-232"),
     # Con el portal pegado (así llega del Ayuntamiento): no debe alterar ni duplicarse en el nombre
     ("VALENCIA AVENIDA DE, 41", "Avenida de Valencia"),
