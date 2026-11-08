@@ -2155,6 +2155,17 @@
    "titulo": "A-2",
    "via": "pk 320.782 · sentido decreciente · orientación oeste",
    "visto": "2026-11-08"
+  },
+  "dgt-29833323": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29833323",
+   "inicio": "2026-11-08",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 302.416 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-08"
   }
  },
  "ap-68": {
@@ -4165,6 +4176,17 @@
    "titulo": "Z-40",
    "via": "pk 22.611 · sentido creciente · orientación suroeste",
    "visto": "2026-11-07"
+  },
+  "dgt-29833722": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29833722",
+   "inicio": "2026-11-08",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 27.38 · sentido decreciente · orientación este",
+   "visto": "2026-11-08"
   }
  }
 }
