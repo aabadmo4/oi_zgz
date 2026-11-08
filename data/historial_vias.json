@@ -2133,6 +2133,17 @@
    "titulo": "A-2",
    "via": "pk 319.177 · sentido creciente · orientación este",
    "visto": "2026-11-07"
+  },
+  "dgt-29829748": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29829748",
+   "inicio": "2026-11-08",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 323.072 · sentido creciente · orientación este",
+   "visto": "2026-11-08"
   }
  },
  "ap-68": {
