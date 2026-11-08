@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T16:01+01:00",
+ "actualizado": "2026-11-08T16:14+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -1141,17 +1141,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29833750",
+   "id": "dgt-29834059",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 2.329 · sentido decreciente · orientación oeste",
+   "titulo": "Z-40",
+   "via": "pk 27.38 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-08",
    "fin": null,
-   "lat": 41.63992,
-   "lon": -0.99191,
+   "lat": 41.61127,
+   "lon": -0.92436,
    "precision": "exacta"
   }
  ]
