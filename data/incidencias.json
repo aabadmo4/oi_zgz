@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T22:01+01:00",
+ "actualizado": "2026-11-08T23:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 0
   }
  },
  "sin_ubicar": 0,
@@ -1111,34 +1111,6 @@
     ]
    ],
    "nombre": "Calle Rodrigo Rebolledo"
-  },
-  {
-   "id": "dgt-29841651",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 507.44 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.71511,
-   "lon": -0.85875,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29841724",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 319.691 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.68196,
-   "lon": -0.91119,
-   "precision": "exacta"
   }
  ]
 }
