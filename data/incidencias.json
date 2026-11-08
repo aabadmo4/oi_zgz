@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08T01:38+01:00",
+ "actualizado": "2026-11-08T01:45+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -643,10 +643,10 @@
    "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
    "inicio": "2026-11-09",
    "fin": "2026-11-09",
-   "lat": 41.680435721221826,
-   "lon": -0.872491134778652,
-   "precision": "aprox",
-   "nombre": "Calle Asia Continente"
+   "lat": 41.678574,
+   "lon": -0.873912,
+   "precision": "portal",
+   "nombre": "Calle de Asia"
   },
   {
    "id": "zgz-31479",
@@ -966,10 +966,10 @@
    "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
    "inicio": "2026-11-09",
    "fin": "2026-11-09",
-   "lat": 41.68026848132065,
-   "lon": -0.8733623598035997,
-   "precision": "aprox",
-   "nombre": "Calle Oceania Continente"
+   "lat": 41.678407,
+   "lon": -0.874784,
+   "precision": "portal",
+   "nombre": "Calle de Oceanía"
   },
   {
    "id": "zgz-31476",
