@@ -217,6 +217,17 @@ PILA = {k.lower(): v for k, v in {
     "ANA": "Ana", "TERESA": "Teresa", "CONCEPCION": "Concepción"}.items()}
 ACENTOS = {**PILA, "marques": "Marqués", "catolica": "Católica"}
 ROMANOS = re.compile(r"^(II|III|IV|VI|VII|VIII|IX|XI|XII)$", re.I)
+# Calificadores del callejero que NO forman parte del nombre real ("ASIA CONTINENTE" es la Calle de Asia; se añade
+# "Continente" para distinguirla de otras vías con el mismo nombre, p. ej. la Avenida de América).
+CALIFICADORES_FINALES = {"continente"}
+
+
+def quitar_calificador(nombre):
+    """'Calle Asia Continente' -> 'Calle Asia'; 'ASIA CONTINENTE' -> 'ASIA'. No toca nombres de una sola palabra."""
+    pal = str(nombre or "").split()
+    while len(pal) > 1 and re.sub(r"[^a-z]", "", sin_acentos(pal[-1])) in CALIFICADORES_FINALES:
+        pal.pop()
+    return " ".join(pal)
 
 
 def _f(t):
@@ -265,6 +276,7 @@ def nombre_por_reglas(calle):
     # El portal (", 41") no forma parte del nombre: si se queda, las reglas lo tratan como una palabra más
     # ("VALENCIA AVENIDA DE, 41" -> "Avenida De, 41 Valencia") y además se duplica con el "nº" de la ficha.
     s = re.sub(r"\s+", " ", str(calle or "").split(",")[0].replace("(", " (")).strip()
+    s = quitar_calificador(s)
     if re.match(r"^[A-Z]{1,3}-\d", s):
         return s
     titulo, entre_tipo = [], None
@@ -527,6 +539,7 @@ def geocodificar(items):
             i["barrio"] = BARRIOS[i["_barrio"]]
 
     def aplicar(i, via, num):
+        via = quitar_calificador(via)  # también limpia entradas antiguas de caché/Gemini ("Calle Asia Continente")
         bar = i.get("_barrio")
         gk = f"v3:{via}|{num or ''}|{bar or ''}"
         geo = cache["geo"].get(gk)
