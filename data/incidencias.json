@@ -1,141 +1,1143 @@
 {
- "actualizado": "2026-11-08T21:03+01:00",
+ "actualizado": "2026-11-08T22:01+01:00",
  "fuentes": {
   "ayuntamiento": {
-   "ok": false,
-   "n": 0
+   "ok": true,
+   "n": 60
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 2
   }
  },
  "sin_ubicar": 0,
  "incidencias": [
   {
-   "id": "dgt-29839950",
-   "fuente": "DGT",
+   "id": "zgz-25688",
+   "fuente": "Ayuntamiento",
    "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 246.0–246.035 · sentido creciente · orientación oeste",
+   "titulo": "BLANCO CORDERO (DR.), 11",
+   "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía.",
+   "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
+   "inicio": "2025-07-09",
+   "fin": "2027-02-26",
+   "lat": 41.6522307,
+   "lon": -0.8679222,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.651969,
+      -0.867813
+     ],
+     [
+      41.652484,
+      -0.867552
+     ],
+     [
+      41.652514,
+      -0.867785
+     ],
+     [
+      41.652028,
+      -0.86802
+     ],
+     [
+      41.651803,
+      -0.868131
+     ],
+     [
+      41.651729,
+      -0.868167
+     ],
+     [
+      41.65153,
+      -0.868266
+     ],
+     [
+      41.651272,
+      -0.868388
+     ],
+     [
+      41.651216,
+      -0.868415
+     ]
+    ]
+   ],
+   "nombre": "Calle Doctor Blanco Cordero"
+  },
+  {
+   "id": "zgz-27864",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MADRID AVENIDA DE, 154",
+   "via": "",
+   "detalle": "Continuando la instalación de balizas luminosas en los pasos de peatones de la Avenida",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-22",
+   "lat": 41.6517123,
+   "lon": -0.91243,
+   "precision": "portal",
+   "nombre": "Avenida de Madrid"
+  },
+  {
+   "id": "zgz-28004",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "",
+   "detalle": "Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
+   "inicio": "2026-02-02",
+   "fin": "2026-12-31",
+   "lat": 41.647136,
+   "lon": -0.8946807,
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
+  },
+  {
+   "id": "zgz-28052",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CLAVE JOSE ANSELMO, 11",
+   "via": "",
+   "detalle": "Dentro del Proyecto de Urbanización G-19-1 entorno de la estación del Portillo.",
+   "inicio": "2026-02-04",
+   "fin": "2027-01-31",
+   "lat": 41.6528206,
+   "lon": -0.8935064,
+   "precision": "calle",
+   "nombre": "Calle José Anselmo Clavé"
+  },
+  {
+   "id": "zgz-29395",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "COSO, 94",
+   "via": "",
+   "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
+   "inicio": "2026-05-25",
+   "fin": "2027-02-26",
+   "lat": 41.650979,
+   "lon": -0.8772879,
+   "precision": "calle",
+   "nombre": "Calle del Coso"
+  },
+  {
+   "id": "zgz-28867",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "CELORRIO SIXTO, 11",
+   "via": "",
+   "detalle": "Como inicio de las obras del proyecto de renovación del Parque Tío Jorge.",
+   "inicio": "2026-04-13",
+   "fin": "2027-02-28",
+   "lat": 41.6592754,
+   "lon": -0.8757241,
+   "precision": "portal",
+   "nombre": "Calle Sixto Celorrio"
+  },
+  {
+   "id": "zgz-29040",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CANCER JERONIMO, 8",
+   "via": "",
+   "detalle": "Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
+   "inicio": "2026-04-29",
+   "fin": "2026-12-12",
+   "lat": 41.652847,
+   "lon": -0.927444,
+   "precision": "portal",
+   "nombre": "Calle Jerónimo Cáncer"
+  },
+  {
+   "id": "zgz-29675",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VALENCIA AVENIDA DE, 41",
+   "via": "",
+   "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027).",
+   "inicio": "2026-06-16",
+   "fin": "2027-01-31",
+   "lat": 41.6461554,
+   "lon": -0.8970815,
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
+  },
+  {
+   "id": "zgz-29691",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CADENA(MARQUES DE LA), 7",
+   "via": "",
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 2) en el estacionamiento situado entre los números 66 y 68.",
+   "inicio": "2026-06-15",
+   "fin": "2026-12-05",
+   "lat": 41.660856970744895,
+   "lon": -0.8603194362593231,
+   "precision": "aprox",
+   "nombre": "Calle Marqués de la Cadena"
+  },
+  {
+   "id": "zgz-29864",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "JOSÉ ATARÉS, 105",
+   "via": "",
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1) en el estacionamiento situado entre el CDM Siglo XXI y el IES Miguel Molinos",
+   "inicio": "2026-06-27",
+   "fin": "2026-11-16",
+   "lat": 41.6737583,
+   "lon": -0.8978557,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.672158,
+      -0.89698
+     ],
+     [
+      41.672227,
+      -0.897042
+     ],
+     [
+      41.672302,
+      -0.897105
+     ],
+     [
+      41.672434,
+      -0.897207
+     ],
+     [
+      41.672467,
+      -0.897232
+     ],
+     [
+      41.672872,
+      -0.897472
+     ],
+     [
+      41.672929,
+      -0.897502
+     ],
+     [
+      41.672958,
+      -0.897517
+     ],
+     [
+      41.673231,
+      -0.897661
+     ],
+     [
+      41.673625,
+      -0.897822
+     ],
+     [
+      41.673896,
+      -0.897891
+     ],
+     [
+      41.673978,
+      -0.897909
+     ],
+     [
+      41.675444,
+      -0.898264
+     ],
+     [
+      41.675547,
+      -0.898281
+     ]
+    ]
+   ],
+   "nombre": "Calle José Atarés"
+  },
+  {
+   "id": "zgz-29394",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 39",
+   "via": "",
+   "detalle": "Continuando con las obras para su renovación integral.",
+   "inicio": "2026-05-25",
+   "fin": "2027-02-18",
+   "lat": 41.6391707,
+   "lon": -0.8984925,
+   "precision": "portal",
+   "nombre": "Calle Pedro Cerbuna"
+  },
+  {
+   "id": "zgz-30111",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "ESCOSURA DESIDERIO, 2",
+   "via": "",
+   "detalle": "Continuando con las obras de la Avenida Valencia (fecha de finalización prevista enero de 2027) y para realizar la conexión de la tubería de abastecimiento",
+   "inicio": "2026-07-16",
+   "fin": "2026-12-01",
+   "lat": 41.6464415,
+   "lon": -0.8975153,
+   "precision": "portal",
+   "nombre": "Calle Desiderio Escosura"
+  },
+  {
+   "id": "zgz-29137",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "QUINTO AGUSTIN DE, 7",
+   "via": "",
+   "detalle": "Continuando con las obras del Río Huerva lote 1 y para trasladar las casetas de obra actualmente ubicadas en Bruno Solano.",
+   "inicio": "2026-05-06",
+   "fin": "2026-12-31",
+   "lat": 41.639417,
+   "lon": -0.893164,
+   "precision": "portal",
+   "nombre": "Calle Agustín de Quinto"
+  },
+  {
+   "id": "zgz-30074",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SADABA, 5",
+   "via": "",
+   "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo)",
+   "inicio": "2026-07-16",
+   "fin": "2026-11-16",
+   "lat": 41.6548205,
+   "lon": -0.8982344,
+   "precision": "portal",
+   "nombre": "Calle Sádaba"
+  },
+  {
+   "id": "zgz-31572",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SARTRE JEAN PAUL, 10",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.6788425,
+   "lon": -0.8738506,
+   "precision": "calle",
+   "nombre": "Calle Jean Paul Sartre"
+  },
+  {
+   "id": "zgz-31573",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ROMEO LEOPOLDO, 9",
+   "via": "Entre C/ Doctor Iranzo y c/ Obispo Laplana",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.646664,
+   "lon": -0.863372,
+   "precision": "portal",
+   "nombre": "Calle Leopoldo Romeo"
+  },
+  {
+   "id": "zgz-31574",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "IRANZO (DOCTOR), 13",
+   "via": ", Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.6426708,
+   "lon": -0.8649101,
+   "precision": "portal",
+   "nombre": "Calle Doctor Iranzo"
+  },
+  {
+   "id": "zgz-30568",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "FERRAN JAIME, 9",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-08-24",
+   "fin": "2026-11-27",
+   "lat": 41.667599,
+   "lon": -0.862763,
+   "precision": "portal",
+   "nombre": "Calle Jaime Ferrán"
+  },
+  {
+   "id": "zgz-31472",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "LASALA MANUEL, 6",
+   "via": "",
+   "detalle": "Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
+   "inicio": "2026-11-03",
+   "fin": "2026-12-23",
+   "lat": 41.640176,
+   "lon": -0.89081,
+   "precision": "portal",
+   "nombre": "Calle de Manuel Lasala"
+  },
+  {
+   "id": "zgz-30876",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 5",
+   "via": "",
+   "detalle": "Continuando con las obras para su renovación integral",
+   "inicio": "2026-09-16",
+   "fin": "2027-02-18",
+   "lat": 41.6410979,
+   "lon": -0.8966768,
+   "precision": "portal",
+   "nombre": "Calle Pedro Cerbuna"
+  },
+  {
+   "id": "zgz-31471",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "BRETON TOMAS(MAESTRO), 9",
+   "via": "",
+   "detalle": "Continuando con las obras de la Avenida Valencia y para continuar la renovación de servicios",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-26",
+   "lat": 41.6438817,
+   "lon": -0.8946502,
+   "precision": "portal",
+   "nombre": "Calle Maestro Tomás Bretón"
+  },
+  {
+   "id": "zgz-31364",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PAZ, 3",
+   "via": "",
+   "detalle": "Para reparar el vertido a la altura del no 3",
+   "inicio": "2026-10-26",
+   "fin": "2026-11-11",
+   "lat": 41.642639,
+   "lon": -0.8853781,
+   "precision": "portal",
+   "nombre": "Calle de la Paz"
+  },
+  {
+   "id": "zgz-31534",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SAN JOSE AVENIDA DE, 5",
+   "via": "",
+   "detalle": "Para la instalación de adornos navideños en el tramo entre las Avenidas del Tenor Fleta y de Cesareo Alierta",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-09",
+   "lat": 41.6406801,
+   "lon": -0.8736009,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.640785,
+      -0.873526
+     ],
+     [
+      41.640729,
+      -0.873564
+     ],
+     [
+      41.640688,
+      -0.873595
+     ],
+     [
+      41.640658,
+      -0.873618
+     ],
+     [
+      41.640616,
+      -0.873657
+     ],
+     [
+      41.640589,
+      -0.873691
+     ]
+    ]
+   ],
+   "nombre": "Avenida de San José"
+  },
+  {
+   "id": "zgz-30666",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VISTABELLA MRL, 47",
+   "via": "",
+   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "inicio": "2026-09-01",
+   "fin": "2026-11-20",
+   "lat": 41.6609828,
+   "lon": -0.9423819,
+   "precision": "portal",
+   "barrio": "Miralbueno",
+   "nombre": "Calle de Vistabella"
+  },
+  {
+   "id": "zgz-31537",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "FATAS CABEZA G SIS, 26",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-19",
+   "lat": 41.671292,
+   "lon": -0.8334488,
+   "precision": "calle",
+   "barrio": "Santa Isabel",
+   "trazado": [
+    [
+     [
+      41.671721,
+      -0.834428
+     ],
+     [
+      41.671482,
+      -0.833876
+     ],
+     [
+      41.671434,
+      -0.833768
+     ],
+     [
+      41.671396,
+      -0.833682
+     ],
+     [
+      41.671278,
+      -0.833417
+     ],
+     [
+      41.671134,
+      -0.833094
+     ],
+     [
+      41.670948,
+      -0.832668
+     ],
+     [
+      41.670917,
+      -0.832599
+     ],
+     [
+      41.670878,
+      -0.832502
+     ],
+     [
+      41.670865,
+      -0.832469
+     ]
+    ]
+   ],
+   "nombre": "Calle Guillermo Fatás Cabeza"
+  },
+  {
+   "id": "zgz-30805",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "IRANZO (DOCTOR), 13",
+   "via": "",
+   "detalle": "Para las obras de la reforma integral de la vía (plazo de ejecución, 12 meses)",
+   "inicio": "2026-09-14",
+   "fin": "2027-08-31",
+   "lat": 41.6426708,
+   "lon": -0.8649101,
+   "precision": "portal",
+   "nombre": "Calle Doctor Iranzo"
+  },
+  {
+   "id": "zgz-31557",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CASANOVA JOSE (FRAY), 5",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-13",
+   "lat": 41.655763,
+   "lon": -0.904432,
+   "precision": "portal",
+   "nombre": "Calle de Fray José Casanova"
+  },
+  {
+   "id": "zgz-31475",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CELORRIO SIXTO, 14",
+   "via": "A la altura de Valle de Zuriza",
+   "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como primera fase para renovar un ramal de saneamiento que cruza la vía",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-13",
+   "lat": 41.6586713,
+   "lon": -0.8751198,
+   "precision": "portal",
+   "nombre": "Calle Sixto Celorrio"
+  },
+  {
+   "id": "zgz-31425",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CLAVE JOSE ANSELMO, 5",
+   "via": "",
+   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "inicio": "2026-10-28",
+   "fin": "2026-12-28",
+   "lat": 41.6528206,
+   "lon": -0.8935064,
+   "precision": "calle",
+   "nombre": "Calle José Anselmo Clavé"
+  },
+  {
+   "id": "zgz-31567",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "JOSÉ ATARÉS, 105",
+   "via": "",
+   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1)",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-20",
+   "lat": 41.67423287979509,
+   "lon": -0.8986165878224152,
+   "precision": "aprox",
+   "nombre": "Calle José Atarés"
+  },
+  {
+   "id": "zgz-31568",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PALENCIA, 8",
+   "via": "",
+   "detalle": "Para instalar una planta solar fotovoltaica (lote 4)",
+   "inicio": "2026-11-12",
+   "fin": "2026-12-18",
+   "lat": 41.6611986,
+   "lon": -0.8794143,
+   "precision": "portal",
+   "nombre": "Calle Palencia"
+  },
+  {
+   "id": "zgz-31569",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "LASTANOSA, 8",
+   "via": "Entre C/Rioja y C/ Julián Ribera,",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.6531941,
+   "lon": -0.9080364,
+   "precision": "portal",
+   "nombre": "Calle de Lastanosa"
+  },
+  {
+   "id": "zgz-31571",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ASIA CONTINENTE, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.678574,
+   "lon": -0.873912,
+   "precision": "portal",
+   "nombre": "Calle de Asia"
+  },
+  {
+   "id": "zgz-31479",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ROMEO LEOPOLDO, 9",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-04",
+   "fin": "2026-11-09",
+   "lat": 41.646664,
+   "lon": -0.863372,
+   "precision": "portal",
+   "nombre": "Calle Leopoldo Romeo"
+  },
+  {
+   "id": "zgz-30596",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ALBARDIN CRT, 6",
+   "via": "",
+   "detalle": "Para realizar una cámara en la ya finalizada red de abastecimiento para el Centro de Datos de Amazon",
+   "inicio": "2026-08-22",
+   "fin": "2026-11-13",
+   "lat": 41.5886597,
+   "lon": -0.8127982,
+   "precision": "portal",
+   "barrio": "Cartuja Baja",
+   "nombre": "Calle Albardín"
+  },
+  {
+   "id": "zgz-31114",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CONSEJO DE CIENTO, 11",
+   "via": "",
+   "detalle": "Para la ejecución de orejetas y un paso de peatones",
+   "inicio": "2026-10-02",
+   "fin": "2026-11-16",
+   "lat": 41.6274587,
+   "lon": -0.873865,
+   "precision": "portal",
+   "nombre": "Calle Consejo de Ciento"
+  },
+  {
+   "id": "zgz-31451",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CUARTA AVENIDA, 46",
+   "via": "",
+   "detalle": "Para la reconstrucción de orejetas en el paso de peatones a la altura del nº 46",
+   "inicio": "2026-10-28",
+   "fin": "2026-11-20",
+   "lat": 41.624682,
+   "lon": -0.8782324,
+   "precision": "portal",
+   "nombre": "Cuarta Avenida"
+  },
+  {
+   "id": "zgz-31566",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ORENSE, 8",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido en el n.o 8",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-12",
+   "lat": 41.6274038,
+   "lon": -0.8861138,
+   "precision": "portal",
+   "nombre": "Calle Orense"
+  },
+  {
+   "id": "zgz-31474",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "HISPANIDAD RONDA, 10",
+   "via": "Puentes sobre la A2 y sobre el ferrocarril (sobre Calle Escatrón)",
+   "detalle": "Para reparar las juntas de dilatación",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-13",
+   "lat": 41.6306746,
+   "lon": -0.9017236,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.630182,
+      -0.900771
+     ],
+     [
+      41.630686,
+      -0.901745
+     ],
+     [
+      41.630812,
+      -0.902001
+     ],
+     [
+      41.631022,
+      -0.902435
+     ],
+     [
+      41.631143,
+      -0.902688
+     ]
+    ]
+   ],
+   "nombre": "Ronda de la Hispanidad"
+  },
+  {
+   "id": "zgz-31536",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CERBUNA PEDRO, 5",
+   "via": "",
+   "detalle": "Continuando con las obras para su renovación integral",
+   "inicio": "2026-11-06",
+   "fin": "2027-01-29",
+   "lat": 41.6410979,
+   "lon": -0.8966768,
+   "precision": "portal",
+   "nombre": "Calle Pedro Cerbuna"
+  },
+  {
+   "id": "zgz-30944",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CABALLERO FCO(ALCALDE, 52",
+   "via": "",
+   "detalle": "Para ejecutar los pilares de las marquesinas donde se instalarán las placas fotovoltaicas (Planta solar lote 3) entre la Calle Pedro Lázaro y la Avenida de la Jota",
+   "inicio": "2026-09-19",
+   "fin": "2026-11-18",
+   "lat": 41.67283493889929,
+   "lon": -0.8596966767022661,
+   "precision": "aprox",
+   "nombre": "Calle Alcalde Francisco Caballero"
+  },
+  {
+   "id": "zgz-31506",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ALFOCEA CAMINO DE MNZ, 4",
+   "via": "",
+   "detalle": "Para reparar una toma de agua a la altura de la Calle Castelar",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-13",
+   "lat": 41.702037,
+   "lon": -0.9654,
+   "precision": "portal",
+   "barrio": "Monzalbarba",
+   "nombre": "Camino de Alfocea"
+  },
+  {
+   "id": "zgz-31507",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "TABOADA EDUARDO JES., 11",
+   "via": "",
+   "detalle": "Para renovar la tubería de abastecimiento",
+   "inicio": "2026-11-05",
+   "fin": "2026-11-20",
+   "lat": 41.6521319,
+   "lon": -0.8673024,
+   "precision": "portal",
+   "nombre": "Calle de Eduardo Jesús Taboada"
+  },
+  {
+   "id": "zgz-31003",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "BLANCO CORDERO (DR.), 11",
+   "via": "",
+   "detalle": "Continuando con la rehabilitación del grupo de viviendas Aloy Salas y para realizar una canalización eléctrica entre las calles López Abadía y Félix Rodriguez de la Fuente",
+   "inicio": "2026-09-25",
+   "fin": "2026-11-27",
+   "lat": 41.652238,
+   "lon": -0.868073,
+   "precision": "portal",
+   "nombre": "Calle Doctor Blanco Cordero"
+  },
+  {
+   "id": "zgz-31144",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ENMEDIO PÑF, 2",
+   "via": "",
+   "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
+   "inicio": "2026-10-05",
+   "fin": "2026-11-27",
+   "lat": 41.7615458,
+   "lon": -0.7982642,
+   "precision": "portal",
+   "barrio": "Peñaflor",
+   "nombre": "Calle de Enmedio"
+  },
+  {
+   "id": "zgz-31148",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "AGUSTIN PASEO MARIA, 13",
+   "via": "",
+   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "inicio": "2026-10-09",
+   "fin": "2026-11-30",
+   "lat": 41.650317,
+   "lon": -0.8892003,
+   "precision": "portal",
+   "nombre": "Paseo de María Agustín"
+  },
+  {
+   "id": "zgz-31559",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ZUMALACARREGUI TOMAS, 13",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica en el no 30",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.643402,
+   "lon": -0.887814,
+   "precision": "portal",
+   "nombre": "Calle Tomás Zumalacárregui"
+  },
+  {
+   "id": "zgz-31560",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "GALLEGO RIO PÑF, 11",
+   "via": "",
+   "detalle": "Continuando con el Proyecto de urbanización F-71-7",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.760916,
+   "lon": -0.7987939,
+   "precision": "portal",
+   "barrio": "Peñaflor",
+   "nombre": "Calle del Río Gállego"
+  },
+  {
+   "id": "zgz-31234",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MALPICA II (CALLE D), 0",
+   "via": "",
+   "detalle": "Para la reparación de vertido entre las parcelas 76 (Chatarras Ostariz Frago) y 76A (Mármoles y granitos Marpa)",
+   "inicio": "2026-10-19",
+   "fin": "2026-12-04",
+   "lat": 41.656832846812705,
+   "lon": -0.7887810252750279,
+   "precision": "aprox",
+   "nombre": "Calle D (Malpica II)"
+  },
+  {
+   "id": "zgz-31235",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "LORENTE JUAN JOSE, 1",
+   "via": "",
+   "detalle": "Continuando con las obras de la Avenida Valencia y para realizar la conexión de servicios",
+   "inicio": "2026-10-21",
+   "fin": "2026-11-23",
+   "lat": 41.6467227,
+   "lon": -0.8950031,
+   "precision": "portal",
+   "nombre": "Calle Juan José Lorente"
+  },
+  {
+   "id": "zgz-31561",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PILON CN. EL MRL, 19",
+   "via": "",
+   "detalle": "Para renovar el sumidero corrido ubicado entre el Anillo Verde y la Calle Íñigo Manuel Marín Sancho",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.658573,
+   "lon": -0.925555,
+   "precision": "portal",
+   "barrio": "Miralbueno",
+   "nombre": "Camino del Pilón"
+  },
+  {
+   "id": "zgz-31563",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "EDISON TOMAS A, 8",
+   "via": "",
+   "detalle": "Para realizar una nueva acometida de vertido a la altura del no 8",
+   "inicio": "2026-11-10",
+   "fin": "2026-11-24",
+   "lat": 41.665154,
+   "lon": -0.862768,
+   "precision": "portal",
+   "nombre": "Calle de Tomás A. Edison"
+  },
+  {
+   "id": "zgz-31562",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MADRID AVENIDA DE, 9",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica y como segunda fase",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-13",
+   "lat": 41.6559199,
+   "lon": -0.8945208,
+   "precision": "calle",
+   "nombre": "Avenida de Madrid"
+  },
+  {
+   "id": "zgz-31570",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "OCEANIA CONTINENTE, 13",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-09",
+   "lat": 41.678407,
+   "lon": -0.874784,
+   "precision": "portal",
+   "nombre": "Calle de Oceanía"
+  },
+  {
+   "id": "zgz-31476",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PUERTA DE SANCHO AV., 9",
+   "via": "A la altura del nº 9, del 3 al 20 de noviembre",
+   "detalle": "Para recrecer la parada del bus",
+   "inicio": "2026-11-03",
+   "fin": "2026-11-20",
+   "lat": 41.660166,
+   "lon": -0.9023833,
+   "precision": "calle",
+   "nombre": "Avenida de Puerta Sancho"
+  },
+  {
+   "id": "zgz-31384",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MOLINO DE LAS ARMAS, 46",
+   "via": "",
+   "detalle": "Para la reparación de avería en el n.o 46",
+   "inicio": "2026-10-26",
+   "fin": "2026-11-20",
+   "lat": 41.6617614,
+   "lon": -0.8614586,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.661656,
+      -0.861758
+     ],
+     [
+      41.66167,
+      -0.861676
+     ],
+     [
+      41.661853,
+      -0.861241
+     ],
+     [
+      41.661905,
+      -0.861176
+     ]
+    ]
+   ],
+   "nombre": "Calle del Molino de las Armas"
+  },
+  {
+   "id": "zgz-31271",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "VISTABELLA MRL, 53",
+   "via": "",
+   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "inicio": "2026-10-18",
+   "fin": "2026-11-20",
+   "lat": 41.6610555,
+   "lon": -0.9426162,
+   "precision": "portal",
+   "barrio": "Miralbueno",
+   "nombre": "Calle de Vistabella"
+  },
+  {
+   "id": "zgz-31465",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "GUERRERO MARIA, 13",
+   "via": "Frente al nº 22-24",
+   "detalle": "Continuando con la reparación de la fuga de agua que comenzó con carácter de urgencia.",
+   "inicio": "2026-10-28",
+   "fin": "2026-11-13",
+   "lat": 41.64351,
+   "lon": -0.9099002,
+   "precision": "portal",
+   "nombre": "Calle de María Guerrero"
+  },
+  {
+   "id": "zgz-31093",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "",
+   "detalle": "Continuando con las obras de la Avenida",
+   "inicio": "2026-10-01",
+   "fin": "2026-12-31",
+   "lat": 41.647136,
+   "lon": -0.8946807,
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
+  },
+  {
+   "id": "zgz-31565",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "REBOLLEDO RODRIGO DE, 4",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-07",
+   "fin": "2026-11-13",
+   "lat": 41.6459811,
+   "lon": -0.8626608,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.645831,
+      -0.86115
+     ],
+     [
+      41.645872,
+      -0.861536
+     ],
+     [
+      41.645901,
+      -0.861835
+     ],
+     [
+      41.64591,
+      -0.861949
+     ],
+     [
+      41.645919,
+      -0.862046
+     ],
+     [
+      41.646021,
+      -0.863055
+     ],
+     [
+      41.64612,
+      -0.864067
+     ],
+     [
+      41.646131,
+      -0.864172
+     ]
+    ]
+   ],
+   "nombre": "Calle Rodrigo Rebolledo"
+  },
+  {
+   "id": "dgt-29841651",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 507.44 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-08",
    "fin": null,
-   "lat": 41.686478,
-   "lon": -0.954425,
+   "lat": 41.71511,
+   "lon": -0.85875,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29840587",
+   "id": "dgt-29841724",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 310.338 · sentido creciente · orientación este",
+   "via": "pk 319.691 · sentido decreciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-08",
    "fin": null,
-   "lat": 41.62888,
-   "lon": -0.99483,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840755",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 245.3–245.325 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.67283,
-   "lon": -0.95023894,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840789",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 3.396 · sentido decreciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.630836,
-   "lon": -0.9896983,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840818",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 314.601 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.65385,
-   "lon": -0.95795,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840819",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 254.286 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.71914,
-   "lon": -1.03821,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840830",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 299.172 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.74196,
-   "lon": -0.84377,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840898",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 28.945 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.618,
-   "lon": -0.94089,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29840924",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 275.61 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-08",
-   "fin": null,
-   "lat": 41.60188,
-   "lon": -0.93733,
+   "lat": 41.68196,
+   "lon": -0.91119,
    "precision": "exacta"
   }
  ]
