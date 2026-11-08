@@ -174,6 +174,8 @@ def es_agua(i):
 
 def nombre_corte(i, nombres=None):
     """'AMERICA AVENIDA DE, 68' -> 'Avenida de America'; 'C/ AMBROSIO DEL RUSTE' -> 'Calle Ambrosio del Ruste'; 'ITALIA, 16' -> 'Calle Italia'."""
+    if str(i.get("nombre") or "").strip():  # nombre ya corregido/geocodificado en actualizar_datos.py (el mismo que ve la lista general)
+        return str(i["nombre"]).strip()
     raw = re.sub(r"^(C/|CL\.?)\s*", "", str(i["titulo"]).split(",")[0].strip().upper())
     m = re.match(rf"^(.*?)\s+({TIPOS_VIA})\s+(DE LA|DEL|DE LOS|DE LAS|DE)$", raw)
     if m:
