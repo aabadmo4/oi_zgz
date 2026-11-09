@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-09T10:02+01:00",
+ "actualizado": "2026-11-09T11:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 67
+   "n": 70
   },
   "dgt": {
    "ok": true,
-   "n": 11
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -407,6 +407,34 @@
    "nombre": "Calle Jaime Ferrán"
   },
   {
+   "id": "zgz-31593",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "EUROPA PL, 0",
+   "via": "",
+   "detalle": "Para la instalación de la iluminación navideña, y supeditado al Permiso Especial de Policía Local",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-10",
+   "lat": 41.6595576,
+   "lon": -0.8920635,
+   "precision": "calle",
+   "nombre": "Calle Europa Pl"
+  },
+  {
+   "id": "zgz-31594",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "RIBERA PASEO DE LA, 3",
+   "via": "",
+   "detalle": "Para la instalación de la iluminación navideña, y supeditado al Permiso Especial de Policía Local",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-12",
+   "lat": 41.6587451,
+   "lon": -0.8767353,
+   "precision": "portal",
+   "nombre": "Paseo de la Ribera"
+  },
+  {
    "id": "zgz-31577",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -665,7 +693,7 @@
   {
    "id": "zgz-31567",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "JOSÉ ATARÉS, 105",
    "via": "",
    "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1)",
@@ -883,6 +911,20 @@
    "precision": "portal",
    "barrio": "Monzalbarba",
    "nombre": "Camino de Alfocea"
+  },
+  {
+   "id": "zgz-31595",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CADENA, 5",
+   "via": "",
+   "detalle": "Para reparar el vertido",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-16",
+   "lat": 41.6504857,
+   "lon": -0.8755923,
+   "precision": "calle",
+   "nombre": "Calle de la Cadena"
   },
   {
    "id": "zgz-31507",
@@ -1267,101 +1309,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29850142",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 229.54 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.60214,
-   "lon": -0.821184,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29850632",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 324.532 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.678883,
-   "lon": -0.853184,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29850803",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 16.755 · sentido creciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.64883,
-   "lon": -0.835683,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29851616",
+   "id": "dgt-29854067",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "VS-A-2-D",
-   "via": "pk 321.039 · sentido creciente · orientación este",
+   "via": "pk 322.427 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.680172,
-   "lon": -0.895186,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29851365",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 16.6–16.8 · sentido creciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.648544,
-   "lon": -0.83530957,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29852230",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 253.704 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.71474,
-   "lon": -1.03401,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29852401",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 303.972 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.613323,
-   "lon": -1.0652866,
+   "lat": 41.67998,
+   "lon": -0.87972,
    "precision": "exacta"
   }
  ]

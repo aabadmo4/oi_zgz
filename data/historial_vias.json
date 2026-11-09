@@ -2276,6 +2276,17 @@
    "titulo": "A-2",
    "via": "pk 303.972 · sentido decreciente · orientación suroeste",
    "visto": "2026-11-09"
+  },
+  "dgt-29854067": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29854067",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.427 · sentido creciente · orientación este",
+   "visto": "2026-11-09"
   }
  },
  "alvarado-pedro-de": {
@@ -2678,7 +2689,7 @@
    "fuente": "Ayuntamiento",
    "id": "zgz-31567",
    "inicio": "2026-11-09",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "JOSÉ ATARÉS, 105",
    "via": "",
    "visto": "2026-11-09"
