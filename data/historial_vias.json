@@ -2232,6 +2232,30 @@
    "titulo": "A-2",
    "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
    "visto": "2026-11-09"
+  },
+  "dgt-29848823": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29848823",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 316.645 · sentido creciente · orientación noreste",
+   "visto": "2026-11-09"
+  }
+ },
+ "alvarado-pedro-de": {
+  "zgz-31591": {
+   "detalle": "Para la reforma de la calle y de las viviendas",
+   "fin": "2027-02-26",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31591",
+   "inicio": "2025-07-09",
+   "tipo": "Corte",
+   "titulo": "ALVARADO PEDRO DE, 1",
+   "via": "",
+   "visto": "2026-11-09"
   }
  },
  "ap-68": {
@@ -2299,6 +2323,17 @@
    "tipo": "Corte",
    "titulo": "AP-68",
    "via": "pk 290.0–291.0 · sentido decreciente · orientación noroeste",
+   "visto": "2026-11-09"
+  },
+  "dgt-29848360": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29848360",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 291.358 · sentido creciente · orientación este",
    "visto": "2026-11-09"
   }
  },
@@ -2599,7 +2634,7 @@
    "fuente": "Ayuntamiento",
    "id": "zgz-29864",
    "inicio": "2026-06-27",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "JOSÉ ATARÉS, 105",
    "via": "",
    "visto": "2026-11-09"
@@ -4344,6 +4379,17 @@
    "via": "pk 20.713 · sentido decreciente · orientación noreste",
    "visto": "2026-11-09"
   },
+  "dgt-29845808": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-09",
+   "fuente": "DGT",
+   "id": "dgt-29845808",
+   "inicio": "2026-11-09",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 14.7–18.0 · sentido decreciente · orientación norte",
+   "visto": "2026-11-09"
+  },
   "dgt-29845856": {
    "detalle": "Tráfico lento",
    "fin": null,
@@ -4353,6 +4399,39 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-09"
+  },
+  "dgt-29846934": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29846934",
+   "inicio": "2026-11-09",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 15.0–20.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-09"
+  },
+  "dgt-29846935": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29846935",
+   "inicio": "2026-11-09",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 19.0–20.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-09"
+  },
+  "dgt-29849419": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29849419",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 21.436 · sentido creciente · orientación suroeste",
    "visto": "2026-11-09"
   }
  }
