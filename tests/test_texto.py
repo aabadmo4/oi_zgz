@@ -27,6 +27,14 @@ class TestTexto(unittest.TestCase):
         self.assertFalse(a.en_zgz("x", "y"))
 
 
+class TestTramo(unittest.TestCase):
+    def test_limpiar_tramo(self):
+        self.assertEqual(a.limpiar_tramo(", Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa"), "Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa")
+        self.assertEqual(a.limpiar_tramo("Entre C/Rioja y C/ Julián Ribera, "), "Entre C/Rioja y C/ Julián Ribera")
+        self.assertEqual(a.limpiar_tramo("Números pares, entre C/ Juan Porcell y C/ Rufas"), "Números pares, entre C/ Juan Porcell y C/ Rufas")
+        self.assertEqual(a.limpiar_tramo(None), "")
+
+
 class TestNormLocal(unittest.TestCase):
     def test_honorifico_y_numero(self):
         self.assertEqual(a.norm_local("BLANCO CORDERO (DR.), 11"), {"via": "Calle Doctor Blanco Cordero", "numero": "11"})

@@ -31,13 +31,18 @@ class TestPaginas(unittest.TestCase):
         self.assertEqual(g.cuando(prox, hoy), "Próxima · Empieza mañana · 9 de noviembre de 2026")
         rango = {"inicio": "2026-11-12", "fin": "2026-12-20"}
         self.assertEqual(g.cuando(rango, hoy), "Próxima · Empieza en 4 días · Del 12 de noviembre al 20 de diciembre de 2026")
+        self.assertEqual(g.cuando({"inicio": "2026-11-09", "fin": "2026-11-20"}, hoy), "Próxima · Empieza mañana · Del 9 al 20 de noviembre de 2026")
         curso = {"inicio": "2026-11-01", "fin": "2026-12-31"}
         self.assertEqual(g.cuando(curso, hoy), "En curso · Del 1 de noviembre al 31 de diciembre de 2026")
         self.assertEqual(g.cuando({"fin": "2026-12-31"}, hoy), "En curso · Hasta el 31 de diciembre de 2026")
         self.assertEqual(g.cuando({"inicio": "2026-11-08", "fin": "2026-11-08"}, hoy), "Solo hoy")
         self.assertEqual(g.cuando({"inicio": "2026-11-01", "fin": "2026-11-08"}, hoy), "Termina hoy")
-        self.assertEqual(g.cuando({"inicio": "2026-10-01", "fin": "2026-11-02"}, hoy), "Finalizada · Hasta el 2 de noviembre de 2026")
+        self.assertEqual(g.cuando({"inicio": "2026-10-01", "fin": "2026-11-02"}, hoy), "Finalizada · Terminó el 2 de noviembre de 2026")
         self.assertEqual(g.cuando({}, hoy), "Activa")
+        # estado_html: píldora para próxima/finalizada/hoy y negrita para en curso
+        self.assertIn('class="est est-prox">Próxima</span> Empieza mañana', g.estado_html(prox, hoy))
+        self.assertIn('class="est est-hoy">Solo hoy</span>', g.estado_html({"inicio": hoy, "fin": hoy}, hoy))
+        self.assertIn('class="est-curso">En curso</strong>', g.estado_html(curso, hoy))
         # sin fecha de referencia: formato clásico
         self.assertEqual(g.cuando(curso), "Hasta el 31 de diciembre de 2026")
 
