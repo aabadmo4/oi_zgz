@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T11:02+01:00",
+ "actualizado": "2026-11-09T12:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -1309,17 +1309,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29854067",
+   "id": "dgt-29856513",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-D",
-   "via": "pk 322.427 · sentido creciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 20.064 · sentido creciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.67998,
-   "lon": -0.87972,
+   "lat": 41.62596,
+   "lon": -0.847926,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29856663",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 247.248 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.68424,
+   "lon": -0.96796,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29857330",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 503.343 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.68384,
+   "lon": -0.87498,
    "precision": "exacta"
   }
  ]
