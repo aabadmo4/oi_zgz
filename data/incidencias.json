@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T02:01+01:00",
+ "actualizado": "2026-11-09T03:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -17,7 +17,7 @@
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
    "titulo": "BLANCO CORDERO (DR.), 11",
-   "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía.",
+   "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía",
    "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
    "inicio": "2025-07-09",
    "fin": "2027-02-26",
@@ -341,7 +341,7 @@
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
    "titulo": "IRANZO (DOCTOR), 13",
-   "via": ", Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa",
+   "via": "Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa",
    "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
    "inicio": "2026-11-09",
    "fin": "2026-11-09",
@@ -681,7 +681,7 @@
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
    "titulo": "LASTANOSA, 8",
-   "via": "Entre C/Rioja y C/ Julián Ribera,",
+   "via": "Entre C/Rioja y C/ Julián Ribera",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
    "inicio": "2026-11-09",
    "fin": "2026-11-09",
