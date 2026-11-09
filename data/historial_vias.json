@@ -2243,6 +2243,39 @@
    "titulo": "VS-A-2-C",
    "via": "pk 316.645 · sentido creciente · orientación noreste",
    "visto": "2026-11-09"
+  },
+  "dgt-29850632": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29850632",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 324.532 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-09"
+  },
+  "dgt-29851616": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29851616",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 321.039 · sentido creciente · orientación este",
+   "visto": "2026-11-09"
+  },
+  "dgt-29852401": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29852401",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 303.972 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-09"
   }
  },
  "alvarado-pedro-de": {
@@ -2486,7 +2519,7 @@
    "fuente": "Ayuntamiento",
    "id": "zgz-29137",
    "inicio": "2026-05-06",
-   "tipo": "Corte",
+   "tipo": "Obras",
    "titulo": "QUINTO AGUSTIN DE, 7",
    "via": "",
    "visto": "2026-11-09"
@@ -2742,7 +2775,7 @@
    "id": "zgz-31475",
    "inicio": "2026-11-03",
    "tipo": "Corte",
-   "titulo": "CELORRIO SIXTO, 14",
+   "titulo": "CELORRIO SIXTO, 11",
    "via": "A la altura de Valle de Zuriza",
    "visto": "2026-11-09"
   }
@@ -4432,6 +4465,28 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 21.436 · sentido creciente · orientación suroeste",
+   "visto": "2026-11-09"
+  },
+  "dgt-29850803": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29850803",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 16.755 · sentido creciente · orientación sureste",
+   "visto": "2026-11-09"
+  },
+  "dgt-29851365": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29851365",
+   "inicio": "2026-11-09",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 16.6–16.8 · sentido creciente · orientación sureste",
    "visto": "2026-11-09"
   }
  }

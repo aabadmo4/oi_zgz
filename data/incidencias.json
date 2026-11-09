@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T09:01+01:00",
+ "actualizado": "2026-11-09T10:02+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 10
+   "n": 11
   }
  },
  "sin_ubicar": 0,
@@ -283,7 +283,7 @@
   {
    "id": "zgz-29137",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Obras",
    "titulo": "QUINTO AGUSTIN DE, 7",
    "via": "",
    "detalle": "Continuando con las obras del Río Huerva lote 1 y para trasladar las casetas de obra actualmente ubicadas en Bruno Solano.",
@@ -379,6 +379,20 @@
    "nombre": "Calle Mosén Agustín Gericó Nadal"
   },
   {
+   "id": "zgz-31592",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "LASALA MANUEL, 6",
+   "via": "",
+   "detalle": "Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
+   "inicio": "2026-11-03",
+   "fin": "2026-12-23",
+   "lat": 41.640176,
+   "lon": -0.89081,
+   "precision": "portal",
+   "nombre": "Calle de Manuel Lasala"
+  },
+  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -391,20 +405,6 @@
    "lon": -0.862763,
    "precision": "portal",
    "nombre": "Calle Jaime Ferrán"
-  },
-  {
-   "id": "zgz-31472",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "LASALA MANUEL, 6",
-   "via": "",
-   "detalle": "Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
-   "inicio": "2026-11-03",
-   "fin": "2026-12-23",
-   "lat": 41.640176,
-   "lon": -0.89081,
-   "precision": "portal",
-   "nombre": "Calle de Manuel Lasala"
   },
   {
    "id": "zgz-31577",
@@ -638,13 +638,13 @@
    "id": "zgz-31475",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
-   "titulo": "CELORRIO SIXTO, 14",
+   "titulo": "CELORRIO SIXTO, 11",
    "via": "A la altura de Valle de Zuriza",
    "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como primera fase para renovar un ramal de saneamiento que cruza la vía",
    "inicio": "2026-11-03",
    "fin": "2026-11-13",
-   "lat": 41.6586713,
-   "lon": -0.8751198,
+   "lat": 41.6592754,
+   "lon": -0.8757241,
    "precision": "portal",
    "nombre": "Calle Sixto Celorrio"
   },
@@ -679,7 +679,7 @@
   {
    "id": "zgz-31568",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "PALENCIA, 8",
    "via": "",
    "detalle": "Para instalar una planta solar fotovoltaica (lote 4)",
@@ -1253,48 +1253,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29846363",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-68",
-   "via": "pk 246.5–246.6 · sentido decreciente · orientación sureste",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.68965,
-   "lon": -0.9600123,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29846378",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-68",
-   "via": "pk 246.6–248.1 · sentido creciente · orientación norte",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.69433,
-   "lon": -0.9788601,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29846935",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 19.0–20.0 · sentido decreciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.63192,
-   "lon": -0.83931047,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29846934",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1309,45 +1267,101 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29848360",
+   "id": "dgt-29850142",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 291.358 · sentido creciente · orientación este",
+   "titulo": "A-68",
+   "via": "pk 229.54 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.689,
-   "lon": -0.96082,
+   "lat": 41.60214,
+   "lon": -0.821184,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29848823",
+   "id": "dgt-29850632",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 316.645 · sentido creciente · orientación noreste",
+   "titulo": "A-2",
+   "via": "pk 324.532 · sentido decreciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.66539,
-   "lon": -0.93801,
+   "lat": 41.678883,
+   "lon": -0.853184,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29849419",
+   "id": "dgt-29850803",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 21.436 · sentido creciente · orientación suroeste",
+   "via": "pk 16.755 · sentido creciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.62093,
-   "lon": -0.86287,
+   "lat": 41.64883,
+   "lon": -0.835683,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29851616",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 321.039 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.680172,
+   "lon": -0.895186,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29851365",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 16.6–16.8 · sentido creciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.648544,
+   "lon": -0.83530957,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29852230",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 253.704 · sentido creciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.71474,
+   "lon": -1.03401,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29852401",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 303.972 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.613323,
+   "lon": -1.0652866,
    "precision": "exacta"
   }
  ]
