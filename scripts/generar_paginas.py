@@ -68,32 +68,49 @@ def _d(s):
 def _rango(a, b):
     """'Del 9 de noviembre al 12 de diciembre de 2026' (sin repetir el año si es el mismo)."""
     da, db = _d(a), _d(b)
+    if da and db and (da.year, da.month) == (db.year, db.month):
+        return f"Del {da.day} al {fecha(b)}"
     if da and db and da.year == db.year:
         return f"Del {da.day} de {MESES[da.month - 1]} al {fecha(b)}"
     return f"Del {fecha(a)} al {fecha(b)}"
 
 
-def cuando(i, hoy=None):
-    """Fechas de la incidencia. Con `hoy` (ISO) añade el estado, igual que la web dinámica: Próxima / En curso /
-    Termina hoy / Solo hoy / Finalizada, junto con las fechas de inicio y fin."""
+def estado(i, hoy=None):
+    """(clave, etiqueta, resto) como la web dinámica: prox=Próxima, fin=Finalizada, hoy=Solo hoy/Termina hoy, curso=En curso/Activa.
+    Sin `hoy` solo devuelve las fechas en formato clásico ('Hasta el ...')."""
     ini, fin = _d(i.get("inicio")), _d(i.get("fin"))
     ref = _d(hoy)
-    if not ref:  # sin fecha de referencia: comportamiento clásico
-        return f"Hasta el {fecha(i['fin'])}" if fin else (f"Desde el {fecha(i['inicio'])}" if ini else "")
+    if not ref:
+        return ("", "", f"Hasta el {fecha(i['fin'])}" if fin else (f"Desde el {fecha(i['inicio'])}" if ini else ""))
     if ini and ini > ref:
         n = (ini - ref).days
         r = "Empieza mañana" if n == 1 else f"Empieza en {n} días"
         f = _rango(i["inicio"], i["fin"]) if fin and fin != ini else fecha(i["inicio"])
-        return f"Próxima · {r} · {f}"
+        return ("prox", "Próxima", f"{r} · {f}")
     if fin and fin < ref:
-        return f"Finalizada · Hasta el {fecha(i['fin'])}"
+        return ("fin", "Finalizada", f"Terminó el {fecha(i['fin'])}")
     if ini and fin and ini == fin:
-        return "Solo hoy"
+        return ("hoy", "Solo hoy", "")
     if fin and fin == ref:
-        return "Termina hoy"
+        return ("hoy", "Termina hoy", "")
     if not fin:
-        return f"En curso · Desde el {fecha(i['inicio'])}" if ini else "Activa"
-    return f"En curso · {_rango(i['inicio'], i['fin'])}" if ini else f"En curso · Hasta el {fecha(i['fin'])}"
+        return ("curso", "En curso", f"Desde el {fecha(i['inicio'])}") if ini else ("curso", "Activa", "")
+    return ("curso", "En curso", _rango(i["inicio"], i["fin"]) if ini else f"Hasta el {fecha(i['fin'])}")
+
+
+def cuando(i, hoy=None):
+    """Estado y fechas en texto plano (p. ej. 'Próxima · Empieza mañana · 9 de noviembre de 2026')."""
+    _k, t, r = estado(i, hoy)
+    return " · ".join(x for x in (t, r) if x)
+
+
+def estado_html(i, hoy=None):
+    """Igual que cuando(), pero con el estado destacado: píldora de color (azul=próxima, verde=hoy, gris=finalizada) o negrita (en curso)."""
+    k, t, r = estado(i, hoy)
+    if not t:
+        return esc(r)
+    pill = f'<span class="est est-{k}">{esc(t)}</span>' if k in ("prox", "fin", "hoy") else f'<strong class="est-curso">{esc(t)}</strong>'
+    return pill + (f" {esc(r)}" if r else "")
 
 
 def fecha_hora(iso):
@@ -225,8 +242,10 @@ def bloque_agua(incs, nombres=None, limite=6, hoy=None):
     avisos = sorted((i for i in incs if es_agua(i)), key=lambda i: (i.get("inicio") or "", nombre_corte(i, nombres)))
     out = ""
     for i in avisos[:limite]:
-        linea = " · ".join(x for x in [esc(i.get("via", "")), esc(i.get("detalle", "")), esc(cuando(i, hoy))] if x)
-        out += f'<li><span aria-hidden="true">💧</span> <strong>{esc(titulo_ficha(i, nombre_corte(i, nombres)))}</strong><br><span class="mute">{linea}</span></li>'
+        linea = " · ".join(x for x in [esc(i.get("via", "")), esc(i.get("detalle", ""))] if x)
+        est = estado_html(i, hoy)
+        out += (f'<li><span aria-hidden="true">💧</span> <strong>{esc(titulo_ficha(i, nombre_corte(i, nombres)))}</strong>'
+                + (f'<br><span class="mute">{est}</span>' if est else "") + (f'<br><span class="mute">{linea}</span>' if linea else "") + "</li>")
     n = len(avisos)
     if n:
         cab = f"<p>Hay {n} {'aviso' if n == 1 else 'avisos'} de cortes de agua programados en Zaragoza.</p>"
@@ -254,13 +273,15 @@ def bloque_portada(vias, limite=15, hoy=None):
         e, _c = TIPOS.get(i["tipo"], TIPOS["Otros"])
         t = esc(titulo_ficha(i, nom))
         t = f'<a href="/vias/{esc(sl)}.html">{t}</a>' if sl else t
-        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i, hoy))] if x)
-        out += f"<li><span aria-hidden=\"true\">{e}</span> <strong>{t}</strong><br><span class=\"mute\">{linea}</span></li>"
+        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"])] if x)
+        est = estado_html(i, hoy)
+        out += (f'<li><span aria-hidden="true">{e}</span> <strong>{t}</strong>'
+                + (f'<br><span class="mute">{est}</span>' if est else "") + f'<br><span class="mute">{linea}</span></li>')
     return f'<ul class="inc">{out}</ul>' if out else "<p>Ahora mismo no hay incidencias activas registradas.</p>"
 
 
-CSS = """:root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0}
-@media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8}}
+CSS = """:root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0;--azul:#1a73e8;--verde:#1e8e3e}
+@media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8;--azul:#8ab4f8;--verde:#81c995}}
 *{box-sizing:border-box}body{margin:0;font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
 header{background:var(--sign);color:#1d2024;padding:10px 16px;border-bottom:6px solid #1d2024}header a{color:#1d2024;font-weight:700;text-decoration:none}
 main{max-width:860px;margin:0 auto;padding:18px 16px 30px}
@@ -271,6 +292,9 @@ h1{font:800 clamp(24px,5vw,34px)/1.1 "Barlow Condensed",system-ui,sans-serif;mar
 ul.lista{list-style:none;margin:0;padding:0}.lista li{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;display:grid;grid-template-columns:34px 1fr;gap:10px}
 .ico{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:17px;border:2px solid #1d2024}
 .t{font-weight:600}.s{font-size:14px;color:var(--mute)}
+.est{display:inline-block;padding:0 9px;border-radius:99px;font-size:12px;font-weight:700;line-height:1.5;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.est-prox{background:#1a73e822;box-shadow:inset 0 0 0 1.5px var(--azul)}.est-hoy{background:#1e8e3e26;box-shadow:inset 0 0 0 1.5px var(--verde)}.est-fin{color:var(--mute)}
+.est-curso{color:var(--ink)}.pasada .ico{opacity:.55;filter:grayscale(.5)}.pasada .t{color:var(--mute)}
 .enlaces{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.enlaces a{display:inline-block;padding:6px 12px;border:1.5px solid var(--line);border-radius:99px;color:inherit;text-decoration:none}
 .enlaces a:hover,a:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
 .ad{margin:0;height:0;overflow:hidden;text-align:center}.ad:has(ins[data-ad-status=filled]){margin:16px 0;height:auto;overflow:visible}.ad small{display:block;font-size:11px;color:var(--mute);text-align:left;margin-bottom:2px}.ad:has(ins[data-ad-status=unfilled]){display:none}
@@ -394,9 +418,11 @@ def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=(), hoy=None):
     for i in incs:
         e, c = TIPOS.get(i["tipo"], TIPOS["Otros"])
         aviso = {"calle": "Toda la calle o sin número exacto: ubicación orientativa", "aprox": "Ubicación aproximada"}.get(i.get("precision"), "")
-        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(cuando(i, hoy)), esc(dur_texto(i)), esc(aviso)] if x)
+        linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(dur_texto(i)), esc(aviso)] if x)
+        est = estado_html(i, hoy)
         items += (f'<li><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
                   f'<div class="t">{esc(titulo_ficha(i, nombre))}</div>'
+                  + (f'<div class="s">{est}</div>' if est else "")
                   + (f'<div class="s">{esc(i["via"])}</div>' if i.get("via") else "")
                   + (f'<div class="s">{esc(i["detalle"])}</div>' if i.get("detalle") else "")
                   + f'<div class="s">{linea}</div></div></li>')
@@ -420,7 +446,16 @@ if(p.tz)g.addLayer(L.polyline(p.tz,{{color:c,weight:6,opacity:.85}}))}});
 map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
 </script>"""
     if rec:
-        fil = "".join(f'<li><div class="t">{esc(r["titulo"])}{(" · " + esc(r["via"])) if r.get("via") else ""}</div><div class="s">{esc(r["tipo"])} · {esc(r["fuente"])}' + (f' · {esc(cuando(r))}' if cuando(r) else "") + f' · visto por última vez el {esc(fecha(r["visto"]))}</div></li>' for r in rec[:5])
+        fil = ""
+        for r in rec[:5]:
+            e, c = TIPOS.get(r["tipo"], TIPOS["Otros"])
+            fechas = cuando(r)
+            fil += (f'<li class="pasada"><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
+                    f'<div class="t">{esc(titulo_ficha(r, nombre))}</div>'
+                    + (f'<div class="s">{esc(r["via"])}</div>' if r.get("via") else "")
+                    + (f'<div class="s"><strong>{esc(r["detalle"])}</strong></div>' if r.get("detalle") else "")
+                    + f'<div class="s">{esc(r["tipo"])} · {esc(r["fuente"])}</div>'
+                    + f'<div class="s">{esc(fechas + " · ") if fechas else ""}visto por última vez el {esc(fecha(r["visto"]))}</div></div></li>')
         recientes_html = f'<h2>Incidencias recientes en {esc(nombre)}</h2><p class="mute">Avisos de los últimos {DIAS_HISTORIAL} días que ya no figuran como activos.</p><ul class="lista">{fil}</ul>'
     else:
         recientes_html = ""
@@ -466,9 +501,9 @@ def pagina_cortes_agua(incs, BASE, actualizado, hoy, nombres=None):
         aviso = {"calle": "Toda la calle o sin número exacto: ubicación orientativa", "aprox": "Ubicación aproximada"}.get(i.get("precision"), "")
         return (f'<li><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
                 f'<div class="t">{esc(titulo_ficha(i, nom(i)))}</div>'
+                + (f'<div class="s">{estado_html(i, hoy)}</div>' if estado_html(i, hoy) else "")
                 + (f'<div class="s">{esc(i["via"])}</div>' if i.get("via") else "")
                 + (f'<div class="s"><strong>{esc(i["detalle"])}</strong></div>' if i.get("detalle") else "")
-                + (f'<div class="s">{esc(cuando(i, hoy))}</div>' if cuando(i, hoy) else "")
                 + (f'<div class="s">{esc(aviso)}</div>' if aviso else "") + "</div></li>")
 
     n = len(avisos)

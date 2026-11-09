@@ -74,6 +74,11 @@ def coords_geometria(item):
     return (y, x) if en_zgz(y, x) else None
 
 
+def limpiar_tramo(t):
+    """Como limpiar_texto, pero quita la puntuación suelta al principio o al final del tramo (', Entre C/ A y C/ B' / 'Entre C/ A y C/ B,')."""
+    return re.sub(r"^[\s,;.\-–—]+|[\s,;.\-–—]+$", "", limpiar_texto(t))
+
+
 def limpiar_texto(t):
     """Quita etiquetas HTML, decodifica entidades (&oacute; -> ó) y compacta espacios.
     Si el texto viene como ficha 'Dirección: ... Tipo: ... Observaciones: ...', lo resume."""
@@ -107,7 +112,7 @@ def fetch_ayuntamiento():
         out.append({
             "id": f"zgz-{it.get('id', n)}", "fuente": "Ayuntamiento",
             "tipo": tipo_desde_texto(f"{tipo} {limpiar_texto(motivo)}"),
-            "titulo": limpiar_texto(calle), "via": limpiar_texto(tramo),
+            "titulo": limpiar_texto(calle), "via": limpiar_tramo(tramo),
             "detalle": limpiar_texto(motivo),
             "inicio": dia(it.get("inicio")), "fin": dia(it.get("fin")),
             "lat": c[0] if c else None, "lon": c[1] if c else None,
