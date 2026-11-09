@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T07:32+01:00",
+ "actualizado": "2026-11-09T08:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 11
   }
  },
  "sin_ubicar": 0,
@@ -1239,20 +1239,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29845629",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 15.631 · sentido creciente · orientación sur",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.65759,
-   "lon": -0.84114,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29845719",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1267,17 +1253,101 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29845807",
+   "id": "dgt-29845856",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 20.713 · sentido decreciente · orientación noreste",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29846230",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 233.022 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.62312,
-   "lon": -0.85488,
+   "lat": 41.62415,
+   "lon": -0.84737,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29846275",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 505.503 · sentido decreciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.699627,
+   "lon": -0.868776,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29846312",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 248.251 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.68888,
+   "lon": -0.97842,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29846363",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-68",
+   "via": "pk 246.5–246.6 · sentido decreciente · orientación sureste",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.68965,
+   "lon": -0.9600123,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29846378",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-68",
+   "via": "pk 246.6–248.1 · sentido creciente · orientación norte",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.69433,
+   "lon": -0.9788601,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29846410",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 246.546 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.67931,
+   "lon": -0.96254,
    "precision": "exacta"
   }
  ]

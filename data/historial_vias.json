@@ -4343,6 +4343,17 @@
    "titulo": "Z-40",
    "via": "pk 20.713 · sentido decreciente · orientación noreste",
    "visto": "2026-11-09"
+  },
+  "dgt-29845856": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29845856",
+   "inicio": "2026-11-09",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-09"
   }
  }
 }
