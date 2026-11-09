@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-09T16:01+01:00",
+ "actualizado": "2026-11-10T00:21+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 70
+   "n": 69
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -309,48 +309,6 @@
    "nombre": "Calle Sádaba"
   },
   {
-   "id": "zgz-31572",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SARTRE JEAN PAUL, 10",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-09",
-   "lat": 41.6788425,
-   "lon": -0.8738506,
-   "precision": "calle",
-   "nombre": "Calle Jean Paul Sartre"
-  },
-  {
-   "id": "zgz-31573",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ROMEO LEOPOLDO, 9",
-   "via": "Entre C/ Doctor Iranzo y c/ Obispo Laplana",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-09",
-   "lat": 41.646664,
-   "lon": -0.863372,
-   "precision": "portal",
-   "nombre": "Calle Leopoldo Romeo"
-  },
-  {
-   "id": "zgz-31574",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "IRANZO (DOCTOR), 13",
-   "via": "Entre C/ Rodrigo Rebolledo y C/ Monasterio de Siresa",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-09",
-   "lat": 41.6426708,
-   "lon": -0.8649101,
-   "precision": "portal",
-   "nombre": "Calle Doctor Iranzo"
-  },
-  {
    "id": "zgz-31575",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -505,48 +463,6 @@
    "nombre": "Calle de la Paz"
   },
   {
-   "id": "zgz-31534",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SAN JOSE AVENIDA DE, 5",
-   "via": "",
-   "detalle": "Para la instalación de adornos navideños en el tramo entre las Avenidas del Tenor Fleta y de Cesareo Alierta",
-   "inicio": "2026-11-05",
-   "fin": "2026-11-09",
-   "lat": 41.6406801,
-   "lon": -0.8736009,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.640785,
-      -0.873526
-     ],
-     [
-      41.640729,
-      -0.873564
-     ],
-     [
-      41.640688,
-      -0.873595
-     ],
-     [
-      41.640658,
-      -0.873618
-     ],
-     [
-      41.640616,
-      -0.873657
-     ],
-     [
-      41.640589,
-      -0.873691
-     ]
-    ]
-   ],
-   "nombre": "Avenida de San José"
-  },
-  {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -663,6 +579,20 @@
    "nombre": "Calle de Fray José Casanova"
   },
   {
+   "id": "zgz-31596",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "NAVARRA D.BLANCA DE, 6",
+   "via": "Entre Avda. Madrid y C/ Pablo Sarasate",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.6541249,
+   "lon": -0.9000507,
+   "precision": "portal",
+   "nombre": "Calle de Doña Blanca de Navarra"
+  },
+  {
    "id": "zgz-31475",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -719,46 +649,18 @@
    "nombre": "Calle Palencia"
   },
   {
-   "id": "zgz-31569",
+   "id": "zgz-31601",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
-   "titulo": "LASTANOSA, 8",
-   "via": "Entre C/Rioja y C/ Julián Ribera",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-09",
-   "lat": 41.6531941,
-   "lon": -0.9080364,
+   "titulo": "DRONDA MANUEL, 4",
+   "via": "Entre C/ Lucas Gallego y C/ María Auxiliadora",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.645271,
+   "lon": -0.9036891,
    "precision": "portal",
-   "nombre": "Calle de Lastanosa"
-  },
-  {
-   "id": "zgz-31571",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ASIA CONTINENTE, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-09",
-   "lat": 41.678574,
-   "lon": -0.873912,
-   "precision": "portal",
-   "nombre": "Calle de Asia"
-  },
-  {
-   "id": "zgz-31479",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ROMEO LEOPOLDO, 9",
-   "via": "",
-   "detalle": "Continuando con la canalización eléctrica",
-   "inicio": "2026-11-04",
-   "fin": "2026-11-09",
-   "lat": 41.646664,
-   "lon": -0.863372,
-   "precision": "portal",
-   "nombre": "Calle Leopoldo Romeo"
+   "nombre": "Calle de Manuel Dronda"
   },
   {
    "id": "zgz-30596",
@@ -868,6 +770,20 @@
     ]
    ],
    "nombre": "Ronda de la Hispanidad"
+  },
+  {
+   "id": "zgz-31600",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SANGENIS ANTONIO, 70",
+   "via": "Entre C/ Bolivia y C/ Batalla de Clavijo",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.6511616,
+   "lon": -0.9038204,
+   "precision": "calle",
+   "nombre": "Calle de Antonio Sangenis"
   },
   {
    "id": "zgz-31536",
@@ -1084,18 +1000,46 @@
    "nombre": "Avenida de Madrid"
   },
   {
-   "id": "zgz-31570",
+   "id": "zgz-31598",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
-   "titulo": "OCEANIA CONTINENTE, 13",
+   "titulo": "ECHEGARAY Y CABALLERO, 186",
+   "via": "Entre C/ Jesús Taboada y C/ Jerónimo Vicens",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.65441528915284,
+   "lon": -0.865437922228995,
+   "precision": "aprox",
+   "nombre": "Calle Echegaray y Caballero"
+  },
+  {
+   "id": "zgz-31599",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SARASATE PABLO, 20",
    "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-09",
-   "lat": 41.678407,
-   "lon": -0.874784,
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.6538256,
+   "lon": -0.8995948,
    "precision": "portal",
-   "nombre": "Calle de Oceanía"
+   "nombre": "Calle de Pablo Sarasate"
+  },
+  {
+   "id": "zgz-31602",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "DRONDA MANUEL, 3",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.64538,
+   "lon": -0.9040733,
+   "precision": "portal",
+   "nombre": "Calle de Manuel Dronda"
   },
   {
    "id": "zgz-31476",
@@ -1253,6 +1197,20 @@
    "nombre": "Jardines de Lisboa"
   },
   {
+   "id": "zgz-31597",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "TABOADA EDUARDO JES., 10",
+   "via": "Entre C/ Obispo Librana y C/ R. J. Alcubierre",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.65212,
+   "lon": -0.8671277,
+   "precision": "portal",
+   "nombre": "Calle de Eduardo Jesús Taboada"
+  },
+  {
    "id": "dgt-29845511",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1281,59 +1239,87 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29866627",
+   "id": "dgt-29876862",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "CHE-0101",
-   "via": "pk 10.172 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 313.6–314.5 · sentido decreciente · orientación suroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.67371,
-   "lon": -1.03274,
+   "lat": 41.64659,
+   "lon": -0.9658039,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29866808",
+   "id": "dgt-29876863",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-125",
-   "via": "pk 4.258 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 313.6–314.1 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.664093,
-   "lon": -0.999324,
+   "lat": 41.64659,
+   "lon": -0.9658039,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29866939",
+   "id": "dgt-29879089",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 488.912 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 325.9–326.4 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.60041,
-   "lon": -0.93662,
+   "lat": 41.675983,
+   "lon": -0.83714336,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29867258",
+   "id": "dgt-29879088",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 29.779 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 325.9–326.4 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-09",
    "fin": null,
-   "lat": 41.61919,
-   "lon": -0.95067,
+   "lat": 41.675983,
+   "lon": -0.83714336,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29880225",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 244.222 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-10",
+   "fin": null,
+   "lat": 41.6782,
+   "lon": -0.93559,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29879956",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 313.0–331.0 · sentido decreciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-10",
+   "fin": null,
+   "lat": 41.64207,
+   "lon": -0.97051597,
    "precision": "exacta"
   }
  ]
