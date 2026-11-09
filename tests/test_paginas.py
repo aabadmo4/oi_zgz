@@ -5,6 +5,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import generar_paginas as g
 
 
+def _cargar_datos():
+    import json
+    return json.loads((Path(__file__).resolve().parent.parent / "data/incidencias.json").read_text(encoding="utf-8"))
+
+
 class TestPaginas(unittest.TestCase):
     def test_slug(self):
         self.assertEqual(g.slug("Avenida de Valencia"), "avenida-de-valencia")
@@ -45,6 +50,44 @@ class TestPaginas(unittest.TestCase):
         self.assertIn('class="est-curso">En curso</strong>', g.estado_html(curso, hoy))
         # sin fecha de referencia: formato clásico
         self.assertEqual(g.cuando(curso), "Hasta el 31 de diciembre de 2026")
+
+    def test_robots_nombra_agentes_ia(self):
+        r = g.robots_txt("https://ejemplo.es")
+        for a in g.AGENTES_IA:
+            self.assertIn(f"User-agent: {a}\n", r)
+        self.assertNotIn("Disallow", r)  # no se bloquea nada (las páginas noindex deben poder rastrearse)
+        self.assertIn("Sitemap: https://ejemplo.es/sitemap.xml", r)
+
+    def test_llms_txt(self):
+        t = g.llms_txt("https://ejemplo.es", "2026-11-09T02:01+01:00", 67)
+        self.assertTrue(t.startswith("# Obras e Incidencias Zaragoza"))
+        for url in ("https://ejemplo.es/data/incidencias.json", "https://ejemplo.es/datos.html", "https://ejemplo.es/cortes-de-agua-zaragoza.html"):
+            self.assertIn(url, t)
+        self.assertIn(g.ATRIBUCION, t)
+        self.assertIn("67", t)
+
+    def test_pagina_datos(self):
+        import json as _json, re as _re
+        h = g.pagina_datos("https://ejemplo.es", "2026-11-09T02:01+01:00", 67)
+        ld = _json.loads(_re.search(r'<script type="application/ld\+json">(.*?)</script>', h, _re.S).group(1))
+        ds = next(x for x in ld["@graph"] if x["@type"] == "Dataset")
+        self.assertEqual(ds["distribution"][0]["contentUrl"], "https://ejemplo.es/data/incidencias.json")
+        self.assertEqual(ds["license"], g.LICENCIA_URL)
+        self.assertEqual(ds["dateModified"], "2026-11-09T02:01+01:00")
+        self.assertGreaterEqual(len(ds["description"]), 50)
+        self.assertIn('rel="alternate" type="application/json"', h)
+        self.assertIn(g.ATRIBUCION.replace("&", "&amp;"), h)
+
+    def test_documentados_todos_los_campos_del_json(self):
+        d = _cargar_datos()
+        usados = {k for i in d["incidencias"] for k in i}
+        self.assertEqual(usados - set(g.CAMPOS), set(), "campos del JSON sin documentar en CAMPOS")
+
+    def test_licencia_igual_en_datos_y_web(self):
+        import actualizar_datos as a
+        self.assertEqual(a.LICENCIA_DATOS["licencia"], g.LICENCIA)
+        self.assertEqual(a.LICENCIA_DATOS["licencia_url"], g.LICENCIA_URL)
+        self.assertEqual(a.LICENCIA_DATOS["atribucion"], g.ATRIBUCION)
 
     def test_duracion_y_obras_largas(self):
         larga = {"fuente": "Ayuntamiento", "inicio": "2026-01-01", "fin": "2026-12-31"}

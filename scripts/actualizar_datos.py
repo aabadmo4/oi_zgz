@@ -74,6 +74,16 @@ def coords_geometria(item):
     return (y, x) if en_zgz(y, x) else None
 
 
+# Licencia y atribución que viajan dentro de data/incidencias.json (mismos textos que LICENCIA/ATRIBUCION de generar_paginas.py; lo vigila un test)
+LICENCIA_DATOS = {
+    "licencia": "CC BY 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
+    "atribucion": ("Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). "
+                   "Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. "
+                   "El Ayuntamiento y la DGT no avalan este servicio."),
+}
+
+
 def limpiar_tramo(t):
     """Como limpiar_texto, pero quita la puntuación suelta al principio o al final del tramo (', Entre C/ A y C/ B' / 'Entre C/ A y C/ B,')."""
     return re.sub(r"^[\s,;.\-–—]+|[\s,;.\-–—]+$", "", limpiar_texto(t))
@@ -644,7 +654,7 @@ def main():
         sys.exit(1)
     os.makedirs("data", exist_ok=True)
     salida = {"actualizado": datetime.datetime.now(ZoneInfo("Europe/Madrid")).isoformat(timespec="minutes"),
-              "fuentes": fuentes, "sin_ubicar": len(items) - len(con_coords), "incidencias": con_coords}
+              **LICENCIA_DATOS, "fuentes": fuentes, "sin_ubicar": len(items) - len(con_coords), "incidencias": con_coords}
     json.dump(salida, open(SALIDA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"OK: {len(con_coords)} incidencias ({len(items) - len(con_coords)} sin ubicar)")
 
