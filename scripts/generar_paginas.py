@@ -8,7 +8,7 @@
 - Las incidencias cortas no generan página propia (evita contenido pobre).
 - config/nombres_vias.json corrige nombres: 'cerbuna-pedro' -> 'Calle Pedro Cerbuna'.
 
-Genera también sitemap.xml y robots.txt. Sin red ni dependencias externas. Uso: python scripts/generar_paginas.py [carpeta_salida=_site]
+Genera también sitemap.xml, robots.txt, llms.txt y datos.html. Sin red ni dependencias externas. Uso: python scripts/generar_paginas.py [carpeta_salida=_site]
 """
 import sys, re, json, html, unicodedata, datetime
 from pathlib import Path
@@ -295,6 +295,8 @@ ul.lista{list-style:none;margin:0;padding:0}.lista li{background:var(--panel);bo
 .est{display:inline-block;padding:0 9px;border-radius:99px;font-size:12px;font-weight:700;line-height:1.5;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
 .est-prox{background:#1a73e822;box-shadow:inset 0 0 0 1.5px var(--azul)}.est-hoy{background:#1e8e3e26;box-shadow:inset 0 0 0 1.5px var(--verde)}.est-fin{color:var(--mute)}
 .est-curso{color:var(--ink)}.pasada .ico{opacity:.55;filter:grayscale(.5)}.pasada .t{color:var(--mute)}
+div.datos a{color:var(--focus)}div.datos li,div.datos dd,div.datos blockquote{overflow-wrap:anywhere}div.datos pre{white-space:pre-wrap;overflow-wrap:anywhere}
+dl.campos dt{font-weight:600;margin-top:10px}dl.campos dd{margin:2px 0 0;color:var(--mute)}code{font-size:.92em}pre{overflow-x:auto;padding:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:10px}blockquote{margin:10px 0;padding:8px 14px;border-left:4px solid var(--line);color:var(--mute)}
 .enlaces{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.enlaces a{display:inline-block;padding:6px 12px;border:1.5px solid var(--line);border-radius:99px;color:inherit;text-decoration:none}
 .enlaces a:hover,a:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
 .ad{margin:0;height:0;overflow:hidden;text-align:center}.ad:has(ins[data-ad-status=filled]){margin:16px 0;height:auto;overflow:visible}.ad small{display:block;font-size:11px;color:var(--mute);text-align:left;margin-bottom:2px}.ad:has(ins[data-ad-status=unfilled]){display:none}
@@ -330,9 +332,131 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 '''
 
 
+# ---------- Datos abiertos: robots.txt, llms.txt y datos.html (para buscadores y agentes de IA) ----------
+LICENCIA = "CC BY 4.0"
+LICENCIA_URL = "https://creativecommons.org/licenses/by/4.0/deed.es"
+ATRIBUCION = ("Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). "
+              "Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. "
+              "El Ayuntamiento y la DGT no avalan este servicio.")  # mismo texto que LICENCIA_DATOS en actualizar_datos.py (lo vigila un test)
+AGENTES_IA = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
+              "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot"]
+# Campos de cada incidencia en data/incidencias.json (un test comprueba que no falte ninguno)
+CAMPOS = {
+    "id": "Identificador estable. Empieza por zgz- (Ayuntamiento) o dgt- (DGT). Sirve para enlazar: /#<id>.",
+    "fuente": "Origen del aviso: Ayuntamiento o DGT.",
+    "tipo": "Corte, Obras, Accidente, Retención, Suministro u Otros. Los cortes de agua programados son tipo Suministro.",
+    "titulo": "Dirección tal como la publica la fuente (por ejemplo, BLANCO CORDERO (DR.), 11).",
+    "nombre": "Nombre de la vía normalizado (por ejemplo, Calle Doctor Blanco Cordero).",
+    "via": "Tramo afectado o detalle de la ubicación (por ejemplo, entre dos calles).",
+    "detalle": "Motivo o descripción del aviso. En los cortes de agua incluye el horario.",
+    "causa": "Solo en avisos de la DGT: causa traducida (Vehículo averiado, Accidente, Tráfico lento…).",
+    "inicio": "Fecha de inicio (AAAA-MM-DD). Si es posterior a hoy, el aviso está programado y aún no ha empezado.",
+    "fin": "Fecha de fin prevista (AAAA-MM-DD). Puede faltar.",
+    "lat": "Latitud WGS84.",
+    "lon": "Longitud WGS84.",
+    "precision": "Fiabilidad de la ubicación: exacta (DGT), portal, calle (toda la calle o sin número exacto) o aprox.",
+    "barrio": "Barrio, cuando la fuente lo indica.",
+    "trazado": "Geometría del tramo afectado como lista de líneas [lat, lon]. Solo con precision calle.",
+}
+CAMPOS_RAIZ = {
+    "actualizado": "Fecha y hora de la última actualización (ISO 8601, hora de Madrid).",
+    "licencia": "Licencia de la parte tratada de los datos (CC BY 4.0).",
+    "licencia_url": "Texto de la licencia.",
+    "atribucion": "Texto de atribución que debe acompañar a cualquier reutilización.",
+    "fuentes": "Estado de cada fuente en la última descarga (ok y nº de registros).",
+    "sin_ubicar": "Avisos descartados por no poder ubicarlos en el mapa.",
+    "incidencias": "Lista de incidencias activas y programadas.",
+}
+
+
+def robots_txt(BASE):
+    """robots.txt: todo permitido. Se nombran los rastreadores y agentes de IA para dejar claro que son bienvenidos.
+    No se bloquean las páginas noindex: Google debe poder rastrearlas para ver la etiqueta noindex y retirarlas del índice."""
+    ia = "".join(f"User-agent: {a}\n" for a in AGENTES_IA)
+    return (f"User-agent: *\nAllow: /\n\n# Rastreadores y agentes de IA bienvenidos. Datos abiertos: {BASE}/datos.html y {BASE}/llms.txt\n"
+            f"{ia}Allow: /\n\nSitemap: {BASE}/sitemap.xml\n")
+
+
+def llms_txt(BASE, act, n):
+    """llms.txt: resumen de la web en Markdown para agentes y modelos de lenguaje (https://llmstxt.org)."""
+    return f"""# Obras e Incidencias Zaragoza
+
+> Mapa y listado de obras, cortes de tráfico, accidentes, retenciones y cortes de agua programados en Zaragoza, con datos del Ayuntamiento de Zaragoza y de la DGT. Los datos se actualizan cada hora. Información orientativa, no oficial.
+
+Última actualización de los datos: {fecha_hora(act) if act else "no disponible"}. Incidencias activas y programadas ahora: {n}.
+
+## Datos
+- [Incidencias en JSON]({BASE}/data/incidencias.json): todas las incidencias y avisos de la vía pública de Zaragoza, con ubicación, fechas de inicio y fin, tipo y fuente. Acceso libre y sin clave (CORS abierto).
+- [Documentación de los datos]({BASE}/datos.html): significado de cada campo, frecuencia de actualización, licencia y ejemplos.
+
+## Páginas
+- [Mapa y listado de incidencias]({BASE}/): portada con el mapa, el listado y el resumen del día.
+- [Cortes de agua programados]({BASE}/cortes-de-agua-zaragoza.html): avisos de corte de suministro de agua por calle y horario. En el JSON son las incidencias de tipo Suministro.
+- [Incidencias por vía]({BASE}/vias/): una página por vía principal u obra de larga duración.
+
+## Cómo interpretar las fechas
+Si "inicio" es posterior a la fecha actual, el aviso está programado y todavía no ha empezado (estado Próxima). Si "inicio" ya pasó y "fin" no, está en curso.
+
+## Licencia y atribución
+Datos tratados bajo {LICENCIA} ({LICENCIA_URL}). Los datos originales mantienen las condiciones de reutilización del Ayuntamiento de Zaragoza y de la DGT.
+{ATRIBUCION}
+"""
+
+
+def pagina_datos(BASE, act, n):
+    canon = f"{BASE}/datos.html"
+    titulo = "Datos abiertos de obras e incidencias en Zaragoza (JSON)"
+    desc = ("Incidencias de la vía pública de Zaragoza en JSON: obras, cortes de tráfico, accidentes, retenciones y cortes de agua programados. "
+            "Actualizado cada hora, con licencia CC BY 4.0 y documentación de cada campo.")
+    url_json = f"{BASE}/data/incidencias.json"
+    campos = lambda dic: "<dl class=\"campos\">" + "".join(f"<dt><code>{esc(k)}</code></dt><dd>{esc(v)}</dd>" for k, v in dic.items()) + "</dl>"
+    cuerpo = f"""<div class="datos"><nav class="mig" aria-label="Migas de pan"><a href="/">Inicio</a> › Datos abiertos</nav>
+<h1>{esc(titulo)}</h1>
+<p>Esta web publica en un único archivo JSON las obras, cortes, accidentes, retenciones y cortes de agua programados de Zaragoza, a partir de los datos del Ayuntamiento de Zaragoza y de la DGT. Cualquier persona, aplicación o asistente de inteligencia artificial puede usarlo, citando la fuente.</p>
+<ul>
+<li><strong>Archivo:</strong> <a href="/data/incidencias.json">{esc(url_json)}</a></li>
+<li><strong>Formato:</strong> JSON (UTF-8). Sin clave de acceso. Se puede consultar desde el navegador (CORS abierto).</li>
+<li><strong>Frecuencia:</strong> se regenera cada hora.</li>
+<li><strong>Última actualización:</strong> {esc(fecha_hora(act)) if act else "no disponible"}. Ahora mismo hay {n} incidencias activas o programadas.</li>
+</ul>
+<h2>Ejemplo de uso</h2>
+<pre><code>curl {esc(url_json)}</code></pre>
+<h2>Cortes de agua programados</h2>
+<p>Son las incidencias con <code>"tipo": "Suministro"</code>. El horario figura en el campo <code>detalle</code> (por ejemplo, "Cortes de Agua. Desde las 8 hasta las 16 horas"). Hay también una versión para leer en pantalla: <a href="/cortes-de-agua-zaragoza.html">cortes de agua en Zaragoza</a>.</p>
+<h2>Estado de un aviso</h2>
+<p>El JSON no trae un campo de estado: se deduce de las fechas. Si <code>inicio</code> es posterior a hoy, el aviso está programado y aún no ha empezado. Si <code>inicio</code> ya pasó y <code>fin</code> no, está en curso.</p>
+<h2>Campos de cada incidencia</h2>
+{campos(CAMPOS)}
+<h2>Campos de la cabecera</h2>
+{campos(CAMPOS_RAIZ)}
+<h2>Licencia y atribución</h2>
+<p>La parte tratada de los datos (nombres normalizados, ubicaciones geocodificadas y compilación) se ofrece bajo <a href="{LICENCIA_URL}" rel="license">{LICENCIA}</a>. Los datos originales mantienen las condiciones de reutilización de cada organismo: <a href="https://www.zaragoza.es">Ayuntamiento de Zaragoza</a> y <a href="https://nap.dgt.es">DGT (Punto de Acceso Nacional)</a>. Al reutilizarlos, cita la fuente con este texto y no sugieras que el Ayuntamiento ni la DGT respaldan tu servicio:</p>
+<blockquote>{esc(ATRIBUCION)}</blockquote>
+<p>Información orientativa, no oficial: puede contener errores u omisiones y las ubicaciones pueden ser aproximadas. Obedece siempre la señalización.</p>
+<p>Resumen para asistentes de IA: <a href="/llms.txt">llms.txt</a>.</p></div>"""
+    ld = ld_json({"@context": "https://schema.org", "@graph": [
+        {"@type": "WebPage", "@id": canon, "url": canon, "name": titulo, "inLanguage": "es-ES", "description": desc},
+        {"@type": "Dataset", "@id": canon + "#dataset", "name": "Obras e incidencias de la vía pública de Zaragoza",
+         "description": ("Incidencias activas y programadas en la vía pública de Zaragoza: obras, cortes de tráfico, accidentes, retenciones y cortes de agua. "
+                         "Incluye ubicación, tipo, fechas de inicio y fin, y fuente (Ayuntamiento de Zaragoza o DGT). Se actualiza cada hora."),
+         "url": canon, "inLanguage": "es-ES", "isAccessibleForFree": True, "license": LICENCIA_URL, "creditText": ATRIBUCION,
+         "keywords": ["Zaragoza", "obras", "incidencias", "cortes de tráfico", "cortes de agua", "movilidad", "datos abiertos"],
+         "spatialCoverage": {"@type": "Place", "name": "Zaragoza, España"},
+         "creator": {"@type": "Organization", "name": "Obras e Incidencias Zaragoza", "url": BASE + "/"},
+         "isBasedOn": [{"@type": "Dataset", "name": "Incidencias de vía pública - Ayuntamiento de Zaragoza", "url": "https://www.zaragoza.es"},
+                       {"@type": "Dataset", "name": "Incidencias DGT (Punto de Acceso Nacional)", "url": "https://nap.dgt.es"}],
+         "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": url_json}],
+         **({"dateModified": act} if act else {})},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": BASE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Datos abiertos", "item": canon}]}]})
+    extra = f'<link rel="alternate" type="application/json" href="/data/incidencias.json" title="Incidencias en Zaragoza (JSON)">'
+    return plantilla(titulo, desc, canon, cuerpo, "index,follow", extra, ld)
+
+
 def pie_html(primero=("Incidencias", "/vias/")):
     """Pie común a todas las páginas: primer enlace configurable (Incidencias → /vias/, o Mapa → / en el listado de vías)."""
-    items = [(primero[1], primero[0]), ("/cortes-de-agua-zaragoza.html", "Cortes de agua"), ("/acerca.html", "Acerca de"),
+    items = [(primero[1], primero[0]), ("/cortes-de-agua-zaragoza.html", "Cortes de agua"), ("/datos.html", "Datos abiertos"), ("/acerca.html", "Acerca de"),
              ("/avisolegal.html", "Aviso legal"), ("/privacidad.html", "Privacidad y cookies")]
     nav = " · ".join(f'<a href="{h}">{t}</a>' for h, t in items)
     return (f'<footer><nav aria-label="Información legal">{nav}</nav>'
@@ -568,6 +692,7 @@ map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Inicio", "item": BASE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Cortes de agua", "item": canon}]}]})
+    extra += '<link rel="alternate" type="application/json" href="/data/incidencias.json" title="Incidencias en Zaragoza (JSON)">'
     return plantilla(titulo, desc, canon, cuerpo, "index,follow", extra, ld, scripts)
 
 
@@ -633,7 +758,7 @@ def main():
 
     def indexable(s, v):
         return any(es_larga(i) for i in v["incidencias"]) or (v["principal"] and (v["incidencias"] or hist.get(s)))
-    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8"), ("/acerca.html", "monthly", "0.4"), ("/cortes-de-agua-zaragoza.html", "hourly", "0.8")]
+    urls = [("/", "daily", "1.0"), ("/vias/", "daily", "0.8"), ("/acerca.html", "monthly", "0.4"), ("/cortes-de-agua-zaragoza.html", "hourly", "0.8"), ("/datos.html", "hourly", "0.6")]
     urls += [(f"/vias/{s}.html", "daily", "0.7" if v["principal"] else "0.5") for s, v in vias.items() if indexable(s, v)]
     lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
     # Aviso legal y privacidad llevan noindex: no van al sitemap.
@@ -657,9 +782,11 @@ def main():
         if act:
             h2 = h2.replace('<span id="estado">Cargando…</span>', f'<span id="estado">Actualizado {esc(fecha_hora(act))}</span>', 1)
         portada.write_text(h2, encoding="utf-8")
-    # robots.txt generado con el dominio del CNAME. No se bloquean las páginas noindex: Google debe poder
-    # rastrearlas para ver la etiqueta noindex y retirarlas del índice.
-    (salida / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
+    # Datos abiertos para buscadores y agentes de IA: robots.txt (dominio del CNAME), llms.txt y datos.html
+    n_inc = len(d.get("incidencias", []))
+    (salida / "robots.txt").write_text(robots_txt(BASE), encoding="utf-8")
+    (salida / "llms.txt").write_text(llms_txt(BASE, act, n_inc), encoding="utf-8")
+    (salida / "datos.html").write_text(pagina_datos(BASE, act, n_inc), encoding="utf-8")
     n_p = sum(v["principal"] for v in vias.values())
     print(f"OK: {len(vias)} páginas de vía ({n_p} principales, {len(vias) - n_p} dinámicas), {len(urls)} URLs en sitemap")
 
