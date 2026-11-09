@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T04:01+01:00",
+ "actualizado": "2026-11-09T05:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 0
   }
  },
  "sin_ubicar": 0,
@@ -1195,20 +1195,6 @@
    "lon": -0.9034605911873267,
    "precision": "aprox",
    "nombre": "Jardines de Lisboa"
-  },
-  {
-   "id": "dgt-29843096",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 318.5–319.2 · sentido decreciente · orientación oeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-09",
-   "fin": null,
-   "lat": 41.678352,
-   "lon": -0.9244405,
-   "precision": "exacta"
   }
  ]
 }
