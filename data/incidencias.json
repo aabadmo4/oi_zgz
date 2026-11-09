@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-09T06:01+01:00",
+ "actualizado": "2026-11-09T07:01+01:00",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 0
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1195,6 +1195,48 @@
    "lon": -0.9034605911873267,
    "precision": "aprox",
    "nombre": "Jardines de Lisboa"
+  },
+  {
+   "id": "dgt-29844650",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 298.845 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.739143,
+   "lon": -0.845152,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29844854",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29845089",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-09",
+   "fin": null,
+   "lat": 41.624924,
+   "lon": -0.8490524,
+   "precision": "exacta"
   }
  ]
 }
