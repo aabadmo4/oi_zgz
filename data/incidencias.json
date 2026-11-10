@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-10T14:02+01:00",
+ "actualizado": "2026-11-10T15:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 74
+   "n": 76
   },
   "dgt": {
    "ok": true,
@@ -1115,6 +1115,82 @@
    "nombre": "Calle de Alfredo Nobel"
   },
   {
+   "id": "zgz-31620",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PIEDRA (PUENTE), 0",
+   "via": "",
+   "detalle": "Con motivo de la instalación de adornos navideños y supeditado al Permiso Especial de Policía Local",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-14",
+   "lat": 41.6694589,
+   "lon": -0.8441739,
+   "precision": "calle",
+   "nombre": "Calle Puente Piedra"
+  },
+  {
+   "id": "zgz-31621",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "RIO HUERVA",
+   "via": "",
+   "detalle": "Continuando con las obras del Río Huerva (Lote 1) y para remodelar la vía entre las calles Lasala Valdés y la Luz",
+   "inicio": "2026-11-12",
+   "fin": "2026-12-23",
+   "lat": 41.638659,
+   "lon": -0.891152,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.639226,
+      -0.890507
+     ],
+     [
+      41.639187,
+      -0.890523
+     ],
+     [
+      41.639166,
+      -0.890536
+     ],
+     [
+      41.639149,
+      -0.89055
+     ],
+     [
+      41.638626,
+      -0.891193
+     ],
+     [
+      41.638607,
+      -0.891209
+     ],
+     [
+      41.638586,
+      -0.891212
+     ],
+     [
+      41.638303,
+      -0.891224
+     ],
+     [
+      41.638144,
+      -0.891237
+     ],
+     [
+      41.637974,
+      -0.891258
+     ],
+     [
+      41.637825,
+      -0.891287
+     ]
+    ]
+   ],
+   "nombre": "Calle Río Huerva"
+  },
+  {
    "id": "zgz-31476",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1312,31 +1388,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29900183",
+   "id": "dgt-29904602",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 3.807 · sentido decreciente · orientación noreste",
+   "titulo": "A-2",
+   "via": "pk 314.037 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.62732,
-   "lon": -0.989243,
+   "lat": 41.64979,
+   "lon": -0.96224,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29901328",
+   "id": "dgt-29904612",
    "fuente": "DGT",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 324.183 · sentido creciente · orientación este",
+   "via": "pk 305.528 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.679157,
-   "lon": -0.857425,
+   "lat": 41.618607,
+   "lon": -1.04869,
    "precision": "exacta"
   }
  ]
