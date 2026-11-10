@@ -2452,6 +2452,50 @@
    "titulo": "A-2",
    "via": "pk 321.624 · sentido decreciente · orientación oeste",
    "visto": "2026-11-10"
+  },
+  "dgt-29883199": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29883199",
+   "inicio": "2026-11-10",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-10"
+  },
+  "dgt-29883511": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29883511",
+   "inicio": "2026-11-10",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-10"
+  },
+  "dgt-29884120": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29884120",
+   "inicio": "2026-11-10",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 306.604 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-10"
+  },
+  "dgt-29884387": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29884387",
+   "inicio": "2026-11-10",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.5–321.28 · sentido creciente · orientación este",
+   "visto": "2026-11-10"
   }
  },
  "alvarado-pedro-de": {
@@ -4697,6 +4741,28 @@
    "titulo": "Z-40",
    "via": "pk 29.779 · sentido creciente · orientación oeste",
    "visto": "2026-11-09"
+  },
+  "dgt-29882902": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29882902",
+   "inicio": "2026-11-10",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-10"
+  },
+  "dgt-29883940": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29883940",
+   "inicio": "2026-11-10",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-10"
   }
  }
 }
