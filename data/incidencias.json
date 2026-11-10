@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T12:01+01:00",
+ "actualizado": "2026-11-10T13:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -1242,31 +1242,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29895452",
+   "id": "dgt-29897676",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 311.1–311.2 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
+   "via": "pk 329.837 · sentido decreciente · orientación oeste",
+   "detalle": "Objeto en la calzada",
+   "causa": "Objeto en la calzada",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.631638,
-   "lon": -0.98484147,
+   "lat": 41.662678,
+   "lon": -0.793643,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29895750",
+   "id": "dgt-29898776",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-125",
-   "via": "pk 8.699 · sentido creciente · orientación norte",
+   "titulo": "A-2",
+   "via": "pk 330.171 · sentido decreciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.65905,
-   "lon": -0.94686,
+   "lat": 41.661522,
+   "lon": -0.789937,
    "precision": "exacta"
   }
  ]
