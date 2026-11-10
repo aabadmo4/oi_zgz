@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T01:01+01:00",
+ "actualizado": "2026-11-10T02:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 8
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -1242,11 +1242,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29876863",
+   "id": "dgt-29876862",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 313.6–314.1 · sentido decreciente · orientación oeste",
+   "via": "pk 313.6–314.5 · sentido decreciente · orientación suroeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-09",
@@ -1256,11 +1256,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29876862",
+   "id": "dgt-29876863",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 313.6–314.5 · sentido decreciente · orientación suroeste",
+   "via": "pk 313.6–314.1 · sentido decreciente · orientación oeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-09",
@@ -1298,31 +1298,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29879956",
+   "id": "dgt-29880604",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 313.0–331.0 · sentido decreciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.64207,
-   "lon": -0.97051597,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29880421",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-330",
-   "via": "pk 503.02–504.02 · sentido decreciente · orientación suroeste",
+   "tipo": "Otros",
+   "titulo": "N-125",
+   "via": "pk 8.703 · sentido creciente · orientación norte",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.682056,
-   "lon": -0.87630635,
+   "lat": 41.65903,
+   "lon": -0.94681,
    "precision": "exacta"
   }
  ]
