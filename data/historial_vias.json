@@ -2562,6 +2562,17 @@
    "titulo": "A-2",
    "via": "pk 330.171 · sentido decreciente · orientación oeste",
    "visto": "2026-11-10"
+  },
+  "dgt-29901328": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29901328",
+   "inicio": "2026-11-10",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 324.183 · sentido creciente · orientación este",
+   "visto": "2026-11-10"
   }
  },
  "alvarado-pedro-de": {
@@ -2918,6 +2929,17 @@
    "titulo": "FERRAN JAIME, 9",
    "via": "",
    "visto": "2026-11-10"
+  },
+  "zgz-31618": {
+   "detalle": "Continuando con la canalización eléctrica",
+   "fin": "2026-11-27",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31618",
+   "inicio": "2026-11-12",
+   "tipo": "Otros",
+   "titulo": "FERRAN JAIME, 9",
+   "via": "",
+   "visto": "2026-11-10"
   }
  },
  "calle-jeronimo-cancer": {
@@ -3147,6 +3169,17 @@
    "titulo": "INDEPENDENCIA PS, 6",
    "via": "",
    "visto": "2026-11-04"
+  },
+  "zgz-31616": {
+   "detalle": "Para la instalación de la iluminación navideña, del 11 al 13 de noviembre entre la 01:00 y las 05:00 horas se cortará la vía.",
+   "fin": "2026-11-13",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31616",
+   "inicio": "2026-11-11",
+   "tipo": "Otros",
+   "titulo": "INDEPENDENCIA PS, 2",
+   "via": "",
+   "visto": "2026-11-10"
   }
  },
  "paseo-de-maria-agustin": {

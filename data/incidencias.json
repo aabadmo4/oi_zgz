@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-10T13:01+01:00",
+ "actualizado": "2026-11-10T14:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 69
+   "n": 74
   },
   "dgt": {
    "ok": true,
@@ -354,6 +354,20 @@
    "nombre": "Calle de Manuel Lasala"
   },
   {
+   "id": "zgz-31615",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ALMERIA, 13",
+   "via": "",
+   "detalle": "Continuando con la reparación de la tubería de agua en el nº 26 que comenzó ayer 9 de noviembre con caracter de urgencia y hasta el 10 de noviembre",
+   "inicio": "2026-11-09",
+   "fin": "2026-11-10",
+   "lat": 41.6310568,
+   "lon": -0.8888776,
+   "precision": "portal",
+   "nombre": "Calle de Almería"
+  },
+  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -624,6 +638,20 @@
    "nombre": "Calle José Anselmo Clavé"
   },
   {
+   "id": "zgz-31618",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "FERRAN JAIME, 9",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-27",
+   "lat": 41.667599,
+   "lon": -0.862763,
+   "precision": "portal",
+   "nombre": "Calle Jaime Ferrán"
+  },
+  {
    "id": "zgz-31567",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -693,6 +721,34 @@
    "lon": -0.873865,
    "precision": "portal",
    "nombre": "Calle Consejo de Ciento"
+  },
+  {
+   "id": "zgz-31616",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "INDEPENDENCIA PS, 2",
+   "via": "",
+   "detalle": "Para la instalación de la iluminación navideña, del 11 al 13 de noviembre entre la 01:00 y las 05:00 horas se cortará la vía.",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-13",
+   "lat": 41.6518606,
+   "lon": -0.8815444,
+   "precision": "portal",
+   "nombre": "Calle Independencia Ps"
+  },
+  {
+   "id": "zgz-31617",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "MINGUIJON SALVADOR, 9",
+   "via": "",
+   "detalle": "Para realizar la acometida de vertido de un aseo final de línea a la altura del Paseo Echegaray y Caballero",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-20",
+   "lat": 41.645478,
+   "lon": -0.862186,
+   "precision": "portal",
+   "nombre": "Calle Salvador Minguijón"
   },
   {
    "id": "zgz-31451",
@@ -1045,6 +1101,20 @@
    "nombre": "Calle de Manuel Dronda"
   },
   {
+   "id": "zgz-31619",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "NOBEL ALFREDO, 3",
+   "via": "",
+   "detalle": "Continuando con la ampliación de la aceras y mejora de la accesibilidad entre las calles Isaac Newton y Séneca",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-27",
+   "lat": 41.6516112,
+   "lon": -0.9210092,
+   "precision": "portal",
+   "nombre": "Calle de Alfredo Nobel"
+  },
+  {
    "id": "zgz-31476",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1242,31 +1312,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29897676",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 329.837 · sentido decreciente · orientación oeste",
-   "detalle": "Objeto en la calzada",
-   "causa": "Objeto en la calzada",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.662678,
-   "lon": -0.793643,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29898776",
+   "id": "dgt-29900183",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 330.171 · sentido decreciente · orientación oeste",
+   "titulo": "A-120",
+   "via": "pk 3.807 · sentido decreciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.661522,
-   "lon": -0.789937,
+   "lat": 41.62732,
+   "lon": -0.989243,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29901328",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 324.183 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-10",
+   "fin": null,
+   "lat": 41.679157,
+   "lon": -0.857425,
    "precision": "exacta"
   }
  ]
