@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T22:01+01:00",
+ "actualizado": "2026-11-10T23:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -1402,17 +1402,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29919081",
+   "id": "dgt-29919939",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 483.845 · sentido creciente · orientación este",
+   "titulo": "A-120",
+   "via": "pk 1.99 · sentido decreciente · orientación norte",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.56252,
-   "lon": -0.96838,
+   "lat": 41.642685,
+   "lon": -0.99416,
    "precision": "exacta"
   }
  ]
