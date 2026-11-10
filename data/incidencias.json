@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T15:01+01:00",
+ "actualizado": "2026-11-10T16:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1360,20 +1360,6 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "dgt-29883608",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 28.0 · sentido decreciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.613132,
-   "lon": -0.9312451,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29892568",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1388,31 +1374,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29904602",
+   "id": "dgt-29906609",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 314.037 · sentido creciente · orientación noreste",
+   "tipo": "Corte",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.19 · sentido decreciente",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.64979,
-   "lon": -0.96224,
+   "lat": 41.680046,
+   "lon": -0.88236094,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29904612",
+   "id": "dgt-29906831",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 305.528 · sentido creciente · orientación este",
+   "via": "pk 325.439 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.618607,
-   "lon": -1.04869,
+   "lat": 41.67683,
+   "lon": -0.84254,
    "precision": "exacta"
   }
  ]
