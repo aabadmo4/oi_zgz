@@ -2621,6 +2621,17 @@
    "titulo": "AP-68",
    "via": "pk 291.358 · sentido creciente · orientación este",
    "visto": "2026-11-09"
+  },
+  "dgt-29892568": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29892568",
+   "inicio": "2026-11-10",
+   "tipo": "Corte",
+   "titulo": "AP-68",
+   "via": "pk 291.0–291.57 · sentido decreciente · orientación noroeste",
+   "visto": "2026-11-10"
   }
  },
  "avenida-de-madrid": {
