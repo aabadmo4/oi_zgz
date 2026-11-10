@@ -12,22 +12,26 @@ Mapa y listado de **obras, cortes de tráfico, accidentes y retenciones en Zarag
 
 ## Cómo funciona
 
-El sitio es una **página estática** (`index.html`) que lee `data/incidencias.json`. Ese archivo lo genera un script de Python que se ejecuta automáticamente con GitHub Actions, y el resultado se publica en GitHub Pages. Otro script genera las páginas estáticas por vía (obras de larga duración y vías principales), la página de [cortes de agua](https://obraseincidenciaszaragoza.es/cortes-de-agua-zaragoza.html), el sitemap y el `robots.txt`.
+El sitio es una **página estática** (`index.html`) que lee `data/incidencias.json`. Ese archivo lo genera un script de Python que se ejecuta **cada hora** con GitHub Actions (lanzado por un [cron externo](#ejecución-horaria-cron-externo), porque el `cron` de GitHub no es fiable) y el resultado se publica en GitHub Pages. Otro script genera las páginas estáticas por vía (obras de larga duración y vías principales), la página de [cortes de agua](https://obraseincidenciaszaragoza.es/cortes-de-agua-zaragoza.html), la página de [datos abiertos](https://obraseincidenciaszaragoza.es/datos.html), el sitemap, el `robots.txt` y el `llms.txt`.
 
 ```
-Ayuntamiento (JSON) ─┐
+cron externo (cada hora) ─> GitHub Actions (CD, workflow_dispatch)
+                                      │
+Ayuntamiento (JSON) ─┐                ▼
                      ├─> scripts/actualizar_datos.py ─> data/incidencias.json ─┐
 DGT NAP (DATEX II) ──┘         │                                               ├─> scripts/generar_paginas.py ─> GitHub Pages
-                               └─ geolocalización: Nominatim (OSM) + Gemini    │   (páginas de vías, sitemap, robots)
-                                                      data/ + config/ ─────────┘
+                               └─ geolocalización: Nominatim (OSM) + Gemini    │   (vías, cortes de agua, datos.html,
+                                                      data/ + config/ ─────────┘    sitemap, robots, llms.txt)
 ```
 
 ### Funcionalidades de la web
 
 - **Mapa** (Leaflet + OpenStreetMap) con un marcador por incidencia, con icono y color según el tipo. Un marcador con borde discontinuo indica que afecta a toda la calle o que su ubicación es orientativa.
 - **Listado** de incidencias con filtro por tipo y por fuente, buscador por calle o motivo (sin distinguir acentos) y la opción «Solo lo que se ve en el mapa».
-- **Ficha** de cada incidencia: tramo, detalle, fuente, estado (`En curso`, `Quedan N días`, barra de progreso) y botón **Abrir en Maps**.
+- **Ficha** de cada incidencia: tramo, detalle (con botón «Ver más» si es largo), fuente, barrio si lo hay, estado y botón **Abrir en Maps**. El estado se calcula en el navegador a partir de las fechas: `Próxima` (`Empieza mañana`, `Empieza en N días`), `En curso` (`Quedan N días` y barra de progreso), `Solo hoy`, `Termina hoy`, `Finalizada` o `Activa` (sin fechas). Las páginas estáticas usan los mismos estados.
 - **Compartir**: genera un texto y un enlace `https://obraseincidenciaszaragoza.es/#<id>` (por ejemplo `#dgt-29808033`). Al abrir el enlace, el mapa se centra en esa incidencia y muestra su ficha. Usa el menú de compartir del móvil o, si no existe, el portapapeles.
+- **Portada con contenido sin JavaScript**: `generar_paginas.py` rellena en la copia publicada de `index.html` los bloques `<!--INC-->` (incidencias actuales más relevantes), `<!--AGUA-->` (resumen de cortes de agua), `<!--VIAS-->` (enlaces a las vías), el párrafo `#resumen` y la fecha de `#estado`, para que buscadores y lectores sin JS vean datos reales. En el repositorio esos bloques están vacíos o con un texto de ejemplo.
+- **Analítica y publicidad**: Google Analytics solo se activa si la persona acepta el banner de cookies provisional (consentimiento denegado por defecto en el EEE, Reino Unido y Suiza) y hay anuncios de AdSense en la portada (sin bloques de anuncio en las páginas de vías). Si cambias esto, actualiza `privacidad.html`.
 
 ### Fuentes de datos
 
@@ -69,14 +73,14 @@ El tipo se calcula por palabras clave del texto: una incidencia DGT de `Vehícul
    | `GRP` | Garrapinillos | `PÑF` | Peñaflor | `VLR` | Villarrapa |
    | `JSL` | Juslibol | `SJN` | San Juan de Mozarrifar | `SGR` | San Gregorio |
 
-2. **Normalización local** sin IA: `norm_local()` convierte textos como `BLANCO CORDERO (DR.), 11` en `Calle Doctor Blanco Cordero`, número `11`.
+2. **Normalización local** sin IA: `norm_local()` convierte textos como `BLANCO CORDERO (DR.), 11` en `Calle Doctor Blanco Cordero`, número `11`. `quitar_calificador()` elimina los calificadores del callejero que no forman parte del nombre real (`ASIA CONTINENTE` → `Calle Asia`; se aplica también a entradas antiguas de la caché o de Gemini).
 3. **Nominatim (OpenStreetMap)** devuelve hasta 10 candidatos (respetando 1 petición por segundo) y el script elige:
    - **Con código de barrio:** solo acepta resultados cuya dirección sea ese barrio o que estén a menos de 3,5 km de su centro. Para estos casos se usa una caja geográfica más ancha, porque barrios como Peñaflor quedan fuera de la caja urbana. Algunos centros están fijados en `CENTROS_BARRIO`; el resto se buscan en Nominatim.
    - **Sin código:** descarta los resultados que Nominatim sitúa en un barrio rural. Así `MONCAYO, 8` es la calle del CP 50010 y no la de Casetas. Si solo hay resultados rurales, no se ubica en lugar de ubicarla mal.
    - Si la incidencia trae geometría oficial, se usa para elegir entre candidatos.
    - Si no encuentra el portal, busca solo la calle y guarda su trazado.
    - Si un barrio rural no encuentra la calle, se marca en el centro del barrio como `aprox`.
-4. **Gemini**, solo para las direcciones que no se han podido localizar: normaliza el texto de la dirección en lotes de 40. **No genera coordenadas.**
+4. **Gemini** (modelo `gemini-3.6-flash`), solo para las direcciones que no se han podido localizar: normaliza el texto de la dirección en lotes de 40. **No genera coordenadas.** Si se agota la cuota diaria (error 429) no se reintenta, porque cada intento gasta cuota: el lote se deja para la siguiente ejecución horaria.
 5. Los resultados se guardan en caché (`data/geocache_v2.json`): `norm` guarda la normalización de Gemini por texto original y `geo` las coordenadas. Las claves de `geo` llevan el prefijo `v3:` e incluyen el barrio; el script descarta las entradas antiguas sin ese prefijo.
 
 ### Nombre legible de la calle
@@ -86,6 +90,8 @@ El Ayuntamiento envía las calles como `VALENCIA AVENIDA DE, 41` o `PUERTA DE SA
 1. Corrección manual en `config/nombres_vias.json` o `config/nombres_visibles.json` (clave: `clave_nombre()` del título, p. ej. `blanco-cordero-dr`).
 2. Nombre de OpenStreetMap o de Gemini, solo si contiene todas las palabras significativas del nombre original (`compatible()`).
 3. Reglas locales (`nombre_por_reglas()`): reordenan el apellido y el nombre de pila (`CERBUNA PEDRO` → `Pedro Cerbuna`), colocan el tipo de vía delante, expanden abreviaturas (`AV.`, `CTRA.`…) y no tocan nombres de santos. **Antes de aplicarlas se quita el portal** (`, 41`); si se queda, se confunde con una palabra del nombre y aparece repetido junto a «nº 41».
+
+El tramo (`via`) se limpia con `limpiar_tramo()`, que además de quitar HTML y entidades elimina la puntuación suelta al principio o al final (`, Entre C/ A y C/ B`).
 
 Las incidencias que no se pueden ubicar se imprimen en el log como `SIN UBICAR: …`.
 
@@ -99,19 +105,38 @@ Hay tres workflows, identificados en la pestaña *Actions*:
 |---|---|---|---|
 | **CI** | `.github/workflows/ci.yml` | En *pull requests*, en *push* a ramas distintas de `main`, y cuando lo llama CD | Comprueba la sintaxis de los scripts, que los JSON de `config/` y `data/` sean válidos, ejecuta los tests y comprueba que el sitio se genera. |
 | **CI - Git Governance** | `.github/workflows/ci-git-governance.yml` | En cada *push* a `main`, `master` o `develop` | Llama al workflow reutilizable `TechECS/org-ci-workflows` (`conventional-commits-enforcement.yml`) para comprobar que los commits sigan [Conventional Commits](https://www.conventionalcommits.org/es/). |
-| **CD** | `.github/workflows/cd.yml` | *Push* a `main`, cada hora (minuto 17 UTC) y manual (`workflow_dispatch`) | Ver abajo. |
+| **CD** | `.github/workflows/cd.yml` | *Push* a `main`, **cron externo cada hora** (`workflow_dispatch` con `origen=cron-externo`), `cron` de GitHub (minuto 17 UTC, solo de respaldo) y ejecución manual (`workflow_dispatch`) | Ver abajo. |
 
 **CD** tiene tres jobs:
 
 1. **CI previo** (solo en *push*): llama a `ci.yml`. Si falla, no se despliega.
-2. **Actualizar datos (APIs)** (solo en ejecuciones programadas o manuales): ejecuta `actualizar_datos.py`, valida el resultado con `tests/test_datos.py` (formato y valores), actualiza `vias_conocidas.json` e `historial_vias.json` con `generar_paginas.py` y hace *commit* de `data/` si todo fue bien. **Si el script o la validación fallan**, no se guarda nada y se publica la última versión válida.
-3. **Desplegar en Pages**: genera las páginas de vías, el sitemap y el `robots.txt`, y publica en GitHub Pages.
+2. **Actualizar datos (APIs)** (en todas las ejecuciones que no son *push*: cron externo, cron de GitHub y manual): ejecuta `actualizar_datos.py`, valida el resultado con `tests/test_datos.py` (formato y valores), actualiza `vias_conocidas.json` e `historial_vias.json` con `generar_paginas.py` y hace *commit* de `data/` (como `TechDEV: OI_ZGZ Data Bot`, con el mensaje `chore(data): actualizar incidencias`) si todo fue bien. **Si el script o la validación fallan**, no se guarda nada y se publica la última versión válida.
+3. **Desplegar en Pages**: genera las páginas de vías, los cortes de agua, `datos.html`, el sitemap, el `robots.txt` y el `llms.txt`, rellena los bloques de la portada y publica en GitHub Pages.
 
 En un *push* a `main` se salta la descarga de datos y solo se vuelve a publicar la web.
 
-> GitHub ejecuta los `cron` con el mejor esfuerzo: en horas de mucha carga una ejecución puede retrasarse o no llegar a producirse, así que no hay garantía de que se ejecute todas las horas.
-
 Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igualmente pero sin el paso de apoyo de Gemini.
+
+#### Ejecución horaria: cron externo
+
+El `cron` de GitHub Actions (`schedule: '17 * * * *'`) no funciona de forma fiable: GitHub lo ejecuta con el mejor esfuerzo y en horas de mucha carga las ejecuciones se retrasan o no llegan a producirse, y no hay garantía de que se ejecute todas las horas. Por eso **la actualización horaria la dispara un cron externo** (un servicio fuera de GitHub) que cada hora lanza el workflow CD a mano a través de la API de GitHub.
+
+- **Qué hace:** llama a `workflow_dispatch` de `cd.yml` sobre la rama `main` con la entrada `origen=cron-externo`. Es el mismo camino que el botón *Run workflow* de la pestaña *Actions*, solo que automático.
+- **Cómo se reconoce:** el nombre de la ejecución (`run-name`) indica quién la lanzó: `⏱ cron externo`, `🖐 manual` (dispatch sin `origen`), `🕐 cron GitHub` (el `schedule` de respaldo) o `⬆ push`. Así se ve en *Actions* si el cron externo está funcionando.
+- **Qué ejecuta:** los jobs *Actualizar datos (APIs)* y *Desplegar en Pages*, igual que cualquier ejecución programada o manual.
+- **Petición** (sustituye `<TOKEN>`; hace falta un token con permiso para ejecutar workflows en este repositorio, p. ej. un *fine-grained token* con *Actions: Read and write*):
+
+  ```bash
+  curl -X POST \
+    -H "Accept: application/vnd.github+json" \
+    -H "Authorization: Bearer <TOKEN>" \
+    https://api.github.com/repos/aabadmo4/oi_zgz/actions/workflows/cd.yml/dispatches \
+    -d '{"ref":"main","inputs":{"origen":"cron-externo"}}'
+  ```
+
+  GitHub responde `204 No Content` si ha aceptado la petición.
+- **Seguridad:** el token debe guardarse solo en el servicio de cron externo; **nunca** se sube al repositorio.
+- **Si falla el cron externo:** el `schedule` de GitHub sigue en `cd.yml` como respaldo, así que los datos se actualizan igualmente, solo que con menos regularidad. El grupo de `concurrency` (`cd`, sin cancelar ejecuciones en curso) evita que dos lanzamientos simultáneos se pisen: la segunda ejecución espera a que termine la primera.
 
 ## Estructura del repositorio
 
@@ -121,8 +146,8 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 ├── acerca.html
 ├── avisolegal.html
 ├── privacidad.html
-├── robots.txt
-├── sitemap.xml
+├── robots.txt                     # (se regenera al desplegar)
+├── sitemap.xml                    # (se regenera al desplegar)
 ├── ads.txt                        # Google AdSense
 ├── CNAME                          # Dominio personalizado en GitHub Pages
 ├── favicon.ico, icon-*.png, apple-touch-icon.png, obraseincidenciaszaragoza.jpg   # Iconos e imagen
@@ -132,14 +157,14 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 │   └── nombres_visibles.json      # Correcciones solo del nombre mostrado en el mapa (no cambia URLs)
 ├── scripts/
 │   ├── actualizar_datos.py        # Descarga, clasifica, geolocaliza y escribe el JSON
-│   └── generar_paginas.py         # Páginas por vía, sitemap y robots.txt
+│   └── generar_paginas.py         # Páginas por vía, cortes de agua, datos.html, sitemap, robots.txt y llms.txt
 ├── tests/
 │   ├── test_geocodificacion.py    # Geolocalización de direcciones y barrios rurales
 │   ├── test_clasificacion.py      # Tipos: Corte, Suministro, Obras, Accidente...
 │   ├── test_texto.py              # limpiar_texto, fechas, caja de Zaragoza, norm_local, UTM
 │   ├── test_nombres.py            # Nombre legible de la calle: reglas, OSM y prioridades
-│   ├── test_datos.py              # Contrato de data/incidencias.json y tipos de la web
-│   └── test_paginas.py            # Utilidades de generar_paginas.py
+│   ├── test_datos.py              # Contrato de data/incidencias.json (cabecera, licencia, campos) y tipos de la web
+│   └── test_paginas.py            # generar_paginas.py: estados, robots.txt, llms.txt, datos.html, licencia
 ├── data/
 │   ├── incidencias.json           # Salida que consume la web (generada)
 │   ├── geocache_v2.json           # Caché de geolocalización (generada)
@@ -148,10 +173,10 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 └── .github/workflows/
     ├── ci.yml                     # CI: validación de código y datos
     ├── ci-git-governance.yml      # CI: formato de los commits
-    └── cd.yml                     # CD: datos, CI previo y despliegue en Pages
+    └── cd.yml                     # CD: datos, CI previo y despliegue en Pages (lo lanza el cron externo cada hora)
 ```
 
-> El job de despliegue solo publica `*.html`, `*.jpg`, `*.png`, `*.ico`, `CNAME`, `ads.txt`, `robots.txt`, `sitemap.xml` y `data/`. Si añades un archivo de otro tipo a la web (CSS, JS externo…), inclúyelo en el paso «Preparar sitio» de `cd.yml` y de `ci.yml`. El archivo `.nojekyll` se crea al desplegar.
+> El job de despliegue solo publica `*.html`, `*.jpg`, `*.png`, `*.ico`, `CNAME`, `ads.txt`, `robots.txt`, `sitemap.xml` y `data/`. `llms.txt`, `datos.html`, `cortes-de-agua-zaragoza.html` y `vias/` no están en el repositorio: los crea `generar_paginas.py` al desplegar. Si añades un archivo de otro tipo a la web (CSS, JS externo…), inclúyelo en el paso «Preparar sitio» de `cd.yml` y de `ci.yml`. El archivo `.nojekyll` se crea al desplegar.
 
 ## Páginas de vías
 
@@ -161,13 +186,25 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 - **Obras de larga duración**: si una calle no principal tiene una incidencia del Ayuntamiento de 60 días o más entre inicio y fin (`UMBRAL_DIAS`), se crea su página. Se guarda en `data/vias_conocidas.json` y sigue existiendo cuando acaba la obra.
 - **Historial** (`data/historial_vias.json`): las incidencias ya finalizadas se muestran 30 días (`DIAS_HISTORIAL`). En carreteras (A-2, AP-68, Z-30, Z-40, N-232…) no se muestra historial, porque son avisos puntuales de la DGT.
 - **SEO**: una página es `index,follow` si es una vía principal con incidencias (activas o recientes) o tiene una obra larga; en otro caso, `noindex,follow`. El sitemap incluye las páginas indexables.
-- **Cortes de agua** (`/cortes-de-agua-zaragoza.html`): lista las incidencias de tipo `Suministro`.
+- **Cortes de agua** (`/cortes-de-agua-zaragoza.html`): lista las incidencias de tipo `Suministro` (agua), agrupadas por día (hoy y próximos días), con mapa y preguntas frecuentes (`FAQPage`). La portada incluye un resumen con enlace a esta página.
+
+### Datos abiertos para buscadores y agentes de IA
+
+`generar_paginas.py` genera además, en cada despliegue:
+
+- **`/datos.html`**: documentación de `data/incidencias.json` (frecuencia horaria, significado de cada campo de la incidencia y de la cabecera, cómo se deduce el estado de un aviso, licencia y atribución). Lleva marcado `Dataset` de schema.org. Un test comprueba que todos los campos del JSON están documentados (`CAMPOS` y `CAMPOS_RAIZ`).
+- **`/llms.txt`**: resumen en Markdown para modelos de lenguaje ([llmstxt.org](https://llmstxt.org)), con enlaces a los datos y a las páginas principales.
+- **`/robots.txt`**: todo permitido y con los rastreadores de IA nombrados (`GPTBot`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`, `CCBot`…, lista `AGENTES_IA`). No se bloquean las páginas `noindex`, para que Google pueda ver la etiqueta y retirarlas del índice.
+- **Licencia de los datos tratados: CC BY 4.0**, con un texto de atribución fijo (`ATRIBUCION`) que también viaja dentro del JSON. Los datos originales mantienen las condiciones de reutilización del Ayuntamiento y de la DGT. El texto debe ser idéntico en `actualizar_datos.py` (`LICENCIA_DATOS`) y `generar_paginas.py` (`LICENCIA`, `ATRIBUCION`); un test lo vigila.
 
 ## Formato de `data/incidencias.json`
 
 ```json
 {
-  "actualizado": "2026-10-23T08:15+02:00",
+  "actualizado": "2026-11-10T01:01+01:00",
+  "licencia": "CC BY 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
+  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). …",
   "fuentes": { "ayuntamiento": { "ok": true, "n": 40 }, "dgt": { "ok": true, "n": 12 } },
   "sin_ubicar": 3,
   "incidencias": [
@@ -191,7 +228,7 @@ Usa el secreto `GEMINI_API_KEY` del repositorio. Sin él, el script funciona igu
 }
 ```
 
-`nombre` es el nombre legible de la calle (ver arriba) y solo existe en las incidencias del Ayuntamiento; `causa` solo aparece en las de la DGT (`Vehículo detenido`, `Accidente`…). `barrio` solo aparece en las incidencias del Ayuntamiento cuya calle lleva código de barrio rural. `trazado` solo aparece cuando `precision` es `calle`. Las incidencias que no se pueden ubicar no se incluyen y se cuentan en `sin_ubicar`.
+`actualizado` está en hora de Madrid. `licencia`, `licencia_url` y `atribucion` son los datos de reutilización (ver «Datos abiertos»). `nombre` es el nombre legible de la calle (ver arriba) y solo existe en las incidencias del Ayuntamiento; `causa` solo aparece en las de la DGT (`Vehículo detenido`, `Accidente`…). `barrio` solo aparece en las incidencias del Ayuntamiento cuya calle lleva código de barrio rural. `trazado` solo aparece cuando `precision` es `calle`. Las incidencias que no se pueden ubicar no se incluyen y se cuentan en `sin_ubicar`.
 
 ## Ejecutar en local
 
@@ -222,11 +259,17 @@ Si no se obtiene ninguna incidencia con coordenadas, el script termina con códi
 python -m unittest discover -s tests -v
 ```
 
-**Páginas de vías** (genera la carpeta de salida; por defecto `_site`):
+**Sitio completo** (igual que hace el workflow CD al desplegar: copia los archivos estáticos y genera las páginas de vías, los cortes de agua, `datos.html`, `sitemap.xml`, `robots.txt` y `llms.txt`, además de rellenar los bloques de la portada). La carpeta de salida es `_site` por defecto:
 
 ```bash
+mkdir _site
+cp -r *.html *.jpg *.png *.ico CNAME ads.txt robots.txt sitemap.xml data _site/
 python scripts/generar_paginas.py _site
 ```
+
+Ojo: `generar_paginas.py` también actualiza `data/vias_conocidas.json` y `data/historial_vias.json` en tu copia local; no los subas a mano en una PR.
+
+**Lanzar el workflow a mano** (como lo hace el cron externo; ver [Ejecución horaria](#ejecución-horaria-cron-externo)): pestaña *Actions* → *CD* → *Run workflow*, o con la API de GitHub.
 
 ## Cómo colaborar
 
@@ -236,7 +279,7 @@ Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 - 🔤 **Ampliar la normalización de direcciones** (`TIPOS_VIA`, `HONORIFICOS`) con abreviaturas del callejero que fallen.
 - 📍 **Reducir las incidencias `sin_ubicar`** o las de precisión `aprox`, y completar `CENTROS_BARRIO` con los barrios rurales que falten.
 - 📡 **Añadir fuentes** (tranvía, autobús, eventos, otras administraciones).
-- 🧪 **Ampliar los tests** (`tests/`): ahora cubren geolocalización, clasificación de tipos, limpieza de texto, normalización de calles, el formato de `incidencias.json` y utilidades de las páginas de vías; falta probar `fetch_dgt` y `fetch_ayuntamiento` con respuestas de ejemplo guardadas.
+- 🧪 **Ampliar los tests** (`tests/`): ahora cubren geolocalización, clasificación de tipos, limpieza de texto, normalización de calles, el formato y la licencia de `incidencias.json`, y `generar_paginas.py` (estados, `robots.txt`, `llms.txt`, `datos.html`, páginas de vías); falta probar `fetch_dgt` y `fetch_ayuntamiento` con respuestas de ejemplo guardadas.
 - ♿ **Accesibilidad y rendimiento** de la web.
 - 🔎 **SEO y contenidos** de la página.
 
@@ -255,7 +298,8 @@ Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 - **Respeta los límites de las fuentes.** Nominatim: 1 petición/segundo y `User-Agent` identificable. Usa la caché.
 - **Nunca subas claves.** `GEMINI_API_KEY` solo como secreto del repositorio o variable de entorno local.
 - **Escapa siempre los datos** antes de insertarlos en el HTML (función `esc()`).
-- **Los datos generados** (`data/`) los actualiza el bot; no los edites a mano en una PR.
+- **Los datos generados** (`data/`) los actualiza el bot (`TechDEV: OI_ZGZ Data Bot`) cada hora; no los edites a mano en una PR.
+- **El cron externo** que lanza el CD cada hora es parte de la infraestructura: no cambies el nombre del workflow (`cd.yml`) ni la entrada `origen` sin actualizar también el cron.
 - **Privacidad y publicidad:** si cambias cookies, analítica o anuncios, actualiza `privacidad.html`.
 - **Accesibilidad:** foco visible, `aria-label` en controles, buen contraste.
 
@@ -267,7 +311,9 @@ Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 
 ## Licencia
 
-Este proyecto se distribuye bajo los términos de la licencia **GNU Affero General Public License v3.0 (AGPLv3)**. Consulta el archivo [`LICENSE`](./LICENSE) para obtener más detalles.
+El **código** se distribuye bajo los términos de la licencia **GNU Affero General Public License v3.0 (AGPLv3)**. Consulta el archivo [`LICENSE`](./LICENSE) para obtener más detalles.
+
+Los **datos tratados** que publica la web (`data/incidencias.json`) se ofrecen bajo **CC BY 4.0** con la atribución indicada en el propio archivo y en [`/datos.html`](https://obraseincidenciaszaragoza.es/datos.html). Los datos originales mantienen las condiciones de reutilización del Ayuntamiento de Zaragoza y de la DGT.
 
 ## Contacto
 
