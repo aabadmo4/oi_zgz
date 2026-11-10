@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T18:02+01:00",
+ "actualizado": "2026-11-10T18:51+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1388,31 +1388,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29911084",
+   "id": "dgt-29913551",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 322.292 · sentido creciente · orientación este",
+   "titulo": "N-232",
+   "via": "pk 251.217 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.67965,
-   "lon": -0.88178,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29912192",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.625713,
-   "lon": -0.84891886,
+   "lat": 41.704815,
+   "lon": -1.0064967,
    "precision": "exacta"
   }
  ]
