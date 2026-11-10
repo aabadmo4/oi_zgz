@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T09:01+01:00",
+ "actualizado": "2026-11-10T10:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1214,20 +1214,6 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "dgt-29882902",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.624924,
-   "lon": -0.8490524,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29883608",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1242,59 +1228,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29884966",
+   "id": "dgt-29888357",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 324.528 · sentido decreciente · orientación oeste",
+   "tipo": "Corte",
+   "titulo": "A-68",
+   "via": "pk 245.6 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.67901,
-   "lon": -0.853204,
+   "lat": 41.684593,
+   "lon": -0.9497028,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29887611",
+   "id": "dgt-29890588",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 26.137 · sentido decreciente · orientación este",
+   "via": "pk 28.608 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.60742,
-   "lon": -0.910346,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29887701",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 324.787 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.67854,
-   "lon": -0.8500933,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29887793",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.664104,
-   "lon": -0.9398144,
+   "lat": 41.617,
+   "lon": -0.936936,
    "precision": "exacta"
   }
  ]
