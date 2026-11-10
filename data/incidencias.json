@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-10T23:01+01:00",
+ "actualizado": "2026-11-11T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 76
+   "n": 75
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -312,34 +312,6 @@
    "nombre": "Calle Sádaba"
   },
   {
-   "id": "zgz-31575",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "GARGALLO PABLO AV., 1",
-   "via": "Entre Avda. De Francia y Jardines de Lisboa",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.6595787,
-   "lon": -0.8940742,
-   "precision": "calle",
-   "nombre": "Avenida de Pablo Gargallo"
-  },
-  {
-   "id": "zgz-31579",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "GERICO AGUSTIN(MOSEN), 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.635529,
-   "lon": -0.874606,
-   "precision": "portal",
-   "nombre": "Calle Mosén Agustín Gericó Nadal"
-  },
-  {
    "id": "zgz-31592",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -352,20 +324,6 @@
    "lon": -0.89081,
    "precision": "portal",
    "nombre": "Calle de Manuel Lasala"
-  },
-  {
-   "id": "zgz-31615",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ALMERIA, 13",
-   "via": "",
-   "detalle": "Continuando con la reparación de la tubería de agua en el nº 26 que comenzó ayer 9 de noviembre con caracter de urgencia y hasta el 10 de noviembre",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-10",
-   "lat": 41.6310568,
-   "lon": -0.8888776,
-   "precision": "portal",
-   "nombre": "Calle de Almería"
   },
   {
    "id": "zgz-30568",
@@ -382,20 +340,6 @@
    "nombre": "Calle Jaime Ferrán"
   },
   {
-   "id": "zgz-31593",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "EUROPA PL, 0",
-   "via": "",
-   "detalle": "Para la instalación de la iluminación navideña, y supeditado al Permiso Especial de Policía Local",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-10",
-   "lat": 41.6595576,
-   "lon": -0.8920635,
-   "precision": "calle",
-   "nombre": "Calle Europa Pl"
-  },
-  {
    "id": "zgz-31594",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -410,32 +354,18 @@
    "nombre": "Paseo de la Ribera"
   },
   {
-   "id": "zgz-31577",
+   "id": "zgz-31624",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
-   "titulo": "FRANCO Y LOPEZ, 3",
-   "via": "Entre C/ Duquesa Villahermosa y C/ Lucas Gallego",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.645251,
-   "lon": -0.9002359,
+   "titulo": "TARAZONA, 19",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.6504107,
+   "lon": -0.9087118,
    "precision": "portal",
-   "nombre": "Calle de Franco y López"
-  },
-  {
-   "id": "zgz-31580",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "BONET JUAN PABLO, 16",
-   "via": "Entre C/ Dr. Lozano Monzón y C/ Vasconia",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.640538,
-   "lon": -0.888346,
-   "precision": "portal",
-   "nombre": "Calle de Juan Pablo Bonet"
+   "nombre": "Calle de Tarazona"
   },
   {
    "id": "zgz-30876",
@@ -652,6 +582,20 @@
    "nombre": "Calle Jaime Ferrán"
   },
   {
+   "id": "zgz-31622",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SARTRE JEAN PAUL, 10",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.6788425,
+   "lon": -0.8738506,
+   "precision": "calle",
+   "nombre": "Calle Jean Paul Sartre"
+  },
+  {
    "id": "zgz-31567",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -692,6 +636,54 @@
    "lon": -0.9036891,
    "precision": "portal",
    "nombre": "Calle de Manuel Dronda"
+  },
+  {
+   "id": "zgz-31626",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "GISTAIN VALLE DE, 24",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.6650583,
+   "lon": -0.8723865,
+   "precision": "portal",
+   "nombre": "Calle Valle de Gistaín"
+  },
+  {
+   "id": "zgz-31627",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SAN JUAN DE LA PEÑA AV, 35",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.5926513,
+   "lon": -0.9332345,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.593229,
+      -0.932952
+     ],
+     [
+      41.592876,
+      -0.933228
+     ],
+     [
+      41.592463,
+      -0.93324
+     ],
+     [
+      41.591978,
+      -0.933256
+     ]
+    ]
+   ],
+   "nombre": "Calle San Juan de la Peña Av"
   },
   {
    "id": "zgz-30596",
@@ -777,20 +769,6 @@
    "lon": -0.8861138,
    "precision": "portal",
    "nombre": "Calle Orense"
-  },
-  {
-   "id": "zgz-31578",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "VILLAHERMOSA(DUQUESA), 33",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.6480453,
-   "lon": -0.9021383,
-   "precision": "portal",
-   "nombre": "Calle de la Duquesa de Villahermosa"
   },
   {
    "id": "zgz-31474",
@@ -1059,6 +1037,34 @@
    "nombre": "Avenida de Madrid"
   },
   {
+   "id": "zgz-31625",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ASIA CONTINENTE, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.678574,
+   "lon": -0.873912,
+   "precision": "portal",
+   "nombre": "Calle de Asia"
+  },
+  {
+   "id": "zgz-31628",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "DUERO RIO, 5",
+   "via": "Entre C/ Pedro I de Aragón y C/ Río Cinca",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.659846,
+   "lon": -0.898393,
+   "precision": "portal",
+   "nombre": "Calle del Río Duero"
+  },
+  {
    "id": "zgz-31598",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -1127,6 +1133,20 @@
    "lon": -0.8441739,
    "precision": "calle",
    "nombre": "Calle Puente Piedra"
+  },
+  {
+   "id": "zgz-31623",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CARDERERA MARIANO, 14",
+   "via": "Entre C/ Barcelona y C/ Daroca",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.650755,
+   "lon": -0.9088601,
+   "precision": "portal",
+   "nombre": "Calle de Mariano Carderera"
   },
   {
    "id": "zgz-31621",
@@ -1332,20 +1352,6 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "zgz-31576",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "LISBOA JARDINES DE, 2",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-10",
-   "lat": 41.6634862271148,
-   "lon": -0.9034605911873267,
-   "precision": "aprox",
-   "nombre": "Jardines de Lisboa"
-  },
-  {
    "id": "zgz-31597",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -1374,20 +1380,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29917145",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 324.1–325.3 · sentido decreciente · orientación oeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.679394,
-   "lon": -0.8584134,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29917146",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1402,17 +1394,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29919939",
+   "id": "dgt-29917145",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 324.1–325.3 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-10",
+   "fin": null,
+   "lat": 41.679394,
+   "lon": -0.8584134,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29920330",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 315.0–330.0 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-10",
+   "fin": null,
+   "lat": 41.661945,
+   "lon": -0.79196954,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29920655",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 1.99 · sentido decreciente · orientación norte",
+   "titulo": "A-23",
+   "via": "pk 300.838 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.642685,
-   "lon": -0.99416,
+   "lat": 41.75563,
+   "lon": -0.83625,
    "precision": "exacta"
   }
  ]
