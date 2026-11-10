@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10T06:01+01:00",
+ "actualizado": "2026-11-10T07:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -1214,31 +1214,17 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "dgt-29881377",
+   "id": "dgt-29882136",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-D",
-   "via": "pk 315.99 · sentido creciente · orientación este",
+   "titulo": "A-2",
+   "via": "pk 321.624 · sentido decreciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-10",
    "fin": null,
-   "lat": 41.662243,
-   "lon": -0.943676,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29881549",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 243.738 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-10",
-   "fin": null,
-   "lat": 41.67661,
-   "lon": -0.92994,
+   "lat": 41.679768,
+   "lon": -0.888275,
    "precision": "exacta"
   }
  ]
