@@ -338,6 +338,23 @@ LICENCIA_URL = "https://creativecommons.org/licenses/by/4.0/deed.es"
 ATRIBUCION = ("Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). "
               "Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. "
               "El Ayuntamiento y la DGT no avalan este servicio.")  # mismo texto que LICENCIA_DATOS en actualizar_datos.py (lo vigila un test)
+
+# Datasets de origen (isBasedOn del marcado Dataset). Search Console exige "description" en cada Dataset
+# (error) y recomienda "license" y "creator" (aviso), también en los anidados.
+FUENTES_DATASET = [
+    {"@type": "Dataset", "name": "Incidencias de vía pública - Ayuntamiento de Zaragoza",
+     "description": ("Relación de incidencias (cortes de agua, cortes de tráfico y otras afecciones importantes) en las calles "
+                     "y viales de la ciudad de Zaragoza, publicada como datos abiertos por el Ayuntamiento de Zaragoza."),
+     "url": "https://www.zaragoza.es/sede/portal/datos-abiertos/servicio/catalogo/67",
+     "license": "https://www.zaragoza.es/sede/portal/aviso-legal",
+     "creator": {"@type": "Organization", "name": "Ayuntamiento de Zaragoza", "url": "https://www.zaragoza.es"}},
+    {"@type": "Dataset", "name": "Incidencias DGT (Punto de Acceso Nacional)",
+     "description": ("Incidencias de tráfico en la red estatal de carreteras de España, excepto Cataluña y País Vasco, en formato "
+                     "DATEX II, publicadas por la Dirección General de Tráfico en el Punto de Acceso Nacional."),
+     "url": "https://nap.dgt.es/en/dataset/incidencias-dgt-datex2-v3-7",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "creator": {"@type": "Organization", "name": "Dirección General de Tráfico (DGT)", "url": "https://www.dgt.es"}},
+]
 AGENTES_IA = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
               "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot"]
 # Campos de cada incidencia en data/incidencias.json (un test comprueba que no falte ninguno)
@@ -443,8 +460,7 @@ def pagina_datos(BASE, act, n):
          "keywords": ["Zaragoza", "obras", "incidencias", "cortes de tráfico", "cortes de agua", "movilidad", "datos abiertos"],
          "spatialCoverage": {"@type": "Place", "name": "Zaragoza, España"},
          "creator": {"@type": "Organization", "name": "Obras e Incidencias Zaragoza", "url": BASE + "/"},
-         "isBasedOn": [{"@type": "Dataset", "name": "Incidencias de vía pública - Ayuntamiento de Zaragoza", "url": "https://www.zaragoza.es"},
-                       {"@type": "Dataset", "name": "Incidencias DGT (Punto de Acceso Nacional)", "url": "https://nap.dgt.es"}],
+         "isBasedOn": FUENTES_DATASET,
          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": url_json}],
          **({"dateModified": act} if act else {})},
         {"@type": "BreadcrumbList", "itemListElement": [
