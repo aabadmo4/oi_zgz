@@ -2780,7 +2780,18 @@
    "inicio": "2026-11-11",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 322.9–322.95 · sentido creciente · orientación este",
+   "via": "pk 322.871–322.9 · sentido creciente · orientación este",
+   "visto": "2026-11-11"
+  },
+  "dgt-29941792": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29941792",
+   "inicio": "2026-11-11",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 308.0–330.0 · ambos sentidos",
    "visto": "2026-11-11"
   }
  },
@@ -5191,6 +5202,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 18.777 · sentido creciente · orientación suroeste",
+   "visto": "2026-11-11"
+  },
+  "dgt-29941793": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29941793",
+   "inicio": "2026-11-11",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 13.6–34.0 · ambos sentidos",
    "visto": "2026-11-11"
   }
  }
