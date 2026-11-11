@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T19:01+01:00",
+ "actualizado": "2026-11-11T20:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1374,6 +1374,20 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-29945941",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 254.0–277.0 · ambos sentidos",
+   "detalle": "",
+   "causa": null,
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.613903,
+   "lon": -0.93198097,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29941792",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1388,20 +1402,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29942365",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 323.5–323.8 · sentido creciente · orientación este",
-   "detalle": "Objeto en la calzada",
-   "causa": "Objeto en la calzada",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.67949,
-   "lon": -0.8620333,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29943144",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1413,48 +1413,6 @@
    "fin": null,
    "lat": 41.619278,
    "lon": -1.0306654,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29943506",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-125",
-   "via": "pk 8.572 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.6589,
-   "lon": -0.948634,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29944331",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.245 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.704952,
-   "lon": -1.0067717,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29944922",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-125",
-   "via": "pk 8.717 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.65894,
-   "lon": -0.9462317,
    "precision": "exacta"
   }
  ]
