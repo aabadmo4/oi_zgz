@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T11:01+01:00",
+ "actualizado": "2026-11-11T12:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1380,20 +1380,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29923708",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido creciente · orientación noroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.69855,
-   "lon": -0.99422395,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29923725",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1422,17 +1408,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29929430",
+   "id": "dgt-29923708",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 243.0–250.0 · sentido creciente · orientación noroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-11",
+   "fin": "2026-11-11",
+   "lat": 41.69855,
+   "lon": -0.99422395,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29930955",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.224 · sentido decreciente · orientación este",
+   "titulo": "A-123",
+   "via": "pk 2.41 · sentido creciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-11",
    "fin": null,
-   "lat": 41.704777,
-   "lon": -1.0066067,
+   "lat": 41.686638,
+   "lon": -0.828309,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29932025",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 302.7 · sentido creciente · orientación noreste",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.605408,
+   "lon": -1.0756186,
    "precision": "exacta"
   }
  ]

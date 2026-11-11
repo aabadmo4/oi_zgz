@@ -2738,6 +2738,17 @@
    "titulo": "A-2",
    "via": "pk 317.964 · sentido creciente · orientación noreste",
    "visto": "2026-11-11"
+  },
+  "dgt-29932025": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29932025",
+   "inicio": "2026-11-11",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 302.7 · sentido creciente · orientación noreste",
+   "visto": "2026-11-11"
   }
  },
  "alvarado-pedro-de": {
