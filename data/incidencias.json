@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T22:01+01:00",
+ "actualizado": "2026-11-11T22:59+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -1332,6 +1332,20 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
+   "id": "dgt-29945941",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 254.0–277.0 · ambos sentidos",
+   "detalle": "",
+   "causa": null,
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.613903,
+   "lon": -0.93198097,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29941793",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1360,34 +1374,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29945941",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 254.0–277.0 · ambos sentidos",
-   "detalle": "",
-   "causa": null,
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.613903,
-   "lon": -0.93198097,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29947923",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 249.1–249.2 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.693516,
-   "lon": -0.9865097,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29948252",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1399,6 +1385,20 @@
    "fin": null,
    "lat": 41.631935,
    "lon": -0.98371804,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29948400",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 249.1–249.2 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.693516,
+   "lon": -0.9865097,
    "precision": "exacta"
   }
  ]
