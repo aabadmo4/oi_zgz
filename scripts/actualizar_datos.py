@@ -437,6 +437,23 @@ def en_barrio_rural(o):
     return any(z and any(z == n or z.startswith(n) for n in nombres) for z in zonas)
 
 
+VECINOS = ("cuarte de huerva", "maria de huerva", "cadrete", "utebo", "villanueva de gallego", "zuera", "perdiguera",
+           "alagon", "la puebla de alfinden", "pastriz", "el burgo de ebro", "fuentes de ebro", "pina de ebro", "vilanova")
+
+
+def en_otro_municipio(o):
+    """True solo si el resultado está en un municipio vecino conocido (p. ej. 'Calle San Juan de la Peña' de Cuarte de Huerva).
+    Conservador a propósito: los barrios rurales de Zaragoza a menudo no llevan 'Zaragoza' en su dirección, así que
+    NO se rechaza por 'no pone Zaragoza', solo cuando aparece un municipio vecino de la lista."""
+    a = o.get("address") or {}
+    if any("zaragoza" in sin_acentos(a.get(k, "")) for k in ("city", "town", "village", "municipality")):
+        return False
+    campos = [sin_acentos(a.get(k, "")) for k in ("city", "town", "village", "municipality")]
+    # nombre largo: se ignora el primer trozo (la calle), para no rechazar una 'Calle Utebo' de Zaragoza
+    resto = [sin_acentos(t.strip()) for t in str(o.get("display_name", "")).split(",")[1:]]
+    return any(v in z for v in VECINOS for z in campos + resto if z)
+
+
 def centro_barrio(cod, cache_geo):
     """Centro aproximado del barrio: semilla fija, o búsqueda en Nominatim (cacheada) con varias variantes del nombre."""
     if cod in CENTROS_BARRIO:
@@ -478,7 +495,7 @@ def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
             res = [o for o in res if zona_coincide(o, barrio)
                    or (ref_c and km(ref_c, (float(o["lat"]), float(o["lon"]))) <= RADIO_BARRIO_KM)]
         else:
-            res = [o for o in res if not en_barrio_rural(o)]  # si solo hay rurales, mejor no ubicar que ubicar mal
+            res = [o for o in res if not en_barrio_rural(o) and not en_otro_municipio(o)]  # si solo hay rurales u otros municipios, mejor no ubicar que ubicar mal
         if res:
             ref = ref_c or ancla
             if ref:
@@ -497,6 +514,7 @@ def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
 TIPOS_VIA = {"AV.": "Avenida", "AVDA.": "Avenida", "PS.": "Paseo", "PZA.": "Plaza", "PL.": "Plaza", "CM.": "Camino",
              "CTRA.": "Carretera", "GTA.": "Glorieta", "RDA.": "Ronda", "TRAV.": "Travesía", "PJE.": "Pasaje",
              "C/": "Calle", "CL.": "Calle", "CJ.": "Callejón"}
+TIPOS_FINALES = {"AV.", "AVDA.", "PS.", "PZA.", "PL.", "CTRA.", "GTA.", "RDA.", "TRAV.", "PJE."}
 HONORIFICOS = {"DR.": "Doctor", "DRA.": "Doctora", "STA.": "Santa", "STO.": "Santo", "GRAL.": "General"}
 MINUSCULAS = {"De", "Del", "La", "Las", "Los", "El", "Y"}
 
@@ -517,6 +535,10 @@ def norm_local(calle, motivo=""):
             tipo = TIPOS_VIA[p]
         elif p in HONORIFICOS:
             hon = HONORIFICOS[p]
+    toks = nombre.split()
+    if len(toks) >= 2 and toks[-1].upper().rstrip(".") + "." in TIPOS_FINALES:  # 'SAN JUAN DE LA PEÑA AV' -> Avenida San Juan de la Peña
+        tipo = TIPOS_VIA[toks[-1].upper().rstrip(".") + "."]
+        nombre = " ".join(toks[:-1])
     palabras = [w if w not in MINUSCULAS else w.lower() for w in nombre.title().split()]
     return {"via": " ".join(x for x in [tipo, hon, " ".join(palabras)] if x), "numero": num}
 
