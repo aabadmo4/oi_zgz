@@ -5049,6 +5049,17 @@
    "titulo": "Z-40",
    "via": "pk 20.0–21.0 · sentido creciente · orientación oeste",
    "visto": "2026-11-11"
+  },
+  "dgt-29921234": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29921234",
+   "inicio": "2026-11-11",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 26.419 · sentido creciente · orientación oeste",
+   "visto": "2026-11-11"
   }
  }
 }

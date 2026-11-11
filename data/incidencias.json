@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T01:01+01:00",
+ "actualizado": "2026-11-11T02:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -1380,11 +1380,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29917146",
+   "id": "dgt-29917145",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 324.1–324.9 · sentido decreciente · orientación noroeste",
+   "via": "pk 324.1–325.3 · sentido decreciente · orientación oeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-10",
@@ -1394,11 +1394,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29917145",
+   "id": "dgt-29917146",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 324.1–325.3 · sentido decreciente · orientación oeste",
+   "via": "pk 324.1–324.9 · sentido decreciente · orientación noroeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-10",
@@ -1447,6 +1447,20 @@
    "fin": null,
    "lat": 41.656395,
    "lon": -0.9546074,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29921234",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 26.419 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.608326,
+   "lon": -0.913521,
    "precision": "exacta"
   }
  ]
