@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-11T13:01+01:00",
+ "actualizado": "2026-11-11T14:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 75
+   "n": 74
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -1135,20 +1135,6 @@
    "nombre": "Calle Puente Piedra"
   },
   {
-   "id": "zgz-31623",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CARDERERA MARIANO, 14",
-   "via": "Entre C/ Barcelona y C/ Daroca",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.650755,
-   "lon": -0.9088601,
-   "precision": "portal",
-   "nombre": "Calle de Mariano Carderera"
-  },
-  {
    "id": "zgz-31621",
    "fuente": "Ayuntamiento",
    "tipo": "Obras",
@@ -1366,48 +1352,6 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "dgt-29923447",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 22.5–23.4 · sentido creciente · orientación suroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.607967,
-   "lon": -0.8786895,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29923725",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.66131,
-   "lon": -0.92735755,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29923708",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido creciente · orientación noroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.69855,
-   "lon": -0.99422395,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29923664",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1447,6 +1391,20 @@
    "fin": null,
    "lat": 41.64151,
    "lon": -0.97090214,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29936521",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 18.847 · sentido creciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.632607,
+   "lon": -0.8376967,
    "precision": "exacta"
   }
  ]
