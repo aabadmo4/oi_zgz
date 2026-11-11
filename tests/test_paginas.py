@@ -75,6 +75,12 @@ class TestPaginas(unittest.TestCase):
         self.assertEqual(ds["license"], g.LICENCIA_URL)
         self.assertEqual(ds["dateModified"], "2026-11-09T02:01+01:00")
         self.assertGreaterEqual(len(ds["description"]), 50)
+        # Search Console: cada Dataset (también los de isBasedOn) necesita description, license y creator
+        for d in [ds] + ds["isBasedOn"]:
+            self.assertEqual(d["@type"], "Dataset")
+            self.assertGreaterEqual(len(d["description"]), 50, d["name"])
+            self.assertTrue(d["license"].startswith("https://"), d["name"])
+            self.assertTrue(d["creator"]["name"], d["name"])
         self.assertIn('rel="alternate" type="application/json"', h)
         self.assertIn(g.ATRIBUCION.replace("&", "&amp;"), h)
 
