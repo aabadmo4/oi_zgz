@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-11T23:01+01:00",
+ "actualizado": "2026-11-12T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 74
+   "n": 71
   },
   "dgt": {
    "ok": true,
@@ -312,6 +312,70 @@
    "nombre": "Calle Sádaba"
   },
   {
+   "id": "zgz-31636",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "TARAZONA, 19",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.6504107,
+   "lon": -0.9087118,
+   "precision": "portal",
+   "nombre": "Calle de Tarazona"
+  },
+  {
+   "id": "zgz-31637",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "LOZANO MONZON R.(DR.), 3",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 18 horas",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.6411668,
+   "lon": -0.8885487,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.64165,
+      -0.888052
+     ],
+     [
+      41.641631,
+      -0.888067
+     ],
+     [
+      41.64161,
+      -0.888085
+     ],
+     [
+      41.641593,
+      -0.888103
+     ],
+     [
+      41.641548,
+      -0.888152
+     ],
+     [
+      41.64077,
+      -0.888961
+     ],
+     [
+      41.640736,
+      -0.888997
+     ],
+     [
+      41.640685,
+      -0.889048
+     ]
+    ]
+   ],
+   "nombre": "Calle Doctor Lozano Monzón"
+  },
+  {
    "id": "zgz-31592",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -394,20 +458,6 @@
    "lon": -0.8946502,
    "precision": "portal",
    "nombre": "Calle Maestro Tomás Bretón"
-  },
-  {
-   "id": "zgz-31364",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "PAZ, 3",
-   "via": "",
-   "detalle": "Para reparar el vertido a la altura del no 3",
-   "inicio": "2026-10-26",
-   "fin": "2026-11-11",
-   "lat": 41.642639,
-   "lon": -0.8853781,
-   "precision": "portal",
-   "nombre": "Calle de la Paz"
   },
   {
    "id": "zgz-30666",
@@ -526,20 +576,6 @@
    "nombre": "Calle de Fray José Casanova"
   },
   {
-   "id": "zgz-31596",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "NAVARRA D.BLANCA DE, 6",
-   "via": "Entre Avda. Madrid y C/ Pablo Sarasate",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.6541249,
-   "lon": -0.9000507,
-   "precision": "portal",
-   "nombre": "Calle de Doña Blanca de Navarra"
-  },
-  {
    "id": "zgz-31475",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -624,18 +660,64 @@
    "nombre": "Calle Palencia"
   },
   {
-   "id": "zgz-31601",
+   "id": "zgz-31633",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
-   "titulo": "DRONDA MANUEL, 4",
-   "via": "Entre C/ Lucas Gallego y C/ María Auxiliadora",
+   "titulo": "JOTA AVENIDA DE LA, 25",
+   "via": "Del n.º 25 al n.º 47, ambos incluidos",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.6609927,
+   "lon": -0.8608783,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.660721,
+      -0.86217
+     ],
+     [
+      41.660748,
+      -0.862048
+     ],
+     [
+      41.660867,
+      -0.861472
+     ],
+     [
+      41.660907,
+      -0.861282
+     ],
+     [
+      41.661146,
+      -0.860152
+     ],
+     [
+      41.661235,
+      -0.859739
+     ],
+     [
+      41.661269,
+      -0.859587
+     ]
+    ]
+   ],
+   "nombre": "Avenida de la Jota"
+  },
+  {
+   "id": "zgz-31635",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CARDERERA MARIANO, 14",
+   "via": "Entre C/ Barcelona y C/ Daroca",
    "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.645271,
-   "lon": -0.9036891,
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.650755,
+   "lon": -0.9088601,
    "precision": "portal",
-   "nombre": "Calle de Manuel Dronda"
+   "nombre": "Calle de Mariano Carderera"
   },
   {
    "id": "zgz-31626",
@@ -787,20 +869,6 @@
     ]
    ],
    "nombre": "Ronda de la Hispanidad"
-  },
-  {
-   "id": "zgz-31600",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SANGENIS ANTONIO, 70",
-   "via": "Entre C/ Bolivia y C/ Batalla de Clavijo",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.6511616,
-   "lon": -0.9038204,
-   "precision": "calle",
-   "nombre": "Calle de Antonio Sangenis"
   },
   {
    "id": "zgz-31536",
@@ -1017,6 +1085,20 @@
    "nombre": "Avenida de Madrid"
   },
   {
+   "id": "zgz-31634",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CANO MATA ANTONIO, 0",
+   "via": "Entre C/ Rioja y C/ Fray Casanova",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.6571058,
+   "lon": -0.9053442,
+   "precision": "calle",
+   "nombre": "Calle Antonio Cano Mata"
+  },
+  {
    "id": "zgz-31625",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -1043,48 +1125,6 @@
    "lon": -0.898393,
    "precision": "portal",
    "nombre": "Calle del Río Duero"
-  },
-  {
-   "id": "zgz-31598",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ECHEGARAY Y CABALLERO, 186",
-   "via": "Entre C/ Jesús Taboada y C/ Jerónimo Vicens",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.65441528915284,
-   "lon": -0.865437922228995,
-   "precision": "aprox",
-   "nombre": "Calle Echegaray y Caballero"
-  },
-  {
-   "id": "zgz-31599",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SARASATE PABLO, 20",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.6538256,
-   "lon": -0.8995948,
-   "precision": "portal",
-   "nombre": "Calle de Pablo Sarasate"
-  },
-  {
-   "id": "zgz-31602",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "DRONDA MANUEL, 3",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.64538,
-   "lon": -0.9040733,
-   "precision": "portal",
-   "nombre": "Calle de Manuel Dronda"
   },
   {
    "id": "zgz-31619",
@@ -1316,20 +1356,6 @@
     ]
    ],
    "nombre": "Calle Rodrigo Rebolledo"
-  },
-  {
-   "id": "zgz-31597",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "TABOADA EDUARDO JES., 10",
-   "via": "Entre C/ Obispo Librana y C/ R. J. Alcubierre",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-11",
-   "lat": 41.65212,
-   "lon": -0.8671277,
-   "precision": "portal",
-   "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
    "id": "dgt-29945941",
