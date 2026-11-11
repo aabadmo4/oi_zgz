@@ -2791,7 +2791,29 @@
    "inicio": "2026-11-11",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 308.0–330.0 · ambos sentidos",
+   "via": "pk 298.0–330.0 · ambos sentidos",
+   "visto": "2026-11-11"
+  },
+  "dgt-29942365": {
+   "detalle": "Objeto en la calzada",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29942365",
+   "inicio": "2026-11-11",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.5–323.8 · sentido creciente · orientación este",
+   "visto": "2026-11-11"
+  },
+  "dgt-29943144": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29943144",
+   "inicio": "2026-11-11",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 307.0–307.1 · sentido creciente · orientación noreste",
    "visto": "2026-11-11"
   }
  },
