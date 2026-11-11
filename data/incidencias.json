@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T08:01+01:00",
+ "actualizado": "2026-11-11T09:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1366,31 +1366,45 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "dgt-29923663",
+   "id": "dgt-29925302",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-125",
-   "via": "pk 10.08 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "titulo": "A-120",
+   "via": "pk 1.0–3.92 · sentido decreciente · orientación noroeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
    "inicio": "2026-11-11",
    "fin": null,
-   "lat": 41.66368,
-   "lon": -0.93317,
+   "lat": 41.65117,
+   "lon": -0.9986178,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29923946",
+   "id": "dgt-29925813",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-23",
-   "via": "pk 298.966 · sentido creciente · orientación noreste",
+   "via": "pk 274.809 · sentido decreciente · orientación sur",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-11",
    "fin": null,
-   "lat": 41.74026,
-   "lon": -0.84472,
+   "lat": 41.59579,
+   "lon": -0.94212,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29926202",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 317.633 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.67254,
+   "lon": -0.93147,
    "precision": "exacta"
   }
  ]
