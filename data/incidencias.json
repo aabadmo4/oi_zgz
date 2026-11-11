@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T00:23+01:00",
+ "actualizado": "2026-11-11T01:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -1380,11 +1380,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29917145",
+   "id": "dgt-29917146",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 324.1–325.3 · sentido decreciente · orientación oeste",
+   "via": "pk 324.1–324.9 · sentido decreciente · orientación noroeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-10",
@@ -1394,11 +1394,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29917146",
+   "id": "dgt-29917145",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-2",
-   "via": "pk 324.1–324.9 · sentido decreciente · orientación noroeste",
+   "via": "pk 324.1–325.3 · sentido decreciente · orientación oeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-10",
@@ -1422,17 +1422,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29920804",
+   "id": "dgt-29920860",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 485.976 · sentido decreciente · orientación sur",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 20.0–21.0 · sentido creciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-11",
    "fin": null,
-   "lat": 41.57951,
-   "lon": -0.95714,
+   "lat": 41.622105,
+   "lon": -0.85805976,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29920891",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 315.0–330.0 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.656395,
+   "lon": -0.9546074,
    "precision": "exacta"
   }
  ]
