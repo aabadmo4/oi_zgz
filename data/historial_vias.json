@@ -2826,6 +2826,17 @@
    "titulo": "A-2",
    "via": "pk 323.5–323.8 · sentido creciente · orientación este",
    "visto": "2026-11-11"
+  },
+  "dgt-29948252": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29948252",
+   "inicio": "2026-11-11",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 311.3–311.4 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-11"
   }
  },
  "alvarado-pedro-de": {

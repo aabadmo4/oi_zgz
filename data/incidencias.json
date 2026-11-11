@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11T21:01+01:00",
+ "actualizado": "2026-11-11T22:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1332,34 +1332,6 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "dgt-29937096",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 270.258 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.561466,
-   "lon": -0.970529,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29938030",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 18.777 · sentido creciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.632915,
-   "lon": -0.836953,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29941793",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1371,20 +1343,6 @@
    "fin": null,
    "lat": 41.676273,
    "lon": -0.835096,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29945941",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 254.0–277.0 · ambos sentidos",
-   "detalle": "",
-   "causa": null,
-   "inicio": "2026-11-11",
-   "fin": null,
-   "lat": 41.613903,
-   "lon": -0.93198097,
    "precision": "exacta"
   },
   {
@@ -1402,31 +1360,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29943144",
+   "id": "dgt-29945941",
    "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 307.0–307.1 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 254.0–277.0 · ambos sentidos",
+   "detalle": "",
+   "causa": null,
    "inicio": "2026-11-11",
    "fin": null,
-   "lat": 41.619278,
-   "lon": -1.0306654,
+   "lat": 41.613903,
+   "lon": -0.93198097,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29947410",
+   "id": "dgt-29947923",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 323.5–323.8 · sentido creciente · orientación este",
+   "titulo": "N-232",
+   "via": "pk 249.1–249.2 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-11",
    "fin": null,
-   "lat": 41.67949,
-   "lon": -0.8620333,
+   "lat": 41.693516,
+   "lon": -0.9865097,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29948252",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 311.3–311.4 · sentido decreciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-11",
+   "fin": null,
+   "lat": 41.631935,
+   "lon": -0.98371804,
    "precision": "exacta"
   }
  ]
