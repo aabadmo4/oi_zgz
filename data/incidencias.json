@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12T14:01+01:00",
+ "actualizado": "2026-11-12T15:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 11
   }
  },
  "sin_ubicar": 0,
@@ -1501,20 +1501,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-29951867",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 15.0–18.0 · sentido decreciente · orientación norte",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.663124,
-   "lon": -0.83910537,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29951526",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1526,6 +1512,20 @@
    "fin": "2026-11-12",
    "lat": 41.607113,
    "lon": -0.908747,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29951867",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 15.0–18.0 · sentido decreciente · orientación norte",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.663124,
+   "lon": -0.83910537,
    "precision": "exacta"
   },
   {
@@ -1554,6 +1554,104 @@
    "fin": "2026-11-12",
    "lat": 41.55581,
    "lon": -0.9802591,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29971642",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 257.14 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.73499,
+   "lon": -1.064638,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29972043",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 314.94 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.65602,
+   "lon": -0.95512,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29972533",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 27.967 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.61388,
+   "lon": -0.93024,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29973136",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 27.07 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.610348,
+   "lon": -0.9209084,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29973303",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29973309",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 294.221 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.70095,
+   "lon": -0.838615,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29973310",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 26.767 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.609352,
+   "lon": -0.917496,
    "precision": "exacta"
   }
  ]
