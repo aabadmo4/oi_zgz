@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12T11:01+01:00",
+ "actualizado": "2026-11-12T12:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 11
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -1386,34 +1386,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29950653",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.624924,
-   "lon": -0.8490524,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29951642",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-2",
-   "via": "pk 326.9–341.0 · sentido decreciente · orientación noroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.66569,
-   "lon": -0.83692,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29951505",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1442,6 +1414,20 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-29951642",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-2",
+   "via": "pk 326.9–341.0 · sentido decreciente · orientación noroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-12",
+   "fin": "2026-11-12",
+   "lat": 41.66569,
+   "lon": -0.83692,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29952796",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1456,59 +1442,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29959411",
+   "id": "dgt-29961898",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "N-232",
-   "via": "pk 243.762 · sentido decreciente · orientación este",
+   "via": "pk 243.234 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-12",
    "fin": null,
-   "lat": 41.665066,
-   "lon": -0.9351,
+   "lat": 41.6629,
+   "lon": -0.929402,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29960238",
+   "id": "dgt-29962308",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 326.127 · sentido creciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 17.513 · sentido decreciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-12",
    "fin": null,
-   "lat": 41.67529,
-   "lon": -0.83406,
+   "lat": 41.642933,
+   "lon": -0.831243,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29960258",
+   "id": "dgt-29963348",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 488.928 · sentido creciente · orientación norte",
+   "titulo": "Z-40",
+   "via": "pk 18.689 · sentido decreciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-12",
    "fin": null,
-   "lat": 41.60045,
-   "lon": -0.93649,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29960593",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 252.384 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.71218,
-   "lon": -1.01683,
+   "lat": 41.63324,
+   "lon": -0.83594,
    "precision": "exacta"
   }
  ]
