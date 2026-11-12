@@ -5258,6 +5258,28 @@
    "titulo": "Z-40",
    "via": "pk 13.6–34.0 · ambos sentidos",
    "visto": "2026-11-12"
+  },
+  "dgt-29950648": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29950648",
+   "inicio": "2026-11-12",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-12"
+  },
+  "dgt-29950653": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29950653",
+   "inicio": "2026-11-12",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-12"
   }
  }
 }
