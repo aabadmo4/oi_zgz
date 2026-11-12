@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12T07:01+01:00",
+ "actualizado": "2026-11-12T08:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -1383,6 +1383,90 @@
    "fin": null,
    "lat": 41.624924,
    "lon": -0.8490524,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29951480",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29951621",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 15.476 · sentido creciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.658966,
+   "lon": -0.840768,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29951674",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.235 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.679565,
+   "lon": -0.880828,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29952269",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.664104,
+   "lon": -0.9398144,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29952505",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.0–321.0 · sentido creciente · orientación este",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.679913,
+   "lon": -0.89564735,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29952646",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 230.0 · sentido decreciente · orientación sureste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.604263,
+   "lon": -0.8264776,
    "precision": "exacta"
   }
  ]
