@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12T21:01+01:00",
+ "actualizado": "2026-11-12T22:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 3
   }
  },
  "sin_ubicar": 0,
@@ -1529,20 +1529,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29985948",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 312.7–312.8 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.64025,
-   "lon": -0.9713988,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29986576",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1554,20 +1540,6 @@
    "fin": null,
    "lat": 41.678513,
    "lon": -0.8524261,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29986876",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-123",
-   "via": "pk 6.976 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.721687,
-   "lon": -0.81054336,
    "precision": "exacta"
   }
  ]
