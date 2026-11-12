@@ -2980,6 +2980,50 @@
    "titulo": "A-2",
    "via": "pk 325.1–325.2 · sentido creciente · orientación este",
    "visto": "2026-11-12"
+  },
+  "dgt-29985835": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29985835",
+   "inicio": "2026-11-12",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 315.75–316.2 · sentido creciente · orientación este",
+   "visto": "2026-11-12"
+  },
+  "dgt-29985948": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29985948",
+   "inicio": "2026-11-12",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 312.7–312.8 · sentido creciente · orientación norte",
+   "visto": "2026-11-12"
+  },
+  "dgt-29986150": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29986150",
+   "inicio": "2026-11-12",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 315.9–316.2 · sentido creciente · orientación este",
+   "visto": "2026-11-12"
+  },
+  "dgt-29986576": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29986576",
+   "inicio": "2026-11-12",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 324.1–324.6 · sentido creciente · orientación este",
+   "visto": "2026-11-12"
   }
  },
  "alvarado-pedro-de": {
