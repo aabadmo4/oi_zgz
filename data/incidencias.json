@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-12T12:13+01:00",
+ "actualizado": "2026-11-12T13:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 71
+   "n": 78
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 7
   }
  },
  "sin_ubicar": 0,
@@ -763,6 +763,49 @@
    "nombre": "Calle Albardín"
   },
   {
+   "id": "zgz-31655",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VICENTE ANDRES(MOSEN), 1",
+   "via": "",
+   "detalle": "Para renovar la acometida de sumidero a la altura de la Calle Terrer",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-20",
+   "lat": 41.6509713,
+   "lon": -0.9145177,
+   "precision": "portal",
+   "nombre": "Calle de Mosén Andrés Vicente"
+  },
+  {
+   "id": "zgz-31653",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "ALMACEN JSL, 1",
+   "via": "",
+   "detalle": "Para reparar la arqueta ubicada a la altura del no 2",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-20",
+   "lat": 41.690824,
+   "lon": -0.895959,
+   "precision": "portal",
+   "barrio": "Juslibol",
+   "nombre": "Calle Almacén"
+  },
+  {
+   "id": "zgz-31657",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "COGULLADA CARRETERA, 11",
+   "via": "",
+   "detalle": "Para reparar las juntas de dilatación del puente sobre el ferrocarril (próximo al punto limpio de Cogullada)",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-27",
+   "lat": 41.6726555,
+   "lon": -0.8584696,
+   "precision": "calle",
+   "nombre": "Carretera de Cogullada"
+  },
+  {
    "id": "zgz-31114",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -928,6 +971,20 @@
    "nombre": "Calle de la Cadena"
   },
   {
+   "id": "zgz-31656",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "FITA BERNARDO, 1",
+   "via": "",
+   "detalle": "Para reasfaltar una canalización eléctrica",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-20",
+   "lat": 41.6463032,
+   "lon": -0.8900935,
+   "precision": "portal",
+   "nombre": "Calle Bernardo Fita"
+  },
+  {
    "id": "zgz-31507",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -940,6 +997,50 @@
    "lon": -0.8673024,
    "precision": "portal",
    "nombre": "Calle de Eduardo Jesús Taboada"
+  },
+  {
+   "id": "zgz-31652",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "PEDRO II EL CATOLICO, 9",
+   "via": "",
+   "detalle": "Para reparar la tapa de la arqueta de telecomunicaciones ubicada en el no 65",
+   "inicio": "2026-11-14",
+   "fin": "2026-11-14",
+   "lat": 41.6539323,
+   "lon": -0.9078258,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.65476,
+      -0.907791
+     ],
+     [
+      41.65315,
+      -0.907859
+     ],
+     [
+      41.653105,
+      -0.90786
+     ]
+    ]
+   ],
+   "nombre": "Calle de Pedro II El Católico"
+  },
+  {
+   "id": "zgz-31654",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SAN JOSE M.ESCRIVA , 0",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-20",
+   "lat": 41.65614406302311,
+   "lon": -0.8944732528496669,
+   "precision": "aprox",
+   "nombre": "Calle San José M.escriva"
   },
   {
    "id": "zgz-31003",
@@ -1143,7 +1244,7 @@
   {
    "id": "zgz-31620",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "PIEDRA (PUENTE), 0",
    "via": "",
    "detalle": "Con motivo de la instalación de adornos navideños y supeditado al Permiso Especial de Policía Local",
@@ -1358,18 +1459,18 @@
    "nombre": "Calle Rodrigo Rebolledo"
   },
   {
-   "id": "dgt-29938479",
-   "fuente": "DGT",
+   "id": "zgz-31651",
+   "fuente": "Ayuntamiento",
    "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.66131,
-   "lon": -0.92735755,
-   "precision": "exacta"
+   "titulo": "ROMEA POLICARPO, 8",
+   "via": "",
+   "detalle": "Continuando la canalización eléctrica entre las calles Antonio Agustín y Heroismo",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-24",
+   "lat": 41.6506564,
+   "lon": -0.8742479,
+   "precision": "portal",
+   "nombre": "Calle de Policarpo Romea"
   },
   {
    "id": "dgt-29938464",
@@ -1400,45 +1501,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29952796",
+   "id": "dgt-29938479",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 267.0–269.2 · sentido creciente · orientación noreste",
+   "titulo": "N-232",
+   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-12",
    "fin": "2026-11-12",
-   "lat": 41.55581,
-   "lon": -0.9802591,
+   "lat": 41.66131,
+   "lon": -0.92735755,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29961898",
+   "id": "dgt-29951505",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 243.234 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.6629,
-   "lon": -0.929402,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29962308",
-   "fuente": "DGT",
-   "tipo": "Otros",
+   "tipo": "Obras",
    "titulo": "Z-40",
-   "via": "pk 17.513 · sentido decreciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "via": "pk 26.0–34.0 · sentido creciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.642933,
-   "lon": -0.831243,
+   "fin": "2026-11-12",
+   "lat": 41.642437,
+   "lon": -0.97030026,
    "precision": "exacta"
   },
   {
@@ -1470,17 +1557,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29951505",
+   "id": "dgt-29952796",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 26.0–34.0 · sentido creciente · orientación oeste",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 267.0–269.2 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-12",
    "fin": "2026-11-12",
-   "lat": 41.642437,
-   "lon": -0.97030026,
+   "lat": 41.55581,
+   "lon": -0.9802591,
    "precision": "exacta"
   }
  ]
