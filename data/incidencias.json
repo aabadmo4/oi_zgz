@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-12T23:01+01:00",
+ "actualizado": "2026-11-13T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 80
+   "n": 72
   },
   "dgt": {
    "ok": true,
@@ -404,34 +404,6 @@
    "nombre": "Calle Jaime Ferrán"
   },
   {
-   "id": "zgz-31594",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "RIBERA PASEO DE LA, 3",
-   "via": "",
-   "detalle": "Para la instalación de la iluminación navideña, y supeditado al Permiso Especial de Policía Local",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-12",
-   "lat": 41.6587451,
-   "lon": -0.8767353,
-   "precision": "portal",
-   "nombre": "Paseo de la Ribera"
-  },
-  {
-   "id": "zgz-31624",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "TARAZONA, 19",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.6504107,
-   "lon": -0.9087118,
-   "precision": "portal",
-   "nombre": "Calle de Tarazona"
-  },
-  {
    "id": "zgz-31659",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -632,20 +604,6 @@
    "nombre": "Calle Jaime Ferrán"
   },
   {
-   "id": "zgz-31622",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SARTRE JEAN PAUL, 10",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.6788425,
-   "lon": -0.8738506,
-   "precision": "calle",
-   "nombre": "Calle Jean Paul Sartre"
-  },
-  {
    "id": "zgz-31567",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -732,34 +690,6 @@
    "lon": -0.9088601,
    "precision": "portal",
    "nombre": "Calle de Mariano Carderera"
-  },
-  {
-   "id": "zgz-31626",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "GISTAIN VALLE DE, 24",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.6650583,
-   "lon": -0.8723865,
-   "precision": "portal",
-   "nombre": "Calle Valle de Gistaín"
-  },
-  {
-   "id": "zgz-31627",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAN JUAN DE LA PEÑA AV, 35",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.6649136,
-   "lon": -0.8720206,
-   "precision": "portal",
-   "nombre": "Calle San Juan de la Peña Av"
   },
   {
    "id": "zgz-30596",
@@ -888,20 +818,6 @@
    "lon": -0.8782324,
    "precision": "portal",
    "nombre": "Cuarta Avenida"
-  },
-  {
-   "id": "zgz-31566",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ORENSE, 8",
-   "via": "",
-   "detalle": "Para realizar una nueva acometida de vertido en el n.o 8",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-12",
-   "lat": 41.6274038,
-   "lon": -0.8861138,
-   "precision": "portal",
-   "nombre": "Calle Orense"
   },
   {
    "id": "zgz-31474",
@@ -1228,34 +1144,6 @@
    "nombre": "Avenida de Madrid"
   },
   {
-   "id": "zgz-31625",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ASIA CONTINENTE, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.678574,
-   "lon": -0.873912,
-   "precision": "portal",
-   "nombre": "Calle de Asia"
-  },
-  {
-   "id": "zgz-31628",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "DUERO RIO, 5",
-   "via": "Entre C/ Pedro I de Aragón y C/ Río Cinca",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.659846,
-   "lon": -0.898393,
-   "precision": "portal",
-   "nombre": "Calle del Río Duero"
-  },
-  {
    "id": "zgz-31619",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1501,20 +1389,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-29986150",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-2",
-   "via": "pk 315.9–316.2 · sentido creciente · orientación este",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-12",
-   "fin": null,
-   "lat": 41.662334,
-   "lon": -0.94262314,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29985835",
    "fuente": "DGT",
    "tipo": "Accidente",
@@ -1540,6 +1414,20 @@
    "fin": null,
    "lat": 41.678513,
    "lon": -0.8524261,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29988710",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 313.0–330.0 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-12",
+   "fin": null,
+   "lat": 41.661945,
+   "lon": -0.79196954,
    "precision": "exacta"
   }
  ]
