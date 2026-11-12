@@ -5391,6 +5391,17 @@
    "via": "pk 26.0–34.0 · sentido creciente · orientación oeste",
    "visto": "2026-11-12"
   },
+  "dgt-29951526": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-12",
+   "fuente": "DGT",
+   "id": "dgt-29951526",
+   "inicio": "2026-11-12",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 26.0–34.0 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-12"
+  },
   "dgt-29951621": {
    "detalle": "Vehículo detenido",
    "fin": null,
