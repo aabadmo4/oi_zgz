@@ -2925,6 +2925,17 @@
    "titulo": "A-2",
    "via": "pk 320.51 · sentido creciente · orientación este",
    "visto": "2026-11-12"
+  },
+  "dgt-29960238": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-29960238",
+   "inicio": "2026-11-12",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 326.127 · sentido creciente · orientación este",
+   "visto": "2026-11-12"
   }
  },
  "alvarado-pedro-de": {
@@ -3242,8 +3253,8 @@
    "fuente": "Ayuntamiento",
    "id": "zgz-30805",
    "inicio": "2026-09-14",
-   "tipo": "Corte",
-   "titulo": "IRANZO (DOCTOR), 13",
+   "tipo": "Obras",
+   "titulo": "IRANZO (DOCTOR), 43",
    "via": "",
    "visto": "2026-11-12"
   },
@@ -5367,6 +5378,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-12"
+  },
+  "dgt-29951505": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-12",
+   "fuente": "DGT",
+   "id": "dgt-29951505",
+   "inicio": "2026-11-12",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 26.0–34.0 · sentido creciente · orientación oeste",
    "visto": "2026-11-12"
   },
   "dgt-29951621": {
