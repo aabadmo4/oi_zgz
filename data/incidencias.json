@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-12T13:02+01:00",
+ "actualizado": "2026-11-12T14:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 78
+   "n": 80
   },
   "dgt": {
    "ok": true,
-   "n": 7
+   "n": 4
   }
  },
  "sin_ubicar": 0,
@@ -432,6 +432,20 @@
    "nombre": "Calle de Tarazona"
   },
   {
+   "id": "zgz-31659",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "VIÑAZA (CONDE DE LA), 13",
+   "via": "",
+   "detalle": "Para conectar la nueva red de drenaje al pozo entre los números 15 y 19",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-27",
+   "lat": 41.6517107,
+   "lon": -0.906788,
+   "precision": "portal",
+   "nombre": "Calle del Conde de la Viñaza"
+  },
+  {
    "id": "zgz-30876",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -777,6 +791,20 @@
    "nombre": "Calle de Mosén Andrés Vicente"
   },
   {
+   "id": "zgz-31660",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CENTAURO, 2",
+   "via": "",
+   "detalle": "Para realizar una acometida de vertido entre las Calles Argos y Cruz del Sur",
+   "inicio": "2026-11-16",
+   "fin": "2026-12-15",
+   "lat": 41.63724,
+   "lon": -0.930317,
+   "precision": "portal",
+   "nombre": "Calle Centauro"
+  },
+  {
    "id": "zgz-31653",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -985,6 +1013,20 @@
    "nombre": "Calle Bernardo Fita"
   },
   {
+   "id": "zgz-31658",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CELORRIO SIXTO, 11",
+   "via": "",
+   "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-27",
+   "lat": 41.6592754,
+   "lon": -0.8757241,
+   "precision": "portal",
+   "nombre": "Calle Sixto Celorrio"
+  },
+  {
    "id": "zgz-31507",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1040,7 +1082,7 @@
    "lat": 41.65614406302311,
    "lon": -0.8944732528496669,
    "precision": "aprox",
-   "nombre": "Calle San José M.escriva"
+   "nombre": "Calle San José M. Escrivá"
   },
   {
    "id": "zgz-31003",
@@ -1184,20 +1226,6 @@
    "lon": -0.8945208,
    "precision": "calle",
    "nombre": "Avenida de Madrid"
-  },
-  {
-   "id": "zgz-31634",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CANO MATA ANTONIO, 0",
-   "via": "Entre C/ Rioja y C/ Fray Casanova",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.6571058,
-   "lon": -0.9053442,
-   "precision": "calle",
-   "nombre": "Calle Antonio Cano Mata"
   },
   {
    "id": "zgz-31625",
@@ -1473,59 +1501,17 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-29938464",
+   "id": "dgt-29951867",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido creciente · orientación noroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.69855,
-   "lon": -0.99422395,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29951678",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 246.7–247.1 · sentido decreciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.689747,
-   "lon": -0.9626412,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29938479",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-12",
-   "lat": 41.66131,
-   "lon": -0.92735755,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29951505",
-   "fuente": "DGT",
-   "tipo": "Obras",
    "titulo": "Z-40",
-   "via": "pk 26.0–34.0 · sentido creciente · orientación oeste",
+   "via": "pk 15.0–18.0 · sentido decreciente · orientación norte",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-12",
    "fin": "2026-11-12",
-   "lat": 41.642437,
-   "lon": -0.97030026,
+   "lat": 41.663124,
+   "lon": -0.83910537,
    "precision": "exacta"
   },
   {
@@ -1543,17 +1529,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29951867",
+   "id": "dgt-29951505",
    "fuente": "DGT",
-   "tipo": "Corte",
+   "tipo": "Obras",
    "titulo": "Z-40",
-   "via": "pk 15.0–18.0 · sentido decreciente · orientación norte",
+   "via": "pk 26.0–34.0 · sentido creciente · orientación oeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-12",
    "fin": "2026-11-12",
-   "lat": 41.663124,
-   "lon": -0.83910537,
+   "lat": 41.642437,
+   "lon": -0.97030026,
    "precision": "exacta"
   },
   {
