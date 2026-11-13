@@ -5742,6 +5742,17 @@
    "titulo": "Z-40",
    "via": "pk 26.0–26.2 · sentido decreciente · orientación sureste",
    "visto": "2026-11-13"
+  },
+  "dgt-29994409": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-13",
+   "fuente": "DGT",
+   "id": "dgt-29994409",
+   "inicio": "2026-11-13",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 28.0–30.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-13"
   }
  }
 }
