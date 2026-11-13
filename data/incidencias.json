@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T08:01+01:00",
+ "actualizado": "2026-11-13T09:00+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -406,7 +406,7 @@
   {
    "id": "zgz-31659",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "VIÑAZA (CONDE DE LA), 13",
    "via": "",
    "detalle": "Para conectar la nueva red de drenaje al pozo entre los números 15 y 19",
@@ -957,36 +957,6 @@
    "nombre": "Calle de Eduardo Jesús Taboada"
   },
   {
-   "id": "zgz-31652",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "PEDRO II EL CATOLICO, 9",
-   "via": "",
-   "detalle": "Para reparar la tapa de la arqueta de telecomunicaciones ubicada en el no 65",
-   "inicio": "2026-11-14",
-   "fin": "2026-11-14",
-   "lat": 41.6539323,
-   "lon": -0.9078258,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.65476,
-      -0.907791
-     ],
-     [
-      41.65315,
-      -0.907859
-     ],
-     [
-      41.653105,
-      -0.90786
-     ]
-    ]
-   ],
-   "nombre": "Calle de Pedro II El Católico"
-  },
-  {
    "id": "zgz-31654",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1071,6 +1041,20 @@
    "precision": "portal",
    "barrio": "Peñaflor",
    "nombre": "Calle del Río Gállego"
+  },
+  {
+   "id": "zgz-31661",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "FERNANDO CATOLICO PS, 65",
+   "via": "",
+   "detalle": "Para reparar la tapa de la arqueta de telecomunicaciones ubicada en el no 65",
+   "inicio": "2026-11-14",
+   "fin": "2026-11-14",
+   "lat": 41.6380627,
+   "lon": -0.8972501,
+   "precision": "portal",
+   "nombre": "Calle Fernando Catolico Ps"
   },
   {
    "id": "zgz-31234",
@@ -1389,17 +1373,87 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-29990638",
+   "id": "dgt-29990571",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 243.0–250.0 · sentido creciente · orientación noroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.67964,
-   "lon": -0.8836497,
+   "fin": "2026-11-13",
+   "lat": 41.69855,
+   "lon": -0.99422395,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29991198",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 247.0–247.3 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.682137,
+   "lon": -0.9663947,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29990593",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.66131,
+   "lon": -0.92735755,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29990621",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 298.4–299.0 · sentido decreciente · orientación suroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.735264,
+   "lon": -0.84719473,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29991566",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-23",
+   "via": "pk 263.0–274.0 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.58998,
+   "lon": -0.9479464,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29991552",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 267.0–269.7 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.55767,
+   "lon": -0.97484887,
    "precision": "exacta"
   },
   {
@@ -1417,45 +1471,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29990750",
+   "id": "dgt-29992340",
    "fuente": "DGT",
-   "tipo": "Otros",
+   "tipo": "Corte",
    "titulo": "Z-40",
-   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "via": "pk 26.0–26.2 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.624924,
-   "lon": -0.8490524,
+   "lat": 41.6073,
+   "lon": -0.90865463,
    "precision": "exacta"
   },
   {
-   "id": "dgt-29990806",
+   "id": "dgt-29992679",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 320.0–321.0 · sentido creciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "via": "pk 316.621 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.679913,
-   "lon": -0.89564735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29991139",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.664104,
-   "lon": -0.9398144,
+   "lat": 41.66489,
+   "lon": -0.938775,
    "precision": "exacta"
   }
  ]
