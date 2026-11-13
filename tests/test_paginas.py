@@ -11,6 +11,15 @@ def _cargar_datos():
 
 
 class TestPaginas(unittest.TestCase):
+    def test_iconos_vehiculo_detenido_y_retencion(self):
+        # Vehículo detenido (DGT, tipo Otros) lleva coche; la retención ya no, para no confundirlos
+        self.assertEqual(g.visual({"tipo": "Otros", "causa": "Vehículo detenido"})[0], "🚗")
+        self.assertEqual(g.visual({"tipo": "Retención"})[0], "🚦")
+        self.assertEqual(g.visual({"tipo": "Otros", "causa": "Vehículo averiado"})[0], "⚠️")
+        self.assertEqual(g.visual({"tipo": "Otros"})[0], "⚠️")
+        self.assertEqual(g.visual({"tipo": "Otros", "causa": "Vehículo detenido"})[1], g.TIPOS["Otros"][1])
+        self.assertNotIn("🚗", [e for e, _ in g.TIPOS.values()])
+
     def test_slug(self):
         self.assertEqual(g.slug("Avenida de Valencia"), "avenida-de-valencia")
         self.assertEqual(g.slug("Calle Sádaba"), "calle-sadaba")

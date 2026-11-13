@@ -20,7 +20,18 @@ HISTORIAL = RAIZ / "data/historial_vias.json"
 DIAS_HISTORIAL = 30  # cuánto tiempo se muestran las incidencias ya finalizadas en la página de la vía
 UMBRAL_DIAS = 60  # duración mínima (inicio→fin) para crear página propia de una calle no principal
 TIPOS = {"Corte": ("⛔", "#ff6b5e"), "Obras": ("🚧", "#ffc400"), "Accidente": ("💥", "#ff9a3c"),
-         "Retención": ("🚗", "#e9d27a"), "Suministro": ("💧", "#5ec8f2"), "Otros": ("⚠️", "#c9ced3")}
+         "Retención": ("🚦", "#e9d27a"), "Suministro": ("💧", "#5ec8f2"), "Otros": ("⚠️", "#c9ced3")}
+VEHICULO_DETENIDO = "🚗"  # aviso DGT «Vehículo detenido» (tipo Otros); el tráfico lento (Retención) usa 🚦
+
+
+def visual(i):
+    """(icono, color) de una incidencia: el tipo manda, salvo «Vehículo detenido», que lleva un coche."""
+    e, c = TIPOS.get(i.get("tipo"), TIPOS["Otros"])
+    if re.fullmatch(r"veh[ií]culo detenido", str(i.get("causa") or "").strip(), re.I):
+        e = VEHICULO_DETENIDO
+    return e, c
+
+
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 esc = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 
@@ -270,7 +281,7 @@ def bloque_portada(vias, limite=15, hoy=None):
     filas.sort(key=lambda f: (f[0], f[1]))
     out = ""
     for _, _, i, sl, nom in filas[:limite]:
-        e, _c = TIPOS.get(i["tipo"], TIPOS["Otros"])
+        e, _c = visual(i)
         t = esc(titulo_ficha(i, nom))
         t = f'<a href="/vias/{esc(sl)}.html">{t}</a>' if sl else t
         linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"])] if x)
@@ -556,7 +567,7 @@ def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=(), hoy=None):
     texto = f"<p>{esc(d['texto'])}</p>" if d.get("texto") else ""
     items = ""
     for i in incs:
-        e, c = TIPOS.get(i["tipo"], TIPOS["Otros"])
+        e, c = visual(i)
         aviso = {"calle": "Toda la calle o sin número exacto: ubicación orientativa", "aprox": "Ubicación aproximada"}.get(i.get("precision"), "")
         linea = " · ".join(x for x in [esc(i["tipo"]), esc(i["fuente"]), esc(dur_texto(i)), esc(aviso)] if x)
         est = estado_html(i, hoy)
@@ -569,7 +580,7 @@ def pagina_via(sl, v, d, BASE, hermanas, actualizado, rec=(), hoy=None):
     mapa = ""
     scripts = extra = ""
     if tiene:
-        pts = [{"lat": i["lat"], "lon": i["lon"], "t": i["tipo"], "n": i["titulo"], "tz": i.get("trazado")} for i in incs]
+        pts = [{"lat": i["lat"], "lon": i["lon"], "t": i["tipo"], "e": visual(i)[0], "n": i["titulo"], "tz": i.get("trazado")} for i in incs]
         datos = json.dumps(pts, ensure_ascii=False).replace("</", "<\\/")
         extra = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
         mapa = '<div id="mapa" role="region" aria-label="Mapa de incidencias en esta vía"></div>'
@@ -579,7 +590,7 @@ const TIPOS={json.dumps({k: list(x) for k, x in TIPOS.items()}, ensure_ascii=Fal
 const map=L.map('mapa');
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{maxZoom:19,attribution:'© OpenStreetMap'}}).addTo(map);
 const g=L.featureGroup().addTo(map);
-PTS.forEach(p=>{{const [e,c]=TIPOS[p.t]||TIPOS.Otros;
+PTS.forEach(p=>{{const [e0,c]=TIPOS[p.t]||TIPOS.Otros,e=p.e||e0;
 const m=L.marker([p.lat,p.lon],{{title:p.n,icon:L.divIcon({{className:'',html:'<div class="pin" style="background:'+c+'">'+e+'</div>',iconSize:[30,30],iconAnchor:[15,15]}})}});
 m.bindPopup(Object.assign(document.createElement('strong'),{{textContent:p.n}}));g.addLayer(m);
 if(p.tz)g.addLayer(L.polyline(p.tz,{{color:c,weight:6,opacity:.85}}))}});
@@ -588,7 +599,7 @@ map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
     if rec:
         fil = ""
         for r in rec[:5]:
-            e, c = TIPOS.get(r["tipo"], TIPOS["Otros"])
+            e, c = visual(r)
             fechas = cuando(r)
             fil += (f'<li class="pasada"><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
                     f'<div class="t">{esc(titulo_ficha(r, nombre))}</div>'
