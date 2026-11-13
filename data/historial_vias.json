@@ -3270,6 +3270,17 @@
    "titulo": "AP-68",
    "via": "pk 280.124 · sentido creciente · orientación sureste",
    "visto": "2026-11-13"
+  },
+  "dgt-30022590": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30022590",
+   "inicio": "2026-11-13",
+   "tipo": "Obras",
+   "titulo": "AP-68",
+   "via": "pk 282.639 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-13"
   }
  },
  "avenida-de-madrid": {
@@ -5862,6 +5873,17 @@
    "tipo": "Retención",
    "titulo": "Z-40",
    "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-13"
+  },
+  "dgt-30021963": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30021963",
+   "inicio": "2026-11-13",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 19.3–19.42 · sentido decreciente · orientación noreste",
    "visto": "2026-11-13"
   }
  }
