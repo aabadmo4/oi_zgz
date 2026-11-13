@@ -3112,6 +3112,28 @@
    "titulo": "VS-A-2-C",
    "via": "pk 325.0 · sentido creciente · orientación este",
    "visto": "2026-11-13"
+  },
+  "dgt-30008337": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30008337",
+   "inicio": "2026-11-13",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-13"
+  },
+  "dgt-30009428": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30009428",
+   "inicio": "2026-11-13",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-13"
   }
  },
  "alvarado-pedro-de": {
