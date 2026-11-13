@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T16:01+01:00",
+ "actualizado": "2026-11-13T17:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -1443,73 +1443,31 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-29991198",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 247.0–247.3 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.682137,
-   "lon": -0.9663947,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30012463",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-2",
-   "via": "pk 313.306 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.63727,
-   "lon": -0.96233,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30012884",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 0.583 · sentido creciente · orientación sur",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.65438,
-   "lon": -1.00028,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30012924",
+   "id": "dgt-30015614",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 245.098 · sentido decreciente · orientación sureste",
+   "via": "pk 246.264 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.68243,
-   "lon": -0.94446,
+   "lat": 41.68721,
+   "lon": -0.95699,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30012986",
+   "id": "dgt-30015860",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 244.6–260.0 · ambos sentidos",
+   "titulo": "Z-40",
+   "via": "pk 13.6–34.0 · ambos sentidos",
    "detalle": "",
    "causa": null,
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.680256,
-   "lon": -0.9392483,
+   "lat": 41.676273,
+   "lon": -0.835096,
    "precision": "exacta"
   }
  ]

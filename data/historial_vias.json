@@ -5797,6 +5797,17 @@
    "titulo": "Z-40",
    "via": "pk 28.0–30.0 · sentido decreciente · orientación este",
    "visto": "2026-11-13"
+  },
+  "dgt-30015860": {
+   "detalle": "",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30015860",
+   "inicio": "2026-11-13",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 13.6–34.0 · ambos sentidos",
+   "visto": "2026-11-13"
   }
  }
 }
