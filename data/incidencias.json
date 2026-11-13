@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T20:01+01:00",
+ "actualizado": "2026-11-13T21:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -1443,17 +1443,17 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30020922",
+   "id": "dgt-30023109",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.214 · sentido decreciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 23.65–23.7 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.704746,
-   "lon": -1.006495,
+   "lat": 41.60716,
+   "lon": -0.88143647,
    "precision": "exacta"
   },
   {
@@ -1461,41 +1461,13 @@
    "fuente": "DGT",
    "tipo": "Accidente",
    "titulo": "Z-40",
-   "via": "pk 19.3–19.42 · sentido decreciente · orientación noreste",
+   "via": "pk 19.42–19.522 · sentido decreciente · orientación noreste",
    "detalle": "Accidente",
    "causa": "Accidente",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.63018,
-   "lon": -0.841841,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30022446",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 247.764 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.6929,
-   "lon": -0.97532,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30022590",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "AP-68",
-   "via": "pk 282.639 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.73513,
-   "lon": -1.04054,
+   "lat": 41.6293,
+   "lon": -0.84256965,
    "precision": "exacta"
   }
  ]
