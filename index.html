@@ -232,7 +232,10 @@ aside{border-right:0;border-top:1px solid var(--line)}
 // ---- Publicidad: IDs de AdSense ----
 const ADS={client:'ca-pub-2672664299641705',banner:'3859322059',feed:'9306430712',layout:'-fb+5w+4e-db+86'};
 const PAG=8,MAS=10,PRIMER_ANUNCIO=8,CADA=12,MAX_ANUNCIOS=1;
-const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚗','#e9d27a'],Suministro:['💧','#5ec8f2'],Otros:['⚠️','#c9ced3']};
+const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚦','#e9d27a'],Suministro:['💧','#5ec8f2'],Otros:['⚠️','#c9ced3']};
+const VEHICULO_DETENIDO='🚗'; // aviso DGT «Vehículo detenido» (tipo Otros): coche; el tráfico lento (Retención) usa 🚦
+const esVehiculoDetenido=i=>/^veh[ií]culo detenido$/i.test(String(i&&i.causa||'').trim());
+const visual=i=>{const [e,c]=TIPOS[i.tipo]||TIPOS.Otros;return[esVehiculoDetenido(i)?VEHICULO_DETENIDO:e,c]};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $=id=>document.getElementById(id);
 const map=L.map('mapa').setView([41.6488,-0.8891],12);
@@ -246,7 +249,7 @@ const anunciosLista=[]; // se crean una sola vez y se reutilizan: filtrar no gen
 function anuncioLista(k){if(!anunciosLista[k]){const li=document.createElement('li');li.className='ad-li';li.appendChild(crearAd('feed'));anunciosLista[k]=li}return anunciosLista[k]}
 function fechas(i){if(estado(i).k==='k-fut'&&i.inicio)return i.fin&&i.fin!==i.inicio?`Del ${fCorta(i.inicio,true)} al ${fCorta(i.fin)}`:fCorta(i.inicio);return i.fin?`Hasta ${fCorta(i.fin)}`:i.inicio?`Desde ${fCorta(i.inicio)}`:''}
 function aviso(i){return i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa':i.precision==='aprox'?'Ubicación aproximada':''}
-function icono(t,p,f){const [e,c]=TIPOS[t]||TIPOS.Otros;return L.divIcon({className:'',html:`<div class="pin${p==='calle'||p==='aprox'?' dash':''}${f?' fut':''}" style="background:${c}">${e}</div>`,iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})}
+function icono(i,f){const p=i.precision,[e,c]=visual(i);return L.divIcon({className:'',html:`<div class="pin${p==='calle'||p==='aprox'?' dash':''}${f?' fut':''}" style="background:${c}">${e}</div>`,iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})}
 const MIN_=/^(De|Del|La|Las|Los|El|Y|En)$/;
 function calle(t){const m=String(t||'').match(/^(.*?),\s*(\d+)\s*$/);let n=m?m[2]:'',x=(m?m[1]:String(t||'')).replace(/\(/g,' (').replace(/\s+/g,' ').trim(),pre='';
 const r=x.match(/^(.+?)\s+(AVENIDA DE|CARRETERA|CRT)$/i);if(r){pre=/^av/i.test(r[2])?'Avenida de':'Carretera';x=r[1]}
@@ -262,7 +265,7 @@ if(a&&b&&a===b)return{k:'k-hoy',t:'Solo hoy',r:''};
 if(b===hoy)return{k:'k-hoy',t:'Termina hoy',r:'',p:100};
 if(!b)return{k:'k-nd',t:a?'En curso':'Activa',r:'Sin fecha de fin'};
 const n=Math.round((b-hoy)/D);return{k:'',t:'En curso',r:n===1?'Termina mañana':'Quedan '+dias(n),p:a?Math.max(4,Math.min(100,(hoy-a)/(b-a)*100)):0}}
-function popup(i){const [e,c]=TIPOS[i.tipo]||TIPOS.Otros,{nom:nom0,num}=calle(i.titulo),nom=i.nombre||nom0,st=estado(i),pk=/^pk\b/i.test(i.via||''),
+function popup(i){const [e,c]=visual(i),{nom:nom0,num}=calle(i.titulo),nom=i.nombre||nom0,st=estado(i),pk=/^pk\b/i.test(i.via||''),
 nota=i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa.':i.precision==='aprox'?'Ubicación aproximada.':'',
 anio=new Date().getFullYear(),dosFechas=i.inicio&&i.fin;
 return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tipo">${e} ${esc(i.tipo)}</span><span class="oi-src">${esc(i.fuente)}${i.barrio?' · '+esc(i.barrio):''}</span></div>
@@ -272,8 +275,8 @@ return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tip
 ${dosFechas?`<div class="oi-fe"><span>${fCorta(i.inicio,i.inicio.slice(0,4)==String(anio))}</span><span>${fCorta(i.fin)}</span></div>`:i.fin?`<div class="oi-fe"><span>Hasta ${fCorta(i.fin)}</span></div>`:i.inicio?`<div class="oi-fe"><span>Desde ${fCorta(i.inicio)}</span></div>`:''}</div>
 ${nota?`<div class="oi-pr"><i aria-hidden="true"></i><span>${nota}</span></div>`:''}</div>
 <div class="oi-ac"><a class="oi-b p" href="https://www.google.com/maps/search/?api=1&query=${i.lat},${i.lon}" target="_blank" rel="noopener">📍 Abrir en Maps</a><button type="button" class="oi-b oi-sh" data-id="${esc(i.id)}">🔗 Compartir</button></div></div>`}
-const GANCHO={Corte:'🚫 Mira si te afecta y qué más está cortado hoy en Zaragoza 👇',Obras:'🚧 ¿Pasas por aquí? Mira las obras de hoy en el mapa 👇',Accidente:'🚨 Consulta cómo está en el mapa en tiempo real 👇','Retención':'🚗 Mira el estado del tráfico en el mapa 👇',Suministro:'💧 Comprueba en el mapa si te afecta 👇',Otros:'📍 Mira cómo afecta y qué más hay hoy en Zaragoza 👇'};
-function textoCompartir(i){const [e]=TIPOS[i.tipo]||TIPOS.Otros,c=calle(i.titulo),nom=(i.nombre||c.nom)+(c.num?', '+c.num:'')+(i.barrio?` (${i.barrio})`:''),st=estado(i);
+const GANCHO={Corte:'🚫 Mira si te afecta y qué más está cortado hoy en Zaragoza 👇',Obras:'🚧 ¿Pasas por aquí? Mira las obras de hoy en el mapa 👇',Accidente:'🚨 Consulta cómo está en el mapa en tiempo real 👇','Retención':'🚦 Mira el estado del tráfico en el mapa 👇',Suministro:'💧 Comprueba en el mapa si te afecta 👇',Otros:'📍 Mira cómo afecta y qué más hay hoy en Zaragoza 👇'};
+function textoCompartir(i){const [e]=visual(i),c=calle(i.titulo),nom=(i.nombre||c.nom)+(c.num?', '+c.num:'')+(i.barrio?` (${i.barrio})`:''),st=estado(i);
 let d=String(i.detalle||'').replace(/\s+/g,' ').trim();if(d.length>150)d=d.slice(0,150).replace(/\s+\S*$/,'')+'…';
 const quedan=/^(Quedan|Termina)/.test(st.r)?` (${st.r.charAt(0).toLowerCase()+st.r.slice(1)})`:'';
 const cuando=st.t==='Solo hoy'?'📅 Solo hoy':!i.fin?'':st.k==='k-fin'?`📅 Terminó el ${fCorta(i.fin)}`:st.k==='k-fut'&&i.inicio?`📅 Del ${fCorta(i.inicio,true)} al ${fCorta(i.fin)}`:`📅 Hasta el ${fCorta(i.fin)}${quedan}`;
@@ -296,7 +299,7 @@ const q=plano($('q').value.trim()),f=$('fuente').value,b=map.getBounds();
 filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&(!f||i.fuente===f)&&(!q||plano(`${i.titulo} ${i.nombre||''} ${i.via||''} ${i.detalle||''}`).includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
 capa.clearLayers();marcas.clear();
 filtrados.forEach(i=>{
-const m=L.marker([i.lat,i.lon],{icon:icono(i.tipo,i.precision,estado(i).k==='k-fut'),title:nombreVis(i),zIndexOffset:estado(i).k==='k-fut'?-1000:0}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
+const m=L.marker([i.lat,i.lon],{icon:icono(i,estado(i).k==='k-fut'),title:nombreVis(i),zIndexOffset:estado(i).k==='k-fut'?-1000:0}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
 capa.addLayer(m);
 if(i.trazado)capa.addLayer(L.polyline(i.trazado,{color:(TIPOS[i.tipo]||TIPOS.Otros)[1],weight:6,opacity:.85}));
 marcas.set(i.id,m);
@@ -306,7 +309,7 @@ lista();
 function lista(){
 const ul=$('lista');ul.innerHTML='';
 filtrados.slice(0,limite).forEach((i,n)=>{
-const li=document.createElement('li'),[e,c]=TIPOS[i.tipo]||TIPOS.Otros,st=estado(i),pill=st.t==="En curso"||st.t==="Activa"?'':`<span class="oi-pill ${st.k}">${st.t}</span>`;
+const li=document.createElement('li'),[e,c]=visual(i),st=estado(i),pill=st.t==="En curso"||st.t==="Activa"?'':`<span class="oi-pill ${st.k}">${st.t}</span>`;
 li.innerHTML=`<button type="button" class="it"><span class="ico${st.k==='k-fut'?' fut':''}" style="background:${c}">${e}</span><span><div class="t">${esc(nombreVis(i))}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${pill}${st.k==='k-fut'&&st.r?esc(st.r)+' · ':''}${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
 li.firstChild.onclick=()=>{map.setView([i.lat,i.lon],16);marcas.get(i.id)?.openPopup();if(innerWidth<=760)scrollTo({top:0,behavior:'smooth'})};
 ul.appendChild(li);

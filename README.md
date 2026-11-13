@@ -24,6 +24,25 @@ DGT NAP (DATEX II) ──┘         │                                        
                                                       data/ + config/ ─────────┘    sitemap, robots, llms.txt)
 ```
 
+### Iconos del mapa y del listado
+
+Cada incidencia se dibuja como un círculo de color con un icono. El icono y el color salen de `TIPOS` (en `index.html` y en `scripts/generar_paginas.py`, que deben coincidir: lo comprueba `tests/test_datos.py`).
+
+| Icono | Tipo | Color | Cuándo se usa |
+|---|---|---|---|
+| ⛔ | `Corte` | `#ff6b5e` | Calle o calzada cerrada |
+| 🚧 | `Obras` | `#ffc400` | Obras en la vía pública |
+| 💥 | `Accidente` | `#ff9a3c` | Accidentes |
+| 🚦 | `Retención` | `#e9d27a` | Tráfico lento (`abnormalTrafficType` de la DGT) |
+| 💧 | `Suministro` | `#5ec8f2` | Cortes programados de agua, luz o gas |
+| ⚠️ | `Otros` | `#c9ced3` | Cualquier otra incidencia |
+| 🚗 | `Otros` (`causa` = `Vehículo detenido`) | `#c9ced3` | Aviso de la DGT de vehículo detenido |
+
+- **Vehículo detenido (🚗):** no es un tipo nuevo. Sigue siendo `Otros` (mismo color y mismo filtro), pero se detecta por el campo `causa` y se dibuja con un coche en el mapa, el listado, la ficha, el texto de compartir y las páginas de vías (`visual()` en `generar_paginas.py`; `visual(i)` en `index.html`).
+- **Cambio de icono en `Retención`:** antes usaba 🚗; ahora usa 🚦 para no confundirla con el vehículo detenido. Cambia también en el chip del filtro y en el texto de compartir.
+- **Incidencia que aún no ha empezado** (`Próxima`, con `inicio` posterior a hoy): el icono se muestra con menos intensidad, desaturado y algo transparente (clases `.pin.fut` en el mapa y `.ico.fut` en el listado: `grayscale(.65) brightness(1.08)` y `opacity:.8`), y su marcador queda por debajo del resto. Al llegar la fecha de inicio recupera el color normal.
+- **Borde discontinuo:** la incidencia afecta a toda la calle o su ubicación es orientativa (`precision` = `calle` o `aprox`).
+
 ### Funcionalidades de la web
 
 - **Mapa** (Leaflet + OpenStreetMap) con un marcador por incidencia, con icono y color según el tipo. Un marcador con borde discontinuo indica que afecta a toda la calle o que su ubicación es orientativa.
@@ -64,7 +83,7 @@ El tipo puede ser `Accidente`, `Corte`, `Suministro`, `Obras`, `Retención` u `O
   4. `Retención`, si hay `abnormalTrafficType` (tráfico lento).
   5. Si nada de lo anterior aplica, se usa `tipo_desde_texto()` sobre el texto del registro **ignorando los códigos `*Closures`**. Un carril cerrado sin obras queda como `Otros`.
 
-> **Por qué no se usa solo el texto en la DGT:** las obras llevan casi siempre `laneClosures` (cierre de *un carril*, no de la vía). Buscar «closure» como palabra clave marcaba como `Corte` obras que solo ocupan un carril (N-232, A-68…). Con una incidencia DGT de `Vehículo detenido` ocurre algo parecido: sigue siendo `Otros`, y para distinguirla se usa el campo `causa`.
+> **Por qué no se usa solo el texto en la DGT:** las obras llevan casi siempre `laneClosures` (cierre de *un carril*, no de la vía). Buscar «closure» como palabra clave marcaba como `Corte` obras que solo ocupan un carril (N-232, A-68…). Con una incidencia DGT de `Vehículo detenido` ocurre algo parecido: sigue siendo `Otros`, y para distinguirla (icono 🚗) se usa el campo `causa`.
 
 `Suministro` (💧) agrupa las interrupciones programadas de agua, luz o gas (`Cortes de Agua. Desde las 8 hasta las 18 horas`). Afectan a los edificios de una calle, no al tráfico, y por eso no cuentan como `Corte`. Los cortes de calle (`se corta en el tramo…`, obras de colectores…) siguen siendo `Corte`.
 
