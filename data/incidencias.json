@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T09:01+01:00",
+ "actualizado": "2026-11-13T10:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -1373,6 +1373,34 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
+   "id": "dgt-29990621",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-23",
+   "via": "pk 298.4–299.0 · sentido decreciente · orientación suroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.735264,
+   "lon": -0.84719473,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29990593",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "N-232",
+   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": "2026-11-13",
+   "lat": 41.66131,
+   "lon": -0.92735755,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-29990571",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1401,31 +1429,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29990593",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "N-232",
-   "via": "pk 243.0–250.0 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.66131,
-   "lon": -0.92735755,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29990621",
+   "id": "dgt-29991552",
    "fuente": "DGT",
    "tipo": "Corte",
    "titulo": "A-23",
-   "via": "pk 298.4–299.0 · sentido decreciente · orientación suroeste",
+   "via": "pk 267.0–269.7 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-13",
    "fin": "2026-11-13",
-   "lat": 41.735264,
-   "lon": -0.84719473,
+   "lat": 41.55767,
+   "lon": -0.97484887,
    "precision": "exacta"
   },
   {
@@ -1443,20 +1457,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29991552",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-23",
-   "via": "pk 267.0–269.7 · sentido creciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.55767,
-   "lon": -0.97484887,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-29990748",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1471,31 +1471,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-29992340",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "Z-40",
-   "via": "pk 26.0–26.2 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-13",
-   "fin": null,
-   "lat": 41.6073,
-   "lon": -0.90865463,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-29992679",
+   "id": "dgt-29995785",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 316.621 · sentido creciente · orientación noreste",
+   "titulo": "ZP-5102",
+   "via": "pk 1.579 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.66489,
-   "lon": -0.938775,
+   "lat": 41.74948,
+   "lon": -1.068511,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29996043",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-68",
+   "via": "pk 255.0–255.7 · sentido decreciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.7251,
+   "lon": -1.0421671,
    "precision": "exacta"
   }
  ]
