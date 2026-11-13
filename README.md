@@ -54,9 +54,17 @@ El `id` de la incidencia es `dgt-<id del situationRecord>`, el mismo que usa el 
 
 ### Tipos de incidencia
 
-`tipo_desde_texto()` clasifica cada registro por palabras clave: `Accidente`, `Corte`, `Suministro`, `Obras`, `Retención` u `Otros`.
+El tipo puede ser `Accidente`, `Corte`, `Suministro`, `Obras`, `Retención` u `Otros`, y se calcula de forma distinta según la fuente:
 
-El tipo se calcula por palabras clave del texto: una incidencia DGT de `Vehículo detenido` sigue siendo `Otros`, y para distinguirla se usa el campo `causa`.
+- **Ayuntamiento:** `tipo_desde_texto()` clasifica por palabras clave del texto.
+- **DGT:** `tipo_dgt()` decide por los **campos estructurados** del registro DATEX II, en este orden:
+  1. `Accidente`, si `causeType` es `accident`.
+  2. `Corte`, solo si `roadOrCarriagewayOrLaneManagementType` es `roadClosed` o `carriagewayClosures` (calzada completa cerrada).
+  3. `Obras`, si `causeType` es `roadMaintenance`.
+  4. `Retención`, si hay `abnormalTrafficType` (tráfico lento).
+  5. Si nada de lo anterior aplica, se usa `tipo_desde_texto()` sobre el texto del registro **ignorando los códigos `*Closures`**. Un carril cerrado sin obras queda como `Otros`.
+
+> **Por qué no se usa solo el texto en la DGT:** las obras llevan casi siempre `laneClosures` (cierre de *un carril*, no de la vía). Buscar «closure» como palabra clave marcaba como `Corte` obras que solo ocupan un carril (N-232, A-68…). Con una incidencia DGT de `Vehículo detenido` ocurre algo parecido: sigue siendo `Otros`, y para distinguirla se usa el campo `causa`.
 
 `Suministro` (💧) agrupa las interrupciones programadas de agua, luz o gas (`Cortes de Agua. Desde las 8 hasta las 18 horas`). Afectan a los edificios de una calle, no al tráfico, y por eso no cuentan como `Corte`. Los cortes de calle (`se corta en el tramo…`, obras de colectores…) siguen siendo `Corte`.
 
@@ -161,6 +169,7 @@ El `cron` de GitHub Actions (`schedule: '17 * * * *'`) no funciona de forma fiab
 ├── tests/
 │   ├── test_geocodificacion.py    # Geolocalización de direcciones y barrios rurales
 │   ├── test_clasificacion.py      # Tipos: Corte, Suministro, Obras, Accidente...
+│   ├── test_dgt.py                # Tipo de los registros DGT por campos DATEX II (carril cerrado vs. corte)
 │   ├── test_texto.py              # limpiar_texto, fechas, caja de Zaragoza, norm_local, UTM
 │   ├── test_nombres.py            # Nombre legible de la calle: reglas, OSM y prioridades
 │   ├── test_datos.py              # Contrato de data/incidencias.json (cabecera, licencia, campos) y tipos de la web
@@ -275,7 +284,7 @@ Ojo: `generar_paginas.py` también actualiza `data/vias_conocidas.json` y `data/
 
 Toda ayuda es bienvenida. Algunas ideas basadas en el estado actual del código:
 
-- 🏷️ **Mejorar la clasificación** de tipos (`tipo_desde_texto`) con ejemplos reales que queden como `Otros` o mal clasificados (como los cortes de agua, que antes salían como `Corte`).
+- 🏷️ **Mejorar la clasificación** de tipos (`tipo_desde_texto` para el Ayuntamiento, `tipo_dgt` para la DGT) con ejemplos reales que queden como `Otros` o mal clasificados (como los cortes de agua, que antes salían como `Corte`).
 - 🔤 **Ampliar la normalización de direcciones** (`TIPOS_VIA`, `HONORIFICOS`) con abreviaturas del callejero que fallen.
 - 📍 **Reducir las incidencias `sin_ubicar`** o las de precisión `aprox`, y completar `CENTROS_BARRIO` con los barrios rurales que falten.
 - 📡 **Añadir fuentes** (tranvía, autobús, eventos, otras administraciones).

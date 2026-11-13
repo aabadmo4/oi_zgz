@@ -42,6 +42,27 @@ def tipo_desde_texto(txt):
     return "Otros"
 
 
+def tipo_dgt(rec, xp, crudo=""):
+    """Tipo de un registro DATEX II usando sus campos estructurados, no palabras sueltas del XML.
+    'laneClosures' (un carril cerrado) aparece en casi todas las obras y NO es un corte de la vía:
+    solo 'roadClosed' y 'carriagewayClosures' (calzada completa) cuentan como Corte."""
+    causa = [c.lower() for c in xp(rec, './/*[local-name()="cause"]/*[local-name()="causeType"]/text()')]
+    gestion = [g.lower() for g in xp(rec, './/*[local-name()="roadOrCarriagewayOrLaneManagementType"]/text()')]
+    xsi = (rec.get(XSI) or "").lower()
+    if "accident" in causa or "accident" in xsi:
+        return "Accidente"
+    if {"roadclosed", "carriagewayclosures"} & set(gestion):
+        return "Corte"
+    if "roadmaintenance" in causa or "works" in xsi or "maintenance" in xsi:
+        return "Obras"
+    if "abnormaltraffic" in causa or xp(rec, './/*[local-name()="abnormalTrafficType"]/text()'):
+        return "Retención"
+    # Resto: texto libre, ignorando los códigos de gestión de carriles (laneClosures, intermittentShortTermClosures...)
+    limpio = re.sub(r"\b\w*closures?\b", " ", crudo, flags=re.I)
+    t = tipo_desde_texto(limpio)
+    return "Otros" if t == "Corte" and gestion else t
+
+
 def dia(s):
     return str(s).split("T")[0] if s else None
 
@@ -190,7 +211,7 @@ def fetch_dgt():
         crudo = (rec.get(XSI) or "") + " " + " ".join(xp(rec, './/text()'))
         out.append({
             "id": f"dgt-{rec.get('id', len(out))}", "fuente": "DGT",
-            "tipo": tipo_desde_texto(crudo), "titulo": via, "via": " · ".join(extra),
+            "tipo": tipo_dgt(rec, xp, crudo), "titulo": via, "via": " · ".join(extra),
             "detalle": (" ".join(coment) or causa)[:300], "causa": causa or None,
             "inicio": dia((xp(rec, './/*[local-name()="overallStartTime"]/text()') or [None])[0]),
             "fin": dia((xp(rec, './/*[local-name()="overallEndTime"]/text()') or [None])[0]),
