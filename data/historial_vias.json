@@ -5841,6 +5841,28 @@
    "titulo": "Z-40",
    "via": "pk 13.6–34.0 · ambos sentidos",
    "visto": "2026-11-13"
+  },
+  "dgt-30020183": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30020183",
+   "inicio": "2026-11-13",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 14.7–14.77 · ambos sentidos",
+   "visto": "2026-11-13"
+  },
+  "dgt-30020402": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30020402",
+   "inicio": "2026-11-13",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-13"
   }
  }
 }
