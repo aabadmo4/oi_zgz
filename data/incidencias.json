@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T21:01+01:00",
+ "actualizado": "2026-11-13T22:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 2
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1443,6 +1443,20 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
+   "id": "dgt-30025054",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 13.6–34.0 · ambos sentidos",
+   "detalle": "",
+   "causa": null,
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.676273,
+   "lon": -0.835096,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30023109",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1457,17 +1471,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30021963",
+   "id": "dgt-30025093",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 19.6–19.7 · sentido decreciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.627937,
+   "lon": -0.8435726,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30025385",
    "fuente": "DGT",
    "tipo": "Accidente",
-   "titulo": "Z-40",
-   "via": "pk 19.42–19.522 · sentido decreciente · orientación noreste",
+   "titulo": "A-68",
+   "via": "pk 243.5–243.8 · sentido decreciente · orientación sur",
    "detalle": "Accidente",
    "causa": "Accidente",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.6293,
-   "lon": -0.84256965,
+   "lat": 41.67485,
+   "lon": -0.92785454,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30025455",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 243.571 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.675205,
+   "lon": -0.928761,
    "precision": "exacta"
   }
  ]
