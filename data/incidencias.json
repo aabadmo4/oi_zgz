@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-13T23:39+01:00",
+ "actualizado": "2026-11-14T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 77
+   "n": 63
   },
   "dgt": {
    "ok": true,
-   "n": 4
+   "n": 6
   }
  },
  "sin_ubicar": 0,
@@ -312,70 +312,6 @@
    "nombre": "Calle Sádaba"
   },
   {
-   "id": "zgz-31636",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "TARAZONA, 19",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.6504107,
-   "lon": -0.9087118,
-   "precision": "portal",
-   "nombre": "Calle de Tarazona"
-  },
-  {
-   "id": "zgz-31637",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "LOZANO MONZON R.(DR.), 3",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 18 horas",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.6411668,
-   "lon": -0.8885487,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.64165,
-      -0.888052
-     ],
-     [
-      41.641631,
-      -0.888067
-     ],
-     [
-      41.64161,
-      -0.888085
-     ],
-     [
-      41.641593,
-      -0.888103
-     ],
-     [
-      41.641548,
-      -0.888152
-     ],
-     [
-      41.64077,
-      -0.888961
-     ],
-     [
-      41.640736,
-      -0.888997
-     ],
-     [
-      41.640685,
-      -0.889048
-     ]
-    ]
-   ],
-   "nombre": "Calle Doctor Lozano Monzón"
-  },
-  {
    "id": "zgz-31592",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -562,34 +498,6 @@
    "nombre": "Calle Doctor Iranzo"
   },
   {
-   "id": "zgz-31557",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CASANOVA JOSE (FRAY), 5",
-   "via": "",
-   "detalle": "Para realizar una canalización eléctrica",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-13",
-   "lat": 41.655763,
-   "lon": -0.904432,
-   "precision": "portal",
-   "nombre": "Calle de Fray José Casanova"
-  },
-  {
-   "id": "zgz-31475",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "CELORRIO SIXTO, 11",
-   "via": "A la altura de Valle de Zuriza",
-   "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como primera fase para renovar un ramal de saneamiento que cruza la vía",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-13",
-   "lat": 41.6592754,
-   "lon": -0.8757241,
-   "precision": "portal",
-   "nombre": "Calle Sixto Celorrio"
-  },
-  {
    "id": "zgz-31425",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -644,81 +552,6 @@
    "lon": -0.8794143,
    "precision": "portal",
    "nombre": "Calle Palencia"
-  },
-  {
-   "id": "zgz-31633",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "JOTA AVENIDA DE LA, 25",
-   "via": "Del n.º 25 al n.º 47, ambos incluidos",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.6609927,
-   "lon": -0.8608783,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.660721,
-      -0.86217
-     ],
-     [
-      41.660748,
-      -0.862048
-     ],
-     [
-      41.660867,
-      -0.861472
-     ],
-     [
-      41.660907,
-      -0.861282
-     ],
-     [
-      41.661146,
-      -0.860152
-     ],
-     [
-      41.661235,
-      -0.859739
-     ],
-     [
-      41.661269,
-      -0.859587
-     ]
-    ]
-   ],
-   "nombre": "Avenida de la Jota"
-  },
-  {
-   "id": "zgz-31635",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CARDERERA MARIANO, 14",
-   "via": "Entre C/ Barcelona y C/ Daroca",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-13",
-   "lat": 41.650755,
-   "lon": -0.9088601,
-   "precision": "portal",
-   "nombre": "Calle de Mariano Carderera"
-  },
-  {
-   "id": "zgz-30596",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ALBARDIN CRT, 6",
-   "via": "",
-   "detalle": "Para realizar una cámara en la ya finalizada red de abastecimiento para el Centro de Datos de Amazon",
-   "inicio": "2026-08-22",
-   "fin": "2026-11-13",
-   "lat": 41.5886597,
-   "lon": -0.8127982,
-   "precision": "portal",
-   "barrio": "Cartuja Baja",
-   "nombre": "Calle Albardín"
   },
   {
    "id": "zgz-31655",
@@ -792,20 +625,6 @@
    "nombre": "Calle Consejo de Ciento"
   },
   {
-   "id": "zgz-31616",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "INDEPENDENCIA PS, 2",
-   "via": "",
-   "detalle": "Para la instalación de la iluminación navideña, del 11 al 13 de noviembre entre la 01:00 y las 05:00 horas se cortará la vía.",
-   "inicio": "2026-11-11",
-   "fin": "2026-11-13",
-   "lat": 41.6518606,
-   "lon": -0.8815444,
-   "precision": "portal",
-   "nombre": "Calle Independencia Ps"
-  },
-  {
    "id": "zgz-31617",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -834,44 +653,6 @@
    "nombre": "Cuarta Avenida"
   },
   {
-   "id": "zgz-31474",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "HISPANIDAD RONDA, 10",
-   "via": "Puentes sobre la A2 y sobre el ferrocarril (sobre Calle Escatrón)",
-   "detalle": "Para reparar las juntas de dilatación",
-   "inicio": "2026-11-03",
-   "fin": "2026-11-13",
-   "lat": 41.6306746,
-   "lon": -0.9017236,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.630182,
-      -0.900771
-     ],
-     [
-      41.630686,
-      -0.901745
-     ],
-     [
-      41.630812,
-      -0.902001
-     ],
-     [
-      41.631022,
-      -0.902435
-     ],
-     [
-      41.631143,
-      -0.902688
-     ]
-    ]
-   ],
-   "nombre": "Ronda de la Hispanidad"
-  },
-  {
    "id": "zgz-31536",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -898,21 +679,6 @@
    "lon": -0.8596966767022661,
    "precision": "aprox",
    "nombre": "Calle Alcalde Francisco Caballero"
-  },
-  {
-   "id": "zgz-31506",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ALFOCEA CAMINO DE MNZ, 4",
-   "via": "",
-   "detalle": "Para reparar una toma de agua a la altura de la Calle Castelar",
-   "inicio": "2026-11-05",
-   "fin": "2026-11-13",
-   "lat": 41.702037,
-   "lon": -0.9654,
-   "precision": "portal",
-   "barrio": "Monzalbarba",
-   "nombre": "Camino de Alfocea"
   },
   {
    "id": "zgz-31595",
@@ -1042,21 +808,6 @@
    "nombre": "Calle Tomás Zumalacárregui"
   },
   {
-   "id": "zgz-31560",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "GALLEGO RIO PÑF, 11",
-   "via": "",
-   "detalle": "Continuando con el Proyecto de urbanización F-71-7",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-13",
-   "lat": 41.760916,
-   "lon": -0.7987939,
-   "precision": "portal",
-   "barrio": "Peñaflor",
-   "nombre": "Calle del Río Gállego"
-  },
-  {
    "id": "zgz-31661",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1099,21 +850,6 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "zgz-31561",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "PILON CN. EL MRL, 19",
-   "via": "",
-   "detalle": "Para renovar el sumidero corrido ubicado entre el Anillo Verde y la Calle Íñigo Manuel Marín Sancho",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-13",
-   "lat": 41.658573,
-   "lon": -0.925555,
-   "precision": "portal",
-   "barrio": "Miralbueno",
-   "nombre": "Camino del Pilón"
-  },
-  {
    "id": "zgz-31563",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1128,18 +864,18 @@
    "nombre": "Calle de Tomás A. Edison"
   },
   {
-   "id": "zgz-31562",
+   "id": "zgz-31558",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
-   "titulo": "MADRID AVENIDA DE, 9",
+   "titulo": "ALIERTA AV. CESAREO, 11",
    "via": "",
-   "detalle": "Continuando con la canalización eléctrica y como segunda fase",
+   "detalle": "Para realizar una nueva acometida de vertido",
    "inicio": "2026-11-09",
    "fin": "2026-11-13",
-   "lat": 41.6559199,
-   "lon": -0.8945208,
+   "lat": 41.6456226,
+   "lon": -0.8779879,
    "precision": "calle",
-   "nombre": "Avenida de Madrid"
+   "nombre": "Avenida de Cesáreo Alierta"
   },
   {
    "id": "zgz-31663",
@@ -1351,20 +1087,6 @@
    "nombre": "Calle de Vistabella"
   },
   {
-   "id": "zgz-31465",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "GUERRERO MARIA, 13",
-   "via": "Frente al nº 22-24",
-   "detalle": "Continuando con la reparación de la fuga de agua que comenzó con carácter de urgencia.",
-   "inicio": "2026-10-28",
-   "fin": "2026-11-13",
-   "lat": 41.64351,
-   "lon": -0.9099002,
-   "precision": "portal",
-   "nombre": "Calle de María Guerrero"
-  },
-  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1377,56 +1099,6 @@
    "lon": -0.8946807,
    "precision": "portal",
    "nombre": "Avenida de Valencia"
-  },
-  {
-   "id": "zgz-31565",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "REBOLLEDO RODRIGO DE, 4",
-   "via": "",
-   "detalle": "Continuando con la canalización eléctrica",
-   "inicio": "2026-11-07",
-   "fin": "2026-11-13",
-   "lat": 41.6459811,
-   "lon": -0.8626608,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.645831,
-      -0.86115
-     ],
-     [
-      41.645872,
-      -0.861536
-     ],
-     [
-      41.645901,
-      -0.861835
-     ],
-     [
-      41.64591,
-      -0.861949
-     ],
-     [
-      41.645919,
-      -0.862046
-     ],
-     [
-      41.646021,
-      -0.863055
-     ],
-     [
-      41.64612,
-      -0.864067
-     ],
-     [
-      41.646131,
-      -0.864172
-     ]
-    ]
-   ],
-   "nombre": "Calle Rodrigo Rebolledo"
   },
   {
    "id": "zgz-31651",
@@ -1485,17 +1157,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30026666",
+   "id": "dgt-30026823",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "N-232",
-   "via": "pk 248.657 · sentido decreciente · orientación este",
+   "via": "pk 246.473 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.69086,
-   "lon": -0.98255,
+   "lat": 41.67888,
+   "lon": -0.96188,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30026834",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 250.021 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.69694,
+   "lon": -0.99733,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30026909",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 243.573 · sentido creciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.67539,
+   "lon": -0.92848,
    "precision": "exacta"
   }
  ]
