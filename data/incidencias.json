@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13T06:01+01:00",
+ "actualizado": "2026-11-13T07:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 1
+   "n": 2
   }
  },
  "sin_ubicar": 0,
@@ -1389,17 +1389,31 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-29988710",
+   "id": "dgt-29990191",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 313.0–330.0 · sentido creciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-12",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-13",
    "fin": null,
-   "lat": 41.661945,
-   "lon": -0.79196954,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-29990193",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-13",
+   "fin": null,
+   "lat": 41.624924,
+   "lon": -0.8490524,
    "precision": "exacta"
   }
  ]
