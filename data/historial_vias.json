@@ -3259,6 +3259,17 @@
    "titulo": "AP-68",
    "via": "pk 291.0–291.57 · sentido decreciente · orientación noroeste",
    "visto": "2026-11-11"
+  },
+  "dgt-30017687": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30017687",
+   "inicio": "2026-11-13",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 280.124 · sentido creciente · orientación sureste",
+   "visto": "2026-11-13"
   }
  },
  "avenida-de-madrid": {
