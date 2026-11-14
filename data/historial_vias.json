@@ -6017,6 +6017,39 @@
    "titulo": "Z-40",
    "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
    "visto": "2026-11-14"
+  },
+  "dgt-30042892": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30042892",
+   "inicio": "2026-11-14",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 24.0–25.5 · sentido decreciente · orientación sureste",
+   "visto": "2026-11-14"
+  },
+  "dgt-30042913": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30042913",
+   "inicio": "2026-11-14",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 22.0–23.0 · sentido creciente · orientación suroeste",
+   "visto": "2026-11-14"
+  },
+  "dgt-30043272": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30043272",
+   "inicio": "2026-11-14",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 22.46 · sentido creciente · orientación suroeste",
+   "visto": "2026-11-14"
   }
  }
 }
