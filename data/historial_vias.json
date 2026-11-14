@@ -6006,6 +6006,17 @@
    "titulo": "Z-40",
    "via": "pk 17.191 · sentido creciente · orientación sureste",
    "visto": "2026-11-14"
+  },
+  "dgt-30040759": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30040759",
+   "inicio": "2026-11-14",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-14"
   }
  }
 }
