@@ -80,6 +80,20 @@ input[type=search]{flex:1}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{flex:none;font:inherit;font-size:14px;padding:5px 10px;border:1.5px solid var(--line);border-radius:99px;background:transparent;color:var(--ink);cursor:pointer}
 .chip:disabled{opacity:.45;cursor:default}
+.qf{font:inherit;font-size:13px;padding:1px 9px;border:1px solid var(--line);border-radius:99px;background:transparent;color:var(--ink);cursor:pointer}
+.leaflet-control.mc{position:relative}
+.mc-bar{background:#fff;border:2px solid rgba(0,0,0,.2);border-radius:6px;overflow:hidden}
+.mc-btn{all:unset;box-sizing:border-box;width:40px;height:40px;display:grid;place-items:center;background:#fff;color:#1d2024;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+.mc-btn+.mc-btn{border-top:1px solid #ccc}
+.mc-btn:hover{background:#f4f4f4}
+.mc-btn.on{background:var(--sign)}
+.mc-btn.on::after{content:"";position:absolute;top:4px;right:4px;width:10px;height:10px;border-radius:50%;background:#e5392b;border:2px solid #fff}
+.mc-btn:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+.mc-panel .chip:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.mc-panel{position:absolute;top:0;right:calc(100% + 8px);width:200px;display:grid;gap:6px;padding:10px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 6px 24px #0006}
+.mc-panel[hidden]{display:none}
+.mc-panel b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.mc-panel .chip{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;box-sizing:border-box;text-align:left;font-size:15px;padding:8px 12px}
 .chip small{font-size:12px;opacity:.7;margin-left:2px}
 .chip[aria-pressed=true]{background:var(--sign);color:#1d2024;border-color:#1d2024;font-weight:600}
 .chip[aria-pressed=true] small{opacity:.8}
@@ -204,7 +218,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 </ul>
 
 <h3>Cómo usar el mapa y el listado</h3>
-<p>Filtra por tipo de incidencia, elige la fuente (Ayuntamiento o DGT) o escribe el nombre de tu calle en el buscador. Si marcas «Solo lo que se ve en el mapa», el listado mostrará únicamente lo que aparece en la zona del mapa que estás viendo. Al pulsar una incidencia, el mapa se centra en ella y abre su ficha. Un marcador con borde discontinuo indica que la incidencia afecta a toda la calle o que su ubicación es orientativa.</p>
+<p>Filtra por tipo de incidencia, por estado con el botón del reloj del mapa (en curso, próximas o que terminan pronto), elige la fuente (Ayuntamiento o DGT) o escribe el nombre de tu calle en el buscador. Si marcas «Solo lo que se ve en el mapa», el listado mostrará únicamente lo que aparece en la zona del mapa que estás viendo. Al pulsar una incidencia, el mapa se centra en ella y abre su ficha. Un marcador con borde discontinuo indica que la incidencia afecta a toda la calle o que su ubicación es orientativa.</p>
 
 <h3>Zonas y vías habituales</h3>
 <p>Es frecuente encontrar avisos en el centro (Paseo de la Independencia, Paseo de Sagasta, Plaza de España, Coso), en grandes avenidas como Avenida de Madrid, Avenida de Navarra, Avenida de Cataluña o Avenida de Valencia, y en las rondas y accesos: Ronda de la Hispanidad, Ronda Norte, Z-30, A-2 y AP-68. Usa el buscador para comprobar rápidamente cualquier otra calle o barrio.</p>
@@ -231,6 +245,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <script>
 // ---- Publicidad: IDs de AdSense ----
 const ADS={client:'ca-pub-2672664299641705',banner:'3859322059',feed:'9306430712',layout:'-fb+5w+4e-db+86'};
+const PRONTO_DIAS=7; // «Terminan pronto»: fin dentro de los próximos 7 días (incluye hoy)
 const PAG=8,MAS=10,PRIMER_ANUNCIO=8,CADA=12,MAX_ANUNCIOS=1;
 const TIPOS={Corte:['⛔','#ff6b5e'],Obras:['🚧','#ffc400'],Accidente:['💥','#ff9a3c'],'Retención':['🚦','#e9d27a'],Suministro:['💧','#5ec8f2'],Otros:['⚠️','#c9ced3']};
 const VEHICULO_DETENIDO='🚗'; // aviso DGT «Vehículo detenido» (tipo Otros): coche; el tráfico lento (Retención) usa 🚦
@@ -241,7 +256,7 @@ const $=id=>document.getElementById(id);
 const map=L.map('mapa').setView([41.6488,-0.8891],12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
 const capa=L.layerGroup().addTo(map);
-let datos=[],marcas=new Map(),tipoSel='',visSolo=false,filtrados=[],limite=PAG;
+let datos=[],marcas=new Map(),tipoSel='',estadoSel='',visSolo=false,filtrados=[],limite=PAG;
 function crearAd(t){const d=document.createElement('div');d.className='ad';
 d.innerHTML=`<small>Publicidad</small><ins class="adsbygoogle" style="display:block" data-ad-client="${ADS.client}" data-ad-slot="${ADS[t]}" ${t==='feed'?`data-ad-format="fluid" data-ad-layout-key="${ADS.layout}"`:'data-ad-format="auto" data-full-width-responsive="true"'}></ins>`;return d}
 function pushAd(d){if(d.dataset.p)return;d.dataset.p=1;try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}}
@@ -265,6 +280,11 @@ if(a&&b&&a===b)return{k:'k-hoy',t:'Solo hoy',r:''};
 if(b===hoy)return{k:'k-hoy',t:'Termina hoy',r:'',p:100};
 if(!b)return{k:'k-nd',t:a?'En curso':'Activa',r:'Sin fecha de fin'};
 const n=Math.round((b-hoy)/D);return{k:'',t:'En curso',r:n===1?'Termina mañana':'Quedan '+dias(n),p:a?Math.max(4,Math.min(100,(hoy-a)/(b-a)*100)):0}}
+const ESTADOS=[['curso','En curso'],['fut','Próximas'],['pronto','Terminan pronto']];
+const hoyUTC=()=>{const h=new Date();return Date.UTC(h.getFullYear(),h.getMonth(),h.getDate())};
+// «En curso» incluye lo que termina pronto y lo que no tiene fecha de fin; las finalizadas solo se ven con «Todas»
+function enEstado(i,g){if(!g)return true;const k=estado(i).k;if(k==='k-fin')return false;if(g==='fut')return k==='k-fut';if(k==='k-fut')return false;
+if(g==='pronto')return !!i.fin&&Math.round((dUTC(i.fin)-hoyUTC())/864e5)<=PRONTO_DIAS;return true}
 function popup(i){const [e,c]=visual(i),{nom:nom0,num}=calle(i.titulo),nom=i.nombre||nom0,st=estado(i),pk=/^pk\b/i.test(i.via||''),
 nota=i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa.':i.precision==='aprox'?'Ubicación aproximada.':'',
 anio=new Date().getFullYear(),dosFechas=i.inicio&&i.fin;
@@ -296,7 +316,7 @@ map.on('popupclose',()=>{try{history.replaceState(null,'',location.pathname+loca
 function pintar(){
 limite=PAG;
 const q=plano($('q').value.trim()),f=$('fuente').value,b=map.getBounds();
-filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&(!f||i.fuente===f)&&(!q||plano(`${i.titulo} ${i.nombre||''} ${i.via||''} ${i.detalle||''}`).includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
+filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&enEstado(i,estadoSel)&&(!f||i.fuente===f)&&(!q||plano(`${i.titulo} ${i.nombre||''} ${i.via||''} ${i.detalle||''}`).includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
 capa.clearLayers();marcas.clear();
 filtrados.forEach(i=>{
 const m=L.marker([i.lat,i.lon],{icon:icono(i,estado(i).k==='k-fut'),title:nombreVis(i),zIndexOffset:estado(i).k==='k-fut'?-1000:0}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
@@ -318,12 +338,34 @@ if(k>=0&&k<MAX_ANUNCIOS){const a=anuncioLista(k);ul.appendChild(a);pushAd(a.firs
 });
 const resto=filtrados.length-limite;
 if(resto>0){const li=document.createElement('li');li.className='mas';li.innerHTML=`<button type="button">Mostrar más (${resto})</button>`;li.firstChild.onclick=()=>{limite+=MAS;lista()};ul.appendChild(li)}
-$('cuenta').textContent=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.';
+{const t=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.',e=estadoSel&&ESTADOS.find(x=>x[0]===estadoSel);
+$('cuenta').innerHTML=esc(t)+(e?` · <button type="button" class="qf" aria-label="Quitar filtro: ${esc(e[1])}">${esc(e[1])} ✕</button>`:'')}
 }
 function chips(){const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);
 const b=(t,txt,n)=>`<button type="button" class="chip" aria-pressed="${tipoSel===t}" data-t="${t}"${n===0&&tipoSel!==t?' disabled':''}>${tipoSel===t?'✓ ':''}${txt}<small>${n}</small></button>`;
-$('chips').innerHTML=b('','Todas',datos.length)+Object.entries(TIPOS).map(([t,[e]])=>b(t,`${e} ${t}`,c[t]||0)).join('')}
+$('chips').innerHTML=b('','Todas',datos.length)+Object.entries(TIPOS).map(([t,[e]])=>b(t,`${e} ${t}`,c[t]||0)).join('');
+estadosUI()}
 $('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;tipoSel=b.dataset.t===tipoSel?'':b.dataset.t;chips();pintar()};
+// ---- Control del mapa (arriba a la derecha): filtro por estado ----
+let estBtn,estPanel;
+const IC_RELOJ='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>';
+const abrirEst=ab=>{estPanel.hidden=!ab;estBtn.setAttribute('aria-expanded',ab)};
+function estadosUI(){if(!estPanel)return;const be=([g,t])=>{const n=datos.filter(i=>enEstado(i,g)).length;return`<button type="button" class="chip" aria-pressed="${estadoSel===g}" data-e="${g}"${n===0&&estadoSel!==g?' disabled':''}><span>${estadoSel===g?'✓ ':''}${t}</span><small>${n}</small></button>`};
+estPanel.innerHTML='<b>Estado</b>'+ESTADOS.map(be).join('');
+const e=ESTADOS.find(x=>x[0]===estadoSel);estBtn.classList.toggle('on',!!e);
+estBtn.setAttribute('aria-label',e?`Filtrar por estado. Activo: ${e[1]}`:'Filtrar por estado');estBtn.title=e?`Estado: ${e[1]}`:'Filtrar por estado'}
+const ctlEst=L.control({position:'topright'});
+ctlEst.onAdd=()=>{const c=L.DomUtil.create('div','leaflet-control mc'),bar=L.DomUtil.create('div','mc-bar',c);
+estBtn=L.DomUtil.create('button','mc-btn',bar);estBtn.type='button';estBtn.innerHTML=IC_RELOJ;estBtn.setAttribute('aria-haspopup','true');estBtn.setAttribute('aria-controls','estPanel');estBtn.setAttribute('aria-expanded','false');
+estPanel=L.DomUtil.create('div','mc-panel',c);estPanel.id='estPanel';estPanel.hidden=true;
+L.DomEvent.disableClickPropagation(c);L.DomEvent.disableScrollPropagation(c);
+estBtn.onclick=()=>abrirEst(estPanel.hidden);
+estPanel.onclick=e=>{const b=e.target.closest('.chip');if(!b)return;estadoSel=b.dataset.e===estadoSel?'':b.dataset.e;chips();pintar();abrirEst(false)};
+document.addEventListener('click',e=>{if(!c.contains(e.target)&&!estPanel.hidden)abrirEst(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!estPanel.hidden){abrirEst(false);estBtn.focus()}});
+return c};
+ctlEst.addTo(map);
+$('cuenta').onclick=e=>{if(e.target.closest('.qf')){estadoSel='';chips();pintar()}};
 $('vis').onchange=e=>{visSolo=e.target.checked;pintar()};
 chips();
 ['q','fuente'].forEach(id=>$(id).addEventListener('input',pintar));
