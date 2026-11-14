@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14T11:52+01:00",
+ "actualizado": "2026-11-14T12:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -1140,20 +1140,6 @@
    "fin": null,
    "lat": 41.61006,
    "lon": -0.87491894,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30032815",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-120",
-   "via": "pk 2.415 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-14",
-   "fin": null,
-   "lat": 41.639084,
-   "lon": -0.992743,
    "precision": "exacta"
   },
   {
