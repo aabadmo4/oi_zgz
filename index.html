@@ -92,6 +92,12 @@ input[type=search]{flex:1}
 .mc-panel .chip:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .mc-panel{position:absolute;top:0;right:calc(100% + 8px);width:200px;display:grid;gap:6px;padding:10px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 6px 24px #0006}
 .mc-panel[hidden]{display:none}
+.mc-panel{max-width:calc(100vw - 120px)}
+.mc-panel.lg-p{width:250px}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}
+.lg1{display:grid;gap:8px;margin-top:4px;padding-top:10px;border-top:1px solid var(--line)}
+.lg-f{display:flex;align-items:center;gap:7px;font-size:13px;line-height:1.2}
+.mc-panel .pin{width:24px;height:24px;font-size:13px;box-shadow:none;flex:none}
 .mc-panel b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
 .mc-panel .chip{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;box-sizing:border-box;text-align:left;font-size:15px;padding:8px 12px}
 .chip small{font-size:12px;opacity:.7;margin-left:2px}
@@ -282,7 +288,7 @@ if(!b)return{k:'k-nd',t:a?'En curso':'Activa',r:'Sin fecha de fin'};
 const n=Math.round((b-hoy)/D);return{k:'',t:'En curso',r:n===1?'Termina mañana':'Quedan '+dias(n),p:a?Math.max(4,Math.min(100,(hoy-a)/(b-a)*100)):0}}
 const ESTADOS=[['curso','En curso'],['fut','Próximas'],['pronto','Terminan pronto']];
 const hoyUTC=()=>{const h=new Date();return Date.UTC(h.getFullYear(),h.getMonth(),h.getDate())};
-// «En curso» incluye lo que termina pronto y lo que no tiene fecha de fin; las finalizadas solo se ven con «Todas»
+// «En curso» incluye lo que termina pronto y lo que no tiene fecha de fin; las finalizadas solo se ven sin estado seleccionado
 function enEstado(i,g){if(!g)return true;const k=estado(i).k;if(k==='k-fin')return false;if(g==='fut')return k==='k-fut';if(k==='k-fut')return false;
 if(g==='pronto')return !!i.fin&&Math.round((dUTC(i.fin)-hoyUTC())/864e5)<=PRONTO_DIAS;return true}
 function popup(i){const [e,c]=visual(i),{nom:nom0,num}=calle(i.titulo),nom=i.nombre||nom0,st=estado(i),pk=/^pk\b/i.test(i.via||''),
@@ -346,25 +352,31 @@ const b=(t,txt,n)=>`<button type="button" class="chip" aria-pressed="${tipoSel==
 $('chips').innerHTML=b('','Todas',datos.length)+Object.entries(TIPOS).map(([t,[e]])=>b(t,`${e} ${t}`,c[t]||0)).join('');
 estadosUI()}
 $('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;tipoSel=b.dataset.t===tipoSel?'':b.dataset.t;chips();pintar()};
-// ---- Control del mapa (arriba a la derecha): filtro por estado ----
-let estBtn,estPanel;
-const IC_RELOJ='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>';
-const abrirEst=ab=>{estPanel.hidden=!ab;estBtn.setAttribute('aria-expanded',ab)};
-function estadosUI(){if(!estPanel)return;const be=([g,t])=>{const n=datos.filter(i=>enEstado(i,g)).length;return`<button type="button" class="chip" aria-pressed="${estadoSel===g}" data-e="${g}"${n===0&&estadoSel!==g?' disabled':''}><span>${estadoSel===g?'✓ ':''}${t}</span><small>${n}</small></button>`};
-estPanel.innerHTML='<b>Estado</b>'+ESTADOS.map(be).join('');
-const e=ESTADOS.find(x=>x[0]===estadoSel);estBtn.classList.toggle('on',!!e);
-estBtn.setAttribute('aria-label',e?`Filtrar por estado. Activo: ${e[1]}`:'Filtrar por estado');estBtn.title=e?`Estado: ${e[1]}`:'Filtrar por estado'}
-const ctlEst=L.control({position:'topright'});
-ctlEst.onAdd=()=>{const c=L.DomUtil.create('div','leaflet-control mc'),bar=L.DomUtil.create('div','mc-bar',c);
-estBtn=L.DomUtil.create('button','mc-btn',bar);estBtn.type='button';estBtn.innerHTML=IC_RELOJ;estBtn.setAttribute('aria-haspopup','true');estBtn.setAttribute('aria-controls','estPanel');estBtn.setAttribute('aria-expanded','false');
-estPanel=L.DomUtil.create('div','mc-panel',c);estPanel.id='estPanel';estPanel.hidden=true;
+// ---- Controles del mapa (arriba a la derecha): filtro por estado y leyenda ----
+const MC={}; // clave -> {btn,panel}
+const svgIc=d=>`<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">${d}</svg>`;
+const IC_RELOJ=svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'),IC_INFO=svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.01"/>');
+function abrirMC(k){Object.entries(MC).forEach(([n,{btn,panel}])=>{const ab=n===k&&panel.hidden;panel.hidden=!ab;btn.setAttribute('aria-expanded',ab)})}
+function estadosUI(){if(!MC.estado)return;const {btn,panel}=MC.estado,be=([g,t])=>{const n=datos.filter(i=>enEstado(i,g)).length;return`<button type="button" class="chip" aria-pressed="${estadoSel===g}" data-e="${g}"${n===0&&estadoSel!==g?' disabled':''}><span>${estadoSel===g?'✓ ':''}${t}</span><small>${n}</small></button>`};
+panel.innerHTML='<b>Estado</b>'+ESTADOS.map(be).join('');
+const e=ESTADOS.find(x=>x[0]===estadoSel);btn.classList.toggle('on',!!e);
+btn.setAttribute('aria-label',e?`Filtrar por estado. Activo: ${e[1]}`:'Filtrar por estado');btn.title=e?`Estado: ${e[1]}`:'Filtrar por estado'}
+// La leyenda sale de TIPOS: un tipo nuevo aparece solo. «Vehículo detenido» es un caso aparte (tipo Otros con coche).
+function leyendaHTML(){const f=(e,c,t,x='')=>`<span class="lg-f"><i class="pin${x}" style="background:${c}" aria-hidden="true">${e}</i>${t}</span>`,[eo,co]=TIPOS.Otros;
+return'<b>Leyenda</b><div class="lg">'+Object.entries(TIPOS).filter(([t])=>t!=='Otros').map(([t,[e,c]])=>f(e,c,t)).join('')+f(VEHICULO_DETENIDO,co,'Vehículo detenido')+f(eo,co,'Otros')+'</div>'+
+'<div class="lg1">'+f(TIPOS.Obras[0],TIPOS.Obras[1],'Atenuado: aún no ha empezado',' fut')+f(eo,co,'Borde discontinuo: toda la calle o ubicación orientativa',' dash')+'</div>'}
+const ctlMC=L.control({position:'topright'});
+ctlMC.onAdd=()=>{const c=L.DomUtil.create('div','leaflet-control mc'),bar=L.DomUtil.create('div','mc-bar',c);
+const nuevo=(k,ic,etiqueta,cls)=>{const btn=L.DomUtil.create('button','mc-btn',bar);btn.type='button';btn.innerHTML=ic;btn.setAttribute('aria-label',etiqueta);btn.title=etiqueta;btn.setAttribute('aria-haspopup','true');btn.setAttribute('aria-controls','mc-'+k);btn.setAttribute('aria-expanded','false');
+const panel=L.DomUtil.create('div','mc-panel'+(cls?' '+cls:''),c);panel.id='mc-'+k;panel.hidden=true;panel.setAttribute('role','group');panel.setAttribute('aria-label',etiqueta);
+btn.onclick=()=>abrirMC(k);MC[k]={btn,panel};return MC[k]};
+nuevo('estado',IC_RELOJ,'Filtrar por estado').panel.onclick=e=>{const b=e.target.closest('.chip');if(!b)return;estadoSel=b.dataset.e===estadoSel?'':b.dataset.e;chips();pintar();abrirMC('')};
+nuevo('leyenda',IC_INFO,'Leyenda de iconos','lg-p').panel.innerHTML=leyendaHTML();
 L.DomEvent.disableClickPropagation(c);L.DomEvent.disableScrollPropagation(c);
-estBtn.onclick=()=>abrirEst(estPanel.hidden);
-estPanel.onclick=e=>{const b=e.target.closest('.chip');if(!b)return;estadoSel=b.dataset.e===estadoSel?'':b.dataset.e;chips();pintar();abrirEst(false)};
-document.addEventListener('click',e=>{if(!c.contains(e.target)&&!estPanel.hidden)abrirEst(false)});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!estPanel.hidden){abrirEst(false);estBtn.focus()}});
+document.addEventListener('click',e=>{if(!c.contains(e.target))abrirMC('')});
+document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const k=Object.keys(MC).find(n=>!MC[n].panel.hidden);if(k){abrirMC('');MC[k].btn.focus()}});
 return c};
-ctlEst.addTo(map);
+ctlMC.addTo(map);
 $('cuenta').onclick=e=>{if(e.target.closest('.qf')){estadoSel='';chips();pintar()}};
 $('vis').onchange=e=>{visSolo=e.target.checked;pintar()};
 chips();
