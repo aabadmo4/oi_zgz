@@ -6050,6 +6050,17 @@
    "titulo": "Z-40",
    "via": "pk 22.46 · sentido creciente · orientación suroeste",
    "visto": "2026-11-14"
+  },
+  "dgt-30043707": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30043707",
+   "inicio": "2026-11-14",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 22.7 · sentido creciente · orientación suroeste",
+   "visto": "2026-11-14"
   }
  }
 }
