@@ -1,19 +1,17 @@
 # Ideas y tareas pendientes
 
-Ideas para la web, con la numeración acordada. La **1 (filtro por estado)** ya está hecha y documentada en el README.
+Ideas para la web, con la numeración acordada. La **1 (filtro por estado)** y la **2 (leyenda de iconos)** ya están hechas y documentadas en el README.
 
 ## Barra de controles del mapa
 
-El filtro por estado vive en un botón (🕒) arriba a la derecha del mapa. Esa esquina se reserva para los siguientes controles:
+El filtro por estado (🕒) y la leyenda de iconos (ℹ️) viven en una columna de botones arriba a la derecha del mapa. Esa esquina se reserva para los siguientes controles:
 
-- 📍 **Cerca de mí** (idea 3).
-- ℹ️ **Leyenda de iconos** (idea 2).
+- 📍 **Cerca de mí** (idea 3), debajo de los actuales.
 
 Abajo a la derecha no se coloca nada: ahí va la atribución de Leaflet y OpenStreetMap. Los botones van en una columna (`.mc-bar`) con el estilo de los de zoom de Leaflet, miden 40 px, sin borde propio, llevan `aria-label` y `aria-expanded` si despliega un panel, y se cierra con Escape o al tocar fuera.
 
 ## Pendientes
 
-2. **Leyenda de iconos:** desplegable (botón ℹ️ en el mapa) con los iconos y colores de la tabla del README, incluido 🚗 para vehículo detenido y 🚦 para retención.
 3. **Cerca de mí:** botón 📍 que pide la ubicación del navegador y ordena o filtra por distancia (por ejemplo, a menos de 1 km). Todo se calcula en el cliente; no se guarda la posición.
 4. **Nueva hoy:** insignia en las incidencias vistas por primera vez hoy, a partir de `data/historial_vias.json`.
 5. **Mis calles (nivel 1)**, todo guardado en el navegador (`localStorage`), sin cuenta ni servidor:
