@@ -46,7 +46,8 @@ Cada incidencia se dibuja como un círculo de color con un icono. El icono y el 
 ### Funcionalidades de la web
 
 - **Mapa** (Leaflet + OpenStreetMap) con un marcador por incidencia, con icono y color según el tipo. Un marcador con borde discontinuo indica que afecta a toda la calle o que su ubicación es orientativa.
-- **Listado** de incidencias con filtro por tipo y por fuente, buscador por calle o motivo (sin distinguir acentos) y la opción «Solo lo que se ve en el mapa».
+- **Listado** de incidencias con filtro por tipo, por estado y por fuente, buscador por calle o motivo (sin distinguir acentos) y la opción «Solo lo que se ve en el mapa».
+- **Filtro por estado:** botón 🕒 arriba a la derecha del mapa que despliega `En curso` (ya ha empezado y no ha terminado, incluidas las que no tienen fecha de fin), `Próximas` (`inicio` posterior a hoy) y `Terminan pronto` (`fin` dentro de los próximos 7 días, hoy incluido; constante `PRONTO_DIAS` en `index.html`), con recuento. Elegir uno cierra el panel (también con Escape o tocando fuera); pulsar otra vez el activo lo quita. Con un filtro activo el botón se resalta con un punto rojo y el recuento del listado muestra un botón para quitarlo (`12 de 79 incidencias · Próximas ✕`). `Terminan pronto` es un subconjunto de `En curso`, así que los chips no suman el total. Las finalizadas solo aparecen cuando no hay ningún estado seleccionado. Se combina con el resto de filtros y se calcula en el navegador con `estado()`, igual que la ficha. Ideas pendientes y el resto de controles previstos para esa esquina: [`TODO.md`](TODO.md).
 - **Ficha** de cada incidencia: tramo, detalle (con botón «Ver más» si es largo), fuente, barrio si lo hay, estado y botón **Abrir en Maps**. El estado se calcula en el navegador a partir de las fechas: `Próxima` (`Empieza mañana`, `Empieza en N días`), `En curso` (`Quedan N días` y barra de progreso), `Solo hoy`, `Termina hoy`, `Finalizada` o `Activa` (sin fechas). Las páginas estáticas usan los mismos estados.
 - **Compartir**: genera un texto y un enlace `https://obraseincidenciaszaragoza.es/#<id>` (por ejemplo `#dgt-29808033`). Al abrir el enlace, el mapa se centra en esa incidencia y muestra su ficha. Usa el menú de compartir del móvil o, si no existe, el portapapeles.
 - **Portada con contenido sin JavaScript**: `generar_paginas.py` rellena en la copia publicada de `index.html` los bloques `<!--INC-->` (incidencias actuales más relevantes), `<!--AGUA-->` (resumen de cortes de agua), `<!--VIAS-->` (enlaces a las vías), el párrafo `#resumen` y la fecha de `#estado`, para que buscadores y lectores sin JS vean datos reales. En el repositorio esos bloques están vacíos o con un texto de ejemplo.
@@ -170,6 +171,7 @@ El `cron` de GitHub Actions (`schedule: '17 * * * *'`) no funciona de forma fiab
 ```
 .
 ├── index.html                     # Aplicación (HTML + CSS + JS, sin build)
+├── TODO.md                        # Ideas y tareas pendientes (no se publica)
 ├── acerca.html
 ├── avisolegal.html
 ├── privacidad.html
