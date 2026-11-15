@@ -3222,6 +3222,28 @@
    "titulo": "A-2",
    "via": "pk 328.338 · sentido decreciente · orientación oeste",
    "visto": "2026-11-15"
+  },
+  "dgt-30054830": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30054830",
+   "inicio": "2026-11-15",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 303.107 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-15"
+  },
+  "dgt-30054850": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30054850",
+   "inicio": "2026-11-15",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 303.178 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-15"
   }
  },
  "alvarado-pedro-de": {
