@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-14T22:01+01:00",
+ "actualizado": "2026-11-15T12:09+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 63
+   "n": 64
   },
   "dgt": {
    "ok": true,
-   "n": 0
+   "n": 1
   }
  },
  "sin_ubicar": 0,
@@ -394,6 +394,50 @@
    "lon": -0.8946502,
    "precision": "portal",
    "nombre": "Calle Maestro Tomás Bretón"
+  },
+  {
+   "id": "zgz-31668",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "EDISON TOMAS A, 21",
+   "via": "Entre el n.º 21 y C/ Benjamin Franklin",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 14 horas",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.667798,
+   "lon": -0.866023,
+   "precision": "portal",
+   "nombre": "Calle de Tomás A. Edison"
+  },
+  {
+   "id": "zgz-31669",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CASAÑAL Y ZAPATERO D, 5",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.6601446,
+   "lon": -0.8934261,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.65972,
+      -0.893788
+     ],
+     [
+      41.660519,
+      -0.893107
+     ],
+     [
+      41.660573,
+      -0.893069
+     ]
+    ]
+   ],
+   "nombre": "Calle de Dionisio Casañal y Zapatero"
   },
   {
    "id": "zgz-30666",
@@ -808,20 +852,6 @@
    "nombre": "Calle Tomás Zumalacárregui"
   },
   {
-   "id": "zgz-31661",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "FERNANDO CATOLICO PS, 65",
-   "via": "",
-   "detalle": "Para reparar la tapa de la arqueta de telecomunicaciones ubicada en el no 65",
-   "inicio": "2026-11-14",
-   "fin": "2026-11-14",
-   "lat": 41.6380627,
-   "lon": -0.8972501,
-   "precision": "portal",
-   "nombre": "Calle Fernando Catolico Ps"
-  },
-  {
    "id": "zgz-31234",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -864,20 +894,6 @@
    "nombre": "Calle de Tomás A. Edison"
   },
   {
-   "id": "zgz-31558",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "ALIERTA AV. CESAREO, 11",
-   "via": "",
-   "detalle": "Para realizar una nueva acometida de vertido",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-13",
-   "lat": 41.6456226,
-   "lon": -0.8779879,
-   "precision": "calle",
-   "nombre": "Avenida de Cesáreo Alierta"
-  },
-  {
    "id": "zgz-31663",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -892,6 +908,20 @@
    "nombre": "Calle Puente Piedra"
   },
   {
+   "id": "zgz-31667",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SACRAMENTO (MADRE), 2",
+   "via": "Entre Avda. José Anselmo Clavé y C/ Doctor Horno",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.6489782,
+   "lon": -0.8892018,
+   "precision": "portal",
+   "nombre": "Calle Madre Sacramento"
+  },
+  {
    "id": "zgz-31619",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -904,20 +934,6 @@
    "lon": -0.9210092,
    "precision": "portal",
    "nombre": "Calle de Alfredo Nobel"
-  },
-  {
-   "id": "zgz-31620",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "PIEDRA (PUENTE), 0",
-   "via": "",
-   "detalle": "Con motivo de la instalación de adornos navideños y supeditado al Permiso Especial de Policía Local",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-14",
-   "lat": 41.6694589,
-   "lon": -0.8441739,
-   "precision": "calle",
-   "nombre": "Calle Puente Piedra"
   },
   {
    "id": "zgz-31621",
@@ -1072,6 +1088,20 @@
    "nombre": "Calle Jenaro Checa"
   },
   {
+   "id": "zgz-31666",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "HUERVA CALLE DEL, 5",
+   "via": "Entre C/ Lasala Valdés y C/ La Luz",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.6465226,
+   "lon": -0.9049591,
+   "precision": "calle",
+   "nombre": "Calle Rincón del Huerva"
+  },
+  {
    "id": "zgz-31271",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1113,6 +1143,20 @@
    "lon": -0.8742479,
    "precision": "portal",
    "nombre": "Calle de Policarpo Romea"
+  },
+  {
+   "id": "dgt-30052496",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 325.201 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-15",
+   "fin": null,
+   "lat": 41.67718,
+   "lon": -0.84528,
+   "precision": "exacta"
   }
  ]
 }
