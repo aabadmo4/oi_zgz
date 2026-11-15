@@ -63,8 +63,8 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 <!-- AdSense: el ID de editor también está en ADS.client (más abajo) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2672664299641705" crossorigin="anonymous"></script>
 <style>
-:root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0}
-@media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8}}
+:root{--bg:#f2f1ec;--panel:#fff;--ink:#1d2024;--mute:#5d646c;--line:#d9d8d2;--sign:#ffc400;--asfalto:#22262b;--focus:#0b57d0;--err:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#171a1e;--panel:#22262b;--ink:#eceae4;--mute:#a4abb3;--line:#3a4048;--focus:#8ab4f8;--err:#ffb4ab}}
 *{box-sizing:border-box}
 html,body{min-height:100%;margin:0}
 body{font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
@@ -92,6 +92,8 @@ input[type=search]{flex:1}
 .mc-panel .chip:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .mc-panel{position:absolute;top:0;right:calc(100% + 8px);width:200px;display:grid;gap:6px;padding:10px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 6px 24px #0006}
 .mc-panel[hidden]{display:none}
+.mc-panel>small{display:block;font-size:12px;color:var(--mute)}
+.mc-panel>small.err{color:var(--err)}
 .mc-panel{max-width:calc(100vw - 120px)}
 .mc-panel.lg-p{width:250px}
 .lg{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}
@@ -262,7 +264,7 @@ const $=id=>document.getElementById(id);
 const map=L.map('mapa').setView([41.6488,-0.8891],12);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
 const capa=L.layerGroup().addTo(map);
-let datos=[],marcas=new Map(),tipoSel='',estadoSel='',visSolo=false,filtrados=[],limite=PAG;
+let datos=[],marcas=new Map(),tipoSel='',estadoSel='',radioSel=0,miPos=null,geoMsg='',geoBusy=false,dist=new Map(),visSolo=false,filtrados=[],limite=PAG;
 function crearAd(t){const d=document.createElement('div');d.className='ad';
 d.innerHTML=`<small>Publicidad</small><ins class="adsbygoogle" style="display:block" data-ad-client="${ADS.client}" data-ad-slot="${ADS[t]}" ${t==='feed'?`data-ad-format="fluid" data-ad-layout-key="${ADS.layout}"`:'data-ad-format="auto" data-full-width-responsive="true"'}></ins>`;return d}
 function pushAd(d){if(d.dataset.p)return;d.dataset.p=1;try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}}
@@ -286,6 +288,10 @@ if(a&&b&&a===b)return{k:'k-hoy',t:'Solo hoy',r:''};
 if(b===hoy)return{k:'k-hoy',t:'Termina hoy',r:'',p:100};
 if(!b)return{k:'k-nd',t:a?'En curso':'Activa',r:'Sin fecha de fin'};
 const n=Math.round((b-hoy)/D);return{k:'',t:'En curso',r:n===1?'Termina mañana':'Quedan '+dias(n),p:a?Math.max(4,Math.min(100,(hoy-a)/(b-a)*100)):0}}
+const RADIOS=[[500,'Hasta 500 m'],[1000,'Hasta 1 km'],[2000,'Hasta 2 km']];
+const distM=(a,b,c,d)=>{const r=x=>x*Math.PI/180,h=Math.sin(r(c-a)/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(r(d-b)/2)**2;return 12742e3*Math.asin(Math.sqrt(h))};
+// La mayoría de ubicaciones son orientativas: se redondea para no aparentar precisión
+const fmtDist=m=>m<1000?`a unos ${Math.max(10,Math.round(m/10)*10)} m`:`a unos ${(m/1000).toFixed(1).replace('.',',')} km`;
 const ESTADOS=[['curso','En curso'],['fut','Próximas'],['pronto','Terminan pronto']];
 const hoyUTC=()=>{const h=new Date();return Date.UTC(h.getFullYear(),h.getMonth(),h.getDate())};
 // «En curso» incluye lo que termina pronto y lo que no tiene fecha de fin; las finalizadas solo se ven sin estado seleccionado
@@ -294,7 +300,7 @@ if(g==='pronto')return !!i.fin&&Math.round((dUTC(i.fin)-hoyUTC())/864e5)<=PRONTO
 function popup(i){const [e,c]=visual(i),{nom:nom0,num}=calle(i.titulo),nom=i.nombre||nom0,st=estado(i),pk=/^pk\b/i.test(i.via||''),
 nota=i.precision==='calle'?'Toda la calle o sin número exacto: ubicación orientativa.':i.precision==='aprox'?'Ubicación aproximada.':'',
 anio=new Date().getFullYear(),dosFechas=i.inicio&&i.fin;
-return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tipo">${e} ${esc(i.tipo)}</span><span class="oi-src">${esc(i.fuente)}${i.barrio?' · '+esc(i.barrio):''}</span></div>
+return `<div class="oi" style="--c:${c}"><div class="oi-top"><span class="oi-tipo">${e} ${esc(i.tipo)}</span><span class="oi-src">${esc(i.fuente)}${i.barrio?' · '+esc(i.barrio):''}${dist.has(i.id)?' · '+fmtDist(dist.get(i.id)):''}</span></div>
 <h3 class="oi-h">${esc(nom)}${num?`<small>nº ${esc(num)}</small>`:''}</h3>
 <div class="oi-sc">${i.via?`<div class="oi-via"><b>${pk?'Punto km':'Tramo'}</b>${esc(pk?i.via.replace(/^pk\s*/i,''):i.via)}</div>`:''}${i.detalle?`<p class="oi-d">${esc(i.detalle)}</p><button type="button" class="oi-mas">Ver más</button>`:''}
 <div class="oi-f"><div class="oi-st"><span class="oi-pill ${st.k}">${st.t}</span>${st.r?`<span class="oi-rest">${st.r}</span>`:''}</div>${st.p?`<div class="oi-bar" aria-hidden="true"><i style="width:${st.p.toFixed(0)}%"></i></div>`:''}
@@ -321,8 +327,10 @@ const t=b.textContent;try{await navigator.clipboard.writeText(text+'\n'+url);b.t
 map.on('popupclose',()=>{try{history.replaceState(null,'',location.pathname+location.search)}catch(_){}});
 function pintar(){
 limite=PAG;
+dist.clear();if(radioSel&&miPos)datos.forEach(i=>dist.set(i.id,distM(miPos.lat,miPos.lon,i.lat,i.lon)));
 const q=plano($('q').value.trim()),f=$('fuente').value,b=map.getBounds();
-filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&enEstado(i,estadoSel)&&(!f||i.fuente===f)&&(!q||plano(`${i.titulo} ${i.nombre||''} ${i.via||''} ${i.detalle||''}`).includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
+filtrados=datos.filter(i=>(!tipoSel||i.tipo===tipoSel)&&enEstado(i,estadoSel)&&(!radioSel||dist.get(i.id)<=radioSel)&&(!f||i.fuente===f)&&(!q||plano(`${i.titulo} ${i.nombre||''} ${i.via||''} ${i.detalle||''}`).includes(q))&&(!visSolo||b.contains([i.lat,i.lon])));
+if(radioSel)filtrados.sort((a,b)=>dist.get(a.id)-dist.get(b.id));
 capa.clearLayers();marcas.clear();
 filtrados.forEach(i=>{
 const m=L.marker([i.lat,i.lon],{icon:icono(i,estado(i).k==='k-fut'),title:nombreVis(i),zIndexOffset:estado(i).k==='k-fut'?-1000:0}).bindPopup(()=>popup(i),{maxWidth:340,minWidth:240,autoPanPadding:[14,14]});
@@ -336,7 +344,7 @@ function lista(){
 const ul=$('lista');ul.innerHTML='';
 filtrados.slice(0,limite).forEach((i,n)=>{
 const li=document.createElement('li'),[e,c]=visual(i),st=estado(i),pill=st.t==="En curso"||st.t==="Activa"?'':`<span class="oi-pill ${st.k}">${st.t}</span>`;
-li.innerHTML=`<button type="button" class="it"><span class="ico${st.k==='k-fut'?' fut':''}" style="background:${c}">${e}</span><span><div class="t">${esc(nombreVis(i))}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${pill}${st.k==='k-fut'&&st.r?esc(st.r)+' · ':''}${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
+li.innerHTML=`<button type="button" class="it"><span class="ico${st.k==='k-fut'?' fut':''}" style="background:${c}">${e}</span><span><div class="t">${esc(nombreVis(i))}</div><div class="s">${esc(i.tipo)}${i.via?' · '+esc(i.via):''}</div><div class="s">${esc(i.detalle)}</div><div class="f">${pill}${dist.has(i.id)?fmtDist(dist.get(i.id))+' · ':''}${st.k==='k-fut'&&st.r?esc(st.r)+' · ':''}${esc(i.fuente)}${fechas(i)?' · '+fechas(i):''}${aviso(i)?' · '+aviso(i):''}</div></span></button>`;
 li.firstChild.onclick=()=>{map.setView([i.lat,i.lon],16);marcas.get(i.id)?.openPopup();if(innerWidth<=760)scrollTo({top:0,behavior:'smooth'})};
 ul.appendChild(li);
 const pos=n+1,k=pos===PRIMER_ANUNCIO?0:(pos>PRIMER_ANUNCIO&&(pos-PRIMER_ANUNCIO)%CADA===0?(pos-PRIMER_ANUNCIO)/CADA:-1);
@@ -344,8 +352,8 @@ if(k>=0&&k<MAX_ANUNCIOS){const a=anuncioLista(k);ul.appendChild(a);pushAd(a.firs
 });
 const resto=filtrados.length-limite;
 if(resto>0){const li=document.createElement('li');li.className='mas';li.innerHTML=`<button type="button">Mostrar más (${resto})</button>`;li.firstChild.onclick=()=>{limite+=MAS;lista()};ul.appendChild(li)}
-{const t=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.',e=estadoSel&&ESTADOS.find(x=>x[0]===estadoSel);
-$('cuenta').innerHTML=esc(t)+(e?` · <button type="button" class="qf" aria-label="Quitar filtro: ${esc(e[1])}">${esc(e[1])} ✕</button>`:'')}
+{const t=filtrados.length?`${filtrados.length} de ${datos.length} incidencias`:'Ninguna incidencia con estos filtros. Prueba a quitar alguno.',e=estadoSel&&ESTADOS.find(x=>x[0]===estadoSel),r=radioSel&&RADIOS.find(x=>x[0]===radioSel);
+$('cuenta').innerHTML=esc(t)+(radioSel&&filtrados.length?' · ordenadas por distancia':'')+(r?` · <button type="button" class="qf" data-q="r" aria-label="Quitar filtro: ${esc(r[1])}">${esc(r[1].replace('Hasta','Menos de'))} ✕</button>`:'')+(e?` · <button type="button" class="qf" data-q="e" aria-label="Quitar filtro: ${esc(e[1])}">${esc(e[1])} ✕</button>`:'')}
 }
 function chips(){const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);
 const b=(t,txt,n)=>`<button type="button" class="chip" aria-pressed="${tipoSel===t}" data-t="${t}"${n===0&&tipoSel!==t?' disabled':''}>${tipoSel===t?'✓ ':''}${txt}<small>${n}</small></button>`;
@@ -355,12 +363,29 @@ $('chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;tipoSel=b.
 // ---- Controles del mapa (arriba a la derecha): filtro por estado y leyenda ----
 const MC={}; // clave -> {btn,panel}
 const svgIc=d=>`<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">${d}</svg>`;
-const IC_RELOJ=svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'),IC_INFO=svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.01"/>');
+const IC_RELOJ=svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'),IC_UBI=svgIc('<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>'),IC_INFO=svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.01"/>');
 function abrirMC(k){Object.entries(MC).forEach(([n,{btn,panel}])=>{const ab=n===k&&panel.hidden;panel.hidden=!ab;btn.setAttribute('aria-expanded',ab)})}
 function estadosUI(){if(!MC.estado)return;const {btn,panel}=MC.estado,be=([g,t])=>{const n=datos.filter(i=>enEstado(i,g)).length;return`<button type="button" class="chip" aria-pressed="${estadoSel===g}" data-e="${g}"${n===0&&estadoSel!==g?' disabled':''}><span>${estadoSel===g?'✓ ':''}${t}</span><small>${n}</small></button>`};
 panel.innerHTML='<b>Estado</b>'+ESTADOS.map(be).join('');
 const e=ESTADOS.find(x=>x[0]===estadoSel);btn.classList.toggle('on',!!e);
 btn.setAttribute('aria-label',e?`Filtrar por estado. Activo: ${e[1]}`:'Filtrar por estado');btn.title=e?`Estado: ${e[1]}`:'Filtrar por estado'}
+// «Cerca de mí»: la posición solo se usa en el navegador mientras el filtro está activo; no se envía ni se guarda.
+const capaPos=L.layerGroup().addTo(map);
+function dibujarPos(){capaPos.clearLayers();if(!miPos||!radioSel)return;
+L.circle([miPos.lat,miPos.lon],{radius:radioSel,color:'#4aa3ff',weight:2,fillOpacity:.06,interactive:false}).addTo(capaPos);
+L.circleMarker([miPos.lat,miPos.lon],{radius:7,color:'#fff',weight:2,fillColor:'#4aa3ff',fillOpacity:1,interactive:false}).addTo(capaPos);
+map.fitBounds(L.latLng(miPos.lat,miPos.lon).toBounds(radioSel*2),{padding:[20,20]})}
+function cercaUI(){if(!MC.cerca)return;const {btn,panel}=MC.cerca,r=RADIOS.find(x=>x[0]===radioSel);
+panel.innerHTML='<b>Cerca de mí</b>'+RADIOS.map(([m,t])=>`<button type="button" class="chip" aria-pressed="${radioSel===m}" data-r="${m}"><span>${radioSel===m?'✓ ':''}${t}</span></button>`).join('')+`<small role="status" aria-live="polite"${geoMsg.startsWith('No se pudo')?' class="err"':''}>${geoMsg||'Tu posición no se guarda.'}</small>`;
+btn.classList.toggle('on',!!r);btn.setAttribute('aria-label',r?`Cerca de mí. Activo: ${r[1].toLowerCase()}`:'Cerca de mí');btn.title=r?`Cerca de mí: ${r[1].toLowerCase()}`:'Cerca de mí'}
+function aplicarRadio(m){radioSel=m;geoMsg='';cercaUI();dibujarPos();pintar();abrirMC('')}
+function quitarRadio(){radioSel=0;miPos=null;geoMsg='';cercaUI();dibujarPos();pintar()}
+function elegirRadio(m){if(geoBusy)return;if(radioSel===m){quitarRadio();abrirMC('');return}
+if(miPos){aplicarRadio(m);return}
+if(!navigator.geolocation){geoMsg='No se pudo obtener tu ubicación.';cercaUI();return}
+geoBusy=true;geoMsg='Buscando tu ubicación…';cercaUI();
+navigator.geolocation.getCurrentPosition(p=>{geoBusy=false;miPos={lat:p.coords.latitude,lon:p.coords.longitude};aplicarRadio(m)},
+()=>{geoBusy=false;geoMsg='No se pudo obtener tu ubicación.';cercaUI()},{enableHighAccuracy:false,timeout:10000,maximumAge:60000})}
 // La leyenda sale de TIPOS: un tipo nuevo aparece solo. «Vehículo detenido» es un caso aparte (tipo Otros con coche).
 function leyendaHTML(){const f=(e,c,t,x='')=>`<span class="lg-f"><i class="pin${x}" style="background:${c}" aria-hidden="true">${e}</i>${t}</span>`,[eo,co]=TIPOS.Otros;
 return'<b>Leyenda</b><div class="lg">'+Object.entries(TIPOS).filter(([t])=>t!=='Otros').map(([t,[e,c]])=>f(e,c,t)).join('')+f(VEHICULO_DETENIDO,co,'Vehículo detenido')+f(eo,co,'Otros')+'</div>'+
@@ -371,13 +396,14 @@ const nuevo=(k,ic,etiqueta,cls)=>{const btn=L.DomUtil.create('button','mc-btn',b
 const panel=L.DomUtil.create('div','mc-panel'+(cls?' '+cls:''),c);panel.id='mc-'+k;panel.hidden=true;panel.setAttribute('role','group');panel.setAttribute('aria-label',etiqueta);
 btn.onclick=()=>abrirMC(k);MC[k]={btn,panel};return MC[k]};
 nuevo('estado',IC_RELOJ,'Filtrar por estado').panel.onclick=e=>{const b=e.target.closest('.chip');if(!b)return;estadoSel=b.dataset.e===estadoSel?'':b.dataset.e;chips();pintar();abrirMC('')};
+nuevo('cerca',IC_UBI,'Cerca de mí').panel.onclick=e=>{const b=e.target.closest('.chip');if(b)elegirRadio(+b.dataset.r)};
 nuevo('leyenda',IC_INFO,'Leyenda de iconos','lg-p').panel.innerHTML=leyendaHTML();
 L.DomEvent.disableClickPropagation(c);L.DomEvent.disableScrollPropagation(c);
-document.addEventListener('click',e=>{if(!c.contains(e.target))abrirMC('')});
+document.addEventListener('click',e=>{if(!e.composedPath().includes(c))abrirMC('')});
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const k=Object.keys(MC).find(n=>!MC[n].panel.hidden);if(k){abrirMC('');MC[k].btn.focus()}});
 return c};
-ctlMC.addTo(map);
-$('cuenta').onclick=e=>{if(e.target.closest('.qf')){estadoSel='';chips();pintar()}};
+ctlMC.addTo(map);cercaUI();
+$('cuenta').onclick=e=>{const q=e.target.closest('.qf');if(!q)return;if(q.dataset.q==='r')quitarRadio();else{estadoSel='';chips();pintar()}};
 $('vis').onchange=e=>{visSolo=e.target.checked;pintar()};
 chips();
 ['q','fuente'].forEach(id=>$(id).addEventListener('input',pintar));
