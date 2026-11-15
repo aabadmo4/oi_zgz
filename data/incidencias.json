@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-15T23:49+01:00",
+ "actualizado": "2026-11-16T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 64
+   "n": 69
   },
   "dgt": {
    "ok": true,
@@ -440,6 +440,20 @@
    "nombre": "Calle de Dionisio Casañal y Zapatero"
   },
   {
+   "id": "zgz-31670",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "Entre C/ Ávila y Glorieta de los Zagries",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-17",
+   "fin": "2026-11-17",
+   "lat": 41.647136,
+   "lon": -0.8946807,
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
+  },
+  {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -596,6 +610,20 @@
    "lon": -0.8794143,
    "precision": "portal",
    "nombre": "Calle Palencia"
+  },
+  {
+   "id": "zgz-31674",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SAN VICENTE MARTIR, 5",
+   "via": "Entre C/ Pedro María Ric y C/ José María Lacarra",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-11-17",
+   "fin": "2026-11-17",
+   "lat": 41.6442436,
+   "lon": -0.8824468,
+   "precision": "portal",
+   "nombre": "Calle de San Vicente Mártir"
   },
   {
    "id": "zgz-31655",
@@ -894,6 +922,20 @@
    "nombre": "Calle de Tomás A. Edison"
   },
   {
+   "id": "zgz-31673",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "COVADONGA NTRA. SRA., 5",
+   "via": "Entre C/ San Rafael y n.º 27",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-17",
+   "fin": "2026-11-17",
+   "lat": 41.6511727,
+   "lon": -0.9104898,
+   "precision": "portal",
+   "nombre": "Calle Covadonga Ntra. Sra."
+  },
+  {
    "id": "zgz-31663",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -920,6 +962,20 @@
    "lon": -0.8892018,
    "precision": "portal",
    "nombre": "Calle Madre Sacramento"
+  },
+  {
+   "id": "zgz-31672",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "LATASSA FELIX, 10",
+   "via": "Entre Avda. Goya y C/ Mariano Barbasán",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-17",
+   "fin": "2026-11-17",
+   "lat": 41.6432715,
+   "lon": -0.8917218,
+   "precision": "portal",
+   "nombre": "Calle de Félix Latassa"
   },
   {
    "id": "zgz-31619",
@@ -1100,6 +1156,20 @@
    "lon": -0.9049591,
    "precision": "calle",
    "nombre": "Calle Rincón del Huerva"
+  },
+  {
+   "id": "zgz-31671",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "LERIDA, 3",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-17",
+   "fin": "2026-11-17",
+   "lat": 41.647299,
+   "lon": -0.8953912,
+   "precision": "portal",
+   "nombre": "Calle de Lérida"
   },
   {
    "id": "zgz-31271",
