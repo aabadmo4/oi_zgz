@@ -6215,6 +6215,17 @@
    "titulo": "Z-40",
    "via": "pk 20.9 · sentido creciente · orientación suroeste",
    "visto": "2026-11-15"
+  },
+  "dgt-30065804": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30065804",
+   "inicio": "2026-11-16",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 24.243 · sentido creciente · orientación oeste",
+   "visto": "2026-11-16"
   }
  }
 }
