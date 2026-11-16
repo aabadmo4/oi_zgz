@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T11:01+01:00",
+ "actualizado": "2026-11-16T12:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 10
   }
  },
  "sin_ubicar": 0,
@@ -1229,20 +1229,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30068310",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-23",
-   "via": "pk 270.5–273.5 · sentido creciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.58702,
-   "lon": -0.95235515,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30068295",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1257,17 +1243,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30069599",
+   "id": "dgt-30068310",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 13.8 · sentido decreciente · orientación norte",
+   "titulo": "A-23",
+   "via": "pk 270.5–273.5 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
    "fin": "2026-11-16",
-   "lat": 41.67435,
-   "lon": -0.8353671,
+   "lat": 41.58702,
+   "lon": -0.95235515,
    "precision": "exacta"
   },
   {
@@ -1285,17 +1271,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070030",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "titulo": "Z-40",
+   "via": "pk 20.6–21.0 · sentido decreciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
-   "fin": "2026-11-24",
-   "lat": 41.681473,
-   "lon": -0.9655962,
+   "fin": "2026-11-16",
+   "lat": 41.623642,
+   "lon": -0.8537033,
    "precision": "exacta"
   },
   {
@@ -1313,31 +1299,59 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070251",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 14.4–14.5 · sentido decreciente · orientación norte",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-24",
+   "lat": 41.681473,
+   "lon": -0.9655962,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30077930",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 300.9–302.6 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.668636,
-   "lon": -0.8368358,
+   "lat": 41.604668,
+   "lon": -1.076244,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30075782",
+   "id": "dgt-30078657",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 313.0–313.1 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.642895,
+   "lon": -0.96986866,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30078707",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 232.878 · sentido decreciente · orientación sureste",
+   "titulo": "N-232",
+   "via": "pk 251.934 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.623096,
-   "lon": -0.846285,
+   "lat": 41.70955,
+   "lon": -1.0127275,
    "precision": "exacta"
   }
  ]
