@@ -3464,6 +3464,50 @@
    "titulo": "VS-A-2-D",
    "via": "pk 322.0–323.0 · sentido decreciente",
    "visto": "2026-11-16"
+  },
+  "dgt-30089250": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30089250",
+   "inicio": "2026-11-16",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.154 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30089510": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30089510",
+   "inicio": "2026-11-16",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 326.0–326.2 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30089647": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30089647",
+   "inicio": "2026-11-16",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 326.161 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30089774": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30089774",
+   "inicio": "2026-11-16",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 326.0–326.2 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
   }
  },
  "alvarado-pedro-de": {
