@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T12:01+01:00",
+ "actualizado": "2026-11-16T12:21+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -1341,17 +1341,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30078707",
+   "id": "dgt-30079609",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.934 · sentido creciente · orientación oeste",
+   "titulo": "A-2",
+   "via": "pk 315.199 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.70955,
-   "lon": -1.0127275,
+   "lat": 41.657795,
+   "lon": -0.952996,
    "precision": "exacta"
   }
  ]
