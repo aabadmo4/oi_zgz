@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T09:01+01:00",
+ "actualizado": "2026-11-16T10:11+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 8
+   "n": 10
   }
  },
  "sin_ubicar": 0,
@@ -1215,45 +1215,31 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30034075",
+   "id": "dgt-30033979",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30034023",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30067882",
-   "fuente": "DGT",
-   "tipo": "Retención",
    "titulo": "A-68",
-   "via": "pk 230.0 · sentido decreciente · orientación sureste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "via": "pk 254.1–255.6 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.604263,
-   "lon": -0.8264776,
+   "fin": "2026-11-16",
+   "lat": 41.717556,
+   "lon": -1.037269,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30068295",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-23",
+   "via": "pk 267.1–269.7 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.55767,
+   "lon": -0.97484887,
    "precision": "exacta"
   },
   {
@@ -1285,6 +1271,48 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30070164",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 33.0 · sentido decreciente · orientación sur",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.6343,
+   "lon": -0.97508377,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30070186",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-24",
+   "lat": 41.681473,
+   "lon": -0.9655962,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30070185",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-24",
+   "lat": 41.681473,
+   "lon": -0.9655962,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30070251",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1299,20 +1327,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070786",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-2",
-   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.664104,
-   "lon": -0.9398144,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30071098",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1324,6 +1338,20 @@
    "fin": null,
    "lat": 41.64025,
    "lon": -0.9713988,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30074683",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 244.3–244.375 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.679066,
+   "lon": -0.9360432,
    "precision": "exacta"
   }
  ]

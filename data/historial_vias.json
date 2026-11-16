@@ -6337,6 +6337,17 @@
    "via": "pk 13.8 · sentido decreciente · orientación norte",
    "visto": "2026-11-16"
   },
+  "dgt-30070164": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-16",
+   "fuente": "DGT",
+   "id": "dgt-30070164",
+   "inicio": "2026-11-16",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 33.0 · sentido decreciente · orientación sur",
+   "visto": "2026-11-16"
+  },
   "dgt-30070251": {
    "detalle": "Obras en la vía",
    "fin": null,
