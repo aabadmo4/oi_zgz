@@ -3354,6 +3354,28 @@
    "titulo": "A-2",
    "via": "pk 319.0–320.0 · sentido creciente · orientación este",
    "visto": "2026-11-16"
+  },
+  "dgt-30070786": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30070786",
+   "inicio": "2026-11-16",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-16"
+  },
+  "dgt-30071098": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30071098",
+   "inicio": "2026-11-16",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 312.7–312.8 · sentido creciente · orientación sureste",
+   "visto": "2026-11-16"
   }
  },
  "alvarado-pedro-de": {
@@ -6302,6 +6324,28 @@
    "tipo": "Retención",
    "titulo": "Z-40",
    "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30069599": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-16",
+   "fuente": "DGT",
+   "id": "dgt-30069599",
+   "inicio": "2026-11-16",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 13.8 · sentido decreciente · orientación norte",
+   "visto": "2026-11-16"
+  },
+  "dgt-30070251": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30070251",
+   "inicio": "2026-11-16",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 14.4–14.5 · sentido decreciente · orientación norte",
    "visto": "2026-11-16"
   }
  }
