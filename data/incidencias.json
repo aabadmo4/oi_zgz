@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T22:01+01:00",
+ "actualizado": "2026-11-16T23:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 10
+   "n": 8
   }
  },
  "sin_ubicar": 0,
@@ -1271,17 +1271,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30100992",
+   "id": "dgt-30100360",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 321.3 · sentido creciente · orientación este",
+   "via": "pk 320.3–320.7 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.679703,
-   "lon": -0.8920562,
+   "lat": 41.680294,
+   "lon": -0.8992579,
    "precision": "exacta"
   },
   {
@@ -1299,17 +1299,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30100360",
+   "id": "dgt-30100992",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 320.3–320.7 · sentido creciente · orientación este",
+   "via": "pk 321.3 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.680294,
-   "lon": -0.8992579,
+   "lat": 41.679703,
+   "lon": -0.8920562,
    "precision": "exacta"
   },
   {
@@ -1324,34 +1324,6 @@
    "fin": null,
    "lat": 41.680294,
    "lon": -0.8992579,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30101195",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 252.388 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.71204,
-   "lon": -1.01697,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30101236",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 300.978 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.75676,
-   "lon": -0.83558,
    "precision": "exacta"
   }
  ]
