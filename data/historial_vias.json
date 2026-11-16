@@ -3583,7 +3583,7 @@
    "inicio": "2026-11-16",
    "tipo": "Accidente",
    "titulo": "A-2",
-   "via": "pk 320.5 · sentido creciente · orientación este",
+   "via": "pk 320.4–320.7 · sentido creciente · orientación este",
    "visto": "2026-11-16"
   },
   "dgt-30098897": {
@@ -3595,6 +3595,28 @@
    "tipo": "Otros",
    "titulo": "A-2",
    "via": "pk 320.598 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30100052": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30100052",
+   "inicio": "2026-11-16",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 324.2–325.1 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-16"
+  },
+  "dgt-30100110": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30100110",
+   "inicio": "2026-11-16",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.197 · sentido creciente · orientación este",
    "visto": "2026-11-16"
   }
  },
@@ -6610,6 +6632,17 @@
    "tipo": "Retención",
    "titulo": "Z-40",
    "via": "pk 23.0–24.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30100097": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30100097",
+   "inicio": "2026-11-16",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 30.573 · sentido decreciente · orientación este",
    "visto": "2026-11-16"
   }
  }
