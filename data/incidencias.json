@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T15:01+01:00",
+ "actualizado": "2026-11-16T15:27+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6
+   "n": 10
   }
  },
  "sin_ubicar": 0,
@@ -1271,20 +1271,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30086392",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "ZP-2105",
-   "via": "pk 3.811 · sentido decreciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.57647,
-   "lon": -0.82545,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30087248",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1296,6 +1282,76 @@
    "fin": null,
    "lat": 41.630184,
    "lon": -0.841658,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30087585",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-68",
+   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.625713,
+   "lon": -0.84891886,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30088056",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-125",
+   "via": "pk 10.074 · sentido decreciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.66367,
+   "lon": -0.933556,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30088096",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "VS-A-2-C",
+   "via": "pk 321.5–321.7 · sentido creciente · orientación este",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.67968,
+   "lon": -0.888546,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30088097",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "VS-A-2-C",
+   "via": "pk 321.0–321.5 · sentido creciente · orientación este",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.6797,
+   "lon": -0.89083284,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30088398",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.0–323.0 · sentido decreciente",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.68006,
+   "lon": -0.88447994,
    "precision": "exacta"
   }
  ]

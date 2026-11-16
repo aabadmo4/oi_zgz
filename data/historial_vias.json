@@ -3431,6 +3431,39 @@
    "titulo": "A-2",
    "via": "pk 323.3–323.4 · sentido decreciente · orientación oeste",
    "visto": "2026-11-16"
+  },
+  "dgt-30088096": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30088096",
+   "inicio": "2026-11-16",
+   "tipo": "Accidente",
+   "titulo": "VS-A-2-C",
+   "via": "pk 321.5–321.7 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30088097": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30088097",
+   "inicio": "2026-11-16",
+   "tipo": "Accidente",
+   "titulo": "VS-A-2-C",
+   "via": "pk 321.0–321.5 · sentido creciente · orientación este",
+   "visto": "2026-11-16"
+  },
+  "dgt-30088398": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30088398",
+   "inicio": "2026-11-16",
+   "tipo": "Accidente",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.0–323.0 · sentido decreciente",
+   "visto": "2026-11-16"
   }
  },
  "alvarado-pedro-de": {
