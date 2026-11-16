@@ -1,16 +1,16 @@
 {
- "actualizado": "2026-11-16T23:04+01:00",
+ "actualizado": "2026-11-17T00:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 69
+   "n": 67
   },
   "dgt": {
    "ok": true,
-   "n": 8
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -182,80 +182,6 @@
    "nombre": "Calle Marqués de la Cadena"
   },
   {
-   "id": "zgz-29864",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "JOSÉ ATARÉS, 105",
-   "via": "",
-   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1) en el estacionamiento situado entre el CDM Siglo XXI y el IES Miguel Molinos",
-   "inicio": "2026-06-27",
-   "fin": "2026-11-16",
-   "lat": 41.6737583,
-   "lon": -0.8978557,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.672158,
-      -0.89698
-     ],
-     [
-      41.672227,
-      -0.897042
-     ],
-     [
-      41.672302,
-      -0.897105
-     ],
-     [
-      41.672434,
-      -0.897207
-     ],
-     [
-      41.672467,
-      -0.897232
-     ],
-     [
-      41.672872,
-      -0.897472
-     ],
-     [
-      41.672929,
-      -0.897502
-     ],
-     [
-      41.672958,
-      -0.897517
-     ],
-     [
-      41.673231,
-      -0.897661
-     ],
-     [
-      41.673625,
-      -0.897822
-     ],
-     [
-      41.673896,
-      -0.897891
-     ],
-     [
-      41.673978,
-      -0.897909
-     ],
-     [
-      41.675444,
-      -0.898264
-     ],
-     [
-      41.675547,
-      -0.898281
-     ]
-    ]
-   ],
-   "nombre": "Calle José Atarés"
-  },
-  {
    "id": "zgz-29394",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -394,50 +320,6 @@
    "lon": -0.8946502,
    "precision": "portal",
    "nombre": "Calle Maestro Tomás Bretón"
-  },
-  {
-   "id": "zgz-31668",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "EDISON TOMAS A, 21",
-   "via": "Entre el n.º 21 y C/ Benjamin Franklin",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 14 horas",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.667798,
-   "lon": -0.866023,
-   "precision": "portal",
-   "nombre": "Calle de Tomás A. Edison"
-  },
-  {
-   "id": "zgz-31669",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CASAÑAL Y ZAPATERO D, 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.6601446,
-   "lon": -0.8934261,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.65972,
-      -0.893788
-     ],
-     [
-      41.660519,
-      -0.893107
-     ],
-     [
-      41.660573,
-      -0.893069
-     ]
-    ]
-   ],
-   "nombre": "Calle de Dionisio Casañal y Zapatero"
   },
   {
    "id": "zgz-31670",
@@ -626,6 +508,48 @@
    "nombre": "Calle de San Vicente Mártir"
   },
   {
+   "id": "zgz-31686",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "MALPICA PG. (CÑ. E), 11",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas.",
+   "inicio": "2026-11-18",
+   "fin": "2026-11-18",
+   "lat": 41.661965082319696,
+   "lon": -0.7937712451440949,
+   "precision": "aprox",
+   "nombre": "Calle Cñ. e Malpica Pg."
+  },
+  {
+   "id": "zgz-31687",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "MONTAÑES, 8",
+   "via": "Entre C/ Berenguer de Bardají y C/ Alcañiz",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-18",
+   "fin": "2026-11-18",
+   "lat": 41.648891,
+   "lon": -0.9056825,
+   "precision": "portal",
+   "nombre": "Calle de Bernardino Montañés"
+  },
+  {
+   "id": "zgz-31689",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ALCAÑIZ, 5",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-11-18",
+   "fin": "2026-11-18",
+   "lat": 41.6491271,
+   "lon": -0.906712,
+   "precision": "portal",
+   "nombre": "Calle de Alcañiz"
+  },
+  {
    "id": "zgz-31655",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -683,6 +607,20 @@
    "nombre": "Carretera de Cogullada"
   },
   {
+   "id": "zgz-31685",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ANDRES D UZTARROZ J.F , 11",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-18",
+   "fin": "2026-11-18",
+   "lat": 41.63228232168085,
+   "lon": -0.8835169465644094,
+   "precision": "aprox",
+   "nombre": "Calle Andrés de Uztárroz J.F"
+  },
+  {
    "id": "zgz-31114",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -737,34 +675,6 @@
    "lon": -0.8966768,
    "precision": "portal",
    "nombre": "Calle Pedro Cerbuna"
-  },
-  {
-   "id": "zgz-30944",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CABALLERO FCO(ALCALDE, 52",
-   "via": "",
-   "detalle": "Para ejecutar los pilares de las marquesinas donde se instalarán las placas fotovoltaicas (Planta solar lote 3) entre la Calle Pedro Lázaro y la Avenida de la Jota",
-   "inicio": "2026-09-19",
-   "fin": "2026-11-18",
-   "lat": 41.67283493889929,
-   "lon": -0.8596966767022661,
-   "precision": "aprox",
-   "nombre": "Calle Alcalde Francisco Caballero"
-  },
-  {
-   "id": "zgz-31595",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "CADENA, 5",
-   "via": "",
-   "detalle": "Para reparar el vertido",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-16",
-   "lat": 41.6504857,
-   "lon": -0.8755923,
-   "precision": "calle",
-   "nombre": "Calle de la Cadena"
   },
   {
    "id": "zgz-31656",
@@ -950,20 +860,6 @@
    "nombre": "Calle Puente Piedra"
   },
   {
-   "id": "zgz-31667",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SACRAMENTO (MADRE), 2",
-   "via": "Entre Avda. José Anselmo Clavé y C/ Doctor Horno",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.6489782,
-   "lon": -0.8892018,
-   "precision": "portal",
-   "nombre": "Calle Madre Sacramento"
-  },
-  {
    "id": "zgz-31672",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -1144,20 +1040,6 @@
    "nombre": "Calle Jenaro Checa"
   },
   {
-   "id": "zgz-31666",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "HUERVA CALLE DEL, 5",
-   "via": "Entre C/ Lasala Valdés y C/ La Luz",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.6465226,
-   "lon": -0.9049591,
-   "precision": "calle",
-   "nombre": "Calle Rincón del Huerva"
-  },
-  {
    "id": "zgz-31671",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -1170,6 +1052,20 @@
    "lon": -0.8953912,
    "precision": "portal",
    "nombre": "Calle de Lérida"
+  },
+  {
+   "id": "zgz-31688",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "BARDAJI BERENGUER DE, 18",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-18",
+   "fin": "2026-11-18",
+   "lat": 41.6487449,
+   "lon": -0.9056191,
+   "precision": "portal",
+   "nombre": "Calle Berenguer de Bardají"
   },
   {
    "id": "zgz-31271",
@@ -1215,7 +1111,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1229,7 +1125,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1271,11 +1167,39 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30100992",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 321.3 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.679703,
+   "lon": -0.8920562,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30100360",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
    "via": "pk 320.3–320.7 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.680294,
+   "lon": -0.8992579,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30100359",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 319.9–320.7 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
@@ -1299,31 +1223,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30100992",
+   "id": "dgt-30102456",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 321.3 · sentido creciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 20.51–20.9 · sentido creciente · orientación oeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.679703,
-   "lon": -0.8920562,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30100359",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 319.9–320.7 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.680294,
-   "lon": -0.8992579,
+   "lat": 41.622513,
+   "lon": -0.85698414,
    "precision": "exacta"
   }
  ]
