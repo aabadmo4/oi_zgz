@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16T10:11+01:00",
+ "actualizado": "2026-11-16T11:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 10
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -1229,20 +1229,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30068295",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-23",
-   "via": "pk 267.1–269.7 · sentido creciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-16",
-   "lat": 41.55767,
-   "lon": -0.97484887,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30068310",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1254,6 +1240,20 @@
    "fin": "2026-11-16",
    "lat": 41.58702,
    "lon": -0.95235515,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30068295",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-23",
+   "via": "pk 267.1–269.7 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": "2026-11-16",
+   "lat": 41.55767,
+   "lon": -0.97484887,
    "precision": "exacta"
   },
   {
@@ -1327,31 +1327,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30071098",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 312.7–312.8 · sentido creciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.64025,
-   "lon": -0.9713988,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30074683",
+   "id": "dgt-30075782",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 244.3–244.375 · sentido decreciente · orientación sureste",
+   "via": "pk 232.878 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-16",
    "fin": null,
-   "lat": 41.679066,
-   "lon": -0.9360432,
+   "lat": 41.623096,
+   "lon": -0.846285,
    "precision": "exacta"
   }
  ]
