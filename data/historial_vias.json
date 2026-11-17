@@ -3838,6 +3838,39 @@
    "titulo": "A-2",
    "via": "pk 320.11–320.21 · sentido creciente · orientación este",
    "visto": "2026-11-17"
+  },
+  "dgt-30137482": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30137482",
+   "inicio": "2026-11-17",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.9–318.7 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-17"
+  },
+  "dgt-30137483": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30137483",
+   "inicio": "2026-11-17",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.9–318.3 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-17"
+  },
+  "dgt-30137730": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30137730",
+   "inicio": "2026-11-17",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 311.4–312.3 · sentido creciente · orientación este",
+   "visto": "2026-11-17"
   }
  },
  "alvarado-pedro-de": {
@@ -7006,6 +7039,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 33.685 · sentido creciente · orientación noreste",
+   "visto": "2026-11-17"
+  },
+  "dgt-30137840": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30137840",
+   "inicio": "2026-11-17",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.919 · sentido decreciente · orientación norte",
    "visto": "2026-11-17"
   }
  }
