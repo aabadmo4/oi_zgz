@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17T22:02+01:00",
+ "actualizado": "2026-11-17T23:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 8
+   "n": 10
   }
  },
  "sin_ubicar": 0,
@@ -1153,7 +1153,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1167,7 +1167,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1192,20 +1192,6 @@
    "fin": null,
    "lat": 41.58634,
    "lon": -0.8291475,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30138623",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "VS-A-2-D",
-   "via": "pk 317.13–317.16 · sentido decreciente",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-17",
-   "fin": null,
-   "lat": 41.669197,
-   "lon": -0.93490815,
    "precision": "exacta"
   },
   {
@@ -1237,6 +1223,20 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30138623",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "VS-A-2-D",
+   "via": "pk 317.13–317.16 · sentido decreciente",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.669197,
+   "lon": -0.93490815,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30137482",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1262,6 +1262,34 @@
    "fin": null,
    "lat": 41.635586,
    "lon": -0.9727975,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30139484",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.267 · sentido creciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.608776,
+   "lon": -0.877432,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30139834",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-123",
+   "via": "pk 1.197 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.676014,
+   "lon": -0.829875,
    "precision": "exacta"
   }
  ]
