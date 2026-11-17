@@ -6842,6 +6842,28 @@
    "titulo": "Z-40",
    "via": "pk 33.0 · sentido decreciente · orientación sur",
    "visto": "2026-11-17"
+  },
+  "dgt-30122101": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30122101",
+   "inicio": "2026-11-17",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.803 · sentido decreciente · orientación norte",
+   "visto": "2026-11-17"
+  },
+  "dgt-30122605": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30122605",
+   "inicio": "2026-11-17",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.744 · sentido decreciente · orientación este",
+   "visto": "2026-11-17"
   }
  }
 }
