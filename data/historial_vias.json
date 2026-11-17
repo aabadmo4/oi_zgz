@@ -3871,6 +3871,28 @@
    "titulo": "A-2",
    "via": "pk 311.4–312.3 · sentido creciente · orientación este",
    "visto": "2026-11-17"
+  },
+  "dgt-30138622": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30138622",
+   "inicio": "2026-11-17",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 316.0–317.7 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-17"
+  },
+  "dgt-30138623": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30138623",
+   "inicio": "2026-11-17",
+   "tipo": "Obras",
+   "titulo": "VS-A-2-D",
+   "via": "pk 317.13–317.16 · sentido decreciente",
+   "visto": "2026-11-17"
   }
  },
  "alvarado-pedro-de": {
