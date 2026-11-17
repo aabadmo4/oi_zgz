@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17T00:02+01:00",
+ "actualizado": "2026-11-17T01:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -1111,7 +1111,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1125,7 +1125,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1167,34 +1167,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30100992",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 321.3 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.679703,
-   "lon": -0.8920562,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30100360",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 320.3–320.7 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.680294,
-   "lon": -0.8992579,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30100359",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1209,6 +1181,20 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30100992",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 321.3 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.679703,
+   "lon": -0.8920562,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30100991",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1220,6 +1206,20 @@
    "fin": null,
    "lat": 41.6795,
    "lon": -0.86383474,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30100360",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 320.3–320.7 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-16",
+   "fin": null,
+   "lat": 41.680294,
+   "lon": -0.8992579,
    "precision": "exacta"
   },
   {
