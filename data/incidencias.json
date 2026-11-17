@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-17T17:02+01:00",
+ "actualizado": "2026-11-17T18:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 10
+   "n": 9
   }
  },
  "sin_ubicar": 0,
@@ -1153,7 +1153,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1167,7 +1167,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1209,87 +1209,73 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30127628",
+   "id": "dgt-30130840",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 310.704 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Retención",
+   "titulo": "A-68",
+   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
    "inicio": "2026-11-17",
    "fin": null,
-   "lat": 41.62997,
-   "lon": -0.990526,
+   "lat": 41.625713,
+   "lon": -0.84891886,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30128001",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 310.647–310.648 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-17",
-   "fin": null,
-   "lat": 41.6299,
-   "lon": -0.9912102,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30129291",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 16.41 · sentido creciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-17",
-   "fin": null,
-   "lat": 41.65102,
-   "lon": -0.83855,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30129578",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.239 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-17",
-   "fin": null,
-   "lat": 41.704777,
-   "lon": -1.0067817,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30129862",
+   "id": "dgt-30130935",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "N-330",
-   "via": "pk 507.136 · sentido decreciente · orientación sur",
+   "via": "pk 507.023 · sentido decreciente · orientación sur",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-17",
    "fin": null,
-   "lat": 41.71285,
-   "lon": -0.8606,
+   "lat": 41.71188,
+   "lon": -0.86112,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30130090",
+   "id": "dgt-30131716",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 233.1 · sentido creciente · orientación norte",
+   "titulo": "Z-40",
+   "via": "pk 33.685 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-17",
    "fin": null,
-   "lat": 41.624893,
-   "lon": -0.8478124,
+   "lat": 41.63999,
+   "lon": -0.9721,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30131792",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 309.275 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.6255,
+   "lon": -1.00665,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30132086",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.224 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.704796,
+   "lon": -1.0066034,
    "precision": "exacta"
   }
  ]
