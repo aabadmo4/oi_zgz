@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-17T12:01+01:00",
+ "actualizado": "2026-11-17T13:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 67
+   "n": 70
   },
   "dgt": {
    "ok": true,
@@ -320,6 +320,20 @@
    "lon": -0.8946502,
    "precision": "portal",
    "nombre": "Calle Maestro Tomás Bretón"
+  },
+  {
+   "id": "zgz-31704",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "TIZIANO, 0",
+   "via": "",
+   "detalle": "Para condenar dos acometidas de vertido y realizar dos nuevas a la altura del no 6,",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-26",
+   "lat": 41.6155116,
+   "lon": -0.8750073,
+   "precision": "calle",
+   "nombre": "Avenida Tiziano"
   },
   {
    "id": "zgz-31670",
@@ -874,6 +888,20 @@
    "nombre": "Calle de Félix Latassa"
   },
   {
+   "id": "zgz-31705",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CASTELAR EMILIO, 11",
+   "via": "",
+   "detalle": "Para realizar un paso de peatones provisional a la altura del no 7 y anular el existente a la altura de la Avenida San José",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-27",
+   "lat": 41.640841,
+   "lon": -0.872868,
+   "precision": "portal",
+   "nombre": "Calle de Emilio Castelar"
+  },
+  {
    "id": "zgz-31619",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1083,6 +1111,20 @@
    "nombre": "Calle de Vistabella"
   },
   {
+   "id": "zgz-31706",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VICENTE ANDRES(MOSEN), 1",
+   "via": "",
+   "detalle": "Para ampliar aceras e instalar pasos inteligentes en el cruce con Calle Ciudadela",
+   "inicio": "2026-11-19",
+   "fin": "2026-12-22",
+   "lat": 41.6509713,
+   "lon": -0.9145177,
+   "precision": "portal",
+   "nombre": "Calle de Mosén Andrés Vicente"
+  },
+  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1111,7 +1153,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1125,7 +1167,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
