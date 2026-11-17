@@ -1,19 +1,19 @@
 {
- "actualizado": "2026-11-17T23:53+01:00",
+ "actualizado": "2026-11-18T00:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 70
+   "n": 73
   },
   "dgt": {
    "ok": true,
    "n": 9
   }
  },
- "sin_ubicar": 0,
+ "sin_ubicar": 2,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -266,6 +266,21 @@
    "nombre": "Calle Jaime Ferrán"
   },
   {
+   "id": "zgz-31690",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SOLIDARIDAD SIS, 2",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-19",
+   "lat": 41.664928,
+   "lon": -0.822051,
+   "precision": "portal",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle de la Solidaridad"
+  },
+  {
    "id": "zgz-31659",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -334,20 +349,6 @@
    "lon": -0.8750073,
    "precision": "calle",
    "nombre": "Avenida Tiziano"
-  },
-  {
-   "id": "zgz-31670",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "VALENCIA AVENIDA DE, 9",
-   "via": "Entre C/ Ávila y Glorieta de los Zagries",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-17",
-   "lat": 41.647136,
-   "lon": -0.8946807,
-   "precision": "portal",
-   "nombre": "Avenida de Valencia"
   },
   {
    "id": "zgz-30666",
@@ -508,18 +509,18 @@
    "nombre": "Calle Palencia"
   },
   {
-   "id": "zgz-31674",
+   "id": "zgz-31695",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
-   "titulo": "SAN VICENTE MARTIR, 5",
-   "via": "Entre C/ Pedro María Ric y C/ José María Lacarra",
+   "titulo": "CANO MATA ANTONIO, 0",
+   "via": "Entre C/ Fray Casanova y C/ Alfamén",
    "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-17",
-   "lat": 41.6442436,
-   "lon": -0.8824468,
-   "precision": "portal",
-   "nombre": "Calle de San Vicente Mártir"
+   "inicio": "2026-11-19",
+   "fin": "2026-11-19",
+   "lat": 41.6571058,
+   "lon": -0.9053442,
+   "precision": "calle",
+   "nombre": "Calle Antonio Cano Mata"
   },
   {
    "id": "zgz-31686",
@@ -761,6 +762,35 @@
    "nombre": "Calle Doctor Blanco Cordero"
   },
   {
+   "id": "zgz-31693",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CADIERA PL SIS, 0",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-19",
+   "lat": 41.6660148,
+   "lon": -0.8233343,
+   "precision": "calle",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle Cadiera Pl"
+  },
+  {
+   "id": "zgz-31694",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SAN VICENTE MARTIR, 5",
+   "via": "Entre C/ José María Lacarra y C/ Pedro María Ric",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-19",
+   "lat": 41.6442436,
+   "lon": -0.8824468,
+   "precision": "portal",
+   "nombre": "Calle de San Vicente Mártir"
+  },
+  {
    "id": "zgz-31144",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -846,20 +876,6 @@
    "nombre": "Calle de Tomás A. Edison"
   },
   {
-   "id": "zgz-31673",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "COVADONGA NTRA. SRA., 5",
-   "via": "Entre C/ San Rafael y n.º 27",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-17",
-   "lat": 41.6511727,
-   "lon": -0.9104898,
-   "precision": "portal",
-   "nombre": "Calle Covadonga Ntra. Sra."
-  },
-  {
    "id": "zgz-31663",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -872,20 +888,6 @@
    "lon": -0.8441739,
    "precision": "calle",
    "nombre": "Calle Puente Piedra"
-  },
-  {
-   "id": "zgz-31672",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "LATASSA FELIX, 10",
-   "via": "Entre Avda. Goya y C/ Mariano Barbasán",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-17",
-   "lat": 41.6432715,
-   "lon": -0.8917218,
-   "precision": "portal",
-   "nombre": "Calle de Félix Latassa"
   },
   {
    "id": "zgz-31705",
@@ -978,6 +980,21 @@
    "nombre": "Calle Río Huerva"
   },
   {
+   "id": "zgz-31691",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CONCORDIA DE LA SIS, 4",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-19",
+   "lat": 41.6652796,
+   "lon": -0.8228066,
+   "precision": "portal",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle de la Concordia"
+  },
+  {
    "id": "zgz-31675",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1068,20 +1085,6 @@
    "nombre": "Calle Jenaro Checa"
   },
   {
-   "id": "zgz-31671",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "LERIDA, 3",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-17",
-   "lat": 41.647299,
-   "lon": -0.8953912,
-   "precision": "portal",
-   "nombre": "Calle de Lérida"
-  },
-  {
    "id": "zgz-31688",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -1153,7 +1156,22 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30070185",
+   "id": "zgz-31692",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CADIERA SIS, 1",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-19",
+   "lat": 41.6658547,
+   "lon": -0.8230173,
+   "precision": "portal",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle Cadiera"
+  },
+  {
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1167,7 +1185,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1195,34 +1213,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30138623",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "VS-A-2-D",
-   "via": "pk 317.13–317.16 · sentido decreciente",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-17",
-   "fin": null,
-   "lat": 41.669197,
-   "lon": -0.93490815,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30137483",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 317.9–318.3 · sentido decreciente · orientación oeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-17",
-   "fin": null,
-   "lat": 41.674026,
-   "lon": -0.92938626,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30137482",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1237,6 +1227,20 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30138623",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "VS-A-2-D",
+   "via": "pk 317.13–317.16 · sentido decreciente",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.669197,
+   "lon": -0.93490815,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30138622",
    "fuente": "DGT",
    "tipo": "Corte",
@@ -1248,6 +1252,20 @@
    "fin": null,
    "lat": 41.661404,
    "lon": -0.9447334,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30137483",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 317.9–318.3 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-17",
+   "fin": null,
+   "lat": 41.674026,
+   "lon": -0.92938626,
    "precision": "exacta"
   },
   {
