@@ -6721,6 +6721,17 @@
    "titulo": "Z-40",
    "via": "pk 24.106 · sentido decreciente · orientación noreste",
    "visto": "2026-11-17"
+  },
+  "dgt-30104469": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30104469",
+   "inicio": "2026-11-17",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-17"
   }
  }
 }
