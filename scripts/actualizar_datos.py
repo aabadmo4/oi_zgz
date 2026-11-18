@@ -1,6 +1,7 @@
 """Descarga incidencias del Ayuntamiento de Zaragoza y de la DGT (zona de Zaragoza),
 obtiene coordenadas (propias de la fuente o, si faltan, vía Gemini) y escribe
-data/incidencias.json. Sale con código 1 si no hay datos válidos."""
+data/incidencias.json. Si una fuente falla, conserva sus incidencias de la ejecución anterior (máx. VIDA_MAX_H horas)
+y la marca como caída en "fuentes". Sale con código 1 si no hay datos válidos."""
 import os, re, sys, json, time, datetime, html, math, unicodedata
 from zoneinfo import ZoneInfo
 import requests
@@ -126,7 +127,7 @@ def limpiar_texto(t):
 def fetch_ayuntamiento():
     url = "https://www.zaragoza.es/sede/servicio/via-publica/incidencia.json"
     def get():
-        r = requests.get(url, params={"rows": 200}, headers=UA, timeout=35)
+        r = requests.get(url, params={"rows": 200}, headers=UA, timeout=(10, 35))
         r.raise_for_status()
         return r.json()
     data = reintentar(get)
@@ -186,7 +187,7 @@ def causa_dgt(rec, xp):
 
 def fetch_dgt():
     url = "https://nap.dgt.es/datex2/v3/dgt/SituationPublication/datex2_v37.xml"
-    r = reintentar(lambda: requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=45))
+    r = reintentar(lambda: requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=(10, 45)))
     r.raise_for_status()
     root = etree.fromstring(r.content, etree.XMLParser(recover=True, encoding="utf-8"))
     xp = lambda rec, q: [t.strip() for t in rec.xpath(q) if t.strip()]
@@ -674,16 +675,54 @@ def geocodificar(items):
     json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
 
 
+VIDA_MAX_H = 24  # horas máximas que se siguen mostrando los datos de una fuente caída
+FUENTE_ITEM = {"ayuntamiento": "Ayuntamiento", "dgt": "DGT"}
+
+
+def cargar_previo():
+    try:
+        return json.load(open(SALIDA, encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _fecha(txt, tz):
+    try:
+        d = datetime.datetime.fromisoformat(str(txt))
+        return d if d.tzinfo else d.replace(tzinfo=tz)
+    except (TypeError, ValueError):
+        return None
+
+
+def conservar(nombre, previo, ahora):
+    """Incidencias de la ejecución anterior para una fuente que ha fallado hoy.
+    Devuelve (lista, ultima_ok). La lista queda vacía si no había datos previos, si son más viejos que
+    VIDA_MAX_H o si la fuente ya estaba caída y sus datos ya caducaron. Descarta las que ya terminaron."""
+    pf = (previo.get("fuentes") or {}).get(nombre) or {}
+    # Compatibilidad con ficheros anteriores sin 'ultima_ok': si la fuente iba bien, vale 'actualizado'
+    ultima = pf.get("ultima_ok") or (previo.get("actualizado") if pf.get("ok") else None)
+    f = _fecha(ultima, ahora.tzinfo)
+    if not f or ahora - f > datetime.timedelta(hours=VIDA_MAX_H):
+        return [], ultima
+    hoy = ahora.date().isoformat()
+    viejas = [i for i in previo.get("incidencias", [])
+              if i.get("fuente") == FUENTE_ITEM[nombre] and i.get("lat") is not None and not (i.get("fin") and i["fin"] < hoy)]
+    return viejas, ultima
+
+
 def main():
-    fuentes, items = {}, []
+    ahora = datetime.datetime.now(ZoneInfo("Europe/Madrid"))
+    previo = cargar_previo()
+    fuentes, items, caidas = {}, [], []
     for nombre, fn in (("ayuntamiento", fetch_ayuntamiento), ("dgt", fetch_dgt)):
         try:
             datos = fn()
-            fuentes[nombre] = {"ok": True, "n": len(datos)}
+            fuentes[nombre] = {"ok": True, "n": len(datos), "ultima_ok": ahora.isoformat(timespec="minutes")}
             items += datos
         except Exception as e:
             print(f"Error en {nombre}: {e}")
             fuentes[nombre] = {"ok": False, "n": 0}
+            caidas.append(nombre)
     geocodificar(items)
     for i in items:
         for k in ("_calle", "_tramo", "_raw", "_calle_sb", "_barrio", "_osm", "_gem"):
@@ -692,14 +731,23 @@ def main():
         if i["lat"] is None:
             print(f"SIN UBICAR: {i['titulo']} | {i['detalle'][:70]}")
     con_coords = [i for i in items if i["lat"] is not None]
+    n_ubicadas = len(con_coords)
+    for nombre in caidas:  # fuente caída: se conservan sus datos anteriores (ya geocodificados), sin pasar por geocodificar
+        viejas, ultima = conservar(nombre, previo, ahora)
+        if ultima:
+            fuentes[nombre]["ultima_ok"] = ultima
+        fuentes[nombre]["n"] = len(viejas)
+        fuentes[nombre]["conservados"] = bool(viejas)
+        con_coords += viejas
+        print(f"::warning title=Fuente caída: {nombre}::Se conservan {len(viejas)} incidencias anteriores (última actualización correcta: {ultima or 'desconocida'}).")
     if not con_coords:
         print("Sin incidencias con coordenadas: no se actualiza.")
         sys.exit(1)
     os.makedirs("data", exist_ok=True)
     salida = {"actualizado": datetime.datetime.now(ZoneInfo("Europe/Madrid")).isoformat(timespec="minutes"),
-              **LICENCIA_DATOS, "fuentes": fuentes, "sin_ubicar": len(items) - len(con_coords), "incidencias": con_coords}
+              **LICENCIA_DATOS, "fuentes": fuentes, "sin_ubicar": len(items) - n_ubicadas, "incidencias": con_coords}
     json.dump(salida, open(SALIDA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"OK: {len(con_coords)} incidencias ({len(items) - len(con_coords)} sin ubicar)")
+    print(f"OK: {len(con_coords)} incidencias ({len(items) - n_ubicadas} sin ubicar)")
 
 
 if __name__ == "__main__":
