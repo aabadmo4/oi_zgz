@@ -71,6 +71,8 @@ body{font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--in
 header{background:var(--sign);color:#1d2024;padding:8px 14px;border-bottom:6px solid transparent;border-image:repeating-linear-gradient(135deg,#1d2024 0 14px,var(--sign) 14px 28px) 6;display:flex;align-items:baseline;gap:4px 14px;flex-wrap:wrap}
 h1{font:800 clamp(20px,5vw,32px)/1.05 "Barlow Condensed",sans-serif;margin:0;letter-spacing:.01em}
 #estado{font-size:13px;font-weight:500}
+#aviso{margin:0;padding:8px 12px;font-size:13px;line-height:1.35;border-bottom:1px solid var(--line);border-left:4px solid var(--err);background:var(--bg)}
+#aviso p{margin:0}#aviso p+p{margin-top:4px}#aviso strong{color:var(--err)}
 main{flex:none;height:calc(100svh - 64px);min-height:460px;display:grid;grid-template-columns:minmax(320px,400px) 1fr}
 aside{display:flex;flex-direction:column;min-height:0;background:var(--panel);border-right:1px solid var(--line)}
 .filtros{padding:10px 12px;border-bottom:1px solid var(--line);display:grid;gap:8px}
@@ -196,6 +198,7 @@ aside{border-right:0;border-top:1px solid var(--line)}
 <header><h1>Obras e incidencias en Zaragoza hoy</h1><span id="estado">Cargando…</span></header>
 <main>
 <aside>
+<div id="aviso" role="status" hidden></div>
 <div id="adTop"></div>
 <div class="filtros">
 <div class="chips" id="chips" role="group" aria-label="Tipo de incidencia"></div>
@@ -414,6 +417,9 @@ datos=d.incidencias||[];chips();
 const f=new Date(d.actualizado);
 $('estado').textContent=isNaN(f)?'':`Actualizado ${f.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})}`;
 pintar();
+const NF={ayuntamiento:'Ayuntamiento de Zaragoza',dgt:'DGT'},fmtF=t=>{const x=new Date(t);return isNaN(x)?'':x.toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short'})};
+const caidas=Object.entries(d.fuentes||{}).filter(([,v])=>v&&v.ok===false);
+if(caidas.length){$('aviso').innerHTML=caidas.map(([k,v])=>{const n=NF[k]||k,u=fmtF(v.ultima_ok);return v.conservados?`<p><strong>${esc(n)}: fuente no disponible.</strong> Se muestran los últimos datos recibidos${u?' ('+esc(u)+')':''}; pueden estar desactualizados.</p>`:`<p><strong>${esc(n)}: fuente no disponible ahora mismo.</strong> Sus incidencias no aparecen en el mapa ni en el listado${u?' (últimos datos: '+esc(u)+')':''}.</p>`}).join('');$('aviso').hidden=false}
 (()=>{const c={};datos.forEach(i=>c[i.tipo]=(c[i.tipo]||0)+1);const NT={Corte:['corte','cortes'],Obras:['obra','obras'],Accidente:['accidente','accidentes'],'Retención':['retención','retenciones'],Suministro:['corte de suministro','cortes de suministro'],Otros:['otra incidencia','otras incidencias']};const p=Object.entries(c).sort((x,y)=>y[1]-x[1]).map(([t,n])=>`${n} ${(NT[t]||[t.toLowerCase(),t.toLowerCase()])[n===1?0:1]}`).join(', ');
 if(datos.length)$('resumen').textContent=`Ahora mismo hay ${datos.length} ${datos.length===1?'incidencia activa':'incidencias activas'} en Zaragoza${p?': '+p:''}.`})();
 if(marcas.size)map.fitBounds(L.featureGroup([...marcas.values()]).getBounds().pad(.1));
