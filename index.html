@@ -192,6 +192,33 @@ aside{border-right:0;border-top:1px solid var(--line)}
 .leaflet-container a.oi-b,.oi-b{flex:1;min-height:38px;display:grid;place-items:center;padding:0 8px;font:600 14px Barlow,system-ui,sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--ink);border-radius:8px;text-decoration:none;cursor:pointer}
 .leaflet-container a.oi-b.p{background:var(--sign);color:#1d2024;border-color:#1d2024}
 .oi-b:focus-visible,.oi-mas:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+/* ---- Escritorio (>760 px): solo afecta a pantallas anchas; el móvil queda igual ---- */
+@media(min-width:761px){
+:root{--hdr:64px;--side:clamp(360px,30vw,480px)}
+header{height:var(--hdr);align-items:center;flex-wrap:nowrap;padding:0 clamp(16px,3vw,32px)}
+h1{font-size:clamp(26px,2.6vw,34px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+#estado{margin-left:auto;flex:none;white-space:nowrap}
+main{height:max(520px,calc(100svh - var(--hdr)));min-height:520px;grid-template-columns:var(--side) 1fr}
+aside{box-shadow:2px 0 12px #0000000f;z-index:1}
+.filtros{padding:14px 16px;gap:10px}
+.filtros>*{min-width:0}
+.fila select{flex:0 1 190px}
+.chip{transition:background-color .15s,border-color .15s}
+.chip:not(:disabled):not([aria-pressed=true]):hover{background:var(--bg);border-color:var(--mute)}
+#cuenta{padding:10px 16px 2px}
+#lista{padding:4px 10px 16px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+#lista::-webkit-scrollbar{width:8px}
+#lista::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+#lista button.it{padding:12px 8px;border-radius:10px;transition:background-color .12s}
+#lista button.it:hover{background:var(--bg)}
+.mas button:hover{background:var(--asfalto);color:#fff}
+.leaflet-popup-content{width:340px!important}
+.info{max-width:1040px;padding:44px 24px 20px;font-size:17px;line-height:1.6}
+.info h3{margin-top:28px}
+.info ul.inc{columns:2;column-gap:32px}
+.info ul.inc li{break-inside:avoid}
+footer{padding:18px clamp(16px,3vw,32px)}
+}
 </style>
 </head>
 <body>
