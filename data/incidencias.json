@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18T15:45+01:00",
+ "actualizado": "2026-11-18T16:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -11,14 +11,14 @@
   },
   "dgt": {
    "ok": true,
-   "n": 6,
-   "ultima_ok": "2026-11-18T15:44+01:00"
+   "n": 8,
+   "ultima_ok": "2026-11-18T16:01+01:00"
   }
  },
  "sin_ubicar": 0,
  "incidencias": [
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -32,7 +32,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -99,6 +99,34 @@
    "fin": null,
    "lat": 41.69234,
    "lon": -0.97405,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30163746",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 256.412 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-18",
+   "fin": null,
+   "lat": 41.73218,
+   "lon": -1.05672,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30164004",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 230.276 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-18",
+   "fin": null,
+   "lat": 41.60556,
+   "lon": -0.82866,
    "precision": "exacta"
   }
  ]
