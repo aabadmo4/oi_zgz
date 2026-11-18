@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18T14:28+01:00",
+ "actualizado": "2026-11-18T15:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 9
+   "n": 5
   }
  },
  "sin_ubicar": 0,
@@ -58,34 +58,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30143375",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 33.0 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.6343,
-   "lon": -0.97508377,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30143422",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 16.0–17.0 · sentido creciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.64717,
-   "lon": -0.8338058,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30144077",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -100,45 +72,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30159777",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 299.408 · sentido decreciente · orientación sur",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-18",
-   "fin": null,
-   "lat": 41.74397,
-   "lon": -0.84294,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30160152",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-68",
-   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-18",
-   "fin": null,
-   "lat": 41.625713,
-   "lon": -0.84891886,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30160292",
+   "id": "dgt-30160817",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "N-232",
-   "via": "pk 243.178 · sentido creciente · orientación oeste",
+   "via": "pk 252.058 · sentido creciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-18",
    "fin": null,
-   "lat": 41.662727,
-   "lon": -0.928775,
+   "lat": 41.70995,
+   "lon": -1.01402,
    "precision": "exacta"
   }
  ]
