@@ -3893,6 +3893,61 @@
    "titulo": "VS-A-2-D",
    "via": "pk 317.13–317.16 · sentido decreciente",
    "visto": "2026-11-18"
+  },
+  "dgt-30142499": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30142499",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.202 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-18"
+  },
+  "dgt-30142741": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30142741",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.2 · sentido creciente · orientación este",
+   "visto": "2026-11-18"
+  },
+  "dgt-30142806": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30142806",
+   "inicio": "2026-11-18",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-18"
+  },
+  "dgt-30143533": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30143533",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.19 · sentido decreciente",
+   "visto": "2026-11-18"
+  },
+  "dgt-30143732": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30143732",
+   "inicio": "2026-11-18",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-18"
   }
  },
  "alvarado-pedro-de": {
@@ -7149,6 +7204,83 @@
    "tipo": "Retención",
    "titulo": "Z-40",
    "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-18"
+  },
+  "dgt-30142742": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30142742",
+   "inicio": "2026-11-18",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 15.6–16.0 · sentido decreciente · orientación norte",
+   "visto": "2026-11-18"
+  },
+  "dgt-30142743": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30142743",
+   "inicio": "2026-11-18",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 15.79–20.5 · sentido decreciente · orientación norte",
+   "visto": "2026-11-18"
+  },
+  "dgt-30142967": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30142967",
+   "inicio": "2026-11-18",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-18"
+  },
+  "dgt-30143104": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30143104",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 19.421 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-18"
+  },
+  "dgt-30143512": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30143512",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 20.512 · sentido decreciente · orientación este",
+   "visto": "2026-11-18"
+  },
+  "dgt-30143660": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30143660",
+   "inicio": "2026-11-18",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 20.0 · sentido creciente · orientación oeste",
+   "visto": "2026-11-18"
+  },
+  "dgt-30143837": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30143837",
+   "inicio": "2026-11-18",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 19.45 · sentido decreciente · orientación noreste",
    "visto": "2026-11-18"
   }
  }
