@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-18T23:01+01:00",
+ "actualizado": "2026-11-19T00:03+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 79,
-   "ultima_ok": "2026-11-18T23:01+01:00"
+   "n": 81,
+   "ultima_ok": "2026-11-19T00:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 10,
-   "ultima_ok": "2026-11-18T23:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-19T00:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -539,48 +539,6 @@
    "nombre": "Calle Antonio Cano Mata"
   },
   {
-   "id": "zgz-31686",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "MALPICA PG. (CÑ. E), 11",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 10 horas.",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.661965082319696,
-   "lon": -0.7937712451440949,
-   "precision": "aprox",
-   "nombre": "Calle Cñ. e Malpica Pg."
-  },
-  {
-   "id": "zgz-31687",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "MONTAÑES, 8",
-   "via": "Entre C/ Berenguer de Bardají y C/ Alcañiz",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.648891,
-   "lon": -0.9056825,
-   "precision": "portal",
-   "nombre": "Calle de Bernardino Montañés"
-  },
-  {
-   "id": "zgz-31689",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ALCAÑIZ, 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.6491271,
-   "lon": -0.906712,
-   "precision": "portal",
-   "nombre": "Calle de Alcañiz"
-  },
-  {
    "id": "zgz-31655",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -666,6 +624,34 @@
    "nombre": "Calle Mayor"
   },
   {
+   "id": "zgz-31727",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "COSO, 14",
+   "via": "ENTRE C/ JUAN PORCELL Y C/ RUFAS",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.6537306,
+   "lon": -0.8837195,
+   "precision": "portal",
+   "nombre": "Calle del Coso"
+  },
+  {
+   "id": "zgz-31728",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SANTA CATALINA, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.6512872,
+   "lon": -0.878485,
+   "precision": "calle",
+   "nombre": "Calle de Santa Catalina"
+  },
+  {
    "id": "zgz-31653",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -695,18 +681,46 @@
    "nombre": "Carretera de Cogullada"
   },
   {
-   "id": "zgz-31685",
+   "id": "zgz-31729",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
-   "titulo": "ANDRES D UZTARROZ J.F , 11",
+   "titulo": "GISTAIN VALLE DE, 28",
    "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.63228232168085,
-   "lon": -0.8835169465644094,
-   "precision": "aprox",
-   "nombre": "Calle Andrés de Uztárroz J.F"
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.6652428,
+   "lon": -0.8726958,
+   "precision": "portal",
+   "nombre": "Calle Valle de Gistaín"
+  },
+  {
+   "id": "zgz-31730",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SAN JUAN DE LA PEÑA AV, 37",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.6651649,
+   "lon": -0.8720145,
+   "precision": "portal",
+   "nombre": "Calle San Juan de la Peña Av"
+  },
+  {
+   "id": "zgz-31731",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "VALENCIA AVENIDA DE, 9",
+   "via": "ENTRE C/ FUEROS DE ARAGÓN Y C/ PAMPLONA ESCUDERO",
+   "detalle": "Cortes de Agua. Desde las 9 hasta las 18 horas.",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.647136,
+   "lon": -0.8946807,
+   "precision": "portal",
+   "nombre": "Avenida de Valencia"
   },
   {
    "id": "zgz-31114",
@@ -963,18 +977,77 @@
    "nombre": "Avenida de las Ranillas"
   },
   {
-   "id": "zgz-31663",
+   "id": "zgz-31724",
    "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "PIEDRA (PUENTE), 0",
+   "tipo": "Suministro",
+   "titulo": "LORENTE JUAN JOSE, 1",
+   "via": "ENTRE C/ FUEROS DE ARAGÓN Y C/ PAMPLONA ESCUDERO",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 14 horas.",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.6467227,
+   "lon": -0.8950031,
+   "precision": "portal",
+   "nombre": "Calle Juan José Lorente"
+  },
+  {
+   "id": "zgz-31725",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "MOVERA AV MVR, 309",
    "via": "",
-   "detalle": "Con motivo de la instalación de adornos navideños y supeditado al Permiso Especial de Policía Local",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-18",
-   "lat": 41.6694589,
-   "lon": -0.8441739,
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.6634397,
+   "lon": -0.8215851,
    "precision": "calle",
-   "nombre": "Calle Puente Piedra"
+   "barrio": "Movera",
+   "nombre": "Calle Movera Av"
+  },
+  {
+   "id": "zgz-31726",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "TORRES MORALES M.G., 8",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.64302487581002,
+   "lon": -0.8878850775453152,
+   "precision": "aprox",
+   "nombre": "Calle Torres Morales M.G."
+  },
+  {
+   "id": "zgz-31732",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "ARAGON (FUEROS DE), 15",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 9 hasta las 18 horas.",
+   "inicio": "2026-11-20",
+   "fin": "2026-11-20",
+   "lat": 41.7581497,
+   "lon": -1.064886,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.757908,
+      -1.064662
+     ],
+     [
+      41.758197,
+      -1.06493
+     ],
+     [
+      41.758391,
+      -1.06511
+     ]
+    ]
+   ],
+   "nombre": "Calle Fueros de Aragon"
   },
   {
    "id": "zgz-31705",
@@ -1144,20 +1217,6 @@
    "nombre": "Calle del Molino de las Armas"
   },
   {
-   "id": "zgz-31662",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SAN MIGUEL, 10",
-   "via": "",
-   "detalle": "Con motivo de la instalación de adornos navideños y supeditado al Permiso Especial de Policía Local",
-   "inicio": "2026-11-17",
-   "fin": "2026-11-18",
-   "lat": 41.652763669527296,
-   "lon": -0.8791811640087789,
-   "precision": "aprox",
-   "nombre": "Calle San Miguel"
-  },
-  {
    "id": "zgz-31664",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1170,20 +1229,6 @@
    "lon": -0.8892865,
    "precision": "portal",
    "nombre": "Calle Jenaro Checa"
-  },
-  {
-   "id": "zgz-31688",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "BARDAJI BERENGUER DE, 18",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-18",
-   "fin": "2026-11-18",
-   "lat": 41.6487449,
-   "lon": -0.9056191,
-   "precision": "portal",
-   "nombre": "Calle Berenguer de Bardají"
   },
   {
    "id": "zgz-31271",
@@ -1258,20 +1303,6 @@
    "nombre": "Calle Cadiera"
   },
   {
-   "id": "dgt-30070186",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-24",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1286,17 +1317,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30086111",
+   "id": "dgt-30070186",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "ZP-2105",
-   "via": "pk 1.89–2.61 · sentido creciente · orientación oeste",
-   "detalle": "Obstáculo en la vía",
-   "causa": "Obstáculo en la vía",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-16",
-   "fin": null,
-   "lat": 41.58634,
-   "lon": -0.8291475,
+   "fin": "2026-11-24",
+   "lat": 41.681473,
+   "lon": -0.9655962,
    "precision": "exacta"
   },
   {
@@ -1311,20 +1342,6 @@
    "fin": null,
    "lat": 41.635586,
    "lon": -0.9727975,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30175294",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 305.8–306.2 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-18",
-   "fin": null,
-   "lat": 41.617794,
-   "lon": -1.0408263,
    "precision": "exacta"
   },
   {
@@ -1356,7 +1373,35 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30175294",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 305.8–306.2 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-18",
+   "fin": null,
+   "lat": 41.617794,
+   "lon": -1.0408263,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30176026",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 318.4–320.4 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-18",
+   "fin": null,
+   "lat": 41.680706,
+   "lon": -0.9028626,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30176025",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
@@ -1384,17 +1429,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30176025",
+   "id": "dgt-30176807",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 318.4–320.4 · sentido creciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
+   "tipo": "Corte",
+   "titulo": "VS-A-2-C",
+   "via": "pk 325.91 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-18",
    "fin": null,
-   "lat": 41.680706,
-   "lon": -0.9028626,
+   "lat": 41.675735,
+   "lon": -0.8365905,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30177062",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 243.711 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-18",
+   "fin": null,
+   "lat": 41.67611,
+   "lon": -0.93002,
    "precision": "exacta"
   }
  ]
