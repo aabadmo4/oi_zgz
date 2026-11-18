@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18T06:01+01:00",
+ "actualizado": "2026-11-18T07:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -10,7 +10,7 @@
   },
   "dgt": {
    "ok": true,
-   "n": 5
+   "n": 6
   }
  },
  "sin_ubicar": 2,
@@ -1213,31 +1213,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30141595",
+   "id": "dgt-30142040",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 506.59 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
    "inicio": "2026-11-18",
    "fin": null,
-   "lat": 41.70827,
-   "lon": -0.86289,
+   "lat": 41.665405,
+   "lon": -0.83814114,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30141615",
+   "id": "dgt-30142148",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 506.609 · sentido creciente · orientación noreste",
+   "titulo": "A-68",
+   "via": "pk 233.567 · sentido creciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-18",
    "fin": null,
-   "lat": 41.70847,
-   "lon": -0.86288,
+   "lat": 41.62742,
+   "lon": -0.8523,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30142172",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 233.613 · sentido creciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-18",
+   "fin": null,
+   "lat": 41.62772,
+   "lon": -0.85276,
    "precision": "exacta"
   }
  ]
