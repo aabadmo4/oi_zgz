@@ -4025,6 +4025,28 @@
    "titulo": "A-2",
    "via": "pk 324.9–324.95 · sentido creciente · orientación este",
    "visto": "2026-11-18"
+  },
+  "dgt-30169463": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30169463",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 322.775 · sentido creciente · orientación este",
+   "visto": "2026-11-18"
+  },
+  "dgt-30169868": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30169868",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 329.828 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-18"
   }
  },
  "alvarado-pedro-de": {
@@ -4742,7 +4764,7 @@
  "vistabella-mrl": {
   "zgz-30666": {
    "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
-   "fin": "2026-11-20",
+   "fin": "2026-12-04",
    "fuente": "Ayuntamiento",
    "id": "zgz-30666",
    "inicio": "2026-09-01",
@@ -7435,6 +7457,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 14.95–15.0 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-18"
+  },
+  "dgt-30169380": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30169380",
+   "inicio": "2026-11-18",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 33.172 · sentido creciente · orientación noreste",
    "visto": "2026-11-18"
   }
  }
