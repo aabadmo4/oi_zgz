@@ -3992,6 +3992,17 @@
    "titulo": "A-2",
    "via": "pk 314.359 · sentido decreciente · orientación suroeste",
    "visto": "2026-11-18"
+  },
+  "dgt-30162343": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30162343",
+   "inicio": "2026-11-18",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-18"
   }
  },
  "alvarado-pedro-de": {
