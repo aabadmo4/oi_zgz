@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-19T23:01+01:00",
+ "actualizado": "2026-11-20T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 85,
-   "ultima_ok": "2026-11-19T23:01+01:00"
+   "n": 74,
+   "ultima_ok": "2026-11-20T00:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 15,
-   "ultima_ok": "2026-11-19T23:01+01:00"
+   "n": 13,
+   "ultima_ok": "2026-11-20T00:01+01:00"
   }
  },
- "sin_ubicar": 3,
+ "sin_ubicar": 1,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -186,20 +186,6 @@
    "nombre": "Calle Agustín de Quinto"
   },
   {
-   "id": "zgz-30074",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SADABA, 5",
-   "via": "",
-   "detalle": "Dentro del Proyecto de Urbanización G-19-1 (entorno antigua Estación Portillo)",
-   "inicio": "2026-07-16",
-   "fin": "2026-11-16",
-   "lat": 41.6548205,
-   "lon": -0.8982344,
-   "precision": "portal",
-   "nombre": "Calle Sádaba"
-  },
-  {
    "id": "zgz-31719",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -240,21 +226,6 @@
    "lon": -0.862763,
    "precision": "portal",
    "nombre": "Calle Jaime Ferrán"
-  },
-  {
-   "id": "zgz-31690",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SOLIDARIDAD SIS, 2",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-19",
-   "lat": 41.664928,
-   "lon": -0.822051,
-   "precision": "portal",
-   "barrio": "Santa Isabel",
-   "nombre": "Calle de la Solidaridad"
   },
   {
    "id": "zgz-31659",
@@ -356,65 +327,6 @@
    "nombre": "Calle Pedro de Alvarado"
   },
   {
-   "id": "zgz-31537",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "FATAS CABEZA G SIS, 26",
-   "via": "",
-   "detalle": "Para realizar una nueva acometida de vertido",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-19",
-   "lat": 41.671292,
-   "lon": -0.8334488,
-   "precision": "calle",
-   "barrio": "Santa Isabel",
-   "trazado": [
-    [
-     [
-      41.671721,
-      -0.834428
-     ],
-     [
-      41.671482,
-      -0.833876
-     ],
-     [
-      41.671434,
-      -0.833768
-     ],
-     [
-      41.671396,
-      -0.833682
-     ],
-     [
-      41.671278,
-      -0.833417
-     ],
-     [
-      41.671134,
-      -0.833094
-     ],
-     [
-      41.670948,
-      -0.832668
-     ],
-     [
-      41.670917,
-      -0.832599
-     ],
-     [
-      41.670878,
-      -0.832502
-     ],
-     [
-      41.670865,
-      -0.832469
-     ]
-    ]
-   ],
-   "nombre": "Calle Guillermo Fatás Cabeza"
-  },
-  {
    "id": "zgz-30805",
    "fuente": "Ayuntamiento",
    "tipo": "Obras",
@@ -483,20 +395,6 @@
    "lon": -0.8794143,
    "precision": "portal",
    "nombre": "Calle Palencia"
-  },
-  {
-   "id": "zgz-31695",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CANO MATA ANTONIO, 0",
-   "via": "Entre C/ Fray Casanova y C/ Alfamén",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-19",
-   "lat": 41.6571058,
-   "lon": -0.9053442,
-   "precision": "calle",
-   "nombre": "Calle Antonio Cano Mata"
   },
   {
    "id": "zgz-31655",
@@ -711,20 +609,6 @@
    "nombre": "Calle Salvador Minguijón"
   },
   {
-   "id": "zgz-31451",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CUARTA AVENIDA, 46",
-   "via": "",
-   "detalle": "Para la reconstrucción de orejetas en el paso de peatones a la altura del nº 46",
-   "inicio": "2026-10-28",
-   "fin": "2026-11-20",
-   "lat": 41.624682,
-   "lon": -0.8782324,
-   "precision": "portal",
-   "nombre": "Cuarta Avenida"
-  },
-  {
    "id": "zgz-31536",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -807,35 +691,6 @@
    "lon": -0.868073,
    "precision": "portal",
    "nombre": "Calle Doctor Blanco Cordero"
-  },
-  {
-   "id": "zgz-31693",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CADIERA PL SIS, 0",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-19",
-   "lat": 41.6660148,
-   "lon": -0.8233343,
-   "precision": "calle",
-   "barrio": "Santa Isabel",
-   "nombre": "Calle Cadiera Pl"
-  },
-  {
-   "id": "zgz-31694",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAN VICENTE MARTIR, 5",
-   "via": "Entre C/ José María Lacarra y C/ Pedro María Ric",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-19",
-   "lat": 41.6442436,
-   "lon": -0.8824468,
-   "precision": "portal",
-   "nombre": "Calle de San Vicente Mártir"
   },
   {
    "id": "zgz-31144",
@@ -1128,21 +983,6 @@
    "nombre": "Calle Río Huerva"
   },
   {
-   "id": "zgz-31691",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CONCORDIA DE LA SIS, 4",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-19",
-   "lat": 41.6652796,
-   "lon": -0.8228066,
-   "precision": "portal",
-   "barrio": "Santa Isabel",
-   "nombre": "Calle de la Concordia"
-  },
-  {
    "id": "zgz-31675",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1290,21 +1130,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "zgz-31692",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CADIERA SIS, 1",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-19",
-   "lat": 41.6658547,
-   "lon": -0.8230173,
-   "precision": "portal",
-   "barrio": "Santa Isabel",
-   "nombre": "Calle Cadiera"
-  },
-  {
    "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1347,20 +1172,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30211454",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.676174,
-   "lon": -0.8383114,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30211439",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1375,17 +1186,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30212961",
+   "id": "dgt-30211454",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 313.8–315.0 · sentido creciente · orientación este",
+   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.656395,
-   "lon": -0.9546074,
+   "lat": 41.676174,
+   "lon": -0.8383114,
    "precision": "exacta"
   },
   {
@@ -1403,17 +1214,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30213728",
+   "id": "dgt-30212961",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "VS-A-2-C",
-   "via": "pk 314.99 · sentido creciente · orientación noreste",
+   "titulo": "A-2",
+   "via": "pk 313.8–315.0 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.656815,
-   "lon": -0.9538505,
+   "lat": 41.656395,
+   "lon": -0.9546074,
    "precision": "exacta"
   },
   {
@@ -1428,6 +1239,20 @@
    "fin": null,
    "lat": 41.656395,
    "lon": -0.9546074,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30213728",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "VS-A-2-C",
+   "via": "pk 314.99 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-19",
+   "fin": null,
+   "lat": 41.656815,
+   "lon": -0.9538505,
    "precision": "exacta"
   },
   {
@@ -1459,59 +1284,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30213762",
+   "id": "dgt-30215184",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 248.291 · sentido decreciente · orientación este",
+   "titulo": "VS-A-2-C",
+   "via": "pk 316.635 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.68873,
-   "lon": -0.979012,
+   "lat": 41.66526,
+   "lon": -0.93802,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30214062",
+   "id": "dgt-30215217",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 297.328 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 20.1–20.9 · sentido creciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.72561,
-   "lon": -0.84659,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30214212",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 328.336 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.66697,
-   "lon": -0.810766,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30214607",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 299.517 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.74485,
-   "lon": -0.84244,
+   "lat": 41.622513,
+   "lon": -0.85698414,
    "precision": "exacta"
   }
  ]
