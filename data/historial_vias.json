@@ -4564,6 +4564,17 @@
    "titulo": "VS-A-2-C",
    "via": "pk 314.99 · sentido creciente · orientación noreste",
    "visto": "2026-11-19"
+  },
+  "dgt-30214212": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30214212",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 328.336 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-19"
   }
  },
  "alvarado-pedro-de": {
@@ -4732,6 +4743,17 @@
    "tipo": "Otros",
    "titulo": "AP-68",
    "via": "pk 279.989 · sentido creciente · orientación sureste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30214224": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30214224",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 285.022 · sentido creciente · orientación este",
    "visto": "2026-11-19"
   }
  },
@@ -8174,6 +8196,17 @@
    "tipo": "Otros",
    "titulo": "Z-40",
    "via": "pk 32.908 · sentido creciente · orientación norte",
+   "visto": "2026-11-19"
+  },
+  "dgt-30214052": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30214052",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 30.33 · sentido creciente · orientación oeste",
    "visto": "2026-11-19"
   }
  }
