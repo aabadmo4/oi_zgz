@@ -4487,6 +4487,83 @@
    "titulo": "A-2",
    "via": "pk 329.72 · sentido creciente · orientación este",
    "visto": "2026-11-19"
+  },
+  "dgt-30212961": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30212961",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 313.8–315.0 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
+  },
+  "dgt-30212970": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30212970",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 314.2–315.0 · sentido creciente · orientación noreste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30212998": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30212998",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 318.7–320.6 · sentido creciente · orientación noreste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30213053": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30213053",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 330.121 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
+  },
+  "dgt-30213191": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30213191",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 328.0–328.19 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
+  },
+  "dgt-30213701": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30213701",
+   "inicio": "2026-11-19",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 315.0–317.0 · sentido creciente · orientación noreste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30213728": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30213728",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "VS-A-2-C",
+   "via": "pk 314.99 · sentido creciente · orientación noreste",
+   "visto": "2026-11-19"
   }
  },
  "alvarado-pedro-de": {
