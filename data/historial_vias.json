@@ -4399,6 +4399,17 @@
    "titulo": "A-2",
    "via": "pk 315.217 · sentido decreciente · orientación suroeste",
    "visto": "2026-11-19"
+  },
+  "dgt-30204889": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30204889",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.15 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-19"
   }
  },
  "alvarado-pedro-de": {
@@ -5069,6 +5080,19 @@
    "tipo": "Suministro",
    "titulo": "COSO, 14",
    "via": "ENTRE C/ JUAN PORCELL Y C/ RUFAS",
+   "visto": "2026-11-19"
+  }
+ },
+ "gran-via": {
+  "zgz-31733": {
+   "detalle": "Hasta el 23-11-2026. Continuando con las obras del Río Huerva (Lote 1) y para realizar el asfaltado de la Calle Martín Ruiz Anglada",
+   "fin": "2026-11-23",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31733",
+   "inicio": "2026-11-23",
+   "tipo": "Corte",
+   "titulo": "GRAN VIA, 9",
+   "via": "",
    "visto": "2026-11-19"
   }
  },
