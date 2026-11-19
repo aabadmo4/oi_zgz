@@ -4366,11 +4366,33 @@
    "titulo": "A-2",
    "via": "pk 320.5–321.28 · sentido creciente · orientación este",
    "visto": "2026-11-19"
+  },
+  "dgt-30182992": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30182992",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 309.906 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30183298": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30183298",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 304.0–304.7 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
   }
  },
  "alvarado-pedro-de": {
   "zgz-31591": {
-   "detalle": "Para la reforma de la calle y de las viviendas",
+   "detalle": "Hasta el 26-02-2027. Para la reforma de la calle y de las viviendas",
    "fin": "2027-02-26",
    "fuente": "Ayuntamiento",
    "id": "zgz-31591",
@@ -4576,7 +4598,7 @@
  },
  "avenida-de-valencia": {
   "zgz-28004": {
-   "detalle": "Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
+   "detalle": "Hasta el 31-12-2026. Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
    "fin": "2026-12-31",
    "fuente": "Ayuntamiento",
    "id": "zgz-28004",
@@ -4609,7 +4631,7 @@
    "visto": "2026-11-02"
   },
   "zgz-31093": {
-   "detalle": "Continuando con las obras de la Avenida",
+   "detalle": "Hasta el 31-12-2026. Continuando con las obras de la Avenida",
    "fin": "2026-12-31",
    "fuente": "Ayuntamiento",
    "id": "zgz-31093",
@@ -4720,7 +4742,7 @@
  },
  "calle-doctor-blanco-cordero": {
   "zgz-25688": {
-   "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
+   "detalle": "Hasta el 26-02-2027. Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
    "fin": "2027-02-26",
    "fuente": "Ayuntamiento",
    "id": "zgz-25688",
@@ -4803,7 +4825,7 @@
  },
  "calle-jeronimo-cancer": {
   "zgz-29040": {
-   "detalle": "Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
+   "detalle": "Hasta el 12-12-2026. Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
    "fin": "2026-12-12",
    "fuente": "Ayuntamiento",
    "id": "zgz-29040",
@@ -4827,7 +4849,7 @@
    "visto": "2026-11-19"
   },
   "zgz-31425": {
-   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "detalle": "Hasta el 28-12-2026. Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
    "fin": "2026-12-28",
    "fuente": "Ayuntamiento",
    "id": "zgz-31425",
@@ -4877,7 +4899,7 @@
  },
  "calle-pedro-cerbuna": {
   "zgz-29394": {
-   "detalle": "Continuando con las obras para su renovación integral.",
+   "detalle": "Hasta el 18-02-2027. Continuando con las obras para su renovación integral.",
    "fin": "2027-02-18",
    "fuente": "Ayuntamiento",
    "id": "zgz-29394",
@@ -4888,7 +4910,7 @@
    "visto": "2026-11-19"
   },
   "zgz-30876": {
-   "detalle": "Continuando con las obras para su renovación integral",
+   "detalle": "Hasta el 18-02-2027. Continuando con las obras para su renovación integral",
    "fin": "2027-02-18",
    "fuente": "Ayuntamiento",
    "id": "zgz-30876",
@@ -4958,7 +4980,7 @@
    "visto": "2026-11-13"
   },
   "zgz-31658": {
-   "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
+   "detalle": "Hasta el 27-11-2026. Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
    "fin": "2026-11-27",
    "fuente": "Ayuntamiento",
    "id": "zgz-31658",
@@ -4984,7 +5006,7 @@
  },
  "coso": {
   "zgz-29395": {
-   "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
+   "detalle": "Hasta el 26-02-2027 . Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
    "fin": "2027-02-26",
    "fuente": "Ayuntamiento",
    "id": "zgz-29395",
@@ -5126,7 +5148,7 @@
    "visto": "2026-10-30"
   },
   "zgz-31271": {
-   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "detalle": "Hasta el 20-11-2026. Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
    "fin": "2026-11-20",
    "fuente": "Ayuntamiento",
    "id": "zgz-31271",
@@ -7864,6 +7886,39 @@
    "tipo": "Retención",
    "titulo": "Z-40",
    "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30182707": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30182707",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.675 · sentido creciente · orientación sur",
+   "visto": "2026-11-19"
+  },
+  "dgt-30182709": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30182709",
+   "inicio": "2026-11-19",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.79 · sentido decreciente · orientación norte",
+   "visto": "2026-11-19"
+  },
+  "dgt-30182710": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30182710",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 33.0–33.35 · sentido decreciente · orientación sur",
    "visto": "2026-11-19"
   }
  }

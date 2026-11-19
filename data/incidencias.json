@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T08:01+01:00",
+ "actualizado": "2026-11-19T09:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 81,
-   "ultima_ok": "2026-11-19T08:01+01:00"
+   "ultima_ok": "2026-11-19T09:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 12,
-   "ultima_ok": "2026-11-19T08:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-19T09:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -23,52 +23,12 @@
    "tipo": "Corte",
    "titulo": "BLANCO CORDERO (DR.), 11",
    "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía",
-   "detalle": "Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
+   "detalle": "Hasta el 26-02-2027. Para la reforma de las calles y de las viviendas es necesario el corte de las calles",
    "inicio": "2025-07-09",
    "fin": "2027-02-26",
-   "lat": 41.6522307,
-   "lon": -0.8679222,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.651969,
-      -0.867813
-     ],
-     [
-      41.652484,
-      -0.867552
-     ],
-     [
-      41.652514,
-      -0.867785
-     ],
-     [
-      41.652028,
-      -0.86802
-     ],
-     [
-      41.651803,
-      -0.868131
-     ],
-     [
-      41.651729,
-      -0.868167
-     ],
-     [
-      41.65153,
-      -0.868266
-     ],
-     [
-      41.651272,
-      -0.868388
-     ],
-     [
-      41.651216,
-      -0.868415
-     ]
-    ]
-   ],
+   "lat": 41.652238,
+   "lon": -0.868073,
+   "precision": "portal",
    "nombre": "Calle Doctor Blanco Cordero"
   },
   {
@@ -91,12 +51,12 @@
    "tipo": "Corte",
    "titulo": "VALENCIA AVENIDA DE, 9",
    "via": "",
-   "detalle": "Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
+   "detalle": "Hasta el 31-12-2026. Con motivo del avance de los trabajos de reforma integral de la Av. De Valencia",
    "inicio": "2026-02-02",
    "fin": "2026-12-31",
-   "lat": 41.647136,
-   "lon": -0.8946807,
-   "precision": "portal",
+   "lat": 41.64897068554932,
+   "lon": -0.8933592867548815,
+   "precision": "aprox",
    "nombre": "Avenida de Valencia"
   },
   {
@@ -119,7 +79,7 @@
    "tipo": "Corte",
    "titulo": "COSO, 94",
    "via": "",
-   "detalle": "Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
+   "detalle": "Hasta el 26-02-2027 . Continuando las obras de la reforma integral de Coso Alto y Plaza San Miguel.",
    "inicio": "2026-05-25",
    "fin": "2027-02-26",
    "lat": 41.650979,
@@ -147,7 +107,7 @@
    "tipo": "Corte",
    "titulo": "CANCER JERONIMO, 8",
    "via": "",
-   "detalle": "Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
+   "detalle": "Hasta el 12-12-2026. Para realizar obras de urbanización en el ámbito del Área de Intervención G-56-13.",
    "inicio": "2026-04-29",
    "fin": "2026-12-12",
    "lat": 41.652847,
@@ -189,7 +149,7 @@
    "tipo": "Corte",
    "titulo": "CERBUNA PEDRO, 39",
    "via": "",
-   "detalle": "Continuando con las obras para su renovación integral.",
+   "detalle": "Hasta el 18-02-2027. Continuando con las obras para su renovación integral.",
    "inicio": "2026-05-25",
    "fin": "2027-02-18",
    "lat": 41.6391707,
@@ -245,7 +205,7 @@
    "tipo": "Otros",
    "titulo": "BIARRITZ, 4",
    "via": "",
-   "detalle": "Continuando con la sustitución de tubería de abastecimiento y para realizar el cruce a la altura de la Calle Vicente Blanco García",
+   "detalle": "Hasta el 04-12-2026. Continuando con la sustitución de tubería de abastecimiento y para realizar el cruce a la altura de la Calle Vicente Blanco García",
    "inicio": "2026-11-19",
    "fin": "2026-12-04",
    "lat": 41.6582715,
@@ -259,7 +219,7 @@
    "tipo": "Corte",
    "titulo": "LASALA MANUEL, 6",
    "via": "",
-   "detalle": "Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
+   "detalle": "Hasta el 23-12-2026. Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
    "inicio": "2026-11-03",
    "fin": "2026-12-23",
    "lat": 41.640176,
@@ -330,7 +290,7 @@
    "tipo": "Corte",
    "titulo": "CERBUNA PEDRO, 5",
    "via": "",
-   "detalle": "Continuando con las obras para su renovación integral",
+   "detalle": "Hasta el 18-02-2027. Continuando con las obras para su renovación integral",
    "inicio": "2026-09-16",
    "fin": "2027-02-18",
    "lat": 41.6410979,
@@ -387,7 +347,7 @@
    "tipo": "Corte",
    "titulo": "ALVARADO PEDRO DE, 1",
    "via": "",
-   "detalle": "Para la reforma de la calle y de las viviendas",
+   "detalle": "Hasta el 26-02-2027. Para la reforma de la calle y de las viviendas",
    "inicio": "2025-07-09",
    "fin": "2027-02-26",
    "lat": 41.6520831,
@@ -474,7 +434,7 @@
    "tipo": "Corte",
    "titulo": "CLAVE JOSE ANSELMO, 5",
    "via": "",
-   "detalle": "Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
+   "detalle": "Hasta el 28-12-2026. Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
    "inicio": "2026-10-28",
    "fin": "2026-12-28",
    "lat": 41.6528206,
@@ -798,7 +758,7 @@
    "tipo": "Corte",
    "titulo": "CELORRIO SIXTO, 11",
    "via": "",
-   "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
+   "detalle": "Hasta el 27-11-2026. Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
    "inicio": "2026-11-16",
    "fin": "2026-11-27",
    "lat": 41.6592754,
@@ -1236,7 +1196,7 @@
    "tipo": "Corte",
    "titulo": "VISTABELLA MRL, 53",
    "via": "",
-   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "detalle": "Hasta el 20-11-2026. Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
    "inicio": "2026-10-18",
    "fin": "2026-11-20",
    "lat": 41.6610555,
@@ -1265,12 +1225,12 @@
    "tipo": "Corte",
    "titulo": "VALENCIA AVENIDA DE, 9",
    "via": "",
-   "detalle": "Continuando con las obras de la Avenida",
+   "detalle": "Hasta el 31-12-2026. Continuando con las obras de la Avenida",
    "inicio": "2026-10-01",
    "fin": "2026-12-31",
-   "lat": 41.647136,
-   "lon": -0.8946807,
-   "precision": "portal",
+   "lat": 41.64897068554932,
+   "lon": -0.8933592867548815,
+   "precision": "aprox",
    "nombre": "Avenida de Valencia"
   },
   {
@@ -1279,7 +1239,7 @@
    "tipo": "Corte",
    "titulo": "ROMEA POLICARPO, 8",
    "via": "",
-   "detalle": "Continuando la canalización eléctrica entre las calles Antonio Agustín y Heroismo",
+   "detalle": "Hasta el 24-11-2026. Continuando la canalización eléctrica entre las calles Antonio Agustín y Heroismo",
    "inicio": "2026-11-13",
    "fin": "2026-11-24",
    "lat": 41.6506564,
@@ -1303,7 +1263,7 @@
    "nombre": "Calle Cadiera"
   },
   {
-   "id": "dgt-30070186",
+   "id": "dgt-30070185",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1317,7 +1277,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30070185",
+   "id": "dgt-30070186",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1359,20 +1319,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30179395",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "Z-40",
-   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.624924,
-   "lon": -0.8490524,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30179689",
    "fuente": "DGT",
    "tipo": "Retención",
@@ -1387,87 +1333,87 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30179985",
+   "id": "dgt-30182595",
    "fuente": "DGT",
-   "tipo": "Retención",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 258.443 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-19",
+   "fin": null,
+   "lat": 41.73974,
+   "lon": -1.07896,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30182707",
+   "fuente": "DGT",
+   "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.665405,
-   "lon": -0.83814114,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30180180",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 243.546 · sentido decreciente · orientación sureste",
+   "via": "pk 14.675 · sentido creciente · orientación sur",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.6751,
-   "lon": -0.92851,
+   "lat": 41.66624,
+   "lon": -0.83803,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180187",
+   "id": "dgt-30182709",
    "fuente": "DGT",
-   "tipo": "Retención",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.79 · sentido decreciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-19",
+   "fin": null,
+   "lat": 41.66495,
+   "lon": -0.83805,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30182710",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 33.0–33.35 · sentido decreciente · orientación sur",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-19",
+   "fin": null,
+   "lat": 41.634296,
+   "lon": -0.9748568,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30182992",
+   "fuente": "DGT",
+   "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "via": "pk 309.906 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.664104,
-   "lon": -0.9398144,
+   "lat": 41.62768,
+   "lon": -0.99988,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180248",
+   "id": "dgt-30183298",
    "fuente": "DGT",
-   "tipo": "Retención",
+   "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 320.5–321.28 · sentido creciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
+   "via": "pk 304.0–304.7 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.67971,
-   "lon": -0.89224625,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30180336",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 245.789 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.68515,
-   "lon": -0.95188,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30180401",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 510.079 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.73677,
-   "lon": -0.84628,
+   "lat": 41.6165,
+   "lon": -1.0578821,
    "precision": "exacta"
   }
  ]
