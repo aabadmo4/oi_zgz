@@ -4256,6 +4256,61 @@
    "titulo": "VS-A-2-C",
    "via": "pk 325.91 · sentido creciente · orientación este",
    "visto": "2026-11-19"
+  },
+  "dgt-30177128": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30177128",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 306.7–306.8 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
+  },
+  "dgt-30177366": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30177366",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 318.4–319.9 · sentido creciente · orientación noreste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30177367": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30177367",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 318.4–319.9 · sentido creciente · orientación noreste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30177447": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30177447",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 320.0–320.4 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
+  },
+  "dgt-30177448": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30177448",
+   "inicio": "2026-11-19",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 320.2–320.45 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
   }
  },
  "alvarado-pedro-de": {
@@ -7711,6 +7766,17 @@
    "titulo": "Z-40",
    "via": "pk 28.091 · sentido decreciente · orientación sureste",
    "visto": "2026-11-18"
+  },
+  "dgt-30177161": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30177161",
+   "inicio": "2026-11-19",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 20.0–20.95 · sentido creciente · orientación oeste",
+   "visto": "2026-11-19"
   }
  }
 }
