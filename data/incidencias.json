@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T05:01+01:00",
+ "actualizado": "2026-11-19T06:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 81,
-   "ultima_ok": "2026-11-19T05:01+01:00"
+   "ultima_ok": "2026-11-19T06:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 7,
-   "ultima_ok": "2026-11-19T05:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-19T06:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1331,73 +1331,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30176807",
+   "id": "dgt-30178497",
    "fuente": "DGT",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "VS-A-2-C",
    "via": "pk 325.91 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
-   "inicio": "2026-11-18",
+   "inicio": "2026-11-19",
    "fin": null,
    "lat": 41.675735,
    "lon": -0.8365905,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30177161",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 20.0–20.95 · sentido creciente · orientación oeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.622303,
-   "lon": -0.8575178,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30177319",
+   "id": "dgt-30178486",
    "fuente": "DGT",
    "tipo": "Corte",
-   "titulo": "A-68",
-   "via": "pk 244.0 · sentido decreciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.67744,
-   "lon": -0.9331259,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30177318",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 244.1–244.4 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.67843,
-   "lon": -0.9338125,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30178337",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 249.221 · sentido decreciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 13.71–13.76 · sentido creciente · orientación sur",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.696983,
-   "lon": -0.990233,
+   "lat": 41.674774,
+   "lon": -0.8359864,
    "precision": "exacta"
   }
  ]
