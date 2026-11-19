@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T20:02+01:00",
+ "actualizado": "2026-11-19T21:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 85,
-   "ultima_ok": "2026-11-19T20:01+01:00"
+   "ultima_ok": "2026-11-19T21:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 8,
-   "ultima_ok": "2026-11-19T20:01+01:00"
+   "ultima_ok": "2026-11-19T21:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -1305,7 +1305,7 @@
    "nombre": "Calle Cadiera"
   },
   {
-   "id": "dgt-30180013",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1319,7 +1319,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180012",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1347,73 +1347,73 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30210171",
+   "id": "dgt-30211454",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 233.095 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.624714,
-   "lon": -0.847969,
+   "lat": 41.676174,
+   "lon": -0.8383114,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30210823",
+   "id": "dgt-30211466",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 32.908 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.63346,
-   "lon": -0.97487,
+   "lat": 41.676174,
+   "lon": -0.8383114,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30211030",
+   "id": "dgt-30211439",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 322.552 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 324.8–325.2 · sentido creciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.6796,
-   "lon": -0.8788,
+   "lat": 41.677334,
+   "lon": -0.8453186,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30211074",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-2",
-   "via": "pk 326.9 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.66577,
-   "lon": -0.83693,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30211130",
+   "id": "dgt-30212409",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 323.69 · sentido creciente · orientación noreste",
+   "via": "pk 329.72 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.67907,
-   "lon": -0.86336,
+   "lat": 41.662888,
+   "lon": -0.795067,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30212491",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 506.571 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-19",
+   "fin": null,
+   "lat": 41.70798,
+   "lon": -0.86279,
    "precision": "exacta"
   }
  ]
