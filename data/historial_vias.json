@@ -4333,6 +4333,39 @@
    "titulo": "VS-A-2-C",
    "via": "pk 325.91 · sentido creciente · orientación este",
    "visto": "2026-11-19"
+  },
+  "dgt-30179689": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30179689",
+   "inicio": "2026-11-19",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30180187": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30180187",
+   "inicio": "2026-11-19",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-19"
+  },
+  "dgt-30180248": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30180248",
+   "inicio": "2026-11-19",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 320.5–321.28 · sentido creciente · orientación este",
+   "visto": "2026-11-19"
   }
  },
  "alvarado-pedro-de": {
@@ -7809,6 +7842,28 @@
    "tipo": "Corte",
    "titulo": "Z-40",
    "via": "pk 13.71–13.76 · sentido creciente · orientación sur",
+   "visto": "2026-11-19"
+  },
+  "dgt-30179395": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30179395",
+   "inicio": "2026-11-19",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-19"
+  },
+  "dgt-30179985": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30179985",
+   "inicio": "2026-11-19",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
    "visto": "2026-11-19"
   }
  }
