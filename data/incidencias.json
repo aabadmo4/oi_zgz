@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T13:55+01:00",
+ "actualizado": "2026-11-20T14:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 82,
-   "ultima_ok": "2026-11-20T13:54+01:00"
+   "ultima_ok": "2026-11-20T14:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 6,
-   "ultima_ok": "2026-11-20T13:54+01:00"
+   "n": 5,
+   "ultima_ok": "2026-11-20T14:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1270,20 +1270,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30231222",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 296.663 · sentido creciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.71991,
-   "lon": -0.848609,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30232725",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1312,17 +1298,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30234227",
+   "id": "dgt-30234302",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 487.637 · sentido creciente · orientación noreste",
+   "titulo": "AP-68",
+   "via": "pk 284.194 · sentido creciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.59091,
-   "lon": -0.944685,
+   "lat": 41.72805,
+   "lon": -1.02414,
    "precision": "exacta"
   }
  ]
