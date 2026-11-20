@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T01:01+01:00",
+ "actualizado": "2026-11-20T02:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 74,
-   "ultima_ok": "2026-11-20T01:01+01:00"
+   "ultima_ok": "2026-11-20T02:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 14,
-   "ultima_ok": "2026-11-20T01:01+01:00"
+   "n": 17,
+   "ultima_ok": "2026-11-20T02:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1158,7 +1158,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30211466",
+   "id": "dgt-30211454",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
@@ -1186,7 +1186,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30211454",
+   "id": "dgt-30211466",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
@@ -1200,25 +1200,25 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30213728",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "VS-A-2-C",
+   "via": "pk 314.99 · sentido creciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-19",
+   "fin": null,
+   "lat": 41.656815,
+   "lon": -0.9538505,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30212961",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
    "via": "pk 313.8–315.0 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": null,
-   "lat": 41.656395,
-   "lon": -0.9546074,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30212970",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 314.2–315.0 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-19",
@@ -1242,17 +1242,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30213728",
+   "id": "dgt-30212970",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "VS-A-2-C",
-   "via": "pk 314.99 · sentido creciente · orientación noreste",
+   "titulo": "A-2",
+   "via": "pk 314.2–315.0 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-19",
    "fin": null,
-   "lat": 41.656815,
-   "lon": -0.9538505,
+   "lat": 41.656395,
+   "lon": -0.9546074,
    "precision": "exacta"
   },
   {
@@ -1323,6 +1323,48 @@
    "fin": null,
    "lat": 41.664707,
    "lon": -0.8033406,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30215771",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-123",
+   "via": "pk 3.301 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.69275,
+   "lon": -0.82275,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30215785",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-123",
+   "via": "pk 3.668 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.69455,
+   "lon": -0.81932,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30215841",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-123",
+   "via": "pk 1.214 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.67616,
+   "lon": -0.82997,
    "precision": "exacta"
   }
  ]
