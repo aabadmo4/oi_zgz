@@ -16,6 +16,15 @@ def falso_buscar(params, ancha=False):
     if "San Juan de la Pe" in q:
         return [{"lat": "41.5926", "lon": "-0.9332", "address": {"town": "Cuarte de Huerva"}},
                 {"lat": "41.6700", "lon": "-0.8800", "address": {"city": "Zaragoza", "suburb": "San José"}}]
+    if "Caspe" in q:
+        return [{"lat": "41.5747", "lon": "-1.0762", "address": {"town": "La Muela"}},
+                {"lat": "41.6499", "lon": "-0.8960", "address": {"city": "Zaragoza", "suburb": "Delicias"}}]
+    if "Ribaforada" in q:  # sin municipio declarado y fuera de VECINOS: solo lo frena el radio
+        return [{"lat": "41.9500", "lon": "-1.4000", "address": {}, "display_name": "Calle X, Ribaforada, Navarra, España"},
+                {"lat": "41.6500", "lon": "-0.8900", "address": {"city": "Zaragoza"}}]
+    if "Fueros de Arag" in q:
+        return [{"lat": "41.7581", "lon": "-1.0649", "address": {"village": "Torres de Berrellén"}},
+                {"lat": "41.6458", "lon": "-0.8947", "address": {"city": "Zaragoza", "suburb": "Delicias"}}]
     return []
 
 
@@ -52,6 +61,29 @@ class TestGeo(unittest.TestCase):
         self.assertTrue(a.en_otro_municipio({"address": {"town": "Cuarte de Huerva"}}))
         self.assertTrue(a.en_otro_municipio({"address": {}, "display_name": "Calle San Juan de la Peña, Cuarte de Huerva, Zaragoza, España"}))
         self.assertFalse(a.en_otro_municipio({"address": {"city": "Zaragoza"}, "display_name": "Calle Utebo, Delicias, Zaragoza, España"}))
+
+    def test_parentesis_es_inicio_del_nombre(self):
+        self.assertEqual(a.norm_local("ARAGON (FUEROS DE), 15"), {"via": "Calle Fueros de Aragon", "numero": "15"})
+        self.assertEqual(a.norm_local("BLANCO CORDERO (DR.), 11"), {"via": "Calle Doctor Blanco Cordero", "numero": "11"})
+
+    def test_descarta_municipios_no_listados(self):
+        self.assertTrue(a.en_otro_municipio({"address": {"town": "La Muela"}}))
+        self.assertTrue(a.en_otro_municipio({"address": {"village": "Torres de Berrellén"}}))
+
+    def test_caspe_y_fueros_caen_en_delicias(self):
+        self.assertAlmostEqual(a.nominatim("Calle Caspe", "5")["lat"], 41.6499, places=3)
+        self.assertAlmostEqual(a.nominatim("Calle Fueros de Aragon", "15")["lat"], 41.6458, places=3)
+
+    def test_radio_urbano_frena_pueblo_sin_municipio_declarado(self):
+        self.assertTrue(a.fuera_del_radio_urbano({"lat": "41.95", "lon": "-1.40"}))
+        self.assertTrue(a.fuera_del_radio_urbano({"lat": "41.5747", "lon": "-1.0762"}))  # La Muela
+        self.assertFalse(a.fuera_del_radio_urbano({"lat": "41.5950", "lon": "-0.9150"}))  # Arcosur
+        g = a.nominatim("Calle Ribaforada", "3")
+        self.assertAlmostEqual(g["lat"], 41.65, places=2)
+
+    def test_vecinos_incluye_los_pueblos_detectados(self):
+        for v in ("la muela", "torres de berrellen"):
+            self.assertIn(v, a.VECINOS)
 
     def test_tipo_de_via_al_final(self):
         self.assertEqual(a.norm_local("SAN JUAN DE LA PEÑA AV, 35"), {"via": "Avenida San Juan de la Peña", "numero": "35"})
