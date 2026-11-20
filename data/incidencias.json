@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T09:01+01:00",
+ "actualizado": "2026-11-20T10:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 74,
-   "ultima_ok": "2026-11-20T09:01+01:00"
+   "ultima_ok": "2026-11-20T10:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-20T09:01+01:00"
+   "n": 6,
+   "ultima_ok": "2026-11-20T10:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -300,10 +300,10 @@
   {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
-   "tipo": "Otros",
+   "tipo": "Corte",
    "titulo": "VISTABELLA MRL, 47",
    "via": "",
-   "detalle": "Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
+   "detalle": "Hasta el 04-12-2026. Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
    "inicio": "2026-09-01",
    "fin": "2026-12-04",
    "lat": 41.6609828,
@@ -873,10 +873,10 @@
    "detalle": "Hasta el 23-11-2026 a las 18:00 horas. Continuando con las obras del Río Huerva (Lote 1) y para realizar el asfaltado de la Calle Martín Ruiz Anglada",
    "inicio": "2026-11-23",
    "fin": "2026-11-23",
-   "lat": 41.648244993535684,
-   "lon": -0.8854781702784833,
-   "precision": "aprox",
-   "nombre": "Calle Gran Via"
+   "lat": 41.646383,
+   "lon": -0.886898,
+   "precision": "portal",
+   "nombre": "Gran Vía de Santiago Ramón y Cajal"
   },
   {
    "id": "zgz-31734",
@@ -1075,7 +1075,7 @@
   {
    "id": "zgz-31271",
    "fuente": "Ayuntamiento",
-   "tipo": "Corte",
+   "tipo": "Otros",
    "titulo": "VISTABELLA MRL, 53",
    "via": "",
    "detalle": "Hasta el 20-11-2026. Dentro del Proyecto de Urbanización del Área F-56-2 y para la renovación de aceras y calzada",
@@ -1130,7 +1130,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180013",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1144,7 +1144,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180012",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1172,73 +1172,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30218943",
+   "id": "dgt-30222283",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 246.89 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.6913,
+   "lon": -0.96529,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30223196",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 314.851 · sentido creciente · orientación noreste",
+   "via": "pk 318.566 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.655354,
-   "lon": -0.955794,
+   "lat": 41.67947,
+   "lon": -0.92454,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30219959",
+   "id": "dgt-30223628",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 502.664 · sentido creciente · orientación noreste",
+   "titulo": "N-232",
+   "via": "pk 247.439 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.67859,
-   "lon": -0.87842,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30220452",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-123",
-   "via": "pk 2.547 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.68784,
-   "lon": -0.8284,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30220581",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "AP-68",
-   "via": "pk 283.409 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.73141,
-   "lon": -1.03252,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30220951",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 503.232 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.68344,
-   "lon": -0.87505,
+   "lat": 41.68503,
+   "lon": -0.96998,
    "precision": "exacta"
   }
  ]
