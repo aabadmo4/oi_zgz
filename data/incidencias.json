@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-20T12:01+01:00",
+ "actualizado": "2026-11-20T13:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 74,
-   "ultima_ok": "2026-11-20T12:01+01:00"
+   "n": 79,
+   "ultima_ok": "2026-11-20T13:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-20T12:01+01:00"
+   "n": 5,
+   "ultima_ok": "2026-11-20T13:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -184,6 +184,20 @@
    "lon": -0.893164,
    "precision": "portal",
    "nombre": "Calle Agustín de Quinto"
+  },
+  {
+   "id": "zgz-29619",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "MIRAL DOMINGO, 1",
+   "via": "",
+   "detalle": "Hasta el 18-02-2027. Continuando con las obras para la renovación integral de Pedro Cerbuna y para conectar la tubería de saneamiento.",
+   "inicio": "2026-06-08",
+   "fin": "2027-02-18",
+   "lat": 41.6407237,
+   "lon": -0.9016302,
+   "precision": "portal",
+   "nombre": "Calle de Domingo Miral"
   },
   {
    "id": "zgz-31719",
@@ -395,6 +409,48 @@
    "lon": -0.8794143,
    "precision": "portal",
    "nombre": "Calle Palencia"
+  },
+  {
+   "id": "zgz-31742",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "FRANCO Y LOPEZ, 2",
+   "via": "",
+   "detalle": "Continuando con la reparación de la avería en la red de abastecimiento comenzada ayer por urgencia",
+   "inicio": "2026-11-20",
+   "fin": "2026-12-04",
+   "lat": 41.6453414,
+   "lon": -0.899994,
+   "precision": "portal",
+   "nombre": "Calle de Franco y López"
+  },
+  {
+   "id": "zgz-31744",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "CEREZO MARIANO, 5",
+   "via": "",
+   "detalle": "Hasta el 30-11-2026. Para realizar una acometida de gas",
+   "inicio": "2026-11-24",
+   "fin": "2026-11-30",
+   "lat": 41.654407,
+   "lon": -0.888537,
+   "precision": "portal",
+   "nombre": "Calle de Mariano Cerezo"
+  },
+  {
+   "id": "zgz-31745",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CANTIN Y GAMBOA FCO, 16",
+   "via": "",
+   "detalle": "Para sustituir una tapa de arqueta de telecomunicaciones a la altura de la Calle El Pozo",
+   "inicio": "2026-11-21",
+   "fin": "2026-11-21",
+   "lat": 41.6509701,
+   "lon": -0.8728167,
+   "precision": "portal",
+   "nombre": "Calle Francisco Cantín y Gamboa"
   },
   {
    "id": "zgz-31655",
@@ -1088,6 +1144,20 @@
    "nombre": "Calle de Vistabella"
   },
   {
+   "id": "zgz-31743",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "MOVERA, 13",
+   "via": "",
+   "detalle": "Hasta el 02-12-2026. Para reparar una acometida de vertido a la altura del n.º 13",
+   "inicio": "2026-11-23",
+   "fin": "2026-12-02",
+   "lat": 41.6285061,
+   "lon": -0.8812523,
+   "precision": "portal",
+   "nombre": "Calle Movera"
+  },
+  {
    "id": "zgz-31706",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1130,20 +1200,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180012",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1158,73 +1214,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30206353",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-23",
-   "via": "pk 267.0–269.4 · sentido creciente · orientación noreste",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
-   "inicio": "2026-11-20",
-   "fin": "2026-11-20",
-   "lat": 41.556377,
-   "lon": -0.9779892,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30224768",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 33.0 · sentido decreciente · orientación sur",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-20",
-   "fin": "2026-11-20",
-   "lat": 41.6343,
-   "lon": -0.97508377,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30227485",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.958 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.7093,
-   "lon": -1.01309,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30227844",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 27.718 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.61213,
-   "lon": -0.92816,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30228193",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.237 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.7049,
-   "lon": -1.0066934,
+   "inicio": "2026-11-19",
+   "fin": "2026-11-25",
+   "lat": 41.681473,
+   "lon": -0.9655962,
    "precision": "exacta"
   },
   {
@@ -1239,6 +1239,34 @@
    "fin": null,
    "lat": 41.603935,
    "lon": -1.0768894,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30230068",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 280.416 · sentido creciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.746544,
+   "lon": -1.062419,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30231222",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 296.663 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.71991,
+   "lon": -0.848609,
    "precision": "exacta"
   }
  ]

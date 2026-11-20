@@ -4909,6 +4909,17 @@
    "titulo": "AP-68",
    "via": "pk 283.409 · sentido creciente · orientación este",
    "visto": "2026-11-20"
+  },
+  "dgt-30230068": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30230068",
+   "inicio": "2026-11-20",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 280.416 · sentido creciente · orientación sureste",
+   "visto": "2026-11-20"
   }
  },
  "avenida-de-madrid": {
@@ -5444,6 +5455,19 @@
    "inicio": "2026-11-23",
    "tipo": "Corte",
    "titulo": "GRAN VIA, 9",
+   "via": "",
+   "visto": "2026-11-20"
+  }
+ },
+ "miral-domingo": {
+  "zgz-29619": {
+   "detalle": "Hasta el 18-02-2027. Continuando con las obras para la renovación integral de Pedro Cerbuna y para conectar la tubería de saneamiento.",
+   "fin": "2027-02-18",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-29619",
+   "inicio": "2026-06-08",
+   "tipo": "Corte",
+   "titulo": "MIRAL DOMINGO, 1",
    "via": "",
    "visto": "2026-11-20"
   }
