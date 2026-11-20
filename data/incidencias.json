@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-20T13:02+01:00",
+ "actualizado": "2026-11-20T13:55+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 79,
-   "ultima_ok": "2026-11-20T13:01+01:00"
+   "n": 82,
+   "ultima_ok": "2026-11-20T13:54+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 5,
-   "ultima_ok": "2026-11-20T13:01+01:00"
+   "n": 6,
+   "ultima_ok": "2026-11-20T13:54+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -390,7 +390,7 @@
    "via": "",
    "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1)",
    "inicio": "2026-11-09",
-   "fin": "2026-11-20",
+   "fin": "2026-11-27",
    "lat": 41.67423287979509,
    "lon": -0.8986165878224152,
    "precision": "aprox",
@@ -792,6 +792,34 @@
    "nombre": "Calle Tomás Zumalacárregui"
   },
   {
+   "id": "zgz-31746",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "HEROISMO, 1",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-23",
+   "fin": "2026-11-27",
+   "lat": 41.651362,
+   "lon": -0.873678,
+   "precision": "portal",
+   "nombre": "Calle del Heroísmo"
+  },
+  {
+   "id": "zgz-31747",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "LASTANOSA, 8",
+   "via": "",
+   "detalle": "Para efectuar la reposición de pavimentos sobre dos reparaciones de tubería de abastecimiento efectuadas por las brigadas municipales",
+   "inicio": "2026-11-23",
+   "fin": "2026-12-11",
+   "lat": 41.6531941,
+   "lon": -0.9080364,
+   "precision": "portal",
+   "nombre": "Calle de Lastanosa"
+  },
+  {
    "id": "zgz-31234",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1129,6 +1157,20 @@
    "nombre": "Calle Jenaro Checa"
   },
   {
+   "id": "zgz-31748",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CASABLANCA AV., 40",
+   "via": "",
+   "detalle": "Para ejecutar una acometida de vertido próxima a la calle El Mago de Oz (sentido esta última)",
+   "inicio": "2026-11-23",
+   "fin": "2026-12-11",
+   "lat": 41.620537,
+   "lon": -0.932582,
+   "precision": "portal",
+   "nombre": "Avenida de Casablanca"
+  },
+  {
    "id": "zgz-31271",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1200,20 +1242,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180013",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1228,31 +1256,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30228692",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 301.8–302.5 · sentido creciente · orientación noreste",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.603935,
-   "lon": -1.0768894,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30230068",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 280.416 · sentido creciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.746544,
-   "lon": -1.062419,
+   "inicio": "2026-11-19",
+   "fin": "2026-11-25",
+   "lat": 41.681473,
+   "lon": -0.9655962,
    "precision": "exacta"
   },
   {
@@ -1267,6 +1281,48 @@
    "fin": null,
    "lat": 41.71991,
    "lon": -0.848609,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30232725",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.511 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.60741,
+   "lon": -0.879751,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30234226",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 304.614 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.61638,
+   "lon": -1.05892,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30234227",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 487.637 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.59091,
+   "lon": -0.944685,
    "precision": "exacta"
   }
  ]
