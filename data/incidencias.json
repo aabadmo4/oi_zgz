@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T18:02+01:00",
+ "actualizado": "2026-11-20T19:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 82,
-   "ultima_ok": "2026-11-20T18:01+01:00"
+   "ultima_ok": "2026-11-20T19:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 6,
-   "ultima_ok": "2026-11-20T18:01+01:00"
+   "n": 5,
+   "ultima_ok": "2026-11-20T19:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1242,20 +1242,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180012",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1270,17 +1256,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30235112",
+   "id": "dgt-30180012",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 26.901 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.609577,
-   "lon": -0.919131,
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-25",
+   "lat": 41.681473,
+   "lon": -0.9655962,
    "precision": "exacta"
   },
   {
@@ -1298,31 +1284,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30244331",
+   "id": "dgt-30246646",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 15.478 · sentido creciente · orientación sur",
+   "titulo": "N-232",
+   "via": "pk 245.369 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.65897,
-   "lon": -0.840815,
+   "lat": 41.67305,
+   "lon": -0.9511,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30244652",
+   "id": "dgt-30246805",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "ZP-2105",
-   "via": "pk 0.112 · sentido creciente · orientación suroeste",
+   "titulo": "Z-40",
+   "via": "pk 20.984 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.60423,
-   "lon": -0.828775,
+   "lat": 41.62195,
+   "lon": -0.85775,
    "precision": "exacta"
   }
  ]
