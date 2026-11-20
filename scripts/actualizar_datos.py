@@ -411,6 +411,7 @@ BARRIOS = {"ALF": "Alfocea", "CRT": "Cartuja Baja", "CSB": "Casablanca", "CST": 
 CENTROS_BARRIO = {"PÑF": (41.7479, -0.7927), "MRL": (41.6610, -0.9425), "MNT": (41.6883, -0.8287),
                   "SGR": (41.6924, -0.8652), "CRT": (41.5887, -0.8128), "CST": (41.7206, -1.0264), "MNZ": (41.7034, -0.9679)}
 CAJA_ANCHA = (41.45, 41.85, -1.15, -0.65)  # barrios rurales: Peñaflor, Villamayor, Casetas... pueden quedar fuera de la caja urbana
+CENTRO_ZGZ = (41.6488, -0.8891)
 RADIO_BARRIO_KM = 3.5  # una calle de un barrio rural debe estar a menos de esto de su centro
 
 
@@ -460,7 +461,10 @@ def en_barrio_rural(o):
 
 
 VECINOS = ("cuarte de huerva", "maria de huerva", "cadrete", "utebo", "villanueva de gallego", "zuera", "perdiguera",
-           "alagon", "la puebla de alfinden", "pastriz", "el burgo de ebro", "fuentes de ebro", "pina de ebro", "vilanova")
+           "alagon", "la puebla de alfinden", "pastriz", "el burgo de ebro", "fuentes de ebro", "pina de ebro", "vilanova",
+           "la muela", "torres de berrellen", "san mateo de gallego", "alfajarin", "nuez de ebro", "osera de ebro",
+           "villafranca de ebro", "figueruelas", "botorrita")
+RADIO_URBANO_KM = 12  # una calle urbana (sin código de barrio) debe quedar a menos de esto del centro de Zaragoza
 
 
 def en_otro_municipio(o):
@@ -471,9 +475,20 @@ def en_otro_municipio(o):
     if any("zaragoza" in sin_acentos(a.get(k, "")) for k in ("city", "town", "village", "municipality")):
         return False
     campos = [sin_acentos(a.get(k, "")) for k in ("city", "town", "village", "municipality")]
+    nombres_barrios = [sin_acentos(n) for n in BARRIOS.values()] + ["villamayor"]
+    declarados = [z for z in campos if z]
+    # El resultado declara un municipio que no es Zaragoza ni uno de sus barrios rurales (p. ej. La Muela,
+    # Torres de Berrellén): es otro pueblo aunque no esté en la lista de VECINOS.
+    if declarados and not any(z.startswith(n) for z in declarados for n in nombres_barrios):
+        return True
     # nombre largo: se ignora el primer trozo (la calle), para no rechazar una 'Calle Utebo' de Zaragoza
     resto = [sin_acentos(t.strip()) for t in str(o.get("display_name", "")).split(",")[1:]]
     return any(v in z for v in VECINOS for z in campos + resto if z)
+
+
+def fuera_del_radio_urbano(o):
+    """True si el resultado queda lejos de Zaragoza: cubre pueblos que Nominatim no declara ni están en VECINOS."""
+    return km(CENTRO_ZGZ, (float(o["lat"]), float(o["lon"]))) > RADIO_URBANO_KM
 
 
 def centro_barrio(cod, cache_geo):
@@ -517,9 +532,9 @@ def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
             res = [o for o in res if zona_coincide(o, barrio)
                    or (ref_c and km(ref_c, (float(o["lat"]), float(o["lon"]))) <= RADIO_BARRIO_KM)]
         else:
-            res = [o for o in res if not en_barrio_rural(o) and not en_otro_municipio(o)]  # si solo hay rurales u otros municipios, mejor no ubicar que ubicar mal
+            res = [o for o in res if not en_barrio_rural(o) and not en_otro_municipio(o) and not fuera_del_radio_urbano(o)]  # si solo hay rurales u otros municipios, mejor no ubicar que ubicar mal
         if res:
-            ref = ref_c or ancla
+            ref = ref_c or ancla or CENTRO_ZGZ
             if ref:
                 res.sort(key=lambda o: km(ref, (float(o["lat"]), float(o["lon"]))))
             o = res[0]
@@ -539,6 +554,7 @@ TIPOS_VIA = {"AV.": "Avenida", "AVDA.": "Avenida", "PS.": "Paseo", "PZA.": "Plaz
 TIPOS_FINALES = {"AV.", "AVDA.", "PS.", "PZA.", "PL.", "CTRA.", "GTA.", "RDA.", "TRAV.", "PJE."}
 HONORIFICOS = {"DR.": "Doctor", "DRA.": "Doctora", "STA.": "Santa", "STO.": "Santo", "GRAL.": "General"}
 MINUSCULAS = {"De", "Del", "La", "Las", "Los", "El", "Y"}
+MINUSCULAS_BAJAS = {m.lower() for m in MINUSCULAS}
 
 
 def norm_local(calle, motivo=""):
@@ -557,6 +573,9 @@ def norm_local(calle, motivo=""):
             tipo = TIPOS_VIA[p]
         elif p in HONORIFICOS:
             hon = HONORIFICOS[p]
+        elif p.split()[-1:] and p.split()[-1].lower() in MINUSCULAS_BAJAS:
+            # 'ARAGON (FUEROS DE)' -> 'Fueros de Aragon': el paréntesis es el comienzo del nombre, no un calificador
+            nombre = f"{par.strip()} {nombre}".strip()
     toks = nombre.split()
     if len(toks) >= 2 and toks[-1].upper().rstrip(".") + "." in TIPOS_FINALES:  # 'SAN JUAN DE LA PEÑA AV' -> Avenida San Juan de la Peña
         tipo = TIPOS_VIA[toks[-1].upper().rstrip(".") + "."]
