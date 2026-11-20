@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T22:06+01:00",
+ "actualizado": "2026-11-20T23:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 82,
-   "ultima_ok": "2026-11-20T22:05+01:00"
+   "ultima_ok": "2026-11-20T23:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 3,
-   "ultima_ok": "2026-11-20T22:05+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-20T23:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1242,20 +1242,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180012",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1270,17 +1256,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30251490",
+   "id": "dgt-30180012",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-25",
+   "lat": 41.681473,
+   "lon": -0.9655962,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30251895",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 321.0 · sentido creciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 25.338 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.67989,
-   "lon": -0.89657,
+   "lat": 41.60564,
+   "lon": -0.901074,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30251836",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 25.386 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.605705,
+   "lon": -0.901636,
    "precision": "exacta"
   }
  ]
