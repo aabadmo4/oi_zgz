@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T16:01+01:00",
+ "actualizado": "2026-11-20T17:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 82,
-   "ultima_ok": "2026-11-20T16:01+01:00"
+   "ultima_ok": "2026-11-20T17:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 7,
-   "ultima_ok": "2026-11-20T16:01+01:00"
+   "ultima_ok": "2026-11-20T17:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1284,59 +1284,59 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30238436",
+   "id": "dgt-30240776",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 315.88 · sentido creciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 23.549 · sentido decreciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.661175,
-   "lon": -0.945031,
+   "lat": 41.607037,
+   "lon": -0.8801063,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30239141",
+   "id": "dgt-30241206",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 321.59–321.61 · sentido creciente · orientación este",
+   "via": "pk 314.082 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.67953,
-   "lon": -0.8882741,
+   "lat": 41.65037,
+   "lon": -0.962036,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30239691",
+   "id": "dgt-30241313",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 251.343 · sentido decreciente · orientación sureste",
+   "titulo": "N-232",
+   "via": "pk 251.233 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.70111,
-   "lon": -1.01174,
+   "lat": 41.704765,
+   "lon": -1.00672,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30239714",
+   "id": "dgt-30241768",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 234.38 · sentido creciente · orientación noroeste",
+   "titulo": "VS-A-2-D",
+   "via": "pk 322.058 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.633205,
-   "lon": -0.8603117,
+   "lat": 41.68011,
+   "lon": -0.88383,
    "precision": "exacta"
   }
  ]
