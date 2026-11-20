@@ -4630,6 +4630,39 @@
    "titulo": "A-2",
    "via": "pk 329.0–329.2 · sentido creciente · orientación este",
    "visto": "2026-11-20"
+  },
+  "dgt-30217642": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30217642",
+   "inicio": "2026-11-20",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-20"
+  },
+  "dgt-30218364": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30218364",
+   "inicio": "2026-11-20",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.001 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-20"
+  },
+  "dgt-30218439": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30218439",
+   "inicio": "2026-11-20",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 317.698 · sentido creciente · orientación noreste",
+   "visto": "2026-11-20"
   }
  },
  "alvarado-pedro-de": {
@@ -4810,6 +4843,17 @@
    "titulo": "AP-68",
    "via": "pk 285.022 · sentido creciente · orientación este",
    "visto": "2026-11-19"
+  },
+  "dgt-30218296": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30218296",
+   "inicio": "2026-11-20",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 289.402 · sentido creciente · orientación sureste",
+   "visto": "2026-11-20"
   }
  },
  "avenida-de-madrid": {
@@ -8273,6 +8317,28 @@
    "tipo": "Obras",
    "titulo": "Z-40",
    "via": "pk 20.1–20.9 · sentido creciente · orientación oeste",
+   "visto": "2026-11-20"
+  },
+  "dgt-30217707": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30217707",
+   "inicio": "2026-11-20",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "visto": "2026-11-20"
+  },
+  "dgt-30218063": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30218063",
+   "inicio": "2026-11-20",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
    "visto": "2026-11-20"
   }
  }

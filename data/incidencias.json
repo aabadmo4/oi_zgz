@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T07:01+01:00",
+ "actualizado": "2026-11-20T08:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 74,
-   "ultima_ok": "2026-11-20T07:01+01:00"
+   "ultima_ok": "2026-11-20T08:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 3,
-   "ultima_ok": "2026-11-20T07:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-20T08:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1158,17 +1158,129 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30217095",
+   "id": "dgt-30217262",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 275.947 · sentido decreciente · orientación sur",
+   "titulo": "A-68",
+   "via": "pk 250.351 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.604828,
-   "lon": -0.936359,
+   "lat": 41.69666,
+   "lon": -1.00129,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30217376",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 249.825 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.69663,
+   "lon": -0.99553,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30217642",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30217707",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 20.18–20.5 · sentido decreciente · orientación este",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.624924,
+   "lon": -0.8490524,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30218063",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30218292",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 270.427 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.56273,
+   "lon": -0.96936995,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30218296",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 289.402 · sentido creciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.700874,
+   "lon": -0.978052,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30218364",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.001 · sentido decreciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.68158,
+   "lon": -0.90759,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30218439",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-D",
+   "via": "pk 317.698 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.67294,
+   "lon": -0.93097,
    "precision": "exacta"
   }
  ]
