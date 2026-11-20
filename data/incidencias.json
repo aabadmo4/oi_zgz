@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20T15:01+01:00",
+ "actualizado": "2026-11-20T15:39+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 82,
-   "ultima_ok": "2026-11-20T15:01+01:00"
+   "ultima_ok": "2026-11-20T15:37+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 10,
-   "ultima_ok": "2026-11-20T15:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-20T15:37+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -250,9 +250,25 @@
    "detalle": "Para conectar la nueva red de drenaje al pozo entre los números 15 y 19",
    "inicio": "2026-11-16",
    "fin": "2026-11-27",
-   "lat": 41.6517107,
-   "lon": -0.906788,
-   "precision": "portal",
+   "lat": 41.6520919,
+   "lon": -0.9058191,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.652038,
+      -0.906013
+     ],
+     [
+      41.652055,
+      -0.905952
+     ],
+     [
+      41.652146,
+      -0.905625
+     ]
+    ]
+   ],
    "nombre": "Calle del Conde de la Viñaza"
   },
   {
@@ -503,9 +519,9 @@
    "detalle": "Para desplazar el paso de peatones ubicado en el no 12 (por nuevo badén)",
    "inicio": "2026-11-20",
    "fin": "2026-11-20",
-   "lat": 41.5747135,
-   "lon": -1.0762578,
-   "precision": "calle",
+   "lat": 41.652152360581155,
+   "lon": -0.9038502747038658,
+   "precision": "aprox",
    "nombre": "Calle Caspe"
   },
   {
@@ -927,26 +943,10 @@
    "detalle": "Cortes de Agua. Desde las 9 hasta las 18 horas.",
    "inicio": "2026-11-20",
    "fin": "2026-11-20",
-   "lat": 41.7581497,
-   "lon": -1.064886,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.757908,
-      -1.064662
-     ],
-     [
-      41.758197,
-      -1.06493
-     ],
-     [
-      41.758391,
-      -1.06511
-     ]
-    ]
-   ],
-   "nombre": "Calle Fueros de Aragon"
+   "lat": 41.6467829,
+   "lon": -0.8951822,
+   "precision": "portal",
+   "nombre": "Calle Fueros de Aragón"
   },
   {
    "id": "zgz-31733",
@@ -1270,20 +1270,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30234869",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-A-2563",
-   "via": "pk 0.637 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-20",
-   "fin": null,
-   "lat": 41.69201,
-   "lon": -0.972124,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30235112",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1340,45 +1326,73 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30236818",
+   "id": "dgt-30237429",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-120",
+   "via": "pk 2.34 · sentido creciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.6399,
+   "lon": -0.993118,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30238213",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-20",
+   "fin": null,
+   "lat": 41.664104,
+   "lon": -0.9398144,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30238389",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-68",
-   "via": "pk 252.417 · sentido creciente · orientación oeste",
+   "via": "pk 244.31 · sentido decreciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.707783,
-   "lon": -1.021453,
+   "lat": 41.67853,
+   "lon": -0.93654,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30236864",
+   "id": "dgt-30238436",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 298.714 · sentido decreciente · orientación suroeste",
+   "titulo": "VS-A-2-C",
+   "via": "pk 315.88 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.7381,
-   "lon": -0.84614,
+   "lat": 41.661175,
+   "lon": -0.945031,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30237305",
+   "id": "dgt-30238742",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 323.454 · sentido creciente · orientación noreste",
+   "via": "pk 321.623 · sentido creciente · orientación este",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-20",
    "fin": null,
-   "lat": 41.67917,
-   "lon": -0.86619,
+   "lat": 41.679657,
+   "lon": -0.888175,
    "precision": "exacta"
   }
  ]
