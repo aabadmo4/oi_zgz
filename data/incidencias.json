@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-21T23:01+01:00",
+ "actualizado": "2026-11-22T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 64,
-   "ultima_ok": "2026-11-21T23:01+01:00"
+   "n": 67,
+   "ultima_ok": "2026-11-22T00:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 2,
-   "ultima_ok": "2026-11-21T23:01+01:00"
+   "n": 3,
+   "ultima_ok": "2026-11-22T00:01+01:00"
   }
  },
- "sin_ubicar": 1,
+ "sin_ubicar": 2,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -455,18 +455,32 @@
    "nombre": "Calle de Mariano Cerezo"
   },
   {
-   "id": "zgz-31745",
+   "id": "zgz-31750",
    "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CANTIN Y GAMBOA FCO, 16",
+   "tipo": "Suministro",
+   "titulo": "SCHWEITZER ALBERT, 2",
    "via": "",
-   "detalle": "Para sustituir una tapa de arqueta de telecomunicaciones a la altura de la Calle El Pozo",
-   "inicio": "2026-11-21",
-   "fin": "2026-11-21",
-   "lat": 41.6509701,
-   "lon": -0.8728167,
-   "precision": "portal",
-   "nombre": "Calle Francisco Cantín y Gamboa"
+   "detalle": "Para reparar toma de C/ La Paz, n.º 27. Vol: 14877",
+   "inicio": "2026-11-23",
+   "fin": "2026-11-23",
+   "lat": 41.6427804,
+   "lon": -0.8823128,
+   "precision": "calle",
+   "nombre": "Plaza Albert Schweitzer"
+  },
+  {
+   "id": "zgz-31751",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "TORICO EL (AV.) , 0",
+   "via": "Entre Avd. 21 de junio y Avd. del Cierzo",
+   "detalle": "Para condenar y hacer toma nueva. Vol: Expt.0061760/25",
+   "inicio": "2026-11-23",
+   "fin": "2026-11-23",
+   "lat": 41.6259765,
+   "lon": -0.9666507,
+   "precision": "calle",
+   "nombre": "Avenida El Torico"
   },
   {
    "id": "zgz-31660",
@@ -765,6 +779,20 @@
    "nombre": "Gran Vía de Santiago Ramón y Cajal"
   },
   {
+   "id": "zgz-31752",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CABRERA ISLA DE, 2",
+   "via": "Frente al n.º 2. Parques y Jardines",
+   "detalle": "Para condenar boca de riego y cambio llave de paso de riego",
+   "inicio": "2026-11-23",
+   "fin": "2026-11-23",
+   "lat": 41.662998,
+   "lon": -0.855463,
+   "precision": "portal",
+   "nombre": "Calle Isla de Cabrera"
+  },
+  {
    "id": "zgz-31734",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -992,6 +1020,20 @@
    "fin": "2026-11-25",
    "lat": 41.681473,
    "lon": -0.9655962,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30274538",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 319.747 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-21",
+   "fin": null,
+   "lat": 41.68155,
+   "lon": -0.91056,
    "precision": "exacta"
   }
  ]
