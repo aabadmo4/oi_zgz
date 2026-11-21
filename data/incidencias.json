@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T19:01+01:00",
+ "actualizado": "2026-11-21T20:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 64,
-   "ultima_ok": "2026-11-21T19:01+01:00"
+   "ultima_ok": "2026-11-21T20:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 6,
-   "ultima_ok": "2026-11-21T19:01+01:00"
+   "n": 5,
+   "ultima_ok": "2026-11-21T20:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1009,45 +1009,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30269070",
+   "id": "dgt-30270487",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 250.125 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-21",
+   "fin": null,
+   "lat": 41.69693,
+   "lon": -0.998569,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30270938",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 318.995 · sentido decreciente · orientación suroeste",
+   "via": "pk 318.982 · sentido decreciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-21",
    "fin": null,
-   "lat": 41.68121,
-   "lon": -0.919279,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30269268",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 26.696 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-21",
-   "fin": null,
-   "lat": 41.60909,
-   "lon": -0.9167,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30269300",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 28.675 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-21",
-   "fin": null,
-   "lat": 41.61722,
-   "lon": -0.9377,
+   "lat": 41.68115,
+   "lon": -0.91943,
    "precision": "exacta"
   }
  ]
