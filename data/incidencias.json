@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21T09:01+01:00",
+ "actualizado": "2026-11-21T10:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 64,
-   "ultima_ok": "2026-11-21T09:01+01:00"
+   "ultima_ok": "2026-11-21T10:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 3,
-   "ultima_ok": "2026-11-21T09:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-21T10:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -967,20 +967,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180013",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -995,17 +981,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30255390",
+   "id": "dgt-30180013",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-19",
+   "fin": "2026-11-25",
+   "lat": 41.681473,
+   "lon": -0.9655962,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30256280",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 483.909 · sentido creciente · orientación noreste",
+   "titulo": "Z-40",
+   "via": "pk 23.45–23.482 · ambos sentidos",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-21",
    "fin": null,
-   "lat": 41.56281,
-   "lon": -0.96784,
+   "lat": 41.60778,
+   "lon": -0.8792252,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30256335",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-23",
+   "via": "pk 300.208 · sentido decreciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-21",
+   "fin": null,
+   "lat": 41.75053,
+   "lon": -0.83933,
    "precision": "exacta"
   }
  ]

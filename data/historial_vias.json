@@ -8683,6 +8683,17 @@
    "titulo": "Z-40",
    "via": "pk 25.338 · sentido decreciente · orientación este",
    "visto": "2026-11-20"
+  },
+  "dgt-30256280": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30256280",
+   "inicio": "2026-11-21",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 23.45–23.482 · ambos sentidos",
+   "visto": "2026-11-21"
   }
  }
 }
