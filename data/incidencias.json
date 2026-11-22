@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-22T23:02+01:00",
+ "actualizado": "2026-11-23T00:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 67,
-   "ultima_ok": "2026-11-22T23:01+01:00"
+   "n": 69,
+   "ultima_ok": "2026-11-23T00:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 3,
-   "ultima_ok": "2026-11-22T23:01+01:00"
+   "ultima_ok": "2026-11-23T00:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -30,20 +30,6 @@
    "lon": -0.868073,
    "precision": "portal",
    "nombre": "Calle Doctor Blanco Cordero"
-  },
-  {
-   "id": "zgz-27864",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "MADRID AVENIDA DE, 154",
-   "via": "",
-   "detalle": "Continuando la instalación de balizas luminosas en los pasos de peatones de la Avenida",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-22",
-   "lat": 41.6517123,
-   "lon": -0.91243,
-   "precision": "portal",
-   "nombre": "Avenida de Madrid"
   },
   {
    "id": "zgz-28004",
@@ -483,6 +469,21 @@
    "nombre": "Avenida El Torico"
   },
   {
+   "id": "zgz-31753",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "JOTA AV. DE LA GRP, 13",
+   "via": "",
+   "detalle": "Cambio llave de paso",
+   "inicio": "2026-11-24",
+   "fin": "2026-11-24",
+   "lat": 41.682508,
+   "lon": -1.023668,
+   "precision": "portal",
+   "barrio": "Garrapinillos",
+   "nombre": "Avenida de La Jota"
+  },
+  {
    "id": "zgz-31660",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -681,6 +682,20 @@
    "nombre": "Calle Tomás Zumalacárregui"
   },
   {
+   "id": "zgz-31755",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "OROEL PEÑA, 13",
+   "via": "",
+   "detalle": "Para reparar rotura y sustituir válvulas. Brigadas municipales",
+   "inicio": "2026-11-24",
+   "fin": "2026-11-24",
+   "lat": 41.663494,
+   "lon": -0.8737723,
+   "precision": "portal",
+   "nombre": "Calle de la Peña Oroel"
+  },
+  {
    "id": "zgz-31746",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -791,6 +806,20 @@
    "lon": -0.855463,
    "precision": "portal",
    "nombre": "Calle Isla de Cabrera"
+  },
+  {
+   "id": "zgz-31754",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CLAVE JOSE ANSELMO, 27",
+   "via": "",
+   "detalle": "Para conectar tuberías. UTE Portillo.",
+   "inicio": "2026-11-24",
+   "fin": "2026-11-24",
+   "lat": 41.65227344786754,
+   "lon": -0.892165454564021,
+   "precision": "aprox",
+   "nombre": "Calle José Anselmo Clavé"
   },
   {
    "id": "zgz-31734",
@@ -1009,7 +1038,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180012",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1023,7 +1052,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180013",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
