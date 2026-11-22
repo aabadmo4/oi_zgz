@@ -7,6 +7,8 @@ import actualizar_datos as a
 
 def falso_buscar(params, ancha=False):
     q = params.get("q", "") + params.get("street", "")
+    if "Calle de la Paz" in q:  # OSM la llama "de la Paz": "Calle La Paz" no casa
+        return [{"lat": "41.6426", "lon": "-0.8854", "address": {"city": "Zaragoza"}, "category": "building"}]
     if "Moncayo" in q:
         return [{"lat": "41.7206", "lon": "-1.0264", "address": {"suburb": "Casetas"}},
                 {"lat": "41.6499", "lon": "-0.8954", "address": {"suburb": "Delicias"}}]
@@ -90,6 +92,25 @@ class TestGeo(unittest.TestCase):
 
     def test_todos_los_barrios_tienen_alias(self):
         self.assertEqual(set(a.ALIAS_ZONA), set(a.BARRIOS))
+
+class TestVariantesVia(unittest.TestCase):
+    def test_articulo_inicial(self):
+        self.assertEqual(a.variantes_via("Calle La Paz"), ["Calle La Paz", "Calle de la Paz", "Calle Paz"])
+        self.assertEqual(a.variantes_via("Calle El Pozo")[1], "Calle del Pozo")
+
+    def test_sin_articulo_no_cambia(self):
+        self.assertEqual(a.variantes_via("Calle Caspe"), ["Calle Caspe"])
+
+    def test_la_paz_se_ubica(self):
+        orig = a._buscar
+        a._buscar = falso_buscar
+        try:
+            geo = a.nominatim("Calle La Paz", "19")
+        finally:
+            a._buscar = orig
+        self.assertIsNotNone(geo)
+        self.assertAlmostEqual(geo["lat"], 41.6426, places=3)
+
 
 
 if __name__ == "__main__":
