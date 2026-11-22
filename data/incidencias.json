@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T20:01+01:00",
+ "actualizado": "2026-11-22T21:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 67,
-   "ultima_ok": "2026-11-22T20:01+01:00"
+   "ultima_ok": "2026-11-22T21:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 7,
-   "ultima_ok": "2026-11-22T20:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-22T21:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1051,59 +1051,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30288457",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "Z-40",
-   "via": "pk 20.748 · sentido creciente · orientación suroeste",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.623177,
-   "lon": -0.85538363,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30290779",
+   "id": "dgt-30293125",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 29.684 · sentido decreciente · orientación este",
+   "titulo": "N-330",
+   "via": "pk 503.921 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-22",
    "fin": null,
-   "lat": 41.61896,
-   "lon": -0.949563,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30291123",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 311.442 · sentido decreciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.63249,
-   "lon": -0.982335,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30291910",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 313.164 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.64333,
-   "lon": -0.96933,
+   "lat": 41.68659,
+   "lon": -0.87284,
    "precision": "exacta"
   }
  ]
