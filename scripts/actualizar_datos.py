@@ -507,6 +507,22 @@ def centro_barrio(cod, cache_geo):
     return cache_geo[k]
 
 
+def variantes_via(via):
+    """Variantes de nombre para Nominatim cuando el callejero municipal omite la preposición que usa OSM.
+    'Calle La Paz' -> ['Calle La Paz', 'Calle de la Paz', 'Calle Paz']; 'Calle El Pozo' -> [..., 'Calle del Pozo', ...]."""
+    m = re.match(r"^(Calle|Avenida|Paseo|Plaza|Camino|Carretera|Glorieta|Ronda|Travesía|Pasaje|Callejón)\s+(.+)$", via)
+    if not m:
+        return [via]
+    tipo, nombre = m.groups()
+    pal = nombre.split()
+    out = [via]
+    if len(pal) >= 2 and sin_acentos(pal[0]) in {"la", "las", "los", "el"}:
+        art, resto = sin_acentos(pal[0]), " ".join(pal[1:])
+        out.append(f"{tipo} {'del' if art == 'el' else 'de ' + art} {resto}")
+        out.append(f"{tipo} {resto}")
+    return list(dict.fromkeys(out))
+
+
 def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
     """Busca calle (y portal si hay número). Sin código de barrio descarta resultados de barrios rurales
     (la 'Calle Moncayo' de Casetas no es la del CP 50010); con código solo acepta resultados del barrio
@@ -525,7 +541,8 @@ def nominatim(via, numero, barrio=None, ancla=None, cache_geo=None):
         for v in dict.fromkeys([via, nombre]):
             intentos.append({"q": f"{(numero + ' ') if numero else ''}{v}, {BARRIOS[barrio]}, Zaragoza", **viewbox})
     else:
-        intentos.append({"city": "Zaragoza", "street": f"{numero or ''} {via}".strip(), **viewbox})
+        for v in variantes_via(via):  # el original primero; las variantes solo se consultan si no hay resultados
+            intentos.append({"city": "Zaragoza", "street": f"{numero or ''} {v}".strip(), **viewbox})
     for params in intentos:
         res = _buscar({**params, "polygon_geojson": 0 if numero else 1}, ancha=bool(barrio))
         if barrio:
