@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T05:01+01:00",
+ "actualizado": "2026-11-22T06:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 67,
-   "ultima_ok": "2026-11-22T05:01+01:00"
+   "ultima_ok": "2026-11-22T06:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 4,
-   "ultima_ok": "2026-11-22T05:01+01:00"
+   "n": 2,
+   "ultima_ok": "2026-11-22T06:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1020,34 +1020,6 @@
    "fin": "2026-11-25",
    "lat": 41.681473,
    "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30276021",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 29.423 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.61892,
-   "lon": -0.94646,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30276201",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-D",
-   "via": "pk 321.501 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.68026,
-   "lon": -0.89004,
    "precision": "exacta"
   }
  ]
