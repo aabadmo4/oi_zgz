@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T10:01+01:00",
+ "actualizado": "2026-11-22T11:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 67,
-   "ultima_ok": "2026-11-22T10:01+01:00"
+   "ultima_ok": "2026-11-22T11:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 5,
-   "ultima_ok": "2026-11-22T10:01+01:00"
+   "n": 2,
+   "ultima_ok": "2026-11-22T11:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1020,48 +1020,6 @@
    "fin": "2026-11-25",
    "lat": 41.681473,
    "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30277933",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 252.106 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.7105,
-   "lon": -1.01432,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30278041",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 299.008 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.74063,
-   "lon": -0.84455,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30278058",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 252.105 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.7105,
-   "lon": -1.01431,
    "precision": "exacta"
   }
  ]
