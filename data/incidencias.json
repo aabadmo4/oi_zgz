@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T13:01+01:00",
+ "actualizado": "2026-11-22T14:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 67,
-   "ultima_ok": "2026-11-22T13:01+01:00"
+   "ultima_ok": "2026-11-22T14:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 3,
-   "ultima_ok": "2026-11-22T13:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-22T14:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -995,7 +995,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180012",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1009,7 +1009,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180013",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1027,13 +1027,27 @@
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-68",
-   "via": "pk 246.1–246.2 · sentido creciente · orientación noroeste",
+   "via": "pk 246.0–246.1 · sentido creciente · orientación noroeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-22",
    "fin": null,
-   "lat": 41.687366,
-   "lon": -0.95660436,
+   "lat": 41.686768,
+   "lon": -0.9553081,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30282390",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 329.62–329.7 · sentido decreciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-22",
+   "fin": null,
+   "lat": 41.663273,
+   "lon": -0.7961638,
    "precision": "exacta"
   }
  ]
