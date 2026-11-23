@@ -5235,6 +5235,50 @@
    "titulo": "A-2",
    "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
    "visto": "2026-11-23"
+  },
+  "dgt-30299288": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30299288",
+   "inicio": "2026-11-23",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 318.459 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-23"
+  },
+  "dgt-30300497": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30300497",
+   "inicio": "2026-11-23",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 307.6–308.4 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-23"
+  },
+  "dgt-30301867": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30301867",
+   "inicio": "2026-11-23",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 308.19–308.25 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-23"
+  },
+  "dgt-30301968": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30301968",
+   "inicio": "2026-11-23",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 317.622 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-23"
   }
  },
  "alvarado-pedro-de": {
@@ -5481,6 +5525,17 @@
    "titulo": "AP-68",
    "via": "pk 279.76 · sentido decreciente · orientación noroeste",
    "visto": "2026-11-22"
+  },
+  "dgt-30300919": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30300919",
+   "inicio": "2026-11-23",
+   "tipo": "Obras",
+   "titulo": "AP-68",
+   "via": "pk 283.337 · sentido creciente · orientación este",
+   "visto": "2026-11-23"
   }
  },
  "avenida-de-madrid": {
