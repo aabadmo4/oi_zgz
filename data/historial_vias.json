@@ -5398,7 +5398,7 @@
    "inicio": "2026-11-23",
    "tipo": "Accidente",
    "titulo": "A-2",
-   "via": "pk 314.644–317.5 · sentido decreciente · orientación oeste",
+   "via": "pk 314.0–318.0 · sentido decreciente · orientación oeste",
    "visto": "2026-11-23"
   },
   "dgt-30326321": {
@@ -5420,7 +5420,7 @@
    "inicio": "2026-11-23",
    "tipo": "Accidente",
    "titulo": "A-2",
-   "via": "pk 314.644 · sentido decreciente · orientación suroeste",
+   "via": "pk 314.7 · sentido decreciente · orientación suroeste",
    "visto": "2026-11-23"
   },
   "dgt-30326349": {
@@ -5431,7 +5431,7 @@
    "inicio": "2026-11-23",
    "tipo": "Accidente",
    "titulo": "A-2",
-   "via": "pk 314.644 · sentido decreciente · orientación suroeste",
+   "via": "pk 314.7 · sentido decreciente · orientación suroeste",
    "visto": "2026-11-23"
   },
   "dgt-30326717": {
@@ -5443,6 +5443,50 @@
    "tipo": "Otros",
    "titulo": "A-2",
    "via": "pk 321.314 · sentido creciente · orientación este",
+   "visto": "2026-11-23"
+  },
+  "dgt-30326992": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30326992",
+   "inicio": "2026-11-23",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 314.7 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-23"
+  },
+  "dgt-30326993": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30326993",
+   "inicio": "2026-11-23",
+   "tipo": "Accidente",
+   "titulo": "A-2",
+   "via": "pk 314.0 · sentido decreciente · orientación noreste",
+   "visto": "2026-11-23"
+  },
+  "dgt-30327355": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30327355",
+   "inicio": "2026-11-23",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 316.957 · sentido decreciente · orientación suroeste",
+   "visto": "2026-11-23"
+  },
+  "dgt-30327938": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30327938",
+   "inicio": "2026-11-23",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.527 · sentido creciente · orientación este",
    "visto": "2026-11-23"
   }
  },
