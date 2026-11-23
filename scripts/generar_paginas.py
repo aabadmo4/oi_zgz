@@ -692,7 +692,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,att
 var capa=L.featureGroup().addTo(map),puntos={};
 PTS.forEach(function(p){
   var m=L.marker([p.lat,p.lon],{title:p.n,alt:p.n,icon:L.divIcon({className:'',html:'<div class="pin" style="background:'+C+'">💧</div>',iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})});
-  m.bindPopup(p.h,{maxWidth:260,minWidth:200,autoPanPadding:[14,14]});
+  m.bindPopup(p.h,{maxWidth:260,minWidth:200,autoPanPaddingTopLeft:[52,12],autoPanPaddingBottomRight:[12,12]});
   puntos[p.id]={m:m,l:p.tz?L.polyline(p.tz,{color:C,weight:6,opacity:.85}):null};
 });
 function pintar(ids){
