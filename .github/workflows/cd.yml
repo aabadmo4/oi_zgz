@@ -87,7 +87,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy_reintento.outputs.page_url || steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -105,5 +105,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      # deploy-pages consulta la lista de artefactos justo después de subirlo y, a veces, la API de GitHub
+      # aún no lo muestra («Found 0 artifact(s)»). Pasa con el artefacto ya subido y es transitorio:
+      # se espera un poco y se reintenta una vez. Si el segundo intento también falla, el job falla.
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Esperar antes de reintentar el despliegue
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - id: deploy_reintento
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
