@@ -642,8 +642,174 @@ map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
     return plantilla(titulo, desc, canon, cuerpo, robots, extra, ld, scripts)
 
 
+DIAS_PRONTO = 2  # «Acaban pronto»: en curso y terminan hoy o dentro de, como máximo, este número de días
+MAX_SEGMENTOS = 14  # hasta esta duración (en días) se dibuja una tira con un segmento por día; más larga, una barra
+
+
+def progreso_aviso(i, hoy):
+    """Dónde está un aviso en su calendario, en días naturales (el Ayuntamiento no publica horas fiables).
+    Devuelve None sin fecha de fin; si no, {estado: prox|curso|fin, actual, total, fin_dias, texto}.
+    `actual` es el día en curso (1..total); 0 si aún no ha empezado y total+1 si ya terminó."""
+    ini, fin, ref = _d(i.get("inicio")), _d(i.get("fin")), _d(hoy)
+    if not (ref and fin):
+        return None
+    ini = ini or ref
+    total = max((fin - ini).days + 1, 1)
+    if ini > ref:
+        n = (ini - ref).days
+        cuando_ = "mañana" if n == 1 else f"en {n} días"
+        return {"estado": "prox", "actual": 0, "total": total, "fin_dias": (fin - ref).days,
+                "texto": f"Empieza {cuando_} · dura {total} {'día' if total == 1 else 'días'}"}
+    if fin < ref:
+        return {"estado": "fin", "actual": total + 1, "total": total, "fin_dias": (fin - ref).days,
+                "texto": f"Terminó el {fecha(i['fin'])}"}
+    actual, d = (ref - ini).days + 1, (fin - ref).days
+    texto = "Termina hoy" if d == 0 else "Termina mañana" if d == 1 else f"Termina en {d} días"
+    if total > 1:
+        texto = f"Día {actual} de {total} · {texto}"
+    return {"estado": "curso", "actual": actual, "total": total, "fin_dias": d, "texto": texto}
+
+
+def filtros_aviso(p):
+    """Filtros a los que pertenece un aviso: curso, prox y/o pronto (los sin fecha de fin cuentan como en curso)."""
+    if p is None:
+        return ["curso"]
+    if p["estado"] == "prox":
+        return ["prox"]
+    if p["estado"] == "curso":
+        return ["curso"] + (["pronto"] if p["fin_dias"] <= DIAS_PRONTO else [])
+    return []
+
+
+def bloque_fin(p):
+    """Tira de días (o barra, si es muy larga) más el texto de cuándo acaba. La tira es decorativa: el texto lo dice todo."""
+    if not p:
+        return ""
+    total, actual = p["total"], p["actual"]
+    if total <= MAX_SEGMENTOS:
+        grafico = '<span class="tira" aria-hidden="true">' + "".join(
+            f'<i class="{"hoy" if k == actual else "pas" if k < actual else "fut"}"></i>' for k in range(1, total + 1)) + "</span>"
+    else:
+        pct = max(0, min(100, round(100 * min(actual, total) / total)))
+        grafico = f'<span class="barra" aria-hidden="true"><i style="width:{pct}%"></i></span>'
+    urgente = " urgente" if p["estado"] == "curso" and p["fin_dias"] <= 1 else ""
+    return f'<div class="fin{urgente}">{grafico}<span>{esc(p["texto"])}</span></div>'
+
+
+def popup_aviso(i, nombre, hoy):
+    """Ficha HTML (ya escapada) del popup del mapa de cortes de agua."""
+    c = TIPOS["Suministro"][1]
+    nota = {"calle": "Toda la calle o sin número exacto: ubicación orientativa.", "aprox": "Ubicación aproximada."}.get(i.get("precision"), "")
+    ini, fin = i.get("inicio"), i.get("fin")
+    fechas = (fecha(ini) if ini and ini == fin else _rango(ini, fin) if ini and fin else f"Hasta el {fecha(fin)}" if fin else "")
+    mapa = f"https://www.google.com/maps/search/?api=1&query={i['lat']},{i['lon']}"
+    return (f'<div class="pu" style="--c:{c}"><p class="pu-tipo"><span aria-hidden="true">💧</span> Corte de agua</p>'
+            f'<h3 class="pu-h">{esc(titulo_ficha(i, nombre))}</h3>'
+            + (f'<p class="pu-via"><b>Tramo</b> {esc(i["via"])}</p>' if i.get("via") else "")
+            + (f'<p class="pu-d">{esc(i["detalle"])}</p>' if i.get("detalle") else "")
+            + f'<div class="pu-f"><p>{estado_html(i, hoy)}</p>{bloque_fin(progreso_aviso(i, hoy))}'
+            + (f'<p class="pu-fe">{esc(fechas)}</p>' if fechas else "") + "</div>"
+            + (f'<p class="pu-nota">{esc(nota)}</p>' if nota else "")
+            + f'<a class="pu-b" href="{esc(mapa)}" target="_blank" rel="noopener">📍 Abrir en Maps<span class="sr"> (se abre en una pestaña nueva)</span></a></div>')
+
+
+CSS_AGUA = """[hidden]{display:none!important}
+:root{--ambar:#b45309}@media(prefers-color-scheme:dark){:root{--ambar:#f6c453}}
+main #mapa{height:340px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.buscador{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:14px 0}
+.buscador .lbl{display:block;font-weight:600;margin-bottom:4px}
+.buscador input[type=search]{width:100%;font:inherit;font-size:16px;padding:10px 12px;min-height:44px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.buscador input[type=search]:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+fieldset.filtros{border:0;margin:12px 0 0;padding:0;min-width:0}fieldset.filtros legend{font-size:14px;color:var(--mute);padding:0;margin-bottom:6px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}.chip{position:relative;display:inline-block}
+.chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 14px;border:1.5px solid var(--line);border-radius:99px;font-weight:600;background:var(--bg)}
+.chip small{font-size:12px;font-weight:700;color:var(--mute)}
+.chip input:checked+span{background:var(--ink);color:var(--bg);border-color:var(--ink)}.chip input:checked+span small{color:inherit}
+.chip input:focus-visible+span{outline:3px solid var(--focus);outline-offset:2px}
+.resultados{margin:10px 0 0;font-size:14px;color:var(--mute);min-height:1.4em}
+.vacio{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:14px;margin:12px 0}
+.vacio button,.ver{font:inherit;font-weight:600;min-height:44px;padding:6px 14px;border:1.5px solid var(--line);border-radius:99px;background:transparent;color:var(--ink);cursor:pointer}
+.ver{margin-top:8px}.vacio button:hover,.ver:hover{background:var(--bg)}
+.vacio button:focus-visible,.ver:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.fin{display:flex;align-items:center;flex-wrap:wrap;gap:4px 10px;margin:6px 0 2px;font-size:14px;font-weight:600}.fin.urgente{color:var(--ambar)}
+.tira{display:inline-flex;gap:3px;padding:3px}.tira i{display:block;width:16px;height:9px;border-radius:3px;border:1.5px solid var(--azul)}
+.tira i.pas{background:var(--mute);border-color:var(--mute);opacity:.55}
+.tira i.hoy{background:var(--verde);border-color:var(--verde);box-shadow:0 0 0 2px var(--panel),0 0 0 3.5px var(--verde)}
+.barra{display:inline-block;width:96px;height:9px;border-radius:99px;background:var(--line);overflow:hidden}.barra i{display:block;height:100%;background:var(--verde)}
+.leaflet-popup-content-wrapper{background:var(--panel);color:var(--ink);border-radius:14px;padding:0;overflow:hidden;box-shadow:0 6px 24px #0006}
+.leaflet-popup-content{margin:0!important;width:min(300px,calc(100vw - 64px))!important;font:400 14px/1.35 Barlow,system-ui,sans-serif}
+.leaflet-popup-tip{background:var(--panel)}
+.leaflet-container a.leaflet-popup-close-button{top:6px;right:6px;width:36px;height:36px;font:400 24px/34px system-ui,sans-serif;color:var(--mute);border-radius:50%}
+.leaflet-container a.leaflet-popup-close-button:hover{background:var(--bg);color:var(--ink)}
+.leaflet-popup-content .pu{border-top:6px solid var(--c);padding:12px 14px 14px}.leaflet-popup-content .pu p{margin:0}
+.pu-tipo{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mute)}
+.pu-h{font:800 22px/1.1 "Barlow Condensed",system-ui,sans-serif;margin:3px 30px 8px 0}
+.leaflet-popup-content .pu .pu-via,.leaflet-popup-content .pu .pu-d{margin-top:6px}.pu-via b{margin-right:4px}
+.pu-f{border-top:1px solid var(--line);margin-top:10px;padding-top:10px}.leaflet-popup-content .pu .pu-fe,.leaflet-popup-content .pu .pu-nota{font-size:13px;color:var(--mute);margin-top:6px}
+.leaflet-popup-content .pu .pu-nota{margin-top:8px}
+.leaflet-container a.pu-b{display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:12px;border-radius:10px;background:var(--sign);color:#1d2024;font-weight:700;text-decoration:none}
+.leaflet-container a.pu-b:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.leaflet-zoom-anim .leaflet-zoom-animated{transition:none!important}}"""
+
+JS_AGUA = """<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function(){'use strict';
+var PTS=__PTS__,C='__COLOR__';
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var map=L.map('mapa');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
+var capa=L.featureGroup().addTo(map),puntos={};
+PTS.forEach(function(p){
+  var m=L.marker([p.lat,p.lon],{title:p.n,alt:p.n,icon:L.divIcon({className:'',html:'<div class="pin" style="background:'+C+'">💧</div>',iconSize:[30,30],iconAnchor:[15,15],popupAnchor:[0,-14]})});
+  m.bindPopup(p.h,{maxWidth:320,minWidth:230,autoPanPadding:[14,14]});
+  puntos[p.id]={m:m,l:p.tz?L.polyline(p.tz,{color:C,weight:6,opacity:.85}):null};
+});
+function pintar(ids){
+  capa.clearLayers();
+  ids.forEach(function(id){var x=puntos[id];if(x){capa.addLayer(x.m);if(x.l)capa.addLayer(x.l)}});
+  if(ids.length)map.fitBounds(capa.getBounds().pad(.2),{maxZoom:16,animate:!reduce});
+}
+pintar(PTS.map(function(p){return p.id}));
+
+var form=document.getElementById('buscador');
+if(!form)return;
+var q=document.getElementById('q'),msg=document.getElementById('resultados'),vacio=document.getElementById('sin-resultados'),
+    lis=[].slice.call(document.querySelectorAll('li[data-t]')),secs=[].slice.call(document.querySelectorAll('section[data-grupo]'));
+var plano=function(s){return String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase()};
+function aplicar(){
+  var t=plano(q.value).split(/\\s+/).filter(Boolean),f=form.elements.filtro.value,vis=[];
+  lis.forEach(function(li){
+    var ok=(f==='todos'||(' '+li.dataset.f+' ').indexOf(' '+f+' ')>-1)&&t.every(function(w){return li.dataset.t.indexOf(w)>-1});
+    li.hidden=!ok;if(ok)vis.push(li.dataset.id);
+  });
+  secs.forEach(function(s){s.hidden=!s.querySelector('li:not([hidden])')});
+  pintar(vis);
+  vacio.hidden=vis.length>0;
+  msg.textContent=vis.length===lis.length?lis.length+(lis.length===1?' aviso':' avisos'):'Mostrando '+vis.length+' de '+lis.length+(lis.length===1?' aviso':' avisos');
+}
+var espera;
+q.addEventListener('input',function(){clearTimeout(espera);espera=setTimeout(aplicar,150)});
+form.addEventListener('change',aplicar);
+form.addEventListener('submit',function(e){e.preventDefault();aplicar()});
+document.getElementById('quitar-filtros').addEventListener('click',function(){q.value='';form.elements.filtro.value='todos';aplicar();q.focus()});
+[].forEach.call(document.querySelectorAll('.ver'),function(b){b.hidden=false});
+document.addEventListener('click',function(e){
+  var b=e.target.closest&&e.target.closest('.ver');if(!b)return;
+  var x=puntos[b.dataset.id];if(!x||!capa.hasLayer(x.m))return;
+  document.getElementById('mapa').scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+  map.setView(x.m.getLatLng(),Math.max(map.getZoom(),16),{animate:!reduce});x.m.openPopup();
+});
+form.hidden=false;
+})();
+</script>"""
+
+
 def pagina_cortes_agua(incs, BASE, actualizado, hoy, nombres=None):
-    """Página 'Cortes de agua en Zaragoza hoy' con los avisos de tipo Suministro (agua), agrupados por día."""
+    """Página 'Cortes de agua en Zaragoza hoy': avisos de tipo Suministro (agua), agrupados por día, con buscador por calle,
+    filtros (en curso, próximos, acaban pronto), indicador visual de cuándo acaba cada aviso y mapa con ficha emergente.
+    Todo el contenido va en el HTML; el buscador, los filtros y el mapa son una mejora con JavaScript."""
     nombres = nombres or {}
     canon = f"{BASE}/cortes-de-agua-zaragoza.html"
     avisos = [i for i in incs if es_agua(i)]
@@ -659,13 +825,21 @@ def pagina_cortes_agua(incs, BASE, actualizado, hoy, nombres=None):
 
     def li(i):
         e, c = TIPOS["Suministro"]
+        p = progreso_aviso(i, hoy)
         aviso = {"calle": "Toda la calle o sin número exacto: ubicación orientativa", "aprox": "Ubicación aproximada"}.get(i.get("precision"), "")
-        return (f'<li><span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
+        buscable = fold(" ".join(str(x or "") for x in (nom(i), i.get("titulo"), i.get("via"), i.get("detalle"), i.get("barrio"))))
+        ident = slug(i["id"])
+        return (f'<li id="aviso-{esc(ident)}" data-id="{esc(i["id"])}" data-f="{" ".join(filtros_aviso(p))}" data-t="{esc(buscable)}">'
+                f'<span class="ico" style="background:{c}" aria-hidden="true">{e}</span><div>'
                 f'<div class="t">{esc(titulo_ficha(i, nom(i)))}</div>'
                 + (f'<div class="s">{estado_html(i, hoy)}</div>' if estado_html(i, hoy) else "")
+                + bloque_fin(p)
                 + (f'<div class="s">{esc(i["via"])}</div>' if i.get("via") else "")
                 + (f'<div class="s"><strong>{esc(i["detalle"])}</strong></div>' if i.get("detalle") else "")
-                + (f'<div class="s">{esc(aviso)}</div>' if aviso else "") + "</div></li>")
+                + (f'<div class="s">{esc(aviso)}</div>' if aviso else "")
+                + (f'<button type="button" class="ver" data-id="{esc(i["id"])}" hidden>Ver en el mapa'
+                   f'<span class="sr">: {esc(titulo_ficha(i, nom(i)))}</span></button>' if i.get("lat") is not None else "")
+                + "</div></li>")
 
     n = len(avisos)
     if n:
@@ -678,41 +852,48 @@ def pagina_cortes_agua(incs, BASE, actualizado, hoy, nombres=None):
 
     bloques = ""
     if hoy_l:
-        bloques += f'<h2>Cortes de agua hoy, {esc(f_hoy)}</h2><ul class="lista">{"".join(li(i) for i in hoy_l)}</ul>'
+        bloques += (f'<section data-grupo aria-labelledby="g-hoy"><h2 id="g-hoy">Cortes de agua hoy, {esc(f_hoy)}</h2>'
+                    f'<ul class="lista">{"".join(li(i) for i in hoy_l)}</ul></section>')
     for d_ in sorted({dia(i) for i in prox}):
-        bloques += f'<h2>{esc(fecha(d_).capitalize())}</h2><ul class="lista">{"".join(li(i) for i in prox if dia(i) == d_)}</ul>'
+        bloques += (f'<section data-grupo aria-labelledby="g-{esc(d_)}"><h2 id="g-{esc(d_)}">{esc(fecha(d_).capitalize())}</h2>'
+                    f'<ul class="lista">{"".join(li(i) for i in prox if dia(i) == d_)}</ul></section>')
     if not n:
         bloques = ('<p>Ahora mismo no hay cortes de agua programados. Los avisos se publican con antelación, así que vuelve a '
                    'consultar esta página: se actualiza cada hora. Mientras tanto puedes ver <a href="/">todas las obras e incidencias de Zaragoza</a>.</p>')
 
-    extra = scripts = mapa = ""
+    extra = scripts = mapa = buscador = ""
     if n:
-        pts = [{"lat": i["lat"], "lon": i["lon"], "n": titulo_ficha(i, nom(i)) + (" · " + i["detalle"] if i.get("detalle") else ""), "tz": i.get("trazado")} for i in avisos]
+        cuenta = {k: sum(k in filtros_aviso(progreso_aviso(i, hoy)) for i in avisos) for k in ("curso", "prox", "pronto")}
+        opciones = [("todos", "Todos", n), ("curso", "En curso", cuenta["curso"]), ("prox", "Próximos", cuenta["prox"]),
+                    ("pronto", "Acaban pronto", cuenta["pronto"])]
+        chips = "".join(f'<label class="chip"><input type="radio" name="filtro" value="{v}"{" checked" if v == "todos" else ""}>'
+                        f'<span>{t} <small>{c_}</small></span></label>' for v, t, c_ in opciones)
+        buscador = (f'<form id="buscador" class="buscador" role="search" aria-label="Buscar y filtrar cortes de agua" hidden>'
+                    f'<label class="lbl" for="q">Busca tu calle</label>'
+                    f'<input id="q" type="search" name="q" autocomplete="off" enterkeyhint="search" placeholder="Ej.: La Paz, Av. de la Jota">'
+                    f'<fieldset class="filtros"><legend>Mostrar</legend><div class="opts">{chips}</div></fieldset>'
+                    f'<p id="resultados" class="resultados" role="status" aria-live="polite"></p></form>'
+                    f'<div id="sin-resultados" class="vacio" hidden><p>No hay avisos de corte de agua que coincidan con tu búsqueda. '
+                    f'Prueba con otra calle o quita los filtros. Esta web solo recoge los cortes programados que publica el Ayuntamiento.</p>'
+                    f'<button type="button" id="quitar-filtros">Quitar filtros</button></div>')
+        pts = [{"id": i["id"], "lat": i["lat"], "lon": i["lon"], "n": titulo_ficha(i, nom(i)) + (" · " + i["detalle"] if i.get("detalle") else ""),
+                "h": popup_aviso(i, nom(i), hoy), "tz": i.get("trazado")} for i in avisos if i.get("lat") is not None and i.get("lon") is not None]
         datos = json.dumps(pts, ensure_ascii=False).replace("</", "<\\/")
-        c = TIPOS["Suministro"][1]
-        extra = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
+        extra = ('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
+                 f"<style>{CSS_AGUA}</style>")
         mapa = '<div id="mapa" role="region" aria-label="Mapa de cortes de agua en Zaragoza"></div>'
-        scripts = f"""<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>
-const PTS={datos};
-const map=L.map('mapa');
-L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{maxZoom:19,attribution:'© OpenStreetMap'}}).addTo(map);
-const g=L.featureGroup().addTo(map);
-PTS.forEach(p=>{{const m=L.marker([p.lat,p.lon],{{title:p.n,icon:L.divIcon({{className:'',html:'<div class="pin" style="background:{c}">💧</div>',iconSize:[30,30],iconAnchor:[15,15]}})}});
-m.bindPopup(Object.assign(document.createElement('strong'),{{textContent:p.n}}));g.addLayer(m);
-if(p.tz)g.addLayer(L.polyline(p.tz,{{color:'{c}',weight:6,opacity:.85}}))}});
-map.fitBounds(g.getBounds().pad(.2),{{maxZoom:16}});
-</script>"""
+        scripts = JS_AGUA.replace("__PTS__", datos).replace("__COLOR__", TIPOS["Suministro"][1])
 
     cuerpo = f"""<nav class="mig" aria-label="Migas de pan"><a href="/">Inicio</a> › Cortes de agua</nav>
 <h1>Cortes de agua en Zaragoza hoy</h1>
 <p class="resumen">{esc(res)}</p>
 <p>Esta página reúne los cortes de agua programados que publica el Ayuntamiento de Zaragoza: calle, tramo afectado y horario. Son interrupciones planificadas por obras o trabajos en la red, que afectan al suministro de los edificios indicados, no al tráfico.</p>
+{buscador}
 {mapa}
 {bloques}
 <h2>Preguntas frecuentes</h2>
 <h3>¿Cómo sé si mi calle está afectada?</h3>
-<p>Busca tu calle en las listas de arriba. Cuando el aviso indica «números impares», «pares» o un tramo entre dos calles, solo afecta a esos portales. Si el aviso no trae número exacto, la ubicación en el mapa es orientativa.</p>
+<p>Escribe el nombre de tu calle en el buscador de arriba o búscala en las listas. Cuando el aviso indica «números impares», «pares» o un tramo entre dos calles, solo afecta a esos portales. Si el aviso no trae número exacto, la ubicación en el mapa es orientativa.</p>
 <h3>¿Con cuánta antelación se avisa?</h3>
 <p>Depende de cada obra: los avisos aparecen aquí en cuanto el Ayuntamiento los publica y la página se actualiza cada hora.</p>
 <h3>¿Qué hago si hay una avería o un corte que no figura aquí?</h3>
