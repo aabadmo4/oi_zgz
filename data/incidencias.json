@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23T07:01+01:00",
+ "actualizado": "2026-11-23T08:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 69,
-   "ultima_ok": "2026-11-23T07:01+01:00"
+   "ultima_ok": "2026-11-23T08:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 4,
-   "ultima_ok": "2026-11-23T07:01+01:00"
+   "n": 10,
+   "ultima_ok": "2026-11-23T08:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1038,7 +1038,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180013",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1052,7 +1052,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180012",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1091,6 +1091,90 @@
    "fin": null,
    "lat": 41.624924,
    "lon": -0.8490524,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30297449",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 255.823 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.729992,
+   "lon": -1.050155,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30297638",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30297714",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "Z-40",
+   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.665405,
+   "lon": -0.83814114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30298650",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-68",
+   "via": "pk 230.0 · sentido decreciente · orientación sureste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.604263,
+   "lon": -0.8264776,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30298915",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 320.5–321.28 · sentido creciente · orientación este",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.67971,
+   "lon": -0.89224625,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30298997",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.664104,
+   "lon": -0.9398144,
    "precision": "exacta"
   }
  ]
