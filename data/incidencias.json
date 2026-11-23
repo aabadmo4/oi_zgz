@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-23T12:01+01:00",
+ "actualizado": "2026-11-23T13:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 69,
-   "ultima_ok": "2026-11-23T12:01+01:00"
+   "n": 70,
+   "ultima_ok": "2026-11-23T13:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 12,
-   "ultima_ok": "2026-11-23T12:01+01:00"
+   "n": 13,
+   "ultima_ok": "2026-11-23T13:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -569,6 +569,20 @@
    "nombre": "Calle Consejo de Ciento"
   },
   {
+   "id": "zgz-31451",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CUARTA AVENIDA, 46",
+   "via": "",
+   "detalle": "Para la reconstrucción de orejetas en el paso de peatones a la altura del nº 46",
+   "inicio": "2026-10-28",
+   "fin": "2026-12-04",
+   "lat": 41.624682,
+   "lon": -0.8782324,
+   "precision": "portal",
+   "nombre": "Cuarta Avenida"
+  },
+  {
    "id": "zgz-31536",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1038,7 +1052,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180013",
+   "id": "dgt-30180012",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1052,7 +1066,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30180012",
+   "id": "dgt-30180013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1108,20 +1122,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30300191",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-23",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30300190",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1136,17 +1136,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30300497",
+   "id": "dgt-30300191",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 307.6–308.4 · sentido decreciente · orientación oeste",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-23",
-   "fin": null,
-   "lat": 41.62136,
-   "lon": -1.025334,
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
    "precision": "exacta"
   },
   {
@@ -1161,6 +1161,20 @@
    "fin": null,
    "lat": 41.622944,
    "lon": -1.0186551,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30300497",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 307.6–308.4 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.62136,
+   "lon": -1.025334,
    "precision": "exacta"
   },
   {
@@ -1203,6 +1217,20 @@
    "fin": null,
    "lat": 41.60763,
    "lon": -1.0737256,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30311997",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 319.62 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.68168,
+   "lon": -0.91201,
    "precision": "exacta"
   }
  ]
