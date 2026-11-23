@@ -218,7 +218,7 @@ El `cron` de GitHub Actions (`schedule: '17 * * * *'`) no funciona de forma fiab
 - **Obras de larga duración**: si una calle no principal tiene una incidencia del Ayuntamiento de 60 días o más entre inicio y fin (`UMBRAL_DIAS`), se crea su página. Se guarda en `data/vias_conocidas.json` y sigue existiendo cuando acaba la obra.
 - **Historial** (`data/historial_vias.json`): las incidencias ya finalizadas se muestran 30 días (`DIAS_HISTORIAL`). En carreteras (A-2, AP-68, Z-30, Z-40, N-232…) no se muestra historial, porque son avisos puntuales de la DGT.
 - **SEO**: una página es `index,follow` si es una vía principal con incidencias (activas o recientes) o tiene una obra larga; en otro caso, `noindex,follow`. El sitemap incluye las páginas indexables.
-- **Cortes de agua** (`/cortes-de-agua-zaragoza.html`): lista las incidencias de tipo `Suministro` (agua), agrupadas por día (hoy y próximos días), con mapa y preguntas frecuentes (`FAQPage`). La portada incluye un resumen con enlace a esta página.
+- **Cortes de agua** (`/cortes-de-agua-zaragoza.html`): lista las incidencias de tipo `Suministro` (agua), agrupadas por día (hoy y próximos días), con mapa y preguntas frecuentes (`FAQPage`). Incluye un **buscador por calle** (sin tildes ni mayúsculas), filtros **En curso / Próximos / Acaban pronto** (`DIAS_PRONTO`, 2 días por defecto), una **tira de días** por aviso que muestra en qué día va y cuándo acaba (barra si dura más de `MAX_SEGMENTOS` días) y una ficha emergente en el mapa con tramo, motivo, fechas y enlace a Maps. Todo el contenido va en el HTML; buscador, filtros y mapa son mejoras con JavaScript (el formulario está oculto sin JS). La portada incluye un resumen con enlace a esta página.
 
 ### Datos abiertos para buscadores y agentes de IA
 
