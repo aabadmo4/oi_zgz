@@ -11,6 +11,22 @@ def _cargar_datos():
 
 
 class TestPaginas(unittest.TestCase):
+    def test_es_agua_sin_la_palabra_agua_en_el_motivo(self):
+        """Regresión: el motivo del Ayuntamiento (\"Para reparar toma...\") no incluye \"agua\"; seguía siendo un corte de agua."""
+        base = {"tipo": "Suministro", "titulo": "LA PAZ 19"}
+        for motivo in ("Para reparar toma de C/ La Paz, n.º 27. Vol: 14877", "Cambio llave de paso",
+                       "Para condenar boca de riego", "Para conectar tuberías. UTE Portillo."):
+            with self.subTest(motivo=motivo):
+                self.assertTrue(g.es_agua({**base, "detalle": motivo}))
+        self.assertFalse(g.es_agua({**base, "detalle": "Corte de luz programado"}))
+        self.assertFalse(g.es_agua({**base, "detalle": "Corte de gas en el edificio"}))
+        self.assertFalse(g.es_agua({"tipo": "Obras", "titulo": "X", "detalle": "Cortes de agua"}))
+
+    def test_los_datos_actuales_muestran_los_suministros_como_cortes_de_agua(self):
+        incs = _cargar_datos()["incidencias"]
+        suministros = [i for i in incs if i["tipo"] == "Suministro"]
+        self.assertTrue(all(g.es_agua(i) for i in suministros))
+
     def test_iconos_vehiculo_detenido_y_retencion(self):
         # Vehículo detenido (DGT, tipo Otros) lleva coche; la retención ya no, para no confundirlos
         self.assertEqual(g.visual({"tipo": "Otros", "causa": "Vehículo detenido"})[0], "🚗")
