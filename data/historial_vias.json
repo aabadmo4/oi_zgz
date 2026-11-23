@@ -1,38 +1,5 @@
 {
  "a-2": {
-  "dgt-29361834": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29361834",
-   "inicio": "2026-10-24",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 318.6–318.646",
-   "visto": "2026-10-24"
-  },
-  "dgt-29363066": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29363066",
-   "inicio": "2026-10-24",
-   "tipo": "Corte",
-   "titulo": "VS-A-2-C",
-   "via": "pk 321.35–321.36",
-   "visto": "2026-10-24"
-  },
-  "dgt-29363753": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29363753",
-   "inicio": "2026-10-24",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 321.794",
-   "visto": "2026-10-24"
-  },
   "dgt-29381534": {
    "detalle": "",
    "fin": null,
@@ -5542,7 +5509,7 @@
    "tipo": "Obras",
    "titulo": "A-2",
    "via": "pk 313.7–315.0 · sentido decreciente · orientación suroeste",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "dgt-30330834": {
    "detalle": "Obras en la vía",
@@ -5553,7 +5520,51 @@
    "tipo": "Obras",
    "titulo": "A-2",
    "via": "pk 311.9–312.8 · sentido decreciente · orientación suroeste",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
+  },
+  "dgt-30331891": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30331891",
+   "inicio": "2026-11-23",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.6–324.7 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-24"
+  },
+  "dgt-30331892": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30331892",
+   "inicio": "2026-11-23",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.0–323.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-24"
+  },
+  "dgt-30331893": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30331893",
+   "inicio": "2026-11-23",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.0–323.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-24"
+  },
+  "dgt-30332060": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30332060",
+   "inicio": "2026-11-23",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 321.1–321.3 · sentido creciente · orientación este",
+   "visto": "2026-11-24"
   }
  },
  "alvarado-pedro-de": {
@@ -5566,7 +5577,7 @@
    "tipo": "Corte",
    "titulo": "ALVARADO PEDRO DE, 1",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "ap-68": {
@@ -5882,7 +5893,7 @@
    "tipo": "Corte",
    "titulo": "VALENCIA AVENIDA DE, 9",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-29675": {
    "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027).",
@@ -5893,7 +5904,7 @@
    "tipo": "Otros",
    "titulo": "VALENCIA AVENIDA DE, 41",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-29796": {
    "detalle": "Continuando con la renovación integral de la Avenida (fecha de finalización prevista enero de 2027)",
@@ -5915,7 +5926,7 @@
    "tipo": "Corte",
    "titulo": "VALENCIA AVENIDA DE, 9",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31670": {
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
@@ -5987,7 +5998,7 @@
    "tipo": "Obras",
    "titulo": "QUINTO AGUSTIN DE, 7",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-albardin": {
@@ -6013,7 +6024,7 @@
    "tipo": "Obras",
    "titulo": "ESCOSURA DESIDERIO, 2",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-doctor-blanco-cordero": {
@@ -6026,7 +6037,7 @@
    "tipo": "Corte",
    "titulo": "BLANCO CORDERO (DR.), 11",
    "via": "Dr. Blanco Cordero se corta en el tramo comprendido entre el n.o 14 y la calle López Abadía",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31003": {
    "detalle": "Continuando con la rehabilitación del grupo de viviendas Aloy Salas y para realizar una canalización eléctrica entre las calles López Abadía y Félix Rodriguez de la Fuente",
@@ -6037,7 +6048,7 @@
    "tipo": "Otros",
    "titulo": "BLANCO CORDERO (DR.), 11",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-doctor-iranzo": {
@@ -6050,7 +6061,7 @@
    "tipo": "Obras",
    "titulo": "IRANZO (DOCTOR), 43",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31395": {
    "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas.",
@@ -6085,7 +6096,7 @@
    "tipo": "Otros",
    "titulo": "FERRAN JAIME, 9",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31618": {
    "detalle": "Continuando con la canalización eléctrica",
@@ -6096,7 +6107,7 @@
    "tipo": "Otros",
    "titulo": "FERRAN JAIME, 9",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-jeronimo-cancer": {
@@ -6109,7 +6120,7 @@
    "tipo": "Corte",
    "titulo": "CANCER JERONIMO, 8",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-jose-anselmo-clave": {
@@ -6122,7 +6133,7 @@
    "tipo": "Otros",
    "titulo": "CLAVE JOSE ANSELMO, 11",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31425": {
    "detalle": "Hasta el 28-12-2026. Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo)",
@@ -6133,7 +6144,7 @@
    "tipo": "Corte",
    "titulo": "CLAVE JOSE ANSELMO, 5",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31754": {
    "detalle": "Para conectar tuberías. UTE Portillo.",
@@ -6144,7 +6155,7 @@
    "tipo": "Suministro",
    "titulo": "CLAVE JOSE ANSELMO, 27",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-jose-atares": {
@@ -6181,7 +6192,7 @@
    "tipo": "Otros",
    "titulo": "CADENA(MARQUES DE LA), 7",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-pedro-cerbuna": {
@@ -6194,7 +6205,7 @@
    "tipo": "Corte",
    "titulo": "CERBUNA PEDRO, 39",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-30876": {
    "detalle": "Hasta el 18-02-2027. Continuando con las obras para su renovación integral",
@@ -6205,7 +6216,7 @@
    "tipo": "Corte",
    "titulo": "CERBUNA PEDRO, 5",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31536": {
    "detalle": "Continuando con las obras para su renovación integral",
@@ -6216,7 +6227,7 @@
    "tipo": "Corte",
    "titulo": "CERBUNA PEDRO, 5",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "calle-sadaba": {
@@ -6253,7 +6264,7 @@
    "tipo": "Obras",
    "titulo": "CELORRIO SIXTO, 11",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31475": {
    "detalle": "Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como primera fase para renovar un ramal de saneamiento que cruza la vía",
@@ -6275,7 +6286,7 @@
    "tipo": "Corte",
    "titulo": "CELORRIO SIXTO, 11",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "carretera-albardin": {
@@ -6301,7 +6312,7 @@
    "tipo": "Corte",
    "titulo": "COSO, 94",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31401": {
    "detalle": "Para realizar una canalización eléctrica",
@@ -6371,7 +6382,7 @@
    "tipo": "Corte",
    "titulo": "MIRAL DOMINGO, 1",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "paseo-de-la-independencia": {
@@ -6408,7 +6419,7 @@
    "tipo": "Obras",
    "titulo": "AGUSTIN PASEO MARIA, 13",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   }
  },
  "paseo-de-teruel": {
@@ -6447,7 +6458,7 @@
    "tipo": "Corte",
    "titulo": "VISTABELLA MRL, 47",
    "via": "",
-   "visto": "2026-11-23"
+   "visto": "2026-11-24"
   },
   "zgz-31244": {
    "detalle": "Continuando con las obras de urbanización del Área de Intervención F-56-2",
@@ -6473,61 +6484,6 @@
   }
  },
  "z-40": {
-  "dgt-29358493": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29358493",
-   "inicio": "2026-10-24",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 23.0–24.0",
-   "visto": "2026-10-24"
-  },
-  "dgt-29365525": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29365525",
-   "inicio": "2026-10-24",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.5–14.597",
-   "visto": "2026-10-24"
-  },
-  "dgt-29365915": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29365915",
-   "inicio": "2026-10-24",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 28.639",
-   "visto": "2026-10-24"
-  },
-  "dgt-29366148": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29366148",
-   "inicio": "2026-10-24",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 31.539",
-   "visto": "2026-10-24"
-  },
-  "dgt-29366152": {
-   "detalle": "",
-   "fin": null,
-   "fuente": "DGT",
-   "id": "dgt-29366152",
-   "inicio": "2026-10-24",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 32.567",
-   "visto": "2026-10-24"
-  },
   "dgt-29404502": {
    "detalle": "",
    "fin": null,

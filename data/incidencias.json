@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-23T23:06+01:00",
+ "actualizado": "2026-11-24T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 70,
-   "ultima_ok": "2026-11-23T23:05+01:00"
+   "n": 68,
+   "ultima_ok": "2026-11-24T00:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 4,
-   "ultima_ok": "2026-11-23T23:05+01:00"
+   "n": 8,
+   "ultima_ok": "2026-11-24T00:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -200,20 +200,6 @@
    "nombre": "Calle de Biarritz"
   },
   {
-   "id": "zgz-31592",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "LASALA MANUEL, 6",
-   "via": "",
-   "detalle": "Hasta el 23-12-2026. Continuando con las obras del Río Huerva (Lote 1) y para sustituir el colector de saneamiento",
-   "inicio": "2026-11-03",
-   "fin": "2026-12-23",
-   "lat": 41.640176,
-   "lon": -0.89081,
-   "precision": "portal",
-   "nombre": "Calle de Manuel Lasala"
-  },
-  {
    "id": "zgz-30568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -298,6 +284,35 @@
    "lon": -0.8946502,
    "precision": "portal",
    "nombre": "Calle Maestro Tomás Bretón"
+  },
+  {
+   "id": "zgz-31775",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "GASCA MARIANO DE LA, 9",
+   "via": "Entre C/ Arzobispo Domenech y Gran Vía",
+   "detalle": "Cortes de Agua. desde las 8 hasta las 10 horas.",
+   "inicio": "2026-11-25",
+   "fin": "2026-11-25",
+   "lat": 41.64682163894146,
+   "lon": -0.8861749422973558,
+   "precision": "aprox",
+   "nombre": "Calle Mariano de la Gasca"
+  },
+  {
+   "id": "zgz-31777",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CONCORDIA DE LA SIS, 4",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-25",
+   "fin": "2026-11-25",
+   "lat": 41.6652796,
+   "lon": -0.8228066,
+   "precision": "portal",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle de la Concordia"
   },
   {
    "id": "zgz-31704",
@@ -441,34 +456,6 @@
    "nombre": "Calle de Mariano Cerezo"
   },
   {
-   "id": "zgz-31750",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SCHWEITZER ALBERT, 2",
-   "via": "",
-   "detalle": "Para reparar toma de C/ La Paz, n.º 27. Vol: 14877",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.6427804,
-   "lon": -0.8823128,
-   "precision": "calle",
-   "nombre": "Plaza Albert Schweitzer"
-  },
-  {
-   "id": "zgz-31751",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "TORICO EL (AV.) , 0",
-   "via": "Entre Avd. 21 de junio y Avd. del Cierzo",
-   "detalle": "Para condenar y hacer toma nueva. Vol: Expt.0061760/25",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.6259765,
-   "lon": -0.9666507,
-   "precision": "calle",
-   "nombre": "Avenida El Torico"
-  },
-  {
    "id": "zgz-31753",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -541,6 +528,21 @@
    "nombre": "Calle Mayor"
   },
   {
+   "id": "zgz-31776",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SOLIDARIDAD SIS, 2",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-25",
+   "fin": "2026-11-25",
+   "lat": 41.664928,
+   "lon": -0.822051,
+   "precision": "portal",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle de la Solidaridad"
+  },
+  {
    "id": "zgz-31657",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -581,6 +583,21 @@
    "lon": -0.8782324,
    "precision": "portal",
    "nombre": "Cuarta Avenida"
+  },
+  {
+   "id": "zgz-31778",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CADIERA SIS, 1",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas",
+   "inicio": "2026-11-25",
+   "fin": "2026-11-25",
+   "lat": 41.6658547,
+   "lon": -0.8230173,
+   "precision": "portal",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle Cadiera"
   },
   {
    "id": "zgz-31536",
@@ -710,6 +727,21 @@
    "nombre": "Calle de la Peña Oroel"
   },
   {
+   "id": "zgz-31779",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "CADIERA PL SIS, 0",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 16 horas.",
+   "inicio": "2026-11-25",
+   "fin": "2026-11-25",
+   "lat": 41.6660148,
+   "lon": -0.8233343,
+   "precision": "calle",
+   "barrio": "Santa Isabel",
+   "nombre": "Calle Cadiera Pl"
+  },
+  {
    "id": "zgz-31746",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -752,20 +784,6 @@
    "nombre": "Calle D (Malpica II)"
   },
   {
-   "id": "zgz-31235",
-   "fuente": "Ayuntamiento",
-   "tipo": "Obras",
-   "titulo": "LORENTE JUAN JOSE, 1",
-   "via": "",
-   "detalle": "Continuando con las obras de la Avenida Valencia y para realizar la conexión de servicios",
-   "inicio": "2026-10-21",
-   "fin": "2026-11-23",
-   "lat": 41.6467227,
-   "lon": -0.8950031,
-   "precision": "portal",
-   "nombre": "Calle Juan José Lorente"
-  },
-  {
    "id": "zgz-31563",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -792,34 +810,6 @@
    "lon": -0.8982894,
    "precision": "calle",
    "nombre": "Avenida de las Ranillas"
-  },
-  {
-   "id": "zgz-31733",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "GRAN VIA, 9",
-   "via": "",
-   "detalle": "Hasta el 23-11-2026 a las 18:00 horas. Continuando con las obras del Río Huerva (Lote 1) y para realizar el asfaltado de la Calle Martín Ruiz Anglada",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.646383,
-   "lon": -0.886898,
-   "precision": "portal",
-   "nombre": "Gran Vía de Santiago Ramón y Cajal"
-  },
-  {
-   "id": "zgz-31752",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CABRERA ISLA DE, 2",
-   "via": "Frente al n.º 2. Parques y Jardines",
-   "detalle": "Para condenar boca de riego y cambio llave de paso de riego",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.662998,
-   "lon": -0.855463,
-   "precision": "portal",
-   "nombre": "Calle Isla de Cabrera"
   },
   {
    "id": "zgz-31754",
@@ -996,20 +986,6 @@
    "nombre": "Calle Movera"
   },
   {
-   "id": "zgz-31749",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "LA PAZ 19",
-   "via": "",
-   "detalle": "Para reparar toma de C/ La Paz, n.º 27. Vol: 14877",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.6424796,
-   "lon": -0.8836377,
-   "precision": "portal",
-   "nombre": "Calle la Paz 19"
-  },
-  {
    "id": "zgz-31706",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1052,7 +1028,7 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30300190",
+   "id": "dgt-30300191",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1066,7 +1042,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30300191",
+   "id": "dgt-30300190",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1105,6 +1081,62 @@
    "fin": null,
    "lat": 41.633415,
    "lon": -0.97684956,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30331891",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.6–324.7 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.6795,
+   "lon": -0.86443526,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30331893",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.0–323.6 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.67956,
+   "lon": -0.87164074,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30331892",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 323.0–323.6 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.67956,
+   "lon": -0.87164074,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30332060",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 321.1–321.3 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.679703,
+   "lon": -0.8920562,
    "precision": "exacta"
   }
  ]
