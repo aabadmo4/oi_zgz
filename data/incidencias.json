@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23T13:01+01:00",
+ "actualizado": "2026-11-23T13:45+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 70,
-   "ultima_ok": "2026-11-23T13:01+01:00"
+   "ultima_ok": "2026-11-23T13:44+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 13,
-   "ultima_ok": "2026-11-23T13:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-23T13:44+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1052,34 +1052,6 @@
    "nombre": "Calle de Policarpo Romea"
   },
   {
-   "id": "dgt-30180012",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30180013",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 246.9–247.5 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-25",
-   "lat": 41.681473,
-   "lon": -0.9655962,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30298505",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1091,34 +1063,6 @@
    "fin": "2026-11-23",
    "lat": 41.713253,
    "lon": -1.0324451,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30287785",
-   "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "Z-40",
-   "via": "pk 19.8–20.0 · sentido creciente · orientación suroeste",
-   "detalle": "Accidente",
-   "causa": "Accidente",
-   "inicio": "2026-11-22",
-   "fin": null,
-   "lat": 41.62582,
-   "lon": -0.84712523,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30299802",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-23",
-   "via": "pk 267.0–269.3 · sentido creciente · orientación noreste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.55607,
-   "lon": -0.97911286,
    "precision": "exacta"
   },
   {
@@ -1150,20 +1094,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30301867",
-   "fuente": "DGT",
-   "tipo": "Corte",
-   "titulo": "A-2",
-   "via": "pk 308.19–308.25 · sentido decreciente · orientación oeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-23",
-   "fin": null,
-   "lat": 41.622944,
-   "lon": -1.0186551,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30300497",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1178,59 +1108,101 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30300842",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 225.5–226.5 · sentido creciente · orientación noroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-23",
-   "lat": 41.58959,
-   "lon": -0.7881508,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30302477",
+   "id": "dgt-30312613",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 14.7 · sentido decreciente · orientación noreste",
+   "via": "pk 22.228 · sentido creciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-23",
    "fin": null,
-   "lat": 41.665848,
-   "lon": -0.83787864,
+   "lat": 41.615894,
+   "lon": -0.86944,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30308724",
+   "id": "dgt-30312865",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 15.128 · sentido creciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.66202,
+   "lon": -0.839657,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30313491",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 303.0–303.6 · sentido decreciente · orientación suroeste",
+   "titulo": "N-232",
+   "via": "pk 247.428 · sentido creciente · orientación oeste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-23",
    "fin": null,
-   "lat": 41.60763,
-   "lon": -1.0737256,
+   "lat": 41.68516,
+   "lon": -0.96979,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30311997",
+   "id": "dgt-30314165",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 319.62 · sentido creciente · orientación este",
+   "titulo": "A-123",
+   "via": "pk 6.478 · sentido creciente · orientación norte",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-23",
    "fin": null,
-   "lat": 41.68168,
-   "lon": -0.91201,
+   "lat": 41.71733,
+   "lon": -0.81023,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30314243",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.223 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.680878,
+   "lon": -0.9049917,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30314350",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 251.244 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.705006,
+   "lon": -1.00674,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30314381",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "ZP-2105",
+   "via": "pk 1.775 · sentido decreciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-23",
+   "fin": null,
+   "lat": 41.59265,
+   "lon": -0.83384,
    "precision": "exacta"
   }
  ]
