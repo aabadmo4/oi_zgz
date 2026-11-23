@@ -230,8 +230,18 @@ def recientes(hist_via, activas):
 TIPOS_VIA = "AVENIDA|PASEO|PLAZA|CAMINO|CARRETERA|CALLE|RONDA|VIA|TRAVESIA|CUESTA|PARQUE|GLORIETA"
 
 
+SERVICIOS_NO_AGUA = re.compile(r"\b(luz|gas|electric\w*|telefon\w*|fibra)\b")
+
+
 def es_agua(i):
-    return i.get("tipo") == "Suministro" and "agua" in fold(i.get("detalle", "") + " " + i.get("titulo", ""))
+    """Corte de agua = incidencia de tipo Suministro que no es de otro servicio (luz, gas...).
+    El Ayuntamiento indica el servicio en el campo "tipo" (p. ej. "Cortes de Agua"), pero el motivo
+    suele ser solo la causa ("Para reparar toma de C/ La Paz", "Cambio llave de paso"), sin la palabra
+    "agua"; por eso no se puede exigir que aparezca en el texto, solo descartar los otros servicios."""
+    if i.get("tipo") != "Suministro":
+        return False
+    texto = fold(f"{i.get('detalle', '')} {i.get('titulo', '')}")
+    return not SERVICIOS_NO_AGUA.search(texto)
 
 
 def nombre_corte(i, nombres=None):
