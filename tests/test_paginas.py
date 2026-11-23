@@ -27,6 +27,62 @@ class TestPaginas(unittest.TestCase):
         suministros = [i for i in incs if i["tipo"] == "Suministro"]
         self.assertTrue(all(g.es_agua(i) for i in suministros))
 
+    def test_progreso_aviso(self):
+        base = {"tipo": "Suministro", "titulo": "X"}
+        hoy = "2026-11-23"
+        un_dia = g.progreso_aviso({**base, "inicio": hoy, "fin": hoy}, hoy)
+        self.assertEqual((un_dia["estado"], un_dia["texto"], un_dia["fin_dias"]), ("curso", "Termina hoy", 0))
+        medio = g.progreso_aviso({**base, "inicio": "2026-11-22", "fin": "2026-11-24"}, hoy)
+        self.assertEqual((medio["actual"], medio["total"], medio["texto"]), (2, 3, "Día 2 de 3 · Termina mañana"))
+        futuro = g.progreso_aviso({**base, "inicio": "2026-11-25", "fin": "2026-11-26"}, hoy)
+        self.assertEqual((futuro["estado"], futuro["actual"], futuro["texto"]), ("prox", 0, "Empieza en 2 días · dura 2 días"))
+        self.assertEqual(g.progreso_aviso({**base, "inicio": "2026-11-24", "fin": "2026-11-24"}, hoy)["texto"], "Empieza mañana · dura 1 día")
+        self.assertIsNone(g.progreso_aviso({**base, "inicio": hoy}, hoy))
+
+    def test_filtros_aviso(self):
+        base = {"tipo": "Suministro", "titulo": "X"}
+        hoy = "2026-11-23"
+        f = lambda ini, fin: g.filtros_aviso(g.progreso_aviso({**base, "inicio": ini, "fin": fin}, hoy))
+        self.assertEqual(f(hoy, hoy), ["curso", "pronto"])
+        self.assertEqual(f("2026-11-20", "2026-11-25"), ["curso", "pronto"])  # termina en 2 días
+        self.assertEqual(f("2026-11-20", "2026-12-20"), ["curso"])
+        self.assertEqual(f("2026-11-24", "2026-11-24"), ["prox"])
+        self.assertEqual(f("2026-11-01", "2026-11-02"), [])  # ya terminó: solo en «Todos»
+        self.assertEqual(g.filtros_aviso(None), ["curso"])
+
+    def test_bloque_fin_tira_y_barra(self):
+        hoy = "2026-11-23"
+        corta = g.bloque_fin(g.progreso_aviso({"inicio": "2026-11-22", "fin": "2026-11-24"}, hoy))
+        self.assertEqual(corta.count("<i class="), 3)
+        self.assertIn('<i class="pas">', corta)
+        self.assertIn('<i class="hoy">', corta)
+        self.assertIn('<i class="fut">', corta)
+        self.assertIn('aria-hidden="true"', corta)  # el gráfico es decorativo; el texto lo dice todo
+        larga = g.bloque_fin(g.progreso_aviso({"inicio": "2026-11-01", "fin": "2026-12-31"}, hoy))
+        self.assertIn('class="barra"', larga)
+        self.assertEqual(g.bloque_fin(None), "")
+
+    def test_pagina_cortes_agua_tiene_buscador_filtros_y_popup(self):
+        d = _cargar_datos()
+        html = g.pagina_cortes_agua(d["incidencias"], "https://ejemplo.es", d["actualizado"], "2026-11-23")
+        self.assertIn('role="search"', html)
+        self.assertIn('<label class="lbl" for="q">', html)
+        for v in ("todos", "curso", "prox", "pronto"):
+            self.assertIn(f'name="filtro" value="{v}"', html)
+        self.assertEqual(html.count("data-t="), 7)  # un elemento buscable por aviso
+        self.assertIn("pu-b", html)  # ficha emergente con botón «Abrir en Maps»
+        self.assertNotIn("</script><", html.split("var PTS=")[1].split(",C=")[0])  # los datos no cierran el <script>
+        # sin avisos no se pintan ni buscador ni mapa
+        vacia = g.pagina_cortes_agua([], "https://ejemplo.es", d["actualizado"], "2026-11-23")
+        self.assertNotIn('id="buscador"', vacia)
+        self.assertIn("no hay cortes de agua programados", vacia)
+
+    def test_busqueda_sin_tildes_en_texto_buscable(self):
+        i = {"id": "zgz-1", "tipo": "Suministro", "titulo": "LA PAZ 19", "detalle": "Cambio de válvulas", "inicio": "2026-11-23", "fin": "2026-11-23",
+             "lat": 41.6, "lon": -0.88, "precision": "portal", "nombre": "Calle la Paz 19"}
+        html = g.pagina_cortes_agua([i], "https://ejemplo.es", "2026-11-23T09:01+01:00", "2026-11-23")
+        self.assertIn("valvulas", html.split('data-t="')[1].split('"')[0])
+
     def test_iconos_vehiculo_detenido_y_retencion(self):
         # Vehículo detenido (DGT, tipo Otros) lleva coche; la retención ya no, para no confundirlos
         self.assertEqual(g.visual({"tipo": "Otros", "causa": "Vehículo detenido"})[0], "🚗")
