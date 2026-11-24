@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-24T23:01+01:00",
+ "actualizado": "2026-11-25T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 72,
-   "ultima_ok": "2026-11-24T23:01+01:00"
+   "n": 73,
+   "ultima_ok": "2026-11-25T00:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 6,
-   "ultima_ok": "2026-11-24T23:01+01:00"
+   "n": 9,
+   "ultima_ok": "2026-11-25T00:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -470,21 +470,6 @@
    "nombre": "Calle de Mariano Cerezo"
   },
   {
-   "id": "zgz-31753",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "JOTA AV. DE LA GRP, 13",
-   "via": "",
-   "detalle": "Cambio llave de paso",
-   "inicio": "2026-11-24",
-   "fin": "2026-11-24",
-   "lat": 41.682508,
-   "lon": -1.023668,
-   "precision": "portal",
-   "barrio": "Garrapinillos",
-   "nombre": "Avenida de La Jota"
-  },
-  {
    "id": "zgz-31660",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -571,18 +556,32 @@
    "nombre": "Carretera de Cogullada"
   },
   {
-   "id": "zgz-31114",
+   "id": "zgz-31796",
    "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CONSEJO DE CIENTO, 11",
+   "tipo": "Suministro",
+   "titulo": "COSO, 84",
    "via": "",
-   "detalle": "Para la ejecución de orejetas y un paso de peatones",
-   "inicio": "2026-10-02",
-   "fin": "2026-11-24",
-   "lat": 41.6274587,
-   "lon": -0.873865,
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.6512244,
+   "lon": -0.8783337,
    "precision": "portal",
-   "nombre": "Calle Consejo de Ciento"
+   "nombre": "Calle del Coso"
+  },
+  {
+   "id": "zgz-31798",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SANTA CATALINA, 9",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas.",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.6512872,
+   "lon": -0.878485,
+   "precision": "calle",
+   "nombre": "Calle de Santa Catalina"
   },
   {
    "id": "zgz-31451",
@@ -597,6 +596,20 @@
    "lon": -0.8782324,
    "precision": "portal",
    "nombre": "Cuarta Avenida"
+  },
+  {
+   "id": "zgz-31794",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SAN JUAN DE LA PEÑA AV, 4",
+   "via": "Entre C/ León Gracia y C/ Marqués de la Cadena",
+   "detalle": "",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.6612204,
+   "lon": -0.8730047,
+   "precision": "portal",
+   "nombre": "Calle San Juan de la Peña Av"
   },
   {
    "id": "zgz-31778",
@@ -654,6 +667,20 @@
    "lon": -0.8956927,
    "precision": "portal",
    "nombre": "Calle de Joaquín Orús"
+  },
+  {
+   "id": "zgz-31799",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "MAURA ANTONIO, 27",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.640476,
+   "lon": -0.871269,
+   "precision": "portal",
+   "nombre": "Calle Antonio Maura"
   },
   {
    "id": "zgz-31658",
@@ -755,20 +782,6 @@
    "nombre": "Calle Tomás Zumalacárregui"
   },
   {
-   "id": "zgz-31755",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "OROEL PEÑA, 13",
-   "via": "",
-   "detalle": "Para reparar rotura y sustituir válvulas. Brigadas municipales",
-   "inicio": "2026-11-24",
-   "fin": "2026-11-24",
-   "lat": 41.663494,
-   "lon": -0.8737723,
-   "precision": "portal",
-   "nombre": "Calle de la Peña Oroel"
-  },
-  {
    "id": "zgz-31779",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -826,20 +839,6 @@
    "nombre": "Calle D (Malpica II)"
   },
   {
-   "id": "zgz-31563",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "EDISON TOMAS A, 8",
-   "via": "",
-   "detalle": "Para realizar una nueva acometida de vertido a la altura del no 8",
-   "inicio": "2026-11-10",
-   "fin": "2026-11-24",
-   "lat": 41.665154,
-   "lon": -0.862768,
-   "precision": "portal",
-   "nombre": "Calle de Tomás A. Edison"
-  },
-  {
    "id": "zgz-31720",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -852,20 +851,6 @@
    "lon": -0.8982894,
    "precision": "calle",
    "nombre": "Avenida de las Ranillas"
-  },
-  {
-   "id": "zgz-31754",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CLAVE JOSE ANSELMO, 27",
-   "via": "",
-   "detalle": "Para conectar tuberías. UTE Portillo.",
-   "inicio": "2026-11-24",
-   "fin": "2026-11-24",
-   "lat": 41.65227344786754,
-   "lon": -0.892165454564021,
-   "precision": "aprox",
-   "nombre": "Calle José Anselmo Clavé"
   },
   {
    "id": "zgz-31734",
@@ -986,6 +971,20 @@
    "nombre": "Calle de Joaquín Orús"
   },
   {
+   "id": "zgz-31797",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "URREA, 14",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.650663,
+   "lon": -0.878149,
+   "precision": "portal",
+   "nombre": "Calle de Urrea"
+  },
+  {
    "id": "zgz-31675",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1014,6 +1013,52 @@
    "nombre": "Calle San Miguel"
   },
   {
+   "id": "zgz-31800",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "SAN LUIS DE FRANCIA, 8",
+   "via": "",
+   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.641135,
+   "lon": -0.8711061,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.641729,
+      -0.870718
+     ],
+     [
+      41.641696,
+      -0.870742
+     ],
+     [
+      41.641,
+      -0.871193
+     ],
+     [
+      41.640941,
+      -0.871233
+     ],
+     [
+      41.640879,
+      -0.871276
+     ],
+     [
+      41.640593,
+      -0.871468
+     ],
+     [
+      41.640545,
+      -0.871501
+     ]
+    ]
+   ],
+   "nombre": "Calle de San Luis de Francia"
+  },
+  {
    "id": "zgz-31748",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1026,6 +1071,20 @@
    "lon": -0.932582,
    "precision": "portal",
    "nombre": "Avenida de Casablanca"
+  },
+  {
+   "id": "zgz-31795",
+   "fuente": "Ayuntamiento",
+   "tipo": "Suministro",
+   "titulo": "GISTAIN VALLE DE, 14",
+   "via": "Desde el n.º 42 hasta C/ León Gracia",
+   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.6645841,
+   "lon": -0.8727167,
+   "precision": "portal",
+   "nombre": "Calle Valle de Gistaín"
   },
   {
    "id": "zgz-31743",
@@ -1070,18 +1129,18 @@
    "nombre": "Avenida de Valencia"
   },
   {
-   "id": "zgz-31651",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ROMEA POLICARPO, 8",
-   "via": "",
-   "detalle": "Hasta el 24-11-2026. Continuando la canalización eléctrica entre las calles Antonio Agustín y Heroismo",
-   "inicio": "2026-11-13",
-   "fin": "2026-11-24",
-   "lat": 41.6506564,
-   "lon": -0.8742479,
-   "precision": "portal",
-   "nombre": "Calle de Policarpo Romea"
+   "id": "dgt-30300190",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-24",
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
+   "precision": "exacta"
   },
   {
    "id": "dgt-30300191",
@@ -1098,25 +1157,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30300190",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-24",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30366156",
+   "id": "dgt-30366155",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 316.2–316.9 · sentido creciente · orientación noreste",
+   "via": "pk 315.8–316.9 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-24",
@@ -1126,11 +1171,11 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30366155",
+   "id": "dgt-30366156",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 315.8–316.9 · sentido creciente · orientación este",
+   "via": "pk 316.2–316.9 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-24",
@@ -1154,17 +1199,59 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30367655",
+   "id": "dgt-30368434",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "A-2",
+   "via": "pk 321.1–321.3 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-24",
+   "fin": null,
+   "lat": 41.679703,
+   "lon": -0.8920562,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30368435",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 320.0 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-24",
+   "fin": null,
+   "lat": 41.681263,
+   "lon": -0.90766805,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30368576",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 322.5–323.4 · sentido creciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-24",
+   "fin": null,
+   "lat": 41.67952,
+   "lon": -0.86683714,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30368762",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 234.079 · sentido decreciente · orientación sureste",
+   "titulo": "A-23",
+   "via": "pk 297.259 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-24",
    "fin": null,
-   "lat": 41.63095,
-   "lon": -0.85733,
+   "lat": 41.72506,
+   "lon": -0.8472,
    "precision": "exacta"
   }
  ]
