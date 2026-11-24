@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-24T12:01+01:00",
+ "actualizado": "2026-11-24T13:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 70,
-   "ultima_ok": "2026-11-24T12:01+01:00"
+   "n": 72,
+   "ultima_ok": "2026-11-24T13:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-24T12:01+01:00"
+   "n": 7,
+   "ultima_ok": "2026-11-24T13:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -642,6 +642,20 @@
    "nombre": "Calle de Juan Pablo Bonet"
   },
   {
+   "id": "zgz-31781",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ORUS JOAQUIN, 10",
+   "via": "",
+   "detalle": "Hasta el 22-12-2026. Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo) y para realizar conexiones de servicios",
+   "inicio": "2026-11-27",
+   "fin": "2026-12-22",
+   "lat": 41.65062,
+   "lon": -0.8956927,
+   "precision": "portal",
+   "nombre": "Calle de Joaquín Orús"
+  },
+  {
    "id": "zgz-31658",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -958,6 +972,20 @@
    "nombre": "Calle Río Huerva"
   },
   {
+   "id": "zgz-31782",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ORUS JOAQUIN, 10",
+   "via": "",
+   "detalle": "Hasta el 22/12/2026. Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo) y para realizar conexiones de servicios",
+   "inicio": "2026-11-26",
+   "fin": "2026-11-26",
+   "lat": 41.65062,
+   "lon": -0.8956927,
+   "precision": "portal",
+   "nombre": "Calle de Joaquín Orús"
+  },
+  {
    "id": "zgz-31675",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1084,20 +1112,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30338417",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 16.0–18.0 · sentido decreciente · orientación norte",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-24",
-   "fin": "2026-11-24",
-   "lat": 41.65429,
-   "lon": -0.8405829,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30336465",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1109,6 +1123,20 @@
    "fin": "2026-11-24",
    "lat": 41.624123,
    "lon": -0.84698284,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30338417",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 16.0–18.0 · sentido decreciente · orientación norte",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-24",
+   "fin": "2026-11-24",
+   "lat": 41.65429,
+   "lon": -0.8405829,
    "precision": "exacta"
   },
   {
@@ -1140,31 +1168,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30345718",
+   "id": "dgt-30347726",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-123",
-   "via": "pk 2.539 · sentido creciente · orientación este",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.65 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-24",
    "fin": null,
-   "lat": 41.68794,
-   "lon": -0.82879,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30345842",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 243.103 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-24",
-   "fin": null,
-   "lat": 41.66231,
-   "lon": -0.92803,
+   "lat": 41.67251,
+   "lon": -0.93077,
    "precision": "exacta"
   }
  ]
