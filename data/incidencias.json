@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24T01:01+01:00",
+ "actualizado": "2026-11-24T01:52+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 68,
-   "ultima_ok": "2026-11-24T01:01+01:00"
+   "ultima_ok": "2026-11-24T01:52+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 8,
-   "ultima_ok": "2026-11-24T01:01+01:00"
+   "ultima_ok": "2026-11-24T01:52+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1084,7 +1084,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30331892",
+   "id": "dgt-30331893",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
@@ -1112,7 +1112,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30331893",
+   "id": "dgt-30331892",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
