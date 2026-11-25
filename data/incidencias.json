@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T18:02+01:00",
+ "actualizado": "2026-11-25T19:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-25T18:01+01:00"
+   "ultima_ok": "2026-11-25T19:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 11,
-   "ultima_ok": "2026-11-25T18:01+01:00"
+   "n": 10,
+   "ultima_ok": "2026-11-25T19:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1129,20 +1129,6 @@
    "nombre": "Avenida de Valencia"
   },
   {
-   "id": "dgt-30372137",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1157,31 +1143,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30394340",
+   "id": "dgt-30372137",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 310.521 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.629128,
-   "lon": -0.992603,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30395084",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 313.089 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.64306,
-   "lon": -0.970296,
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
    "precision": "exacta"
   },
   {
@@ -1199,34 +1171,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30395367",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 243.481 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.674576,
-   "lon": -0.928041,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30395406",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-68",
-   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.625713,
-   "lon": -0.84891886,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30395593",
    "fuente": "DGT",
    "tipo": "Retención",
@@ -1241,45 +1185,87 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30395808",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 249.453 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.69518,
-   "lon": -0.99007,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30395998",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 319.112 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.681065,
-   "lon": -0.917791,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30396168",
+   "id": "dgt-30397937",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-23",
-   "via": "pk 297.129 · sentido creciente · orientación norte",
+   "via": "pk 293.901 · sentido creciente · orientación norte",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.723885,
-   "lon": -0.847375,
+   "lat": 41.6981,
+   "lon": -0.8379,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30397972",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 14.746 · sentido creciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.66543,
+   "lon": -0.83809,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30398193",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 13.845 · sentido creciente · orientación sur",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.67393,
+   "lon": -0.83565,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30398594",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 482.733 · sentido decreciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.553734,
+   "lon": -0.976009,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30398793",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 244.24 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.667725,
+   "lon": -0.939625,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30399012",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 243.667 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.664867,
+   "lon": -0.933928,
    "precision": "exacta"
   }
  ]
