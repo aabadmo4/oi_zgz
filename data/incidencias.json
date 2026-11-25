@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T14:01+01:00",
+ "actualizado": "2026-11-25T15:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-25T14:01+01:00"
+   "ultima_ok": "2026-11-25T15:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-25T14:01+01:00"
+   "n": 9,
+   "ultima_ok": "2026-11-25T15:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1129,35 +1129,7 @@
    "nombre": "Avenida de Valencia"
   },
   {
-   "id": "dgt-30371193",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 252.7–253.8 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-11-25",
-   "lat": 41.708347,
-   "lon": -1.0249791,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30371176",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–245.9 · sentido creciente · orientación noroeste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-11-25",
-   "lat": 41.675793,
-   "lon": -0.9563457,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1171,7 +1143,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1203,27 +1175,13 @@
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 307.3–308.1 · sentido creciente · orientación noreste",
+   "via": "pk 307.3–308.25 · sentido creciente · orientación noreste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.622646,
-   "lon": -1.0196085,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30386274",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 14.515 · sentido decreciente · orientación norte",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.66748,
-   "lon": -0.83679,
+   "lat": 41.62302,
+   "lon": -1.0179449,
    "precision": "exacta"
   },
   {
@@ -1238,6 +1196,62 @@
    "fin": null,
    "lat": 41.674843,
    "lon": -0.9288678,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30388672",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-68",
+   "via": "pk 247.194 · sentido decreciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.690613,
+   "lon": -0.969283,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30389412",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30389452",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-68",
+   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.625713,
+   "lon": -0.84891886,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30389512",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.43 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.67913,
+   "lon": -0.86648,
    "precision": "exacta"
   }
  ]

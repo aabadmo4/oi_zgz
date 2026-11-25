@@ -5937,7 +5937,7 @@
    "inicio": "2026-11-25",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 307.3–308.1 · sentido creciente · orientación noreste",
+   "via": "pk 307.3–308.25 · sentido creciente · orientación noreste",
    "visto": "2026-11-25"
   },
   "dgt-30386582": {
@@ -5949,6 +5949,28 @@
    "tipo": "Otros",
    "titulo": "A-2",
    "via": "pk 318.0 · sentido creciente · orientación noreste",
+   "visto": "2026-11-25"
+  },
+  "dgt-30389412": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30389412",
+   "inicio": "2026-11-25",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-25"
+  },
+  "dgt-30389512": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30389512",
+   "inicio": "2026-11-25",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.43 · sentido creciente · orientación noreste",
    "visto": "2026-11-25"
   }
  },
