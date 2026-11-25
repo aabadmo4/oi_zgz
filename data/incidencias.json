@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T15:02+01:00",
+ "actualizado": "2026-11-25T15:25+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-25T15:01+01:00"
+   "ultima_ok": "2026-11-25T15:25+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 9,
-   "ultima_ok": "2026-11-25T15:01+01:00"
+   "n": 8,
+   "ultima_ok": "2026-11-25T15:25+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1157,20 +1157,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30377113",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 16.0–18.0 · sentido decreciente · orientación norte",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-11-25",
-   "lat": 41.65429,
-   "lon": -0.8405829,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30385787",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1182,20 +1168,6 @@
    "fin": null,
    "lat": 41.62302,
    "lon": -1.0179449,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30386582",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 318.0 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.674843,
-   "lon": -0.9288678,
    "precision": "exacta"
   },
   {
@@ -1252,6 +1224,20 @@
    "fin": null,
    "lat": 41.67913,
    "lon": -0.86648,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30389942",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "A-68",
+   "via": "pk 233.142 · sentido creciente · orientación noroeste",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.625275,
+   "lon": -0.847892,
    "precision": "exacta"
   }
  ]
