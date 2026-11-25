@@ -10313,6 +10313,28 @@
    "titulo": "Z-40",
    "via": "pk 30.876 · sentido creciente · orientación oeste",
    "visto": "2026-11-25"
+  },
+  "dgt-30375996": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30375996",
+   "inicio": "2026-11-25",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 16.0–18.0 · sentido decreciente · orientación norte",
+   "visto": "2026-11-25"
+  },
+  "dgt-30376744": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30376744",
+   "inicio": "2026-11-25",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 27.999 · sentido decreciente · orientación este",
+   "visto": "2026-11-25"
   }
  }
 }
