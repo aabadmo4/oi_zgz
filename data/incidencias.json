@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26T00:01+01:00",
+ "actualizado": "2026-11-26T00:38+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 72,
-   "ultima_ok": "2026-11-26T00:01+01:00"
+   "ultima_ok": "2026-11-26T00:37+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-26T00:01+01:00"
+   "n": 9,
+   "ultima_ok": "2026-11-26T00:37+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1139,17 +1139,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30401013",
+   "id": "dgt-30401015",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 324.8–325.2 · sentido creciente · orientación este",
+   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.677334,
-   "lon": -0.8453186,
+   "lat": 41.676174,
+   "lon": -0.8383114,
    "precision": "exacta"
   },
   {
@@ -1167,17 +1167,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30401015",
+   "id": "dgt-30401013",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "A-2",
-   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
+   "via": "pk 324.8–325.2 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.676174,
-   "lon": -0.8383114,
+   "lat": 41.677334,
+   "lon": -0.8453186,
    "precision": "exacta"
   },
   {
@@ -1220,6 +1220,20 @@
    "fin": null,
    "lat": 41.679546,
    "lon": -0.867457,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30404473",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 20.0–20.95 · sentido creciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-26",
+   "fin": null,
+   "lat": 41.622303,
+   "lon": -0.8575178,
    "precision": "exacta"
   }
  ]
