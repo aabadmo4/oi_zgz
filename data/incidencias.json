@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T21:01+01:00",
+ "actualizado": "2026-11-25T22:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-25T21:01+01:00"
+   "ultima_ok": "2026-11-25T22:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 9,
-   "ultima_ok": "2026-11-25T21:01+01:00"
+   "n": 5,
+   "ultima_ok": "2026-11-25T22:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1129,6 +1129,20 @@
    "nombre": "Avenida de Valencia"
   },
   {
+   "id": "dgt-30372136",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-25",
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1143,17 +1157,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30401013",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "titulo": "A-2",
+   "via": "pk 324.8–325.2 · sentido creciente · orientación este",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-25",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
+   "fin": null,
+   "lat": 41.677334,
+   "lon": -0.8453186,
    "precision": "exacta"
   },
   {
@@ -1182,76 +1196,6 @@
    "fin": null,
    "lat": 41.676174,
    "lon": -0.8383114,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30401013",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 324.8–325.2 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.677334,
-   "lon": -0.8453186,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30401956",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 242.81 · sentido creciente · orientación oeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.66052,
-   "lon": -0.92537,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30402095",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 507.84 · sentido decreciente · orientación suroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.71834,
-   "lon": -0.85674,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30402097",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-2",
-   "via": "pk 319.819 · sentido creciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.68147,
-   "lon": -0.90973,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30402098",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 242.95 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.66069,
-   "lon": -0.92712,
    "precision": "exacta"
   }
  ]
