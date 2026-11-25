@@ -5906,6 +5906,17 @@
    "titulo": "A-2",
    "via": "pk 302.344 · sentido decreciente · orientación suroeste",
    "visto": "2026-11-25"
+  },
+  "dgt-30382134": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30382134",
+   "inicio": "2026-11-25",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 306.091 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-25"
   }
  },
  "alvarado-pedro-de": {
@@ -6395,7 +6406,7 @@
   },
   "zgz-31003": {
    "detalle": "Continuando con la rehabilitación del grupo de viviendas Aloy Salas y para realizar una canalización eléctrica entre las calles López Abadía y Félix Rodriguez de la Fuente",
-   "fin": "2026-11-27",
+   "fin": "2027-01-28",
    "fuente": "Ayuntamiento",
    "id": "zgz-31003",
    "inicio": "2026-09-25",

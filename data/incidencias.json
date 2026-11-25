@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T11:01+01:00",
+ "actualizado": "2026-11-25T12:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-25T11:01+01:00"
+   "ultima_ok": "2026-11-25T12:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 9,
-   "ultima_ok": "2026-11-25T11:01+01:00"
+   "n": 10,
+   "ultima_ok": "2026-11-25T12:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -279,7 +279,7 @@
    "via": "",
    "detalle": "Continuando con las obras de la Avenida Valencia y para continuar la renovación de servicios",
    "inicio": "2026-11-03",
-   "fin": "2026-11-26",
+   "fin": "2026-12-04",
    "lat": 41.6438817,
    "lon": -0.8946502,
    "precision": "portal",
@@ -732,7 +732,7 @@
    "via": "",
    "detalle": "Continuando con la rehabilitación del grupo de viviendas Aloy Salas y para realizar una canalización eléctrica entre las calles López Abadía y Félix Rodriguez de la Fuente",
    "inicio": "2026-09-25",
-   "fin": "2026-11-27",
+   "fin": "2027-01-28",
    "lat": 41.652238,
    "lon": -0.868073,
    "precision": "portal",
@@ -860,7 +860,7 @@
    "via": "",
    "detalle": "Para realizar un nuevo sumidero",
    "inicio": "2026-11-23",
-   "fin": "2026-11-27",
+   "fin": "2026-12-04",
    "lat": 41.6291011,
    "lon": -0.9567109,
    "precision": "calle",
@@ -1185,17 +1185,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30373281",
+   "id": "dgt-30375996",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 227.0–229.0 · sentido creciente · orientación noroeste",
+   "titulo": "Z-40",
+   "via": "pk 16.0–18.0 · sentido decreciente · orientación norte",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
    "inicio": "2026-11-25",
-   "fin": "2026-11-25",
-   "lat": 41.600662,
-   "lon": -0.81415963,
+   "fin": null,
+   "lat": 41.654255,
+   "lon": -0.8407356,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30379338",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 302.344 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.602905,
+   "lon": -1.078097,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30380600",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 487.404 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.58932,
+   "lon": -0.946257,
    "precision": "exacta"
   },
   {
@@ -1213,45 +1241,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30375996",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 16.0–18.0 · sentido decreciente · orientación norte",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.654255,
-   "lon": -0.8407356,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30379045",
+   "id": "dgt-30382090",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 246.147 · sentido creciente · orientación oeste",
+   "titulo": "ZP-2105",
+   "via": "pk 2.202 · sentido decreciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.67735,
-   "lon": -0.95858,
+   "lat": 41.58979,
+   "lon": -0.83073,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30379338",
+   "id": "dgt-30382134",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 302.344 · sentido decreciente · orientación suroeste",
+   "via": "pk 306.091 · sentido decreciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.602905,
-   "lon": -1.078097,
+   "lat": 41.61837,
+   "lon": -1.04209,
    "precision": "exacta"
   }
  ]
