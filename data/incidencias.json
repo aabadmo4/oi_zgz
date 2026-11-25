@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T15:25+01:00",
+ "actualizado": "2026-11-25T16:02+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-25T15:25+01:00"
+   "ultima_ok": "2026-11-25T16:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-25T15:25+01:00"
+   "n": 7,
+   "ultima_ok": "2026-11-25T16:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1171,48 +1171,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30388672",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 247.194 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.690613,
-   "lon": -0.969283,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30389412",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-2",
-   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.67964,
-   "lon": -0.8836497,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30389452",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-68",
-   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-25",
-   "fin": null,
-   "lat": 41.625713,
-   "lon": -0.84891886,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30389512",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1227,17 +1185,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30389942",
+   "id": "dgt-30391498",
    "fuente": "DGT",
-   "tipo": "Accidente",
-   "titulo": "A-68",
-   "via": "pk 233.142 · sentido creciente · orientación noroeste",
-   "detalle": "Accidente",
-   "causa": "Accidente",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 314.623 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
    "inicio": "2026-11-25",
    "fin": null,
-   "lat": 41.625275,
-   "lon": -0.847892,
+   "lat": 41.654,
+   "lon": -0.95778,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30391656",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 307.446 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.62105,
+   "lon": -1.02717,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30391890",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 317.351 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-25",
+   "fin": null,
+   "lat": 41.67035,
+   "lon": -0.93285,
    "precision": "exacta"
   }
  ]
