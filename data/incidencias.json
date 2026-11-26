@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26T21:01+01:00",
+ "actualizado": "2026-11-26T22:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 79,
-   "ultima_ok": "2026-11-26T21:01+01:00"
+   "ultima_ok": "2026-11-26T22:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 5,
-   "ultima_ok": "2026-11-26T21:01+01:00"
+   "ultima_ok": "2026-11-26T22:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1247,20 +1247,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30438275",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 324.8–325.8 · sentido creciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-26",
-   "fin": null,
-   "lat": 41.676174,
-   "lon": -0.8383114,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30438276",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1275,17 +1261,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30435143",
+   "id": "dgt-30438275",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 27.026 · sentido decreciente · orientación este",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 324.8–325.8 · sentido creciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
    "inicio": "2026-11-26",
    "fin": null,
-   "lat": 41.60999,
-   "lon": -0.920525,
+   "lat": 41.676174,
+   "lon": -0.8383114,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30440119",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 329.0–330.0 · sentido decreciente · orientación oeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-26",
+   "fin": null,
+   "lat": 41.664707,
+   "lon": -0.8033406,
    "precision": "exacta"
   }
  ]
