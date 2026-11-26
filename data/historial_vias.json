@@ -6005,6 +6005,28 @@
    "titulo": "A-2",
    "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
    "visto": "2026-11-26"
+  },
+  "dgt-30413279": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30413279",
+   "inicio": "2026-11-26",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 307.3–308.1 · sentido creciente · orientación noreste",
+   "visto": "2026-11-26"
+  },
+  "dgt-30414727": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30414727",
+   "inicio": "2026-11-26",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 303.6–304.1 · sentido creciente · orientación noreste",
+   "visto": "2026-11-26"
   }
  },
  "alvarado-pedro-de": {
@@ -10563,6 +10585,50 @@
    "tipo": "Obras",
    "titulo": "Z-40",
    "via": "pk 29.0–29.1 · sentido decreciente · orientación este",
+   "visto": "2026-11-26"
+  },
+  "dgt-30413245": {
+   "detalle": "Obras en la vía",
+   "fin": "2026-11-26",
+   "fuente": "DGT",
+   "id": "dgt-30413245",
+   "inicio": "2026-11-26",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 28.0–29.0 · sentido decreciente · orientación este",
+   "visto": "2026-11-26"
+  },
+  "dgt-30413362": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30413362",
+   "inicio": "2026-11-26",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 24.0–24.125 · sentido creciente · orientación oeste",
+   "visto": "2026-11-26"
+  },
+  "dgt-30415010": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30415010",
+   "inicio": "2026-11-26",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 29.4–29.5 · sentido creciente · orientación oeste",
+   "visto": "2026-11-26"
+  },
+  "dgt-30415466": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30415466",
+   "inicio": "2026-11-26",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 33.653 · sentido creciente · orientación noreste",
    "visto": "2026-11-26"
   }
  }
