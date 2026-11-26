@@ -6776,7 +6776,7 @@
   },
   "zgz-31658": {
    "detalle": "Hasta el 27-11-2026. Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
-   "fin": "2026-11-27",
+   "fin": "2026-12-11",
    "fuente": "Ayuntamiento",
    "id": "zgz-31658",
    "inicio": "2026-11-16",
@@ -6867,6 +6867,19 @@
    "visto": "2026-11-26"
   }
  },
+ "enmedio-pnf": {
+  "zgz-31144": {
+   "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
+   "fin": "2026-12-04",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31144",
+   "inicio": "2026-10-05",
+   "tipo": "Otros",
+   "titulo": "ENMEDIO PÑF, 2",
+   "via": "",
+   "visto": "2026-11-26"
+  }
+ },
  "gran-via": {
   "zgz-31733": {
    "detalle": "Hasta el 23-11-2026 a las 18:00 horas. Continuando con las obras del Río Huerva (Lote 1) y para realizar el asfaltado de la Calle Martín Ruiz Anglada",
@@ -6941,6 +6954,17 @@
    "titulo": "HISPANIDAD RONDA, 10",
    "via": "Puentes sobre la A2 y sobre el ferrocarril (sobre Calle Escatrón)",
    "visto": "2026-11-13"
+  },
+  "zgz-31830": {
+   "detalle": "Para habilitar un acceso de vehículos de obra al depósito de tormentas",
+   "fin": "2026-12-01",
+   "fuente": "Ayuntamiento",
+   "id": "zgz-31830",
+   "inicio": "2026-12-01",
+   "tipo": "Obras",
+   "titulo": "HISPANIDAD RONDA, 10",
+   "via": "",
+   "visto": "2026-11-26"
   }
  },
  "vistabella-mrl": {

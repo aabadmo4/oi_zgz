@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-26T14:01+01:00",
+ "actualizado": "2026-11-26T15:05+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 72,
-   "ultima_ok": "2026-11-26T14:01+01:00"
+   "n": 79,
+   "ultima_ok": "2026-11-26T15:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 4,
-   "ultima_ok": "2026-11-26T14:01+01:00"
+   "n": 6,
+   "ultima_ok": "2026-11-26T15:01+01:00"
   }
  },
- "sin_ubicar": 1,
+ "sin_ubicar": 2,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -399,6 +399,20 @@
    "nombre": "Calle Palencia"
   },
   {
+   "id": "zgz-31829",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "LOPEZ ABADIA VICENTE, 1",
+   "via": "",
+   "detalle": "Para realizar la conexión de saneamiento al pozo a la altura de la Calle Pedro Alvarado",
+   "inicio": "2026-11-30",
+   "fin": "2026-12-14",
+   "lat": 41.6518574,
+   "lon": -0.8671582,
+   "precision": "portal",
+   "nombre": "Calle de Vicente López Abadía"
+  },
+  {
    "id": "zgz-31811",
    "fuente": "Ayuntamiento",
    "tipo": "Suministro",
@@ -533,11 +547,25 @@
    "via": "",
    "detalle": "Para reparar las juntas de dilatación del puente sobre el ferrocarril (próximo al punto limpio de Cogullada)",
    "inicio": "2026-11-16",
-   "fin": "2026-11-27",
+   "fin": "2026-12-04",
    "lat": 41.6726555,
    "lon": -0.8584696,
    "precision": "calle",
    "nombre": "Carretera de Cogullada"
+  },
+  {
+   "id": "zgz-31824",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "PROCION, 39",
+   "via": "",
+   "detalle": "Para realizar una acometida de agua frente al no 39",
+   "inicio": "2026-11-27",
+   "fin": "2026-12-02",
+   "lat": 41.637984,
+   "lon": -0.9278316,
+   "precision": "portal",
+   "nombre": "Calle de Proción"
   },
   {
    "id": "zgz-31796",
@@ -652,6 +680,34 @@
    "nombre": "Calle Antonio Maura"
   },
   {
+   "id": "zgz-31825",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "VIEJOS LOS, 10",
+   "via": "",
+   "detalle": "Continuando con la canalización eléctrica",
+   "inicio": "2026-11-27",
+   "fin": "2026-12-11",
+   "lat": 41.650294,
+   "lon": -0.873747,
+   "precision": "portal",
+   "nombre": "Calle Los Viejos"
+  },
+  {
+   "id": "zgz-31827",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "SIMS LOS , 0",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica a la altura de la Calle Gran Turismo",
+   "inicio": "2026-11-30",
+   "fin": "2026-12-04",
+   "lat": 41.6392439,
+   "lon": -0.9524805,
+   "precision": "calle",
+   "nombre": "Calle Los Sims"
+  },
+  {
    "id": "zgz-31658",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -659,7 +715,7 @@
    "via": "",
    "detalle": "Hasta el 27-11-2026. Continuando con las obras del proyecto de renovación del Parque Tío Jorge y como segunda fase para renovar el ramal de saneamiento que cruza la vía a la altura de Valle de Zuriza",
    "inicio": "2026-11-16",
-   "fin": "2026-11-27",
+   "fin": "2026-12-11",
    "lat": 41.6592754,
    "lon": -0.8757241,
    "precision": "portal",
@@ -701,7 +757,7 @@
    "via": "",
    "detalle": "Para renovar el colector de saneamiento entre la Plaza de España y la Calle del Paso",
    "inicio": "2026-10-05",
-   "fin": "2026-11-27",
+   "fin": "2026-12-04",
    "lat": 41.7615458,
    "lon": -0.7982642,
    "precision": "portal",
@@ -749,6 +805,34 @@
    "lon": -0.873678,
    "precision": "portal",
    "nombre": "Calle del Heroísmo"
+  },
+  {
+   "id": "zgz-31828",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "CASAS (DOCTOR), 5",
+   "via": "",
+   "detalle": "Para renovar la acometida y el sumidero a la altura del no 20",
+   "inicio": "2026-11-30",
+   "fin": "2026-12-04",
+   "lat": 41.643516,
+   "lon": -0.883471,
+   "precision": "portal",
+   "nombre": "Calle del Doctor Casas"
+  },
+  {
+   "id": "zgz-31830",
+   "fuente": "Ayuntamiento",
+   "tipo": "Obras",
+   "titulo": "HISPANIDAD RONDA, 10",
+   "via": "",
+   "detalle": "Para habilitar un acceso de vehículos de obra al depósito de tormentas",
+   "inicio": "2026-12-01",
+   "fin": "2026-12-01",
+   "lat": 41.63242167574937,
+   "lon": -0.9009579238501416,
+   "precision": "aprox",
+   "nombre": "Ronda de la Hispanidad"
   },
   {
    "id": "zgz-31747",
@@ -1153,17 +1237,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30424153",
+   "id": "dgt-30425769",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 33.859 · sentido creciente · orientación noreste",
+   "titulo": "N-330",
+   "via": "pk 482.77 · ambos sentidos",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-26",
    "fin": null,
-   "lat": 41.64133,
-   "lon": -0.97113,
+   "lat": 41.554043,
+   "lon": -0.9757531,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30425944",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-232",
+   "via": "pk 245.728 · sentido creciente · orientación oeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-26",
+   "fin": null,
+   "lat": 41.67507,
+   "lon": -0.95454,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30426513",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-68",
+   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-26",
+   "fin": null,
+   "lat": 41.625713,
+   "lon": -0.84891886,
    "precision": "exacta"
   }
  ]
