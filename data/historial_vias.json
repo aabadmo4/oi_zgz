@@ -6093,6 +6093,28 @@
    "titulo": "A-2",
    "via": "pk 308.008 · sentido creciente · orientación este",
    "visto": "2026-11-26"
+  },
+  "dgt-30438275": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30438275",
+   "inicio": "2026-11-26",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 324.8–325.8 · sentido creciente · orientación sureste",
+   "visto": "2026-11-26"
+  },
+  "dgt-30438276": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30438276",
+   "inicio": "2026-11-26",
+   "tipo": "Obras",
+   "titulo": "A-2",
+   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
+   "visto": "2026-11-26"
   }
  },
  "alvarado-pedro-de": {
