@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26T15:05+01:00",
+ "actualizado": "2026-11-26T16:15+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 79,
-   "ultima_ok": "2026-11-26T15:01+01:00"
+   "ultima_ok": "2026-11-26T16:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 6,
-   "ultima_ok": "2026-11-26T15:01+01:00"
+   "n": 5,
+   "ultima_ok": "2026-11-26T16:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -829,9 +829,33 @@
    "detalle": "Para habilitar un acceso de vehículos de obra al depósito de tormentas",
    "inicio": "2026-12-01",
    "fin": "2026-12-01",
-   "lat": 41.63242167574937,
-   "lon": -0.9009579238501416,
-   "precision": "aprox",
+   "lat": 41.6306746,
+   "lon": -0.9017236,
+   "precision": "calle",
+   "trazado": [
+    [
+     [
+      41.630182,
+      -0.900771
+     ],
+     [
+      41.630686,
+      -0.901745
+     ],
+     [
+      41.630812,
+      -0.902001
+     ],
+     [
+      41.631022,
+      -0.902435
+     ],
+     [
+      41.631143,
+      -0.902688
+     ]
+    ]
+   ],
    "nombre": "Ronda de la Hispanidad"
   },
   {
@@ -1195,7 +1219,7 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1209,7 +1233,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1251,31 +1275,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30425944",
+   "id": "dgt-30427913",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 245.728 · sentido creciente · orientación oeste",
+   "titulo": "A-68",
+   "via": "pk 243.582 · sentido creciente · orientación noroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-26",
    "fin": null,
-   "lat": 41.67507,
-   "lon": -0.95454,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30426513",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-68",
-   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-26",
-   "fin": null,
-   "lat": 41.625713,
-   "lon": -0.84891886,
+   "lat": 41.675446,
+   "lon": -0.928571,
    "precision": "exacta"
   }
  ]
