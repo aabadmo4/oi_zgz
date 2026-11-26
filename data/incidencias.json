@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26T01:01+01:00",
+ "actualizado": "2026-11-26T02:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 72,
-   "ultima_ok": "2026-11-26T01:01+01:00"
+   "ultima_ok": "2026-11-26T02:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 9,
-   "ultima_ok": "2026-11-26T01:01+01:00"
+   "n": 10,
+   "ultima_ok": "2026-11-26T02:01+01:00"
   }
  },
  "sin_ubicar": 1,
@@ -1111,7 +1111,7 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1125,7 +1125,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1234,6 +1234,20 @@
    "fin": null,
    "lat": 41.622303,
    "lon": -0.8575178,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30404675",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 304.422 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-26",
+   "fin": null,
+   "lat": 41.61551,
+   "lon": -1.060863,
    "precision": "exacta"
   }
  ]
