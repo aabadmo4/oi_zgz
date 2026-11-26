@@ -10553,6 +10553,17 @@
    "titulo": "Z-40",
    "via": "pk 32.6–32.7 · sentido creciente · orientación norte",
    "visto": "2026-11-26"
+  },
+  "dgt-30412179": {
+   "detalle": "Obras en la vía",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30412179",
+   "inicio": "2026-11-26",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 29.0–29.1 · sentido decreciente · orientación este",
+   "visto": "2026-11-26"
   }
  }
 }
