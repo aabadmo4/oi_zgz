@@ -10652,6 +10652,17 @@
    "titulo": "Z-40",
    "via": "pk 33.653 · sentido creciente · orientación noreste",
    "visto": "2026-11-26"
+  },
+  "dgt-30424153": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30424153",
+   "inicio": "2026-11-26",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 33.859 · sentido creciente · orientación noreste",
+   "visto": "2026-11-26"
   }
  }
 }
