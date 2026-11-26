@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-26T23:01+01:00",
+ "actualizado": "2026-11-27T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 79,
-   "ultima_ok": "2026-11-26T23:01+01:00"
+   "n": 70,
+   "ultima_ok": "2026-11-27T00:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 6,
-   "ultima_ok": "2026-11-26T23:01+01:00"
+   "ultima_ok": "2026-11-27T00:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -286,20 +286,6 @@
    "nombre": "Calle Maestro Tomás Bretón"
   },
   {
-   "id": "zgz-31704",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "TIZIANO, 0",
-   "via": "",
-   "detalle": "Para condenar dos acometidas de vertido y realizar dos nuevas a la altura del no 6,",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-26",
-   "lat": 41.6155116,
-   "lon": -0.8750073,
-   "precision": "calle",
-   "nombre": "Avenida Tiziano"
-  },
-  {
    "id": "zgz-30666",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -568,34 +554,6 @@
    "nombre": "Calle de Proción"
   },
   {
-   "id": "zgz-31796",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "COSO, 84",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.6512244,
-   "lon": -0.8783337,
-   "precision": "portal",
-   "nombre": "Calle del Coso"
-  },
-  {
-   "id": "zgz-31798",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SANTA CATALINA, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas.",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.6512872,
-   "lon": -0.878485,
-   "precision": "calle",
-   "nombre": "Calle de Santa Catalina"
-  },
-  {
    "id": "zgz-31451",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -608,20 +566,6 @@
    "lon": -0.8782324,
    "precision": "portal",
    "nombre": "Cuarta Avenida"
-  },
-  {
-   "id": "zgz-31794",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAN JUAN DE LA PEÑA AV, 4",
-   "via": "Entre C/ León Gracia y C/ Marqués de la Cadena",
-   "detalle": "",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.6612204,
-   "lon": -0.8730047,
-   "precision": "portal",
-   "nombre": "Calle San Juan de la Peña Av"
   },
   {
    "id": "zgz-31536",
@@ -664,20 +608,6 @@
    "lon": -0.8956927,
    "precision": "portal",
    "nombre": "Calle de Joaquín Orús"
-  },
-  {
-   "id": "zgz-31799",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "MAURA ANTONIO, 27",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.640476,
-   "lon": -0.871269,
-   "precision": "portal",
-   "nombre": "Calle Antonio Maura"
   },
   {
    "id": "zgz-31825",
@@ -1005,34 +935,6 @@
    "nombre": "Calle Río Huerva"
   },
   {
-   "id": "zgz-31782",
-   "fuente": "Ayuntamiento",
-   "tipo": "Corte",
-   "titulo": "ORUS JOAQUIN, 10",
-   "via": "",
-   "detalle": "Hasta el 22/12/2026. Continuando con las obras del Proyecto de Urbanización G-19-1 (entorno antigua Estación del Portillo) y para realizar conexiones de servicios",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.65062,
-   "lon": -0.8956927,
-   "precision": "portal",
-   "nombre": "Calle de Joaquín Orús"
-  },
-  {
-   "id": "zgz-31797",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "URREA, 14",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 14 horas",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.650663,
-   "lon": -0.878149,
-   "precision": "portal",
-   "nombre": "Calle de Urrea"
-  },
-  {
    "id": "zgz-31675",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1075,52 +977,6 @@
    "nombre": "Calle San Miguel"
   },
   {
-   "id": "zgz-31800",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "SAN LUIS DE FRANCIA, 8",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.641135,
-   "lon": -0.8711061,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.641729,
-      -0.870718
-     ],
-     [
-      41.641696,
-      -0.870742
-     ],
-     [
-      41.641,
-      -0.871193
-     ],
-     [
-      41.640941,
-      -0.871233
-     ],
-     [
-      41.640879,
-      -0.871276
-     ],
-     [
-      41.640593,
-      -0.871468
-     ],
-     [
-      41.640545,
-      -0.871501
-     ]
-    ]
-   ],
-   "nombre": "Calle de San Luis de Francia"
-  },
-  {
    "id": "zgz-31748",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1133,20 +989,6 @@
    "lon": -0.932582,
    "precision": "portal",
    "nombre": "Avenida de Casablanca"
-  },
-  {
-   "id": "zgz-31795",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "GISTAIN VALLE DE, 14",
-   "via": "Desde el n.º 42 hasta C/ León Gracia",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-26",
-   "fin": "2026-11-26",
-   "lat": 41.6645841,
-   "lon": -0.8727167,
-   "precision": "portal",
-   "nombre": "Calle Valle de Gistaín"
   },
   {
    "id": "zgz-31743",
@@ -1219,7 +1061,7 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1233,7 +1075,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
