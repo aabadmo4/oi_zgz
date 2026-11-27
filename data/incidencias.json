@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T15:02+01:00",
+ "actualizado": "2026-11-27T16:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 73,
-   "ultima_ok": "2026-11-27T15:01+01:00"
+   "ultima_ok": "2026-11-27T16:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 13,
-   "ultima_ok": "2026-11-27T15:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-27T16:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -1117,48 +1117,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30457045",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 31.547 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.621857,
-   "lon": -0.970365,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30458598",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-2",
-   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.67964,
-   "lon": -0.8836497,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30460151",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-68",
-   "via": "pk 232.0–233.25 · sentido creciente · orientación noroeste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.625713,
-   "lon": -0.84891886,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30461165",
    "fuente": "DGT",
    "tipo": "Retención",
@@ -1201,62 +1159,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30461304",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "A-2",
-   "via": "pk 320.0–321.0 · sentido creciente · orientación este",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.679913,
-   "lon": -0.89564735,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30461449",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 251.491 · sentido decreciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.70199,
-   "lon": -1.01315,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30461861",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 232.85 · sentido creciente · orientación noroeste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.62307,
-   "lon": -0.845832,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30462491",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 315.83 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.6609,
-   "lon": -0.945539,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30462678",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1268,6 +1170,76 @@
    "fin": null,
    "lat": 41.65862,
    "lon": -0.9507483,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30463331",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 291.708 · sentido decreciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.687542,
+   "lon": -0.957127,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30463731",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "N-330",
+   "via": "pk 506.509 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.70773,
+   "lon": -0.86345,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30463864",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 17.707 · sentido decreciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.64115,
+   "lon": -0.83109,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30465194",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 320.923 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.68003,
+   "lon": -0.89657,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30465273",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 16.303 · sentido decreciente · orientación noroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.651867,
+   "lon": -0.839102,
    "precision": "exacta"
   }
  ]
