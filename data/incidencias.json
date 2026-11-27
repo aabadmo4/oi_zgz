@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T10:01+01:00",
+ "actualizado": "2026-11-27T11:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 70,
-   "ultima_ok": "2026-11-27T10:01+01:00"
+   "ultima_ok": "2026-11-27T11:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 8,
-   "ultima_ok": "2026-11-27T10:01+01:00"
+   "ultima_ok": "2026-11-27T11:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1061,7 +1061,7 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1075,7 +1075,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1100,6 +1100,20 @@
    "fin": "2026-11-27",
    "lat": 41.700848,
    "lon": -1.0113257,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30443278",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 249.6–249.9 · sentido creciente · orientación noroeste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-27",
+   "fin": "2026-11-27",
+   "lat": 41.69802,
+   "lon": -0.9933662,
    "precision": "exacta"
   },
   {
@@ -1145,31 +1159,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30448676",
+   "id": "dgt-30450084",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "N-232",
-   "via": "pk 251.226 · sentido decreciente · orientación este",
+   "titulo": "Z-40",
+   "via": "pk 31.424 · sentido decreciente · orientación sureste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-27",
    "fin": null,
-   "lat": 41.704758,
-   "lon": -1.0066433,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30448970",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "Z-40",
-   "via": "pk 15.701 · sentido decreciente · orientación norte",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.65696,
-   "lon": -0.84097,
+   "lat": 41.62106,
+   "lon": -0.969386,
    "precision": "exacta"
   }
  ]
