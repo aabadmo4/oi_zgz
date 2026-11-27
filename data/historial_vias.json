@@ -6038,6 +6038,72 @@
    "titulo": "VS-A-2-C",
    "via": "pk 317.478 · sentido creciente · orientación noreste",
    "visto": "2026-11-27"
+  },
+  "dgt-30461164": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30461164",
+   "inicio": "2026-11-27",
+   "tipo": "Retención",
+   "titulo": "VS-A-2-C",
+   "via": "pk 314.97–317.45 · sentido creciente · orientación noreste",
+   "visto": "2026-11-27"
+  },
+  "dgt-30461165": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30461165",
+   "inicio": "2026-11-27",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 313.0–314.0 · sentido creciente · orientación noreste",
+   "visto": "2026-11-27"
+  },
+  "dgt-30461220": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30461220",
+   "inicio": "2026-11-27",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 316.5–318.2 · sentido decreciente · orientación oeste",
+   "visto": "2026-11-27"
+  },
+  "dgt-30461304": {
+   "detalle": "Tráfico lento",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30461304",
+   "inicio": "2026-11-27",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 320.0–321.0 · sentido creciente · orientación este",
+   "visto": "2026-11-27"
+  },
+  "dgt-30462491": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30462491",
+   "inicio": "2026-11-27",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 315.83 · sentido creciente · orientación noreste",
+   "visto": "2026-11-27"
+  },
+  "dgt-30462678": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30462678",
+   "inicio": "2026-11-27",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 315.322 · sentido creciente · orientación noreste",
+   "visto": "2026-11-27"
   }
  },
  "alvarado-pedro-de": {
