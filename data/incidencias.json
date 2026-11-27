@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T07:01+01:00",
+ "actualizado": "2026-11-27T08:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 70,
-   "ultima_ok": "2026-11-27T07:01+01:00"
+   "ultima_ok": "2026-11-27T08:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 6,
-   "ultima_ok": "2026-11-27T07:01+01:00"
+   "ultima_ok": "2026-11-27T08:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1061,20 +1061,6 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372136",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1089,35 +1075,21 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30442663",
+   "id": "dgt-30372136",
    "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "N-330",
-   "via": "pk 506.95 · sentido creciente · orientación noreste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.711117,
-   "lon": -0.86104,
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-25",
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30442832",
-   "fuente": "DGT",
-   "tipo": "Retención",
-   "titulo": "Z-40",
-   "via": "pk 14.75–15.2 · sentido decreciente · orientación noreste",
-   "detalle": "Tráfico lento",
-   "causa": "Tráfico lento",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.665405,
-   "lon": -0.83814114,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30442833",
+   "id": "dgt-30443330",
    "fuente": "DGT",
    "tipo": "Retención",
    "titulo": "Z-40",
@@ -1131,17 +1103,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30442860",
+   "id": "dgt-30443533",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-2",
+   "via": "pk 322.0–322.6 · sentido decreciente · orientación oeste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.67964,
+   "lon": -0.8836497,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30443825",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 290.658 · sentido creciente · orientación sureste",
+   "titulo": "A-2",
+   "via": "pk 317.446 · sentido creciente · orientación noreste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-27",
    "fin": null,
-   "lat": 41.69285,
-   "lon": -0.967575,
+   "lat": 41.67079,
+   "lon": -0.932678,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30444147",
+   "fuente": "DGT",
+   "tipo": "Retención",
+   "titulo": "A-68",
+   "via": "pk 230.0 · sentido decreciente · orientación sureste",
+   "detalle": "Tráfico lento",
+   "causa": "Tráfico lento",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.604263,
+   "lon": -0.8264776,
    "precision": "exacta"
   }
  ]
