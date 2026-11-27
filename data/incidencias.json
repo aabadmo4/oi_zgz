@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-27T11:01+01:00",
+ "actualizado": "2026-11-27T11:54+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 70,
-   "ultima_ok": "2026-11-27T11:01+01:00"
+   "n": 73,
+   "ultima_ok": "2026-11-27T11:53+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 8,
-   "ultima_ok": "2026-11-27T11:01+01:00"
+   "n": 11,
+   "ultima_ok": "2026-11-27T11:53+01:00"
   }
  },
- "sin_ubicar": 2,
+ "sin_ubicar": 3,
  "incidencias": [
   {
    "id": "zgz-25688",
@@ -554,6 +554,34 @@
    "nombre": "Calle de Proción"
   },
   {
+   "id": "zgz-31837",
+   "fuente": "Ayuntamiento",
+   "tipo": "Otros",
+   "titulo": "BELCHITE, 1",
+   "via": "",
+   "detalle": "Para realizar una canalización eléctrica entre el no 33 y la Calle Sol",
+   "inicio": "2026-12-01",
+   "fin": "2026-12-15",
+   "lat": 41.64333371120025,
+   "lon": -0.8659612672027316,
+   "precision": "aprox",
+   "nombre": "Calle Belchite"
+  },
+  {
+   "id": "zgz-31839",
+   "fuente": "Ayuntamiento",
+   "tipo": "Corte",
+   "titulo": "ARAGON JUAN DE (DON), 16",
+   "via": "",
+   "detalle": "Hasta el 18-12-2026 Para modificar pavimentos y elevar su cota en el no 28, del 1 al 18 de diciembre",
+   "inicio": "2026-12-01",
+   "fin": "2026-12-18",
+   "lat": 41.6535285,
+   "lon": -0.8752669,
+   "precision": "portal",
+   "nombre": "Calle de Don Juan de Aragón"
+  },
+  {
    "id": "zgz-31451",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1061,20 +1089,6 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372137",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1089,17 +1103,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30443297",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
-   "titulo": "A-68",
-   "via": "pk 251.3–252.3 · sentido decreciente · orientación este",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
    "detalle": "Obras en la vía",
    "causa": "Obras en la vía",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.700848,
-   "lon": -1.0113257,
+   "inicio": "2026-11-25",
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
    "precision": "exacta"
   },
   {
@@ -1131,6 +1145,20 @@
    "precision": "exacta"
   },
   {
+   "id": "dgt-30443297",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "A-68",
+   "via": "pk 251.3–252.3 · sentido decreciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-27",
+   "fin": "2026-11-27",
+   "lat": 41.700848,
+   "lon": -1.0113257,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30445839",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1142,6 +1170,20 @@
    "fin": "2026-11-27",
    "lat": 41.65429,
    "lon": -0.8405829,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30453292",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 17.0–19.0 · sentido decreciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.64717,
+   "lon": -0.8338058,
    "precision": "exacta"
   },
   {
@@ -1159,17 +1201,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30450084",
+   "id": "dgt-30452100",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "Z-40",
+   "via": "pk 20.45–21.5 · sentido decreciente · orientación este",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.62446,
+   "lon": -0.8522314,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30452254",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 20.0 · sentido decreciente · orientación noreste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.62582,
+   "lon": -0.84712523,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30452189",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "Z-40",
-   "via": "pk 31.424 · sentido decreciente · orientación sureste",
+   "via": "pk 18.91 · sentido creciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-27",
    "fin": null,
-   "lat": 41.62106,
-   "lon": -0.969386,
+   "lat": 41.63233,
+   "lon": -0.838369,
    "precision": "exacta"
   }
  ]
