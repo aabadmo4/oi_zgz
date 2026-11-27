@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T02:01+01:00",
+ "actualizado": "2026-11-27T03:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 70,
-   "ultima_ok": "2026-11-27T02:01+01:00"
+   "ultima_ok": "2026-11-27T03:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 5,
-   "ultima_ok": "2026-11-27T02:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-27T03:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1089,34 +1089,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30438276",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 325.2–325.8 · sentido creciente · orientación este",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-26",
-   "fin": null,
-   "lat": 41.676174,
-   "lon": -0.8383114,
-   "precision": "exacta"
-  },
-  {
-   "id": "dgt-30438275",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "A-2",
-   "via": "pk 324.8–325.8 · sentido creciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-26",
-   "fin": null,
-   "lat": 41.676174,
-   "lon": -0.8383114,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30440119",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -1128,6 +1100,20 @@
    "fin": null,
    "lat": 41.664707,
    "lon": -0.8033406,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30442013",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 290.653 · sentido creciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.692867,
+   "lon": -0.967634,
    "precision": "exacta"
   }
  ]
