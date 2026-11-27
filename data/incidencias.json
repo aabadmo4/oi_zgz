@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27T03:11+01:00",
+ "actualizado": "2026-11-27T04:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 70,
-   "ultima_ok": "2026-11-27T03:10+01:00"
+   "ultima_ok": "2026-11-27T04:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 5,
-   "ultima_ok": "2026-11-27T03:10+01:00"
+   "ultima_ok": "2026-11-27T04:01+01:00"
   }
  },
  "sin_ubicar": 2,
@@ -1061,7 +1061,7 @@
    "nombre": "Calle Juan José Lorente"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1075,7 +1075,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -1103,20 +1103,6 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30442013",
-   "fuente": "DGT",
-   "tipo": "Otros",
-   "titulo": "AP-68",
-   "via": "pk 290.653 · sentido creciente · orientación sureste",
-   "detalle": "Vehículo detenido",
-   "causa": "Vehículo detenido",
-   "inicio": "2026-11-27",
-   "fin": null,
-   "lat": 41.692867,
-   "lon": -0.967634,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30442088",
    "fuente": "DGT",
    "tipo": "Otros",
@@ -1128,6 +1114,20 @@
    "fin": null,
    "lat": 41.636417,
    "lon": -0.973801,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30442133",
+   "fuente": "DGT",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 33.13–33.21 · sentido creciente · orientación norte",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-27",
+   "fin": null,
+   "lat": 41.636143,
+   "lon": -0.97420084,
    "precision": "exacta"
   }
  ]

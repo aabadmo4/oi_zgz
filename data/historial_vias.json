@@ -10555,6 +10555,17 @@
    "titulo": "Z-40",
    "via": "pk 33.266 · sentido creciente · orientación norte",
    "visto": "2026-11-27"
+  },
+  "dgt-30442133": {
+   "detalle": "Vehículo detenido",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30442133",
+   "inicio": "2026-11-27",
+   "tipo": "Corte",
+   "titulo": "Z-40",
+   "via": "pk 33.13–33.21 · sentido creciente · orientación norte",
+   "visto": "2026-11-27"
   }
  }
 }
