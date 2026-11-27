@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-27T23:01+01:00",
+ "actualizado": "2026-11-28T00:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
  "fuentes": {
   "ayuntamiento": {
    "ok": true,
-   "n": 73,
-   "ultima_ok": "2026-11-27T23:01+01:00"
+   "n": 58,
+   "ultima_ok": "2026-11-28T00:01+01:00"
   },
   "dgt": {
    "ok": true,
    "n": 3,
-   "ultima_ok": "2026-11-27T23:01+01:00"
+   "ultima_ok": "2026-11-28T00:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -200,50 +200,6 @@
    "nombre": "Calle de Biarritz"
   },
   {
-   "id": "zgz-30568",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "FERRAN JAIME, 9",
-   "via": "",
-   "detalle": "Continuando con la canalización eléctrica",
-   "inicio": "2026-08-24",
-   "fin": "2026-11-27",
-   "lat": 41.667599,
-   "lon": -0.862763,
-   "precision": "portal",
-   "nombre": "Calle Jaime Ferrán"
-  },
-  {
-   "id": "zgz-31659",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "VIÑAZA (CONDE DE LA), 13",
-   "via": "",
-   "detalle": "Para conectar la nueva red de drenaje al pozo entre los números 15 y 19",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-27",
-   "lat": 41.6520919,
-   "lon": -0.9058191,
-   "precision": "calle",
-   "trazado": [
-    [
-     [
-      41.652038,
-      -0.906013
-     ],
-     [
-      41.652055,
-      -0.905952
-     ],
-     [
-      41.652146,
-      -0.905625
-     ]
-    ]
-   ],
-   "nombre": "Calle del Conde de la Viñaza"
-  },
-  {
    "id": "zgz-31665",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -343,34 +299,6 @@
    "nombre": "Calle José Anselmo Clavé"
   },
   {
-   "id": "zgz-31618",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "FERRAN JAIME, 9",
-   "via": "",
-   "detalle": "Continuando con la canalización eléctrica",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-27",
-   "lat": 41.667599,
-   "lon": -0.862763,
-   "precision": "portal",
-   "nombre": "Calle Jaime Ferrán"
-  },
-  {
-   "id": "zgz-31567",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "JOSÉ ATARÉS, 105",
-   "via": "",
-   "detalle": "Para la instalación de placas fotovoltaicas (Planta solar lote 1)",
-   "inicio": "2026-11-09",
-   "fin": "2026-11-27",
-   "lat": 41.67423287979509,
-   "lon": -0.8986165878224152,
-   "precision": "aprox",
-   "nombre": "Calle José Atarés"
-  },
-  {
    "id": "zgz-31568",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -397,48 +325,6 @@
    "lon": -0.8671582,
    "precision": "portal",
    "nombre": "Calle de Vicente López Abadía"
-  },
-  {
-   "id": "zgz-31811",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "ARAGON (FUEROS DE), 5",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.6464697,
-   "lon": -0.8943075,
-   "precision": "calle",
-   "nombre": "Calle Fueros de Aragón"
-  },
-  {
-   "id": "zgz-31813",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "BURRIEL (ALCALDE), 2",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.6462507,
-   "lon": -0.8955777,
-   "precision": "portal",
-   "nombre": "Calle del Alcalde Burriel"
-  },
-  {
-   "id": "zgz-31815",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "CASPE, 28",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas.",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.650747,
-   "lon": -0.906405,
-   "precision": "portal",
-   "nombre": "Calle de Caspe"
   },
   {
    "id": "zgz-31780",
@@ -680,20 +566,6 @@
    "nombre": "Calle Sixto Celorrio"
   },
   {
-   "id": "zgz-31654",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SAN JOSE M.ESCRIVA , 0",
-   "via": "",
-   "detalle": "Hasta el 27-11-2026. Continuando con la canalización eléctrica",
-   "inicio": "2026-11-16",
-   "fin": "2026-11-27",
-   "lat": 41.65614406302311,
-   "lon": -0.8944732528496669,
-   "precision": "aprox",
-   "nombre": "Calle San José M. Escrivá"
-  },
-  {
    "id": "zgz-31003",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -749,20 +621,6 @@
    "lon": -0.887814,
    "precision": "portal",
    "nombre": "Calle Tomás Zumalacárregui"
-  },
-  {
-   "id": "zgz-31746",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "HEROISMO, 1",
-   "via": "",
-   "detalle": "Continuando con la canalización eléctrica",
-   "inicio": "2026-11-23",
-   "fin": "2026-11-27",
-   "lat": 41.651362,
-   "lon": -0.873678,
-   "precision": "portal",
-   "nombre": "Calle del Heroísmo"
   },
   {
    "id": "zgz-31828",
@@ -873,34 +731,6 @@
    "nombre": "Calle del Peine del Viento"
   },
   {
-   "id": "zgz-31705",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "CASTELAR EMILIO, 11",
-   "via": "",
-   "detalle": "Para realizar un paso de peatones provisional a la altura del no 7 y anular el existente a la altura de la Avenida San José",
-   "inicio": "2026-11-19",
-   "fin": "2026-11-27",
-   "lat": 41.640841,
-   "lon": -0.872868,
-   "precision": "portal",
-   "nombre": "Calle de Emilio Castelar"
-  },
-  {
-   "id": "zgz-31619",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "NOBEL ALFREDO, 3",
-   "via": "",
-   "detalle": "Continuando con la ampliación de la aceras y mejora de la accesibilidad entre las calles Isaac Newton y Séneca",
-   "inicio": "2026-11-12",
-   "fin": "2026-11-27",
-   "lat": 41.6516112,
-   "lon": -0.9210092,
-   "precision": "portal",
-   "nombre": "Calle de Alfredo Nobel"
-  },
-  {
    "id": "zgz-31621",
    "fuente": "Ayuntamiento",
    "tipo": "Obras",
@@ -977,34 +807,6 @@
    "nombre": "Calle de Balbino Orensanz"
   },
   {
-   "id": "zgz-31812",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "VALENCIA AVENIDA DE, 11",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.6476369,
-   "lon": -0.893725,
-   "precision": "calle",
-   "nombre": "Avenida de Valencia"
-  },
-  {
-   "id": "zgz-31662",
-   "fuente": "Ayuntamiento",
-   "tipo": "Otros",
-   "titulo": "SAN MIGUEL, 10",
-   "via": "",
-   "detalle": "Con motivo de la instalación de adornos navideños y supeditado al Permiso Especial de Policía Local",
-   "inicio": "2026-11-15",
-   "fin": "2026-11-27",
-   "lat": 41.652763669527296,
-   "lon": -0.8791811640087789,
-   "precision": "aprox",
-   "nombre": "Calle San Miguel"
-  },
-  {
    "id": "zgz-31748",
    "fuente": "Ayuntamiento",
    "tipo": "Otros",
@@ -1047,20 +849,6 @@
    "nombre": "Calle de Mosén Andrés Vicente"
   },
   {
-   "id": "zgz-31814",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "JACA, 9",
-   "via": "",
-   "detalle": "Cortes de Agua. Desde las 10 hasta las 12 horas",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.651626,
-   "lon": -0.9058822,
-   "precision": "portal",
-   "nombre": "Calle de Jaca"
-  },
-  {
    "id": "zgz-31093",
    "fuente": "Ayuntamiento",
    "tipo": "Corte",
@@ -1073,20 +861,6 @@
    "lon": -0.8946807,
    "precision": "portal",
    "nombre": "Avenida de Valencia"
-  },
-  {
-   "id": "zgz-31810",
-   "fuente": "Ayuntamiento",
-   "tipo": "Suministro",
-   "titulo": "LORENTE JUAN JOSE, 1",
-   "via": "NÚMEROS IMPARES: Entre C/ Pamplona Escudero y C/ Fueros de Aragón NÚMEROS PARES: Entre C/ A. Burriel y C/ Fueros de Aragón",
-   "detalle": "Cortes de Agua. Desde las 8 hasta las 18 horas",
-   "inicio": "2026-11-27",
-   "fin": "2026-11-27",
-   "lat": 41.6467227,
-   "lon": -0.8950031,
-   "precision": "portal",
-   "nombre": "Calle Juan José Lorente"
   },
   {
    "id": "dgt-30372137",
@@ -1117,17 +891,17 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30478219",
+   "id": "dgt-30480038",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-68",
-   "via": "pk 250.476 · sentido creciente · orientación oeste",
+   "titulo": "A-2",
+   "via": "pk 315.464 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-27",
    "fin": null,
-   "lat": 41.69717,
-   "lon": -1.002669,
+   "lat": 41.65921,
+   "lon": -0.950415,
    "precision": "exacta"
   }
  ]
