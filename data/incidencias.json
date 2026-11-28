@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T07:01+01:00",
+ "actualizado": "2026-11-28T08:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 58,
-   "ultima_ok": "2026-11-28T07:01+01:00"
+   "ultima_ok": "2026-11-28T08:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 3,
-   "ultima_ok": "2026-11-28T07:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-28T08:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -863,20 +863,6 @@
    "nombre": "Avenida de Valencia"
   },
   {
-   "id": "dgt-30372136",
-   "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
-   "precision": "exacta"
-  },
-  {
    "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -891,17 +877,45 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30483022",
+   "id": "dgt-30372136",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-25",
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30483214",
+   "fuente": "DGT",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 33.0 · sentido creciente · orientación norte",
+   "detalle": "Accidente",
+   "causa": "Accidente",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.634296,
+   "lon": -0.974857,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30483346",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "VS-A-2-C",
-   "via": "pk 317.572 · sentido creciente · orientación noreste",
+   "titulo": "A-23",
+   "via": "pk 300.18 · sentido decreciente · orientación sur",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-28",
    "fin": null,
-   "lat": 41.67196,
-   "lon": -0.93134,
+   "lat": 41.75031,
+   "lon": -0.83948,
    "precision": "exacta"
   }
  ]

@@ -10984,6 +10984,17 @@
    "titulo": "Z-40",
    "via": "pk 18.794 · sentido creciente · orientación suroeste",
    "visto": "2026-11-28"
+  },
+  "dgt-30483214": {
+   "detalle": "Accidente",
+   "fin": null,
+   "fuente": "DGT",
+   "id": "dgt-30483214",
+   "inicio": "2026-11-28",
+   "tipo": "Accidente",
+   "titulo": "Z-40",
+   "via": "pk 33.0 · sentido creciente · orientación norte",
+   "visto": "2026-11-28"
   }
  }
 }
