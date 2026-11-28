@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T01:01+01:00",
+ "actualizado": "2026-11-28T02:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 58,
-   "ultima_ok": "2026-11-28T01:01+01:00"
+   "ultima_ok": "2026-11-28T02:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 2,
-   "ultima_ok": "2026-11-28T01:01+01:00"
+   "n": 4,
+   "ultima_ok": "2026-11-28T02:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -863,6 +863,20 @@
    "nombre": "Avenida de Valencia"
   },
   {
+   "id": "dgt-30372136",
+   "fuente": "DGT",
+   "tipo": "Obras",
+   "titulo": "N-232",
+   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
+   "detalle": "Obras en la vía",
+   "causa": "Obras en la vía",
+   "inicio": "2026-11-25",
+   "fin": "2026-12-04",
+   "lat": 41.674202,
+   "lon": -0.9534562,
+   "precision": "exacta"
+  },
+  {
    "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
@@ -877,17 +891,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30481275",
    "fuente": "DGT",
-   "tipo": "Obras",
-   "titulo": "N-232",
-   "via": "pk 245.6–246.0 · sentido decreciente · orientación sureste",
-   "detalle": "Obras en la vía",
-   "causa": "Obras en la vía",
-   "inicio": "2026-11-25",
-   "fin": "2026-12-04",
-   "lat": 41.674202,
-   "lon": -0.9534562,
+   "tipo": "Otros",
+   "titulo": "Z-40",
+   "via": "pk 18.794 · sentido creciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.63284,
+   "lon": -0.837125,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30481276",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 325.721 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.676132,
+   "lon": -0.838981,
    "precision": "exacta"
   }
  ]
