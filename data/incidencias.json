@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T17:01+01:00",
+ "actualizado": "2026-11-28T18:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 58,
-   "ultima_ok": "2026-11-28T17:01+01:00"
+   "ultima_ok": "2026-11-28T18:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 5,
-   "ultima_ok": "2026-11-28T17:01+01:00"
+   "n": 9,
+   "ultima_ok": "2026-11-28T18:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -863,7 +863,7 @@
    "nombre": "Avenida de Valencia"
   },
   {
-   "id": "dgt-30372137",
+   "id": "dgt-30372136",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -877,7 +877,7 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30372136",
+   "id": "dgt-30372137",
    "fuente": "DGT",
    "tipo": "Obras",
    "titulo": "N-232",
@@ -905,31 +905,87 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30497685",
+   "id": "dgt-30499084",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "A-23",
-   "via": "pk 275.042 · sentido creciente · orientación noreste",
+   "titulo": "A-68",
+   "via": "pk 257.024 · sentido creciente · orientación oeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-28",
    "fin": null,
-   "lat": 41.59724,
-   "lon": -0.94015,
+   "lat": 41.73468,
+   "lon": -1.06327,
    "precision": "exacta"
   },
   {
-   "id": "dgt-30497854",
+   "id": "dgt-30499404",
    "fuente": "DGT",
    "tipo": "Otros",
-   "titulo": "Z-40",
-   "via": "pk 23.278 · sentido creciente · orientación suroeste",
+   "titulo": "A-2",
+   "via": "pk 314.759 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-28",
    "fin": null,
-   "lat": 41.608746,
-   "lon": -0.87756,
+   "lat": 41.655025,
+   "lon": -0.956795,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30499425",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "AP-68",
+   "via": "pk 288.664 · sentido creciente · orientación sureste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.70694,
+   "lon": -0.98133,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30499436",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 318.935 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.68071,
+   "lon": -0.91985,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30499515",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 323.657 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.6795,
+   "lon": -0.86375,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30499545",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 324.171 · sentido creciente · orientación este",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.679314,
+   "lon": -0.85755,
    "precision": "exacta"
   }
  ]
