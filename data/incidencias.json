@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-28T19:01+01:00",
+ "actualizado": "2026-11-28T20:01+01:00",
  "licencia": "CC BY 4.0",
  "licencia_url": "https://creativecommons.org/licenses/by/4.0/deed.es",
  "atribucion": "Origen de los datos: Ayuntamiento de Zaragoza y Dirección General de Tráfico (DGT). Datos tratados (nombres normalizados y ubicaciones geocodificadas) por Obras e Incidencias Zaragoza. El Ayuntamiento y la DGT no avalan este servicio.",
@@ -7,12 +7,12 @@
   "ayuntamiento": {
    "ok": true,
    "n": 58,
-   "ultima_ok": "2026-11-28T19:01+01:00"
+   "ultima_ok": "2026-11-28T20:01+01:00"
   },
   "dgt": {
    "ok": true,
-   "n": 4,
-   "ultima_ok": "2026-11-28T19:01+01:00"
+   "n": 6,
+   "ultima_ok": "2026-11-28T20:01+01:00"
   }
  },
  "sin_ubicar": 3,
@@ -891,7 +891,21 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30497373",
+   "id": "dgt-30501803",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "VS-A-2-C",
+   "via": "pk 316.742 · sentido creciente · orientación noreste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.666058,
+   "lon": -0.937274,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30502048",
    "fuente": "DGT",
    "tipo": "Retención",
    "titulo": "Z-40",
@@ -905,17 +919,31 @@
    "precision": "exacta"
   },
   {
-   "id": "dgt-30500465",
+   "id": "dgt-30502326",
    "fuente": "DGT",
    "tipo": "Otros",
    "titulo": "A-2",
-   "via": "pk 319.712 · sentido creciente · orientación este",
+   "via": "pk 318.581 · sentido decreciente · orientación suroeste",
    "detalle": "Vehículo detenido",
    "causa": "Vehículo detenido",
    "inicio": "2026-11-28",
    "fin": null,
-   "lat": 41.68159,
-   "lon": -0.91096,
+   "lat": 41.67954,
+   "lon": -0.92436,
+   "precision": "exacta"
+  },
+  {
+   "id": "dgt-30502397",
+   "fuente": "DGT",
+   "tipo": "Otros",
+   "titulo": "A-2",
+   "via": "pk 313.668 · sentido decreciente · orientación suroeste",
+   "detalle": "Vehículo detenido",
+   "causa": "Vehículo detenido",
+   "inicio": "2026-11-28",
+   "fin": null,
+   "lat": 41.64724,
+   "lon": -0.96536,
    "precision": "exacta"
   }
  ]
